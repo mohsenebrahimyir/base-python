@@ -1,0 +1,365 @@
+# مقدمه {-}
+
+این کتاب از روی کتاب پایتون برای همه
+[@severance2016py4e]
+ تهیه شده است.
+ باقی محتوا از منیع اینترنتی آزاد گرفته شده و یا توسط نویسندگان
+تولید شده‌اند. بنابراین کپی برداری با ذکر منبع آزاد می‌باشد.
+
+
+## معماری سخت افزار کامپیوتر {#computer-hardware-architect}
+
+اگر ما در ابتدای ورود به مسیر برنامه‌نویسی هستیم، بهتر است کمی درمورد
+اینکه کامپیوتر چگونه کار می‌کند، صحبت کنیم.
+خوب است بدانیم، قسمت‌های مختلف یک کامپیوتر به زبان بسیار ساده، به این ترتیب هستند:
+
+![معماری سخت افزار کامپیوتر](./assets/img/overall-data-in-computer.png)
+
+تعاریف سطح بالای این قطعات به شرح زیر است:
+
+- پردازنده مرکزی یا 
+[Central Processing Unit (CPU)]{dir=ltr}:
+می‌تواند در هر ثانیه چندین کار را انجام دهد طوری که ما احساس کنیم کارها
+بطور موازی انجام می‌شوند.
+اینکه چه تعداد کار را در یک ثانیه انجام دهد، به سرعت پردازنده ما بستگی دارد. 
+بطور مثال، اگر سرعت پردازنده ما 3.0 گیگاهرتز
+[(3.0 Gigahertz)]{dir=ltr}
+باشد، به معنی این است که به تعداد سه میلیارد کار در هر ثانیه، می‌تواند انجام دهد.
+
+- حافظه اصلی یا
+[Main Memory]{dir=ltr}: 
+برای ذخیره و دردسترس قرار دادن اطلاعات ضروری و مورد نیاز سریع پردازنده مرکزی، 
+بکار می‌رود.
+ اما باید مراقب اطلاعات خود در حافظه اصلی باشیم، چرا که با خاموش شدن کامپیوتر و یا 
+راه‌اندازی مجدد 
+(restart) 
+اطلاعات آن از بین می‌رود.
+
+- حافظه ثانویه یا 
+([Secondary Memory]{dir=ltr}): 
+این نوع حافظه برای ذخیره دائمی اطلاعات بکارمی‌رود، اما سرعت آن از سرعت حافظه
+اصلی کمتر است.
+
+- دستگاه‌های ورودی و خروجی یا
+[(Input and Output Devices)]{dir=ltr}:
+همان وسایلی هستند که به کمک آن‌ها با کامپیوتر ارتباط برقرار می‌کنیم، شامل
+صفحه کلید، مانیتور، ماوس و ...
+
+و ما به عنوان یک برنامه‌نویس مسئول این هستیم که به 
+CPU
+بگوئیم چه زمانی چه کاری انجام دهد و از کدام دستگاه‌های ورودی و خروجی استفاده کند. 
+به این ترتیب، ما همه این منابع را باهم هماهنگ می‌سازیم.
+
+## انواع زبان های برنامه نویسی
+
+![انقلاب زبان‌های برنامه نویسی](./assets/img/evolution-of-programming-languages.jpeg)
+
+- زبان انسان (English)
+- زبان‌های برنامه نویسی سطح بالا (C, C++, R, Python)
+- زبان برنامه نویسی سطح پایین (Assembly)
+- زبان ماشین (01)
+
+
+::: {.remark}
+
+در نهایت اکثر زبان‌های برنامه نویسی منطق یکسانی دارند و یا
+دگیری یک زبان برنامه نویسی،
+یادگیری زبان برنامه نویسی دیگر را ساده تر می‌کند.
+
+:::
+
+سایت تبدیل زبان برنامه نویسی R به زبان برنامه نویسی Assembly  <https://www.codeconvert.ai/r-to-assembly-converter>
+
+- خروجی
+
+```
+    name Age
+1 Mohsen  30
+2  Arash  12
+```
+
+- R
+
+```r
+df = data.frame(
+  "name" = c("Mohsen", "Arash"),
+  "Age" = c(30, 12)
+)
+
+print(df)
+
+```
+
+- Matlab
+
+```matlab
+df = table;
+df.name = {'Mohsen', 'Arash'};
+df.Age = [30, 12];
+
+disp(df)
+```
+
+- Python
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    "name": ["Mohsen", "Arash"],
+    "Age": [30, 12]
+})
+
+print(df)
+```
+
+- Sas
+
+```s
+data df;
+  input name $ age;
+datalines;
+Mohsen 30
+Arash 12
+;
+run;
+
+proc print data=df;
+run;
+```
+
+
+- Fortran
+
+```fortran
+PROGRAM main
+  IMPLICIT NONE
+  
+  INTEGER :: i
+  CHARACTER(LEN=10), DIMENSION(2) :: name
+  INTEGER, DIMENSION(2) :: age
+  
+  name(1) = "Mohsen"
+  name(2) = "Arash"
+  age(1) = 30
+  age(2) = 12
+  
+  DO i = 1, 2
+    WRITE(*,*) "name: ", name(i), ", age: ", age(i)
+  END DO
+END PROGRAM main
+
+```
+
+- C
+
+```c
+#include <iostream>
+#include <vector>
+#include <string>
+#include <unordered_map>
+
+int main() {
+    std::vector<std::string> name = {"Mohsen", "Arash"};
+    std::vector<int> Age = {30, 12};
+
+    std::unordered_map<std::string, std::vector<int>> df;
+    df["name"] = name;
+    df["Age"] = Age;
+
+    for (const auto& pair : df) {
+        std::cout << pair.first << ": ";
+        for (const auto& value : pair.second) {
+            std::cout << value << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    return 0;
+}
+```
+
+- Assembly
+
+```c
+asm
+.data
+df_name_data:
+    .asciz "Mohsen"
+    .asciz "Arash"
+df_age_data:
+    .int 30
+    .int 12
+df_nrows = 2
+df_ncols = 2
+
+.text
+.globl main
+main:
+    # Allocate memory for the data frame
+    movl $df_nrows, %eax
+    movl $df_ncols, %ebx
+    imull %ebx, %eax
+    shl $2, %eax # Each element is 4 bytes (int)
+    pushl %eax
+    call malloc
+    popl %ecx
+    movl %eax, %edi # edi points to the data frame
+
+    # Copy the name data
+    movl $df_name_data, %esi
+    movl $0, %ecx
+loop1:
+    cmpl $df_nrows, %ecx
+    je end1
+    movl (%esi), %eax
+    movl %eax, (%edi)
+    addl $4, %edi # Move to the next column
+    addl $4, %esi # Move to the next name
+    incl %ecx
+    jmp loop1
+end1:
+
+    # Copy the age data
+    movl $df_age_data, %esi
+    movl $0, %ecx
+loop2:
+    cmpl $df_nrows, %ecx
+    je end2
+    movl (%esi), %eax
+    movl %eax, (%edi)
+    addl $4, %edi # Move to the next column
+    addl $4, %esi # Move to the next age
+    incl %ecx
+    jmp loop2
+end2:
+
+    # Print the data frame
+    movl $df_nrows, %eax
+    movl $df_ncols, %ebx
+    imull %ebx, %eax # Total number of elements
+    movl %edi, %ebx # ebx points to the start of the data frame
+    movl $0, %ecx
+loop3:
+    cmpl %eax, %ecx
+    je end3
+    # Print the current element
+    pushl (%ebx)
+    pushl $format
+    call printf
+    addl $8, %esp
+    addl $4, %ebx # Move to the next element
+    incl %ecx
+    jmp loop3
+end3:
+
+    # Free the memory
+    movl %edi, %eax
+    call free
+
+    xorl %eax, %eax
+    ret
+
+.data
+format:
+    .asciz "%d "
+
+```
+
+## کاربرد هر زبان برنامه نویسی
+
+### نگاهی به نظر برنامه نویسان
+
+- <https://survey.stackoverflow.co/>
+
+#### کل داده‌ها
+
+در این شکل توزیع کشورهای افراد شرکت کننده را ترسیم نمودیم (بعضی افراد از اظهار کشورشان امتناع کردند که از داده‌ها حذف شده‌اند)
+
+![توزیع کشورهای توسعه دهندگان شرکت کننده در نظرسنجی جهانی](./assets/img/world-map-of-developers.png)
+
+#### توسعه دهندگان فیلتر شده
+
+با توجه به داده‌های موجود در نظر سنجی برای دقت بیشتر و تحلیل بهتر نتایج،
+بخشی از شرکت کننده‌ها فیلتر شده‌اند.
+
+شرایط توسعه دهندگانی که برای تحلیل انتخاب شده‌اند.
+
+- افراد بالای ۲۵ سال سن
+- افراد با بیش از ۵ سال سابقه برنامه نویسی حرفه‌ای
+- افراد شاغل (تمام یا نیمه وقت) یا خود اشتغال
+- افرادی که از انواع گزینه‌های توسعه دهنده کمتر از ۳ گزینه انتخاب نمودند.
+
+![توزیع کشورهای توسعه دهندگان فیلتر شده شرکت کننده در نظرسنجی جهانی](./assets/img/world-map-of-filtered-developers.png)
+
+#### انواع توسعه دهندگان
+
+![انواع توسعه دهندگان](./assets/img/developers-types.png)
+
+### ده زبان برنامه نویسی برتر
+
+#### نگاه کلی
+
+![ده زبان برنامه نویسی برتر-نگاه کلی](./assets/img/all-developers.png)
+
+
+#### نرم افزار
+
+![ده زبان برنامه نویسی برتر-توسعه دهندگان نرم افزار](./assets/img/developer-desktop-or-enterprise-applications.png)
+
+#### وبسایت (بک‌اند-فرانت-اند)
+
+![ده زبان برنامه نویسی برتر-توسعه دهندگان وبسایت](./assets/img/developer-full-stack.png)
+
+
+#### بازی سازی
+
+![ده زبان برنامه نویسی برتر-توسعه دهندگان بازی](./assets/img/developer-game-or-graphics.png)
+
+
+#### موبایل
+
+![ده زبان برنامه نویسی برتر-توسعه دهندگان موبایل](./assets/img/developer-mobile.png)
+
+#### دانشمند داده و یادگیری ماشین
+
+![ده زبان برنامه نویسی برتر-توسعه دهندگان داده و یادگیری ماشین](./assets/img/data-scientist-or-machine-learning-specialist.png)
+
+
+### زبان برنامه نویسی برای شروع
+
+![چه زبان برنامه نویسی را باید اول یاد بگیریم؟](./assets/img/which-language-should-i-learn-first.png)
+
+### چرا پایتون {#why-python}
+
+شاید دلیل ما برای شروع یادگیری پایتون این باشد که ن
+یاز به آنالیز داده‌های زیادی داریم، 
+یا برای امرار معاش به این راه وارد شده‌ایم.
+همچنین اگر در حوزه علم داده
+[(Data Science)]{dir=ltr}
+و یا هوش مصنوعی
+[(Artificial Intelligence)]{dir=ltr}
+مشغول به فعالیت هستیم، زبان برنامه‌نویسی پایتون، گزینه بسیار مناسبی برای ما خواهد بود.
+
+ در نهایت اینکه ممکن است به یکی از دلایل زیر، ما نیاز به یادگیری پایتون داشته باشیم:
+
+1- اسکریپت و اتوماسیون در پایتون
+
+2- استفاده از پایتون برای داده‌های بزرگ
+[(Big Data)]{dir=ltr}
+
+3- پشتیبانی پایتون از تست
+[(Testing)]{dir=ltr}
+
+4- گرافیک کامپیوتری در پایتون
+
+5- استفاده از پایتون در توسعه وب
+
+6- سازگار و قابل انتقال بودن
+
+7- تفسیر داده‌های تصویربرداری عصبی
+
+8- بهره‌مندی از پایتون در طراحی 
+Task
+در نرم‌افزارهایی مانند
+Psychopy

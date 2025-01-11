@@ -1,0 +1,94 @@
+project:
+  type: book
+  output-dir: ./docs
+
+jupyter: python3
+
+book:
+  title: "مبانی پایتون"
+  subtitle: "مفاهیم پایه برای برنامه نویسی با زبان‌ Python"
+  author:
+  - "محبوبه کاتبی"
+  - "محسن ابراهیمی"
+  date: "2021"
+
+  cover-image: assets/img/cover.png
+  favicon: assets/img/favicon.ico
+
+  page-footer:
+    left:  |
+      <a href="https://mohsenebrahimyir.github.io/base-python/index.html">مبانی پایتون</a>
+    right: |
+      <a href="https://mohsenebrahimy.ir/">محسن ابراهیمی</a>
+
+  reader-mode: true
+  site-url: https://mohsenebrahimyir.github.io/base-python/
+  repo-url: https://github.com/mohsenebrahimyir/base-python/
+  repo-branch: master
+  repo-actions: none
+
+  output-file: "base-python"
+
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - chapter/01-python-programming.qmd
+    - chapter/02-variables-expressions-commands.qmd
+    - chapter/03-condition-statement.qmd
+    - chapter/04-functions.qmd
+    - chapter/05-iteration.qmd
+    - chapter/06-string.qmd
+    - chapter/07-files.qmd
+    - chapter/08-lists.qmd
+    # - chapter/09-dictionaries.qmd
+    # - chapter/10-classes.qmd
+    # - chapter/11-modules.qmd
+    # - chapter/12-exceptions.qmd
+
+
+    - references.qmd
+
+bibliography:
+  - assets/bib/references.bib
+
+language: assets/yml/_fa.yml
+
+number-sections: false
+crossref:
+  labels: arabic
+  subref-labels: arabic
+
+execute:
+  echo: true
+  warning: false
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+
+    search: true
+    code-copy: true
+    css:
+      - https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&display=swap
+      - assets/css/rtl-style.css
+      - assets/css/termynal.css
+      - assets/css/custom.css
+
+    code-link: true
+    dir: rtl
+    csl: assets/csl/ieee.csl
+    fig-align: center
+    fig-format: svg
+    date-modified: today
+    date-format: iso
+    mainfont: Vazirmatn
+    include-in-header: assets/html/header.html
+    include-after-body:
+      text: |
+        <script src="assets/js/termynal.js" data-termynal-container="#termy">
+        </script>
+
+editor: source
+

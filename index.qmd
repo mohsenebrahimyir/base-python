@@ -1,0 +1,34 @@
+# پیش گفتار {-}
+
+```{python}
+#| echo: false
+from assets.py.string_tools import digit_en_to_fa
+from jdatetime import datetime as jdt
+
+now = jdt.now().strftime("%Y-%m-%d")
+now = digit_en_to_fa(now)
+```
+
+
+به همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید.
+سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید.
+نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل
+mhb.s.katebi@gmail.com
+و
+mohsenebrahimy.ir@gmail.com
+برای بهبود کتاب به نویسنده ارسال کنید
+تا در هر بروزرسانی اصلاحات صورت گیرد.
+این نسخه در تاریخ
+[**`{python} now`**]{dir="ltr"}
+بروزرسانی شده است.
+
+***
+
+امیدوارم این کتاب برایتان مفید باشد.
+
+
+[کتاب](https://mohsenebrahimyir.github.io/base-python/)
+
+::: {.callout-warning}
+اگر این متن را میبینید یعنی این کتاب درحال توسعه است.
+::::::
