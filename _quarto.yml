@@ -2,7 +2,7 @@ project:
   type: book
   output-dir: ./docs
 
-# jupyter: python3
+jupyter: python3
 # knitr: rmarkdown
 
 book:
