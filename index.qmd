@@ -26,8 +26,7 @@ mohsenebrahimy.ir@gmail.com
 
 امیدوارم این کتاب برایتان مفید باشد.
 
-
-[کتاب](https://mohsenebrahimyir.github.io/base-python/)
+- کتاب: [https://mohsenebrahimyir.github.io/base-python/](https://mohsenebrahimyir.github.io/base-python/)
 
 ::: {.callout-warning}
 اگر این متن را میبینید یعنی این کتاب درحال توسعه است.
