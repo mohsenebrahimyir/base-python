@@ -368,6 +368,9 @@ Psychopy
 
 در ادامه یک مثال فیزیک دبیرستانی همراه با کدنویسی با استفاده از پکیج `SymPy` در پایتون آورده شده است. مثال مربوط به حل یک مسئله‌ی حرکت در خط راست است:
 
+$$
+x(t) = \frac{1}{2}at^2 + v_0t + x_0
+$$
 
 یک جسم با سرعت اولیه 
 $v_0 = 10 \frac{m}{s}$
@@ -385,7 +388,9 @@ $t=4s$
 - استفاده از `SymPy`
 
 ```{python}
+# pip install sympy
 from sympy import *
+
 init_printing()
 ```
 
@@ -399,9 +404,7 @@ t = symbols("t")  # زمان
 x = symbols("x")  # مکان
 x_t = symbols("x_t")
 
-# t, x = symbols('t x')
-
-display(a, v_0, x_0, x, t)
+# t, x, x_t, v_0 a x_0 = symbols('t x x_t v_0 a x_0')
 ```
 
 
@@ -431,12 +434,6 @@ x_eq = (1 / 2) * a * t**2 + v0 * t + x0
 display(x_eq)
 ```
 
-- نمودار 
-
-```{python}
-display(plot(x_eq, (t, 0, 5)))
-```
-
 
 - مکان در لحظه t = 4
 
@@ -444,4 +441,30 @@ display(plot(x_eq, (t, 0, 5)))
 t_value = 4
 x_at_t = x_eq.subs(t, t_value)
 display(x_at_t)
+```
+
+
+```{python}
+# | echo: true
+# | output: true
+# | fig.show: true
+
+# pip install matplotlib
+# pip install numpy
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x_func = lambdify(t, x_eq, "numpy")
+t_values = np.linspace(0, 5, 10)
+x_values = x_func(t_values)
+
+# Create the plot
+plt.plot(t_values, x_values, label=str(x_eq))
+plt.xlabel("Time (s)")
+plt.ylabel("Position (m)")
+plt.title("Position vs. Time")
+plt.legend()
+plt.grid()
+plt.show()
 ```
