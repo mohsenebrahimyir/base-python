@@ -132,6 +132,35 @@ div.csl-indent {
 
 
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&amp;display=swap">
 <link rel="stylesheet" href="assets/css/rtl-style.css">
@@ -626,13 +655,129 @@ div.csl-indent {
 <p>6- سازگار و قابل انتقال بودن</p>
 <p>7- تفسیر داده‌های تصویربرداری عصبی</p>
 <p>8- بهره‌مندی از پایتون در طراحی Task در نرم‌افزارهایی مانند Psychopy</p>
+<section id="مثال-حل-فیزیک" class="level4">
+<h4 class="anchored" data-anchor-id="مثال-حل-فیزیک">مثال حل فیزیک</h4>
+<p>در ادامه یک مثال فیزیک دبیرستانی همراه با کدنویسی با استفاده از پکیج <code>SymPy</code> در پایتون آورده شده است. مثال مربوط به حل یک مسئله‌ی حرکت در خط راست است:</p>
+<p>یک جسم با سرعت اولیه <span class="math inline">\(v_0 = 10 \frac{m}{s}\)</span> و شتاب <span class="math inline">\(a = 2 \frac{m}{s^2}\)</span> شروع به حرکت می‌کند. مکان جسم در لحظه <span class="math inline">\(t=0\)</span> برابر <span class="math inline">\(x_0 = 5m\)</span> ​است. مکان جسم را در لحظه <span class="math inline">\(t=4s\)</span> بیابید.</p>
+<ul>
+<li>استفاده از <code>SymPy</code></li>
+</ul>
+<div id="c3a2b9be" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>init_printing()</span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>تعریف متغیرها</li>
+</ul>
+<div id="1a019d20" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> symbols(<span class="st">"a"</span>)  <span class="co"># شتاب</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>v_0 <span class="op">=</span> symbols(<span class="st">"v_0"</span>)  <span class="co"># سرعت اولیه</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>x_0 <span class="op">=</span> symbols(<span class="st">"x_0"</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> symbols(<span class="st">"t"</span>)  <span class="co"># زمان</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> symbols(<span class="st">"x"</span>)  <span class="co"># مکان</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>x_t <span class="op">=</span> symbols(<span class="st">"x_t"</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co"># t, x = symbols('t x')</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>display(a, v_0, x_0, x, t)</span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<p><span class="math inline">\(\displaystyle a\)</span></p>
+</div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<p><span class="math inline">\(\displaystyle v_{0}\)</span></p>
+</div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<p><span class="math inline">\(\displaystyle x_{0}\)</span></p>
+</div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<p><span class="math inline">\(\displaystyle x\)</span></p>
+</div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<p><span class="math inline">\(\displaystyle t\)</span></p>
+</div>
+</div>
+<ul>
+<li>معادله مکان بر حسب زمان</li>
+</ul>
+<div id="46da9b21" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>x_eq <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> <span class="dv">2</span> <span class="op">*</span> a <span class="op">*</span> t<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> v_0 <span class="op">*</span> t <span class="op">+</span> x_0</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>display(x_eq)</span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<p><span class="math inline">\(\displaystyle 0.5 a t^{2} + t v_{0} + x_{0}\)</span></p>
+</div>
+</div>
+<ul>
+<li>داده‌های مسئله</li>
+</ul>
+<div id="23dfd67f" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>v0 <span class="op">=</span> <span class="dv">10</span>  <span class="co"># سرعت اولیه (m/s)</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">2</span>    <span class="co"># شتاب (m/s^2)</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>x0 <span class="op">=</span> <span class="dv">5</span>   <span class="co"># مکان اولیه (m)</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># v0, a, x0 = 10, 2, 5</span></span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>معادله مکان بر حسب زمان</li>
+</ul>
+<div id="8c19e566" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>x_eq <span class="op">=</span> (<span class="dv">1</span> <span class="op">/</span> <span class="dv">2</span>) <span class="op">*</span> a <span class="op">*</span> t<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> v0 <span class="op">*</span> t <span class="op">+</span> x0</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>display(x_eq)</span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<p><span class="math inline">\(\displaystyle 1.0 t^{2} + 10 t + 5\)</span></p>
+</div>
+</div>
+<ul>
+<li>نمودار</li>
+</ul>
+<div id="c5bde834" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>display(plot(x_eq, (t, <span class="dv">0</span>, <span class="dv">5</span>)))</span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     80 |                                                     ..
+        |                                                   ..  
+        |                                                 ..    
+        |                                               ..      
+        |                                             ..        
+        |                                           ..          
+        |                                        ...            
+        |                                      ..               
+        |                                    ..                 
+        |                                 ...                   
+   42.5 |-------------------------------..----------------------
+        |                            ...                        
+        |                         ...                           
+        |                      ...                              
+        |                   ...                                 
+        |                ...                                    
+        |             ...                                       
+        |          ...                                          
+        |      ....                                             
+        |  ....                                                 
+      5 |_______________________________________________________
+         0                          2.5                        5</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;sympy.plotting.backends.textbackend.text.TextBackend at 0x2f780560&gt;</code></pre>
+</div>
+</div>
+<ul>
+<li>مکان در لحظه t = 4</li>
+</ul>
+<div id="b36be08b" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>t_value <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>x_at_t <span class="op">=</span> x_eq.subs(t, t_value)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>display(x_at_t)</span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<p><span class="math inline">\(\displaystyle 61.0\)</span></p>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-severance2016py4e" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">C. R. Severance, S. Blumenberg, and E. Hauser, <em>Python for everybody: Exploring data in python 3</em>. North Charleston, SC, USA: CreateSpace Independent Publishing Platform, 2016.</div>
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">C. R. Severance, S. Blumenberg, and E. Hauser, <span>“Python for everybody: Exploring data in python 3,”</span> 2016. <a href="https://www.py4e.com/">https://www.py4e.com/</a></div>
 </div>
 </div>
+</section>
 </section>
 </section>
 
