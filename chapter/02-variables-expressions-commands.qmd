@@ -8,7 +8,6 @@
  واژه‌ای که برای این نام مخصوص استفاده می‌شود، 
  **Variable** 
   یا **متغیر** است:
-  
 
 ```python
 x = 6
@@ -41,6 +40,28 @@ print(y)
 و 
 `y` 
 صرفاً برای مشاهده مقادیر ذخیره شده در متغیرهای بکار رفته در پرانتز می‌باشد. 
+
+گرفتن ورودی از کاربر به صورت زیر است
+
+```python
+name = input("Enter your name: ")
+print("Hello", name)
+```
+```output
+Enter your name: Mohsen
+Hello Mohsen
+```
+
+اگر ورودی عدد باشد باید توسط `input` در قالب عدد وارد شود.
+
+```python
+age = int(input("Enter your age: "))
+print("You are", age, "years old.")
+```
+```output
+Enter your age: 30
+You are 30 years old.
+```
 
 ## عبارات بولی {#boolean-expressions}
 
@@ -109,3 +130,66 @@ x > 0 and x < 10
 ```output
 True
 ```
+
+## تمرین {#exercises}
+
+::: {.remark} :::
+با استفاده از ورودی ([`input()`]{dir=ltr}) تمرین‌ها انجام شود.
+::::::
+
+
+
+::: {.exercise} :::
+<details>
+<summary>
+از کاربر نام و سن را بگیرد و نمایش دهد
+</summary>
+```python
+# دریافت نام از کاربر
+name = input("نام خود را وارد کنید: ")
+
+# دریافت سن از کاربر
+age = input("سن خود را وارد کنید: ")
+
+# نمایش نام و سن
+print("نام:", name)
+print("سن:", age)
+```
+</details>
+::::::
+
+::: {.exercise} :::
+<details>
+<summary>
+یک ماشین‌ حساب ساده برای جمع و تفریق بنویسید.
+</summary>
+```python
+# این برنامه جمع دو عدد را انجام می‌دهد
+
+# دریافت عدد اول از کاربر
+num1 = input("عدد اول را وارد کن: ")
+num1 = float(num1)  # تبدیل به عدد اعشاری
+
+# دریافت عدد دوم از کاربر
+num2 = input("عدد دوم را وارد کن: ")
+num2 = float(num2)  # تبدیل به عدد اعشاری
+
+# انجام جمع
+sum = num1 + num2
+# انجام تفریق
+minus = num1 - num2
+
+# نمایش نتیجه
+print("نتیجه جمع =", sum)
+print("نتیجه تفریق =", minus)
+```
+
+آیا میتونید برای ضرب و تقیسم هم بنویسید؟
+</details>
+::::::
+
+::: {.exercise} :::
+<details>
+<summary>
+یک برنامه بنویسید که دو عدد بگیرد و بزرگی عدد اول را بررسی کند.
+‍

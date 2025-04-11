@@ -99,6 +99,8 @@ crossref-lol-title: "فهرست فهرست‌ها"
 environment-proof-title: "اثبات"
 environment-remark-title: "نکته"
 environment-solution-title: "حل"
+environment-exercise-title: "تمرین"
+environment-example-title: "مثال"
 
 listing-page-order-by: "مرتب برحسب"
 listing-page-order-by-default: "پیش‌فرض"

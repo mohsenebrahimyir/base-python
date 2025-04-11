@@ -151,6 +151,7 @@ CPU
 - [کوئرا](https://quera.org/problemset?order=most-solutions)
 - [Code Wars](https://www.codewars.com/dashboard)
 - [W3Schools](https://www.w3schools.com/python/default.asp)
+- [LeetCode](https://leetcode.com/)
 - کمک کردن به دیگران
 - مشارکت در پروژه‌ی دیگران
 

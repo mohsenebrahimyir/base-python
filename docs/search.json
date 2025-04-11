@@ -1,12 +1,42 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "مبانی پایتون",
+    "objectID": "chapter/02-variables-expressions-commands.html",
+    "href": "chapter/02-variables-expressions-commands.html",
+    "title": "متغیرها، عبارات و دستورات",
     "section": "",
-    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل mhb.s.katebi@gmail.com و mohsenebrahimy.ir@gmail.com برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۳-۱۰-۲۳ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: https://mohsenebrahimyir.github.io/base-python/\n\n\n\n\n\n\n\nهشدار\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
+    "text": "عبارات بولی\nعبارت بولی (Boolean expressions) عبارتی است که یا درست یا نادرست است. عملگر== برای مقایسه دو عملوند بکار می‌رود و نتیجه آن درستی (True) یا نادرستی (False) نتیجه این ارزیابی را نشان می‌دهد:\nعملگر == یکی از عملگرهای مقایسه‌ای است، سایر عملگرها عبارتند از:",
     "crumbs": [
-      "پیش گفتار"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>متغیرها، عبارات و دستورات</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/02-variables-expressions-commands.html#boolean-expressions",
+    "href": "chapter/02-variables-expressions-commands.html#boolean-expressions",
+    "title": "متغیرها، عبارات و دستورات",
+    "section": "",
+    "text": "5 == 5\nTrue\n5 == 6\nFalse\n\nx != y        # x is not equal to y\nx &gt; y         # x is greater than y\nx &lt; y         # x is less than y\nx &gt;= y        # x is greater than or equal to y\nx &lt;= y        # x is less than or equal to y\nx is y        # x is the same as y\nx is not y    # x is not the same as y",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>متغیرها، عبارات و دستورات</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/02-variables-expressions-commands.html#logical-operators",
+    "href": "chapter/02-variables-expressions-commands.html#logical-operators",
+    "title": "متغیرها، عبارات و دستورات",
+    "section": "عملگرهای منطقی",
+    "text": "عملگرهای منطقی\nسه عملگر منطقی (Logical Operators) وجود دارد: and, or و not . برای مثال:\nx &gt; 0 and x &lt; 10\nعملوندهای عملگرهای منطقی باید عبارات بولی باشند، اما در پایتون هر عدد غیر صفر نیز به صورت True تفسیر می‌شود.\n17 and True\nTrue",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>متغیرها، عبارات و دستورات</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/02-variables-expressions-commands.html#exercises",
+    "href": "chapter/02-variables-expressions-commands.html#exercises",
+    "title": "متغیرها، عبارات و دستورات",
+    "section": "تمرین",
+    "text": "تمرین\n\nنکته. با استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\n\n\nاز کاربر نام و سن را بگیرد و نمایش دهد\n\n# دریافت نام از کاربر\nname = input(\"نام خود را وارد کنید: \")\n\n# دریافت سن از کاربر\nage = input(\"سن خود را وارد کنید: \")\n\n# نمایش نام و سن\nprint(\"نام:\", name)\nprint(\"سن:\", age)\n\n\n\n\n\nنوشتن یک ماشین‌ حساب ساده برای جمع و تفریق بنویسید.\n\n# این برنامه جمع دو عدد را انجام می‌دهد\n\n# دریافت عدد اول از کاربر\nnum1 = input(\"عدد اول را وارد کن: \")\nnum1 = float(num1)  # تبدیل به عدد اعشاری\n\n# دریافت عدد دوم از کاربر\nnum2 = input(\"عدد دوم را وارد کن: \")\nnum2 = float(num2)  # تبدیل به عدد اعشاری\n\n# انجام جمع\nsum = num1 + num2\n# انجام تفریق\nminus = num1 - num2\n\n# نمایش نتیجه\nprint(\"نتیجه جمع =\", sum)\nprint(\"نتیجه تفریق =\", minus)\nآیا میتونید برای ضرب و تقیسم هم بنویسید؟",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>متغیرها، عبارات و دستورات</span>"
     ]
   },
   {
@@ -104,39 +134,9 @@
     "href": "chapter/01-python-programming.html#تمرین",
     "title": "برنامه نویسی پایتون",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\nمنحنی یادگیری ابزارهای آماری [2]\n\n\nبرای تمرین بیشتر می‌توانید از سایت‌هایی که تمرینات python ارائه می‌دهند استفاده کنید.\nبا جستجو python exercises with solutions در گوگل به سایت‌های زیر دسترسی پیدا می‌کنید\n\nکوئرا\nCode Wars\nW3Schools\nکمک کردن به دیگران\nمشارکت در پروژه‌ی دیگران\n\n\n\n\n\n[1] “Stack over flow - 2023 developer survey.” https://survey.stackoverflow.co/2023/\n\n\n[2] “New york university - statistic software.” https://guides.nyu.edu/quant/statsoft",
+    "text": "تمرین\n\n\n\nمنحنی یادگیری ابزارهای آماری [2]\n\n\nبرای تمرین بیشتر می‌توانید از سایت‌هایی که تمرینات python ارائه می‌دهند استفاده کنید.\nبا جستجو python exercises with solutions در گوگل به سایت‌های زیر دسترسی پیدا می‌کنید\n\nکوئرا\nCode Wars\nW3Schools\nLeetCode\nکمک کردن به دیگران\nمشارکت در پروژه‌ی دیگران\n\n\n\n\n\n[1] “Stack over flow - 2023 developer survey.” https://survey.stackoverflow.co/2023/\n\n\n[2] “New york university - statistic software.” https://guides.nyu.edu/quant/statsoft",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>برنامه نویسی پایتون</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/02-variables-expressions-commands.html",
-    "href": "chapter/02-variables-expressions-commands.html",
-    "title": "متغیرها، عبارات و دستورات",
-    "section": "",
-    "text": "عبارات بولی\nعبارت بولی (Boolean expressions) عبارتی است که یا درست یا نادرست است. عملگر== برای مقایسه دو عملوند بکار می‌رود و نتیجه آن درستی (True) یا نادرستی (False) نتیجه این ارزیابی را نشان می‌دهد:\nعملگر == یکی از عملگرهای مقایسه‌ای است، سایر عملگرها عبارتند از:",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>متغیرها، عبارات و دستورات</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/02-variables-expressions-commands.html#boolean-expressions",
-    "href": "chapter/02-variables-expressions-commands.html#boolean-expressions",
-    "title": "متغیرها، عبارات و دستورات",
-    "section": "",
-    "text": "5 == 5\nTrue\n5 == 6\nFalse\n\nx != y        # x is not equal to y\nx &gt; y         # x is greater than y\nx &lt; y         # x is less than y\nx &gt;= y        # x is greater than or equal to y\nx &lt;= y        # x is less than or equal to y\nx is y        # x is the same as y\nx is not y    # x is not the same as y",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>متغیرها، عبارات و دستورات</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/02-variables-expressions-commands.html#logical-operators",
-    "href": "chapter/02-variables-expressions-commands.html#logical-operators",
-    "title": "متغیرها، عبارات و دستورات",
-    "section": "عملگرهای منطقی",
-    "text": "عملگرهای منطقی\nسه عملگر منطقی (Logical Operators) وجود دارد: and, or و not . برای مثال:\nx &gt; 0 and x &lt; 10\nعملوندهای عملگرهای منطقی باید عبارات بولی باشند، اما در پایتون هر عدد غیر صفر نیز به صورت True تفسیر می‌شود.\n17 and True\nTrue",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>متغیرها، عبارات و دستورات</span>"
     ]
   },
   {

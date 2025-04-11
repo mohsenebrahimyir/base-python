@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mohsenebrahimyir.github.io/base-python/index.html</loc>
-    <lastmod>2025-01-11T23:12:41.784Z</lastmod>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/02-variables-expressions-commands.html</loc>
+    <lastmod>2025-04-11T15:22:41.819Z</lastmod>
   </url>
   <url>
     <loc>https://mohsenebrahimyir.github.io/base-python/intro.html</loc>
@@ -10,11 +10,7 @@
   </url>
   <url>
     <loc>https://mohsenebrahimyir.github.io/base-python/chapter/01-python-programming.html</loc>
-    <lastmod>2025-01-11T21:38:03.171Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/02-variables-expressions-commands.html</loc>
-    <lastmod>2025-01-11T21:38:07.723Z</lastmod>
+    <lastmod>2025-04-11T14:34:30.935Z</lastmod>
   </url>
   <url>
     <loc>https://mohsenebrahimyir.github.io/base-python/chapter/03-condition-statement.html</loc>
