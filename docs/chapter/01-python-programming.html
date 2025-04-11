@@ -255,6 +255,7 @@ div.csl-indent {
   <li><a href="#interpreter-and-compiler" id="toc-interpreter-and-compiler" class="nav-link" data-scroll-target="#interpreter-and-compiler">مترجم و کامپایلر</a></li>
   <li><a href="#سایتهای-مفید" id="toc-سایتهای-مفید" class="nav-link" data-scroll-target="#سایتهای-مفید">سایت‌های مفید</a></li>
   <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
+  <li><a href="#پروژه" id="toc-پروژه" class="nav-link" data-scroll-target="#پروژه">پروژه</a></li>
   </ul>
 </nav>
     </div>
@@ -426,6 +427,31 @@ div.csl-indent {
 <li>کمک کردن به دیگران</li>
 <li>مشارکت در پروژه‌ی دیگران</li>
 </ul>
+</section>
+<section id="پروژه" class="level2">
+<h2 class="anchored" data-anchor-id="پروژه">پروژه</h2>
+<p>برای اینکه کمی یادگیری جذاب‌تر شود یک سری پروژه در پایتون پیاده سازی کنید.</p>
+<p>پیش نیاز‌ها را در ترمینال یا کنسول اجرا کنید:</p>
+<ul>
+<li>نصب پیکیج‌های مورد نیاز:</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install pyinstaller</span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>برای تبدیل فایل‌های پایتون به فایل اجرایی در ویندوز از کد زیر استفاده کنید.</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pyinstaller</span> <span class="at">--onefile</span> <span class="at">--noconsole</span> myproject.py</span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span dir="ltr"><code>--onefile</code></span>: فقط یه فایل خروجی بسازه (نه یه پوشه‌ی پر از فایل)</p>
+<p><span dir="ltr"><code>--noconsole</code></span>: چون برنامه گرافیکی‌ـه و به پنجره‌ی ترمینال نیازی نداره</p>
+<ul>
+<li>ساختار پروژه:</li>
+</ul>
+<pre><code>my_project_folder/
+│
+├── myproject.py
+├── build/
+├── dist/
+│   └── myproject.exe  ✅✅✅ اینه فایل اجرایی!
+</code></pre>
 
 
 <div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">

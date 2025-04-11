@@ -123,3 +123,82 @@ except:
 عبور می‌کند و به اجرای بلاک 
 `except` 
 می‌پردازد. 
+
+
+## پروژه {#project}
+
+::: {.exercise} :::
+به کد زیر نگاه کنید که یک ماشین حساب ساده است و ببینید کدام مطالبی که توی این بخش گفته شده استفاده شده.
+
+
+```python
+# وارد کردن پکیج های مورد نیاز
+import tkinter as tk
+
+
+# تابع برای محاسبه نتیجه بر اساس عملگر
+def calculate():
+    try:
+        num1 = float(entry1.get())  # گرفتن عدد اول
+        num2 = float(entry2.get())  # گرفتن عدد دوم
+        op = operator.get()  # گرفتن عملگر
+
+        # بررسی نوع عملگر با شرط‌ها
+        if op == "+":
+            result = num1 + num2
+        elif op == "-":
+            result = num1 - num2
+        elif op == "*":
+            result = num1 * num2
+        elif op == "/":
+            if num2 == 0:
+                result_label.config(text="خطا: تقسیم بر صفر!")
+                return
+            result = num1 / num2
+        else:
+            result_label.config(text="عملگر نامعتبر است")
+            return
+
+        # نمایش نتیجه
+        result_label.config(text=f"نتیجه: {result}")
+
+    except ValueError:
+        # خطا در صورت وارد کردن عدد نامعتبر
+        result_label.config(text="لطفاً فقط عدد وارد کنید")
+
+
+# ساخت پنجره اصلی
+window = tk.Tk()
+window.title("ماشین حساب ساده")
+window.geometry("300x250")
+
+# ساخت ویجت‌ها
+label1 = tk.Label(window, text="عدد اول:")
+entry1 = tk.Entry(window)
+
+label2 = tk.Label(window, text="عدد دوم:")
+entry2 = tk.Entry(window)
+
+label_op = tk.Label(window, text="عملگر (+ - * /):")
+operator = tk.Entry(window)
+
+calc_button = tk.Button(window, text="محاسبه", command=calculate)
+result_label = tk.Label(window, text="نتیجه: ", fg="blue")
+
+# قرار دادن ویجت‌ها در پنجره
+label1.pack()
+entry1.pack()
+
+label2.pack()
+entry2.pack()
+
+label_op.pack()
+operator.pack()
+
+calc_button.pack(pady=10)
+result_label.pack()
+
+# اجرای برنامه
+window.mainloop()
+```
+::::::

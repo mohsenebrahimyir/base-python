@@ -1,6 +1,67 @@
 # متغیرها، عبارات و دستورات {#variables-expressions-commands}
 
-برخی دستورات پایتون شامل مقادیری است که مجدداً دراثنای برنامه، برنامه‌نویس
+## مقدار {#value}
+
+برای مشخص کردن نوع مقدار از تابع 
+[`type()`]{dir=ltr} استفاده می‌کنیم.
+مقادیری که در پایتون استفاده می‌شوند به صورت زیر هستند:
+
+- رشته‌ها (strings)
+
+```python
+type("Mohsen")
+```
+```output
+<class 'str'>
+```
+
+- عدد صحیح (integers)
+
+```python
+type(3)
+```
+```output
+<class 'int'>
+```
+
+- عدد اعشاری (floats)
+
+```python
+type(3.14)
+```
+```output
+<class 'float'>
+```
+
+- بولی‌ها (booleans)
+
+عبارت بولی
+[(Boolean expressions)]{dir=ltr}
+عبارتی است که نتیجه‌ی آن درستی
+[(`True`)]{dir=ltr}
+یا نادرستی 
+[(`False`)]{dir=ltr} 
+است.
+
+```python
+type(True)
+```
+```output
+<class 'bool'>
+```
+
+```python
+type(False)
+```
+```output
+<class 'bool'>
+```
+
+- ...
+
+## متغیر {#variable}
+
+برخی دستورات پایتون شامل مقادیری است که مجدداً درون برنامه، برنامه‌نویس
  به آن نیاز خواهد داشت. 
  بنابراین ما به عنوان برنامه‌نویس می‌بایست یک نام نمادین برای این مقادیر تعریف کنیم 
  که در وقت لازم با این نام تعریف شده، پایتون را متوجه استفاده از آن مقدار موردنظر 
@@ -41,6 +102,79 @@ print(y)
 `y` 
 صرفاً برای مشاهده مقادیر ذخیره شده در متغیرهای بکار رفته در پرانتز می‌باشد. 
 
+
+::: {.remark} :::
+کاراکترهای مجاز برای متغیرها به صورت `A-Z`, `a-z`, `0-9` و `_` است.
+::::::
+
+::: {.remark} :::
+
+<details>
+<summary>
+نام متغیرها (بیشتر بدانید)
+</summary>
+
+```python
+Variable_25 = "Salam" 
+```
+
+- `lowercase`
+
+```python
+thisisalowercase = "value" 
+```
+
+- `snake_case` 
+
+```python
+this_is_a_snake_case_variable = "value"
+```
+
+- `camelCase`
+
+```python
+thisIsACamelCaseVarible = "value"
+```
+
+- `PascalCase`
+
+```python
+ThisIsPascalCaseVariable = "value"
+```
+
+- `UPPERCASE`
+
+```python
+THISISAUPPERCASEVARIABLE = "value"
+```
+
+- `kebab-case`
+
+```python
+this-is-a-kebab-case-variable = "value"
+```
+```output
+  File "<stdin>", line 1
+    this-is-a-kebab-case-variable = "value"
+         ^^
+SyntaxError: invalid syntax
+```
+
+::: {.remark}
+معمولا از ترکیب 
+`UPPERCASE`
+و
+`kebab-case`
+برای متغیرهای مسیر و فایل‌ها استفاده می‌شود.
+
+```python
+PATH_OR_FILE ="this-is-a-kebab-case-path/filename"
+```
+:::
+</details>
+:::::::
+
+
 گرفتن ورودی از کاربر به صورت زیر است
 
 ```python
@@ -63,16 +197,11 @@ Enter your age: 30
 You are 30 years old.
 ```
 
-## عبارات بولی {#boolean-expressions}
+## عملگرهای مقایسه‌ای {#comparison-operators}
 
-عبارت بولی
-[(Boolean expressions)]{dir=ltr}
-عبارتی است که یا درست یا نادرست است. 
-عملگر`==` برای مقایسه دو عملوند بکار می‌رود و نتیجه آن درستی 
-[(`True`)]{dir=ltr}
-یا نادرستی 
-[(`False`)]{dir=ltr} 
-نتیجه این ارزیابی را نشان می‌دهد:
+برای مقایسه دو متغیر از عبارات مقایسه‌ای زیر استفاده می‌شود:
+
+- مساوی [equal (`==`)]{dir=ltr} 
 
 ```python
 5 == 5
@@ -88,20 +217,118 @@ True
 False
 ```
 
-عملگر
-`==`
-یکی از عملگرهای مقایسه‌ای است، سایر عملگرها عبارتند از:
-
+- نامساوی [not equal (`!=`)]{dir=ltr} 
 
 ```python
-x != y        # x is not equal to y
-x > y         # x is greater than y
-x < y         # x is less than y
-x >= y        # x is greater than or equal to y
-x <= y        # x is less than or equal to y
-x is y        # x is the same as y
-x is not y    # x is not the same as y
+5 != 5
 ```
+```output
+False
+```
+
+```python
+5 != 6
+```
+```output
+True
+```
+
+- بزرگتر [greater (`>`)]{dir=ltr} 
+
+```python
+5 > 4
+```
+```output
+True
+```
+
+```python
+5 > 5
+```
+```output
+False
+```
+- کوچکتر [less (`<`)]{dir=ltr} 
+
+```python
+4 < 5
+```
+```output
+True
+```
+
+```python
+5 < 5
+```
+```output
+False
+```
+- بزرگتر یا مساوی [greater or equal (`>=`)]{dir=ltr} 
+
+```python
+5 >= 4
+```
+```output
+True
+```
+
+```python
+5 >= 5
+```
+```output
+True
+```
+
+```python
+5 >= 6
+```
+```output
+False
+```
+
+- کوچکتر از [less or equal (`<=`)]{dir=ltr} 
+
+```python
+4 <= 5
+```
+```output
+True
+```
+
+```python
+5 <= 5
+```
+```output
+True
+```
+
+```python
+6 <= 5
+```
+```output
+False
+```
+
+
+::: {.remark} :::
+
+برای مقایسه رفرسه‌ی متغیرها از عبارات مقایسه‌ای زیر استفاده می‌شود.
+
+```python
+3 is 3.0
+```
+```output
+False
+```
+
+```python
+3 is not 3.0
+```
+```output
+True
+```
+:::
+
 
 ## عملگرهای منطقی {#logical-operators}
 
@@ -144,6 +371,7 @@ True
 <summary>
 از کاربر نام و سن را بگیرد و نمایش دهد
 </summary>
+
 ```python
 # دریافت نام از کاربر
 name = input("نام خود را وارد کنید: ")
@@ -163,6 +391,7 @@ print("سن:", age)
 <summary>
 یک ماشین‌ حساب ساده برای جمع و تفریق بنویسید.
 </summary>
+
 ```python
 # این برنامه جمع دو عدد را انجام می‌دهد
 
@@ -175,13 +404,13 @@ num2 = input("عدد دوم را وارد کن: ")
 num2 = float(num2)  # تبدیل به عدد اعشاری
 
 # انجام جمع
-sum = num1 + num2
+add = num1 + num2
 # انجام تفریق
-minus = num1 - num2
+subtract = num1 - num2
 
 # نمایش نتیجه
-print("نتیجه جمع =", sum)
-print("نتیجه تفریق =", minus)
+print("نتیجه جمع =", add)
+print("نتیجه تفریق =", subtract)
 ```
 
 آیا میتونید برای ضرب و تقیسم هم بنویسید؟
@@ -191,5 +420,101 @@ print("نتیجه تفریق =", minus)
 ::: {.exercise} :::
 <details>
 <summary>
-یک برنامه بنویسید که دو عدد بگیرد و بزرگی عدد اول را بررسی کند.
-‍
+دو عدد بگیرد و بزرگی عدد اول را بررسی کند.
+‍</summary>
+
+```python
+# دریافت عدد اول از کاربر
+num1 = input("عدد اول را وارد کن: ")
+num1 = float(num1)  # تبدیل به عدد اعشاری
+
+# دریافت عدد دوم از کاربر
+num2 = input("عدد دوم را وارد کن: ")
+num2 = float(num2)  # تبدیل به عدد اعشاری 
+
+# بزرگی عدد اول
+result = num1 > num2
+
+# نمایش نتیجه
+print("Is", num1,"greater than", num2, "? ", result)
+```
+</details>
+::::::
+
+## پروژه {#project}
+
+::: {.exercise} :::
+به کد زیر نگاه کنید که یک ماشین حساب ساده است و ببینید کدام مطالبی که توی این بخش گفته شده استفاده شده.
+
+
+```python
+# وارد کردن پکیج های مورد نیاز
+import tkinter as tk
+
+
+# تابع برای محاسبه نتیجه بر اساس عملگر
+def calculate():
+    try:
+        num1 = float(entry1.get())  # گرفتن عدد اول
+        num2 = float(entry2.get())  # گرفتن عدد دوم
+        op = operator.get()  # گرفتن عملگر
+
+        # بررسی نوع عملگر با شرط‌ها
+        if op == "+":
+            result = num1 + num2
+        elif op == "-":
+            result = num1 - num2
+        elif op == "*":
+            result = num1 * num2
+        elif op == "/":
+            if num2 == 0:
+                result_label.config(text="خطا: تقسیم بر صفر!")
+                return
+            result = num1 / num2
+        else:
+            result_label.config(text="عملگر نامعتبر است")
+            return
+
+        # نمایش نتیجه
+        result_label.config(text=f"نتیجه: {result}")
+
+    except ValueError:
+        # خطا در صورت وارد کردن عدد نامعتبر
+        result_label.config(text="لطفاً فقط عدد وارد کنید")
+
+
+# ساخت پنجره اصلی
+window = tk.Tk()
+window.title("ماشین حساب ساده")
+window.geometry("300x250")
+
+# ساخت ویجت‌ها
+label1 = tk.Label(window, text="عدد اول:")
+entry1 = tk.Entry(window)
+
+label2 = tk.Label(window, text="عدد دوم:")
+entry2 = tk.Entry(window)
+
+label_op = tk.Label(window, text="عملگر (+ - * /):")
+operator = tk.Entry(window)
+
+calc_button = tk.Button(window, text="محاسبه", command=calculate)
+result_label = tk.Label(window, text="نتیجه: ", fg="blue")
+
+# قرار دادن ویجت‌ها در پنجره
+label1.pack()
+entry1.pack()
+
+label2.pack()
+entry2.pack()
+
+label_op.pack()
+operator.pack()
+
+calc_button.pack(pady=10)
+result_label.pack()
+
+# اجرای برنامه
+window.mainloop()
+```
+::::::
