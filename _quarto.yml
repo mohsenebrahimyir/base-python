@@ -18,7 +18,7 @@ book:
 
   page-footer:
     left:  |
-      <a href="https://mohsenebrahimyir.github.io/base-python/index.html">مبانی پایتون</a>
+      <a href="./index.html">مبانی پایتون</a>
     right: |
       <a href="https://mohsenebrahimy.ir/">محسن ابراهیمی</a>
 
