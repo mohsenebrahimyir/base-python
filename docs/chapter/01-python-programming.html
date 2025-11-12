@@ -135,7 +135,6 @@ div.csl-indent {
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&amp;display=swap">
 <link rel="stylesheet" href="../assets/css/rtl-style.css">
-<link rel="stylesheet" href="../assets/css/termynal.css">
 <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 
@@ -221,17 +220,17 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/06-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  <a href="../chapter/06-files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/07-files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
+  <a href="../chapter/07-lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/08-lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌ها</span></a>
+  <a href="../chapter/08-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -252,6 +251,11 @@ div.csl-indent {
   <ul>
   <li><a href="#نصب-پایتون-و-اجرای-کد" id="toc-نصب-پایتون-و-اجرای-کد" class="nav-link active" data-scroll-target="#نصب-پایتون-و-اجرای-کد">نصب پایتون و اجرای کد</a></li>
   <li><a href="#نصب-ide" id="toc-نصب-ide" class="nav-link" data-scroll-target="#نصب-ide">نصب IDE</a></li>
+  <li><a href="#آشنایی-با-کیبورد" id="toc-آشنایی-با-کیبورد" class="nav-link" data-scroll-target="#آشنایی-با-کیبورد">آشنایی با کیبورد</a>
+  <ul class="collapse">
+  <li><a href="#کلیدهای-پرکاربرد-در-برنامهنویسی" id="toc-کلیدهای-پرکاربرد-در-برنامهنویسی" class="nav-link" data-scroll-target="#کلیدهای-پرکاربرد-در-برنامهنویسی">کلیدهای پرکاربرد در برنامه‌نویسی</a></li>
+  <li><a href="#علامتهای-مهم-در-پایتون" id="toc-علامتهای-مهم-در-پایتون" class="nav-link" data-scroll-target="#علامتهای-مهم-در-پایتون">علامت‌های مهم در پایتون</a></li>
+  </ul></li>
   <li><a href="#interpreter-and-compiler" id="toc-interpreter-and-compiler" class="nav-link" data-scroll-target="#interpreter-and-compiler">مترجم و کامپایلر</a></li>
   <li><a href="#سایتهای-مفید" id="toc-سایتهای-مفید" class="nav-link" data-scroll-target="#سایتهای-مفید">سایت‌های مفید</a></li>
   <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
@@ -276,7 +280,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2025-07-28</p>
+      <p class="date-modified">2025-11-12</p>
     </div>
   </div>
     
@@ -364,6 +368,42 @@ div.csl-indent {
 <li>نصب <strong>VSCode</strong> از <strong><a href="https://code.visualstudio.com/" class="uri">https://code.visualstudio.com/</a></strong></li>
 <li>نصب <span dir="ltr"><strong>Jupyter</strong></span> از <strong><a href="https://jupyter.org" class="uri">https://jupyter.org</a></strong></li>
 </ul>
+</section>
+<section id="آشنایی-با-کیبورد" class="level2">
+<h2 class="anchored" data-anchor-id="آشنایی-با-کیبورد">آشنایی با کیبورد</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/img/keyboard.jpg" class="img-fluid figure-img"></p>
+<figcaption>کیبورد</figcaption>
+</figure>
+</div>
+<section id="کلیدهای-پرکاربرد-در-برنامهنویسی" class="level3">
+<h3 class="anchored" data-anchor-id="کلیدهای-پرکاربرد-در-برنامهنویسی">کلیدهای پرکاربرد در برنامه‌نویسی</h3>
+<ul>
+<li><span dir="ltr"><code>Enter</code></span> برای رفتن به خط بعدی</li>
+<li><span dir="ltr"><code>Tab</code></span> برای فاصله دادن در ابتدای خط (indent)</li>
+<li><span dir="ltr"><code>Backspace</code> و <code>Delete</code></span> برای پاک کردن حروف</li>
+<li><span dir="ltr"><code>Shift</code></span> برای نوشتن حروف بزرگ یا علامت‌های بالای دکمه‌ها</li>
+<li><span dir="ltr"><code>Ctrl + S</code></span> برای ذخیره کردن فایل</li>
+<li><span dir="ltr"><code>Ctrl + Z</code> و <code>Ctrl + Y</code></span> برای برگردوندن یا لغو تغییرات</li>
+<li><span dir="ltr"><code>Ctrl + X</code> و <code>Ctrl + C</code> و <code>Ctrl + V</code></span> برای کات و کپی و پیست کردن کد</li>
+<li><span dir="ltr"><code>Ctrl + /</code></span> برای کامنت کردن خط (در بعضی ادیتورها)</li>
+</ul>
+</section>
+<section id="علامتهای-مهم-در-پایتون" class="level3">
+<h3 class="anchored" data-anchor-id="علامتهای-مهم-در-پایتون">علامت‌های مهم در پایتون</h3>
+<ul>
+<li><code>:</code> دو نقطه</li>
+<li><code>()</code> پرانتز</li>
+<li><code>[]</code> براکت</li>
+<li><code>{}</code> آکولاد (در زبان‌های دیگه)</li>
+<li><code>"</code> و <code>'</code> کوتیشن</li>
+<li><code>=</code> مساوی</li>
+<li><span dir="ltr"><code>+</code> <code>-</code> <code>*</code> <code>/</code></span> عملگرها</li>
+<li><code>#</code> علامت کامنت</li>
+<li><code>\</code> بک‌اسلش</li>
+</ul>
+</section>
 </section>
 <section id="interpreter-and-compiler" class="level2">
 <h2 class="anchored" data-anchor-id="interpreter-and-compiler">مترجم و کامپایلر</h2>

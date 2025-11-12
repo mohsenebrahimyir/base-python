@@ -164,7 +164,6 @@ window.Quarto = {
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&amp;display=swap">
 <link rel="stylesheet" href="assets/css/rtl-style.css">
-<link rel="stylesheet" href="assets/css/termynal.css">
 <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
@@ -250,17 +249,17 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/06-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  <a href="./chapter/06-files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/07-files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
+  <a href="./chapter/07-lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/08-lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌ها</span></a>
+  <a href="./chapter/08-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -308,7 +307,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2025-07-28</p>
+      <p class="date-modified">2025-11-12</p>
     </div>
   </div>
     
@@ -665,7 +664,7 @@ x(t) = \frac{1}{2}at^2 + v_0t + x_0
 <ul>
 <li>استفاده از <code>SymPy</code></li>
 </ul>
-<div id="47892e37" class="cell" data-execution_count="1">
+<div id="a1ecd974" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install sympy</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy <span class="im">import</span> <span class="op">*</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -674,7 +673,7 @@ x(t) = \frac{1}{2}at^2 + v_0t + x_0
 <ul>
 <li>تعریف متغیرها</li>
 </ul>
-<div id="4c9e4b56" class="cell" data-execution_count="2">
+<div id="0ce58bf4" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> symbols(<span class="st">"a"</span>)  <span class="co"># شتاب</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>v_0 <span class="op">=</span> symbols(<span class="st">"v_0"</span>)  <span class="co"># سرعت اولیه</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>x_0 <span class="op">=</span> symbols(<span class="st">"x_0"</span>)</span>
@@ -687,7 +686,7 @@ x(t) = \frac{1}{2}at^2 + v_0t + x_0
 <ul>
 <li>معادله مکان بر حسب زمان</li>
 </ul>
-<div id="fef80d11" class="cell" data-execution_count="3">
+<div id="008a19cb" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>x_eq <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> <span class="dv">2</span> <span class="op">*</span> a <span class="op">*</span> t<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> v_0 <span class="op">*</span> t <span class="op">+</span> x_0</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>display(x_eq)</span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display cell-output-markdown">
@@ -697,7 +696,7 @@ x(t) = \frac{1}{2}at^2 + v_0t + x_0
 <ul>
 <li>داده‌های مسئله</li>
 </ul>
-<div id="17e3e7a6" class="cell" data-execution_count="4">
+<div id="d748bb71" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>v0 <span class="op">=</span> <span class="dv">10</span>  <span class="co"># سرعت اولیه (m/s)</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">2</span>    <span class="co"># شتاب (m/s^2)</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>x0 <span class="op">=</span> <span class="dv">5</span>   <span class="co"># مکان اولیه (m)</span></span>
@@ -707,7 +706,7 @@ x(t) = \frac{1}{2}at^2 + v_0t + x_0
 <ul>
 <li>معادله مکان بر حسب زمان</li>
 </ul>
-<div id="75e43f42" class="cell" data-execution_count="5">
+<div id="043528e0" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>x_eq <span class="op">=</span> (<span class="dv">1</span> <span class="op">/</span> <span class="dv">2</span>) <span class="op">*</span> a <span class="op">*</span> t<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> v0 <span class="op">*</span> t <span class="op">+</span> x0</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>display(x_eq)</span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display cell-output-markdown">
@@ -717,7 +716,7 @@ x(t) = \frac{1}{2}at^2 + v_0t + x_0
 <ul>
 <li>مکان در لحظه t = 4</li>
 </ul>
-<div id="d475ff6e" class="cell" data-execution_count="6">
+<div id="bc546e4e" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>t_value <span class="op">=</span> <span class="dv">4</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>x_at_t <span class="op">=</span> x_eq.subs(t, t_value)</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>display(x_at_t)</span></code><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -725,7 +724,7 @@ x(t) = \frac{1}{2}at^2 + v_0t + x_0
 <p><span class="math inline">\(\displaystyle 61.0\)</span></p>
 </div>
 </div>
-<div id="19fd21c9" class="cell" data-fig.show="true" data-execution_count="7">
+<div id="9f991070" class="cell" data-fig.show="true" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install matplotlib</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install numpy</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>

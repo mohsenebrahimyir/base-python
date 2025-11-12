@@ -38,13 +38,11 @@ book:
     - chapter/03-condition-statement.qmd
     - chapter/04-functions.qmd
     - chapter/05-iteration.qmd
-    - chapter/06-string.qmd
-    - chapter/07-files.qmd
-    - chapter/08-lists.qmd
-    # - chapter/09-dictionaries.qmd
+    - chapter/06-files.qmd
+    - chapter/07-lists.qmd
+    - chapter/08-string.qmd
     # - chapter/10-classes.qmd
     # - chapter/11-modules.qmd
-    # - chapter/12-exceptions.qmd
 
 
     - references.qmd
@@ -74,7 +72,6 @@ format:
     css:
       - https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&display=swap
       - assets/css/rtl-style.css
-      - assets/css/termynal.css
       - assets/css/custom.css
 
     code-link: true

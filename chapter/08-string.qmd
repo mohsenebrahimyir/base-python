@@ -1,6 +1,60 @@
 # رشته‌ها {#string}
 
 
+## لیست‌ها و رشته‌ها {#lists-strings}
+
+
+یک رشته، دنباله‌ای از کاراکترهاست و یک لیست دنباله‌ای از عناصر. 
+اما یک لیست از کاراکترها، همانند یک رشته نیست. برای تبدیل یک رشته به یک لیست، 
+می‌توان از متد یا تابع 
+[`list(string_name)`]{dir=ltr} 
+استفاده کرد:
+
+```python
+s = 'spam'
+t = list(s)
+print(t)
+```
+```output
+['s', 'p', 'a', 'm']
+```
+
+اما اگر بخواهیم رشته‌ای از کلمات را به لیست تبدیل کنیم، چه باید کرد:
+
+
+```python
+s = 'pining for the fjords'
+t = s.split()
+print(t)
+```
+```output
+['pining', 'for', 'the', 'fjords']
+```
+
+و یا مثالی دیگر که در آن با کاربرد توابع 
+[`split(delimiter)`]{dir=ltr} و
+[`join(list_name)`]{dir=ltr} 
+آشنا می‌شویم:
+
+
+```python
+s = 'spam-spam-spam'
+delimiter = '-'
+s.split(delimiter)
+```
+```output
+['spam', 'spam', 'spam']
+```
+
+```python
+t = ['pining', 'for', 'the', 'fjords']
+delimiter = ' '
+delimiter.join(t)
+```
+```output
+'pining for the fjords'
+```
+
 ## محاسبه طول متن {#string-length}
 
 

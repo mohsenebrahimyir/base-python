@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "مبانی پایتون",
     "section": "",
-    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل mohsenebrahimy.ir@gmail.com برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۴-۰۵-۰۶ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: https://mohsenebrahimyir.github.io/base-python/\n\n\n\n\n\n\n\nهشدار\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
+    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل mohsenebrahimy.ir@gmail.com برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۴-۰۸-۲۱ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: https://mohsenebrahimyir.github.io/base-python/\n\n\n\n\n\n\n\nهشدار\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
     "crumbs": [
       "پیش گفتار"
     ]
@@ -75,6 +75,16 @@
     "title": "برنامه نویسی پایتون",
     "section": "نصب IDE",
     "text": "نصب IDE\n\n\n\nنظر سنجی ۲۰۲۳ از توسعه دهندگان درباره محیط توسعه یکپارچه [1]\n\n\nبرای نوشتن، اجرا و خروجی گرفتن بهتر می‌توانید از یک نرم افزار IDE (Integrated Development Environment) استفاده کنید.\n\nنصب VSCode از https://code.visualstudio.com/\nنصب Jupyter از https://jupyter.org",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>برنامه نویسی پایتون</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/01-python-programming.html#آشنایی-با-کیبورد",
+    "href": "chapter/01-python-programming.html#آشنایی-با-کیبورد",
+    "title": "برنامه نویسی پایتون",
+    "section": "آشنایی با کیبورد",
+    "text": "آشنایی با کیبورد\n\n\n\nکیبورد\n\n\n\nکلیدهای پرکاربرد در برنامه‌نویسی\n\nEnter برای رفتن به خط بعدی\nTab برای فاصله دادن در ابتدای خط (indent)\nBackspace و Delete برای پاک کردن حروف\nShift برای نوشتن حروف بزرگ یا علامت‌های بالای دکمه‌ها\nCtrl + S برای ذخیره کردن فایل\nCtrl + Z و Ctrl + Y برای برگردوندن یا لغو تغییرات\nCtrl + X و Ctrl + C و Ctrl + V برای کات و کپی و پیست کردن کد\nCtrl + / برای کامنت کردن خط (در بعضی ادیتورها)\n\n\n\nعلامت‌های مهم در پایتون\n\n: دو نقطه\n() پرانتز\n[] براکت\n{} آکولاد (در زبان‌های دیگه)\n\" و ' کوتیشن\n= مساوی\n+ - * / عملگرها\n# علامت کامنت\n\\ بک‌اسلش",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>برنامه نویسی پایتون</span>"
     ]
@@ -410,203 +420,203 @@
     ]
   },
   {
-    "objectID": "chapter/06-string.html",
-    "href": "chapter/06-string.html",
-    "title": "رشته‌ها",
-    "section": "",
-    "text": "محاسبه طول متن\nlen یک تابع داخلی در پایتون است که تعداد کاراکترهای یک رشته را برمی‌گرداند.\nحال اگر این عدد را به عنوان اندیس متغیر رشته استفاده کنیم، آخرین کاراکتر رشته را بدست می‌آوریم:\nدلیل این تفریق این است که شماره اندیس اولین کاراکتر رشته، با صفر شروع می‌شود.\nبنابراین برای دستیابی به موقعیت‌های دیگر یک رشته، می‌توان اندیس‌ها را تغییر داد:",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>رشته‌ها</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/06-string.html#string-length",
-    "href": "chapter/06-string.html#string-length",
-    "title": "رشته‌ها",
-    "section": "",
-    "text": "fruit = 'banana'\nlength = len(fruit)\n\nlast = fruit[length - 1]\nprint(last)\na\n\n\nfruit = 'banana'\nfruit[:3]\nana",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>رشته‌ها</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/06-string.html#immutable-string",
-    "href": "chapter/06-string.html#immutable-string",
-    "title": "رشته‌ها",
-    "section": "رشته‌ها تغییرناپذیرند",
-    "text": "رشته‌ها تغییرناپذیرند\nدرعین حال اینکه می‌توان به همه کاراکترهای یک رشته دست پیدا کرد، اما نمی‌توان کاراکتر دیگری را جایگزین یکی از کاراکترهای رشته کرد:\ngreeting = 'Hello, world!'\ngreeting[0] = 'J'\nاگر این دستور را اجرا کنید، با خطا مواجه می‌شوید، چراکه رشته‌ها قابل تغییر نیستند.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>رشته‌ها</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/06-string.html#in-operation",
-    "href": "chapter/06-string.html#in-operation",
-    "title": "رشته‌ها",
-    "section": "عملگر in",
-    "text": "عملگر in\nگاربرد این عملگر زمانی است که می‌خواهیم بدانیم آیا یک رشته حاوی یک رشته و یا کاراکتر خاصی هست یا خیر:\n'a' in 'banana'\nو یا این حالت:\n'seed' in 'banana'\nهمچنین با استفاده از عملگرهای &lt; و &gt; می‌توانیم رشته‌ها را از نظر ترتیب حروف الفبا با یکدیگر مقایسه کنیم:\nif word &lt; 'banana':\n  print('Your word,' + word + ', comes before banana.')\nelif word &gt; 'banana':\n  print('Your word,' + word + ', comes after banana.')\nelse:\n  print('All right, bananas.')",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>رشته‌ها</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/06-string.html#string-methods",
-    "href": "chapter/06-string.html#string-methods",
-    "title": "رشته‌ها",
-    "section": "متدهای رشته‌ای",
-    "text": "متدهای رشته‌ای\n]\nپایتون تابعی به نام dir دارد که متدهای مربوط به یک شیئ را لیست می‌کند و همچنین با استفاده از type می‌توانیم نوع شیئ را تشخیص دهیم:\nstuff = 'Hello world'\ntype(stuff)\n&lt;class 'str'&gt;\ndir(stuff)\n['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']\nروش دیگر برای یافتن موقعیت یک زیررشته و یا یک کاراکتر خاص در یک رشته اصلی، استفاده از متد [find]{dir-ltr} می‌باشد:\nword = 'banana'\nindex = word.find('a')\nprint(index)\n1\nخوب است با متدهای strip و startwith و\nlower\nبرای آشنایی بیشتر با متدهای رشته‌ای، در برنامه پایتون خودمان تمرین کنیم.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>رشته‌ها</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/06-string.html#format-operator",
-    "href": "chapter/06-string.html#format-operator",
-    "title": "رشته‌ها",
-    "section": "عملگر فرمت",
-    "text": "عملگر فرمت\nعملگر format %، به ما اجازه می‌دهد تا رشته‌ها را بسازیم و بخش‌هایی از رشته‌ها را با داده‌های ذخیره شده در متغیرها جایگزین کنیم:\ncamels = 42\n'%d' % camels\n'42'\nدر مثال بالا توانستیم حروف 4 و 2 را به عدد 42 تبدیل کنیم.\nd مخفف “اعشاری” است. و یا این مثال:\ncamels = 42\n'I have spotted %d camels.' % camels\n'I have spotted 42 camels.'\nبه همین ترتیب، عملگرهای %g و %s وظیفه قالب‌بندی یک عدد ممیز شناور و قالب‌بندی یک رشته را به عهده دارند:\nfmt_string = 'In %d years I have spotted %g %s.' % (3, 0.1, 'camels')\n\nprint(fmt_string)\n'In 3 years I have spotted 0.1 camels.'\nیک شکل جدید از قالب رشته‌ای در نسخه‌های جدید پایتون استفاده از f'' یا همان f-string است.\nage = 27\nname = \"Mohsen\"\n\ntext = f\"Mr {name} is {age} years old.\"\nprint(text)\nMr Mohsen is 27 years old.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>رشته‌ها</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/07-files.html",
-    "href": "chapter/07-files.html",
+    "objectID": "chapter/06-files.html",
+    "href": "chapter/06-files.html",
     "title": "فایل‌ها",
     "section": "",
     "text": "بازکردن فایل\nممکن است داده‌های ما از قبل در فایلی موجود باشد (دانلود فایل) ، در اینصورت باید بتوانیم آن را باز کنیم:\nاگر باز کردن موفقیت‌آمیز باشد، سیستم‌عامل یک handle برای فایل به ما برمی‌گرداند. handle، داده‌های واقعی موجود در فایل نیست، اما در عوض یک handle است که می‌توانیم برای خواندن داده‌ها از آن استفاده کنیم. اگر فایل درخواستی وجود داشته باشد و مجوزهای لازم برای خواندن فایل را داشته باشیم، به ما یک handle داده می شود.\nاما چنانچه فایل وجود نداشته باشد، اجرای این دستور ناموفق خواهد بود و handle نخواهیم داشت:",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>فایل‌ها</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>فایل‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/07-files.html#open-file",
-    "href": "chapter/07-files.html#open-file",
+    "objectID": "chapter/06-files.html#open-file",
+    "href": "chapter/06-files.html#open-file",
     "title": "فایل‌ها",
     "section": "",
     "text": "fhand = open('mbox.txt')\nprint(fhand)\n&lt;_io.TextIOWrapper name='mbox.txt' mode='r' encoding='UTF-8'&gt;\n\n\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nFileNotFoundError: [Errno 2] No such file or directory: 'mbox.txt'",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>فایل‌ها</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>فایل‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/07-files.html#read-file",
-    "href": "chapter/07-files.html#read-file",
+    "objectID": "chapter/06-files.html#read-file",
+    "href": "chapter/06-files.html#read-file",
     "title": "فایل‌ها",
     "section": "خواندن فایل",
     "text": "خواندن فایل\nبا بازکردن فایل، تنها یک handle در اختیار خواهیم داشت تا بتوانیم با استفاده از آن با فایل موردنظر کار کنیم. بنابریان برای خواندن فایل، می‌بایست با یک دستور حلقه for ساده، اقدام به خواندن فایل کنیم:\nfhand = open('mbox.txt')\ncount = 0\nfor line in fhand:\n    count = count + 1\nprint('Line Count:', count)\nLine Count: 7\nبا این دستورات، ما سعی کرده‌ایم که فایل را خط به خط بخوانیم. اما این طریقه خواندن برای فایل‌های بزرگ مورد استفاده قرار می‌گیرد. اگر فایلی داشته باشیم و بدانیم حجم آن کم است، می‌توانیم از دستورات زیر استفاده کنیم:\nfhand = open('mbox.txt')\ninp = fhand.read()\nprint(len(inp))\n334\nprint(inp[:20])\nFrom stephen.marquar\nدر این حالت بهتر است رشته خوانده شده از فایل را در یک متغیر ذخیره کنیم، چراکه با خواندن فایل بعدی به همین روش، محتویات فایل قبلی را از دست خواهیم داد، به همین دلیل ما از متغیر inp در دستورات فوق استفاده کردیم.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>فایل‌ها</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>فایل‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/07-files.html#search-in-file",
-    "href": "chapter/07-files.html#search-in-file",
+    "objectID": "chapter/06-files.html#search-in-file",
+    "href": "chapter/06-files.html#search-in-file",
     "title": "فایل‌ها",
     "section": "جستجو در فایل",
     "text": "جستجو در فایل\nاگر در فایل محتویات داده به دنبال کلمه و یا داده خاصی هستیم، می‌توانیم آن را در فایلی که از قبل آن را باز کرده و خوانده‌ایم، جستجو کنیم:\nfhand = open('mbox.txt')\ncount = 0\nfor line in fhand:\n    line = line.rstrip()\n    if line.startswith('From:'):\n        print(line)\nFrom: stephen.marquard@uct.ac.za\nدر این مثال، ما به دنبال کلمه 'From' هستیم.\nما با استفاده از تابع rstrip() فضای خالی را در سمت راست رشته موجود در فایل، حذف کرده‌ایم.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>فایل‌ها</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>فایل‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/07-files.html#select-file",
-    "href": "chapter/07-files.html#select-file",
+    "objectID": "chapter/06-files.html#select-file",
+    "href": "chapter/06-files.html#select-file",
     "title": "فایل‌ها",
     "section": "انتخاب نام فایل",
     "text": "انتخاب نام فایل\nاین مسئله برای ما پیش آمده که برای باز کردن یک فایل، همیشه نام و آدرس دقیق آن را نمی‌دانیم و نیاز است تا بتوانیم در مرورگر سیستم فایل خود، آن را جستجو کنیم. به این منظور، با استفاده از قطعه کد زیر، این امکان را به کاربر می‌دهیم که فایل موردنظر خود را ابتدا جستجو و سپس باز کند. در اینصورت ما دیگر نام فایل را بصورت مستقیم در کد خود نخواهیم داشت:\nfname = input('Enter the file name: ')\nfhand = open(fname)\ncount = 0\nfor line in fhand:\n    if line.startswith('Subject:'):\n        count = count + 1\nprint('There were', count, 'subject lines in', fname)\nEnter the file name: mbox.txt\nThere were 1 subject lines in mbox.txt",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>فایل‌ها</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>فایل‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/07-files.html#try-except-open-file",
-    "href": "chapter/07-files.html#try-except-open-file",
+    "objectID": "chapter/06-files.html#try-except-open-file",
+    "href": "chapter/06-files.html#try-except-open-file",
     "title": "فایل‌ها",
     "section": "استفاده از try، except و open",
     "text": "استفاده از try، except و open\nاز کد قبل به خاطر داریم که ما به کاربر اجازه دادیم که نام فایل حود را برای بازکردن، انتخاب نماید. حال اگر کاربر ما چیزی را تایپ کند که نام فایل نیست چه؟ بنابراین باید تمهیداتی برای این کار بیاندیشیم، چرا که گذشته از اینکه بازکردن یک فایل غیرمرتبط برنامه را با خطا مواجه می‌کند، ممکن است فایلی که کاربر آن را انتخاب کرده، عمداً و یا سهواً برای برنامه ما ضرر داشته باشد. بنابراین ما با استفاده از دستورات try ، except و open این اتفاق را مدیریت می‌کنیم:\nfname = input('Enter the file name: ')\ntry:\n    fhand = open(fname)\nexcept:\n    print('File cannot be opened:', fname)\n    exit()\ncount = 0\nfor line in fhand:\n    if line.startswith('Subject:'):\n      count = count + 1\nprint('There were', count, 'subject lines in', fname)\nEnter the file name: otherfile.txt\nFile cannot be opened: otherfile.txt\nThere were 0 subject lines in otherfile.txt\nهمانطور که مشاهده می‌شود، تابع exit() درصورت اینکه کاربر چیزی غیر از فایل را درخواست داده باشد، برنامه ما از اجرا خارج می‌شود.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>فایل‌ها</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>فایل‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/07-files.html#write-file",
-    "href": "chapter/07-files.html#write-file",
+    "objectID": "chapter/06-files.html#write-file",
+    "href": "chapter/06-files.html#write-file",
     "title": "فایل‌ها",
     "section": "نوشتن در فایل",
     "text": "نوشتن در فایل\nبیشتر اوقات افراد نیاز دارند که در فایل داده خود، ویرایش انجام داده یا داده جدیدی به آن بیافزایند. بنابراین باید قادر باشند که با استفاده از دستورات لازم، این کار را انجام دهند. اما یک نکته متفاوت اینجا مطرح می‌شود، به این قطعه کد توجه کنید:\nfout = open('output.txt', 'w')\nprint(fout)\n&lt;_io.TextIOWrapper name='output.txt' mode='w' encoding='UTF-8'&gt;\nدر اینجا چنانچه فایل موردنظر وجود داشته باشد، فایل باز شده و آماده نوشتن می‌باشد: در واقع پارمتر ‘w’ این اجازه را صادر می‌کند. اما اگر فایل موجود نباشد، یک فایل جدید با نام ذکر شده، ایجاد می‌شود و آماده نوشتن خواهد بود.\nمثلاً فرض کنیم می‌خواهیم متن زیر را در فایل بنویسیم:\nThis here's the wattle\nکد لازم برای این کار، به شکل زیر خواهد بود:\nline1 = \"This here's the wattle,\\n\"\nfout.write(line1)\n24\nو درنهایت اینکه وقتی کارمان با فایلی تمام شد، می‌بایست حتماً آن را ببندیم:\nfout.close()",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>فایل‌ها</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>فایل‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/08-lists.html",
-    "href": "chapter/08-lists.html",
+    "objectID": "chapter/07-lists.html",
+    "href": "chapter/07-lists.html",
     "title": "لیست‌ها",
     "section": "",
     "text": "لیست یک دنباله است\nبرای کنارهم قرار دادن چندین داده با نوع مختلف، می‌توان از لیست استفاده کرد. یکی از راه‌های ایجاد لیست، بکاربردن براکت در تعریف آن است:\nاما همانطور که گفته بودیم، عناصر لیست می‌توانند نوع‌های متفاوت از هم داشته باشند:\nدر دو مثال قبلی؛ تعداد عناصر لیست را به این شکل محاسبه می‌کنیم:\nلیست cheeses دارای 3 عنصر است. لیست numbers دو عنصر دارد و لیست multi_types_items شامل 4 عنصر می‌شود. چراکه لیست داخلی که شامل عناصر 10 و 20 هست، در لیست اصلی، به عنوان یک عنصر و یا داده درنظرگرفته می‌شود.\nبرای تغییر مقادیر موجود در لیست، می‌بایست بتوانیم به هر داده دسترسی داشته باشیم، به این منظور از اندیس برای آدرس‌دهی استفاده می‌کنیم:\nو یا برای اینکه بدانیم داده مورد نظر ما در لیست قرار گرفته یا خیر، می‌توان از این روش استفاده کرد:\nو یا:",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>لیست‌ها</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>لیست‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/08-lists.html#a-list-is-a-sequence",
-    "href": "chapter/08-lists.html#a-list-is-a-sequence",
+    "objectID": "chapter/07-lists.html#a-list-is-a-sequence",
+    "href": "chapter/07-lists.html#a-list-is-a-sequence",
     "title": "لیست‌ها",
     "section": "",
     "text": "cheeses = ['Cheddar', 'Edam', 'Gouda']\nnumbers = [17, 123]\nempty = []\nprint(cheeses, numbers, empty)\n['Cheddar', 'Edam', 'Gouda'] [17, 123] []\n\nmulti_types_items = ['spam', 2.0, 5, [10, 20]]\n\n\n\nnumbers = [17, 123]\nnumbers[1] = 5\nprint(numbers)\n[17, 5]\n\ncheeses = ['Cheddar', 'Edam', 'Gouda']\n'Edam' in cheeses\nTrue\n\ncheeses = ['Cheddar', 'Edam', 'Gouda']\n'Brie' in cheeses\nFalse",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>لیست‌ها</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>لیست‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/08-lists.html#traversing-a-list",
-    "href": "chapter/08-lists.html#traversing-a-list",
+    "objectID": "chapter/07-lists.html#traversing-a-list",
+    "href": "chapter/07-lists.html#traversing-a-list",
     "title": "لیست‌ها",
     "section": "پیمایش در لیست",
     "text": "پیمایش در لیست\nمواقعی هست که می‌خواهیم کل یک لیست را پیمایش کنیم و داده‌های آن را در یک عملیات محاسبه‌ای و یا هرنوع عملیات دیگر، وارد سازیم، در اینصورت:\nfor cheese in cheeses:\n    print(cheese)\nCheddar\nEdam\nGouda\nاین کار بسیار ساده بود. چرا که ما تمام لیست را یکی یکی پیمایش کردیم و آن را در خروجی چاپ کردیم. اما اگر نیاز داشته باشیم که در حین پیمایش، داده‌ای از لیست را تغییر دهیم، چه روشی را باید درپیش بگیریم؟\nfor i in range(len(numbers)):\n    numbers[i] = numbers[i] * 2",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>لیست‌ها</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>لیست‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/08-lists.html#work-with-list-items",
-    "href": "chapter/08-lists.html#work-with-list-items",
+    "objectID": "chapter/07-lists.html#work-with-list-items",
+    "href": "chapter/07-lists.html#work-with-list-items",
     "title": "لیست‌ها",
     "section": "کارکردن با عناصر لیست",
     "text": "کارکردن با عناصر لیست\nدر قطعه کد زیر، به ترتیب با استفاده از عملگرهای + و * آشنا می‌شویم و سپس نحوه برش‌های مختلف لیست را یادمی‌گیریم:\na = [1, 2, 3]\nb = [4, 5, 6]\nc = a + b\nprint(c)\n[1, 2, 3, 4, 5, 6]\n[1, 2, 3] * 3\n[1, 2, 3, 1, 2, 3, 1, 2, 3]\nt = ['a', 'b', 'c', 'd', 'e', 'f']\nt[1:3]\n['b', 'c']\nt[:4]\n['a', 'b', 'c', 'd']\nt[3:]\n['d', 'e', 'f']",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>لیست‌ها</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>لیست‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/08-lists.html#list-methods",
-    "href": "chapter/08-lists.html#list-methods",
+    "objectID": "chapter/07-lists.html#list-methods",
+    "href": "chapter/07-lists.html#list-methods",
     "title": "لیست‌ها",
     "section": "متدهای لیست",
     "text": "متدهای لیست\nبرای اضافه کردن یک عنصر به انتهای لیست، می‌توانیم از متد append() استفاده کنیم:\nt = ['a', 'b', 'c']\nt.append('d')\nprint(t)\n['a', 'b', 'c', 'd']\nهمچنین متد extend() یک لیست را به عنوان آرگومان ورودی دریافت می‌کند و آن را به انتهای لیست معرفی شده، اضافه می‌کند:\nt1 = ['a', 'b', 'c']\nt2 = ['d', 'e']\nt1.extend(t2)\nprint(t1)\n['a', 'b', 'c', 'd', 'e']\nبرای مرتب کردن عناصر یک لیست، متد sort() در اختیار ماست:\nt = ['d', 'c', 'e', 'b', 'a']\nt.sort()\nprint(t)\n['a', 'b', 'c', 'd', 'e']\nاگر چنانچه خواسته باشیم عنصری را از داخل یک لیست حذف کنیم، با دانستن اندیس موقعیت آن عنصر، می‌توانیم از متد ‘pop(i)’ استفاده کنیم:\nt = ['a', 'b', 'c']\nx = t.pop(1)\nprint(t)\n['a', 'c']\nprint(x)\nb\nاگر در استفاده از دستور pop() اندیس استفاده نشود، این متد، آخرین عنصر آرایه را حذف خواهد کرد.\nبه کد زیر و نتیجه اجرای آن دقت کنید:\nt = ['a', 'b', 'c']\ndel t[1]\nprint(t)\n['a', 'c']\nبه نظر شما تفاوت استفاده از متدهای pop(i) و del list_name[i] در چیست؟\nبله، درست است که هر دو باعث حذف یک عنصر از لیست می‌شوند اما در استفاده از متد pop(i) عنصر حذف شده در اختیار ما خواهد بود. به این معنی که خروجی این متد، نمایانگر مقدار عنصر حذف شده است. اما در استفاده از دستور del list_name[i] عنصری که حذف شده دیگر در دسترس ما نخواهد بود.\nحال به این سوال فکر کنید که اگر اندیس عنصر موردنظر برای حذف کردن را ندانیم، از چه روشی می‌توانیم آن عنصر خاص را حذف کنیم؟ درواقع پایتون برای این منظور متد remove(item_value) را پیشنهاد می‌دهد که با ارسال مقدار عنصر موردنظر به عنوان آرگومان ورودی به این متد، می‌توانیم آن را از لیست حذف کنیم:\nt = ['a', 'b', 'c']\nt.remove('b')\nprint(t)\n['a', 'c']\nو یا برای حذف بیش از یک مقدار، با دانستن اندیس آن‌ها می‌توان از روش زیر استفاده کرد:\nt = ['a', 'b', 'c', 'd', 'e', 'f']\ndel t[1:5]\nprint(t)\n['a', 'f']",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>لیست‌ها</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>لیست‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/08-lists.html#important-function-for-lists",
-    "href": "chapter/08-lists.html#important-function-for-lists",
+    "objectID": "chapter/07-lists.html#important-function-for-lists",
+    "href": "chapter/07-lists.html#important-function-for-lists",
     "title": "لیست‌ها",
     "section": "برخی توابع مهم مربوط به لیست",
     "text": "برخی توابع مهم مربوط به لیست\nدر کدهای زیر نام و کاربرد برخی توابع مهم برای استفاده در لیست‌ها معرفی شده‌اند:\nnums = [3, 41, 12, 9, 74, 15]\nprint(len(nums))\n6\nprint(max(nums))\n74\nprint(min(nums))\n3\nprint(sum(nums))\n154\nprint(sum(nums)/len(nums))\n25.666666666666668",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>لیست‌ها</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>لیست‌ها</span>"
     ]
   },
   {
-    "objectID": "chapter/08-lists.html#lists-strings",
-    "href": "chapter/08-lists.html#lists-strings",
-    "title": "لیست‌ها",
-    "section": "لیست‌ها و رشته‌ها",
-    "text": "لیست‌ها و رشته‌ها\nیک رشته، دنباله‌ای از کاراکترهاست و یک لیست دنباله‌ای از عناصر. اما یک لیست از کاراکترها، همانند یک رشته نیست. برای تبدیل یک رشته به یک لیست، می‌توان از متد یا تابع list(string_name) استفاده کرد:\ns = 'spam'\nt = list(s)\nprint(t)\n['s', 'p', 'a', 'm']\nاما اگر بخواهیم رشته‌ای از کلمات را به لیست تبدیل کنیم، چه باید کرد:\ns = 'pining for the fjords'\nt = s.split()\nprint(t)\n['pining', 'for', 'the', 'fjords']\nو یا مثالی دیگر که در آن با کاربرد توابع split(delimiter) و join(list_name) آشنا می‌شویم:\ns = 'spam-spam-spam'\ndelimiter = '-'\ns.split(delimiter)\n['spam', 'spam', 'spam']\nt = ['pining', 'for', 'the', 'fjords']\ndelimiter = ' '\ndelimiter.join(t)\n'pining for the fjords'",
+    "objectID": "chapter/08-string.html",
+    "href": "chapter/08-string.html",
+    "title": "رشته‌ها",
+    "section": "",
+    "text": "لیست‌ها و رشته‌ها\nیک رشته، دنباله‌ای از کاراکترهاست و یک لیست دنباله‌ای از عناصر. اما یک لیست از کاراکترها، همانند یک رشته نیست. برای تبدیل یک رشته به یک لیست، می‌توان از متد یا تابع list(string_name) استفاده کرد:\nاما اگر بخواهیم رشته‌ای از کلمات را به لیست تبدیل کنیم، چه باید کرد:\nو یا مثالی دیگر که در آن با کاربرد توابع split(delimiter) و join(list_name) آشنا می‌شویم:",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>لیست‌ها</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>رشته‌ها</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/08-string.html#lists-strings",
+    "href": "chapter/08-string.html#lists-strings",
+    "title": "رشته‌ها",
+    "section": "",
+    "text": "s = 'spam'\nt = list(s)\nprint(t)\n['s', 'p', 'a', 'm']\n\ns = 'pining for the fjords'\nt = s.split()\nprint(t)\n['pining', 'for', 'the', 'fjords']\n\ns = 'spam-spam-spam'\ndelimiter = '-'\ns.split(delimiter)\n['spam', 'spam', 'spam']\nt = ['pining', 'for', 'the', 'fjords']\ndelimiter = ' '\ndelimiter.join(t)\n'pining for the fjords'",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>رشته‌ها</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/08-string.html#string-length",
+    "href": "chapter/08-string.html#string-length",
+    "title": "رشته‌ها",
+    "section": "محاسبه طول متن",
+    "text": "محاسبه طول متن\nlen یک تابع داخلی در پایتون است که تعداد کاراکترهای یک رشته را برمی‌گرداند.\nfruit = 'banana'\nlength = len(fruit)\nحال اگر این عدد را به عنوان اندیس متغیر رشته استفاده کنیم، آخرین کاراکتر رشته را بدست می‌آوریم:\nlast = fruit[length - 1]\nprint(last)\na\nدلیل این تفریق این است که شماره اندیس اولین کاراکتر رشته، با صفر شروع می‌شود.\nبنابراین برای دستیابی به موقعیت‌های دیگر یک رشته، می‌توان اندیس‌ها را تغییر داد:\nfruit = 'banana'\nfruit[:3]\nana",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>رشته‌ها</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/08-string.html#immutable-string",
+    "href": "chapter/08-string.html#immutable-string",
+    "title": "رشته‌ها",
+    "section": "رشته‌ها تغییرناپذیرند",
+    "text": "رشته‌ها تغییرناپذیرند\nدرعین حال اینکه می‌توان به همه کاراکترهای یک رشته دست پیدا کرد، اما نمی‌توان کاراکتر دیگری را جایگزین یکی از کاراکترهای رشته کرد:\ngreeting = 'Hello, world!'\ngreeting[0] = 'J'\nاگر این دستور را اجرا کنید، با خطا مواجه می‌شوید، چراکه رشته‌ها قابل تغییر نیستند.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>رشته‌ها</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/08-string.html#in-operation",
+    "href": "chapter/08-string.html#in-operation",
+    "title": "رشته‌ها",
+    "section": "عملگر in",
+    "text": "عملگر in\nگاربرد این عملگر زمانی است که می‌خواهیم بدانیم آیا یک رشته حاوی یک رشته و یا کاراکتر خاصی هست یا خیر:\n'a' in 'banana'\nو یا این حالت:\n'seed' in 'banana'\nهمچنین با استفاده از عملگرهای &lt; و &gt; می‌توانیم رشته‌ها را از نظر ترتیب حروف الفبا با یکدیگر مقایسه کنیم:\nif word &lt; 'banana':\n  print('Your word,' + word + ', comes before banana.')\nelif word &gt; 'banana':\n  print('Your word,' + word + ', comes after banana.')\nelse:\n  print('All right, bananas.')",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>رشته‌ها</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/08-string.html#string-methods",
+    "href": "chapter/08-string.html#string-methods",
+    "title": "رشته‌ها",
+    "section": "متدهای رشته‌ای",
+    "text": "متدهای رشته‌ای\n]\nپایتون تابعی به نام dir دارد که متدهای مربوط به یک شیئ را لیست می‌کند و همچنین با استفاده از type می‌توانیم نوع شیئ را تشخیص دهیم:\nstuff = 'Hello world'\ntype(stuff)\n&lt;class 'str'&gt;\ndir(stuff)\n['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']\nروش دیگر برای یافتن موقعیت یک زیررشته و یا یک کاراکتر خاص در یک رشته اصلی، استفاده از متد [find]{dir-ltr} می‌باشد:\nword = 'banana'\nindex = word.find('a')\nprint(index)\n1\nخوب است با متدهای strip و startwith و\nlower\nبرای آشنایی بیشتر با متدهای رشته‌ای، در برنامه پایتون خودمان تمرین کنیم.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>رشته‌ها</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/08-string.html#format-operator",
+    "href": "chapter/08-string.html#format-operator",
+    "title": "رشته‌ها",
+    "section": "عملگر فرمت",
+    "text": "عملگر فرمت\nعملگر format %، به ما اجازه می‌دهد تا رشته‌ها را بسازیم و بخش‌هایی از رشته‌ها را با داده‌های ذخیره شده در متغیرها جایگزین کنیم:\ncamels = 42\n'%d' % camels\n'42'\nدر مثال بالا توانستیم حروف 4 و 2 را به عدد 42 تبدیل کنیم.\nd مخفف “اعشاری” است. و یا این مثال:\ncamels = 42\n'I have spotted %d camels.' % camels\n'I have spotted 42 camels.'\nبه همین ترتیب، عملگرهای %g و %s وظیفه قالب‌بندی یک عدد ممیز شناور و قالب‌بندی یک رشته را به عهده دارند:\nfmt_string = 'In %d years I have spotted %g %s.' % (3, 0.1, 'camels')\n\nprint(fmt_string)\n'In 3 years I have spotted 0.1 camels.'\nیک شکل جدید از قالب رشته‌ای در نسخه‌های جدید پایتون استفاده از f'' یا همان f-string است.\nage = 27\nname = \"Mohsen\"\n\ntext = f\"Mr {name} is {age} years old.\"\nprint(text)\nMr Mohsen is 27 years old.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>رشته‌ها</span>"
     ]
   },
   {
