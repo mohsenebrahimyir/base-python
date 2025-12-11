@@ -36,8 +36,8 @@ book:
     - chapter/01-python-programming.qmd
     - chapter/02-variables-expressions-commands.qmd
     - chapter/03-condition-statement.qmd
-    - chapter/04-functions.qmd
-    - chapter/05-iteration.qmd
+    - chapter/04-iteration.qmd
+    - chapter/05-functions.qmd
     - chapter/06-files.qmd
     - chapter/07-lists.qmd
     - chapter/08-string.qmd
@@ -83,10 +83,6 @@ format:
     date-format: iso
     mainfont: Vazirmatn
     include-in-header: assets/html/header.html
-    include-after-body:
-      text: |
-        <script src="assets/js/termynal.js" data-termynal-container="#termy">
-        </script>
 
 editor: source
 
