@@ -4,3 +4,7 @@
 /.ipynb_checkpoints/
 /project/
 /videos
+
+**/*.quarto_ipynb
+docs.zip
+

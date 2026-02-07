@@ -18,7 +18,7 @@ book:
 
   page-footer:
     left:  |
-      <a href="./index.html">مبانی پایتون</a>
+      <a href="/index.html">مبانی پایتون</a>
     right: |
       <a href="https://mohsenebrahimy.ir/">محسن ابراهیمی</a>
 
@@ -70,9 +70,15 @@ format:
     search: true
     code-copy: true
     css:
-      - https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&display=swap
       - assets/css/rtl-style.css
       - assets/css/custom.css
+    polyfill: false
+    html-math-method: 
+      method: mathjax
+      url: /assets/js/mathjax/es5/tex-chtml-full.js
+    
+    resources:
+      - assets/js/mathjax/es5/output/chtml/fonts/woff-v2/*
 
     code-link: true
     dir: rtl
@@ -82,7 +88,10 @@ format:
     date-modified: today
     date-format: iso
     mainfont: Vazirmatn
-    include-in-header: assets/html/header.html
+    include-in-header:
+      - assets/html/header.html
+    include-after-body: 
+      - assets/html/mathjax-loader.html
 
 editor: source
 

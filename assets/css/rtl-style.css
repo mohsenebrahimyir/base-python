@@ -1,10 +1,26 @@
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('../fonts/vazirmatn/Vazirmatn-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('../fonts/vazirmatn/Vazirmatn-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-	font-family: 'Vazirmatn', Roboto !important;
+	font-family: 'Vazirmatn' !important;
 	font-weight: 300;
 	text-align: justify;
 }
-h1, h2, h3, h4, h5, h6,input, textarea {
-	font-family:  'Vazirmatn', Roboto !important;
+h1, h2, h3, h4, h5, h6, input, textarea {
+	font-family:  'Vazirmatn' !important;
 }
 h1 {
 	font-weight: bold;
@@ -432,4 +448,10 @@ div.csl-right-inline {
     padding-right: 1em;
     margin-left: 0;
     padding-left: 0;
+}
+
+/* Katex -------------------------------------------- */
+
+.katex {
+    direction: ltr;
 }

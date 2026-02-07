@@ -2,5 +2,30 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+<style>
+          /* فونت fallback سریع */
+          body {
+            font-family: 'Vazirmatn', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+          }
+          /* swap باعث می‌شود متن بلافاصله نمایش داده شود */
+          @font-face {
+            font-family: 'Vazirmatn';
+            src: url('assets/fonts/vazirmatn/Vazirmatn-Thin.woff2') format('woff2');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+          }
+          @font-face {
+            font-family: 'Vazirmatn';
+            src: url('assets/fonts/vazirmatn/Vazirmatn-Light.woff2') format('woff2');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+          }
+</style>
 
-
+<script>
+  // حذف polyfill CDN که theme اضافه کرده
+  const polyfill = document.querySelector('script[src*="polyfill.min.js"]');
+  if(polyfill) polyfill.remove();
+</script>
