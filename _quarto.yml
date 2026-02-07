@@ -41,6 +41,7 @@ book:
     - chapter/06-files.qmd
     - chapter/07-lists.qmd
     - chapter/08-string.qmd
+    - chapter/09-tkinter.qmd
     # - chapter/10-classes.qmd
     # - chapter/11-modules.qmd
 
@@ -59,6 +60,7 @@ crossref:
 
 execute:
   echo: true
+  eval: true
   warning: false
 
 format:

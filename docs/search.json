@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "مبانی پایتون",
     "section": "",
-    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل mohsenebrahimy.ir@gmail.com برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۴-۱۱-۱۸ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: https://mohsenebrahimyir.github.io/base-python/\n\n\n\n\n\n\n\nهشدار\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
+    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل mohsenebrahimy.ir@gmail.com برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۴-۱۱-۱۹ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: https://mohsenebrahimyir.github.io/base-python/\n\n\n\n\n\n\n\nهشدار\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
     "crumbs": [
       "پیش گفتار"
     ]
@@ -260,6 +260,16 @@
     ]
   },
   {
+    "objectID": "chapter/03-condition-statement.html#exercises",
+    "href": "chapter/03-condition-statement.html#exercises",
+    "title": "اجرای شرطی",
+    "section": "تمرین",
+    "text": "تمرین\n\nسوالات سایت کوئرا\n\nیخدارچی - 3429\nاعداد - 280\nمشق باقر - 10230\nاعداد فیثاغورثی - 280\nروز آزادی بیان در برره - ‍10162\nدو نقطه خط - 3414",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>اجرای شرطی</span>"
+    ]
+  },
+  {
     "objectID": "chapter/03-condition-statement.html#project",
     "href": "chapter/03-condition-statement.html#project",
     "title": "اجرای شرطی",
@@ -315,6 +325,16 @@
     "title": "تکرار",
     "section": "حلقه‌های معین با استفاده از",
     "text": "حلقه‌های معین با استفاده از\nگاهی اوقات می‌خواهیم مجموعه‌ای از چیزها را مانند فهرستی از کلمات، خطوط یک فایل یا فهرستی از اعداد را بصورت حلقه‌ای ایجاد کنیم. وقتی لیستی از چیزهایی که باید از طریق آنها حلقه بزنیم داریم، می توانیم با استفاده از دستور for یک حلقه معین بسازیم. دستور while را یک حلقه نامعین می نامیم زیرا به سادگی حلقه می‌زند تا زمانی که برخی از شرط‌ها False شود، در حالی که حلقه for در مجموعه‌ای شناخته شده از آیتم‌ها حلقه می‌زند بنابراین به تعداد آیتم‌های مجموعه، تکرار می‌شود.\nfriends = ['Joseph', 'Glenn', 'Sally']\nfor friend in friends:\n    print('Happy New Year: ', friend)\nprint('Done!')\nHappy New Year:  Joseph\nHappy New Year:  Glenn\nHappy New Year:  Sally\nDone!",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>تکرار</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/04-iteration.html#exercises",
+    "href": "chapter/04-iteration.html#exercises",
+    "title": "تکرار",
+    "section": "تمرین",
+    "text": "تمرین\n\nنکته. با استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\nسوالات سایت کوئرا\n\nسوال زرد - 3537\nسوال ساده - 2885\nفاکتوریل - 589\nجدول ضرب گنده - 3409\nعدد چاپ کن - 9774\nچاپ مربع - 591\nتک رقمی - 3539\nعدد خود مغلوب - 617\nام‌سین - 28947",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>تکرار</span>"
     ]
@@ -550,6 +570,16 @@
     ]
   },
   {
+    "objectID": "chapter/07-lists.html#تمرین",
+    "href": "chapter/07-lists.html#تمرین",
+    "title": "لیست‌ها",
+    "section": "تمرین",
+    "text": "تمرین\n\nنکته. با استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\nسوالات سایت کوئرا\n\nچاپ برعکس - 3405\nماکزیمم - 588",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>لیست‌ها</span>"
+    ]
+  },
+  {
     "objectID": "chapter/08-string.html",
     "href": "chapter/08-string.html",
     "title": "رشته‌ها",
@@ -620,6 +650,36 @@
     ]
   },
   {
+    "objectID": "chapter/09-tkinter.html",
+    "href": "chapter/09-tkinter.html",
+    "title": "رابط کاربری tkinter",
+    "section": "",
+    "text": "ورود به دنیای گرافیک\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.mainloop()\nimport tkinter as tk\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\n\nwindow.mainloop()\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.title(\"Hello World!\")\n\nwindow.geometry(\"480x360\")\n# window.minsize(400, 300)\n# window.maxsize(640, 450)\n# window.resizable(width=False, height=False)\n\nwindow.mainloop()",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>رابط کاربری tkinter</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/09-tkinter.html#ورود-به-دنیای-گرافیک",
+    "href": "chapter/09-tkinter.html#ورود-به-دنیای-گرافیک",
+    "title": "رابط کاربری tkinter",
+    "section": "",
+    "text": "ایجاد Loop برای بدنه\n\n\n\nعنوان\n\n\n\nتغییر سایز پنجره",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>رابط کاربری tkinter</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/09-tkinter.html#ابزارهای-اصلی-widgets",
+    "href": "chapter/09-tkinter.html#ابزارهای-اصلی-widgets",
+    "title": "رابط کاربری tkinter",
+    "section": "ابزارهای اصلی (Widgets)",
+    "text": "ابزارهای اصلی (Widgets)\n\nبرچسب\n\n\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntk.Label(window, text=\"Hello Mohsen\").pack()\ntk.Label(\n    window,\n    text=\"How are you?\",\n    font=(\"Roboto\", 18),\n    bg=\"blue\",  # background\n    fg=\"white\",  # forground\n).pack()\n\nwindow.mainloop()\n\n\nدکمه\n\n\nimport tkinter as tk\n\n\ndef btn_print():\n    # print(\"Hello World!\")\n    btn.configure(text=\"Hello World!\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nbtn = tk.Button(window)\nbtn.configure(text=\"Say hello\", command=btn_print)\nbtn.pack()\n\nwindow.mainloop()\n\n\nیک نرم افزار صلوات شمار بسازید.\n\n\nپاسخ\n\n\nfrom tkinter import *\n\ncounter = 0\n\ndef btn_counter():\n    global counter\n    counter += 1\n    btn.configure(text=f\"تعداد {counter} صلوات فرستاده شد.\")\n\n\nwindow = Tk()\nwindow.title(\"صلوات شمار\")\nwindow.geometry(\"480x360\")\n\nbtn = Button(window)\nbtn.configure(text=\"صلوات\", command=btn_counter)\nbtn.pack()\n\nwindow.mainloop()\n\n\n\n\nورودی\n\n\nimport tkinter as tk\n\n\ndef btn_print():\n    name = ntr.get()\n    if name == \"\":\n        messagebox.showwarning(\"Error\", \"Please Enter your name!\")\n    else:\n        result.configure(text=f\"Hello {name}!\", fg=\"blue\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nlbl = tk.Label(window, text=\"Enter your name:\", font=(\"Roboto\", 10))\nlbl.pack(pady=10)\n\nntr = tk.Entry(window)\nntr.pack(pady=5)\n\nbtn = tk.Button(window)\nbtn.configure(text=\"Say hello\", command=btn_print)\nbtn.pack()\n\nresult = tk.Label(window, text=\"\", font=(\"Roboto\", 12, \"bold\"))\nresult.pack(pady=10)\n\nwindow.mainloop()",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>رابط کاربری tkinter</span>"
+    ]
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "منابع",
@@ -627,46 +687,6 @@
     "text": "[1] C.\nR. Severance, S. Blumenberg, and E. Hauser, “Python for everybody:\nExploring data in python 3,” 2016. https://www.py4e.com/\n\n\n[2] “New york university - statistic\nsoftware.” https://guides.nyu.edu/quant/statsoft\n\n\n[3] “Stack over flow - 2023 developer\nsurvey.” https://survey.stackoverflow.co/2023/",
     "crumbs": [
       "منابع"
-    ]
-  },
-  {
-    "objectID": "chapter/04-iteration.html#exercises",
-    "href": "chapter/04-iteration.html#exercises",
-    "title": "تکرار",
-    "section": "تمرین",
-    "text": "تمرین\n\nنکته. با استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\nسوالات سایت کوئرا\n\nسوال زرد - 3537\nسوال ساده - 2885\nفاکتوریل - 589\nجدول ضرب گنده - 3409\nعدد چاپ کن - 9774\nچاپ مربع - 591\nتک رقمی - 3539\nعدد خود مغلوب - 617\nام‌سین - 28947",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>تکرار</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/03-condition-statement.html#exercises",
-    "href": "chapter/03-condition-statement.html#exercises",
-    "title": "اجرای شرطی",
-    "section": "تمرین",
-    "text": "تمرین\n\nسوالات سایت کوئرا\n\nیخدارچی - 3429\nاعداد - 280\nمشق باقر - 10230\nاعداد فیثاغورثی - 280\nروز آزادی بیان در برره - ‍10162\nدو نقطه خط - 3414",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>اجرای شرطی</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/99-more-exercise.html",
-    "href": "chapter/99-more-exercise.html",
-    "title": "تمرین بیشتر",
-    "section": "",
-    "text": "تک رقمی - 3539",
-    "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>تمرین بیشتر</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/07-lists.html#تمرین",
-    "href": "chapter/07-lists.html#تمرین",
-    "title": "لیست‌ها",
-    "section": "تمرین",
-    "text": "تمرین\n\nنکته. با استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\nسوالات سایت کوئرا\n\nچاپ برعکس - 3405\nماکزیمم - 588",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>لیست‌ها</span>"
     ]
   }
 ]

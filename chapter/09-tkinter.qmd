@@ -1,0 +1,172 @@
+# رابط کاربری tkinter
+
+## ورود به دنیای گرافیک
+
+- ایجاد Loop برای بدنه
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+window = tk.Tk()
+
+window.mainloop()
+```
+
+- عنوان
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+window = tk.Tk()
+window.title("Hello World!")
+
+window.mainloop()
+```
+
+- تغییر سایز پنجره
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+window = tk.Tk()
+
+window.title("Hello World!")
+
+window.geometry("480x360")
+# window.minsize(400, 300)
+# window.maxsize(640, 450)
+# window.resizable(width=False, height=False)
+
+window.mainloop()
+```
+
+
+## ابزارهای اصلی (Widgets)
+
+- برچسب
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+window = tk.Tk()
+
+window.title("Hello World!")
+window.geometry("480x360")
+
+tk.Label(window, text="Hello Mohsen").pack()
+tk.Label(
+    window,
+    text="How are you?",
+    font=("Roboto", 18),
+    bg="blue",  # background
+    fg="white",  # forground
+).pack()
+
+window.mainloop()
+```
+
+- دکمه
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+
+def btn_print():
+    # print("Hello World!")
+    btn.configure(text="Hello World!")
+
+
+window = tk.Tk()
+window.title("Hello World!")
+window.geometry("480x360")
+
+btn = tk.Button(window)
+btn.configure(text="Say hello", command=btn_print)
+btn.pack()
+
+window.mainloop()
+```
+
+
+::: {.example} :::
+
+یک نرم افزار صلوات شمار بسازید.
+
+<details>
+<summary>
+پاسخ
+</summary>
+
+```{python}
+# | eval: false
+from tkinter import *
+
+counter = 0
+
+def btn_counter():
+    global counter
+    counter += 1
+    btn.configure(text=f"تعداد {counter} صلوات فرستاده شد.")
+
+
+window = Tk()
+window.title("صلوات شمار")
+window.geometry("480x360")
+
+btn = Button(window)
+btn.configure(text="صلوات", command=btn_counter)
+btn.pack()
+
+window.mainloop()
+```
+
+</details>
+:::
+
+
+- ورودی
+
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+
+def btn_print():
+    name = ntr.get()
+    if name == "":
+        messagebox.showwarning("Error", "Please Enter your name!")
+    else:
+        result.configure(text=f"Hello {name}!", fg="blue")
+
+
+window = tk.Tk()
+window.title("Hello World!")
+window.geometry("480x360")
+
+lbl = tk.Label(window, text="Enter your name:", font=("Roboto", 10))
+lbl.pack(pady=10)
+
+ntr = tk.Entry(window)
+ntr.pack(pady=5)
+
+btn = tk.Button(window)
+btn.configure(text="Say hello", command=btn_print)
+btn.pack()
+
+result = tk.Label(window, text="", font=("Roboto", 12, "bold"))
+result.pack(pady=10)
+
+window.mainloop()
+```
