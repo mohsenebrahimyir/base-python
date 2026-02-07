@@ -330,6 +330,9 @@ format:
 
 ![چه زبان برنامه نویسی را باید اول یاد بگیریم؟](./assets/img/which-language-should-i-learn-first.png)
 
+
+[نقشه راه برنامه نویسی‌های مختلف](https://roadmap.sh/)
+
 ### چرا پایتون {#why-python}
 
 شاید دلیل ما برای شروع یادگیری پایتون این باشد که ن

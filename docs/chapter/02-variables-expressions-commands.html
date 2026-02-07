@@ -447,7 +447,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-01-27</p>
+      <p class="date-modified">2026-02-07</p>
     </div>
   </div>
     
@@ -629,15 +629,12 @@ You are 30 years old.</code></pre>
 <summary>
 از کاربر نام و سن را بگیرد و نمایش دهد
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co"># دریافت نام از کاربر</span></span>
-<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">"نام خود را وارد کنید: "</span>)</span>
-<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a><span class="co"># دریافت سن از کاربر</span></span>
-<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">input</span>(<span class="st">"سن خود را وارد کنید: "</span>)</span>
-<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb63-7"><a href="#cb63-7" aria-hidden="true" tabindex="-1"></a><span class="co"># نمایش نام و سن</span></span>
-<span id="cb63-8"><a href="#cb63-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"نام:"</span>, name)</span>
-<span id="cb63-9"><a href="#cb63-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"سن:"</span>, age)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">"نام خود را وارد کنید: "</span>)</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">input</span>(<span class="st">"سن خود را وارد کنید: "</span>)</span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"نام:"</span>, name)</span>
+<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"سن:"</span>, age)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <div class="exercise">
@@ -645,24 +642,17 @@ You are 30 years old.</code></pre>
 <summary>
 یک ماشین‌ حساب ساده برای جمع و تفریق بنویسید.
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># این برنامه جمع دو عدد را انجام می‌دهد</span></span>
-<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a><span class="co"># دریافت عدد اول از کاربر</span></span>
-<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>num1 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"عدد اول را وارد کن: "</span>)</span>
-<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a>num1 <span class="op">=</span> <span class="bu">float</span>(num1)  <span class="co"># تبدیل به عدد اعشاری</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>num1 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"عدد اول را وارد کن: "</span>)</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>num1 <span class="op">=</span> <span class="bu">float</span>(num1)</span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>num2 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"عدد دوم را وارد کن: "</span>)</span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a>num2 <span class="op">=</span> <span class="bu">float</span>(num2)</span>
 <span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a><span class="co"># دریافت عدد دوم از کاربر</span></span>
-<span id="cb64-8"><a href="#cb64-8" aria-hidden="true" tabindex="-1"></a>num2 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"عدد دوم را وارد کن: "</span>)</span>
-<span id="cb64-9"><a href="#cb64-9" aria-hidden="true" tabindex="-1"></a>num2 <span class="op">=</span> <span class="bu">float</span>(num2)  <span class="co"># تبدیل به عدد اعشاری</span></span>
-<span id="cb64-10"><a href="#cb64-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb64-11"><a href="#cb64-11" aria-hidden="true" tabindex="-1"></a><span class="co"># انجام جمع</span></span>
-<span id="cb64-12"><a href="#cb64-12" aria-hidden="true" tabindex="-1"></a>add <span class="op">=</span> num1 <span class="op">+</span> num2</span>
-<span id="cb64-13"><a href="#cb64-13" aria-hidden="true" tabindex="-1"></a><span class="co"># انجام تفریق</span></span>
-<span id="cb64-14"><a href="#cb64-14" aria-hidden="true" tabindex="-1"></a>subtract <span class="op">=</span> num1 <span class="op">-</span> num2</span>
-<span id="cb64-15"><a href="#cb64-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb64-16"><a href="#cb64-16" aria-hidden="true" tabindex="-1"></a><span class="co"># نمایش نتیجه</span></span>
-<span id="cb64-17"><a href="#cb64-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"نتیجه جمع ="</span>, add)</span>
-<span id="cb64-18"><a href="#cb64-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"نتیجه تفریق ="</span>, subtract)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a>add <span class="op">=</span> num1 <span class="op">+</span> num2</span>
+<span id="cb64-8"><a href="#cb64-8" aria-hidden="true" tabindex="-1"></a>subtract <span class="op">=</span> num1 <span class="op">-</span> num2</span>
+<span id="cb64-9"><a href="#cb64-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-10"><a href="#cb64-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"نتیجه جمع ="</span>, add)</span>
+<span id="cb64-11"><a href="#cb64-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"نتیجه تفریق ="</span>, subtract)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 آیا میتونید برای ضرب و تقیسم هم بنویسید؟
 </details>
 </div>
@@ -671,94 +661,89 @@ You are 30 years old.</code></pre>
 <summary>
 دو عدد بگیرد و بزرگی عدد اول را بررسی کند. ‍
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># دریافت عدد اول از کاربر</span></span>
-<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>num1 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"عدد اول را وارد کن: "</span>)</span>
-<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>num1 <span class="op">=</span> <span class="bu">float</span>(num1)  <span class="co"># تبدیل به عدد اعشاری</span></span>
-<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a><span class="co"># دریافت عدد دوم از کاربر</span></span>
-<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a>num2 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"عدد دوم را وارد کن: "</span>)</span>
-<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a>num2 <span class="op">=</span> <span class="bu">float</span>(num2)  <span class="co"># تبدیل به عدد اعشاری </span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>num1 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"عدد اول را وارد کن: "</span>)</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>num1 <span class="op">=</span> <span class="bu">float</span>(num1)</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>num2 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"عدد دوم را وارد کن: "</span>)</span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a>num2 <span class="op">=</span> <span class="bu">float</span>(num2)</span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> num1 <span class="op">&gt;</span> num2</span>
 <span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-9"><a href="#cb65-9" aria-hidden="true" tabindex="-1"></a><span class="co"># بزرگی عدد اول</span></span>
-<span id="cb65-10"><a href="#cb65-10" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> num1 <span class="op">&gt;</span> num2</span>
-<span id="cb65-11"><a href="#cb65-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-12"><a href="#cb65-12" aria-hidden="true" tabindex="-1"></a><span class="co"># نمایش نتیجه</span></span>
-<span id="cb65-13"><a href="#cb65-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Is"</span>, num1,<span class="st">"greater than"</span>, num2, <span class="st">"? "</span>, result)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb65-9"><a href="#cb65-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Is"</span>, num1,<span class="st">"greater than"</span>, num2, <span class="st">"? "</span>, result)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
+</div>
+<div class="exercise">
+<p>سوالات سایت <a href="quera.ir">کوئرا</a></p>
+<ul>
+<li><a href="https://quera.org/problemset/3537">سوال زرد - <code>3537</code></a></li>
+<li><a href="https://quera.org/problemset/2885">سوال ساده - <code>2885</code></a></li>
+<li><a href="https://quera.org/problemset/8838">کمک به کاپی - <code>8838</code></a></li>
+</ul>
 </div>
 </section>
 <section id="project" class="level2">
 <h2 class="anchored" data-anchor-id="project">پروژه</h2>
 <div class="exercise">
 <p>به کد زیر نگاه کنید که یک ماشین حساب ساده است و ببینید کدام مطالبی که توی این بخش گفته شده استفاده شده.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># وارد کردن پکیج های مورد نیاز</span></span>
-<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a><span class="co"># تابع برای محاسبه نتیجه بر اساس عملگر</span></span>
-<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate():</span>
-<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
-<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a>        num1 <span class="op">=</span> <span class="bu">float</span>(entry1.get())  <span class="co"># گرفتن عدد اول</span></span>
-<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a>        num2 <span class="op">=</span> <span class="bu">float</span>(entry2.get())  <span class="co"># گرفتن عدد دوم</span></span>
-<span id="cb66-10"><a href="#cb66-10" aria-hidden="true" tabindex="-1"></a>        op <span class="op">=</span> operator.get()  <span class="co"># گرفتن عملگر</span></span>
-<span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a>        <span class="co"># بررسی نوع عملگر با شرط‌ها</span></span>
-<span id="cb66-13"><a href="#cb66-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> op <span class="op">==</span> <span class="st">"+"</span>:</span>
-<span id="cb66-14"><a href="#cb66-14" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">+</span> num2</span>
-<span id="cb66-15"><a href="#cb66-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"-"</span>:</span>
-<span id="cb66-16"><a href="#cb66-16" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">-</span> num2</span>
-<span id="cb66-17"><a href="#cb66-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"*"</span>:</span>
-<span id="cb66-18"><a href="#cb66-18" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">*</span> num2</span>
-<span id="cb66-19"><a href="#cb66-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"/"</span>:</span>
-<span id="cb66-20"><a href="#cb66-20" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> num2 <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb66-21"><a href="#cb66-21" aria-hidden="true" tabindex="-1"></a>                result_label.config(text<span class="op">=</span><span class="st">"خطا: تقسیم بر صفر!"</span>)</span>
-<span id="cb66-22"><a href="#cb66-22" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span></span>
-<span id="cb66-23"><a href="#cb66-23" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">/</span> num2</span>
-<span id="cb66-24"><a href="#cb66-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb66-25"><a href="#cb66-25" aria-hidden="true" tabindex="-1"></a>            result_label.config(text<span class="op">=</span><span class="st">"عملگر نامعتبر است"</span>)</span>
-<span id="cb66-26"><a href="#cb66-26" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span></span>
-<span id="cb66-27"><a href="#cb66-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-28"><a href="#cb66-28" aria-hidden="true" tabindex="-1"></a>        <span class="co"># نمایش نتیجه</span></span>
-<span id="cb66-29"><a href="#cb66-29" aria-hidden="true" tabindex="-1"></a>        result_label.config(text<span class="op">=</span><span class="ss">f"نتیجه: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate():</span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a>        num1 <span class="op">=</span> <span class="bu">float</span>(entry1.get())</span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a>        num2 <span class="op">=</span> <span class="bu">float</span>(entry2.get())</span>
+<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a>        op <span class="op">=</span> operator.get()</span>
+<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-10"><a href="#cb66-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> op <span class="op">==</span> <span class="st">"+"</span>:</span>
+<span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">+</span> num2</span>
+<span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"-"</span>:</span>
+<span id="cb66-13"><a href="#cb66-13" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">-</span> num2</span>
+<span id="cb66-14"><a href="#cb66-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"*"</span>:</span>
+<span id="cb66-15"><a href="#cb66-15" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">*</span> num2</span>
+<span id="cb66-16"><a href="#cb66-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"/"</span>:</span>
+<span id="cb66-17"><a href="#cb66-17" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> num2 <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb66-18"><a href="#cb66-18" aria-hidden="true" tabindex="-1"></a>                result_label.config(text<span class="op">=</span><span class="st">"خطا: تقسیم بر صفر!"</span>)</span>
+<span id="cb66-19"><a href="#cb66-19" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span></span>
+<span id="cb66-20"><a href="#cb66-20" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">/</span> num2</span>
+<span id="cb66-21"><a href="#cb66-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb66-22"><a href="#cb66-22" aria-hidden="true" tabindex="-1"></a>            result_label.config(text<span class="op">=</span><span class="st">"عملگر نامعتبر است"</span>)</span>
+<span id="cb66-23"><a href="#cb66-23" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span></span>
+<span id="cb66-24"><a href="#cb66-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-25"><a href="#cb66-25" aria-hidden="true" tabindex="-1"></a>        result_label.config(text<span class="op">=</span><span class="ss">f"نتیجه: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb66-26"><a href="#cb66-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-27"><a href="#cb66-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">ValueError</span>:</span>
+<span id="cb66-28"><a href="#cb66-28" aria-hidden="true" tabindex="-1"></a>        result_label.config(text<span class="op">=</span><span class="st">"لطفاً فقط عدد وارد کنید"</span>)</span>
+<span id="cb66-29"><a href="#cb66-29" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb66-30"><a href="#cb66-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-31"><a href="#cb66-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">ValueError</span>:</span>
-<span id="cb66-32"><a href="#cb66-32" aria-hidden="true" tabindex="-1"></a>        <span class="co"># خطا در صورت وارد کردن عدد نامعتبر</span></span>
-<span id="cb66-33"><a href="#cb66-33" aria-hidden="true" tabindex="-1"></a>        result_label.config(text<span class="op">=</span><span class="st">"لطفاً فقط عدد وارد کنید"</span>)</span>
+<span id="cb66-31"><a href="#cb66-31" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb66-32"><a href="#cb66-32" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"ماشین حساب ساده"</span>)</span>
+<span id="cb66-33"><a href="#cb66-33" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"300x250"</span>)</span>
 <span id="cb66-34"><a href="#cb66-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-35"><a href="#cb66-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-36"><a href="#cb66-36" aria-hidden="true" tabindex="-1"></a><span class="co"># ساخت پنجره اصلی</span></span>
-<span id="cb66-37"><a href="#cb66-37" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb66-38"><a href="#cb66-38" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"ماشین حساب ساده"</span>)</span>
-<span id="cb66-39"><a href="#cb66-39" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"300x250"</span>)</span>
+<span id="cb66-35"><a href="#cb66-35" aria-hidden="true" tabindex="-1"></a>label1 <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عدد اول:"</span>)</span>
+<span id="cb66-36"><a href="#cb66-36" aria-hidden="true" tabindex="-1"></a>entry1 <span class="op">=</span> tk.Entry(window)</span>
+<span id="cb66-37"><a href="#cb66-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-38"><a href="#cb66-38" aria-hidden="true" tabindex="-1"></a>label2 <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عدد دوم:"</span>)</span>
+<span id="cb66-39"><a href="#cb66-39" aria-hidden="true" tabindex="-1"></a>entry2 <span class="op">=</span> tk.Entry(window)</span>
 <span id="cb66-40"><a href="#cb66-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-41"><a href="#cb66-41" aria-hidden="true" tabindex="-1"></a><span class="co"># ساخت ویجت‌ها</span></span>
-<span id="cb66-42"><a href="#cb66-42" aria-hidden="true" tabindex="-1"></a>label1 <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عدد اول:"</span>)</span>
-<span id="cb66-43"><a href="#cb66-43" aria-hidden="true" tabindex="-1"></a>entry1 <span class="op">=</span> tk.Entry(window)</span>
-<span id="cb66-44"><a href="#cb66-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-45"><a href="#cb66-45" aria-hidden="true" tabindex="-1"></a>label2 <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عدد دوم:"</span>)</span>
-<span id="cb66-46"><a href="#cb66-46" aria-hidden="true" tabindex="-1"></a>entry2 <span class="op">=</span> tk.Entry(window)</span>
-<span id="cb66-47"><a href="#cb66-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-48"><a href="#cb66-48" aria-hidden="true" tabindex="-1"></a>label_op <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عملگر (+ - * /):"</span>)</span>
-<span id="cb66-49"><a href="#cb66-49" aria-hidden="true" tabindex="-1"></a>operator <span class="op">=</span> tk.Entry(window)</span>
-<span id="cb66-50"><a href="#cb66-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-51"><a href="#cb66-51" aria-hidden="true" tabindex="-1"></a>calc_button <span class="op">=</span> tk.Button(window, text<span class="op">=</span><span class="st">"محاسبه"</span>, command<span class="op">=</span>calculate)</span>
-<span id="cb66-52"><a href="#cb66-52" aria-hidden="true" tabindex="-1"></a>result_label <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"نتیجه: "</span>, fg<span class="op">=</span><span class="st">"blue"</span>)</span>
-<span id="cb66-53"><a href="#cb66-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-54"><a href="#cb66-54" aria-hidden="true" tabindex="-1"></a><span class="co"># قرار دادن ویجت‌ها در پنجره</span></span>
-<span id="cb66-55"><a href="#cb66-55" aria-hidden="true" tabindex="-1"></a>label1.pack()</span>
-<span id="cb66-56"><a href="#cb66-56" aria-hidden="true" tabindex="-1"></a>entry1.pack()</span>
-<span id="cb66-57"><a href="#cb66-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-58"><a href="#cb66-58" aria-hidden="true" tabindex="-1"></a>label2.pack()</span>
-<span id="cb66-59"><a href="#cb66-59" aria-hidden="true" tabindex="-1"></a>entry2.pack()</span>
-<span id="cb66-60"><a href="#cb66-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-61"><a href="#cb66-61" aria-hidden="true" tabindex="-1"></a>label_op.pack()</span>
-<span id="cb66-62"><a href="#cb66-62" aria-hidden="true" tabindex="-1"></a>operator.pack()</span>
-<span id="cb66-63"><a href="#cb66-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-64"><a href="#cb66-64" aria-hidden="true" tabindex="-1"></a>calc_button.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb66-65"><a href="#cb66-65" aria-hidden="true" tabindex="-1"></a>result_label.pack()</span>
-<span id="cb66-66"><a href="#cb66-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-67"><a href="#cb66-67" aria-hidden="true" tabindex="-1"></a><span class="co"># اجرای برنامه</span></span>
-<span id="cb66-68"><a href="#cb66-68" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb66-41"><a href="#cb66-41" aria-hidden="true" tabindex="-1"></a>label_op <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عملگر (+ - * /):"</span>)</span>
+<span id="cb66-42"><a href="#cb66-42" aria-hidden="true" tabindex="-1"></a>operator <span class="op">=</span> tk.Entry(window)</span>
+<span id="cb66-43"><a href="#cb66-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-44"><a href="#cb66-44" aria-hidden="true" tabindex="-1"></a>calc_button <span class="op">=</span> tk.Button(window, text<span class="op">=</span><span class="st">"محاسبه"</span>, command<span class="op">=</span>calculate)</span>
+<span id="cb66-45"><a href="#cb66-45" aria-hidden="true" tabindex="-1"></a>result_label <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"نتیجه: "</span>, fg<span class="op">=</span><span class="st">"blue"</span>)</span>
+<span id="cb66-46"><a href="#cb66-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-47"><a href="#cb66-47" aria-hidden="true" tabindex="-1"></a>label1.pack()</span>
+<span id="cb66-48"><a href="#cb66-48" aria-hidden="true" tabindex="-1"></a>entry1.pack()</span>
+<span id="cb66-49"><a href="#cb66-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-50"><a href="#cb66-50" aria-hidden="true" tabindex="-1"></a>label2.pack()</span>
+<span id="cb66-51"><a href="#cb66-51" aria-hidden="true" tabindex="-1"></a>entry2.pack()</span>
+<span id="cb66-52"><a href="#cb66-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-53"><a href="#cb66-53" aria-hidden="true" tabindex="-1"></a>label_op.pack()</span>
+<span id="cb66-54"><a href="#cb66-54" aria-hidden="true" tabindex="-1"></a>operator.pack()</span>
+<span id="cb66-55"><a href="#cb66-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-56"><a href="#cb66-56" aria-hidden="true" tabindex="-1"></a>calc_button.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb66-57"><a href="#cb66-57" aria-hidden="true" tabindex="-1"></a>result_label.pack()</span>
+<span id="cb66-58"><a href="#cb66-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-59"><a href="#cb66-59" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 

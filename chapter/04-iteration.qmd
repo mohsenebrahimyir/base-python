@@ -171,3 +171,23 @@ Happy New Year:  Glenn
 Happy New Year:  Sally
 Done!
 ```
+
+## تمرین {#exercises}
+
+::: {.remark} :::
+با استفاده از ورودی ([`input()`]{dir=ltr}) تمرین‌ها انجام شود.
+::::::
+
+::: {.exercise} :::
+سوالات سایت [کوئرا](quera.ir)
+
+- [سوال زرد - `3537`](https://quera.org/problemset/3537)
+- [سوال ساده - `2885`](https://quera.org/problemset/2885)
+- [فاکتوریل - `589`](https://quera.org/problemset/589)
+- [جدول ضرب گنده - `3409`](https://quera.org/problemset/3409)
+- [عدد چاپ کن - 9774](https://quera.org/problemset/9774)
+- [چاپ مربع - `591`](https://quera.org/problemset/591)
+- [تک رقمی - `3539`](https://quera.org/problemset/3539)
+- [عدد خود مغلوب - `617`](https://quera.org/problemset/617)
+- [ام‌سین - `28947`](https://quera.org/problemset/28947)
+:::

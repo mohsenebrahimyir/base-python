@@ -313,3 +313,18 @@ print(sum(nums)/len(nums))
 ```output
 25.666666666666668
 ```
+
+## تمرین
+
+
+
+::: {.remark} :::
+با استفاده از ورودی ([`input()`]{dir=ltr}) تمرین‌ها انجام شود.
+::::::
+
+::: {.exercise} :::
+سوالات سایت [کوئرا](quera.ir)
+
+- [چاپ برعکس - `3405`](https://quera.org/problemset/3405)
+- [ماکزیمم - `588`](https://quera.org/problemset/588)
+:::

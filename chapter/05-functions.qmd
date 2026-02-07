@@ -236,7 +236,6 @@ math.sqrt(5)
 2.23606797749979
 ```
 
-
 اما این اتفاق برای همه توابع رخ نمی‌دهد.
 درواقع این توابع کاری را انجام 
 داده‌اند که بصورت خروجی قابل نمایش نیست. 
@@ -258,18 +257,15 @@ def No_reult_func ():
 
 
 ```python
-# وارد کردن پکیج های مورد نیاز
 import tkinter as tk
 
 
-# تابع برای محاسبه نتیجه بر اساس عملگر
 def calculate():
     try:
-        num1 = float(entry1.get())  # گرفتن عدد اول
-        num2 = float(entry2.get())  # گرفتن عدد دوم
-        op = operator.get()  # گرفتن عملگر
+        num1 = float(entry1.get())
+        num2 = float(entry2.get())
+        op = operator.get()
 
-        # بررسی نوع عملگر با شرط‌ها
         if op == "+":
             result = num1 + num2
         elif op == "-":
@@ -285,20 +281,16 @@ def calculate():
             result_label.config(text="عملگر نامعتبر است")
             return
 
-        # نمایش نتیجه
         result_label.config(text=f"نتیجه: {result}")
 
     except ValueError:
-        # خطا در صورت وارد کردن عدد نامعتبر
         result_label.config(text="لطفاً فقط عدد وارد کنید")
 
 
-# ساخت پنجره اصلی
 window = tk.Tk()
 window.title("ماشین حساب ساده")
 window.geometry("300x250")
 
-# ساخت ویجت‌ها
 label1 = tk.Label(window, text="عدد اول:")
 entry1 = tk.Entry(window)
 
@@ -311,7 +303,6 @@ operator = tk.Entry(window)
 calc_button = tk.Button(window, text="محاسبه", command=calculate)
 result_label = tk.Label(window, text="نتیجه: ", fg="blue")
 
-# قرار دادن ویجت‌ها در پنجره
 label1.pack()
 entry1.pack()
 
@@ -324,7 +315,6 @@ operator.pack()
 calc_button.pack(pady=10)
 result_label.pack()
 
-# اجرای برنامه
 window.mainloop()
 ```
 ::::::
