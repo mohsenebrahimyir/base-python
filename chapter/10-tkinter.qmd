@@ -1,0 +1,224 @@
+# رابط کاربری tkinter
+
+## ورود به دنیای گرافیک
+
+### ایجاد Loop برای بدنه
+
+در این بخش با ساختن یک پنجره ساده وارد دنیای رابط گرافیکی می‌شویم.
+متد 
+[`mainloop()`]{dir="ltr"}
+ باعث می‌شود پنجره باز بماند و منتظر تعامل کاربر بماند.
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+window = tk.Tk()
+
+window.mainloop()
+```
+
+### عنوان
+
+در این مرحله برای پنجره یک عنوان مشخص می‌کنیم.
+متد 
+[`title()`]{dir="ltr"}
+متن نمایش داده‌شده در نوار بالای پنجره را تنظیم می‌کند.
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+window = tk.Tk()
+window.title("Hello World!")
+
+window.mainloop()
+```
+
+### تغییر سایز پنجره
+
+در این بخش اندازه اولیه پنجره را مشخص می‌کنیم.
+متد 
+[`geometry()`]{dir="ltr"}
+عرض و ارتفاع پنجره را بر حسب پیکسل تعیین می‌کند.
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+window = tk.Tk()
+
+window.title("Hello World!")
+
+window.geometry("480x360")  # width x height
+# window.minsize(width=400, height=300)
+# window.maxsize(width=640, height=450)
+# window.resizable(width=False, height=False)
+
+window.mainloop()
+```
+
+
+## ابزارهای اصلی (Widgets)
+
+### برچسب
+
+برچسب یا `Label` برای نمایش متن در پنجره استفاده می‌شود.
+می‌توان ظاهر آن مثل فونت، رنگ پس‌زمینه و رنگ متن را تغییر داد.
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+window = tk.Tk()
+
+window.title("Hello World!")
+window.geometry("480x360")
+
+tk.Label(window, text="Hello Mohsen").pack()
+tk.Label(
+    window,
+    text="How are you?",
+    font=("Roboto", 18, "Bold"),  # family size face
+    bg="blue",  # background
+    fg="white",  # forground
+).pack(pady=10) # padding in y axis
+
+window.mainloop()
+```
+
+### دکمه
+
+دکمه یا `Button` برای انجام یک عمل هنگام کلیک کاربر استفاده می‌شود.
+با استفاده از پارامتر `command` می‌توان یک تابع را به دکمه متصل کرد.
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+
+def btn_print():
+    # print("Hello World!")
+    lbl.configure(text="Hello World!")
+
+
+window = tk.Tk()
+window.title("Hello World!")
+window.geometry("480x360")
+
+btn = tk.Button(window)
+btn.configure(text="Say hello", command=btn_print)
+btn.pack(pady=10)
+
+lbl = Label(window, text="")
+lbl.pack(pady=10)
+
+window.mainloop()
+```
+
+
+::: {.callout-caution title="گوسفند شمار" icon="false"}
+
+دینا کوچولو که خوابش نمیبره مادرش بهش یاد داده قبل خواب توی ذهنش گوسفندهایی رو تصور کنه که از روی نرده رد میشن و سعی کنه تعداد اونهارو بشماره تا ذهنش خسته بشه بخوابه. اما دینا که تازه برنامه نویسی یاد گرفته بود به فکر این بود که چطور یک نرم افزار گوسفند شمار بسازه. دینا رو برای ساخت این نرم افزار راهنمایی کنید.
+
+::: {.callout-tip title="پاسخ" icon="false" collapse="true"}
+
+
+```{python}
+# | eval: false
+from tkinter import *
+
+counter = 0
+
+
+def btn_counter():
+    global counter
+    counter += 1
+    lbl.configure(text=f"{counter} گوسفند.")
+
+
+window = Tk()
+window.title("گوسفند شمار")
+window.geometry("480x360")
+
+
+btn = Button(window)
+btn.configure(text="بشمار", command=btn_counter)
+btn.pack(pady=10)
+
+lbl = Label(window, text="0 گوسفند.")
+lbl.pack(pady=10)
+
+window.mainloop()
+```
+
+:::
+:::
+
+
+### ورودی
+
+ویجت `Entry` برای دریافت ورودی از کاربر استفاده می‌شود.
+با متد 
+[`get()`]{dir="ltr"}
+ می‌توان مقدار واردشده را خواند و بر اساس آن تصمیم‌گیری کرد.
+
+```{python}
+# | eval: false
+
+import tkinter as tk
+
+
+def btn_print():
+    name = ntr.get()
+    if name == "":
+        result.configure(
+            text="Please Enter your name!",
+            fg="red"
+        )
+    else:
+        result.configure(
+            text=f"Hello {name}!",
+            fg="blue"
+        )
+
+
+window = tk.Tk()
+window.title("Hello World!")
+window.geometry("480x360")
+
+lbl = tk.Label(
+    window,
+    text="Enter your name:",
+    font=("Roboto", 10)
+)
+lbl.pack(pady=10)
+
+ntr = tk.Entry(window)
+ntr.pack(pady=5)
+
+btn = tk.Button(window)
+btn.configure(text="Say hello", command=btn_print)
+btn.pack()
+
+result = tk.Label(
+    window,
+    text="",
+    font=("Roboto", 12, "bold")
+)
+result.pack(pady=10)
+
+window.mainloop()
+```
+
+## تمرین
+
+::: {.callout-caution title="پروژه" icon="false"}
+به بخش @sec-project-calculator بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.
+:::
+

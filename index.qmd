@@ -26,6 +26,6 @@ now = digit_en_to_fa(now)
 
 - کتاب: [https://mohsenebrahimyir.github.io/base-python/](https://mohsenebrahimyir.github.io/base-python/)
 
-::: {.callout-warning}
+::: {.callout-important title="توجه"}
 اگر این متن را میبینید یعنی این کتاب درحال توسعه است.
 ::::::

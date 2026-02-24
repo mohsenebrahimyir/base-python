@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>لیست‌ها – مبانی پایتون</title>
+<title>رشته‌ها – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapter/08-string.html" rel="next">
-<link href="../chapter/06-files.html" rel="prev">
+<link href="../chapter/10-tkinter.html" rel="next">
+<link href="../chapter/08-list-tuple-set-dict.html" rel="prev">
 <link href="../assets/img/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -318,7 +318,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter/07-lists.html"><span class="chapter-title">لیست‌ها</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter/09-string.html"><span class="chapter-title">رشته‌ها</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -366,47 +366,62 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/01-python-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
+  <a href="../chapter/00-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/02-variables-expressions-commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیرها، عبارات و دستورات</span></a>
+  <a href="../chapter/01-value.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">مقدار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/03-condition-statement.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
+  <a href="../chapter/02-variable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/04-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
+  <a href="../chapter/03-operator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">عملگر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/05-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
+  <a href="../chapter/04-condition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/06-files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
+  <a href="../chapter/05-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/07-lists.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">لیست‌ها</span></a>
+  <a href="../chapter/06-function.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/08-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  <a href="../chapter/07-file.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/09-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
+  <a href="../chapter/08-list-tuple-set-dict.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/09-string.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">رشته‌ها</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/10-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/99-project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پروژه</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -425,12 +440,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#a-list-is-a-sequence" id="toc-a-list-is-a-sequence" class="nav-link active" data-scroll-target="#a-list-is-a-sequence">لیست یک دنباله است</a></li>
-  <li><a href="#traversing-a-list" id="toc-traversing-a-list" class="nav-link" data-scroll-target="#traversing-a-list">پیمایش در لیست</a></li>
-  <li><a href="#work-with-list-items" id="toc-work-with-list-items" class="nav-link" data-scroll-target="#work-with-list-items">کارکردن با عناصر لیست</a></li>
-  <li><a href="#list-methods" id="toc-list-methods" class="nav-link" data-scroll-target="#list-methods">متدهای لیست</a></li>
-  <li><a href="#important-function-for-lists" id="toc-important-function-for-lists" class="nav-link" data-scroll-target="#important-function-for-lists">برخی توابع مهم مربوط به لیست</a></li>
-  <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
+  <li><a href="#sec-lists-strings" id="toc-sec-lists-strings" class="nav-link active" data-scroll-target="#sec-lists-strings">لیست‌ها و رشته‌ها</a></li>
+  <li><a href="#sec-string-length" id="toc-sec-string-length" class="nav-link" data-scroll-target="#sec-string-length">محاسبه طول متن</a></li>
+  <li><a href="#sec-immutable-string" id="toc-sec-immutable-string" class="nav-link" data-scroll-target="#sec-immutable-string">رشته‌ها تغییرناپذیرند</a></li>
+  <li><a href="#sec-in-operation" id="toc-sec-in-operation" class="nav-link" data-scroll-target="#sec-in-operation">عملگر <span dir="ltr"><code>in</code></span></a></li>
+  <li><a href="#sec-string-methods" id="toc-sec-string-methods" class="nav-link" data-scroll-target="#sec-string-methods">متدهای رشته‌ای</a></li>
+  <li><a href="#format-operator" id="toc-format-operator" class="nav-link" data-scroll-target="#format-operator">عملگر فرمت</a></li>
   </ul>
 </nav>
     </div>
@@ -440,7 +455,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="lists" class="quarto-section-identifier"><span class="chapter-title">لیست‌ها</span></span></h1>
+<h1 class="title"><span id="sec-string" class="quarto-section-identifier"><span class="chapter-title">رشته‌ها</span></span></h1>
 </div>
 
 
@@ -452,7 +467,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-02-08</p>
+      <p class="date-modified">2026-02-24</p>
     </div>
   </div>
     
@@ -463,133 +478,104 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="a-list-is-a-sequence" class="level2">
-<h2 class="anchored" data-anchor-id="a-list-is-a-sequence">لیست یک دنباله است</h2>
-<p>برای کنارهم قرار دادن چندین داده با نوع مختلف، می‌توان از لیست استفاده کرد. یکی از راه‌های ایجاد لیست، بکاربردن براکت در تعریف آن است:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>cheeses <span class="op">=</span> [<span class="st">'Cheddar'</span>, <span class="st">'Edam'</span>, <span class="st">'Gouda'</span>]</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">17</span>, <span class="dv">123</span>]</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>empty <span class="op">=</span> []</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(cheeses, numbers, empty)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>['Cheddar', 'Edam', 'Gouda'] [17, 123] []</code></pre>
-<p>اما همانطور که گفته بودیم، عناصر لیست می‌توانند نوع‌های متفاوت از هم داشته باشند:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>multi_types_items <span class="op">=</span> [<span class="st">'spam'</span>, <span class="fl">2.0</span>, <span class="dv">5</span>, [<span class="dv">10</span>, <span class="dv">20</span>]]</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>در دو مثال قبلی؛ تعداد عناصر لیست را به این شکل محاسبه می‌کنیم:</p>
-<p>لیست <span dir="ltr"><code>cheeses</code></span> دارای 3 عنصر است. لیست <span dir="ltr"><code>numbers</code></span> دو عنصر دارد و لیست <span dir="ltr"><code>multi_types_items</code></span> شامل 4 عنصر می‌شود. چراکه لیست داخلی که شامل عناصر 10 و 20 هست، در لیست اصلی، به عنوان یک عنصر و یا داده درنظرگرفته می‌شود.</p>
-<p>برای تغییر مقادیر موجود در لیست، می‌بایست بتوانیم به هر داده دسترسی داشته باشیم، به این منظور از اندیس برای آدرس‌دهی استفاده می‌کنیم:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">17</span>, <span class="dv">123</span>]</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>numbers[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">5</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numbers)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>[17, 5]</code></pre>
-<p>و یا برای اینکه بدانیم داده مورد نظر ما در لیست قرار گرفته یا خیر، می‌توان از این روش استفاده کرد:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>cheeses <span class="op">=</span> [<span class="st">'Cheddar'</span>, <span class="st">'Edam'</span>, <span class="st">'Gouda'</span>]</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">'Edam'</span> <span class="kw">in</span> cheeses</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>True</code></pre>
-<p>و یا:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>cheeses <span class="op">=</span> [<span class="st">'Cheddar'</span>, <span class="st">'Edam'</span>, <span class="st">'Gouda'</span>]</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">'Brie'</span> <span class="kw">in</span> cheeses</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>False</code></pre>
+<section id="sec-lists-strings" class="level2">
+<h2 class="anchored" data-anchor-id="sec-lists-strings">لیست‌ها و رشته‌ها</h2>
+<p>یک رشته، دنباله‌ای از کاراکترهاست و یک لیست دنباله‌ای از عناصر. اما یک لیست از کاراکترها، همانند یک رشته نیست. برای تبدیل یک رشته به یک لیست، می‌توان از متد یا تابع <span dir="ltr"><code>list(string_name)</code></span> استفاده کرد:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'spam'</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> <span class="bu">list</span>(s)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>['s', 'p', 'a', 'm']</code></pre>
+<p>اما اگر بخواهیم رشته‌ای از کلمات را به لیست تبدیل کنیم، چه باید کرد:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'pining for the fjords'</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> s.split()</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>['pining', 'for', 'the', 'fjords']</code></pre>
+<p>و یا مثالی دیگر که در آن با کاربرد توابع <span dir="ltr"><code>split(delimiter)</code></span> و <span dir="ltr"><code>join(list_name)</code></span> آشنا می‌شویم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'spam-spam-spam'</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>delimiter <span class="op">=</span> <span class="st">'-'</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>s.split(delimiter)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>['spam', 'spam', 'spam']</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'pining'</span>, <span class="st">'for'</span>, <span class="st">'the'</span>, <span class="st">'fjords'</span>]</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>delimiter <span class="op">=</span> <span class="st">' '</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>delimiter.join(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>'pining for the fjords'</code></pre>
 </section>
-<section id="traversing-a-list" class="level2">
-<h2 class="anchored" data-anchor-id="traversing-a-list">پیمایش در لیست</h2>
-<p>مواقعی هست که می‌خواهیم کل یک لیست را پیمایش کنیم و داده‌های آن را در یک عملیات محاسبه‌ای و یا هرنوع عملیات دیگر، وارد سازیم، در اینصورت:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> cheese <span class="kw">in</span> cheeses:</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(cheese)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>Cheddar
-Edam
-Gouda</code></pre>
-<p>این کار بسیار ساده بود. چرا که ما تمام لیست را یکی یکی پیمایش کردیم و آن را در خروجی چاپ کردیم. اما اگر نیاز داشته باشیم که در حین پیمایش، داده‌ای از لیست را تغییر دهیم، چه روشی را باید درپیش بگیریم؟</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(numbers)):</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    numbers[i] <span class="op">=</span> numbers[i] <span class="op">*</span> <span class="dv">2</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="sec-string-length" class="level2">
+<h2 class="anchored" data-anchor-id="sec-string-length">محاسبه طول متن</h2>
+<p><span dir="ltr"><code>len</code></span> یک تابع داخلی در پایتون است که تعداد کاراکترهای یک رشته را برمی‌گرداند.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>fruit <span class="op">=</span> <span class="st">'banana'</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="bu">len</span>(fruit)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>حال اگر این عدد را به عنوان اندیس متغیر رشته استفاده کنیم، آخرین کاراکتر رشته را بدست می‌آوریم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>last <span class="op">=</span> fruit[length <span class="op">-</span> <span class="dv">1</span>]</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(last)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>a</code></pre>
+<p>دلیل این تفریق این است که شماره اندیس اولین کاراکتر رشته، با صفر شروع می‌شود.</p>
+<p>بنابراین برای دستیابی به موقعیت‌های دیگر یک رشته، می‌توان اندیس‌ها را تغییر داد:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>fruit <span class="op">=</span> <span class="st">'banana'</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>fruit[:<span class="dv">3</span>]</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>ana</code></pre>
 </section>
-<section id="work-with-list-items" class="level2">
-<h2 class="anchored" data-anchor-id="work-with-list-items">کارکردن با عناصر لیست</h2>
-<p>در قطعه کد زیر، به ترتیب با استفاده از عملگرهای <span dir="ltr"><code>+</code></span> و <span dir="ltr"><code>*</code></span> آشنا می‌شویم و سپس نحوه برش‌های مختلف لیست را یادمی‌گیریم:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> a <span class="op">+</span> b</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(c)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>[1, 2, 3, 4, 5, 6]</code></pre>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>] <span class="op">*</span> <span class="dv">3</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>[1, 2, 3, 1, 2, 3, 1, 2, 3]</code></pre>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>, <span class="st">'f'</span>]</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>t[<span class="dv">1</span>:<span class="dv">3</span>]</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>['b', 'c']</code></pre>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>t[:<span class="dv">4</span>]</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>['a', 'b', 'c', 'd']</code></pre>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>t[<span class="dv">3</span>:]</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>['d', 'e', 'f']</code></pre>
+<section id="sec-immutable-string" class="level2">
+<h2 class="anchored" data-anchor-id="sec-immutable-string">رشته‌ها تغییرناپذیرند</h2>
+<p>درعین حال اینکه می‌توان به همه کاراکترهای یک رشته دست پیدا کرد، اما نمی‌توان کاراکتر دیگری را جایگزین یکی از کاراکترهای رشته کرد:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>greeting <span class="op">=</span> <span class="st">'Hello, world!'</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>greeting[<span class="dv">0</span>] <span class="op">=</span> <span class="st">'J'</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>اگر این دستور را اجرا کنید، با خطا مواجه می‌شوید، چراکه رشته‌ها قابل تغییر نیستند.</p>
 </section>
-<section id="list-methods" class="level2">
-<h2 class="anchored" data-anchor-id="list-methods">متدهای لیست</h2>
-<p>برای اضافه کردن یک عنصر به انتهای لیست، می‌توانیم از متد <span dir="ltr"><code>append()</code></span> استفاده کنیم:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>]</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>t.append(<span class="st">'d'</span>)</span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>['a', 'b', 'c', 'd']</code></pre>
-<p>همچنین متد <span dir="ltr"><code>extend()</code></span> یک لیست را به عنوان آرگومان ورودی دریافت می‌کند و آن را به انتهای لیست معرفی شده، اضافه می‌کند:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>]</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>t2 <span class="op">=</span> [<span class="st">'d'</span>, <span class="st">'e'</span>]</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>t1.extend(t2)</span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t1)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>['a', 'b', 'c', 'd', 'e']</code></pre>
-<p>برای مرتب کردن عناصر یک لیست، متد <span dir="ltr"><code>sort()</code></span> در اختیار ماست:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'d'</span>, <span class="st">'c'</span>, <span class="st">'e'</span>, <span class="st">'b'</span>, <span class="st">'a'</span>]</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>t.sort()</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>['a', 'b', 'c', 'd', 'e']</code></pre>
-<p>اگر چنانچه خواسته باشیم عنصری را از داخل یک لیست حذف کنیم، با دانستن اندیس موقعیت آن عنصر، می‌توانیم از متد <span dir="ltr">‘pop(i)’</span> استفاده کنیم:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>]</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> t.pop(<span class="dv">1</span>)</span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>['a', 'c']</code></pre>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>b</code></pre>
-<p>اگر در استفاده از دستور <span dir="ltr"><code>pop()</code></span> اندیس استفاده نشود، این متد، آخرین عنصر آرایه را حذف خواهد کرد.</p>
-<p>به کد زیر و نتیجه اجرای آن دقت کنید:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>]</span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="kw">del</span> t[<span class="dv">1</span>]</span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>['a', 'c']</code></pre>
-<p>به نظر شما تفاوت استفاده از متدهای <span dir="ltr"><code>pop(i)</code></span> و <span dir="ltr"><code>del list_name[i]</code></span> در چیست؟</p>
-<p>بله، درست است که هر دو باعث حذف یک عنصر از لیست می‌شوند اما در استفاده از متد <span dir="ltr"><code>pop(i)</code></span> عنصر حذف شده در اختیار ما خواهد بود. به این معنی که خروجی این متد، نمایانگر مقدار عنصر حذف شده است. اما در استفاده از دستور <span dir="ltr"><code>del list_name[i]</code></span> عنصری که حذف شده دیگر در دسترس ما نخواهد بود.</p>
-<p>حال به این سوال فکر کنید که اگر اندیس عنصر موردنظر برای حذف کردن را ندانیم، از چه روشی می‌توانیم آن عنصر خاص را حذف کنیم؟ درواقع پایتون برای این منظور متد <span dir="ltr"><code>remove(item_value)</code></span> را پیشنهاد می‌دهد که با ارسال مقدار عنصر موردنظر به عنوان آرگومان ورودی به این متد، می‌توانیم آن را از لیست حذف کنیم:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>]</span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>t.remove(<span class="st">'b'</span>)</span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>['a', 'c']</code></pre>
-<p>و یا برای حذف بیش از یک مقدار، با دانستن اندیس آن‌ها می‌توان از روش زیر استفاده کرد:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>, <span class="st">'f'</span>]</span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="kw">del</span> t[<span class="dv">1</span>:<span class="dv">5</span>]</span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>['a', 'f']</code></pre>
+<section id="sec-in-operation" class="level2">
+<h2 class="anchored" data-anchor-id="sec-in-operation">عملگر <span dir="ltr"><code>in</code></span></h2>
+<p>گاربرد این عملگر زمانی است که می‌خواهیم بدانیم آیا یک رشته حاوی یک رشته و یا کاراکتر خاصی هست یا خیر:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">'a'</span> <span class="kw">in</span> <span class="st">'banana'</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>و یا این حالت:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">'seed'</span> <span class="kw">in</span> <span class="st">'banana'</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>همچنین با استفاده از عملگرهای <span dir="ltr"><code>&lt;</code></span> و <span dir="ltr"><code>&gt;</code></span> می‌توانیم رشته‌ها را از نظر ترتیب حروف الفبا با یکدیگر مقایسه کنیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> word <span class="op">&lt;</span> <span class="st">'banana'</span>:</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Your word,'</span> <span class="op">+</span> word <span class="op">+</span> <span class="st">', comes before banana.'</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> word <span class="op">&gt;</span> <span class="st">'banana'</span>:</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Your word,'</span> <span class="op">+</span> word <span class="op">+</span> <span class="st">', comes after banana.'</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'All right, bananas.'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="important-function-for-lists" class="level2">
-<h2 class="anchored" data-anchor-id="important-function-for-lists">برخی توابع مهم مربوط به لیست</h2>
-<p>در کدهای زیر نام و کاربرد برخی توابع مهم برای استفاده در لیست‌ها معرفی شده‌اند:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>nums <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">41</span>, <span class="dv">12</span>, <span class="dv">9</span>, <span class="dv">74</span>, <span class="dv">15</span>]</span>
-<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(nums))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>6</code></pre>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">max</span>(nums))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>74</code></pre>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">min</span>(nums))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>3</code></pre>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">sum</span>(nums))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>154</code></pre>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">sum</span>(nums)<span class="op">/</span><span class="bu">len</span>(nums))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="output"><code>25.666666666666668</code></pre>
+<section id="sec-string-methods" class="level2">
+<h2 class="anchored" data-anchor-id="sec-string-methods">متدهای رشته‌ای</h2>
+<p>پایتون تابعی به نام <span dir="ltr"><code>dir</code></span> دارد که متدهای مربوط به یک شیئ را لیست می‌کند و همچنین با استفاده از <span dir="ltr"><code>type</code></span> می‌توانیم نوع شیئ را تشخیص دهیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>stuff <span class="op">=</span> <span class="st">'Hello world'</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(stuff)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>&lt;class 'str'&gt;</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="bu">dir</span>(stuff)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']</code></pre>
+<p>روش دیگر برای یافتن موقعیت یک زیررشته و یا یک کاراکتر خاص در یک رشته اصلی، استفاده از متد [<code>find</code>]{dir-ltr} می‌باشد:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>word <span class="op">=</span> <span class="st">'banana'</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>index <span class="op">=</span> word.find(<span class="st">'a'</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(index)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>1</code></pre>
+<p>خوب است با متدهای <span dir="ltr"><code>strip</code></span> و <span dir="ltr"><code>startwith</code></span> و</p>
+<p><span dir="ltr"><code>lower</code></span></p>
+<p>برای آشنایی بیشتر با متدهای رشته‌ای، در برنامه پایتون خودمان تمرین کنیم.</p>
 </section>
-<section id="تمرین" class="level2">
-<h2 class="anchored" data-anchor-id="تمرین">تمرین</h2>
-<div class="proof remark">
-<p><span class="proof-title"><em>نکته</em>. </span>با استفاده از ورودی (<span dir="ltr"><code>input()</code></span>) تمرین‌ها انجام شود.</p>
-</div>
-<div class="exercise">
-<p>سوالات سایت <a href="quera.ir">کوئرا</a></p>
-<ul>
-<li><a href="https://quera.org/problemset/3405">چاپ برعکس - <code>3405</code></a></li>
-<li><a href="https://quera.org/problemset/588">ماکزیمم - <code>588</code></a></li>
-</ul>
-</div>
+<section id="format-operator" class="level2">
+<h2 class="anchored" data-anchor-id="format-operator">عملگر فرمت</h2>
+<p>عملگر <code>format</code> <code>%</code>، به ما اجازه می‌دهد تا رشته‌ها را بسازیم و بخش‌هایی از رشته‌ها را با داده‌های ذخیره شده در متغیرها جایگزین کنیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>camels <span class="op">=</span> <span class="dv">42</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="co">'%d'</span> <span class="op">%</span> camels</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>'42'</code></pre>
+<p>در مثال بالا توانستیم حروف 4 و 2 را به عدد 42 تبدیل کنیم.</p>
+<p><code>d</code> مخفف “اعشاری” است. و یا این مثال:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>camels <span class="op">=</span> <span class="dv">42</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="co">'I have spotted %d camels.'</span> <span class="op">%</span> camels</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>'I have spotted 42 camels.'</code></pre>
+<p>به همین ترتیب، عملگرهای <span dir="ltr"><code>%g</code></span> و <span dir="ltr"><code>%s</code></span> وظیفه قالب‌بندی یک عدد ممیز شناور و قالب‌بندی یک رشته را به عهده دارند:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>fmt_string <span class="op">=</span> <span class="st">'In </span><span class="sc">%d</span><span class="st"> years I have spotted </span><span class="sc">%g</span><span class="st"> </span><span class="sc">%s</span><span class="st">.'</span> <span class="op">%</span> (<span class="dv">3</span>, <span class="fl">0.1</span>, <span class="st">'camels'</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fmt_string)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>'In 3 years I have spotted 0.1 camels.'</code></pre>
+<p>یک شکل جدید از قالب رشته‌ای در نسخه‌های جدید پایتون استفاده از <code>f''</code> یا همان <span dir="ltr">f-string</span> است.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">27</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Mohsen"</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="ss">f"Mr </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> is </span><span class="sc">{</span>age<span class="sc">}</span><span class="ss"> years old."</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(text)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>Mr Mohsen is 27 years old.</code></pre>
 
 
 </section>
@@ -1044,13 +1030,13 @@ Gouda</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapter/06-files.html" class="pagination-link" aria-label="فایل‌ها">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">فایل‌ها</span></span>
+      <a href="../chapter/08-list-tuple-set-dict.html" class="pagination-link" aria-label="لیست‌، تاپل، ست و دیکشنری">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapter/08-string.html" class="pagination-link" aria-label="رشته‌ها">
-        <span class="nav-page-text"><span class="chapter-title">رشته‌ها</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapter/10-tkinter.html" class="pagination-link" aria-label="رابط کاربری tkinter">
+        <span class="nav-page-text"><span class="chapter-title">رابط کاربری tkinter</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

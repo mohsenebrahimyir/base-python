@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="محبوبه کاتبی">
-<meta name="author" content="محسن ابراهیمی">
-<meta name="dcterms.date" content="2021-01-01">
 
-<title>مبانی پایتون</title>
+<title>فایل‌ها – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,33 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
-<link href="./assets/img/favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e22f6f1774086682b500d69e3c6b1549.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapter/08-list-tuple-set-dict.html" rel="next">
+<link href="../chapter/06-function.html" rel="prev">
+<link href="../assets/img/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e22f6f1774086682b500d69e3c6b1549.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -110,8 +143,8 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<link rel="stylesheet" href="assets/css/rtl-style.css">
-<link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="../assets/css/rtl-style.css">
+<link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -285,7 +318,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">پیش گفتار</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter/07-file.html"><span class="chapter-title">فایل‌ها</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -300,7 +333,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">مبانی پایتون</a> 
+      <a href="../">مبانی پایتون</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/mohsenebrahimyir/base-python/" title="منبع کد" class="quarto-navigation-tool px-1" aria-label="منبع کد"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="حالت تاریک را تغییر دهید"><i class="bi"></i></a>
@@ -321,79 +354,79 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">پیش گفتار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+  <a href="../intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">مقدمه</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/00-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
+  <a href="../chapter/00-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/01-value.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">مقدار</span></a>
+  <a href="../chapter/01-value.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">مقدار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/02-variable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیر</span></a>
+  <a href="../chapter/02-variable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/03-operator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">عملگر</span></a>
+  <a href="../chapter/03-operator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">عملگر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/04-condition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
+  <a href="../chapter/04-condition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/05-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
+  <a href="../chapter/05-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/06-function.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
+  <a href="../chapter/06-function.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/07-file.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
+  <a href="../chapter/07-file.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">فایل‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/08-list-tuple-set-dict.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></a>
+  <a href="../chapter/08-list-tuple-set-dict.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/09-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  <a href="../chapter/09-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/10-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
+  <a href="../chapter/10-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/99-project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پروژه</span></a>
+  <a href="../chapter/99-project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پروژه</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">منابع</span></a>
   </div>
 </li>
@@ -407,7 +440,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#پیش-گفتار" id="toc-پیش-گفتار" class="nav-link active" data-scroll-target="#پیش-گفتار">پیش گفتار</a></li>
+  <li><a href="#sec-open-file" id="toc-sec-open-file" class="nav-link active" data-scroll-target="#sec-open-file">بازکردن فایل</a></li>
+  <li><a href="#sec-read-file" id="toc-sec-read-file" class="nav-link" data-scroll-target="#sec-read-file">خواندن فایل</a></li>
+  <li><a href="#sec-search-in-file" id="toc-sec-search-in-file" class="nav-link" data-scroll-target="#sec-search-in-file">جستجو در فایل</a></li>
+  <li><a href="#sec-select-file" id="toc-sec-select-file" class="nav-link" data-scroll-target="#sec-select-file">انتخاب نام فایل</a></li>
+  <li><a href="#sec-try-except-open-file" id="toc-sec-try-except-open-file" class="nav-link" data-scroll-target="#sec-try-except-open-file">استفاده از <code>try</code>، <code>except</code> و <code>open</code></a></li>
+  <li><a href="#sec-write-file" id="toc-sec-write-file" class="nav-link" data-scroll-target="#sec-write-file">نوشتن در فایل</a></li>
+  <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
   </ul>
 </nav>
     </div>
@@ -417,28 +456,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">مبانی پایتون</h1>
-<p class="subtitle lead">مفاهیم پایه برای برنامه نویسی با زبان‌ Python</p>
+<h1 class="title"><span id="sec-files" class="quarto-section-identifier"><span class="chapter-title">فایل‌ها</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">نویسندگان</div>
-    <div class="quarto-title-meta-contents">
-             <p>محبوبه کاتبی </p>
-             <p>محسن ابراهیمی </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">منتشر شده</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2021-01-01</p>
-    </div>
-  </div>
   
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
@@ -454,26 +479,110 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
-<section id="پیش-گفتار" class="level1 unnumbered">
-<h1 class="unnumbered">پیش گفتار</h1><p><img src="assets/img/cover.png" title="مبانی پایتون" class="quarto-cover-image nolightbox img-fluid"></p>
-<p>به همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل <a href="mailto:mohsenebrahimy.ir@gmail.com">mohsenebrahimy.ir@gmail.com</a> برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ <span dir="ltr"><strong>۱۴۰۴-۱۲-۰۵</strong></span> بروزرسانی شده است.</p>
-<hr>
-<p>امیدوارم این کتاب برایتان مفید باشد.</p>
-<ul>
-<li>کتاب: <a href="https://mohsenebrahimyir.github.io/base-python/">https://mohsenebrahimyir.github.io/base-python/</a></li>
-</ul>
-<div class="callout callout-style-default callout-important callout-titled" title="توجه">
+<section id="sec-open-file" class="level2">
+<h2 class="anchored" data-anchor-id="sec-open-file">بازکردن فایل</h2>
+<p>ممکن است داده‌های ما از قبل در فایلی موجود باشد (<a href="./data/mbox.txt">دانلود فایل</a>) ، در اینصورت باید بتوانیم آن را باز کنیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fhand)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>&lt;_io.TextIOWrapper name='mbox.txt' mode='r' encoding='UTF-8'&gt;</code></pre>
+<p>اگر باز کردن موفقیت‌آمیز باشد، سیستم‌عامل یک <span dir="ltr"><code>handle</code></span> برای فایل به ما برمی‌گرداند. <span dir="ltr"><code>handle</code></span>، داده‌های واقعی موجود در فایل نیست، اما در عوض یک <span dir="ltr"><code>handle</code></span> است که می‌توانیم برای خواندن داده‌ها از آن استفاده کنیم. اگر فایل درخواستی وجود داشته باشد و مجوزهای لازم برای خواندن فایل را داشته باشیم، به ما یک <span dir="ltr"><code>handle</code></span> داده می شود.</p>
+<p>اما چنانچه فایل وجود نداشته باشد، اجرای این دستور ناموفق خواهد بود و <span dir="ltr"><code>handle</code></span> نخواهیم داشت:</p>
+<pre class="output"><code>Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+FileNotFoundError: [Errno 2] No such file or directory: 'mbox.txt'</code></pre>
+</section>
+<section id="sec-read-file" class="level2">
+<h2 class="anchored" data-anchor-id="sec-read-file">خواندن فایل</h2>
+<p>با بازکردن فایل، تنها یک <span dir="ltr"><code>handle</code></span> در اختیار خواهیم داشت تا بتوانیم با استفاده از آن با فایل موردنظر کار کنیم. بنابریان برای خواندن فایل، می‌بایست با یک دستور حلقه <span dir="ltr"><code>for</code></span> ساده، اقدام به خواندن فایل کنیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> line <span class="kw">in</span> fhand:</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> count <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Line Count:'</span>, count)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>Line Count: 7</code></pre>
+<p>با این دستورات، ما سعی کرده‌ایم که فایل را خط به خط بخوانیم. اما این طریقه خواندن برای فایل‌های بزرگ مورد استفاده قرار می‌گیرد. اگر فایلی داشته باشیم و بدانیم حجم آن کم است، می‌توانیم از دستورات زیر استفاده کنیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>inp <span class="op">=</span> fhand.read()</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(inp))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>334</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(inp[:<span class="dv">20</span>])</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>From stephen.marquar</code></pre>
+<p>در این حالت بهتر است رشته خوانده شده از فایل را در یک متغیر ذخیره کنیم، چراکه با خواندن فایل بعدی به همین روش، محتویات فایل قبلی را از دست خواهیم داد، به همین دلیل ما از متغیر <code>inp</code> در دستورات فوق استفاده کردیم.</p>
+</section>
+<section id="sec-search-in-file" class="level2">
+<h2 class="anchored" data-anchor-id="sec-search-in-file">جستجو در فایل</h2>
+<p>اگر در فایل محتویات داده به دنبال کلمه و یا داده خاصی هستیم، می‌توانیم آن را در فایلی که از قبل آن را باز کرده و خوانده‌ایم، جستجو کنیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> line <span class="kw">in</span> fhand:</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> line.rstrip()</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> line.startswith(<span class="st">'From:'</span>):</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(line)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>From: stephen.marquard@uct.ac.za</code></pre>
+<p>در این مثال، ما به دنبال کلمه <span dir="ltr"><code>'From'</code></span> هستیم.</p>
+<p>ما با استفاده از تابع <span dir="ltr"><code>rstrip()</code></span> فضای خالی را در سمت راست رشته موجود در فایل، حذف کرده‌ایم.</p>
+</section>
+<section id="sec-select-file" class="level2">
+<h2 class="anchored" data-anchor-id="sec-select-file">انتخاب نام فایل</h2>
+<p>این مسئله برای ما پیش آمده که برای باز کردن یک فایل، همیشه نام و آدرس دقیق آن را نمی‌دانیم و نیاز است تا بتوانیم در مرورگر سیستم فایل خود، آن را جستجو کنیم. به این منظور، با استفاده از قطعه کد زیر، این امکان را به کاربر می‌دهیم که فایل موردنظر خود را ابتدا جستجو و سپس باز کند. در اینصورت ما دیگر نام فایل را بصورت مستقیم در کد خود نخواهیم داشت:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>fname <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter the file name: '</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(fname)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> line <span class="kw">in</span> fhand:</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> line.startswith(<span class="st">'Subject:'</span>):</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> count <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'There were'</span>, count, <span class="st">'subject lines in'</span>, fname)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>Enter the file name: mbox.txt
+There were 1 subject lines in mbox.txt</code></pre>
+</section>
+<section id="sec-try-except-open-file" class="level2">
+<h2 class="anchored" data-anchor-id="sec-try-except-open-file">استفاده از <code>try</code>، <code>except</code> و <code>open</code></h2>
+<p>از کد قبل به خاطر داریم که ما به کاربر اجازه دادیم که نام فایل حود را برای بازکردن، انتخاب نماید. حال اگر کاربر ما چیزی را تایپ کند که نام فایل نیست چه؟ بنابراین باید تمهیداتی برای این کار بیاندیشیم، چرا که گذشته از اینکه بازکردن یک فایل غیرمرتبط برنامه را با خطا مواجه می‌کند، ممکن است فایلی که کاربر آن را انتخاب کرده، عمداً و یا سهواً برای برنامه ما ضرر داشته باشد. بنابراین ما با استفاده از دستورات <span dir="ltr"><code>try</code></span> ، <span dir="ltr"><code>except</code></span> و <span dir="ltr"><code>open</code></span> این اتفاق را مدیریت می‌کنیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>fname <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter the file name: '</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    fhand <span class="op">=</span> <span class="bu">open</span>(fname)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span>:</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'File cannot be opened:'</span>, fname)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    exit()</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> line <span class="kw">in</span> fhand:</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> line.startswith(<span class="st">'Subject:'</span>):</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>      count <span class="op">=</span> count <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'There were'</span>, count, <span class="st">'subject lines in'</span>, fname)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>Enter the file name: otherfile.txt
+File cannot be opened: otherfile.txt
+There were 0 subject lines in otherfile.txt</code></pre>
+<p>همانطور که مشاهده می‌شود، تابع <span dir="ltr"><code>exit()</code></span> درصورت اینکه کاربر چیزی غیر از فایل را درخواست داده باشد، برنامه ما از اجرا خارج می‌شود.</p>
+</section>
+<section id="sec-write-file" class="level2">
+<h2 class="anchored" data-anchor-id="sec-write-file">نوشتن در فایل</h2>
+<p>بیشتر اوقات افراد نیاز دارند که در فایل داده خود، ویرایش انجام داده یا داده جدیدی به آن بیافزایند. بنابراین باید قادر باشند که با استفاده از دستورات لازم، این کار را انجام دهند. اما یک نکته متفاوت اینجا مطرح می‌شود، به این قطعه کد توجه کنید:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>fout <span class="op">=</span> <span class="bu">open</span>(<span class="st">'output.txt'</span>, <span class="st">'w'</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fout)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>&lt;_io.TextIOWrapper name='output.txt' mode='w' encoding='UTF-8'&gt;</code></pre>
+<p>در اینجا چنانچه فایل موردنظر وجود داشته باشد، فایل باز شده و آماده نوشتن می‌باشد: در واقع پارمتر <span dir="ltr">‘w’</span> این اجازه را صادر می‌کند. اما اگر فایل موجود نباشد، یک فایل جدید با نام ذکر شده، ایجاد می‌شود و آماده نوشتن خواهد بود.</p>
+<p>مثلاً فرض کنیم می‌خواهیم متن زیر را در فایل بنویسیم:</p>
+<pre><code>This here's the wattle</code></pre>
+<p>کد لازم برای این کار، به شکل زیر خواهد بود:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>line1 <span class="op">=</span> <span class="st">"This here's the wattle,</span><span class="ch">\n</span><span class="st">"</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>fout.write(line1)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>24</code></pre>
+<p>و درنهایت اینکه وقتی کارمان با فایلی تمام شد، می‌بایست حتماً آن را ببندیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>fout.close()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="تمرین" class="level2">
+<h2 class="anchored" data-anchor-id="تمرین">تمرین</h2>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="پروژه">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">مهم</span>توجه
+<span class="screen-reader-only">احتیاط</span>پروژه
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>اگر این متن را میبینید یعنی این کتاب درحال توسعه است.</p>
+<p>به بخش <a href="99-project.html#sec-project-calculator" class="quarto-xref"><span>پروژه ماشین حساب</span></a> بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.</p>
 </div>
 </div>
 
@@ -930,10 +1039,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../chapter/06-function.html" class="pagination-link" aria-label="توابع">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">توابع</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="مقدمه">
-        <span class="nav-page-text">مقدمه</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapter/08-list-tuple-set-dict.html" class="pagination-link" aria-label="لیست‌، تاپل، ست و دیکشنری">
+        <span class="nav-page-text"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -941,7 +1053,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><a href="./index.html">مبانی پایتون</a></p>
+<p><a href="../index.html">مبانی پایتون</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

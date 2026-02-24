@@ -1,6 +1,6 @@
-# توابع {#functions}
+# توابع {#sec-functions}
 
-## فراخوانی تابع {#import-function}
+## فراخوانی تابع {#sec-import-function}
 
 در حوزه برنامه‌نویسی،
 یک تابع دنباله‌ای از جملات است که یک محاسبات را انجام می‌دهد.
@@ -21,7 +21,7 @@ type(32)
 [`type`]{dir=ltr}
 است.
 
-## توابع داخلی {#built-in-functions}
+## توابع داخلی {#sec-built-in-functions}
 
 توابع داخلی 
 [(Built-in)]{dir=ltr}
@@ -51,7 +51,7 @@ len('Hello world')
 11
 ```
 
-## توابع تبدیل نوع {#type-conversion-functions}
+## توابع تبدیل نوع {#sec-type-conversion-functions}
 
 توابع تبدیل نوع 
 [(Type Conversion)]{dir=ltr}
@@ -79,7 +79,7 @@ float('3.14159')
 3.14159
 ```
 
-## توابع ریاضی {#math-functions}
+## توابع ریاضی {#sec-math-functions}
 
 پایتون دارای یک ماژول ریاضی است که اکثر توابع ریاضی 
 مشهور را ارائه می‌دهد. اما قبل از اینکه بتوانیم از ماژول
@@ -107,7 +107,7 @@ radians = 0.7
 height = math.sin(radians)
 ```
 
-## اعداد تصادفی {#random-numbers}
+## اعداد تصادفی {#sec-random-numbers}
 
 به نظر می‌رسد که ساختن یک برنامه واقعاً غیر قطعی
 چندان آسان نیست، اما راه‌هایی وجود دارد که حداقل 
@@ -173,7 +173,7 @@ random.choice(t)
 3
 ```
 
-## افزودن یک تابع جدید {#create-new-function}
+## افزودن یک تابع جدید {#sec-create-new-function}
 
 ما معمولاْ برای پیشبرد اهداف برنامه موردنظرمان،
 نیاز به تعریف توابع جدید خواهیم داشت. این توابع
@@ -207,7 +207,7 @@ I sleep all night and I work all day.
 ما حتی می‌توانیم یک تابع تعریف شده را درون تابع دیگر، 
 فراخوانی کنیم.
 
-## پارامترها و آرگومان‌ها {#parameters-and-arguments}
+## پارامترها و آرگومان‌ها {#sec-parameters-and-arguments}
 
 برخی از توابع داخلی که دیده‌ایم به آرگومان نیاز دارند. 
 برای مثال، وقتی تابع 
@@ -218,7 +218,7 @@ I sleep all night and I work all day.
 
 گفته می‌شود.
 
-## توابع دارای خروجی و توابع بدون خروجی {#fruitful-functions-and-void-functions}
+## توابع دارای خروجی و توابع بدون خروجی {#sec-fruitful-functions-and-void-functions}
 
 در اجرای برخی توابع، با اتمام آخرین دستور تابع،
 مقداری را به عنوان نتیجه
@@ -236,6 +236,18 @@ math.sqrt(5)
 2.23606797749979
 ```
 
+در این توابع از کلید واژه `return` برای ارائه خروجی استفاده می‌شود.
+
+```python
+def get_sum(x, y):
+    return x + y
+
+get_sum(2, 3)
+```
+```
+5
+```
+
 اما این اتفاق برای همه توابع رخ نمی‌دهد.
 درواقع این توابع کاری را انجام 
 داده‌اند که بصورت خروجی قابل نمایش نیست. 
@@ -249,72 +261,26 @@ def No_reult_func ():
 
 ```
 
+## متغیرهای سراسری {#sec-global-variables}
 
-## پروژه {#project}
-
-::: {.exercise} :::
-به کد زیر نگاه کنید که یک ماشین حساب ساده است و ببینید کدام مطالبی که توی این بخش گفته شده استفاده شده.
+برای اینکه بتوانیم متغیرهای خارج تابع را درون تابع ویرایش کنیم و مجددا در بیرون تابع استفاده کنیم باید متغیر `global` درون تابع تعریف کنیم
 
 
 ```python
-import tkinter as tk
+n = 0
+def counter():
+    global n
+    n += 1
 
-
-def calculate():
-    try:
-        num1 = float(entry1.get())
-        num2 = float(entry2.get())
-        op = operator.get()
-
-        if op == "+":
-            result = num1 + num2
-        elif op == "-":
-            result = num1 - num2
-        elif op == "*":
-            result = num1 * num2
-        elif op == "/":
-            if num2 == 0:
-                result_label.config(text="خطا: تقسیم بر صفر!")
-                return
-            result = num1 / num2
-        else:
-            result_label.config(text="عملگر نامعتبر است")
-            return
-
-        result_label.config(text=f"نتیجه: {result}")
-
-    except ValueError:
-        result_label.config(text="لطفاً فقط عدد وارد کنید")
-
-
-window = tk.Tk()
-window.title("ماشین حساب ساده")
-window.geometry("300x250")
-
-label1 = tk.Label(window, text="عدد اول:")
-entry1 = tk.Entry(window)
-
-label2 = tk.Label(window, text="عدد دوم:")
-entry2 = tk.Entry(window)
-
-label_op = tk.Label(window, text="عملگر (+ - * /):")
-operator = tk.Entry(window)
-
-calc_button = tk.Button(window, text="محاسبه", command=calculate)
-result_label = tk.Label(window, text="نتیجه: ", fg="blue")
-
-label1.pack()
-entry1.pack()
-
-label2.pack()
-entry2.pack()
-
-label_op.pack()
-operator.pack()
-
-calc_button.pack(pady=10)
-result_label.pack()
-
-window.mainloop()
+counter()
+print(n)
 ```
-::::::
+```
+1
+```
+
+## تمرین
+
+::: {.callout-caution title="پروژه" icon="false"}
+به بخش @sec-project-calculator بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.
+:::

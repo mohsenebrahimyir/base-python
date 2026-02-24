@@ -1,7 +1,6 @@
-# اجرای شرطی {#condition-statement}
+# اجرای شرطی {#sec-condition-statement}
 
-
-## اجرای شرطی {#condition-execution}
+## اجرای شرطی {#sec-condition-execution}
 
 برای نوشتن یک برنامه کارآ، خیلی اوقات نیاز به بررسی شرایط مختلف داریم که 
 براساس آن‌ها رفتارهای متفاوتی را طراحی کنیم.
@@ -22,16 +21,13 @@ if
 اگر شرط منطقی درست باشد، دستور تورفتگی اجرا می‌شود. 
 اگر شرط منطقی نادرست باشد، عبارت تورفتگی نادیده گرفته می‌شود.
 
-
-## اجرای جایگزین {#alternative-execution}
+## اجرای جایگزین {#sec-alternative-execution}
  
-
 شکل دوم یک عبارت 
 if 
 اجرای جایگزین 
 ([Alternative Execution]{dir=ltr})
 است که در آن دو حالت ممکن توسط شرط بررسی می‌شود که کدامیک می‌بایست اجرا شوند:
-
 
 ```python
 if x%2 == 0 :
@@ -40,15 +36,13 @@ else :
     print('x is odd')
 ```
 
-
-
 ز آنجایی که شرط باید درست یا نادرست باشد، دقیقاً یکی از گزینه‌ها اجرا می‌شود.
 گزینه‌های جایگزین شاخه 
 (Branch) 
 نامیده می‌شوند، زیرا آنها شاخه‌هایی در جریان اجرا هستند.
 
 
-## شرط‌های زنجیره‌ای {#chained-conditionals}
+## شرط‌های زنجیره‌ای {#sec-chained-conditionals}
 
 
 یکی از راه‌های بررسی بیش از سه شرط این است که
@@ -67,8 +61,7 @@ else:
     print('x and y are equal')
 ```
 
-
-## شرط‌های تو در تو {#nested-conditionals}
+## شرط‌های تو در تو {#sec-nested-conditionals}
 
 یک عبارت شرطی نیز می‌تواند درون عبارت شرطی دیگری قرار گیرد و ساختار شرط‌های تو در تو
 ([Nested Conditionals]{dir=ltr}) 
@@ -84,9 +77,7 @@ else:
         print('x is greater than y')
 ```
 
-
-## استفاده از `try` و `except` {#try-except-statement}
-
+## استفاده از `try` و `except` {#sec-try-except-statement}
 
 برخی اوقات در جریان برنامه‌نویسی شرطی، نیاز داریم که به مفسر پایتون بگوئیم 
 براساس ورودی‌های مختلف چگونه رفتار کند تا کد برنامه ما با خطا رویرو نشود. 
@@ -124,11 +115,9 @@ except:
 `except` 
 می‌پردازد. 
 
+## تمرین
 
-## تمرین {#exercises}
-
-::: {.exercise} :::
-سوالات سایت [کوئرا](quera.ir)
+::: {.callout-caution title="سوالات سایت [کوئرا](quera.ir)"}
 
 - [یخدارچی - `3429`](https://quera.org/problemset/3429)
 - [اعداد - `280`](https://quera.org/problemset/280)
@@ -138,71 +127,6 @@ except:
 - [دو نقطه خط - `3414`](https://quera.org/problemset/3414)
 :::
 
-## پروژه {#project}
-
-::: {.exercise} :::
-به کد زیر نگاه کنید که یک ماشین حساب ساده است و ببینید کدام مطالبی که توی این بخش گفته شده استفاده شده.
-
-
-```python
-import tkinter as tk
-
-
-def calculate():
-    try:
-        num1 = float(entry1.get())
-        num2 = float(entry2.get())
-        op = operator.get()
-
-        if op == "+":
-            result = num1 + num2
-        elif op == "-":
-            result = num1 - num2
-        elif op == "*":
-            result = num1 * num2
-        elif op == "/":
-            if num2 == 0:
-                result_label.config(text="خطا: تقسیم بر صفر!")
-                return
-            result = num1 / num2
-        else:
-            result_label.config(text="عملگر نامعتبر است")
-            return
-
-        result_label.config(text=f"نتیجه: {result}")
-
-    except ValueError:
-        result_label.config(text="لطفاً فقط عدد وارد کنید")
-
-
-window = tk.Tk()
-window.title("ماشین حساب ساده")
-window.geometry("300x250")
-
-label1 = tk.Label(window, text="عدد اول:")
-entry1 = tk.Entry(window)
-
-label2 = tk.Label(window, text="عدد دوم:")
-entry2 = tk.Entry(window)
-
-label_op = tk.Label(window, text="عملگر (+ - * /):")
-operator = tk.Entry(window)
-
-calc_button = tk.Button(window, text="محاسبه", command=calculate)
-result_label = tk.Label(window, text="نتیجه: ", fg="blue")
-
-label1.pack()
-entry1.pack()
-
-label2.pack()
-entry2.pack()
-
-label_op.pack()
-operator.pack()
-
-calc_button.pack(pady=10)
-result_label.pack()
-
-window.mainloop()
-```
-::::::
+::: {.callout-caution title="پروژه" icon="false"}
+به بخش @sec-project-calculator بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.
+:::

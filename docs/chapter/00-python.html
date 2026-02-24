@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>رابط کاربری tkinter – مبانی پایتون</title>
+<title>پایتون – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -65,8 +85,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../references.html" rel="next">
-<link href="../chapter/08-string.html" rel="prev">
+<link href="../chapter/01-value.html" rel="next">
+<link href="../intro.html" rel="prev">
 <link href="../assets/img/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -318,7 +338,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter/09-tkinter.html"><span class="chapter-title">رابط کاربری tkinter</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter/00-python.html"><span class="chapter-title">پایتون</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -366,47 +386,62 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/01-python-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
+  <a href="../chapter/00-python.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">پایتون</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/02-variables-expressions-commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیرها، عبارات و دستورات</span></a>
+  <a href="../chapter/01-value.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">مقدار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/03-condition-statement.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
+  <a href="../chapter/02-variable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/04-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
+  <a href="../chapter/03-operator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">عملگر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/05-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
+  <a href="../chapter/04-condition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/06-files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
+  <a href="../chapter/05-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/07-lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌ها</span></a>
+  <a href="../chapter/06-function.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/08-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  <a href="../chapter/07-file.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/09-tkinter.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">رابط کاربری tkinter</span></a>
+  <a href="../chapter/08-list-tuple-set-dict.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/09-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/10-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/99-project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پروژه</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -425,8 +460,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#ورود-به-دنیای-گرافیک" id="toc-ورود-به-دنیای-گرافیک" class="nav-link active" data-scroll-target="#ورود-به-دنیای-گرافیک">ورود به دنیای گرافیک</a></li>
-  <li><a href="#ابزارهای-اصلی-widgets" id="toc-ابزارهای-اصلی-widgets" class="nav-link" data-scroll-target="#ابزارهای-اصلی-widgets">ابزارهای اصلی (Widgets)</a></li>
+  <li><a href="#نصب-پایتون-و-اجرای-کد" id="toc-نصب-پایتون-و-اجرای-کد" class="nav-link active" data-scroll-target="#نصب-پایتون-و-اجرای-کد">نصب پایتون و اجرای کد</a></li>
+  <li><a href="#نصب-ide" id="toc-نصب-ide" class="nav-link" data-scroll-target="#نصب-ide">نصب IDE</a></li>
+  <li><a href="#آشنایی-با-کیبورد" id="toc-آشنایی-با-کیبورد" class="nav-link" data-scroll-target="#آشنایی-با-کیبورد">آشنایی با کیبورد</a>
+  <ul class="collapse">
+  <li><a href="#کلیدهای-پرکاربرد-در-برنامهنویسی" id="toc-کلیدهای-پرکاربرد-در-برنامهنویسی" class="nav-link" data-scroll-target="#کلیدهای-پرکاربرد-در-برنامهنویسی">کلیدهای پرکاربرد در برنامه‌نویسی</a></li>
+  <li><a href="#علامتهای-مهم-در-پایتون" id="toc-علامتهای-مهم-در-پایتون" class="nav-link" data-scroll-target="#علامتهای-مهم-در-پایتون">علامت‌های مهم در پایتون</a></li>
+  </ul></li>
+  <li><a href="#sec-interpreter-and-compiler" id="toc-sec-interpreter-and-compiler" class="nav-link" data-scroll-target="#sec-interpreter-and-compiler">مترجم و کامپایلر</a></li>
+  <li><a href="#سایتهای-مفید" id="toc-سایتهای-مفید" class="nav-link" data-scroll-target="#سایتهای-مفید">سایت‌های مفید</a></li>
+  <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
   </ul>
 </nav>
     </div>
@@ -436,7 +479,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">رابط کاربری tkinter</span></h1>
+<h1 class="title"><span id="sec-programming-python" class="quarto-section-identifier"><span class="chapter-title">پایتون</span></span></h1>
 </div>
 
 
@@ -448,7 +491,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-02-08</p>
+      <p class="date-modified">2026-02-24</p>
     </div>
   </div>
     
@@ -459,158 +502,240 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="ورود-به-دنیای-گرافیک" class="level2">
-<h2 class="anchored" data-anchor-id="ورود-به-دنیای-گرافیک">ورود به دنیای گرافیک</h2>
+<p>برای اینکه بتوانیم مهارت خوبی در برنامه‌نویسی بدست آوریم، دو نکته را در نظر داشته باشیم:</p>
 <ul>
-<li>ایجاد Loop برای بدنه</li>
+<li>اول اینکه باید با زبان برنامه‌نویسی موردنظر خود آشنا شویم یعنی لغات رزرو شده <span dir="ltr">(Reserved Words)</span> و گرامر زبان برنامه‌نویسی</li>
 </ul>
-<div id="e50a2e9e" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>خوب است بدانیم برای هر زبان برنامه‌نویسی، لغاتی هستند که مفهوم خاصی داشته و کاربر برنامه‌نویس نمی‌تواند از آن‌ها برای منظور و کاربرد دیگری استفاده نماید. درعین حال، هر برنامه‌نویسی می‌تواند لغات خاص منظوره خود را به مفسر زبان برنامه‌نویسی خود معرفی کند. یکی از روش‌های انجام این کار، تعریف متغیر <span dir="ltr">(Variable)</span> است. کلمات رزرو شده توسط پایتون، شامل موارد ذیل می‌شوند:</p>
+<div dir="ltr">
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>and</code></td>
+<td style="text-align: left;"><code>as</code></td>
+<td style="text-align: left;"><code>assert</code></td>
+<td style="text-align: left;"><code>break</code></td>
+<td style="text-align: left;"><code>class</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>continue</code></td>
+<td style="text-align: left;"><code>def</code></td>
+<td style="text-align: left;"><code>del</code></td>
+<td style="text-align: left;"><code>elif</code></td>
+<td style="text-align: left;"><code>else</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>except</code></td>
+<td style="text-align: left;"><code>finally</code></td>
+<td style="text-align: left;"><code>for</code></td>
+<td style="text-align: left;"><code>from</code></td>
+<td style="text-align: left;"><code>global</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>if</code></td>
+<td style="text-align: left;"><code>in</code></td>
+<td style="text-align: left;"><code>is</code></td>
+<td style="text-align: left;"><code>import</code></td>
+<td style="text-align: left;"><code>lambda</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>nonlocal</code></td>
+<td style="text-align: left;"><code>not</code></td>
+<td style="text-align: left;"><code>or</code></td>
+<td style="text-align: left;"><code>pass</code></td>
+<td style="text-align: left;"><code>raise</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>return</code></td>
+<td style="text-align: left;"><code>try</code></td>
+<td style="text-align: left;"><code>while</code></td>
+<td style="text-align: left;"><code>with</code></td>
+<td style="text-align: left;"><code>yield</code></td>
+</tr>
+</tbody>
+</table>
 </div>
 <ul>
-<li>عنوان</li>
+<li>دوم اینکه، بتوانیم یک داستان بگوئیم!</li>
 </ul>
-<div id="c41aeebf" class="cell" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>در واقع هنر حل مسئله، اصلی‌ترین مهارت یک برنامه‌نویس محسوب می‌شود. با کسب این مهارت، می‌توانیم زبان‌های برنامه‌نویسی دوم به بعد را راحت‌تر بیاموزیم.</p>
+<p>پس برای شروع، ما شروع به خواندن و توضیح برنامه‌ها می‌کنیم، آنگاه برنامه‌های ساده‌ می نویسیم، و سپس برنامه‌های پیچیده‌تر را در طول زمان می‌نویسیم. اگر خوب پیش برویم، خواهیم توانست روش و یا الگوریتم حل مسئله را از دیدگاه خودمان بنویسیم و آنگاه به مرور، مهارت حل خلاقانه مسئله را بدست خواهیم آورد.</p>
+<section id="نصب-پایتون-و-اجرای-کد" class="level2">
+<h2 class="anchored" data-anchor-id="نصب-پایتون-و-اجرای-کد">نصب پایتون و اجرای کد</h2>
+<p><a href="https://www.python.org/"><span dir="ltr">https://www.python.org/</span></a></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">--version</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>Python 3.10.12</code></pre>
+</section>
+<section id="نصب-ide" class="level2">
+<h2 class="anchored" data-anchor-id="نصب-ide">نصب IDE</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/img/ide.png" class="img-fluid figure-img"></p>
+<figcaption>نظر سنجی ۲۰۲۳ از توسعه دهندگان درباره محیط توسعه یکپارچه <span class="citation" data-cites="stackoverflow-survey"><a href="../references.html#ref-stackoverflow-survey" role="doc-biblioref">[1]</a></span></figcaption>
+</figure>
+</div>
+<p>برای نوشتن، اجرا و خروجی گرفتن بهتر می‌توانید از یک نرم افزار <strong>IDE</strong> <span dir="ltr">(Integrated Development Environment)</span> استفاده کنید.</p>
+<ul>
+<li>نصب <strong>VSCode</strong> از <strong><a href="https://code.visualstudio.com/" class="uri">https://code.visualstudio.com/</a></strong></li>
+<li>نصب <span dir="ltr"><strong>Jupyter</strong></span> از <strong><a href="https://jupyter.org" class="uri">https://jupyter.org</a></strong></li>
+</ul>
+</section>
+<section id="آشنایی-با-کیبورد" class="level2">
+<h2 class="anchored" data-anchor-id="آشنایی-با-کیبورد">آشنایی با کیبورد</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/img/keyboard.jpg" class="img-fluid figure-img"></p>
+<figcaption>کیبورد</figcaption>
+</figure>
+</div>
+<section id="کلیدهای-پرکاربرد-در-برنامهنویسی" class="level3">
+<h3 class="anchored" data-anchor-id="کلیدهای-پرکاربرد-در-برنامهنویسی">کلیدهای پرکاربرد در برنامه‌نویسی</h3>
+<ul>
+<li><span dir="ltr"><code>Enter</code></span> برای رفتن به خط بعدی</li>
+<li><span dir="ltr"><code>Tab</code></span> برای فاصله دادن در ابتدای خط (indent)</li>
+<li><span dir="ltr"><code>Backspace</code> و <code>Delete</code></span> برای پاک کردن حروف</li>
+<li><span dir="ltr"><code>Shift</code></span> برای نوشتن حروف بزرگ یا علامت‌های بالای دکمه‌ها</li>
+<li><span dir="ltr"><code>Ctrl + S</code></span> برای ذخیره کردن فایل</li>
+<li><span dir="ltr"><code>Ctrl + Z</code> و <code>Ctrl + Y</code></span> برای برگردوندن یا لغو تغییرات</li>
+<li><span dir="ltr"><code>Ctrl + X</code> و <code>Ctrl + C</code> و <code>Ctrl + V</code></span> برای کات و کپی و پیست کردن کد</li>
+<li><span dir="ltr"><code>Ctrl + /</code></span> برای کامنت کردن خط (در بعضی ادیتورها)</li>
+</ul>
+</section>
+<section id="علامتهای-مهم-در-پایتون" class="level3">
+<h3 class="anchored" data-anchor-id="علامتهای-مهم-در-پایتون">علامت‌های مهم در پایتون</h3>
+<ul>
+<li><code>.</code> نقطه</li>
+<li><code>,</code> ویرگول</li>
+<li><code>;</code> نقطه ویرگول</li>
+<li><code>:</code> دو نقطه</li>
+<li><code>()</code> پرانتز</li>
+<li><code>[]</code> کروشه یا براکت</li>
+<li><code>{}</code> آکولاد یا کرلی براکت</li>
+<li><code>"</code> و دابل کوتیشن <code>'</code> کوتیشن</li>
+<li><code>=</code> مساوی</li>
+<li><code>+</code> بعلاوه یا به اضافه</li>
+<li><code>-</code> منها یا دش</li>
+<li><code>_</code> آندرلاین یا زیرخط</li>
+<li><code>*</code> ستاره یا ضربدر</li>
+<li><code>/</code> اسلش یا تقسیم</li>
+<li><code>%</code> درصد یا باقیمانده</li>
+<li><code>#</code> هشتگ یا علامت کامنت</li>
+<li><code>\</code> بک‌اسلش</li>
+</ul>
+</section>
+</section>
+<section id="sec-interpreter-and-compiler" class="level2">
+<h2 class="anchored" data-anchor-id="sec-interpreter-and-compiler">مترجم و کامپایلر</h2>
+<p>پایتون یک <strong>زبان سطح بالا</strong> محسوب می‌شود. به این معنی که به زبان انسان نزدیک‌تر است تا به زبان سخت‌افزار کامپیوتر. اما مفهوم دستورات زبان‌های سطح بالا توسط CPU قابل فهم نیست. چرا که CPU فقط دستوراتی که به <strong>زبان ماشین</strong> نوشته شده باشند را درک می‌کند. زبان ماشین از دو نشانه <code>0</code> و <code>1</code> تشکیل شده است و CPU قادر است تنها همین زبان را بفهمد و دستورات آن را اجرا کند:</p>
+<pre><code>00101000111010010010101000000111
+11100110000011101010010101101101
+...</code></pre>
+<p>پس برنامه‌های زبان‌های سطح بالایی مثل پایتون را چگونه باید برای CPU شرح داد؟</p>
+<p>مترجم‌های متعددی برای ترجمه و تبدیل کدهای زبان سطح بالا به زبان سطح ماشین، وجود دارد. اما از آن‌جایی که زبان ماشین کاملا وابسته به سخت‌افزار کامپیوتر است، بنابراین ما یک زبان ماشین که بتواند با انواع سخت‌افزار هماهنگ شود را نداریم. برنامه‌های نوشته شده به زبان‌های سطح بالا را می‌توان با استفاده از یک مفسر متفاوت در ماشین (همان سخت‌افزار) جدید یا کامپایل مجدد کد برای ایجاد نسخه زبان ماشین برنامه موردنظر برای ماشین جدید بین رایانه های مختلف جابجا کرد.</p>
+<p>این مترجمان زبان برنامه‌نویسی به دو دسته کلی تقسیم می شوند:</p>
+<ol type="1">
+<li>مفسر <span dir="ltr">(Interpreter)</span></li>
+<li>کامپایلر <span dir="ltr">(Compiler)</span></li>
+</ol>
+<p>یک <strong>مفسر</strong> کد برنامه نوشته شده توسط برنامه‌نویس را خوانده، آن را تجزیه می‌کند و دستورالعمل‌ها را تفسیر می‌نماید. با این توصیف، پایتون یک مفسر محسوب می‌شود که کدهای برنامه ما رافوراً پردازش می‌کند.</p>
+</section>
+<section id="سایتهای-مفید" class="level2">
+<h2 class="anchored" data-anchor-id="سایتهای-مفید">سایت‌های مفید</h2>
+<ul>
+<li>استفاده از سایت گوگل (<a href="https://www.google.com/"><strong>www.google.com</strong></a>)</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+مهم
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>بهترین مهارت برای یک برنامه نویس مهارت گوگل کردن است.</p>
+</div>
 </div>
 <ul>
-<li>تغییر سایز پنجره</li>
+<li>پرسیدن و جستجوی سوالات در سایت (<a href="https://stackoverflow.com/"><strong>stackoverflow.com</strong></a>)</li>
 </ul>
-<div id="dea6a34e" class="cell" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># window.minsize(400, 300)</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># window.maxsize(640, 450)</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># window.resizable(width=False, height=False)</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+مهم
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>سعی کنید در ابتدای کار کل کدها را تایپ کنید و بدون فهم درست از کدها چیزی را کپی نکنید.</p>
+</div>
+</div>
+<ul>
+<li>استفاده از هوش مصنوعی
+<ul>
+<li><a href="https://chat.openai.com/"><strong>chat GPT</strong></a></li>
+<li><a href="https://gemini.google.com/"><strong>Gemeni</strong></a></li>
+<li><a href="https://codeium.com/"><strong>Codeium</strong></a></li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+مهم
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>در استفاده از هوش مصنوعی افراطی عمل نکنید و نسبت به عملکرد کدها اطمینان حاصل فرمایید.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+مهم
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>برای عبور از مشکلات تحریمی میتوانید از دی ان اس های سایت شکن استفاده نمایید.</p>
+</div>
 </div>
 </section>
-<section id="ابزارهای-اصلی-widgets" class="level2">
-<h2 class="anchored" data-anchor-id="ابزارهای-اصلی-widgets">ابزارهای اصلی (Widgets)</h2>
+<section id="تمرین" class="level2">
+<h2 class="anchored" data-anchor-id="تمرین">تمرین</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/img/LearningCurve_SPSS-Stata-SAS-JMP-R-Matlab.png" class="img-fluid figure-img"></p>
+<figcaption>منحنی یادگیری ابزارهای آماری <span class="citation" data-cites="nyu-statsoft"><a href="../references.html#ref-nyu-statsoft" role="doc-biblioref">[2]</a></span></figcaption>
+</figure>
+</div>
+<p>برای تمرین بیشتر می‌توانید از سایت‌هایی که تمرینات <strong>python</strong> ارائه می‌دهند استفاده کنید.</p>
+<p>با جستجو <span dir="ltr"><strong>python exercises with solutions</strong></span> در گوگل به سایت‌های زیر دسترسی پیدا می‌کنید</p>
 <ul>
-<li>برچسب</li>
+<li><a href="https://quera.org/problemset?order=most-solutions">کوئرا</a></li>
+<li><a href="https://www.codewars.com/dashboard">Code Wars</a></li>
+<li><a href="https://www.w3schools.com/python/default.asp">W3Schools</a></li>
+<li><a href="https://leetcode.com/">LeetCode</a></li>
+<li>کمک کردن به دیگران</li>
+<li>مشارکت در پروژه‌ی دیگران</li>
 </ul>
-<div id="b61622f5" class="cell" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>tk.Label(window, text<span class="op">=</span><span class="st">"Hello Mohsen"</span>).pack()</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>tk.Label(</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    window,</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span><span class="st">"How are you?"</span>,</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span>(<span class="st">"Roboto"</span>, <span class="dv">18</span>),</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    bg<span class="op">=</span><span class="st">"blue"</span>,  <span class="co"># background</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    fg<span class="op">=</span><span class="st">"white"</span>,  <span class="co"># forground</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>).pack()</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<ul>
-<li>دکمه</li>
-</ul>
-<div id="762d4dfd" class="cell" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> btn_print():</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># print("Hello World!")</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    btn.configure(text<span class="op">=</span><span class="st">"Hello World!"</span>)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>btn <span class="op">=</span> tk.Button(window)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>btn.configure(text<span class="op">=</span><span class="st">"Say hello"</span>, command<span class="op">=</span>btn_print)</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>btn.pack()</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="example">
-<p>یک نرم افزار صلوات شمار بسازید.</p>
-<details>
-<summary>
-پاسخ
-</summary>
-<div id="46745ea4" class="cell" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tkinter <span class="im">import</span> <span class="op">*</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>counter <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> btn_counter():</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">global</span> counter</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    counter <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    btn.configure(text<span class="op">=</span><span class="ss">f"تعداد </span><span class="sc">{</span>counter<span class="sc">}</span><span class="ss"> صلوات فرستاده شد."</span>)</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> Tk()</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"صلوات شمار"</span>)</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>btn <span class="op">=</span> Button(window)</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>btn.configure(text<span class="op">=</span><span class="st">"صلوات"</span>, command<span class="op">=</span>btn_counter)</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>btn.pack()</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</details>
-</div>
-<ul>
-<li>ورودی</li>
-</ul>
-<div id="54405ac8" class="cell" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> btn_print():</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    name <span class="op">=</span> ntr.get()</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> name <span class="op">==</span> <span class="st">""</span>:</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        messagebox.showwarning(<span class="st">"Error"</span>, <span class="st">"Please Enter your name!"</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        result.configure(text<span class="op">=</span><span class="ss">f"Hello </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span>, fg<span class="op">=</span><span class="st">"blue"</span>)</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>lbl <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"Enter your name:"</span>, font<span class="op">=</span>(<span class="st">"Roboto"</span>, <span class="dv">10</span>))</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>lbl.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>ntr <span class="op">=</span> tk.Entry(window)</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>ntr.pack(pady<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>btn <span class="op">=</span> tk.Button(window)</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>btn.configure(text<span class="op">=</span><span class="st">"Say hello"</span>, command<span class="op">=</span>btn_print)</span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>btn.pack()</span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">""</span>, font<span class="op">=</span>(<span class="st">"Roboto"</span>, <span class="dv">12</span>, <span class="st">"bold"</span>))</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>result.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-stackoverflow-survey" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline"><span>“Stack over flow - 2023 developer survey.”</span> <a href="https://survey.stackoverflow.co/2023/">https://survey.stackoverflow.co/2023/</a></div>
+</div>
+<div id="ref-nyu-statsoft" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline"><span>“New york university - statistic software.”</span> <a href="https://guides.nyu.edu/quant/statsoft">https://guides.nyu.edu/quant/statsoft</a></div>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -1063,13 +1188,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapter/08-string.html" class="pagination-link" aria-label="رشته‌ها">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">رشته‌ها</span></span>
+      <a href="../intro.html" class="pagination-link" aria-label="مقدمه">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">مقدمه</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../references.html" class="pagination-link" aria-label="منابع">
-        <span class="nav-page-text">منابع</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapter/01-value.html" class="pagination-link" aria-label="مقدار">
+        <span class="nav-page-text"><span class="chapter-title">مقدار</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

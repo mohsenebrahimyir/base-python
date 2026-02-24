@@ -1,7 +1,7 @@
-# فایل‌ها {#files}
+# فایل‌ها {#sec-files}
 
 
-## بازکردن فایل {#open-file}
+## بازکردن فایل {#sec-open-file}
 
 ممکن است داده‌های ما از قبل در فایلی موجود باشد
 ([دانلود فایل](./data/mbox.txt))
@@ -38,7 +38,7 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: 'mbox.txt'
 ```
 
-## خواندن فایل {#read-file}
+## خواندن فایل {#sec-read-file}
 
 با بازکردن فایل، تنها یک 
 [`handle`]{dir=ltr} 
@@ -89,7 +89,7 @@ From stephen.marquar
 در دستورات فوق استفاده کردیم.
 
 
-## جستجو در فایل {#search-in-file}
+## جستجو در فایل {#sec-search-in-file}
 
 اگر در فایل محتویات داده به دنبال کلمه و یا داده خاصی هستیم، می‌توانیم آن را 
 در فایلی که از قبل آن را باز کرده و خوانده‌ایم، جستجو کنیم:
@@ -116,7 +116,7 @@ From: stephen.marquard@uct.ac.za
 فضای خالی را در سمت راست رشته موجود در فایل، حذف کرده‌ایم.
 
 
-## انتخاب نام فایل {#select-file}
+## انتخاب نام فایل {#sec-select-file}
 
 این مسئله برای ما پیش آمده که برای باز کردن یک فایل، همیشه نام و آدرس دقیق آن
 را نمی‌دانیم و نیاز است تا بتوانیم در مرورگر سیستم فایل خود، آن را جستجو کنیم. 
@@ -139,7 +139,7 @@ There were 1 subject lines in mbox.txt
 ```
 
 
-## استفاده از `try`، `except` و `open` {#try-except-open-file}
+## استفاده از `try`، `except` و `open` {#sec-try-except-open-file}
 
 
 از کد قبل به خاطر داریم که ما به کاربر اجازه دادیم که نام فایل حود را برای 
@@ -178,7 +178,7 @@ There were 0 subject lines in otherfile.txt
 درصورت اینکه کاربر چیزی غیر از فایل را درخواست داده باشد، برنامه ما از اجرا 
 خارج می‌شود.
 
-## نوشتن در فایل {#write-file}
+## نوشتن در فایل {#sec-write-file}
 
 
 بیشتر اوقات افراد نیاز دارند که در فایل داده خود، ویرایش انجام داده یا 
@@ -221,3 +221,10 @@ fout.write(line1)
 ```python
 fout.close()
 ```
+
+## تمرین
+
+::: {.callout-caution title="پروژه" icon="false"}
+به بخش @sec-project-calculator بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.
+:::
+

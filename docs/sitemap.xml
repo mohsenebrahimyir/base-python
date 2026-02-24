@@ -2,47 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mohsenebrahimyir.github.io/base-python/index.html</loc>
-    <lastmod>2025-12-11T18:01:09.690Z</lastmod>
+    <lastmod>2026-02-24T03:05:50.510Z</lastmod>
   </url>
   <url>
     <loc>https://mohsenebrahimyir.github.io/base-python/intro.html</loc>
     <lastmod>2026-02-07T18:17:23.550Z</lastmod>
   </url>
   <url>
-    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/01-python-programming.html</loc>
-    <lastmod>2026-01-21T18:16:59.910Z</lastmod>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/00-python.html</loc>
+    <lastmod>2026-02-24T05:02:32.810Z</lastmod>
   </url>
   <url>
-    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/02-variables-expressions-commands.html</loc>
-    <lastmod>2026-02-07T18:30:05.460Z</lastmod>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/01-value.html</loc>
+    <lastmod>2026-02-24T04:06:14.140Z</lastmod>
   </url>
   <url>
-    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/03-condition-statement.html</loc>
-    <lastmod>2026-02-07T18:13:08.630Z</lastmod>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/02-variable.html</loc>
+    <lastmod>2026-02-24T04:19:59.230Z</lastmod>
   </url>
   <url>
-    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/04-iteration.html</loc>
-    <lastmod>2026-02-07T18:32:11.050Z</lastmod>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/03-operator.html</loc>
+    <lastmod>2026-02-24T04:31:21.680Z</lastmod>
   </url>
   <url>
-    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/05-functions.html</loc>
-    <lastmod>2026-02-07T17:10:48.970Z</lastmod>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/04-condition.html</loc>
+    <lastmod>2026-02-24T03:32:55.640Z</lastmod>
   </url>
   <url>
-    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/06-files.html</loc>
-    <lastmod>2025-01-11T20:55:16.870Z</lastmod>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/05-iteration.html</loc>
+    <lastmod>2026-02-24T03:48:29.160Z</lastmod>
   </url>
   <url>
-    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/07-lists.html</loc>
-    <lastmod>2026-02-07T18:28:17.850Z</lastmod>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/06-function.html</loc>
+    <lastmod>2026-02-24T03:49:55.330Z</lastmod>
   </url>
   <url>
-    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/08-string.html</loc>
-    <lastmod>2025-11-12T16:38:47.560Z</lastmod>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/07-file.html</loc>
+    <lastmod>2026-02-24T04:57:08.520Z</lastmod>
   </url>
   <url>
-    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/09-tkinter.html</loc>
-    <lastmod>2026-02-07T20:58:10.490Z</lastmod>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/08-list-tuple-set-dict.html</loc>
+    <lastmod>2026-02-24T04:54:20.160Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/09-string.html</loc>
+    <lastmod>2026-02-24T03:53:32.450Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/10-tkinter.html</loc>
+    <lastmod>2026-02-24T04:57:15.080Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mohsenebrahimyir.github.io/base-python/chapter/99-project.html</loc>
+    <lastmod>2026-02-24T03:36:23.090Z</lastmod>
   </url>
   <url>
     <loc>https://mohsenebrahimyir.github.io/base-python/references.html</loc>

@@ -1,0 +1,60 @@
+# مقدار {#sec-value}
+
+برای مشخص کردن نوع مقدار از تابع 
+[`type()`]{dir=ltr} استفاده می‌کنیم.
+مقادیری که در پایتون استفاده می‌شوند به صورت زیر هستند:
+
+- رشته‌ها (strings)
+
+```python
+type("Mohsen")
+```
+```output
+<class 'str'>
+```
+
+- عدد صحیح (integers)
+
+```python
+type(3)
+```
+```output
+<class 'int'>
+```
+
+- عدد اعشاری (floats)
+
+```python
+type(3.14)
+```
+```output
+<class 'float'>
+```
+
+- بولی‌ها (booleans)
+
+عبارت بولی عبارتی است که نتیجه‌ی آن درستی
+[(`True`)]{dir=ltr}
+یا نادرستی 
+[(`False`)]{dir=ltr} 
+است.
+
+```python
+type(True)
+```
+```output
+<class 'bool'>
+```
+
+```python
+type(False)
+```
+```output
+<class 'bool'>
+```
+
+## تمرین
+
+::: {.callout-caution title="پروژه" icon="false"}
+به بخش @sec-project-calculator بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.
+:::

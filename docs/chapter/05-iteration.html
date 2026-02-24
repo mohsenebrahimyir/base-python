@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="محبوبه کاتبی">
-<meta name="author" content="محسن ابراهیمی">
-<meta name="dcterms.date" content="2021-01-01">
 
-<title>مبانی پایتون</title>
+<title>تکرار – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,33 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
-<link href="./assets/img/favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e22f6f1774086682b500d69e3c6b1549.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapter/06-function.html" rel="next">
+<link href="../chapter/04-condition.html" rel="prev">
+<link href="../assets/img/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e22f6f1774086682b500d69e3c6b1549.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -110,8 +143,8 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<link rel="stylesheet" href="assets/css/rtl-style.css">
-<link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="../assets/css/rtl-style.css">
+<link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -285,7 +318,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">پیش گفتار</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter/05-iteration.html"><span class="chapter-title">تکرار</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -300,7 +333,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">مبانی پایتون</a> 
+      <a href="../">مبانی پایتون</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/mohsenebrahimyir/base-python/" title="منبع کد" class="quarto-navigation-tool px-1" aria-label="منبع کد"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="حالت تاریک را تغییر دهید"><i class="bi"></i></a>
@@ -321,79 +354,79 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">پیش گفتار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+  <a href="../intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">مقدمه</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/00-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
+  <a href="../chapter/00-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/01-value.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">مقدار</span></a>
+  <a href="../chapter/01-value.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">مقدار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/02-variable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیر</span></a>
+  <a href="../chapter/02-variable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/03-operator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">عملگر</span></a>
+  <a href="../chapter/03-operator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">عملگر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/04-condition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
+  <a href="../chapter/04-condition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/05-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
+  <a href="../chapter/05-iteration.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">تکرار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/06-function.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
+  <a href="../chapter/06-function.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/07-file.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
+  <a href="../chapter/07-file.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/08-list-tuple-set-dict.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></a>
+  <a href="../chapter/08-list-tuple-set-dict.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/09-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  <a href="../chapter/09-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/10-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
+  <a href="../chapter/10-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/99-project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پروژه</span></a>
+  <a href="../chapter/99-project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پروژه</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">منابع</span></a>
   </div>
 </li>
@@ -407,7 +440,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#پیش-گفتار" id="toc-پیش-گفتار" class="nav-link active" data-scroll-target="#پیش-گفتار">پیش گفتار</a></li>
+  <li><a href="#while-iteration" id="toc-while-iteration" class="nav-link active" data-scroll-target="#while-iteration">عبارت <span dir="ltr"><code>while</code></span></a></li>
+  <li><a href="#sec-infinite-loops" id="toc-sec-infinite-loops" class="nav-link" data-scroll-target="#sec-infinite-loops">حلقه‌های بی‌نهایت</a></li>
+  <li><a href="#sec-continue-iteration" id="toc-sec-continue-iteration" class="nav-link" data-scroll-target="#sec-continue-iteration">اتمام تکرار فعلی و ادامه تکرار بعدی</a></li>
+  <li><a href="#sec-for-iteration" id="toc-sec-for-iteration" class="nav-link" data-scroll-target="#sec-for-iteration">حلقه‌های معین با استفاده از</a></li>
+  <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
   </ul>
 </nav>
     </div>
@@ -417,28 +454,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">مبانی پایتون</h1>
-<p class="subtitle lead">مفاهیم پایه برای برنامه نویسی با زبان‌ Python</p>
+<h1 class="title"><span id="sec-iteration" class="quarto-section-identifier"><span class="chapter-title">تکرار</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">نویسندگان</div>
-    <div class="quarto-title-meta-contents">
-             <p>محبوبه کاتبی </p>
-             <p>محسن ابراهیمی </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">منتشر شده</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2021-01-01</p>
-    </div>
-  </div>
   
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
@@ -454,26 +477,113 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
-<section id="پیش-گفتار" class="level1 unnumbered">
-<h1 class="unnumbered">پیش گفتار</h1><p><img src="assets/img/cover.png" title="مبانی پایتون" class="quarto-cover-image nolightbox img-fluid"></p>
-<p>به همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل <a href="mailto:mohsenebrahimy.ir@gmail.com">mohsenebrahimy.ir@gmail.com</a> برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ <span dir="ltr"><strong>۱۴۰۴-۱۲-۰۵</strong></span> بروزرسانی شده است.</p>
-<hr>
-<p>امیدوارم این کتاب برایتان مفید باشد.</p>
-<ul>
-<li>کتاب: <a href="https://mohsenebrahimyir.github.io/base-python/">https://mohsenebrahimyir.github.io/base-python/</a></li>
-</ul>
-<div class="callout callout-style-default callout-important callout-titled" title="توجه">
+<p>برای جلوگیری از دویاره نویسی در برنامه‌ها از ساختار حلقه (<span dir="ltr">Loop</span>) یا تکرار (<span dir="ltr">Iteration</span>) می‌وان استفاده کرد.</p>
+<section id="while-iteration" class="level2">
+<h2 class="anchored" data-anchor-id="while-iteration">عبارت <span dir="ltr"><code>while</code></span></h2>
+<p>برای شروع آشنایی با عبارت و در حقیقت ساختار <span dir="ltr"><code>while</code></span> به مثال زیر توجه کنید:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(n)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> n <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Blastoff!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>5
+4
+3
+2
+1
+Blastoff!</code></pre>
+<p>به این معنی که “تا وقتی که <span dir="ltr"><code>n</code></span> بزرگتر از 0 است، مقدار <span dir="ltr"><code>n</code></span> را نمایش بده و سپس مقدار <span dir="ltr"><code>n</code></span> را به اندازه 1 واحد کاهش بده.</p>
+<p>وقتی مقدار <span dir="ltr"><code>n</code></span> به 0 رسید، کنترل برنامه از دستور <span dir="ltr"><code>while</code></span> خارج می‌شود و کلمه <span dir="ltr"><code>Blastoff</code></span> را نمایش می‌دهد!</p>
+<p>ساختار استفاده از عبارت <span dir="ltr"><code>while</code></span> به شرح زیر است:</p>
+<ol type="1">
+<li><p>شرایط را ارزیابی کنید، درست یا غلط را نشان دهید.</p></li>
+<li><p>اگر شرط نادرست است، از دستور <span dir="ltr"><code>while</code></span> خارج شده و در دستور بعدی اجرا را ادامه دهید.</p></li>
+<li><p>اگر شرط درست است، بدنه را اجرا کنید و سپس به مرحله 1 برگردید.</p></li>
+</ol>
+<p>این نوع جریان حلقه نامیده می‌شود زیرا در مرحله سوم به سمت بالا باز می‌گردد. هر بار که بدنه حلقه را اجرا می‌کنیم، آن را یک تکرار می‌نامیم. برای حلقه بالا، می‌گوییم: «پنج تکرار داشت»، یعنی بدنه حلقه پنج بار اجرا شده است.</p>
+<p>بدنه حلقه باید مقدار یک یا چند متغیر را تغییر دهد تا در نهایت شرط نادرست شود و حلقه خاتمه یابد.</p>
+<p>ما متغیری را که هر بار که حلقه اجرا می‌شود و مقدار متغیر تغییر می‌کند، فراخوانی می‌کنیم و نیز زمانی که حلقه، مقدار متغیر تکرار را به پایان می‌رساند، اگر متغیر تکراری وجود نداشته باشد، حلقه برای همیشه تکرار می‌شود و در نتیجه یک حلقه بی نهایت ایجاد می‌شود.</p>
+</section>
+<section id="sec-infinite-loops" class="level2">
+<h2 class="anchored" data-anchor-id="sec-infinite-loops">حلقه‌های بی‌نهایت</h2>
+<p>در مورد شمارش معکوس، می‌توانیم ثابت کنیم که حلقه خاتمه می‌یابد زیرا می‌دانیم که مقدار <span dir="ltr"><code>n</code></span> محدود است و می‌بینیم که مقدار <span dir="ltr"><code>n</code></span> هر بار از طریق حلقه کوچکتر می‌شود، بنابراین در نهایت باید به 0 برسیم. در سایر مواقع، یک حلقه بی‌نهایت <span dir="ltr">Infinite loops</span> است زیرا هیچ متغیر تکراری ندارد (به شبه شرط منطقی داخل پرانتز در عبارت <span dir="ltr"><code>break</code></span> دقت کنید).</p>
+<p>کاربرد حلقه بی‌نهایت در این است که برخی اوقات تا زمانی که نیمی از بدنه را طی نکنیم، نمی‌دانیم آیا زمان پایان دادن به یک حلقه فرا رسیده است. در این صورت می‌توانیم یک حلقه بی‌نهایت را عمداً بنویسیم و سپس از دستور <span dir="ltr"><code>break</code></span> برای پرش از حلقه استفاده کنیم.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(n, end<span class="op">=</span><span class="st">' '</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  n <span class="op">=</span> n <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Done!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>اگر مرتکب اشتباه شویم و این کد را اجرا کنیم، یاد خواهیم گرفت که چگونه فرآیند و یا مسیر پایتون را در سیستم خود متوقف کنیم و یا آن را خاتمه دهیم. این برنامه برای همیشه یا تا زمانی که باتری ما تمام شود اجرا می‌شود زیرا عبارت منطقی در بالای حلقه به دلیل این که عبارت مقدار ثابت <span dir="ltr"><code>True</code></span> است همیشه درست است.</p>
+<p>مثال زیر، کاربرد <span dir="ltr"><code>break</code></span> را به خوبی نشان می‌دهد:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'&gt; '</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> line <span class="op">==</span> <span class="st">'done'</span>:</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(line)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Done!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="sec-continue-iteration" class="level2">
+<h2 class="anchored" data-anchor-id="sec-continue-iteration">اتمام تکرار فعلی و ادامه تکرار بعدی</h2>
+<p>گاهی اوقات ما در یک تکرار یک حلقه هستیم و می‌خواهیم تکرار فعلی را تمام کنیم و بلافاصله به تکرار بعدی برویم. در آن صورت می‌توانیم از دستور <span dir="ltr"><code>continue</code></span> برای پرش به تکرار بعدی استفاده کنیم، بدون اینکه بدنه حلقه برای تکرار فعلی تمام شود.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'&gt; '</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> line[<span class="dv">0</span>] <span class="op">==</span> <span class="st">'#'</span>:</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> line <span class="op">==</span> <span class="st">'done'</span>:</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(line)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Done!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="sec-for-iteration" class="level2">
+<h2 class="anchored" data-anchor-id="sec-for-iteration">حلقه‌های معین با استفاده از</h2>
+<p>گاهی اوقات می‌خواهیم مجموعه‌ای از چیزها را مانند فهرستی از کلمات، خطوط یک فایل یا فهرستی از اعداد را بصورت حلقه‌ای ایجاد کنیم. وقتی لیستی از چیزهایی که باید از طریق آنها حلقه بزنیم داریم، می توانیم با استفاده از دستور <span dir="ltr"><code>for</code></span> یک حلقه معین بسازیم. دستور <span dir="ltr"><code>while</code></span> را یک حلقه نامعین می نامیم زیرا به سادگی حلقه می‌زند تا زمانی که برخی از شرط‌ها <span dir="ltr"><code>False</code></span> شود، در حالی که حلقه <span dir="ltr"><code>for</code></span> در مجموعه‌ای شناخته شده از آیتم‌ها حلقه می‌زند بنابراین به تعداد آیتم‌های مجموعه، تکرار می‌شود.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>friends <span class="op">=</span> [<span class="st">'Joseph'</span>, <span class="st">'Glenn'</span>, <span class="st">'Sally'</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> friend <span class="kw">in</span> friends:</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Happy New Year: '</span>, friend)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Done!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>Happy New Year:  Joseph
+Happy New Year:  Glenn
+Happy New Year:  Sally
+Done!</code></pre>
+</section>
+<section id="تمرین" class="level2">
+<h2 class="anchored" data-anchor-id="تمرین">تمرین</h2>
+<div class="callout callout-style-default callout-caution callout-titled" title="سوالات سایت [کوئرا](quera.ir)">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">مهم</span>توجه
+<span class="screen-reader-only">احتیاط</span>سوالات سایت <a href="quera.ir">کوئرا</a>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>اگر این متن را میبینید یعنی این کتاب درحال توسعه است.</p>
+<ul>
+<li><a href="https://quera.org/problemset/3537">سوال زرد - <code>3537</code></a></li>
+<li><a href="https://quera.org/problemset/2885">سوال ساده - <code>2885</code></a></li>
+<li><a href="https://quera.org/problemset/589">فاکتوریل - <code>589</code></a></li>
+<li><a href="https://quera.org/problemset/3409">جدول ضرب گنده - <code>3409</code></a></li>
+<li><a href="https://quera.org/problemset/9774">عدد چاپ کن - 9774</a></li>
+<li><a href="https://quera.org/problemset/591">چاپ مربع - <code>591</code></a></li>
+<li><a href="https://quera.org/problemset/3539">تک رقمی - <code>3539</code></a></li>
+<li><a href="https://quera.org/problemset/617">عدد خود مغلوب - <code>617</code></a></li>
+<li><a href="https://quera.org/problemset/28947">ام‌سین - <code>28947</code></a></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="پروژه">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">احتیاط</span>پروژه
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>به بخش <a href="99-project.html#sec-project-calculator" class="quarto-xref"><span>پروژه ماشین حساب</span></a> بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.</p>
 </div>
 </div>
 
@@ -930,10 +1040,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../chapter/04-condition.html" class="pagination-link" aria-label="اجرای شرطی">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">اجرای شرطی</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="مقدمه">
-        <span class="nav-page-text">مقدمه</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapter/06-function.html" class="pagination-link" aria-label="توابع">
+        <span class="nav-page-text"><span class="chapter-title">توابع</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -941,7 +1054,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><a href="./index.html">مبانی پایتون</a></p>
+<p><a href="../index.html">مبانی پایتون</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

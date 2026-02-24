@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="محبوبه کاتبی">
-<meta name="author" content="محسن ابراهیمی">
-<meta name="dcterms.date" content="2021-01-01">
 
-<title>مبانی پایتون</title>
+<title>رابط کاربری tkinter – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,33 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
-<link href="./assets/img/favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e22f6f1774086682b500d69e3c6b1549.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapter/99-project.html" rel="next">
+<link href="../chapter/09-string.html" rel="prev">
+<link href="../assets/img/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e22f6f1774086682b500d69e3c6b1549.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-733fe1eaae865d90baf58daa88b272c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -110,8 +143,8 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<link rel="stylesheet" href="assets/css/rtl-style.css">
-<link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="../assets/css/rtl-style.css">
+<link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -285,7 +318,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">پیش گفتار</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter/10-tkinter.html"><span class="chapter-title">رابط کاربری tkinter</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -300,7 +333,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">مبانی پایتون</a> 
+      <a href="../">مبانی پایتون</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/mohsenebrahimyir/base-python/" title="منبع کد" class="quarto-navigation-tool px-1" aria-label="منبع کد"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="حالت تاریک را تغییر دهید"><i class="bi"></i></a>
@@ -321,79 +354,79 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">پیش گفتار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+  <a href="../intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">مقدمه</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/00-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
+  <a href="../chapter/00-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/01-value.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">مقدار</span></a>
+  <a href="../chapter/01-value.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">مقدار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/02-variable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیر</span></a>
+  <a href="../chapter/02-variable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/03-operator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">عملگر</span></a>
+  <a href="../chapter/03-operator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">عملگر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/04-condition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
+  <a href="../chapter/04-condition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/05-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
+  <a href="../chapter/05-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/06-function.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
+  <a href="../chapter/06-function.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/07-file.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
+  <a href="../chapter/07-file.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/08-list-tuple-set-dict.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></a>
+  <a href="../chapter/08-list-tuple-set-dict.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/09-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  <a href="../chapter/09-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/10-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
+  <a href="../chapter/10-tkinter.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">رابط کاربری tkinter</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter/99-project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پروژه</span></a>
+  <a href="../chapter/99-project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پروژه</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">منابع</span></a>
   </div>
 </li>
@@ -407,7 +440,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#پیش-گفتار" id="toc-پیش-گفتار" class="nav-link active" data-scroll-target="#پیش-گفتار">پیش گفتار</a></li>
+  <li><a href="#ورود-به-دنیای-گرافیک" id="toc-ورود-به-دنیای-گرافیک" class="nav-link active" data-scroll-target="#ورود-به-دنیای-گرافیک">ورود به دنیای گرافیک</a>
+  <ul class="collapse">
+  <li><a href="#ایجاد-loop-برای-بدنه" id="toc-ایجاد-loop-برای-بدنه" class="nav-link" data-scroll-target="#ایجاد-loop-برای-بدنه">ایجاد Loop برای بدنه</a></li>
+  <li><a href="#عنوان" id="toc-عنوان" class="nav-link" data-scroll-target="#عنوان">عنوان</a></li>
+  <li><a href="#تغییر-سایز-پنجره" id="toc-تغییر-سایز-پنجره" class="nav-link" data-scroll-target="#تغییر-سایز-پنجره">تغییر سایز پنجره</a></li>
+  </ul></li>
+  <li><a href="#ابزارهای-اصلی-widgets" id="toc-ابزارهای-اصلی-widgets" class="nav-link" data-scroll-target="#ابزارهای-اصلی-widgets">ابزارهای اصلی (Widgets)</a>
+  <ul class="collapse">
+  <li><a href="#برچسب" id="toc-برچسب" class="nav-link" data-scroll-target="#برچسب">برچسب</a></li>
+  <li><a href="#دکمه" id="toc-دکمه" class="nav-link" data-scroll-target="#دکمه">دکمه</a></li>
+  <li><a href="#ورودی" id="toc-ورودی" class="nav-link" data-scroll-target="#ورودی">ورودی</a></li>
+  </ul></li>
+  <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
   </ul>
 </nav>
     </div>
@@ -417,28 +462,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">مبانی پایتون</h1>
-<p class="subtitle lead">مفاهیم پایه برای برنامه نویسی با زبان‌ Python</p>
+<h1 class="title"><span class="chapter-title">رابط کاربری tkinter</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">نویسندگان</div>
-    <div class="quarto-title-meta-contents">
-             <p>محبوبه کاتبی </p>
-             <p>محسن ابراهیمی </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">منتشر شده</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2021-01-01</p>
-    </div>
-  </div>
   
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
@@ -454,26 +485,218 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
-<section id="پیش-گفتار" class="level1 unnumbered">
-<h1 class="unnumbered">پیش گفتار</h1><p><img src="assets/img/cover.png" title="مبانی پایتون" class="quarto-cover-image nolightbox img-fluid"></p>
-<p>به همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل <a href="mailto:mohsenebrahimy.ir@gmail.com">mohsenebrahimy.ir@gmail.com</a> برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ <span dir="ltr"><strong>۱۴۰۴-۱۲-۰۵</strong></span> بروزرسانی شده است.</p>
-<hr>
-<p>امیدوارم این کتاب برایتان مفید باشد.</p>
-<ul>
-<li>کتاب: <a href="https://mohsenebrahimyir.github.io/base-python/">https://mohsenebrahimyir.github.io/base-python/</a></li>
-</ul>
-<div class="callout callout-style-default callout-important callout-titled" title="توجه">
+<section id="ورود-به-دنیای-گرافیک" class="level2">
+<h2 class="anchored" data-anchor-id="ورود-به-دنیای-گرافیک">ورود به دنیای گرافیک</h2>
+<section id="ایجاد-loop-برای-بدنه" class="level3">
+<h3 class="anchored" data-anchor-id="ایجاد-loop-برای-بدنه">ایجاد Loop برای بدنه</h3>
+<p>در این بخش با ساختن یک پنجره ساده وارد دنیای رابط گرافیکی می‌شویم. متد <span dir="ltr"><code>mainloop()</code></span> باعث می‌شود پنجره باز بماند و منتظر تعامل کاربر بماند.</p>
+<div id="b133f677" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="عنوان" class="level3">
+<h3 class="anchored" data-anchor-id="عنوان">عنوان</h3>
+<p>در این مرحله برای پنجره یک عنوان مشخص می‌کنیم. متد <span dir="ltr"><code>title()</code></span> متن نمایش داده‌شده در نوار بالای پنجره را تنظیم می‌کند.</p>
+<div id="faae2fd3" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="تغییر-سایز-پنجره" class="level3">
+<h3 class="anchored" data-anchor-id="تغییر-سایز-پنجره">تغییر سایز پنجره</h3>
+<p>در این بخش اندازه اولیه پنجره را مشخص می‌کنیم. متد <span dir="ltr"><code>geometry()</code></span> عرض و ارتفاع پنجره را بر حسب پیکسل تعیین می‌کند.</p>
+<div id="cba1c7ce" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)  <span class="co"># width x height</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># window.minsize(width=400, height=300)</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># window.maxsize(width=640, height=450)</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># window.resizable(width=False, height=False)</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+</section>
+<section id="ابزارهای-اصلی-widgets" class="level2">
+<h2 class="anchored" data-anchor-id="ابزارهای-اصلی-widgets">ابزارهای اصلی (Widgets)</h2>
+<section id="برچسب" class="level3">
+<h3 class="anchored" data-anchor-id="برچسب">برچسب</h3>
+<p>برچسب یا <code>Label</code> برای نمایش متن در پنجره استفاده می‌شود. می‌توان ظاهر آن مثل فونت، رنگ پس‌زمینه و رنگ متن را تغییر داد.</p>
+<div id="753e01cc" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>tk.Label(window, text<span class="op">=</span><span class="st">"Hello Mohsen"</span>).pack()</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>tk.Label(</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    window,</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span><span class="st">"How are you?"</span>,</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span>(<span class="st">"Roboto"</span>, <span class="dv">18</span>, <span class="st">"Bold"</span>),  <span class="co"># family size face</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    bg<span class="op">=</span><span class="st">"blue"</span>,  <span class="co"># background</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    fg<span class="op">=</span><span class="st">"white"</span>,  <span class="co"># forground</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>).pack(pady<span class="op">=</span><span class="dv">10</span>) <span class="co"># padding in y axis</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="دکمه" class="level3">
+<h3 class="anchored" data-anchor-id="دکمه">دکمه</h3>
+<p>دکمه یا <code>Button</code> برای انجام یک عمل هنگام کلیک کاربر استفاده می‌شود. با استفاده از پارامتر <code>command</code> می‌توان یک تابع را به دکمه متصل کرد.</p>
+<div id="8a1db6ad" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> btn_print():</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># print("Hello World!")</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    lbl.configure(text<span class="op">=</span><span class="st">"Hello World!"</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>btn <span class="op">=</span> tk.Button(window)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>btn.configure(text<span class="op">=</span><span class="st">"Say hello"</span>, command<span class="op">=</span>btn_print)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>btn.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>lbl <span class="op">=</span> Label(window, text<span class="op">=</span><span class="st">""</span>)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>lbl.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="گوسفند شمار">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">مهم</span>توجه
+<span class="screen-reader-only">احتیاط</span>گوسفند شمار
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>اگر این متن را میبینید یعنی این کتاب درحال توسعه است.</p>
+<p>دینا کوچولو که خوابش نمیبره مادرش بهش یاد داده قبل خواب توی ذهنش گوسفندهایی رو تصور کنه که از روی نرده رد میشن و سعی کنه تعداد اونهارو بشماره تا ذهنش خسته بشه بخوابه. اما دینا که تازه برنامه نویسی یاد گرفته بود به فکر این بود که چطور یک نرم افزار گوسفند شمار بسازه. دینا رو برای ساخت این نرم افزار راهنمایی کنید.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="پاسخ">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">نکته</span>پاسخ
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div id="743a7feb" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tkinter <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>counter <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> btn_counter():</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">global</span> counter</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    counter <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    lbl.configure(text<span class="op">=</span><span class="ss">f"</span><span class="sc">{</span>counter<span class="sc">}</span><span class="ss"> گوسفند."</span>)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> Tk()</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"گوسفند شمار"</span>)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>btn <span class="op">=</span> Button(window)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>btn.configure(text<span class="op">=</span><span class="st">"بشمار"</span>, command<span class="op">=</span>btn_counter)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>btn.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>lbl <span class="op">=</span> Label(window, text<span class="op">=</span><span class="st">"0 گوسفند."</span>)</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>lbl.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="ورودی" class="level3">
+<h3 class="anchored" data-anchor-id="ورودی">ورودی</h3>
+<p>ویجت <code>Entry</code> برای دریافت ورودی از کاربر استفاده می‌شود. با متد <span dir="ltr"><code>get()</code></span> می‌توان مقدار واردشده را خواند و بر اساس آن تصمیم‌گیری کرد.</p>
+<div id="372650c7" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> btn_print():</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    name <span class="op">=</span> ntr.get()</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> name <span class="op">==</span> <span class="st">""</span>:</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        result.configure(</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>            text<span class="op">=</span><span class="st">"Please Enter your name!"</span>,</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>            fg<span class="op">=</span><span class="st">"red"</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>        result.configure(</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>            text<span class="op">=</span><span class="ss">f"Hello </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span>,</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>            fg<span class="op">=</span><span class="st">"blue"</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>lbl <span class="op">=</span> tk.Label(</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    window,</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span><span class="st">"Enter your name:"</span>,</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span>(<span class="st">"Roboto"</span>, <span class="dv">10</span>)</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>lbl.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>ntr <span class="op">=</span> tk.Entry(window)</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>ntr.pack(pady<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>btn <span class="op">=</span> tk.Button(window)</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>btn.configure(text<span class="op">=</span><span class="st">"Say hello"</span>, command<span class="op">=</span>btn_print)</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>btn.pack()</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> tk.Label(</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>    window,</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span><span class="st">""</span>,</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span>(<span class="st">"Roboto"</span>, <span class="dv">12</span>, <span class="st">"bold"</span>)</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>result.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+</section>
+<section id="تمرین" class="level2">
+<h2 class="anchored" data-anchor-id="تمرین">تمرین</h2>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="پروژه">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">احتیاط</span>پروژه
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>به بخش <a href="99-project.html#sec-project-calculator" class="quarto-xref"><span>پروژه ماشین حساب</span></a> بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.</p>
 </div>
 </div>
 
@@ -930,10 +1153,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../chapter/09-string.html" class="pagination-link" aria-label="رشته‌ها">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">رشته‌ها</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="مقدمه">
-        <span class="nav-page-text">مقدمه</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapter/99-project.html" class="pagination-link" aria-label="پروژه">
+        <span class="nav-page-text"><span class="chapter-title">پروژه</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -941,7 +1167,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><a href="./index.html">مبانی پایتون</a></p>
+<p><a href="../index.html">مبانی پایتون</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

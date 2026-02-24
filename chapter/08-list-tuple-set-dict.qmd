@@ -1,6 +1,8 @@
-# لیست‌ها {#lists}
+# لیست‌، تاپل، ست و دیکشنری {#sec-list-tuple-set-dict}
 
-## لیست یک دنباله است {#a-list-is-a-sequence}
+## لیست
+
+### لیست یک دنباله است {#sec-a-list-is-a-sequence}
 
 برای کنارهم قرار دادن چندین داده با نوع مختلف، می‌توان از لیست استفاده کرد. 
 یکی از راه‌های ایجاد لیست، بکاربردن براکت در تعریف آن است:
@@ -14,6 +16,15 @@ print(cheeses, numbers, empty)
 ```
 ```output
 ['Cheddar', 'Edam', 'Gouda'] [17, 123] []
+```
+
+لیست هم تایپ خاص خود را دارد.
+
+```python
+print(type([]))
+```
+```
+<class 'list'>
 ```
 
 اما همانطور که گفته بودیم، عناصر لیست می‌توانند نوع‌های متفاوت از هم داشته باشند:
@@ -71,8 +82,7 @@ cheeses = ['Cheddar', 'Edam', 'Gouda']
 False
 ```
 
-
-## پیمایش در لیست {#traversing-a-list}
+### پیمایش در لیست {#sec-traversing-a-list}
 
 مواقعی هست که می‌خواهیم کل یک لیست را پیمایش کنیم و داده‌های آن را در یک عملیات 
 محاسبه‌ای و یا هرنوع عملیات دیگر، وارد سازیم، در اینصورت:
@@ -97,7 +107,7 @@ for i in range(len(numbers)):
     numbers[i] = numbers[i] * 2
 ```
 
-## کارکردن با عناصر لیست {#work-with-list-items}
+### کارکردن با عناصر لیست {#sec-work-with-list-items}
 
 در قطعه کد زیر، به ترتیب با استفاده از عملگرهای 
 [`+`]{dir=ltr} 
@@ -147,7 +157,7 @@ t[3:]
 ['d', 'e', 'f']
 ```
 
-## متدهای لیست {#list-methods}
+### متدهای لیست {#sec-list-methods}
 
 برای اضافه کردن یک عنصر به انتهای لیست، می‌توانیم از متد 
 [`append()`]{dir=ltr} 
@@ -270,9 +280,7 @@ print(t)
 ['a', 'f']
 ```
 
-
-## برخی توابع مهم مربوط به لیست {#important-function-for-lists}
-
+### برخی توابع مهم مربوط به لیست {#sec-important-function-for-lists}
 
 در کدهای زیر نام و کاربرد برخی توابع مهم برای استفاده در لیست‌ها معرفی شده‌اند: 
 
@@ -283,7 +291,6 @@ print(len(nums))
 ```output
 6
 ```
-
 
 ```python
 print(max(nums))
@@ -299,7 +306,6 @@ print(min(nums))
 3
 ```
 
-
 ```python
 print(sum(nums))
 ```
@@ -314,16 +320,15 @@ print(sum(nums)/len(nums))
 25.666666666666668
 ```
 
+## تاپل {#sec-tuple}
+
+## ست {#sec-set}
+
+## دیکشنری {#sec-dict}
+
 ## تمرین
 
-
-
-::: {.remark} :::
-با استفاده از ورودی ([`input()`]{dir=ltr}) تمرین‌ها انجام شود.
-::::::
-
-::: {.exercise} :::
-سوالات سایت [کوئرا](quera.ir)
+::: {.callout-caution title="سوالات سایت [کوئرا](quera.ir)"}
 
 - [چاپ برعکس - `3405`](https://quera.org/problemset/3405)
 - [ماکزیمم - `588`](https://quera.org/problemset/588)

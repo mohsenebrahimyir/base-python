@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>اجرای شرطی – مبانی پایتون</title>
+<title>لیست‌، تاپل، ست و دیکشنری – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapter/04-iteration.html" rel="next">
-<link href="../chapter/02-variables-expressions-commands.html" rel="prev">
+<link href="../chapter/09-string.html" rel="next">
+<link href="../chapter/07-file.html" rel="prev">
 <link href="../assets/img/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -318,7 +318,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter/03-condition-statement.html"><span class="chapter-title">اجرای شرطی</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter/08-list-tuple-set-dict.html"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -366,47 +366,62 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/01-python-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
+  <a href="../chapter/00-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/02-variables-expressions-commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیرها، عبارات و دستورات</span></a>
+  <a href="../chapter/01-value.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">مقدار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/03-condition-statement.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">اجرای شرطی</span></a>
+  <a href="../chapter/02-variable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/04-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
+  <a href="../chapter/03-operator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">عملگر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/05-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
+  <a href="../chapter/04-condition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/06-files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
+  <a href="../chapter/05-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/07-lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌ها</span></a>
+  <a href="../chapter/06-function.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/08-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  <a href="../chapter/07-file.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/09-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
+  <a href="../chapter/08-list-tuple-set-dict.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/09-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/10-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/99-project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پروژه</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -425,13 +440,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#condition-execution" id="toc-condition-execution" class="nav-link active" data-scroll-target="#condition-execution">اجرای شرطی</a></li>
-  <li><a href="#alternative-execution" id="toc-alternative-execution" class="nav-link" data-scroll-target="#alternative-execution">اجرای جایگزین</a></li>
-  <li><a href="#chained-conditionals" id="toc-chained-conditionals" class="nav-link" data-scroll-target="#chained-conditionals">شرط‌های زنجیره‌ای</a></li>
-  <li><a href="#nested-conditionals" id="toc-nested-conditionals" class="nav-link" data-scroll-target="#nested-conditionals">شرط‌های تو در تو</a></li>
-  <li><a href="#try-except-statement" id="toc-try-except-statement" class="nav-link" data-scroll-target="#try-except-statement">استفاده از <code>try</code> و <code>except</code></a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">تمرین</a></li>
-  <li><a href="#project" id="toc-project" class="nav-link" data-scroll-target="#project">پروژه</a></li>
+  <li><a href="#لیست" id="toc-لیست" class="nav-link active" data-scroll-target="#لیست">لیست</a>
+  <ul class="collapse">
+  <li><a href="#sec-a-list-is-a-sequence" id="toc-sec-a-list-is-a-sequence" class="nav-link" data-scroll-target="#sec-a-list-is-a-sequence">لیست یک دنباله است</a></li>
+  <li><a href="#sec-traversing-a-list" id="toc-sec-traversing-a-list" class="nav-link" data-scroll-target="#sec-traversing-a-list">پیمایش در لیست</a></li>
+  <li><a href="#sec-work-with-list-items" id="toc-sec-work-with-list-items" class="nav-link" data-scroll-target="#sec-work-with-list-items">کارکردن با عناصر لیست</a></li>
+  <li><a href="#sec-list-methods" id="toc-sec-list-methods" class="nav-link" data-scroll-target="#sec-list-methods">متدهای لیست</a></li>
+  <li><a href="#sec-important-function-for-lists" id="toc-sec-important-function-for-lists" class="nav-link" data-scroll-target="#sec-important-function-for-lists">برخی توابع مهم مربوط به لیست</a></li>
+  </ul></li>
+  <li><a href="#sec-tuple" id="toc-sec-tuple" class="nav-link" data-scroll-target="#sec-tuple">تاپل</a></li>
+  <li><a href="#sec-set" id="toc-sec-set" class="nav-link" data-scroll-target="#sec-set">ست</a></li>
+  <li><a href="#sec-dict" id="toc-sec-dict" class="nav-link" data-scroll-target="#sec-dict">دیکشنری</a></li>
+  <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
   </ul>
 </nav>
     </div>
@@ -441,7 +461,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="condition-statement" class="quarto-section-identifier"><span class="chapter-title">اجرای شرطی</span></span></h1>
+<h1 class="title"><span id="sec-list-tuple-set-dict" class="quarto-section-identifier"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></span></h1>
 </div>
 
 
@@ -453,7 +473,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-02-08</p>
+      <p class="date-modified">2026-02-24</p>
     </div>
   </div>
     
@@ -464,133 +484,153 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="condition-execution" class="level2">
-<h2 class="anchored" data-anchor-id="condition-execution">اجرای شرطی</h2>
-<p>برای نوشتن یک برنامه کارآ، خیلی اوقات نیاز به بررسی شرایط مختلف داریم که براساس آن‌ها رفتارهای متفاوتی را طراحی کنیم. با استفاده از جملات شرطی (<span dir="ltr">Conditional Statements</span>) می‌توانیم این قابلیت را بدست آوریم.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">0</span> :</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x is positive'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>عبارت منطقی پس از if ، شرط یا (condition) نامیده می‌شود. اگر شرط منطقی درست باشد، دستور تورفتگی اجرا می‌شود. اگر شرط منطقی نادرست باشد، عبارت تورفتگی نادیده گرفته می‌شود.</p>
+<section id="لیست" class="level2">
+<h2 class="anchored" data-anchor-id="لیست">لیست</h2>
+<section id="sec-a-list-is-a-sequence" class="level3">
+<h3 class="anchored" data-anchor-id="sec-a-list-is-a-sequence">لیست یک دنباله است</h3>
+<p>برای کنارهم قرار دادن چندین داده با نوع مختلف، می‌توان از لیست استفاده کرد. یکی از راه‌های ایجاد لیست، بکاربردن براکت در تعریف آن است:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>cheeses <span class="op">=</span> [<span class="st">'Cheddar'</span>, <span class="st">'Edam'</span>, <span class="st">'Gouda'</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">17</span>, <span class="dv">123</span>]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>empty <span class="op">=</span> []</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(cheeses, numbers, empty)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>['Cheddar', 'Edam', 'Gouda'] [17, 123] []</code></pre>
+<p>لیست هم تایپ خاص خود را دارد.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>([]))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>&lt;class 'list'&gt;</code></pre>
+<p>اما همانطور که گفته بودیم، عناصر لیست می‌توانند نوع‌های متفاوت از هم داشته باشند:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>multi_types_items <span class="op">=</span> [<span class="st">'spam'</span>, <span class="fl">2.0</span>, <span class="dv">5</span>, [<span class="dv">10</span>, <span class="dv">20</span>]]</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>در دو مثال قبلی؛ تعداد عناصر لیست را به این شکل محاسبه می‌کنیم:</p>
+<p>لیست <span dir="ltr"><code>cheeses</code></span> دارای 3 عنصر است. لیست <span dir="ltr"><code>numbers</code></span> دو عنصر دارد و لیست <span dir="ltr"><code>multi_types_items</code></span> شامل 4 عنصر می‌شود. چراکه لیست داخلی که شامل عناصر 10 و 20 هست، در لیست اصلی، به عنوان یک عنصر و یا داده درنظرگرفته می‌شود.</p>
+<p>برای تغییر مقادیر موجود در لیست، می‌بایست بتوانیم به هر داده دسترسی داشته باشیم، به این منظور از اندیس برای آدرس‌دهی استفاده می‌کنیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">17</span>, <span class="dv">123</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>numbers[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numbers)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>[17, 5]</code></pre>
+<p>و یا برای اینکه بدانیم داده مورد نظر ما در لیست قرار گرفته یا خیر، می‌توان از این روش استفاده کرد:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>cheeses <span class="op">=</span> [<span class="st">'Cheddar'</span>, <span class="st">'Edam'</span>, <span class="st">'Gouda'</span>]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">'Edam'</span> <span class="kw">in</span> cheeses</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>True</code></pre>
+<p>و یا:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>cheeses <span class="op">=</span> [<span class="st">'Cheddar'</span>, <span class="st">'Edam'</span>, <span class="st">'Gouda'</span>]</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co">'Brie'</span> <span class="kw">in</span> cheeses</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>False</code></pre>
 </section>
-<section id="alternative-execution" class="level2">
-<h2 class="anchored" data-anchor-id="alternative-execution">اجرای جایگزین</h2>
-<p>شکل دوم یک عبارت if اجرای جایگزین (<span dir="ltr">Alternative Execution</span>) است که در آن دو حالت ممکن توسط شرط بررسی می‌شود که کدامیک می‌بایست اجرا شوند:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x<span class="op">%</span><span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span> :</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x is even'</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span> :</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x is odd'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>ز آنجایی که شرط باید درست یا نادرست باشد، دقیقاً یکی از گزینه‌ها اجرا می‌شود. گزینه‌های جایگزین شاخه (Branch) نامیده می‌شوند، زیرا آنها شاخه‌هایی در جریان اجرا هستند.</p>
+<section id="sec-traversing-a-list" class="level3">
+<h3 class="anchored" data-anchor-id="sec-traversing-a-list">پیمایش در لیست</h3>
+<p>مواقعی هست که می‌خواهیم کل یک لیست را پیمایش کنیم و داده‌های آن را در یک عملیات محاسبه‌ای و یا هرنوع عملیات دیگر، وارد سازیم، در اینصورت:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> cheese <span class="kw">in</span> cheeses:</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(cheese)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>Cheddar
+Edam
+Gouda</code></pre>
+<p>این کار بسیار ساده بود. چرا که ما تمام لیست را یکی یکی پیمایش کردیم و آن را در خروجی چاپ کردیم. اما اگر نیاز داشته باشیم که در حین پیمایش، داده‌ای از لیست را تغییر دهیم، چه روشی را باید درپیش بگیریم؟</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(numbers)):</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    numbers[i] <span class="op">=</span> numbers[i] <span class="op">*</span> <span class="dv">2</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="chained-conditionals" class="level2">
-<h2 class="anchored" data-anchor-id="chained-conditionals">شرط‌های زنجیره‌ای</h2>
-<p>یکی از راه‌های بررسی بیش از سه شرط این است که با استفاده از <code>elif</code> از شرط‌های زنجیری (<span dir="ltr">Chained Conditionals</span>) استفاده کنیم:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">&lt;</span> y:</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x is less than y'</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> x <span class="op">&gt;</span> y:</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x is greater than y'</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x and y are equal'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="sec-work-with-list-items" class="level3">
+<h3 class="anchored" data-anchor-id="sec-work-with-list-items">کارکردن با عناصر لیست</h3>
+<p>در قطعه کد زیر، به ترتیب با استفاده از عملگرهای <span dir="ltr"><code>+</code></span> و <span dir="ltr"><code>*</code></span> آشنا می‌شویم و سپس نحوه برش‌های مختلف لیست را یادمی‌گیریم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> a <span class="op">+</span> b</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(c)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>[1, 2, 3, 4, 5, 6]</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>] <span class="op">*</span> <span class="dv">3</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>[1, 2, 3, 1, 2, 3, 1, 2, 3]</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>, <span class="st">'f'</span>]</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>t[<span class="dv">1</span>:<span class="dv">3</span>]</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>['b', 'c']</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>t[:<span class="dv">4</span>]</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>['a', 'b', 'c', 'd']</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>t[<span class="dv">3</span>:]</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>['d', 'e', 'f']</code></pre>
 </section>
-<section id="nested-conditionals" class="level2">
-<h2 class="anchored" data-anchor-id="nested-conditionals">شرط‌های تو در تو</h2>
-<p>یک عبارت شرطی نیز می‌تواند درون عبارت شرطی دیگری قرار گیرد و ساختار شرط‌های تو در تو (<span dir="ltr">Nested Conditionals</span>) را ایجاد کنند:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">==</span> y:</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x and y are equal'</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> x <span class="op">&lt;</span> y:</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'x is less than y'</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'x is greater than y'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="sec-list-methods" class="level3">
+<h3 class="anchored" data-anchor-id="sec-list-methods">متدهای لیست</h3>
+<p>برای اضافه کردن یک عنصر به انتهای لیست، می‌توانیم از متد <span dir="ltr"><code>append()</code></span> استفاده کنیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>]</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>t.append(<span class="st">'d'</span>)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>['a', 'b', 'c', 'd']</code></pre>
+<p>همچنین متد <span dir="ltr"><code>extend()</code></span> یک لیست را به عنوان آرگومان ورودی دریافت می‌کند و آن را به انتهای لیست معرفی شده، اضافه می‌کند:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>]</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>t2 <span class="op">=</span> [<span class="st">'d'</span>, <span class="st">'e'</span>]</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>t1.extend(t2)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t1)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>['a', 'b', 'c', 'd', 'e']</code></pre>
+<p>برای مرتب کردن عناصر یک لیست، متد <span dir="ltr"><code>sort()</code></span> در اختیار ماست:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'d'</span>, <span class="st">'c'</span>, <span class="st">'e'</span>, <span class="st">'b'</span>, <span class="st">'a'</span>]</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>t.sort()</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>['a', 'b', 'c', 'd', 'e']</code></pre>
+<p>اگر چنانچه خواسته باشیم عنصری را از داخل یک لیست حذف کنیم، با دانستن اندیس موقعیت آن عنصر، می‌توانیم از متد <span dir="ltr">‘pop(i)’</span> استفاده کنیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>]</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> t.pop(<span class="dv">1</span>)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>['a', 'c']</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>b</code></pre>
+<p>اگر در استفاده از دستور <span dir="ltr"><code>pop()</code></span> اندیس استفاده نشود، این متد، آخرین عنصر آرایه را حذف خواهد کرد.</p>
+<p>به کد زیر و نتیجه اجرای آن دقت کنید:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>]</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="kw">del</span> t[<span class="dv">1</span>]</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>['a', 'c']</code></pre>
+<p>به نظر شما تفاوت استفاده از متدهای <span dir="ltr"><code>pop(i)</code></span> و <span dir="ltr"><code>del list_name[i]</code></span> در چیست؟</p>
+<p>بله، درست است که هر دو باعث حذف یک عنصر از لیست می‌شوند اما در استفاده از متد <span dir="ltr"><code>pop(i)</code></span> عنصر حذف شده در اختیار ما خواهد بود. به این معنی که خروجی این متد، نمایانگر مقدار عنصر حذف شده است. اما در استفاده از دستور <span dir="ltr"><code>del list_name[i]</code></span> عنصری که حذف شده دیگر در دسترس ما نخواهد بود.</p>
+<p>حال به این سوال فکر کنید که اگر اندیس عنصر موردنظر برای حذف کردن را ندانیم، از چه روشی می‌توانیم آن عنصر خاص را حذف کنیم؟ درواقع پایتون برای این منظور متد <span dir="ltr"><code>remove(item_value)</code></span> را پیشنهاد می‌دهد که با ارسال مقدار عنصر موردنظر به عنوان آرگومان ورودی به این متد، می‌توانیم آن را از لیست حذف کنیم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>]</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>t.remove(<span class="st">'b'</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>['a', 'c']</code></pre>
+<p>و یا برای حذف بیش از یک مقدار، با دانستن اندیس آن‌ها می‌توان از روش زیر استفاده کرد:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>, <span class="st">'f'</span>]</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="kw">del</span> t[<span class="dv">1</span>:<span class="dv">5</span>]</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>['a', 'f']</code></pre>
 </section>
-<section id="try-except-statement" class="level2">
-<h2 class="anchored" data-anchor-id="try-except-statement">استفاده از <code>try</code> و <code>except</code></h2>
-<p>برخی اوقات در جریان برنامه‌نویسی شرطی، نیاز داریم که به مفسر پایتون بگوئیم براساس ورودی‌های مختلف چگونه رفتار کند تا کد برنامه ما با خطا رویرو نشود. مثلاً در برنامه از کاربر خواستیم مقداری عددی وارد کند و بر اساس این مقدار، قرار است محاسبه‌ای انجام گیرد. حال فرض کنید کاربر مقداری غیر عددی وارد کرد و آنگاه این مقدار غیرعددی در یک فرمول محاسباتی وارد می‌شود! چه اتفاقی می‌افتد؟ مفسر پایتون اجرای برنامه را قطع می‌کند، چرا که نتوانسته است مقدار غیرعددی را در محاسبات وارد کند.</p>
-<p>در این مواقع استفاده از ساختار <code>try-except</code> می‌تواند کمک‌کننده باشد:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>inp <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter Fahrenheit Temperature:'</span>)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    fahr <span class="op">=</span> <span class="bu">float</span>(inp)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    cel <span class="op">=</span> (fahr <span class="op">-</span> <span class="fl">32.0</span>) <span class="op">*</span> <span class="fl">5.0</span> <span class="op">/</span> <span class="fl">9.0</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(cel)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span>:</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Please enter a number'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>در اینجا پایتون کار را با اجرای دستور <code>try</code> آغاز می‌کند و اگر همه چیز خوب باشد، بلاک <code>except</code> را درنظر نمی‌گیرد. اما اگر استثنایی در بلاک <code>try</code> رخ داد، مفسر پایتون از بلاک <code>try</code> عبور می‌کند و به اجرای بلاک <code>except</code> می‌پردازد.</p>
+<section id="sec-important-function-for-lists" class="level3">
+<h3 class="anchored" data-anchor-id="sec-important-function-for-lists">برخی توابع مهم مربوط به لیست</h3>
+<p>در کدهای زیر نام و کاربرد برخی توابع مهم برای استفاده در لیست‌ها معرفی شده‌اند:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>nums <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">41</span>, <span class="dv">12</span>, <span class="dv">9</span>, <span class="dv">74</span>, <span class="dv">15</span>]</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(nums))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>6</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">max</span>(nums))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>74</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">min</span>(nums))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>3</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">sum</span>(nums))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>154</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">sum</span>(nums)<span class="op">/</span><span class="bu">len</span>(nums))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>25.666666666666668</code></pre>
 </section>
-<section id="exercises" class="level2">
-<h2 class="anchored" data-anchor-id="exercises">تمرین</h2>
-<div class="exercise">
-<p>سوالات سایت <a href="quera.ir">کوئرا</a></p>
+</section>
+<section id="sec-tuple" class="level2">
+<h2 class="anchored" data-anchor-id="sec-tuple">تاپل</h2>
+</section>
+<section id="sec-set" class="level2">
+<h2 class="anchored" data-anchor-id="sec-set">ست</h2>
+</section>
+<section id="sec-dict" class="level2">
+<h2 class="anchored" data-anchor-id="sec-dict">دیکشنری</h2>
+</section>
+<section id="تمرین" class="level2">
+<h2 class="anchored" data-anchor-id="تمرین">تمرین</h2>
+<div class="callout callout-style-default callout-caution callout-titled" title="سوالات سایت [کوئرا](quera.ir)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">احتیاط</span>سوالات سایت <a href="quera.ir">کوئرا</a>
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><a href="https://quera.org/problemset/3429">یخدارچی - <code>3429</code></a></li>
-<li><a href="https://quera.org/problemset/280">اعداد - <code>280</code></a></li>
-<li><a href="https://quera.org/problemset/10230">مشق باقر - <code>10230</code></a></li>
-<li><a href="https://quera.org/problemset/280">اعداد فیثاغورثی - 280</a></li>
-<li><a href="https://quera.org/problemset/10162">روز آزادی بیان در برره - ‍<code>10162</code></a></li>
-<li><a href="https://quera.org/problemset/3414">دو نقطه خط - <code>3414</code></a></li>
+<li><a href="https://quera.org/problemset/3405">چاپ برعکس - <code>3405</code></a></li>
+<li><a href="https://quera.org/problemset/588">ماکزیمم - <code>588</code></a></li>
 </ul>
 </div>
-</section>
-<section id="project" class="level2">
-<h2 class="anchored" data-anchor-id="project">پروژه</h2>
-<div class="exercise">
-<p>به کد زیر نگاه کنید که یک ماشین حساب ساده است و ببینید کدام مطالبی که توی این بخش گفته شده استفاده شده.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate():</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        num1 <span class="op">=</span> <span class="bu">float</span>(entry1.get())</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        num2 <span class="op">=</span> <span class="bu">float</span>(entry2.get())</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        op <span class="op">=</span> operator.get()</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> op <span class="op">==</span> <span class="st">"+"</span>:</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">+</span> num2</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"-"</span>:</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">-</span> num2</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"*"</span>:</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">*</span> num2</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"/"</span>:</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> num2 <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>                result_label.config(text<span class="op">=</span><span class="st">"خطا: تقسیم بر صفر!"</span>)</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> num1 <span class="op">/</span> num2</span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>            result_label.config(text<span class="op">=</span><span class="st">"عملگر نامعتبر است"</span>)</span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span></span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>        result_label.config(text<span class="op">=</span><span class="ss">f"نتیجه: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">ValueError</span>:</span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>        result_label.config(text<span class="op">=</span><span class="st">"لطفاً فقط عدد وارد کنید"</span>)</span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"ماشین حساب ساده"</span>)</span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"300x250"</span>)</span>
-<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>label1 <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عدد اول:"</span>)</span>
-<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>entry1 <span class="op">=</span> tk.Entry(window)</span>
-<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>label2 <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عدد دوم:"</span>)</span>
-<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>entry2 <span class="op">=</span> tk.Entry(window)</span>
-<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>label_op <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عملگر (+ - * /):"</span>)</span>
-<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>operator <span class="op">=</span> tk.Entry(window)</span>
-<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>calc_button <span class="op">=</span> tk.Button(window, text<span class="op">=</span><span class="st">"محاسبه"</span>, command<span class="op">=</span>calculate)</span>
-<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>result_label <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"نتیجه: "</span>, fg<span class="op">=</span><span class="st">"blue"</span>)</span>
-<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>label1.pack()</span>
-<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>entry1.pack()</span>
-<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>label2.pack()</span>
-<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a>entry2.pack()</span>
-<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a>label_op.pack()</span>
-<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a>operator.pack()</span>
-<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a>calc_button.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>result_label.pack()</span>
-<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
@@ -1046,13 +1086,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapter/02-variables-expressions-commands.html" class="pagination-link" aria-label="متغیرها، عبارات و دستورات">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">متغیرها، عبارات و دستورات</span></span>
+      <a href="../chapter/07-file.html" class="pagination-link" aria-label="فایل‌ها">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">فایل‌ها</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapter/04-iteration.html" class="pagination-link" aria-label="تکرار">
-        <span class="nav-page-text"><span class="chapter-title">تکرار</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapter/09-string.html" class="pagination-link" aria-label="رشته‌ها">
+        <span class="nav-page-text"><span class="chapter-title">رشته‌ها</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

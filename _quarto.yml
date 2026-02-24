@@ -33,15 +33,18 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - chapter/01-python-programming.qmd
-    - chapter/02-variables-expressions-commands.qmd
-    - chapter/03-condition-statement.qmd
-    - chapter/04-iteration.qmd
-    - chapter/05-functions.qmd
-    - chapter/06-files.qmd
-    - chapter/07-lists.qmd
-    - chapter/08-string.qmd
-    - chapter/09-tkinter.qmd
+    - chapter/00-python.qmd
+    - chapter/01-value.qmd
+    - chapter/02-variable.qmd
+    - chapter/03-operator.qmd
+    - chapter/04-condition.qmd
+    - chapter/05-iteration.qmd
+    - chapter/06-function.qmd
+    - chapter/07-file.qmd
+    - chapter/08-list-tuple-set-dict.qmd
+    - chapter/09-string.qmd
+    - chapter/10-tkinter.qmd
+    - chapter/99-project.qmd
     # - chapter/10-classes.qmd
     # - chapter/11-modules.qmd
 

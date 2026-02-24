@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>برنامه نویسی پایتون – مبانی پایتون</title>
+<title>متغیر – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -55,27 +55,7 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -85,8 +65,8 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapter/02-variables-expressions-commands.html" rel="next">
-<link href="../intro.html" rel="prev">
+<link href="../chapter/03-operator.html" rel="next">
+<link href="../chapter/01-value.html" rel="prev">
 <link href="../assets/img/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -338,7 +318,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter/01-python-programming.html"><span class="chapter-title">برنامه نویسی پایتون</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter/02-variable.html"><span class="chapter-title">متغیر</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -386,47 +366,62 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/01-python-programming.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">برنامه نویسی پایتون</span></a>
+  <a href="../chapter/00-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">برنامه نویسی پایتون</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/02-variables-expressions-commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">متغیرها، عبارات و دستورات</span></a>
+  <a href="../chapter/01-value.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">مقدار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/03-condition-statement.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
+  <a href="../chapter/02-variable.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">متغیر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/04-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
+  <a href="../chapter/03-operator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">عملگر</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/05-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
+  <a href="../chapter/04-condition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اجرای شرطی</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/06-files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
+  <a href="../chapter/05-iteration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تکرار</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/07-lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌ها</span></a>
+  <a href="../chapter/06-function.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">توابع</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/08-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  <a href="../chapter/07-file.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌ها</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapter/09-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
+  <a href="../chapter/08-list-tuple-set-dict.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">لیست‌، تاپل، ست و دیکشنری</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/09-string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رشته‌ها</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/10-tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط کاربری tkinter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter/99-project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پروژه</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -445,17 +440,7 @@ div.csl-indent {
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#نصب-پایتون-و-اجرای-کد" id="toc-نصب-پایتون-و-اجرای-کد" class="nav-link active" data-scroll-target="#نصب-پایتون-و-اجرای-کد">نصب پایتون و اجرای کد</a></li>
-  <li><a href="#نصب-ide" id="toc-نصب-ide" class="nav-link" data-scroll-target="#نصب-ide">نصب IDE</a></li>
-  <li><a href="#آشنایی-با-کیبورد" id="toc-آشنایی-با-کیبورد" class="nav-link" data-scroll-target="#آشنایی-با-کیبورد">آشنایی با کیبورد</a>
-  <ul class="collapse">
-  <li><a href="#کلیدهای-پرکاربرد-در-برنامهنویسی" id="toc-کلیدهای-پرکاربرد-در-برنامهنویسی" class="nav-link" data-scroll-target="#کلیدهای-پرکاربرد-در-برنامهنویسی">کلیدهای پرکاربرد در برنامه‌نویسی</a></li>
-  <li><a href="#علامتهای-مهم-در-پایتون" id="toc-علامتهای-مهم-در-پایتون" class="nav-link" data-scroll-target="#علامتهای-مهم-در-پایتون">علامت‌های مهم در پایتون</a></li>
-  </ul></li>
-  <li><a href="#interpreter-and-compiler" id="toc-interpreter-and-compiler" class="nav-link" data-scroll-target="#interpreter-and-compiler">مترجم و کامپایلر</a></li>
-  <li><a href="#سایتهای-مفید" id="toc-سایتهای-مفید" class="nav-link" data-scroll-target="#سایتهای-مفید">سایت‌های مفید</a></li>
-  <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
-  <li><a href="#پروژه" id="toc-پروژه" class="nav-link" data-scroll-target="#پروژه">پروژه</a></li>
+  <li><a href="#تمرین" id="toc-تمرین" class="nav-link active" data-scroll-target="#تمرین">تمرین</a></li>
   </ul>
 </nav>
     </div>
@@ -465,7 +450,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="programming-python" class="quarto-section-identifier"><span class="chapter-title">برنامه نویسی پایتون</span></span></h1>
+<h1 class="title"><span id="sec-variable" class="quarto-section-identifier"><span class="chapter-title">متغیر</span></span></h1>
 </div>
 
 
@@ -477,7 +462,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-02-08</p>
+      <p class="date-modified">2026-02-24</p>
     </div>
   </div>
     
@@ -488,225 +473,145 @@ div.csl-indent {
 </header>
 
 
-<p>برای اینکه بتوانیم مهارت خوبی در برنامه‌نویسی بدست آوریم، دو نکته را در نظر داشته باشیم:</p>
-<ul>
-<li>اول اینکه باید با زبان برنامه‌نویسی موردنظر خود آشنا شویم یعنی لغات رزرو شده <span dir="ltr">(Reserved Words)</span> و گرامر زبان برنامه‌نویسی</li>
-</ul>
-<p>خوب است بدانیم برای هر زبان برنامه‌نویسی، لغاتی هستند که مفهوم خاصی داشته و کاربر برنامه‌نویس نمی‌تواند از آن‌ها برای منظور و کاربرد دیگری استفاده نماید. درعین حال، هر برنامه‌نویسی می‌تواند لغات خاص منظوره خود را به مفسر زبان برنامه‌نویسی خود معرفی کند. یکی از روش‌های انجام این کار، تعریف متغیر <span dir="ltr">(Variable)</span> است. کلمات رزرو شده توسط پایتون، شامل موارد ذیل می‌شوند:</p>
-<div dir="ltr">
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><code>and</code></td>
-<td style="text-align: left;"><code>as</code></td>
-<td style="text-align: left;"><code>assert</code></td>
-<td style="text-align: left;"><code>break</code></td>
-<td style="text-align: left;"><code>class</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>continue</code></td>
-<td style="text-align: left;"><code>def</code></td>
-<td style="text-align: left;"><code>del</code></td>
-<td style="text-align: left;"><code>elif</code></td>
-<td style="text-align: left;"><code>else</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>except</code></td>
-<td style="text-align: left;"><code>finally</code></td>
-<td style="text-align: left;"><code>for</code></td>
-<td style="text-align: left;"><code>from</code></td>
-<td style="text-align: left;"><code>global</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>if</code></td>
-<td style="text-align: left;"><code>in</code></td>
-<td style="text-align: left;"><code>is</code></td>
-<td style="text-align: left;"><code>import</code></td>
-<td style="text-align: left;"><code>lambda</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>nonlocal</code></td>
-<td style="text-align: left;"><code>not</code></td>
-<td style="text-align: left;"><code>or</code></td>
-<td style="text-align: left;"><code>pass</code></td>
-<td style="text-align: left;"><code>raise</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>return</code></td>
-<td style="text-align: left;"><code>try</code></td>
-<td style="text-align: left;"><code>while</code></td>
-<td style="text-align: left;"><code>with</code></td>
-<td style="text-align: left;"><code>yield</code></td>
-</tr>
-</tbody>
-</table>
+<p>برخی دستورات پایتون شامل مقادیری است که مجدداً درون برنامه، برنامه‌نویس به آن نیاز خواهد داشت. بنابراین ما به عنوان برنامه‌نویس می‌بایست یک نام نمادین برای این مقادیر تعریف کنیم که در وقت لازم با این نام تعریف شده، پایتون را متوجه استفاده از آن مقدار موردنظر گردانیم. واژه‌ای که برای این نام مخصوص استفاده می‌شود، <strong>Variable</strong> یا <strong>متغیر</strong> است:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>6</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x <span class="op">*</span> <span class="dv">7</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>42</code></pre>
+<p>در این مثال ساده، ما سعی کردیم به پایتون بگوییم در ابتدا برای مقدار <code>6</code>، برچسبی به نام <code>x</code> در نظر بگیرد و سپس در دستور بعدی همین مقدار را با نام <code>x</code> بازیابی کردیم. آنگاه آن را در <code>7</code> ضرب کرده و حاصل آن را در متغیر جدیدی با نام <code>y</code> ذخیره کردیم.</p>
+<p>دو خط مربوط به تابع <code>print</code> مقادیر <code>x</code> و <code>y</code> صرفاً برای مشاهده مقادیر ذخیره شده در متغیرهای بکار رفته در پرانتز می‌باشد.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<ul>
-<li>دوم اینکه، بتوانیم یک داستان بگوئیم!</li>
-</ul>
-<p>در واقع هنر حل مسئله، اصلی‌ترین مهارت یک برنامه‌نویس محسوب می‌شود. با کسب این مهارت، می‌توانیم زبان‌های برنامه‌نویسی دوم به بعد را راحت‌تر بیاموزیم.</p>
-<p>پس برای شروع، ما شروع به خواندن و توضیح برنامه‌ها می‌کنیم، آنگاه برنامه‌های ساده‌ می نویسیم، و سپس برنامه‌های پیچیده‌تر را در طول زمان می‌نویسیم. اگر خوب پیش برویم، خواهیم توانست روش و یا الگوریتم حل مسئله را از دیدگاه خودمان بنویسیم و آنگاه به مرور، مهارت حل خلاقانه مسئله را بدست خواهیم آورد.</p>
-<section id="نصب-پایتون-و-اجرای-کد" class="level2">
-<h2 class="anchored" data-anchor-id="نصب-پایتون-و-اجرای-کد">نصب پایتون و اجرای کد</h2>
-<p><a href="https://www.python.org/"><span dir="ltr">https://www.python.org/</span></a></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">--version</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>Python 3.10.12</code></pre>
-</section>
-<section id="نصب-ide" class="level2">
-<h2 class="anchored" data-anchor-id="نصب-ide">نصب IDE</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../assets/img/ide.png" class="img-fluid figure-img"></p>
-<figcaption>نظر سنجی ۲۰۲۳ از توسعه دهندگان درباره محیط توسعه یکپارچه <span class="citation" data-cites="stackoverflow-survey"><a href="../references.html#ref-stackoverflow-survey" role="doc-biblioref">[1]</a></span></figcaption>
-</figure>
+<div class="callout-title-container flex-fill">
+مهم
 </div>
-<p>برای نوشتن، اجرا و خروجی گرفتن بهتر می‌توانید از یک نرم افزار <strong>IDE</strong> <span dir="ltr">(Integrated Development Environment)</span> استفاده کنید.</p>
-<ul>
-<li>نصب <strong>VSCode</strong> از <strong><a href="https://code.visualstudio.com/" class="uri">https://code.visualstudio.com/</a></strong></li>
-<li>نصب <span dir="ltr"><strong>Jupyter</strong></span> از <strong><a href="https://jupyter.org" class="uri">https://jupyter.org</a></strong></li>
-</ul>
-</section>
-<section id="آشنایی-با-کیبورد" class="level2">
-<h2 class="anchored" data-anchor-id="آشنایی-با-کیبورد">آشنایی با کیبورد</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../assets/img/keyboard.jpg" class="img-fluid figure-img"></p>
-<figcaption>کیبورد</figcaption>
-</figure>
 </div>
-<section id="کلیدهای-پرکاربرد-در-برنامهنویسی" class="level3">
-<h3 class="anchored" data-anchor-id="کلیدهای-پرکاربرد-در-برنامهنویسی">کلیدهای پرکاربرد در برنامه‌نویسی</h3>
-<ul>
-<li><span dir="ltr"><code>Enter</code></span> برای رفتن به خط بعدی</li>
-<li><span dir="ltr"><code>Tab</code></span> برای فاصله دادن در ابتدای خط (indent)</li>
-<li><span dir="ltr"><code>Backspace</code> و <code>Delete</code></span> برای پاک کردن حروف</li>
-<li><span dir="ltr"><code>Shift</code></span> برای نوشتن حروف بزرگ یا علامت‌های بالای دکمه‌ها</li>
-<li><span dir="ltr"><code>Ctrl + S</code></span> برای ذخیره کردن فایل</li>
-<li><span dir="ltr"><code>Ctrl + Z</code> و <code>Ctrl + Y</code></span> برای برگردوندن یا لغو تغییرات</li>
-<li><span dir="ltr"><code>Ctrl + X</code> و <code>Ctrl + C</code> و <code>Ctrl + V</code></span> برای کات و کپی و پیست کردن کد</li>
-<li><span dir="ltr"><code>Ctrl + /</code></span> برای کامنت کردن خط (در بعضی ادیتورها)</li>
-</ul>
-</section>
-<section id="علامتهای-مهم-در-پایتون" class="level3">
-<h3 class="anchored" data-anchor-id="علامتهای-مهم-در-پایتون">علامت‌های مهم در پایتون</h3>
-<ul>
-<li><code>.</code> نقطه</li>
-<li><code>,</code> ویرگول</li>
-<li><code>;</code> نقطه ویرگول</li>
-<li><code>:</code> دو نقطه</li>
-<li><code>()</code> پرانتز</li>
-<li><code>[]</code> کروشه یا براکت</li>
-<li><code>{}</code> آکولاد یا کرلی براکت</li>
-<li><code>"</code> و دابل کوتیشن <code>'</code> کوتیشن</li>
-<li><code>=</code> مساوی</li>
-<li><code>+</code> بعلاوه یا به اضافه</li>
-<li><code>-</code> منها یا دش</li>
-<li><code>_</code> آندرلاین یا زیرخط</li>
-<li><code>*</code> ستاره یا ضربدر</li>
-<li><code>/</code> اسلش یا تقسیم</li>
-<li><code>%</code> درصد یا باقیمانده</li>
-<li><code>#</code> هشتگ یا علامت کامنت</li>
-<li><code>\</code> بک‌اسلش</li>
-</ul>
-</section>
-</section>
-<section id="interpreter-and-compiler" class="level2">
-<h2 class="anchored" data-anchor-id="interpreter-and-compiler">مترجم و کامپایلر</h2>
-<p>پایتون یک <strong>زبان سطح بالا</strong> محسوب می‌شود. به این معنی که به زبان انسان نزدیک‌تر است تا به زبان سخت‌افزار کامپیوتر. اما مفهوم دستورات زبان‌های سطح بالا توسط CPU قابل فهم نیست. چرا که CPU فقط دستوراتی که به <strong>زبان ماشین</strong> نوشته شده باشند را درک می‌کند. زبان ماشین از دو نشانه <code>0</code> و <code>1</code> تشکیل شده است و CPU قادر است تنها همین زبان را بفهمد و دستورات آن را اجرا کند:</p>
-<pre><code>00101000111010010010101000000111
-11100110000011101010010101101101
-...</code></pre>
-<p>پس برنامه‌های زبان‌های سطح بالایی مثل پایتون را چگونه باید برای CPU شرح داد؟</p>
-<p>مترجم‌های متعددی برای ترجمه و تبدیل کدهای زبان سطح بالا به زبان سطح ماشین، وجود دارد. اما از آن‌جایی که زبان ماشین کاملا وابسته به سخت‌افزار کامپیوتر است، بنابراین ما یک زبان ماشین که بتواند با انواع سخت‌افزار هماهنگ شود را نداریم. برنامه‌های نوشته شده به زبان‌های سطح بالا را می‌توان با استفاده از یک مفسر متفاوت در ماشین (همان سخت‌افزار) جدید یا کامپایل مجدد کد برای ایجاد نسخه زبان ماشین برنامه موردنظر برای ماشین جدید بین رایانه های مختلف جابجا کرد.</p>
-<p>این مترجمان زبان برنامه‌نویسی به دو دسته کلی تقسیم می شوند:</p>
-<ol type="1">
-<li>مفسر <span dir="ltr">(Interpreter)</span></li>
-<li>کامپایلر <span dir="ltr">(Compiler)</span></li>
-</ol>
-<p>یک <strong>مفسر</strong> کد برنامه نوشته شده توسط برنامه‌نویس را خوانده، آن را تجزیه می‌کند و دستورالعمل‌ها را تفسیر می‌نماید. با این توصیف، پایتون یک مفسر محسوب می‌شود که کدهای برنامه ما رافوراً پردازش می‌کند.</p>
-</section>
-<section id="سایتهای-مفید" class="level2">
-<h2 class="anchored" data-anchor-id="سایتهای-مفید">سایت‌های مفید</h2>
-<ul>
-<li>استفاده از سایت گوگل (<a href="https://www.google.com/"><strong>www.google.com</strong></a>)</li>
-</ul>
-<div class="proof remark">
-<p><span class="proof-title"><em>نکته</em>. </span>بهترین مهارت برای یک برنامه نویس مهارت گوگل کردن است.</p>
+<div class="callout-body-container callout-body">
+<p>کاراکترهای مجاز برای متغیرها به صورت <code>A-Z</code>, <code>a-z</code>, <code>0-9</code> و <code>_</code> است.</p>
 </div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+نکته
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>انواع متغیرها</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Variable_25 <span class="op">=</span> <span class="st">"Salam"</span> </span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>پرسیدن و جستجوی سوالات در سایت (<a href="https://stackoverflow.com/"><strong>stackoverflow.com</strong></a>)</li>
+<li><code>lowercase</code></li>
 </ul>
-<div class="proof remark">
-<p><span class="proof-title"><em>نکته</em>. </span>سعی کنید در ابتدای کار کل کدها را تایپ کنید و بدون فهم درست از کدها چیزی را کپی نکنید.</p>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>thisisalowercase <span class="op">=</span> <span class="st">"value"</span> </span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>استفاده از هوش مصنوعی
-<ul>
-<li><a href="https://chat.openai.com/"><strong>chat GPT</strong></a></li>
-<li><a href="https://gemini.google.com/"><strong>Gemeni</strong></a></li>
-<li><a href="https://codeium.com/"><strong>Codeium</strong></a></li>
-</ul></li>
+<li><code>snake_case</code></li>
 </ul>
-<div class="proof remark">
-<p><span class="proof-title"><em>نکته</em>. </span>در استفاده از هوش مصنوعی افراطی عمل نکنید و نسبت به عملکرد کدها اطمینان حاصل فرمایید.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>this_is_a_snake_case_variable <span class="op">=</span> <span class="st">"value"</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><code>camelCase</code></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>thisIsACamelCaseVarible <span class="op">=</span> <span class="st">"value"</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><code>PascalCase</code></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ThisIsPascalCaseVariable <span class="op">=</span> <span class="st">"value"</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><code>UPPERCASE</code></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>THISISAUPPERCASEVARIABLE <span class="op">=</span> <span class="st">"value"</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><code>kebab-case</code></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>this<span class="op">-</span><span class="kw">is</span><span class="op">-</span>a<span class="op">-</span>kebab<span class="op">-</span>case<span class="op">-</span>variable <span class="op">=</span> <span class="st">"value"</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>  File "&lt;stdin&gt;", line 1
+    this-is-a-kebab-case-variable = "value"
+         ^^
+SyntaxError: invalid syntax</code></pre>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>نکته</em>. </span>برای عبور از مشکلات تحریمی میتوانید از دی ان اس های سایت شکن استفاده نمایید.</p>
+<div class="callout-title-container flex-fill">
+مهم
 </div>
-</section>
+</div>
+<div class="callout-body-container callout-body">
+<p>معمولا از ترکیب <code>UPPERCASE</code> و <code>kebab-case</code> برای متغیرهای مسیر و فایل‌ها استفاده می‌شود.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>PATH_OR_FILE <span class="op">=</span><span class="st">"this-is-a-kebab-case-path/filename"</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+</div>
+<p>گرفتن ورودی از کاربر به صورت زیر است</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your name: "</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello"</span>, name)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>Enter your name: Mohsen
+Hello Mohsen</code></pre>
+<p>اگر ورودی عدد باشد باید توسط <code>input</code> در قالب عدد وارد شود.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Enter your age: "</span>))</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"You are"</span>, age, <span class="st">"years old."</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="output"><code>Enter your age: 30
+You are 30 years old.</code></pre>
 <section id="تمرین" class="level2">
 <h2 class="anchored" data-anchor-id="تمرین">تمرین</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../assets/img/LearningCurve_SPSS-Stata-SAS-JMP-R-Matlab.png" class="img-fluid figure-img"></p>
-<figcaption>منحنی یادگیری ابزارهای آماری <span class="citation" data-cites="nyu-statsoft"><a href="../references.html#ref-nyu-statsoft" role="doc-biblioref">[2]</a></span></figcaption>
-</figure>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p>برای تمرین بیشتر می‌توانید از سایت‌هایی که تمرینات <strong>python</strong> ارائه می‌دهند استفاده کنید.</p>
-<p>با جستجو <span dir="ltr"><strong>python exercises with solutions</strong></span> در گوگل به سایت‌های زیر دسترسی پیدا می‌کنید</p>
-<ul>
-<li><a href="https://quera.org/problemset?order=most-solutions">کوئرا</a></li>
-<li><a href="https://www.codewars.com/dashboard">Code Wars</a></li>
-<li><a href="https://www.w3schools.com/python/default.asp">W3Schools</a></li>
-<li><a href="https://leetcode.com/">LeetCode</a></li>
-<li>کمک کردن به دیگران</li>
-<li>مشارکت در پروژه‌ی دیگران</li>
-</ul>
-</section>
-<section id="پروژه" class="level2">
-<h2 class="anchored" data-anchor-id="پروژه">پروژه</h2>
-<p>برای اینکه کمی یادگیری جذاب‌تر شود یک سری پروژه در پایتون پیاده سازی کنید.</p>
-<p>پیش نیاز‌ها را در ترمینال یا کنسول اجرا کنید:</p>
-<ul>
-<li>نصب پیکیج‌های مورد نیاز:</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install pyinstaller</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ul>
-<li>برای تبدیل فایل‌های پایتون به فایل اجرایی در ویندوز از کد زیر استفاده کنید.</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pyinstaller</span> <span class="at">--onefile</span> <span class="at">--noconsole</span> myproject.py</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><span dir="ltr"><code>--onefile</code></span>: فقط یه فایل خروجی بسازه (نه یه پوشه‌ی پر از فایل)</p>
-<p><span dir="ltr"><code>--noconsole</code></span>: چون برنامه گرافیکی‌ـه و به پنجره‌ی ترمینال نیازی نداره</p>
-<ul>
-<li>ساختار پروژه:</li>
-</ul>
-<pre><code>my_project_folder/
-│
-├── myproject.py
-├── build/
-├── dist/
-│   └── myproject.exe  ✅✅✅ اینه فایل اجرایی!
-</code></pre>
+<div class="callout-title-container flex-fill">
+هشدار
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>با استفاده از ورودی (<span dir="ltr"><code>input()</code></span>) تمرین‌ها انجام شود.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="نام و سن کاربر را نمایش دهد">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">احتیاط</span>نام و سن کاربر را نمایش دهد
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">"نام خود را وارد کنید: "</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">input</span>(<span class="st">"سن خود را وارد کنید: "</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"نام:"</span>, name)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"سن:"</span>, age)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="پروژه">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">احتیاط</span>پروژه
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>به بخش <a href="99-project.html#sec-project-calculator" class="quarto-xref"><span>پروژه ماشین حساب</span></a> بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.</p>
+</div>
+</div>
 
 
-<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-stackoverflow-survey" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline"><span>“Stack over flow - 2023 developer survey.”</span> <a href="https://survey.stackoverflow.co/2023/">https://survey.stackoverflow.co/2023/</a></div>
-</div>
-<div id="ref-nyu-statsoft" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline"><span>“New york university - statistic software.”</span> <a href="https://guides.nyu.edu/quant/statsoft">https://guides.nyu.edu/quant/statsoft</a></div>
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -1159,13 +1064,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../intro.html" class="pagination-link" aria-label="مقدمه">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">مقدمه</span>
+      <a href="../chapter/01-value.html" class="pagination-link" aria-label="مقدار">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">مقدار</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapter/02-variables-expressions-commands.html" class="pagination-link" aria-label="متغیرها، عبارات و دستورات">
-        <span class="nav-page-text"><span class="chapter-title">متغیرها، عبارات و دستورات</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapter/03-operator.html" class="pagination-link" aria-label="عملگر">
+        <span class="nav-page-text"><span class="chapter-title">عملگر</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

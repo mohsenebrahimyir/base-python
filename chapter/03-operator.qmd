@@ -1,0 +1,299 @@
+#  عملگر {#sec-operator}
+
+## عملگرهای ریاضی {#sec-math-operators}
+
+- جمع
+
+```python
+3 + 2
+```
+```
+5
+```
+
+```{python}
+"3" + "2"
+```
+```
+'32'
+```
+
+- تفریق
+
+```python
+3 - 2
+```
+```
+1
+```
+
+- ضرب
+
+```python
+3 * 2
+```
+```
+6
+```
+
+```python
+"3" * 2
+```
+```
+'33'
+```
+
+- تقسیم
+
+```python
+3 / 2
+```
+```
+1.5
+```
+
+- مقسوم علیه
+
+```python
+3 // 2
+```
+```
+1
+```
+
+- باقیمانده
+
+```python
+3 % 2
+```
+```
+1
+```
+
+- توان
+
+```python
+3 ** 2
+```
+```
+9
+```
+
+- جذر
+
+```python
+3 ** (1/2)
+```
+```
+1.7320508075688772
+```
+
+## عملگرهای مقایسه‌ای {#sec-comparison-operators}
+
+برای مقایسه دو متغیر از عبارات مقایسه‌ای زیر استفاده می‌شود:
+
+- مساوی [equal (`==`)]{dir=ltr} 
+
+```python
+5 == 5
+```
+```output
+True
+```
+
+```python
+5 == 6
+```
+```output
+False
+```
+
+- نامساوی [not equal (`!=`)]{dir=ltr} 
+
+```python
+5 != 5
+```
+```output
+False
+```
+
+```python
+5 != 6
+```
+```output
+True
+```
+
+- بزرگتر [greater (`>`)]{dir=ltr} 
+
+```python
+5 > 4
+```
+```output
+True
+```
+
+```python
+5 > 5
+```
+```output
+False
+```
+- کوچکتر [less (`<`)]{dir=ltr} 
+
+```python
+4 < 5
+```
+```output
+True
+```
+
+```python
+5 < 5
+```
+```output
+False
+```
+- بزرگتر یا مساوی [greater or equal (`>=`)]{dir=ltr} 
+
+```python
+5 >= 4
+```
+```output
+True
+```
+
+```python
+5 >= 5
+```
+```output
+True
+```
+
+```python
+5 >= 6
+```
+```output
+False
+```
+
+- کوچکتر از [less or equal (`<=`)]{dir=ltr} 
+
+```python
+4 <= 5
+```
+```output
+True
+```
+
+```python
+5 <= 5
+```
+```output
+True
+```
+
+```python
+6 <= 5
+```
+```output
+False
+```
+
+::: {.callout-tip}
+
+برای مقایسه رفرسه‌ی متغیرها از عبارات مقایسه‌ای زیر استفاده می‌شود.
+
+```python
+3 is 3.0
+```
+```output
+False
+```
+
+```python
+3 is not 3.0
+```
+```output
+True
+```
+:::
+
+## عملگرهای منطقی {#sec-logical-operators}
+
+سه عملگر منطقی
+([Logical Operators]{dir=ltr})
+وجود دارد: 
+`and`, `or` 
+و 
+`not`
+. 
+برای مثال:
+
+```python
+x > 0 and x < 10
+```
+
+عملوندهای عملگرهای منطقی باید عبارات بولی باشند،
+اما در پایتون هر عدد غیر صفر 
+نیز به صورت 
+`True` 
+تفسیر می‌شود. 
+
+```python
+17 and True
+```
+```output
+True
+```
+
+## تمرین
+
+::: {.callout-warning}
+با استفاده از ورودی ([`input()`]{dir=ltr}) تمرین‌ها انجام شود.
+:::
+
+::: {.callout-caution title="یک ماشین‌ حساب ساده برای جمع و تفریق بنویسید." icon="false" collapse="true"}
+```python
+num1 = input("عدد اول را وارد کن: ")
+num1 = float(num1)
+
+num2 = input("عدد دوم را وارد کن: ")
+num2 = float(num2)
+
+add = num1 + num2
+subtract = num1 - num2
+
+print("نتیجه جمع =", add)
+print("نتیجه تفریق =", subtract)
+```
+
+آیا میتونید برای ضرب و تقیسم هم بنویسید؟
+:::
+
+::: {.callout-caution title="دو عدد بگیرد و بزرگی عدد اول را بررسی کند." icon="false" collapse="true"}
+
+```python
+num1 = input("عدد اول را وارد کن: ")
+num1 = float(num1)
+
+num2 = input("عدد دوم را وارد کن: ")
+num2 = float(num2)
+
+result = num1 > num2
+
+print("Is", num1,"greater than", num2, "? ", result)
+```
+:::
+
+::: {.callout-caution title="سوالات سایت [کوئرا](quera.ir)"}
+
+- [سوال زرد - `3537`](https://quera.org/problemset/3537)
+- [سوال ساده - `2885`](https://quera.org/problemset/2885)
+- [کمک به کاپی - `8838`](https://quera.org/problemset/8838)
+:::
+
+::: {.callout-caution title="پروژه" icon="false"}
+به بخش @sec-project-calculator بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.
+:::
+
