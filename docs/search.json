@@ -1,0 +1,2627 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "مبانی پایتون",
+    "section": "",
+    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل info@mohsenebrahimy.ir برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۵-۰۵-۱۴ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: mohsenebrahimy.ir/book/base-python\n\n\n\n\n\n\n\nمهمتوجه\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
+    "crumbs": [
+      "پیش گفتار"
+    ]
+  },
+  {
+    "objectID": "chapter/intro/main-resource.html",
+    "href": "chapter/intro/main-resource.html",
+    "title": "منبع اصلی",
+    "section": "",
+    "text": "این کتاب از روی کتاب پایتون برای همه [1] تهیه شده است. باقی محتوا از منیع اینترنتی آزاد گرفته شده و یا توسط نویسندگان تولید شده‌اند. بنابراین کپی برداری با ذکر منبع آزاد می‌باشد.\n\n\n\n\n[1] C. R. Severance, S. Blumenberg, and E. Hauser, “Python for everybody: Exploring data in python 3,” 2016. https://www.py4e.com/",
+    "crumbs": [
+      "مقدمه",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>منبع اصلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/intro/hard-ware.html",
+    "href": "chapter/intro/hard-ware.html",
+    "title": "سخت افزار",
+    "section": "",
+    "text": "اگر ما در ابتدای ورود به مسیر برنامه‌نویسی هستیم، بهتر است کمی درمورد اینکه کامپیوتر چگونه کار می‌کند، صحبت کنیم. خوب است بدانیم، قسمت‌های مختلف یک کامپیوتر به زبان بسیار ساده، به این ترتیب هستند:\n\n\n\nمعماری سخت افزار کامپیوتر\n\n\nتعاریف سطح بالای این قطعات به شرح زیر است:\n\nپردازنده مرکزی یا Central Processing Unit (CPU): می‌تواند در هر ثانیه چندین کار را انجام دهد طوری که ما احساس کنیم کارها بطور موازی انجام می‌شوند. اینکه چه تعداد کار را در یک ثانیه انجام دهد، به سرعت پردازنده ما بستگی دارد. بطور مثال، اگر سرعت پردازنده ما 3.0 گیگاهرتز (3.0 Gigahertz) باشد، به معنی این است که به تعداد سه میلیارد کار در هر ثانیه، می‌تواند انجام دهد.\nحافظه اصلی یا Main Memory: برای ذخیره و دردسترس قرار دادن اطلاعات ضروری و مورد نیاز سریع پردازنده مرکزی، بکار می‌رود. اما باید مراقب اطلاعات خود در حافظه اصلی باشیم، چرا که با خاموش شدن کامپیوتر و یا راه‌اندازی مجدد (restart) اطلاعات آن از بین می‌رود.\nحافظه ثانویه یا (Secondary Memory): این نوع حافظه برای ذخیره دائمی اطلاعات بکارمی‌رود، اما سرعت آن از سرعت حافظه اصلی کمتر است.\nدستگاه‌های ورودی و خروجی یا (Input and Output Devices): همان وسایلی هستند که به کمک آن‌ها با کامپیوتر ارتباط برقرار می‌کنیم، شامل صفحه کلید، مانیتور، ماوس و …\n\nو ما به عنوان یک برنامه‌نویس مسئول این هستیم که به CPU بگوئیم چه زمانی چه کاری انجام دهد و از کدام دستگاه‌های ورودی و خروجی استفاده کند. به این ترتیب، ما همه این منابع را باهم هماهنگ می‌سازیم.",
+    "crumbs": [
+      "مقدمه",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>سخت افزار</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/intro/programming-languages.html",
+    "href": "chapter/intro/programming-languages.html",
+    "title": "زبان های برنامه نویسی",
+    "section": "",
+    "text": "زبان ماشین و انسان\nسایت تبدیل زبان برنامه نویسی R به زبان برنامه نویسی Assembly https://www.codeconvert.ai/r-to-assembly-converter",
+    "crumbs": [
+      "مقدمه",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>زبان های برنامه نویسی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/intro/programming-languages.html#زبان-ماشین-و-انسان",
+    "href": "chapter/intro/programming-languages.html#زبان-ماشین-و-انسان",
+    "title": "زبان های برنامه نویسی",
+    "section": "",
+    "text": "انقلاب زبان‌های برنامه نویسی\n\n\n\nزبان انسان (English)\nزبان‌های برنامه نویسی سطح بالا (C, C++, R, Python)\nزبان برنامه نویسی سطح پایین (Assembly)\nزبان ماشین (01)\n\n\nنکته. در نهایت اکثر زبان‌های برنامه نویسی منطق یکسانی دارند و یا دگیری یک زبان برنامه نویسی، یادگیری زبان برنامه نویسی دیگر را ساده تر می‌کند.\n\n\n\nخروجی\n\n    name Age\n1 Mohsen  30\n2  Arash  12\n\nR\n\ndf = data.frame(\n  \"name\" = c(\"Mohsen\", \"Arash\"),\n  \"Age\" = c(30, 12)\n)\n\nprint(df)\n\nMatlab\n\ndf = table;\ndf.name = {'Mohsen', 'Arash'};\ndf.Age = [30, 12];\n\ndisp(df)\n\nPython\n\nimport pandas as pd\n\ndf = pd.DataFrame({\n    \"name\": [\"Mohsen\", \"Arash\"],\n    \"Age\": [30, 12]\n})\n\nprint(df)\n\nSas\n\ndata df;\n  input name $ age;\ndatalines;\nMohsen 30\nArash 12\n;\nrun;\n\nproc print data=df;\nrun;\n\nFortran\n\nPROGRAM main\n  IMPLICIT NONE\n  \n  INTEGER :: i\n  CHARACTER(LEN=10), DIMENSION(2) :: name\n  INTEGER, DIMENSION(2) :: age\n  \n  name(1) = \"Mohsen\"\n  name(2) = \"Arash\"\n  age(1) = 30\n  age(2) = 12\n  \n  DO i = 1, 2\n    WRITE(*,*) \"name: \", name(i), \", age: \", age(i)\n  END DO\nEND PROGRAM main\n\nC\n\n#include &lt;iostream&gt;\n#include &lt;vector&gt;\n#include &lt;string&gt;\n#include &lt;unordered_map&gt;\n\nint main() {\n    std::vector&lt;std::string&gt; name = {\"Mohsen\", \"Arash\"};\n    std::vector&lt;int&gt; Age = {30, 12};\n\n    std::unordered_map&lt;std::string, std::vector&lt;int&gt;&gt; df;\n    df[\"name\"] = name;\n    df[\"Age\"] = Age;\n\n    for (const auto& pair : df) {\n        std::cout &lt;&lt; pair.first &lt;&lt; \": \";\n        for (const auto& value : pair.second) {\n            std::cout &lt;&lt; value &lt;&lt; \" \";\n        }\n        std::cout &lt;&lt; std::endl;\n    }\n\n    return 0;\n}\n\nAssembly\n\nasm\n.data\ndf_name_data:\n    .asciz \"Mohsen\"\n    .asciz \"Arash\"\ndf_age_data:\n    .int 30\n    .int 12\ndf_nrows = 2\ndf_ncols = 2\n\n.text\n.globl main\nmain:\n    # Allocate memory for the data frame\n    movl $df_nrows, %eax\n    movl $df_ncols, %ebx\n    imull %ebx, %eax\n    shl $2, %eax # Each element is 4 bytes (int)\n    pushl %eax\n    call malloc\n    popl %ecx\n    movl %eax, %edi # edi points to the data frame\n\n    # Copy the name data\n    movl $df_name_data, %esi\n    movl $0, %ecx\nloop1:\n    cmpl $df_nrows, %ecx\n    je end1\n    movl (%esi), %eax\n    movl %eax, (%edi)\n    addl $4, %edi # Move to the next column\n    addl $4, %esi # Move to the next name\n    incl %ecx\n    jmp loop1\nend1:\n\n    # Copy the age data\n    movl $df_age_data, %esi\n    movl $0, %ecx\nloop2:\n    cmpl $df_nrows, %ecx\n    je end2\n    movl (%esi), %eax\n    movl %eax, (%edi)\n    addl $4, %edi # Move to the next column\n    addl $4, %esi # Move to the next age\n    incl %ecx\n    jmp loop2\nend2:\n\n    # Print the data frame\n    movl $df_nrows, %eax\n    movl $df_ncols, %ebx\n    imull %ebx, %eax # Total number of elements\n    movl %edi, %ebx # ebx points to the start of the data frame\n    movl $0, %ecx\nloop3:\n    cmpl %eax, %ecx\n    je end3\n    # Print the current element\n    pushl (%ebx)\n    pushl $format\n    call printf\n    addl $8, %esp\n    addl $4, %ebx # Move to the next element\n    incl %ecx\n    jmp loop3\nend3:\n\n    # Free the memory\n    movl %edi, %eax\n    call free\n\n    xorl %eax, %eax\n    ret\n\n.data\nformat:\n    .asciz \"%d \"",
+    "crumbs": [
+      "مقدمه",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>زبان های برنامه نویسی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/intro/programming-languages.html#مفسر-و-کامپایلر",
+    "href": "chapter/intro/programming-languages.html#مفسر-و-کامپایلر",
+    "title": "زبان های برنامه نویسی",
+    "section": "مفسر و کامپایلر",
+    "text": "مفسر و کامپایلر\nپایتون، R و متلب یک زبان سطح بالا محسوب می‌شوند. به این معنی که به زبان انسان نزدیک‌تر هستند تا به زبان سخت‌افزار کامپیوتر. اما مفهوم دستورات زبان‌های سطح بالا توسط CPU قابل فهم نیست. چرا که CPU فقط دستوراتی که به زبان ماشین نوشته شده باشند را درک می‌کند. زبان ماشین از دو نشانه 0 و 1 تشکیل شده است و CPU قادر است تنها همین زبان را بفهمد و دستورات آن را اجرا کند:\n00101000111010010010101000000111\n11100110000011101010010101101101\n...\nپس برنامه‌های زبان‌های سطح بالایی مثل پایتون را چگونه باید برای CPU شرح داد؟\nمترجم‌های متعددی برای ترجمه و تبدیل کدهای زبان سطح بالا به زبان سطح ماشین، وجود دارد. اما از آن‌جایی که زبان ماشین کاملا وابسته به سخت‌افزار کامپیوتر است، بنابراین ما یک زبان ماشین که بتواند با انواع سخت‌افزار هماهنگ شود را نداریم. برنامه‌های نوشته شده به زبان‌های سطح بالا را می‌توان با استفاده از یک مفسر متفاوت در ماشین (همان سخت‌افزار) جدید یا کامپایل مجدد کد برای ایجاد نسخه زبان ماشین برنامه موردنظر برای ماشین جدید بین رایانه های مختلف جابجا کرد.\nاین مترجمان زبان برنامه‌نویسی به دو دسته کلی تقسیم می شوند:\n\nمفسر (Interpreter)\nکامپایلر (Compiler)\n\nیک مفسر کد برنامه نوشته شده توسط برنامه‌نویس را خوانده، آن را تجزیه می‌کند و دستورالعمل‌ها را تفسیر می‌نماید. با این توصیف، پایتون یک مفسر محسوب می‌شود که کدهای برنامه ما رافوراً پردازش می‌کند.",
+    "crumbs": [
+      "مقدمه",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>زبان های برنامه نویسی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/intro/programming-languages.html#ده-تای-اول",
+    "href": "chapter/intro/programming-languages.html#ده-تای-اول",
+    "title": "زبان های برنامه نویسی",
+    "section": "ده تای اول",
+    "text": "ده تای اول\nسایت استک اورفلو هر ساله از برنامه نویسان جهان یک نظرسنجی جامع انجام می‌دهد. https://survey.stackoverflow.co/\nدر این شکل توزیع کشورهای افراد شرکت کننده را ترسیم نمودیم (بعضی افراد از اظهار کشورشان امتناع کردند که از داده‌ها حذف شده‌اند)\n\n\n\nتوزیع کشورهای توسعه دهندگان شرکت کننده در نظرسنجی جهانی\n\n\nبا توجه به داده‌های موجود در نظر سنجی برای دقت بیشتر و تحلیل بهتر نتایج، بخشی از شرکت کننده‌ها فیلتر شده‌اند.\nشرایط توسعه دهندگانی که برای تحلیل انتخاب شده‌اند.\n\nافراد بالای ۲۵ سال سن\nافراد با بیش از ۵ سال سابقه برنامه نویسی حرفه‌ای\nافراد شاغل (تمام یا نیمه وقت) یا خود اشتغال\nافرادی که از انواع گزینه‌های توسعه دهنده کمتر از ۳ گزینه انتخاب نمودند.\n\n\n\n\nتوزیع کشورهای توسعه دهندگان فیلتر شده شرکت کننده در نظرسنجی جهانی\n\n\n\nانواع توسعه دهندگان\n\n\n\nانواع توسعه دهندگان\n\n\n\n\nنگاه کلی\n\n\n\nده زبان برنامه نویسی برتر-نگاه کلی\n\n\n\n\nنرم افزار\n\n\n\nده زبان برنامه نویسی برتر-توسعه دهندگان نرم افزار\n\n\n\n\nوبسایت (بک‌اند-فرانت-اند)\n\n\n\nده زبان برنامه نویسی برتر-توسعه دهندگان وبسایت\n\n\n\n\nبازی سازی\n\n\n\nده زبان برنامه نویسی برتر-توسعه دهندگان بازی\n\n\n\n\nموبایل\n\n\n\nده زبان برنامه نویسی برتر-توسعه دهندگان موبایل\n\n\n\n\nدانشمند داده و یادگیری ماشین\n\n\n\nده زبان برنامه نویسی برتر-توسعه دهندگان داده و یادگیری ماشین",
+    "crumbs": [
+      "مقدمه",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>زبان های برنامه نویسی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/intro/why-python.html",
+    "href": "chapter/intro/why-python.html",
+    "title": "چرا پایتون",
+    "section": "",
+    "text": "چه زبان برنامه نویسی را باید اول یاد بگیریم؟\n\n\nنقشه راه برنامه نویسی‌های مختلف\nشاید دلیل ما برای شروع یادگیری پایتون این باشد که ن یاز به آنالیز داده‌های زیادی داریم، یا برای امرار معاش به این راه وارد شده‌ایم. همچنین اگر در حوزه علم داده (Data Science) و یا هوش مصنوعی (Artificial Intelligence) مشغول به فعالیت هستیم، زبان برنامه‌نویسی پایتون، گزینه بسیار مناسبی برای ما خواهد بود.\nدر نهایت اینکه ممکن است به یکی از دلایل زیر، ما نیاز به یادگیری پایتون داشته باشیم:\n1- اسکریپت و اتوماسیون در پایتون\n2- استفاده از پایتون برای داده‌های بزرگ (Big Data)\n3- پشتیبانی پایتون از تست (Testing)\n4- گرافیک کامپیوتری در پایتون\n5- استفاده از پایتون در توسعه وب\n6- سازگار و قابل انتقال بودن\n7- تفسیر داده‌های تصویربرداری عصبی\n8- بهره‌مندی از پایتون در طراحی Task در نرم‌افزارهایی مانند Psychopy\n\nمثال حل فیزیک\nدر ادامه یک مثال فیزیک دبیرستانی همراه با کدنویسی با استفاده از پکیج SymPy در پایتون آورده شده است. مثال مربوط به حل یک مسئله‌ی حرکت در خط راست است:\n\nx(t) = \\frac{1}{2}at^2 + v_0t + x_0\n\nیک جسم با سرعت اولیه v_0 = 10 \\frac{m}{s} و شتاب a = 2 \\frac{m}{s^2} شروع به حرکت می‌کند. مکان جسم در لحظه t=0 برابر x_0 = 5m ​است. مکان جسم را در لحظه t=4s بیابید.\n\nاستفاده از SymPy\n\n\n# pip install sympy\nfrom sympy import *\n\ninit_printing()\n\n\nتعریف متغیرها\n\n\na = symbols(\"a\")  # شتاب\nv_0 = symbols(\"v_0\")  # سرعت اولیه\nx_0 = symbols(\"x_0\")\nt = symbols(\"t\")  # زمان\nx = symbols(\"x\")  # مکان\nx_t = symbols(\"x_t\")\n\n# t, x, x_t, v_0 a x_0 = symbols('t x x_t v_0 a x_0')\n\n\nمعادله مکان بر حسب زمان\n\n\nx_eq = 1 / 2 * a * t**2 + v_0 * t + x_0\ndisplay(x_eq)\n\n\\displaystyle 0.5 a t^{2} + t v_{0} + x_{0}\n\n\n\nداده‌های مسئله\n\n\nv0 = 10  # سرعت اولیه (m/s)\na = 2    # شتاب (m/s^2)\nx0 = 5   # مکان اولیه (m)\n\n# v0, a, x0 = 10, 2, 5\n\n\nمعادله مکان بر حسب زمان\n\n\nx_eq = (1 / 2) * a * t**2 + v0 * t + x0\ndisplay(x_eq)\n\n\\displaystyle 1.0 t^{2} + 10 t + 5\n\n\n\nمکان در لحظه t = 4\n\n\nt_value = 4\nx_at_t = x_eq.subs(t, t_value)\ndisplay(x_at_t)\n\n\\displaystyle 61.0\n\n\n\n# pip install matplotlib\n# pip install numpy\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nx_func = lambdify(t, x_eq, \"numpy\")\nt_values = np.linspace(0, 5, 10)\nx_values = x_func(t_values)\n\n# Create the plot\nplt.plot(t_values, x_values, label=str(x_eq))\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Position (m)\")\nplt.title(\"Position vs. Time\")\nplt.legend()\nplt.grid()\nplt.show()",
+    "crumbs": [
+      "مقدمه",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>چرا پایتون</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/python/install-and-run.html",
+    "href": "chapter/python/install-and-run.html",
+    "title": "نصب و اجرای کد",
+    "section": "",
+    "text": "پایتون\nhttps://www.python.org/",
+    "crumbs": [
+      "پایتون",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>نصب و اجرای کد</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/python/install-and-run.html#پایتون",
+    "href": "chapter/python/install-and-run.html#پایتون",
+    "title": "نصب و اجرای کد",
+    "section": "",
+    "text": "python --version\nPython 3.10.12",
+    "crumbs": [
+      "پایتون",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>نصب و اجرای کد</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/python/install-and-run.html#نصب-ide",
+    "href": "chapter/python/install-and-run.html#نصب-ide",
+    "title": "نصب و اجرای کد",
+    "section": "نصب IDE",
+    "text": "نصب IDE\n\n\n\nنظر سنجی ۲۰۲۳ از توسعه دهندگان درباره محیط توسعه یکپارچه [1]\n\n\nبرای نوشتن، اجرا و خروجی گرفتن بهتر می‌توانید از یک نرم افزار IDE (Integrated Development Environment) استفاده کنید.\n\nنصب VSCode از https://code.visualstudio.com/\n\n\nبعد از نصب پایتون باید افزونه پایتون را نصب کنید تا اسکریپت‌های پایتون را بتوانید اجرا کنید.",
+    "crumbs": [
+      "پایتون",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>نصب و اجرای کد</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/python/install-and-run.html#اجرا-اولین-کد",
+    "href": "chapter/python/install-and-run.html#اجرا-اولین-کد",
+    "title": "نصب و اجرای کد",
+    "section": "اجرا اولین کد",
+    "text": "اجرا اولین کد\nبرای تست و اجرای اولین کد می‌توانید یک فایل تست بسازید و کد زیر را درون آن بنویسید و اجرا کنید:\n# this is a comment\nprint(1 + 1)\n2\n\n\n\n\n[1] “Stack over flow - 2023 developer survey.” https://survey.stackoverflow.co/2023/",
+    "crumbs": [
+      "پایتون",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>نصب و اجرای کد</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/python/keyboard.html",
+    "href": "chapter/python/keyboard.html",
+    "title": "آشنایی با کیبورد",
+    "section": "",
+    "text": "کلیدهای پرکاربرد در برنامه‌نویسی",
+    "crumbs": [
+      "پایتون",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>آشنایی با کیبورد</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/python/keyboard.html#کلیدهای-پرکاربرد-در-برنامهنویسی",
+    "href": "chapter/python/keyboard.html#کلیدهای-پرکاربرد-در-برنامهنویسی",
+    "title": "آشنایی با کیبورد",
+    "section": "",
+    "text": "Enter برای رفتن به خط بعدی\nTab برای فاصله دادن در ابتدای خط (indent)\nBackspace و Delete برای پاک کردن حروف\nShift برای نوشتن حروف بزرگ یا علامت‌های بالای دکمه‌ها\nCtrl + S برای ذخیره کردن فایل\nCtrl + Z و Ctrl + Y برای برگردوندن یا لغو تغییرات\nCtrl + X و Ctrl + C و Ctrl + V برای کات و کپی و پیست کردن کد\nCtrl + / برای کامنت کردن خط (در بعضی ادیتورها)",
+    "crumbs": [
+      "پایتون",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>آشنایی با کیبورد</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/python/keyboard.html#علامتهای-مهم-در-پایتون",
+    "href": "chapter/python/keyboard.html#علامتهای-مهم-در-پایتون",
+    "title": "آشنایی با کیبورد",
+    "section": "علامت‌های مهم در پایتون",
+    "text": "علامت‌های مهم در پایتون\n\n. نقطه\n, ویرگول\n; نقطه ویرگول\n: دو نقطه\n() پرانتز\n[] کروشه یا براکت\n{} آکولاد یا کرلی براکت\n\" و دابل کوتیشن ' کوتیشن\n= مساوی\n+ بعلاوه یا به اضافه\n- منها یا دش\n_ آندرلاین یا زیرخط\n* ستاره یا ضربدر\n/ اسلش یا تقسیم\n% درصد یا باقیمانده\n# هشتگ یا علامت کامنت\n\\ بک‌اسلش",
+    "crumbs": [
+      "پایتون",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>آشنایی با کیبورد</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/python/useful-websites.html",
+    "href": "chapter/python/useful-websites.html",
+    "title": "سایت‌های مفید",
+    "section": "",
+    "text": "تمرین\nبرای تمرین بیشتر می‌توانید از سایت‌هایی که تمرینات python ارائه می‌دهند استفاده کنید.\nبا جستجو python exercises with solutions در گوگل به سایت‌های زیر دسترسی پیدا می‌کنید",
+    "crumbs": [
+      "پایتون",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>سایت‌های مفید</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/python/useful-websites.html#تمرین",
+    "href": "chapter/python/useful-websites.html#تمرین",
+    "title": "سایت‌های مفید",
+    "section": "",
+    "text": "منحنی یادگیری ابزارهای آماری [1]\n\n\n\n\n\nکوئرا\nCode Wars\nW3Schools\nLeetCode\nآموزش به دیگران\nمشارکت در پروژه‌ی دیگران\n\n\n\n\n\n[1] “New york university - statistic software.” https://guides.nyu.edu/quant/statsoft",
+    "crumbs": [
+      "پایتون",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>سایت‌های مفید</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/python/reserved-words.html",
+    "href": "chapter/python/reserved-words.html",
+    "title": "کلمات رزرو",
+    "section": "",
+    "text": "برای اینکه بتوانیم مهارت خوبی در برنامه‌نویسی بدست آوریم، دو نکته را در نظر داشته باشیم:\n\nاول اینکه باید با زبان برنامه‌نویسی موردنظر خود آشنا شویم یعنی لغات رزرو شده (Reserved Words) و گرامر زبان برنامه‌نویسی\n\nخوب است بدانیم برای هر زبان برنامه‌نویسی، لغاتی هستند که مفهوم خاصی داشته و کاربر برنامه‌نویس نمی‌تواند از آن‌ها برای منظور و کاربرد دیگری استفاده نماید. درعین حال، هر برنامه‌نویسی می‌تواند لغات خاص منظوره خود را به مفسر زبان برنامه‌نویسی خود معرفی کند. یکی از روش‌های انجام این کار، تعریف متغیر (Variable) است. کلمات رزرو شده توسط پایتون، شامل موارد ذیل می‌شوند:\n\n\n\n\nand\nas\nassert\nbreak\nclass\n\n\ncontinue\ndef\ndel\nelif\nelse\n\n\nexcept\nfinally\nfor\nfrom\nglobal\n\n\nif\nin\nis\nimport\nlambda\n\n\nnonlocal\nnot\nor\npass\nraise\n\n\nreturn\ntry\nwhile\nwith\nyield\n\n\n\n\n\nدوم اینکه، بتوانیم یک داستان بگوئیم!\n\nدر واقع هنر حل مسئله، اصلی‌ترین مهارت یک برنامه‌نویس محسوب می‌شود. با کسب این مهارت، می‌توانیم زبان‌های برنامه‌نویسی دوم به بعد را راحت‌تر بیاموزیم.\nپس برای شروع، ما شروع به خواندن و توضیح برنامه‌ها می‌کنیم، آنگاه برنامه‌های ساده‌ می نویسیم، و سپس برنامه‌های پیچیده‌تر را در طول زمان می‌نویسیم. اگر خوب پیش برویم، خواهیم توانست روش و یا الگوریتم حل مسئله را از دیدگاه خودمان بنویسیم و آنگاه به مرور، مهارت حل خلاقانه مسئله را بدست خواهیم آورد.",
+    "crumbs": [
+      "پایتون",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>کلمات رزرو</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/value.html",
+    "href": "chapter/expression/value.html",
+    "title": "مقدار (Value)",
+    "section": "",
+    "text": "انواع داده و تابع تبدیل",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>مقدار (Value)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/value.html#انواع-داده-و-تابع-تبدیل",
+    "href": "chapter/expression/value.html#انواع-داده-و-تابع-تبدیل",
+    "title": "مقدار (Value)",
+    "section": "",
+    "text": "نوع\nتایپ خروجی\nتابع تبدیل\nمثال تبدیل\n\n\n\n\nرشته (string)\nstr\nstr()\nstr(3)\\rightarrow'3'\n\n\nصحیح (integer)\nint\nint()\nint(\"3\")\\rightarrow3\n\n\nاعشاری (float)\nfloat\nfloat()\nfloat(\"3.14\")\\rightarrow3.14\n\n\nمختلط (complex)\ncomplex\ncomplex()\ncomplex(3)\\rightarrow(3+0j)\n\n\nبولی (boolean)\nbool\nbool()\nbool(\"3\")\\rightarrowTrue\n\n\nپوچ (None)\nNoneType\n—\ntype(None)",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>مقدار (Value)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/value.html#نکته-مهم-تبدیل-به-بولی",
+    "href": "chapter/expression/value.html#نکته-مهم-تبدیل-به-بولی",
+    "title": "مقدار (Value)",
+    "section": "نکته مهم: تبدیل به بولی",
+    "text": "نکته مهم: تبدیل به بولی\n\nمقادیر پوچ/خالی\\rightarrowFalse: \"\"، None، 0\nهر مقدار دیگری (حتی رشته‌ی \"False\", \"0\")\\rightarrowTrue\n\nچون رشته‌ی غیرخالیه، محتواش مهم نیست!\n\n\nprint(bool(\"\"))      # False\nprint(bool(None))    # False\nprint(bool(0))       # False\n\nprint(bool(\"False\")) # True  ⚠️\nprint(bool(\"0\"))     # True  ⚠️",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>مقدار (Value)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/value.html#مختلط-complex",
+    "href": "chapter/expression/value.html#مختلط-complex",
+    "title": "مقدار (Value)",
+    "section": "مختلط (complex)",
+    "text": "مختلط (complex)\n\nعدد مختلط با j نوشته می‌شه: 3 + 4j",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>مقدار (Value)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/value.html#تمرین",
+    "href": "chapter/expression/value.html#تمرین",
+    "title": "مقدار (Value)",
+    "section": "تمرین",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش پروژه ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>مقدار (Value)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/variable.html",
+    "href": "chapter/expression/variable.html",
+    "title": "متغیر (Variable)",
+    "section": "",
+    "text": "تعریف",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>متغیر (Variable)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/variable.html#تعریف",
+    "href": "chapter/expression/variable.html#تعریف",
+    "title": "متغیر (Variable)",
+    "section": "",
+    "text": "متغیر = برچسب/نام نمادین برای یک مقدار، برای استفاده مجدد در برنامه\n\nx = 6\ny = x * 7\nprint(x, y)  # 6  42",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>متغیر (Variable)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/variable.html#کاراکترهای-مجاز-در-نامگذاری",
+    "href": "chapter/expression/variable.html#کاراکترهای-مجاز-در-نامگذاری",
+    "title": "متغیر (Variable)",
+    "section": "کاراکترهای مجاز در نام‌گذاری",
+    "text": "کاراکترهای مجاز در نام‌گذاری\n\nفقط: A-Z، a-z، 0-9، _",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>متغیر (Variable)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/variable.html#سبکهای-نامگذاری-naming-conventions",
+    "href": "chapter/expression/variable.html#سبکهای-نامگذاری-naming-conventions",
+    "title": "متغیر (Variable)",
+    "section": "سبک‌های نام‌گذاری (Naming Conventions)",
+    "text": "سبک‌های نام‌گذاری (Naming Conventions)\n\n\n\nسبک\nمثال\n\n\n\n\nlowercase\nthisisalowercase\n\n\nsnake_case\nthis_is_a_snake_case_variable\n\n\ncamelCase\nthisIsACamelCaseVarible\n\n\nPascalCase\nThisIsPascalCaseVariable\n\n\nUPPERCASE\nTHISISAUPPERCASEVARIABLE",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>متغیر (Variable)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/variable.html#نکته-مهم-kebab-case-برای-متغیر-مجاز-نیست",
+    "href": "chapter/expression/variable.html#نکته-مهم-kebab-case-برای-متغیر-مجاز-نیست",
+    "title": "متغیر (Variable)",
+    "section": "نکته مهم: kebab-case برای متغیر مجاز نیست ⚠️",
+    "text": "نکته مهم: kebab-case برای متغیر مجاز نیست ⚠️\n\nthis-is-a-kebab-case-variable = \"value\" → خطا! چون - به‌عنوان عملگر تفریق تفسیر می‌شه\n\nSyntaxError: invalid syntax\n\nکاربرد kebab-case: معمولاً ترکیب با UPPERCASE برای مسیر فایل‌ها (نه اسم متغیر):\n\nPATH_OR_FILE = \"this-is-a-kebab-case-path/filename\"",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>متغیر (Variable)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/variable.html#گرفتن-ورودی-از-کاربر",
+    "href": "chapter/expression/variable.html#گرفتن-ورودی-از-کاربر",
+    "title": "متغیر (Variable)",
+    "section": "گرفتن ورودی از کاربر",
+    "text": "گرفتن ورودی از کاربر\nname = input(\"Enter your name: \")\nprint(\"Hello\", name)\n\nخروجی input() همیشه رشتهست\nبرای گرفتن عدد باید تبدیل کنیم:\n\nage = int(input(\"Enter your age: \"))",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>متغیر (Variable)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/variable.html#تمرین",
+    "href": "chapter/expression/variable.html#تمرین",
+    "title": "متغیر (Variable)",
+    "section": "تمرین",
+    "text": "تمرین\n\n\n\n\n\n\nهشدار\n\n\n\nبا استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\n\n\n\n\n\n\nاحتیاطنام و سن کاربر را نمایش دهد\n\n\n\n\n\nname = input(\"Enter your name: \")\n\nage = input(\"Enter your age: \")\n\nprint(\"Name:\", name)\nprint(\"Age:\", age)\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش پروژه ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>متغیر (Variable)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/operator.html",
+    "href": "chapter/expression/operator.html",
+    "title": "عملگر (Operand)",
+    "section": "",
+    "text": "عملگرهای ریاضی",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>عملگر (Operand)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/operator.html#عملگرهای-ریاضی",
+    "href": "chapter/expression/operator.html#عملگرهای-ریاضی",
+    "title": "عملگر (Operand)",
+    "section": "",
+    "text": "عملگر\nمعنی\nمثال\nنتیجه\n\n\n\n\n+\nجمع\n3 + 2\n5\n\n\n+ روی رشته\nالحاق\n\"3\" + \"2\"\n'32'\n\n\n-\nتفریق\n3 - 2\n1\n\n\n*\nضرب\n3 * 2\n6\n\n\n* روی رشته\nتکرار\n\"3\" * 2\n'33'\n\n\n/\nتقسیم (اعشاری)\n3 / 2\n1.5\n\n\n//\nتقسیم صحیح\n3 // 2\n1\n\n\n%\nباقیمانده\n3 % 2\n1\n\n\n**\nتوان\n3 ** 2\n9\n\n\n** (1/2)\nجذر (ریشه دوم)\n3 ** (1/2)\n1.732...\n\n\n\n\nنکته: + و * روی رشته، رفتار متفاوت از عدد دارن (الحاق و تکرار)",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>عملگر (Operand)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/operator.html#عملگرهای-مقایسهای",
+    "href": "chapter/expression/operator.html#عملگرهای-مقایسهای",
+    "title": "عملگر (Operand)",
+    "section": "عملگرهای مقایسه‌ای",
+    "text": "عملگرهای مقایسه‌ای\n\n\n\nعملگر\nمعنی\n\n\n\n\n==\nمساوی\n\n\n!=\nنامساوی\n\n\n&gt;\nبزرگتر\n\n\n&lt;\nکوچکتر\n\n\n&gt;=\nبزرگتر یا مساوی\n\n\n&lt;=\nکوچکتر یا مساوی\n\n\n\n\nخروجی همیشه True یا False\n\n\nنکته: is برای مقایسه هویت (نه مقدار)\n\n3 is 3.0 = False → چون نوع‌ها متفاوتن (int vs float)، هرچند مقدار برابره\n3 is not 3.0 = True\nتفاوت با ==: == مقدار رو مقایسه می‌کنه، is هویت/تایپ رو",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>عملگر (Operand)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/operator.html#عملگرهای-منطقی",
+    "href": "chapter/expression/operator.html#عملگرهای-منطقی",
+    "title": "عملگر (Operand)",
+    "section": "عملگرهای منطقی",
+    "text": "عملگرهای منطقی\n\nسه‌تا: and، or، not\nمثال: x &gt; 0 and x &lt; 10\nنکته: در پایتون هر عدد غیرصفر به‌عنوان True تفسیر می‌شه → 17 and True = True",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>عملگر (Operand)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/expression/operator.html#تمرین",
+    "href": "chapter/expression/operator.html#تمرین",
+    "title": "عملگر (Operand)",
+    "section": "تمرین",
+    "text": "تمرین\n\n\n\n\n\n\nهشدار\n\n\n\nبا استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\n\n\n\n\n\n\nاحتیاطیک ماشین‌ حساب ساده برای جمع و تفریق بنویسید.\n\n\n\n\n\nnum1 = input(\"Number 1: \")\nnum1 = float(num1)\n\nnum2 = input(\"Number 2: \")\nnum2 = float(num2)\n\nadd = num1 + num2\nsubtract = num1 - num2\n\nprint(num1, \"+\", num2, \"=\", add)\nprint(num1, \"-\", num2, \"=\", subtract)\nآیا میتونید برای ضرب و تقیسم هم بنویسید؟\n\n\n\n\n\n\n\n\n\nاحتیاطدو عدد بگیرد و بزرگی عدد اول را بررسی کند.\n\n\n\n\n\nnum1 = input(\"عدد اول را وارد کن: \")\nnum1 = float(num1)\n\nnum2 = input(\"عدد دوم را وارد کن: \")\nnum2 = float(num2)\n\nresult = num1 &gt; num2\n\nprint(\"Is\", num1,\"greater than\", num2, \"? \", result)\n\n\n\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3537 - سوال زرد\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش پروژه ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "crumbs": [
+      "عبارات و دستورات",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>عملگر (Operand)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/tree.html",
+    "href": "chapter/structure/tree.html",
+    "title": "نمای کلی",
+    "section": "",
+    "text": "در این جزوه، با انواع اصلی ساختمان‌ داده‌ها در پایتون آشنا می‌شویم. این ساختمان‌ داده‌ها به شما کمک می‌کنند تا داده‌ها را به صورت سازمان‌یافته ذخیره و مدیریت کنید.\n\n\n\n\n\nstateDiagram\n    direction RL\n\n    numberic: عددی\n    [*] --&gt; numberic\n    integer: صحیح (int) &lt;br&gt; &lt;div class=\"ltr\"&gt;..., -1, 0, 1, ...&lt;/div&gt;\n    numberic --&gt; integer\n    float: اعشاری (float) &lt;br&gt; &lt;div class=\"ltr\"&gt; 0.3, 1/3, ...&lt;/div&gt;\n    numberic --&gt; float\n    complex: مختلط (complex) &lt;br&gt; &lt;div class=\"ltr\"&gt;-1+4j, 0.3j, ...&lt;/div&gt;\n    numberic --&gt; complex\n\n    boolean: بولی (bool) &lt;br&gt; &lt;div class=\"ltr\"&gt;True, False&lt;/div&gt;\n    [*] --&gt; boolean\n\n    none: پوچ (NoneType) &lt;br&gt; &lt;div class=\"ltr\"&gt;None&lt;/div&gt;\n    [*] --&gt; none\n\n    sequence: دنباله‌ای\n    [*] --&gt; sequence\n\n    string: رشته‌ (str) &lt;br&gt; &lt;div class=\"ltr\"&gt;\"ABC\", 'abc'&lt;/div&gt;\n    sequence --&gt; string\n\n    list: لیست (list) &lt;br&gt; &lt;div class=\"ltr\"&gt;[1, \"ABC\"]&lt;/div&gt;\n    sequence --&gt; list\n\n    tuple: تاپل (tuple) &lt;br&gt; &lt;div class=\"ltr\"&gt;(1, \"ABC\")&lt;/div&gt;\n    sequence --&gt; tuple\n\n    collection: مجموعه‌ای\n    [*] --&gt; collection\n\n    set: ست (set) &lt;br&gt; &lt;div class=\"ltr\"&gt;{1, \"ABC\"}&lt;/div&gt;\n    collection --&gt; set\n\n    dictionary: دیکشنری (dict) &lt;br&gt; &lt;div class=\"ltr\"&gt;{\"key\"#58; \"value\"}&lt;/div&gt;\n    collection --&gt; dictionary",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>نمای کلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html",
+    "href": "chapter/structure/string.html",
+    "title": "رشته (str)",
+    "section": "",
+    "text": "تفاوت رشته و لیست",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html#تفاوت-رشته-و-لیست",
+    "href": "chapter/structure/string.html#تفاوت-رشته-و-لیست",
+    "title": "رشته (str)",
+    "section": "",
+    "text": "رشته = دنباله‌ای از کاراکترها، ولی رشته ≠ لیست کاراکترها\nتبدیل رشته به لیست کاراکترها: list(\"spam\") = ['s','p','a','m']",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html#تبدیل-رشته-لیست-کلمات",
+    "href": "chapter/structure/string.html#تبدیل-رشته-لیست-کلمات",
+    "title": "رشته (str)",
+    "section": "تبدیل رشته ↔︎ لیست کلمات",
+    "text": "تبدیل رشته ↔︎ لیست کلمات\n\n\n\n\n\n\n\n\nمتد\nکار\nمثال\n\n\n\n\n.split()\nرشته را بر اساس space به لیست کلمات تبدیل می‌کنه\n'pining for the fjords'.split() = ['pining','for','the','fjords']\n\n\n.split('-')\nجداکننده دلخواه\n'spam-spam-spam'.split('-')\n\n\n'-'.join(list)\nلیست را با جداکننده دلخواه به رشته تبدیل می‌کنه\n'-'.join(['pining','for','the','fjords'])",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html#طول-و-اندیس",
+    "href": "chapter/structure/string.html#طول-و-اندیس",
+    "title": "رشته (str)",
+    "section": "طول و اندیس",
+    "text": "طول و اندیس\n\nlen() : تعداد کاراکترهای رشته\nاندیس از صفر شروع می‌شه → آخرین کاراکتر = s[len(s)-1]\nبرش: fruit[:3] = سه کاراکتر اول",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html#نکته-مهم-رشتهها-immutable-هستن",
+    "href": "chapter/structure/string.html#نکته-مهم-رشتهها-immutable-هستن",
+    "title": "رشته (str)",
+    "section": "نکته مهم: رشته‌ها Immutable هستن",
+    "text": "نکته مهم: رشته‌ها Immutable هستن\n\nنمی‌شه یک کاراکتر رو مستقیم عوض کرد\ngreeting[0] = 'J' → خطا: TypeError: 'str' object does not support item assignment",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html#عملگر-in",
+    "href": "chapter/structure/string.html#عملگر-in",
+    "title": "رشته (str)",
+    "section": "عملگر in",
+    "text": "عملگر in\n\nبررسی وجود زیررشته: 'a' in 'banana' = True\nمقایسه الفبایی با &lt; و &gt; : 'a' &lt; 'b' = True",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html#کشف-متدها",
+    "href": "chapter/structure/string.html#کشف-متدها",
+    "title": "رشته (str)",
+    "section": "کشف متدها",
+    "text": "کشف متدها\n\ndir(obj) : لیست همه‌ی متدهای یک شیء\ntype(obj) : تشخیص نوع شیء",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html#پیدا-کردن-موقعیت",
+    "href": "chapter/structure/string.html#پیدا-کردن-موقعیت",
+    "title": "رشته (str)",
+    "section": "پیدا کردن موقعیت",
+    "text": "پیدا کردن موقعیت\n\nword.find('a') : اندیس اولین وقوع کاراکتر/زیررشته",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html#متدهای-مفید-دیگر-برای-تمرین",
+    "href": "chapter/structure/string.html#متدهای-مفید-دیگر-برای-تمرین",
+    "title": "رشته (str)",
+    "section": "متدهای مفید دیگر (برای تمرین)",
+    "text": "متدهای مفید دیگر (برای تمرین)\n\nstrip() — startswith() — lower()",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html#قالببندی-رشته-عملگر",
+    "href": "chapter/structure/string.html#قالببندی-رشته-عملگر",
+    "title": "رشته (str)",
+    "section": "قالب‌بندی رشته — عملگر %",
+    "text": "قالب‌بندی رشته — عملگر %\n\n\n\nفرمت\nکاربرد\n\n\n\n\n%d\nعدد صحیح (digit)\n\n\n%g\nعدد اعشاری (ممیز شناور)\n\n\n%s\nرشته\n\n\n\n\nمثال: '%d camels' % camels\nچند مقداره: 'In %d years I have spotted %g %s.' % (3, 0.1, 'camels')",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html#قالببندی-مدرن-f-string",
+    "href": "chapter/structure/string.html#قالببندی-مدرن-f-string",
+    "title": "رشته (str)",
+    "section": "قالب‌بندی مدرن — f-string",
+    "text": "قالب‌بندی مدرن — f-string\n\nسینتکس: f\"...\"\nمثال: f\"Mr {name} is {age} years old.\"\nروش پیشنهادی و رایج‌تر در نسخه‌های جدید پایتون",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/string.html#تمرین",
+    "href": "chapter/structure/string.html#تمرین",
+    "title": "رشته (str)",
+    "section": "تمرین",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n2885 - سوال ساده\n8838 - کمک به کاپی",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/list.html",
+    "href": "chapter/structure/list.html",
+    "title": "لیست (list)",
+    "section": "",
+    "text": "تعریف لیست",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>لیست (`list`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/list.html#تعریف-لیست",
+    "href": "chapter/structure/list.html#تعریف-لیست",
+    "title": "لیست (list)",
+    "section": "",
+    "text": "ساخت با براکت: cheeses = ['Cheddar', 'Edam', 'Gouda']\nمی‌تونه خالی باشه: empty = []\nتایپ لیست: list : type([])\nمی‌تونه عناصر ناهم‌نوع داشته باشه: ['spam', 2.0, 5, [10, 20]]",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>لیست (`list`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/list.html#تعداد-عناصر-نکته-مهم",
+    "href": "chapter/structure/list.html#تعداد-عناصر-نکته-مهم",
+    "title": "لیست (list)",
+    "section": "تعداد عناصر (نکته مهم)",
+    "text": "تعداد عناصر (نکته مهم)\n\nلیست داخل لیست = یک عنصر حساب می‌شه، نه چند عنصر\nمثال: ['spam', 2.0, 5, [10, 20]] = ۴ عنصر (نه ۵)",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>لیست (`list`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/list.html#دسترسی-و-بررسی-عضویت",
+    "href": "chapter/structure/list.html#دسترسی-و-بررسی-عضویت",
+    "title": "لیست (list)",
+    "section": "دسترسی و بررسی عضویت",
+    "text": "دسترسی و بررسی عضویت\n\nتغییر مقدار با اندیس: numbers[1] = 5\nبررسی وجود عنصر: 'Edam' in cheeses = True / False",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>لیست (`list`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/list.html#عملگرها-روی-لیست",
+    "href": "chapter/structure/list.html#عملگرها-روی-لیست",
+    "title": "لیست (list)",
+    "section": "عملگرها روی لیست",
+    "text": "عملگرها روی لیست\n\n\n\nعملگر\nکاربرد\nمثال\n\n\n\n\n+\nالحاق\n[1,2]+[3,4] : [1,2,3,4]\n\n\n*\nتکرار\n[1,2]*3 : [1,2,1,2,1,2]",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>لیست (`list`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/list.html#برش-slicing",
+    "href": "chapter/structure/list.html#برش-slicing",
+    "title": "لیست (list)",
+    "section": "برش (Slicing)",
+    "text": "برش (Slicing)\n\nt[1:3] : از اندیس ۱ تا قبل از ۳\nt[:4] : از ابتدا تا قبل از ۴\nt[3:] : از ۳ تا انتها",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>لیست (`list`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/list.html#متدهای-اصلی-لیست",
+    "href": "chapter/structure/list.html#متدهای-اصلی-لیست",
+    "title": "لیست (list)",
+    "section": "متدهای اصلی لیست",
+    "text": "متدهای اصلی لیست\n\n\n\n\n\n\n\nمتد\nکار\n\n\n\n\nappend(x)\nاضافه‌کردن یک عنصر به انتها\n\n\nextend(list2)\nاضافه‌کردن همه‌ی عناصر یک لیست دیگه به انتها\n\n\nsort()\nمرتب‌سازی\n\n\npop(i)\nحذف عنصر با اندیس i و برگرداندن مقدارش\n\n\npop() بدون آرگومان\nحذف آخرین عنصر\n\n\nremove(value)\nحذف بر اساس مقدار (نه اندیس)",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>لیست (`list`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/list.html#نکته-کلیدی-popi-در-مقابل-del-listi",
+    "href": "chapter/structure/list.html#نکته-کلیدی-popi-در-مقابل-del-listi",
+    "title": "لیست (list)",
+    "section": "نکته کلیدی: pop(i) در مقابل del list[i]",
+    "text": "نکته کلیدی: pop(i) در مقابل del list[i]\n\nهر دو عنصر رو حذف می‌کنن\npop(i) : مقدار حذف‌شده رو برمی‌گردونه، قابل استفاده‌ست\ndel list[i] : فقط حذف می‌کنه، مقدار در دسترس نیست\ndel t[1:5] : حذف بازه‌ای از عناصر (چند تا با هم)",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>لیست (`list`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/list.html#توابع-کاربردی-روی-لیست-اعداد",
+    "href": "chapter/structure/list.html#توابع-کاربردی-روی-لیست-اعداد",
+    "title": "لیست (list)",
+    "section": "توابع کاربردی روی لیست اعداد",
+    "text": "توابع کاربردی روی لیست اعداد\n\n\n\nتابع\nکار\n\n\n\n\nlen(nums)\nتعداد عناصر\n\n\nmax(nums)\nبیشترین مقدار\n\n\nmin(nums)\nکمترین مقدار\n\n\nsum(nums)\nمجموع\n\n\nsum(nums)/len(nums)\nمیانگین",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>لیست (`list`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/tuple.html",
+    "href": "chapter/structure/tuple.html",
+    "title": "تاپل (tuple)",
+    "section": "",
+    "text": "تعریف",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>تاپل (`tuple`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/tuple.html#تعریف",
+    "href": "chapter/structure/tuple.html#تعریف",
+    "title": "تاپل (tuple)",
+    "section": "",
+    "text": "شبیه لیست، ولی immutable (تغییرناپذیر)\nساخت با پرانتز: my_tuple = (1, \"baz\", 3.14)\nدسترسی با اندیس: my_tuple[0]\nتایپ: tuple",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>تاپل (`tuple`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/tuple.html#نکته-مهم-قابل-تغییر-نیست",
+    "href": "chapter/structure/tuple.html#نکته-مهم-قابل-تغییر-نیست",
+    "title": "تاپل (tuple)",
+    "section": "نکته مهم: قابل تغییر نیست",
+    "text": "نکته مهم: قابل تغییر نیست\n\nmy_tuple[0] = 2 → خطا: TypeError: 'tuple' object does not support item assignment",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>تاپل (`tuple`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/tuple.html#عملگرهای-و",
+    "href": "chapter/structure/tuple.html#عملگرهای-و",
+    "title": "تاپل (tuple)",
+    "section": "عملگرهای + و *",
+    "text": "عملگرهای + و *\n\nساخت تاپل جدید با الحاق: my_tuple + (3,)\nتکرار: my_tuple * 2\n⚠️ چون immutable هست، این عملیات‌ها تاپل جدید می‌سازن، نه تغییر تاپل قبلی",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>تاپل (`tuple`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/tuple.html#نکته-کلیدی-چه-چیزی-نداره",
+    "href": "chapter/structure/tuple.html#نکته-کلیدی-چه-چیزی-نداره",
+    "title": "تاپل (tuple)",
+    "section": "نکته کلیدی: چه چیزی نداره",
+    "text": "نکته کلیدی: چه چیزی نداره\n\nمتدهای لیست مثل append(), extend(), sort(), pop(), del, remove() روی تاپل کار نمی‌کنن",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>تاپل (`tuple`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/tuple.html#توابع-کاربردی-مثل-لیست",
+    "href": "chapter/structure/tuple.html#توابع-کاربردی-مثل-لیست",
+    "title": "تاپل (tuple)",
+    "section": "توابع کاربردی (مثل لیست)",
+    "text": "توابع کاربردی (مثل لیست)\n\n\n\nتابع\nکار\n\n\n\n\nlen(nums)\nتعداد عناصر\n\n\nmax(nums)\nبیشترین مقدار\n\n\nmin(nums)\nکمترین مقدار\n\n\nsum(nums)\nمجموع\n\n\nsum(nums)/len(nums)\nمیانگین",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>تاپل (`tuple`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/set.html",
+    "href": "chapter/structure/set.html",
+    "title": "ست (set)",
+    "section": "",
+    "text": "تعریف",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>ست (`set`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/set.html#تعریف",
+    "href": "chapter/structure/set.html#تعریف",
+    "title": "ست (set)",
+    "section": "",
+    "text": "مجموعه‌ای نامرتب از عناصر منحصربه‌فرد (بدون تکراری)\nکاربرد: حذف عناصر تکراری + عملیات مجموعه‌ای (اجتماع، اشتراک، تفاضل)",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>ست (`set`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/set.html#ایجاد",
+    "href": "chapter/structure/set.html#ایجاد",
+    "title": "ست (set)",
+    "section": "ایجاد",
+    "text": "ایجاد\n\nبا آکولاد: my_set = {1, 2, 3, 3} → خروجی: {1, 2, 3} (تکراری حذف می‌شه)\nیا با متد: set()",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>ست (`set`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/set.html#اضافه-و-حذف-کردن",
+    "href": "chapter/structure/set.html#اضافه-و-حذف-کردن",
+    "title": "ست (set)",
+    "section": "اضافه و حذف کردن",
+    "text": "اضافه و حذف کردن\n\n\n\nمتد\nکار\n\n\n\n\nadd(x)\nاضافه کردن یک عنصر\n\n\nremove(x)\nحذف یک عنصر\n\n\ndiscard(x)\nحذف یک عنصر",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>ست (`set`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/set.html#عملیات-مجموعهای",
+    "href": "chapter/structure/set.html#عملیات-مجموعهای",
+    "title": "ست (set)",
+    "section": "عملیات مجموعه‌ای",
+    "text": "عملیات مجموعه‌ای\n\n\n\n\n\n\n\n\n\nعملگر\nمعنی\nمثال (روی A={1,2,3}، B={3,4,5})\nنتیجه\n\n\n\n\n|\nاجتماع (∪)\nA | B\n{1,2,3,4,5}\n\n\n&\nاشتراک (∩)\nA & B\n{3}\n\n\n-\nتفاضل\nA - B\n{1,2}",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>ست (`set`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/dict.html",
+    "href": "chapter/structure/dict.html",
+    "title": "دیکشنری (dict)",
+    "section": "",
+    "text": "دیکشنری‌ها مجموعه‌ای از جفت‌های کلید-مقدار هستند. کلیدها باید منحصربه‌فرد باشند. دیکشنری‌ها غیرمرتب هستند.\nایجاد: دیکشنری‌ها را می‌توان با استفاده از آکولاد {} ایجاد کرد.\nmy_dict = {\"name\": \"علی\", \"age\": 30}\nدسترسی: به مقادیر می‌توان با استفاده از کلید مربوطه دسترسی پیدا کرد.\nname = my_dict[\"name\"]\nاضافه کردن: می‌توان جفت‌های کلید-مقدار جدید به دیکشنری اضافه کرد.\nmy_dict[\"city\"] = \"ساری\"\nحذف: می‌توان جفت‌های کلید-مقدار را با استفاده از کلید حذف کرد.\ndel my_dict[\"age\"]\nبه‌روزرسانی: می‌توان مقدار مربوط به یک کلید موجود را به‌روزرسانی کرد.\nmy_dict[\"name\"] = \"رضا\"\nاز متد keys() می‌توان تمام کلیدها رو گرفت و از متد values() می‌توان تمام مقادیر رو گرفت.\nmy_dict = {\"name\": \"علی\", \"age\": 30}\n\nprint(my_dict.keys())\nprint(my_dict.values())\ndict_keys(['name', 'age'])\ndict_values(['علی', 30])",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>دیکشنری (`dict`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/casting.html",
+    "href": "chapter/structure/casting.html",
+    "title": "تبدیل نوع (Casting)",
+    "section": "",
+    "text": "Casting چیست؟",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>تبدیل نوع (Casting)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/casting.html#casting-چیست",
+    "href": "chapter/structure/casting.html#casting-چیست",
+    "title": "تبدیل نوع (Casting)",
+    "section": "",
+    "text": "تبدیل یک نوع داده به نوع دیگر\nدو نوع کلی: ضمنی (Implicit) و صریح (Explicit)",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>تبدیل نوع (Casting)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/casting.html#تبدیل-ضمنی-implicit-casting",
+    "href": "chapter/structure/casting.html#تبدیل-ضمنی-implicit-casting",
+    "title": "تبدیل نوع (Casting)",
+    "section": "تبدیل ضمنی (Implicit Casting)",
+    "text": "تبدیل ضمنی (Implicit Casting)\n\nخود پایتون بدون دخالت برنامه‌نویس نوع رو تبدیل می‌کنه\nمعمولاً در عملیات ریاضی بین انواع مختلف عددی رخ می‌ده\n\nx = 5        # int\ny = 2.5      # float\nz = x + y\nprint(z, type(z))\n7.5 &lt;class 'float'&gt;\n\nچون float دقت بیشتری داره، پایتون int رو به float تبدیل می‌کنه تا اطلاعات از دست نره",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>تبدیل نوع (Casting)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/casting.html#تبدیل-صریح-explicit-casting",
+    "href": "chapter/structure/casting.html#تبدیل-صریح-explicit-casting",
+    "title": "تبدیل نوع (Casting)",
+    "section": "تبدیل صریح (Explicit Casting)",
+    "text": "تبدیل صریح (Explicit Casting)\n\nبرنامه‌نویس خودش دستور می‌ده که یک نوع به نوع دیگه تبدیل بشه، با استفاده از توابع تبدیل\n\n\n\n\nتابع\nتبدیل به\n\n\n\n\nint()\nصحیح\n\n\nfloat()\nاعشاری\n\n\nstr()\nرشته\n\n\nbool()\nبولی\n\n\nlist()\nلیست\n\n\ntuple()\nتاپل\n\n\nset()\nست\n\n\ncomplex()\nمختلط\n\n\n\na = \"25\"\nb = int(a)          # str -&gt; int\nprint(b, type(b))\n25 &lt;class 'int'&gt;",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>تبدیل نوع (Casting)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/casting.html#مثالهای-ترکیبی",
+    "href": "chapter/structure/casting.html#مثالهای-ترکیبی",
+    "title": "تبدیل نوع (Casting)",
+    "section": "مثال‌های ترکیبی",
+    "text": "مثال‌های ترکیبی\nprint(int(3.99))       # 3   -&gt; قطع اعشار (نه گرد کردن)\nprint(float(\"3.14\"))   # 3.14\nprint(str(100))        # '100'\nprint(list(\"abc\"))     # ['a', 'b', 'c']\nprint(tuple([1,2,3]))  # (1, 2, 3)",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>تبدیل نوع (Casting)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/casting.html#نکته-خطا-در-تبدیل-نامعتبر",
+    "href": "chapter/structure/casting.html#نکته-خطا-در-تبدیل-نامعتبر",
+    "title": "تبدیل نوع (Casting)",
+    "section": "نکته: خطا در تبدیل نامعتبر",
+    "text": "نکته: خطا در تبدیل نامعتبر\nint(\"hello\")\nValueError: invalid literal for int() with base 10: 'hello'\n\nتبدیل صریح فقط وقتی کار می‌کنه که محتوا با نوع مقصد سازگار باشه (مثلاً رشته‌ای که واقعاً عدده)",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>تبدیل نوع (Casting)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/structure/casting.html#جمعبندی-تفاوت",
+    "href": "chapter/structure/casting.html#جمعبندی-تفاوت",
+    "title": "تبدیل نوع (Casting)",
+    "section": "جمع‌بندی تفاوت",
+    "text": "جمع‌بندی تفاوت\n\n\n\nنوع\nچه کسی انجامش می‌ده\nمثال\n\n\n\n\nImplicit\nخود پایتون، خودکار\n5 + 2.5\n\n\nExplicit\nبرنامه‌نویس، با تابع\nint(\"5\")",
+    "crumbs": [
+      "ساختار داده",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>تبدیل نوع (Casting)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/if-else-elif.html",
+    "href": "chapter/conditions/if-else-elif.html",
+    "title": "اجرای شرطی (if-else-elif)",
+    "section": "",
+    "text": "شرط ساده",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>اجرای شرطی (`if-else-elif`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/if-else-elif.html#شرط-ساده",
+    "href": "chapter/conditions/if-else-elif.html#شرط-ساده",
+    "title": "اجرای شرطی (if-else-elif)",
+    "section": "",
+    "text": "ساختار: if condition: + بلوک تورفته\nاگه شرط True باشه → بلوک اجرا می‌شه، وگرنه نادیده گرفته می‌شه\n\nif x &gt; 0:\n    print('x is positive')",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>اجرای شرطی (`if-else-elif`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/if-else-elif.html#اجرای-جایگزین-if-else",
+    "href": "chapter/conditions/if-else-elif.html#اجرای-جایگزین-if-else",
+    "title": "اجرای شرطی (if-else-elif)",
+    "section": "اجرای جایگزین (if-else)",
+    "text": "اجرای جایگزین (if-else)\n\nبین دو حالت، دقیقاً یکی اجرا می‌شه (branch)\n\nif x%2 == 0:\n    print('x is even')\nelse:\n    print('x is odd')",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>اجرای شرطی (`if-else-elif`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/if-else-elif.html#شرطهای-زنجیرهای-elif",
+    "href": "chapter/conditions/if-else-elif.html#شرطهای-زنجیرهای-elif",
+    "title": "اجرای شرطی (if-else-elif)",
+    "section": "شرط‌های زنجیره‌ای (elif)",
+    "text": "شرط‌های زنجیره‌ای (elif)\n\nبرای بررسی بیش از دو حالت\n\nif x &lt; y:\n    print('x is less than y')\nelif x &gt; y:\n    print('x is greater than y')\nelse:\n    print('x and y are equal')",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>اجرای شرطی (`if-else-elif`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/if-else-elif.html#شرطهای-تو-در-تو-nested",
+    "href": "chapter/conditions/if-else-elif.html#شرطهای-تو-در-تو-nested",
+    "title": "اجرای شرطی (if-else-elif)",
+    "section": "شرط‌های تو در تو (Nested)",
+    "text": "شرط‌های تو در تو (Nested)\n\nیک if می‌تونه داخل if دیگه باشه\n\nif x == y:\n    print('x and y are equal')\nelse:\n    if x &lt; y:\n        print('x is less than y')\n    else:\n        print('x is greater than y')\n\nنکته کلاسی: معمولاً به‌جای تو در تو کردن، بهتره از elif استفاده بشه (خواناتره)",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>اجرای شرطی (`if-else-elif`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/if-else-elif.html#بررسی-شرط-در-یک-خط",
+    "href": "chapter/conditions/if-else-elif.html#بررسی-شرط-در-یک-خط",
+    "title": "اجرای شرطی (if-else-elif)",
+    "section": "بررسی شرط در یک خط",
+    "text": "بررسی شرط در یک خط\nدر بعضی مواقع می‌توانیم از شیوه زیر برای بررسی شرطها استفاده کنیم.\nname = \"Mohsen\"\nis_male = True\n\nsay_hi = f\"\"\"Hi {\"Mr\" if is_male else \"Mrs\"} {name}\"\"\"\nprint(say_hi)\nHi Mr Mohsen",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>اجرای شرطی (`if-else-elif`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/if-else-elif.html#تمرین",
+    "href": "chapter/conditions/if-else-elif.html#تمرین",
+    "title": "اجرای شرطی (if-else-elif)",
+    "section": "تمرین",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3429 - یخدارچی\n10230 - مشق باقر\n280 - اعداد فیثاغورث\n10162 - روز آزادی بیان در برره\n3414 - دو نقطه خط\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش پروژه ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>اجرای شرطی (`if-else-elif`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/try-except.html",
+    "href": "chapter/conditions/try-except.html",
+    "title": "مدیریت خطا (try-except)",
+    "section": "",
+    "text": "چرا لازمه؟",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>مدیریت خطا (`try-except`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/try-except.html#چرا-لازمه",
+    "href": "chapter/conditions/try-except.html#چرا-لازمه",
+    "title": "مدیریت خطا (try-except)",
+    "section": "",
+    "text": "اگه ورودی/داده با نوع اشتباه وارد یک محاسبه بشه (مثلاً غیرعددی به‌جای عدد)، مفسر پایتون اجرای برنامه رو قطع می‌کنه\nبرای جلوگیری از کرش کردن برنامه، از try-except استفاده می‌شه",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>مدیریت خطا (`try-except`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/try-except.html#نحوه-کار",
+    "href": "chapter/conditions/try-except.html#نحوه-کار",
+    "title": "مدیریت خطا (try-except)",
+    "section": "نحوه کار",
+    "text": "نحوه کار\n\nکد داخل try اجرا می‌شه\nاگه بدون خطا تموم بشه → بلوک except نادیده گرفته می‌شه\nاگه استثنا (exception) رخ بده → اجرا از try خارج و به except می‌ره",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>مدیریت خطا (`try-except`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/try-except.html#مثال",
+    "href": "chapter/conditions/try-except.html#مثال",
+    "title": "مدیریت خطا (try-except)",
+    "section": "مثال",
+    "text": "مثال\ninp = input('Enter Fahrenheit Temperature:')\ntry:\n    fahr = float(inp)\n    cel = (fahr - 32.0) * 5.0 / 9.0\n    print(cel)\nexcept:\n    print('Please enter a number')\n\nاگه کاربر عدد وارد کنه → تبدیل و محاسبه انجام می‌شه\nاگه کاربر متن غیرعددی وارد کنه → float(inp) خطا می‌ده → پیام 'Please enter a number' چاپ می‌شه به‌جای کرش کردن برنامه",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>مدیریت خطا (`try-except`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/while.html",
+    "href": "chapter/loops/while.html",
+    "title": "حلقه شرطی (while)",
+    "section": "",
+    "text": "مثال پایه",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>حلقه شرطی (`while`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/while.html#مثال-پایه",
+    "href": "chapter/loops/while.html#مثال-پایه",
+    "title": "حلقه شرطی (while)",
+    "section": "",
+    "text": "n = 5\nwhile n &gt; 0:\n    print(n)\n    n = n - 1\n\nprint('Blastoff!')\n\nتا وقتی n &gt; 0 برقراره، بدنه اجرا می‌شه\nوقتی شرط False بشه، از حلقه خارج می‌شه",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>حلقه شرطی (`while`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/while.html#نحوه-کار-حلقه-۳-مرحله",
+    "href": "chapter/loops/while.html#نحوه-کار-حلقه-۳-مرحله",
+    "title": "حلقه شرطی (while)",
+    "section": "نحوه کار حلقه (۳ مرحله)",
+    "text": "نحوه کار حلقه (۳ مرحله)\n\nشرط ارزیابی می‌شه (True/False)\nاگه نادرست → خروج از حلقه\nاگه درست → بدنه اجرا می‌شه، برمی‌گرده به مرحله ۱\n\n\nهر بار اجرای بدنه = یک تکرار (iteration)\nبدنه باید متغیری رو تغییر بده تا بالاخره شرط نادرست بشه، وگرنه حلقه بی‌نهایت",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>حلقه شرطی (`while`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/while.html#حلقه-بینهایت-break",
+    "href": "chapter/loops/while.html#حلقه-بینهایت-break",
+    "title": "حلقه شرطی (while)",
+    "section": "حلقه بی‌نهایت + break",
+    "text": "حلقه بی‌نهایت + break\n\nگاهی عمداً یک حلقه بی‌نهایت می‌نویسیم: while True:\nو با break از وسط بدنه ازش خارج می‌شیم (وقتی هنوز به انتهای بدنه نرسیدیم ولی شرط پایان مشخص شده)\n\nwhile True:\n    line = input('&gt; ')\n    if line == 'done':\n        break\n    print(line)\nprint('Done!')",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>حلقه شرطی (`while`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/while.html#continue-رد-کردن-تکرار-فعلی",
+    "href": "chapter/loops/while.html#continue-رد-کردن-تکرار-فعلی",
+    "title": "حلقه شرطی (while)",
+    "section": "continue — رد کردن تکرار فعلی",
+    "text": "continue — رد کردن تکرار فعلی\n\nبقیه بدنه‌ی تکرار فعلی اجرا نمی‌شه، مستقیم می‌ره سراغ تکرار بعدی\n\nwhile True:\n    line = input('&gt; ')\n    if line[0] == '#':\n        continue\n    if line == 'done':\n        break\n    print(line)\nprint('Done!')",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>حلقه شرطی (`while`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/while.html#تمرین",
+    "href": "chapter/loops/while.html#تمرین",
+    "title": "حلقه شرطی (while)",
+    "section": "تمرین",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3537 - سوال زرد\n2885 - سوال ساده\n589 - فاکتوریل\n3409 - جدول ضرب گنده\n9774 - عدد چاپ کن\n591 - چاپ مربع\n3539 - تک رقمی\n617 - عدد خود مغلوب\n28947 - ام‌سین\n3405 - چاپ برعکس\n588 - ماکزیمم",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>حلقه شرطی (`while`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/for.html",
+    "href": "chapter/loops/for.html",
+    "title": "حلقه معین (for)",
+    "section": "",
+    "text": "کاربرد",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>حلقه معین (`for`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/for.html#کاربرد",
+    "href": "chapter/loops/for.html#کاربرد",
+    "title": "حلقه معین (for)",
+    "section": "",
+    "text": "برای پیمایش روی مجموعه‌ای مشخص از آیتم‌ها (لیست، خطوط فایل، محدوده اعداد و…)",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>حلقه معین (`for`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/for.html#تفاوت-for-و-while",
+    "href": "chapter/loops/for.html#تفاوت-for-و-while",
+    "title": "حلقه معین (for)",
+    "section": "تفاوت for و while",
+    "text": "تفاوت for و while\n\n\n\n\n\n\n\n\nحلقه\nنوع\nتوضیح\n\n\n\n\nfor\nمعین\nروی مجموعه‌ای مشخص از آیتم‌ها حلقه می‌زنه، به تعداد آیتم‌ها تکرار می‌شه\n\n\nwhile\nنامعین\nتا وقتی شرط False بشه ادامه پیدا می‌کنه، تعداد تکرار مشخص نیست",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>حلقه معین (`for`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/for.html#مثال",
+    "href": "chapter/loops/for.html#مثال",
+    "title": "حلقه معین (for)",
+    "section": "مثال",
+    "text": "مثال\nfriends = ['Joseph', 'Glenn', 'Sally']\nfor friend in friends:\n    print('Happy New Year: ', friend)\nprint('Done!')\n\nمتغیر friend به ترتیب مقدار هر عنصر لیست رو می‌گیره\nبعد از تموم شدن حلقه، خط بعدی (Done!) اجرا می‌شه",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>حلقه معین (`for`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/for.html#پیمایش-روی-لیست",
+    "href": "chapter/loops/for.html#پیمایش-روی-لیست",
+    "title": "حلقه معین (for)",
+    "section": "پیمایش روی لیست",
+    "text": "پیمایش روی لیست\nبرای اعمال تغییرات روی لیست می‌توانیم از شیوه زیر استفاده کنیم:\nnums = [1, 2, 3, 4]\nnums_power = [n ** 2 for n in nums]\nprint(nums_power)\n[1, 4, 9, 16]",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>حلقه معین (`for`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/loops/for.html#تمرین",
+    "href": "chapter/loops/for.html#تمرین",
+    "title": "حلقه معین (for)",
+    "section": "تمرین",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3537 - سوال زرد\n2885 - سوال ساده\n589 - فاکتوریل\n3409 - جدول ضرب گنده\n9774 - عدد چاپ کن\n591 - چاپ مربع\n3539 - تک رقمی\n617 - عدد خود مغلوب\n28947 - ام‌سین\n3405 - چاپ برعکس\n588 - ماکزیمم",
+    "crumbs": [
+      "حلقه‌ها",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>حلقه معین (`for`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/def.html",
+    "href": "chapter/functions/def.html",
+    "title": "تعریف تابع (def)",
+    "section": "",
+    "text": "تعریف تابع",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>تعریف تابع (`def`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/def.html#تعریف-تابع",
+    "href": "chapter/functions/def.html#تعریف-تابع",
+    "title": "تعریف تابع (def)",
+    "section": "",
+    "text": "کلیدواژه def\nبا تعریف تابع، یک متغیر هم‌نام با تابع ساخته می‌شه\n\ndef print_lyrics():\n    print(\"I'm a lumberjack, and I'm okay.\")\n    print('I sleep all night and I work all day.')\n\nفراخوانی: print_lyrics() — دقیقاً مثل توابع داخلی\nمی‌شه یک تابع رو داخل تابع دیگه هم صدا زد",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>تعریف تابع (`def`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/def.html#پارامتر-و-آرگومان",
+    "href": "chapter/functions/def.html#پارامتر-و-آرگومان",
+    "title": "تعریف تابع (def)",
+    "section": "پارامتر و آرگومان",
+    "text": "پارامتر و آرگومان\n\nبعضی توابع نیاز به آرگومان (Argument) دارن، مثلاً math.sin(x)",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>تعریف تابع (`def`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/def.html#توابع-fruitful-خروجیدار-و-void-بدون-خروجی",
+    "href": "chapter/functions/def.html#توابع-fruitful-خروجیدار-و-void-بدون-خروجی",
+    "title": "تعریف تابع (def)",
+    "section": "توابع Fruitful (خروجی‌دار) و Void (بدون خروجی)",
+    "text": "توابع Fruitful (خروجی‌دار) و Void (بدون خروجی)\n\n\n\n\n\n\n\n\nنوع\nویژگی\nمثال\n\n\n\n\nFruitful\nبا return یک مقدار برمی‌گردونه\nmath.sqrt(5)\n\n\nVoid\nفقط کاری انجام می‌ده، خروجی قابل نمایش نداره\nتابعی بدون return\n\n\n\ndef get_sum(x, y):\n    return x + y\n\nget_sum(2, 3)   # 5\ndef no_result_func():\n    x = math.cos(radians)   # خروجی برنمی‌گردونه",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>تعریف تابع (`def`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/def.html#متغیرهای-سراسری-global",
+    "href": "chapter/functions/def.html#متغیرهای-سراسری-global",
+    "title": "تعریف تابع (def)",
+    "section": "متغیرهای سراسری (global)",
+    "text": "متغیرهای سراسری (global)\n\nبه‌طور پیش‌فرض، تابع نمی‌تونه متغیر بیرونی رو تغییر بده (فقط می‌تونه بخونه)\nبرای تغییر دادن متغیر بیرون تابع از داخل تابع، باید با global اعلام بشه\n\nn = 0\ndef counter():\n    global n\n    n += 1\n\ncounter()\nprint(n)   # 1",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>تعریف تابع (`def`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/def.html#تمرین",
+    "href": "chapter/functions/def.html#تمرین",
+    "title": "تعریف تابع (def)",
+    "section": "تمرین",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش پروژه ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>تعریف تابع (`def`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/built-in.html",
+    "href": "chapter/functions/built-in.html",
+    "title": "داخلی (built-in)",
+    "section": "",
+    "text": "توابع داخلی = توابعی که خود پایتون آماده کرده، بدون نیاز به import\nبرای حل مسائل عمومی و رایج\n\n\n\n\n\n\n\n\n\n\nتابع\nکار\nمثال\nنتیجه\n\n\n\n\nmax()\nبیشترین مقدار (روی رشته = آخرین حرف الفبا)\nmax('Hello world')\n'w'\n\n\nmin()\nکمترین مقدار\nmin('Hello world')\n' ' (space)\n\n\nlen()\nطول رشته/لیست\nlen('Hello world')\n11\n\n\nint()\nتبدیل به صحیح (قطع اعشار)\nint(3.99999)\n3\n\n\nfloat()\nتبدیل به اعشاری\nfloat('3.14159')\n3.14159\n\n\n\n\nنکته: int() روی عدد اعشاری، رند نمی‌کنه، فقط اعشار رو قطع می‌کنه (نه گرد به بالا/پایین)",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>داخلی (`built-in`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/import.html",
+    "href": "chapter/functions/import.html",
+    "title": "خارجی (import)",
+    "section": "",
+    "text": "چرا import؟",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>خارجی (`import`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/import.html#چرا-import",
+    "href": "chapter/functions/import.html#چرا-import",
+    "title": "خارجی (import)",
+    "section": "",
+    "text": "توابعی که به‌صورت داخلی (built-in) نیستند، باید از پکیج/ماژول دیگه وارد بشن\nکلیدواژه: import",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>خارجی (`import`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/import.html#ماژول-math",
+    "href": "chapter/functions/import.html#ماژول-math",
+    "title": "خارجی (import)",
+    "section": "ماژول math",
+    "text": "ماژول math\n\nوارد کردن: import math\nدسترسی به توابع با نقطه (dot notation): math.func_name\n\ndecibels = 10 * math.log10(ratio)\nheight = math.sin(radians)",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>خارجی (`import`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/import.html#ماژول-random",
+    "href": "chapter/functions/import.html#ماژول-random",
+    "title": "خارجی (import)",
+    "section": "ماژول random",
+    "text": "ماژول random\n\nتولید اعداد شبه‌تصادفی (Pseudo-random) — واقعاً تصادفی نیستن ولی تشخیصشون سخته\n\n\n\n\n\n\n\n\n\nتابع\nکار\nمثال\n\n\n\n\nrandom.random()\nعدد اعشاری تصادفی بین 0 و 1 (بدون خود ۱)\n\n\n\nrandom.randint(5, 10)\nعدد صحیح تصادفی در بازه\n7\n\n\nrandom.choice(t)\nیک عنصر تصادفی از لیست\nt=[1,2,3] → 3\n\n\n\nimport random\nfor i in range(10):\n    x = random.random()\n    print(x)",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>خارجی (`import`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/import.html#نصب-پکیج-خارجی-pip",
+    "href": "chapter/functions/import.html#نصب-پکیج-خارجی-pip",
+    "title": "خارجی (import)",
+    "section": "نصب پکیج خارجی (pip)",
+    "text": "نصب پکیج خارجی (pip)\n\nاگه پکیج نصب نباشه:\n\npip install numpy",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>خارجی (`import`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/import.html#سه-روش-import",
+    "href": "chapter/functions/import.html#سه-روش-import",
+    "title": "خارجی (import)",
+    "section": "سه روش import",
+    "text": "سه روش import\n\n\n\n\n\n\n\n\nروش\nسینتکس\nاستفاده\n\n\n\n\nکامل\nimport numpy\nnumpy.sin(numpy.pi)\n\n\nبا نامک (alias)\nimport numpy as np\nnp.sin(np.pi)\n\n\nفقط توابع خاص\nfrom numpy import sin, pi\nsin(pi) (بدون پیشوند)\n\n\n\n\nنکته کلاسی: روش as np برای پکیج‌های پرکاربرد مثل numpy رایج‌ترین روشه",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>خارجی (`import`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/map-lambda.html",
+    "href": "chapter/functions/map-lambda.html",
+    "title": "تابع map و lambda",
+    "section": "",
+    "text": "map چیست؟",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>تابع `map` و `lambda`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/map-lambda.html#map-چیست",
+    "href": "chapter/functions/map-lambda.html#map-چیست",
+    "title": "تابع map و lambda",
+    "section": "",
+    "text": "یک تابع رو روی همه عناصر یک لیست (یا هر iterable دیگه) اعمال می‌کنه\nجایگزین سریع‌تر و خواناتر برای نوشتن یک حلقه for ساده جهت تغییر همه عناصر",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>تابع `map` و `lambda`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/map-lambda.html#سینتکس",
+    "href": "chapter/functions/map-lambda.html#سینتکس",
+    "title": "تابع map و lambda",
+    "section": "سینتکس",
+    "text": "سینتکس\nmap(function, iterable)",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>تابع `map` و `lambda`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/map-lambda.html#مثال-ساده-مقایسه-با-for",
+    "href": "chapter/functions/map-lambda.html#مثال-ساده-مقایسه-با-for",
+    "title": "تابع map و lambda",
+    "section": "مثال ساده: مقایسه با for",
+    "text": "مثال ساده: مقایسه با for\n# روش قبلی با for\nnumbers = [1, 2, 3, 4]\nsquares = []\nfor n in numbers:\n    squares.append(n ** 2)\nprint(squares)\n# همون کار با map\nnumbers = [1, 2, 3, 4]\nsquares = list(map(lambda n: n ** 2, numbers))\nprint(squares)\n[1, 4, 9, 16]",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>تابع `map` و `lambda`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/map-lambda.html#نکته-مهم-خروجی-map-یک-map-object-است",
+    "href": "chapter/functions/map-lambda.html#نکته-مهم-خروجی-map-یک-map-object-است",
+    "title": "تابع map و lambda",
+    "section": "نکته مهم: خروجی map یک map object است",
+    "text": "نکته مهم: خروجی map یک map object است\n\nباید با list()، tuple() یا حلقه، به چیز قابل‌استفاده تبدیلش کنیم\n\nresult = map(lambda n: n * 2, [1, 2, 3])\nprint(result)          # &lt;map object at 0x...&gt;\nprint(list(result))    # [2, 4, 6]",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>تابع `map` و `lambda`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/map-lambda.html#استفاده-با-تابع-معمولی-نه-فقط-lambda",
+    "href": "chapter/functions/map-lambda.html#استفاده-با-تابع-معمولی-نه-فقط-lambda",
+    "title": "تابع map و lambda",
+    "section": "استفاده با تابع معمولی (نه فقط lambda)",
+    "text": "استفاده با تابع معمولی (نه فقط lambda)\ndef to_upper(word):\n    return word.upper()\n\nwords = ['salam', 'khoobi']\nprint(list(map(to_upper, words)))\n['SALAM', 'KHOOBI']",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>تابع `map` و `lambda`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/map-lambda.html#map-روی-چند-لیست-همزمان",
+    "href": "chapter/functions/map-lambda.html#map-روی-چند-لیست-همزمان",
+    "title": "تابع map و lambda",
+    "section": "map روی چند لیست همزمان",
+    "text": "map روی چند لیست همزمان\na = [1, 2, 3]\nb = [10, 20, 30]\nresult = list(map(lambda x, y: x + y, a, b))\nprint(result)\n[11, 22, 33]",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>تابع `map` و `lambda`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/map-lambda.html#map-در-مقابل-list-comprehension",
+    "href": "chapter/functions/map-lambda.html#map-در-مقابل-list-comprehension",
+    "title": "تابع map و lambda",
+    "section": "map در مقابل list comprehension",
+    "text": "map در مقابل list comprehension\n\n\n\nروش\nمثال\n\n\n\n\nmap\nlist(map(lambda n: n**2, numbers))\n\n\nlist comprehension\n[n**2 for n in numbers]\n\n\n\n\nهر دو یک نتیجه می‌دن؛ list comprehension معمولاً در پایتون خواناتر و رایج‌تره، ولی map وقتی یک تابع از قبل تعریف‌شده داریم (نه lambda)، خیلی خلوت‌تره",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>تابع `map` و `lambda`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/functions/map-lambda.html#تمرین",
+    "href": "chapter/functions/map-lambda.html#تمرین",
+    "title": "تابع map و lambda",
+    "section": "تمرین",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطکوئرا\n\n\n\n\n3539 - تک‌رقمی",
+    "crumbs": [
+      "تابع",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>تابع `map` و `lambda`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html",
+    "href": "chapter/oop/class-object.html",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "",
+    "text": "کلاس چیست؟",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#کلاس-چیست",
+    "href": "chapter/oop/class-object.html#کلاس-چیست",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "",
+    "text": "کلاس (Class) = قالب/طرح برای ساخت اشیاء (Objects)\nشیء (Object) = نمونه‌ای واقعی ساخته‌شده از یک کلاس\nکلیدواژه تعریف: class",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#تعریف-یک-کلاس-ساده",
+    "href": "chapter/oop/class-object.html#تعریف-یک-کلاس-ساده",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "تعریف یک کلاس ساده",
+    "text": "تعریف یک کلاس ساده\nclass Dog:\n    pass\n\nd = Dog()\nprint(type(d))\n&lt;class '__main__.Dog'&gt;",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#متد-سازنده-__init__",
+    "href": "chapter/oop/class-object.html#متد-سازنده-__init__",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "متد سازنده — __init__",
+    "text": "متد سازنده — __init__\n\nهر بار که یک شیء ساخته می‌شه، این متد به‌طور خودکار اجرا می‌شه\nبرای مقداردهی اولیه ویژگی‌های (attributes) شیء استفاده می‌شه\nself : اشاره به خود شیء — همیشه اولین پارامتر متدهای کلاسه\n\nclass Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\nd = Dog(\"Rex\", 3)\nprint(d.name, d.age)\nRex 3",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#متدها-رفتار-اشیاء",
+    "href": "chapter/oop/class-object.html#متدها-رفتار-اشیاء",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "متدها (رفتار اشیاء)",
+    "text": "متدها (رفتار اشیاء)\n\nتوابعی که داخل کلاس تعریف می‌شن و روی داده‌های شیء کار می‌کنن\n\nclass Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def bark(self):\n        print(f\"{self.name} says: Woof!\")\n\nd = Dog(\"Rex\", 3)\nd.bark()\nRex says: Woof!",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#ویژگیهای-نمونه-instance-attributes-در-مقابل-ویژگیهای-کلاس-class-attributes",
+    "href": "chapter/oop/class-object.html#ویژگیهای-نمونه-instance-attributes-در-مقابل-ویژگیهای-کلاس-class-attributes",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "ویژگی‌های نمونه (Instance Attributes) در مقابل ویژگی‌های کلاس (Class Attributes)",
+    "text": "ویژگی‌های نمونه (Instance Attributes) در مقابل ویژگی‌های کلاس (Class Attributes)\n\n\n\n\n\n\n\n\nنوع\nتعلق داره به\nمثال\n\n\n\n\nInstance Attribute\nهر شیء مقدار جدا داره\nself.name\n\n\nClass Attribute\nمشترک بین همه‌ی نمونه‌ها\nتعریف مستقیم داخل کلاس، بیرون __init__\n\n\n\nclass Dog:\n    species = \"Canis familiaris\"   # class attribute\n\n    def __init__(self, name):\n        self.name = name           # instance attribute\n\nd1 = Dog(\"Rex\")\nd2 = Dog(\"Buddy\")\nprint(d1.species, d2.species)   # هر دو یکی\nprint(d1.name, d2.name)         # جدا از هم",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#ساخت-چند-شیء-از-یک-کلاس",
+    "href": "chapter/oop/class-object.html#ساخت-چند-شیء-از-یک-کلاس",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "ساخت چند شیء از یک کلاس",
+    "text": "ساخت چند شیء از یک کلاس\n\nهر شیء داده‌های مستقل خودش رو داره، حتی اگه از یک کلاس ساخته شده باشن\n\nd1 = Dog(\"Rex\", 3)\nd2 = Dog(\"Buddy\", 5)",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#نکته-تفاوت-self-با-پارامترهای-دیگه",
+    "href": "chapter/oop/class-object.html#نکته-تفاوت-self-با-پارامترهای-دیگه",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "نکته: تفاوت self با پارامترهای دیگه",
+    "text": "نکته: تفاوت self با پارامترهای دیگه\n\nself به‌طور خودکار توسط پایتون پاس داده می‌شه، لازم نیست هنگام فراخوانی متد صداش کنیم\n\nd.bark()   # نه d.bark(d) !",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance-polymorphism.html",
+    "href": "chapter/oop/inheritance-polymorphism.html",
+    "title": "وراثت و چندشکلی",
+    "section": "",
+    "text": "وراثت (Inheritance) چیست؟",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance-polymorphism.html#وراثت-inheritance-چیست",
+    "href": "chapter/oop/inheritance-polymorphism.html#وراثت-inheritance-چیست",
+    "title": "وراثت و چندشکلی",
+    "section": "",
+    "text": "یک کلاس (فرزند/Child) می‌تونه ویژگی‌ها و متدهای کلاس دیگه (والد/Parent) رو به ارث ببره\nهدف: جلوگیری از تکرار کد، سازمان‌دهی سلسله‌مراتبی",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance-polymorphism.html#تعریف-وراثت",
+    "href": "chapter/oop/inheritance-polymorphism.html#تعریف-وراثت",
+    "title": "وراثت و چندشکلی",
+    "section": "تعریف وراثت",
+    "text": "تعریف وراثت\nclass Animal:\n    def __init__(self, name):\n        self.name = name\n\n    def speak(self):\n        print(f\"{self.name} makes a sound.\")\n\nclass Dog(Animal):    # Dog از Animal ارث می‌بره\n    pass\n\nd = Dog(\"Rex\")\nd.speak()\nRex makes a sound.\n\nDog(Animal) یعنی Dog فرزند Animal هست",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance-polymorphism.html#override-کردن-متد-بازنویسی",
+    "href": "chapter/oop/inheritance-polymorphism.html#override-کردن-متد-بازنویسی",
+    "title": "وراثت و چندشکلی",
+    "section": "Override کردن متد (بازنویسی)",
+    "text": "Override کردن متد (بازنویسی)\n\nکلاس فرزند می‌تونه متد کلاس والد رو با رفتار متفاوت بازنویسی کنه\n\nclass Dog(Animal):\n    def speak(self):\n        print(f\"{self.name} says: Woof!\")\n\nd = Dog(\"Rex\")\nd.speak()\nRex says: Woof!",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance-polymorphism.html#استفاده-از-super",
+    "href": "chapter/oop/inheritance-polymorphism.html#استفاده-از-super",
+    "title": "وراثت و چندشکلی",
+    "section": "استفاده از super()",
+    "text": "استفاده از super()\n\nبرای فراخوانی متد کلاس والد از داخل کلاس فرزند (بدون بازنویسی کامل)\n\nclass Dog(Animal):\n    def __init__(self, name, breed):\n        super().__init__(name)     # فراخوانی __init__ کلاس والد\n        self.breed = breed\n\n    def speak(self):\n        super().speak()            # اجرای رفتار والد هم\n        print(f\"{self.name} says: Woof!\")\n\nd = Dog(\"Rex\", \"Labrador\")\nd.speak()\nRex makes a sound.\nRex says: Woof!",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance-polymorphism.html#چندشکلی-polymorphism-چیست",
+    "href": "chapter/oop/inheritance-polymorphism.html#چندشکلی-polymorphism-چیست",
+    "title": "وراثت و چندشکلی",
+    "section": "چندشکلی (Polymorphism) چیست؟",
+    "text": "چندشکلی (Polymorphism) چیست؟\n\nیعنی اشیاء از کلاس‌های مختلف، با همون نام متد، رفتار متفاوتی نشون بدن\nکد می‌تونه با اشیاء مختلف به یک شکل کار کنه، بدون اینکه نوع دقیقشون رو بدونه\n\nclass Cat(Animal):\n    def speak(self):\n        print(f\"{self.name} says: Meow!\")\n\nanimals = [Dog(\"Rex\", \"Labrador\"), Cat(\"Whiskers\")]\n\nfor a in animals:\n    a.speak()\nRex says: Woof!\nWhiskers says: Meow!\n\nهمه‌ی متد speak() رو یکسان صدا زدیم، ولی هرکدوم رفتار خودشون رو دارن",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance-polymorphism.html#بررسی-رابطه-کلاسها",
+    "href": "chapter/oop/inheritance-polymorphism.html#بررسی-رابطه-کلاسها",
+    "title": "وراثت و چندشکلی",
+    "section": "بررسی رابطه کلاس‌ها",
+    "text": "بررسی رابطه کلاس‌ها\n\n\n\n\n\n\n\nتابع\nکار\n\n\n\n\nisinstance(obj, Class)\nآیا شیء نمونه‌ای از این کلاس (یا فرزندانش) هست\n\n\nissubclass(Child, Parent)\nآیا این کلاس فرزند اون کلاسه\n\n\n\nprint(isinstance(d, Animal))    # True\nprint(issubclass(Dog, Animal))  # True",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance-polymorphism.html#وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه",
+    "href": "chapter/oop/inheritance-polymorphism.html#وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه",
+    "title": "وراثت و چندشکلی",
+    "section": "وراثت چندگانه (Multiple Inheritance) — اشاره کوتاه",
+    "text": "وراثت چندگانه (Multiple Inheritance) — اشاره کوتاه\n\nپایتون اجازه می‌ده یک کلاس از چند کلاس ارث ببره\n\nclass A:\n    pass\nclass B:\n    pass\nclass C(A, B):\n    pass\n\nنکته کلاسی: وراثت چندگانه قدرتمنده ولی می‌تونه پیچیدگی ایجاد کنه (ترتیب جستجوی متدها — MRO)؛ فعلاً فقط آشنایی کافیه.",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html",
+    "href": "chapter/oop/encapsulation.html",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "",
+    "text": "کپسوله‌سازی (Encapsulation) چیست؟",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#کپسولهسازی-encapsulation-چیست",
+    "href": "chapter/oop/encapsulation.html#کپسولهسازی-encapsulation-چیست",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "",
+    "text": "محدود کردن دسترسی مستقیم به داده‌های داخلی یک شیء\nهدف: جلوگیری از تغییر ناخواسته/نادرست داده‌ها از بیرون کلاس",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#سطوح-دسترسی-در-پایتون-بر-پایه-قرارداد-نه-اجبار-سخت",
+    "href": "chapter/oop/encapsulation.html#سطوح-دسترسی-در-پایتون-بر-پایه-قرارداد-نه-اجبار-سخت",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "سطوح دسترسی در پایتون (بر پایه قرارداد، نه اجبار سخت)",
+    "text": "سطوح دسترسی در پایتون (بر پایه قرارداد، نه اجبار سخت)\n\n\n\n\n\n\n\n\nنوع\nنوشتار\nمعنی\n\n\n\n\nPublic\nself.name\nاز همه‌جا در دسترسه\n\n\nProtected\nself._name (یک آندرلاین)\nقرارداده که فقط داخل کلاس/فرزندان استفاده بشه (اجباری نیست)\n\n\nPrivate\nself.__name (دو آندرلاین)\nبا name mangling محافظت می‌شه، دسترسی مستقیم بیرون سخت‌تره\n\n\n\nclass Account:\n    def __init__(self, balance):\n        self.__balance = balance   # private\n\n    def get_balance(self):\n        return self.__balance\n\nacc = Account(1000)\nprint(acc.get_balance())    # 1000\nprint(acc.__balance)        # خطا: AttributeError\n\nنکته کلاسی: پایتون واقعاً private نداره — __balance در پشت صحنه به _Account__balance تبدیل می‌شه (Name Mangling)؛ یعنی هنوز قابل دسترسیه ولی سخت‌تر و دلسردکننده‌ست.",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#دسترسی-کنترلشده-با-property",
+    "href": "chapter/oop/encapsulation.html#دسترسی-کنترلشده-با-property",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "دسترسی کنترل‌شده با property",
+    "text": "دسترسی کنترل‌شده با property\n\nروش استاندارد پایتون برای getter/setter، به‌جای متدهای دستی\n\nclass Account:\n    def __init__(self, balance):\n        self.__balance = balance\n\n    @property\n    def balance(self):          # getter\n        return self.__balance\n\n    @balance.setter\n    def balance(self, value):   # setter\n        if value &lt; 0:\n            raise ValueError(\"موجودی نمی‌تونه منفی باشه\")\n        self.__balance = value\n\nacc = Account(1000)\nprint(acc.balance)      # مثل یک attribute استفاده می‌شه، نه متد\nacc.balance = 2000       # از setter عبور می‌کنه و اعتبارسنجی می‌شه\n\nمزیت: می‌تونیم منطق اعتبارسنجی رو بدون تغییر نحوه استفاده بیرون از کلاس، اضافه کنیم",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#انتزاع-abstraction-چیست",
+    "href": "chapter/oop/encapsulation.html#انتزاع-abstraction-چیست",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "انتزاع (Abstraction) چیست؟",
+    "text": "انتزاع (Abstraction) چیست؟\n\nمخفی کردن جزئیات پیاده‌سازی و نمایش فقط رابط (Interface) ضروری به کاربر کلاس\nتمرکز روی “چه کاری انجام می‌شه” نه “چطور انجام می‌شه”",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#پیادهسازی-انتزاع-با-abc-abstract-base-class",
+    "href": "chapter/oop/encapsulation.html#پیادهسازی-انتزاع-با-abc-abstract-base-class",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "پیاده‌سازی انتزاع با abc (Abstract Base Class)",
+    "text": "پیاده‌سازی انتزاع با abc (Abstract Base Class)\nfrom abc import ABC, abstractmethod\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self):\n        pass\n\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n\n    def area(self):\n        return 3.14 * self.radius ** 2\n\nc = Circle(5)\nprint(c.area())\n78.5\n\nShape یک کلاس انتزاعیه — نمی‌شه مستقیم ازش شیء ساخت\n\ns = Shape()   # خطا: TypeError: Can't instantiate abstract class\n\nهر کلاس فرزند مجبوره متد area() رو پیاده‌سازی کنه، وگرنه خودش هم انتزاعی می‌مونه",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#جمعبندی-تفاوت-کپسولهسازی-و-انتزاع",
+    "href": "chapter/oop/encapsulation.html#جمعبندی-تفاوت-کپسولهسازی-و-انتزاع",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "جمع‌بندی تفاوت کپسوله‌سازی و انتزاع",
+    "text": "جمع‌بندی تفاوت کپسوله‌سازی و انتزاع\n\n\n\nمفهوم\nتمرکز\n\n\n\n\nکپسوله‌سازی\nمحافظت از داده (چه کسی بهش دسترسی داره)\n\n\nانتزاع\nساده‌سازی رابط (چی نشون داده بشه، چی مخفی بمونه)",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/other-options.html",
+    "href": "chapter/oop/other-options.html",
+    "title": "ویژگی‌های دیگر",
+    "section": "",
+    "text": "متدهای ویژه (Dunder / Magic Methods)",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/other-options.html#متدهای-ویژه-dunder-magic-methods",
+    "href": "chapter/oop/other-options.html#متدهای-ویژه-dunder-magic-methods",
+    "title": "ویژگی‌های دیگر",
+    "section": "",
+    "text": "متدهایی با دو آندرلاین در ابتدا و انتهای نام (__name__)\nپایتون خودش در موقعیت‌های خاص این متدها رو صدا می‌زنه\n\n\n\n\n\n\n\n\n\nمتد\nصدا زده می‌شه وقتی\nمثال\n\n\n\n\n__init__\nساخت شیء\nDog(\"Rex\")\n\n\n__str__\nprint(obj) یا str(obj)\nنمایش خوانا برای انسان\n\n\n__repr__\nنمایش رسمی/دیباگی شیء\nمعمولاً برای برنامه‌نویس\n\n\n__len__\nlen(obj)\nطول شیء\n\n\n__eq__\nobj1 == obj2\nمقایسه برابری\n\n\n__add__\nobj1 + obj2\nجمع دو شیء\n\n\n\nclass Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\n    def __str__(self):\n        return f\"({self.x}, {self.y})\"\n\n    def __eq__(self, other):\n        return self.x == other.x and self.y == other.y\n\n    def __add__(self, other):\n        return Point(self.x + other.x, self.y + other.y)\n\np1 = Point(1, 2)\np2 = Point(3, 4)\nprint(p1)              # (1, 2)   -&gt; از __str__\nprint(p1 == p2)         # False    -&gt; از __eq__\nprint(p1 + p2)          # (4, 6)   -&gt; از __add__",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/other-options.html#متد-کلاسی-و-متد-استاتیک",
+    "href": "chapter/oop/other-options.html#متد-کلاسی-و-متد-استاتیک",
+    "title": "ویژگی‌های دیگر",
+    "section": "متد کلاسی و متد استاتیک",
+    "text": "متد کلاسی و متد استاتیک\n\n\n\n\n\n\n\n\n\nنوع\nدکوراتور\nپارامتر اول\nدسترسی به\n\n\n\n\nمتد نمونه (معمولی)\n—\nself\nداده‌های شیء\n\n\nمتد کلاسی\n@classmethod\ncls\nخود کلاس\n\n\nمتد استاتیک\n@staticmethod\nندارد\nنه شیء نه کلاس، فقط تابع مرتبط\n\n\n\nclass Dog:\n    count = 0\n\n    def __init__(self, name):\n        self.name = name\n        Dog.count += 1\n\n    @classmethod\n    def get_count(cls):\n        return cls.count\n\n    @staticmethod\n    def is_valid_name(name):\n        return len(name) &gt; 0\n\nprint(Dog.is_valid_name(\"Rex\"))   # True\nd1 = Dog(\"Rex\")\nd2 = Dog(\"Buddy\")\nprint(Dog.get_count())            # 2",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/other-options.html#کلاسهای-انتزاعی-و-duck-typing",
+    "href": "chapter/oop/other-options.html#کلاسهای-انتزاعی-و-duck-typing",
+    "title": "ویژگی‌های دیگر",
+    "section": "کلاس‌های انتزاعی و Duck Typing",
+    "text": "کلاس‌های انتزاعی و Duck Typing\n\nدر پایتون معمولاً نوع دقیق شیء مهم نیست، مهم اینه که رفتار موردنیاز رو داشته باشه\nبه این ویژگی Duck Typing می‌گن: “اگه مثل اردک راه بره و مثل اردک صدا کنه، اردکه”\n\nclass Duck:\n    def sound(self):\n        print(\"Quack!\")\n\nclass Dog:\n    def sound(self):\n        print(\"Woof!\")\n\ndef make_it_sound(animal):\n    animal.sound()   # فرقی نمی‌کنه از چه کلاسی باشه، فقط باید sound() داشته باشه\n\nmake_it_sound(Duck())\nmake_it_sound(Dog())",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/other-options.html#بازبینی-خودکار-اشیاء",
+    "href": "chapter/oop/other-options.html#بازبینی-خودکار-اشیاء",
+    "title": "ویژگی‌های دیگر",
+    "section": "بازبینی خودکار اشیاء",
+    "text": "بازبینی خودکار اشیاء\n\ndir(obj) : لیست همه‌ی متدها و ویژگی‌های یک شیء\nvars(obj) یا obj.__dict__ : دیکشنری ویژگی‌های نمونه (instance attributes)\n\np = Point(1, 2)\nprint(vars(p))    # {'x': 1, 'y': 2}",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/other-options.html#نکته-کلاسی-جمعبندی",
+    "href": "chapter/oop/other-options.html#نکته-کلاسی-جمعبندی",
+    "title": "ویژگی‌های دیگر",
+    "section": "نکته کلاسی جمع‌بندی",
+    "text": "نکته کلاسی جمع‌بندی\n\nاستفاده از متدهای ویژه، کد رو با ساختارهای درونی پایتون (مثل print(), +, len()) سازگار و طبیعی‌تر می‌کنه — این یعنی کلاس‌های خودمون هم می‌تونن مثل انواع داخلی پایتون (لیست، رشته و…) رفتار کنن",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/zoo.html",
+    "href": "chapter/oop/zoo.html",
+    "title": "مدیریت باغ وحش",
+    "section": "",
+    "text": "from abc import ABC, abstractmethod\n\n\n# ---------------------------------------------------------\n# بخش ۱ و ۳: تعریف کلاس پایه انتزاعی (Abstraction)\n# ---------------------------------------------------------\nclass Animal(ABC):\n    \"\"\"کلاس پایه انتزاعی برای همه حیوانات باغ‌وحش\"\"\"\n\n    total_animals = 0  # class attribute -&gt; مشترک بین همه نمونه‌ها\n\n    def __init__(self, name, age):\n        self.name = name                 # public attribute\n        self._age = age                  # protected attribute (قرارداد: فقط داخلی)\n        self.__health = 100              # private attribute (کپسوله‌سازی)\n        Animal.total_animals += 1        # هر بار ساخت شیء جدید، شمارنده رو زیاد می‌کنه\n\n    # --- کپسوله‌سازی با property ---\n    @property\n    def health(self):\n        \"\"\"getter برای سلامت حیوان\"\"\"\n        return self.__health\n\n    @health.setter\n    def health(self, value):\n        \"\"\"setter با اعتبارسنجی - جلوگیری از مقدار نامعتبر\"\"\"\n        if not 0 &lt;= value &lt;= 100:\n            raise ValueError(\"سلامت باید بین 0 تا 100 باشد\")\n        self.__health = value\n\n    # --- متد انتزاعی: هر کلاس فرزند مجبوره پیاده‌سازی کنه ---\n    @abstractmethod\n    def make_sound(self):\n        pass\n\n    # --- متد کلاسی: کار با خود کلاس، نه یک نمونه خاص ---\n    @classmethod\n    def get_total_animals(cls):\n        return cls.total_animals\n\n    # --- متد استاتیک: فقط یک تابع کمکی مرتبط با کلاس ---\n    @staticmethod\n    def is_valid_age(age):\n        return age &gt; 0\n\n    # --- متد ویژه (dunder): نمایش خوانا هنگام print ---\n    def __str__(self):\n        return f\"{self.name} ({self.__class__.__name__}), سن: {self._age}, سلامت: {self.__health}\"\n\n    # --- متد ویژه: مقایسه دو حیوان بر اساس نام ---\n    def __eq__(self, other):\n        return self.name == other.name\n\n\n# ---------------------------------------------------------\n# بخش ۲: وراثت - هر کلاس فرزند، Animal رو گسترش می‌ده\n# ---------------------------------------------------------\nclass Lion(Animal):\n    def make_sound(self):\n        print(f\"{self.name} says: Roar!\")\n\n\nclass Parrot(Animal):\n    def __init__(self, name, age, can_talk=True):\n        super().__init__(name, age)      # فراخوانی سازنده والد\n        self.can_talk = can_talk\n\n    def make_sound(self):\n        if self.can_talk:\n            print(f\"{self.name} says: Hello!\")\n        else:\n            print(f\"{self.name} says: Squawk!\")\n\n\nclass Elephant(Animal):\n    def make_sound(self):\n        print(f\"{self.name} says: Pawoo!\")\n\n\n# ---------------------------------------------------------\n# کلاسی که مجموعه‌ای از حیوانات رو نگه می‌داره\n# نمایش __len__ و duck typing\n# ---------------------------------------------------------\nclass Zoo:\n    def __init__(self, name):\n        self.name = name\n        self.animals = []\n\n    def add_animal(self, animal):\n        self.animals.append(animal)\n\n    def __len__(self):\n        return len(self.animals)\n\n    # --- چندشکلی: صدا زدن یک متد یکسان روی انواع مختلف حیوان ---\n    def make_all_sounds(self):\n        for animal in self.animals:\n            animal.make_sound()   # هرکدوم رفتار خودشون رو دارن\n\n\n# ---------------------------------------------------------\n# اجرای برنامه (Demo)\n# ---------------------------------------------------------\nif __name__ == \"__main__\":\n\n    zoo = Zoo(\"باغ‌وحش تهران\")\n\n    lion = Lion(\"Simba\", 5)\n    parrot = Parrot(\"Polly\", 2, can_talk=True)\n    elephant = Elephant(\"Dumbo\", 8)\n\n    zoo.add_animal(lion)\n    zoo.add_animal(parrot)\n    zoo.add_animal(elephant)\n\n    print(\"--- نمایش اطلاعات همه حیوانات (dunder __str__) ---\")\n    for a in zoo.animals:\n        print(a)\n\n    print(\"\\n--- چندشکلی: هر حیوان صدای خودش رو تولید می‌کنه ---\")\n    zoo.make_all_sounds()\n\n    print(\"\\n--- کپسوله‌سازی: تغییر سلامت با اعتبارسنجی ---\")\n    lion.health = 80\n    print(f\"سلامت {lion.name}: {lion.health}\")\n    try:\n        lion.health = 150   # مقدار نامعتبر\n    except ValueError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- تلاش برای دسترسی مستقیم به متغیر private ---\")\n    try:\n        print(lion.__health)\n    except AttributeError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- متد کلاسی: تعداد کل حیوانات ساخته‌شده ---\")\n    print(\"تعداد کل:\", Animal.get_total_animals())\n    print(\"طول باغ‌وحش (__len__):\", len(zoo))\n\n    print(\"\\n--- متد استاتیک: بررسی معتبر بودن سن ---\")\n    print(Animal.is_valid_age(5))    # True\n    print(Animal.is_valid_age(-3))   # False\n\n    print(\"\\n--- تلاش برای ساخت شیء از کلاس انتزاعی ---\")\n    try:\n        a = Animal(\"X\", 1)\n    except TypeError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- مقایسه دو شیء (__eq__) ---\")\n    lion2 = Lion(\"Simba\", 5)\n    print(lion == lion2)   # True چون نام یکسانه\n\n    print(\"\\n--- Duck Typing: هر شیئی که make_sound() داشته باشه کار می‌کنه ---\")\n    class RobotAnimal:\n        def __init__(self, name):\n            self.name = name\n        def make_sound(self):\n            print(f\"{self.name} says: Beep Boop!\")\n\n    zoo.add_animal(RobotAnimal(\"R2D2\"))  # نه از Animal ارث می‌بره، نه انتزاعیه\n    zoo.make_all_sounds()",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>مدیریت باغ وحش</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/read-write.html",
+    "href": "chapter/files/read-write.html",
+    "title": "خواندن و ویرایش فایل",
+    "section": "",
+    "text": "بازکردن فایل (open)",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>خواندن و ویرایش فایل</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/read-write.html#بازکردن-فایل-open",
+    "href": "chapter/files/read-write.html#بازکردن-فایل-open",
+    "title": "خواندن و ویرایش فایل",
+    "section": "",
+    "text": "fhand = open('mbox.txt')\n\nخروجی یک handle به فایله، نه محتوای واقعی — برای خوندن ازش استفاده می‌شه\nاگه فایل وجود نداشته باشه → خطا: FileNotFoundError",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>خواندن و ویرایش فایل</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/read-write.html#حالتهای-open",
+    "href": "chapter/files/read-write.html#حالتهای-open",
+    "title": "خواندن و ویرایش فایل",
+    "section": "حالت‌های open()",
+    "text": "حالت‌های open()\n\n\n\n\n\n\n\nحالت\nکاربرد\n\n\n\n\n'r'\nخواندن (پیش‌فرض)\n\n\n'w'\nنوشتن — ⚠️ محتوای قبلی فایل پاک می‌شه\n\n\n'a'\nappend — اضافه‌کردن به انتهای فایل، بدون پاک کردن محتوای قبلی\n\n\n'x'\nساخت فایل جدید — اگه از قبل وجود داشته باشه خطا می‌ده",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>خواندن و ویرایش فایل</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/read-write.html#خواندن-فایل",
+    "href": "chapter/files/read-write.html#خواندن-فایل",
+    "title": "خواندن و ویرایش فایل",
+    "section": "خواندن فایل",
+    "text": "خواندن فایل\n\nروش ۱: خط به خط با for (برای فایل‌های بزرگ)\nfhand = open('mbox.txt')\ncount = 0\nfor line in fhand:\n    count += 1\nprint('Line Count:', count)\n\n\nروش ۲: خواندن کل فایل یکجا (برای فایل‌های کوچک)\nfhand = open('mbox.txt')\ninp = fhand.read()\nprint(len(inp))\n\n⚠️ نکته: محتوا رو حتماً توی متغیر ذخیره کنیم، وگرنه با خواندن مجدد از دست می‌ره",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>خواندن و ویرایش فایل</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/read-write.html#جستجو-در-فایل",
+    "href": "chapter/files/read-write.html#جستجو-در-فایل",
+    "title": "خواندن و ویرایش فایل",
+    "section": "جستجو در فایل",
+    "text": "جستجو در فایل\nfhand = open('mbox.txt')\nfor line in fhand:\n    line = line.rstrip()\n    if line.startswith('From:'):\n        print(line)\n\nrstrip() : حذف فضای خالی سمت راست رشته\nstartswith() : بررسی شروع خط با یک کلمه/رشته خاص",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>خواندن و ویرایش فایل</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/read-write.html#گرفتن-نام-فایل-از-کاربر-مدیریت-خطا",
+    "href": "chapter/files/read-write.html#گرفتن-نام-فایل-از-کاربر-مدیریت-خطا",
+    "title": "خواندن و ویرایش فایل",
+    "section": "گرفتن نام فایل از کاربر + مدیریت خطا",
+    "text": "گرفتن نام فایل از کاربر + مدیریت خطا\n\nبه‌جای هاردکد کردن نام فایل، از کاربر می‌گیریم — ولی چون فایل ممکنه وجود نداشته باشه، حتماً با try-except پوشش بدیم\n\nfname = input('Enter the file name: ')\ntry:\n    fhand = open(fname)\nexcept:\n    print('File cannot be opened:', fname)\n    exit()\n\nexit() : خروج کامل از اجرای برنامه اگه فایل باز نشد",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>خواندن و ویرایش فایل</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/read-write.html#نوشتن-در-فایل",
+    "href": "chapter/files/read-write.html#نوشتن-در-فایل",
+    "title": "خواندن و ویرایش فایل",
+    "section": "نوشتن در فایل",
+    "text": "نوشتن در فایل\nfout = open('output.txt', 'w')\n\nپارامتر 'w':\n\nاگه فایل وجود داشته باشه → باز می‌شه برای نوشتن (⚠️ محتوای قبلی پاک می‌شه)\nاگه وجود نداشته باشه → فایل جدید ساخته می‌شه\n\n\nline1 = \"This here's the wattle,\\n\"\nfout.write(line1)\n\nبستن فایل\nfout.close()\n\nبعد از اتمام کار با فایل، همیشه باید بسته بشه",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>خواندن و ویرایش فایل</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/read-write.html#روش-استاندارد-و-توصیهشده-with-open...-as-f",
+    "href": "chapter/files/read-write.html#روش-استاندارد-و-توصیهشده-with-open...-as-f",
+    "title": "خواندن و ویرایش فایل",
+    "section": "روش استاندارد و توصیه‌شده: with open(...) as f:",
+    "text": "روش استاندارد و توصیه‌شده: with open(...) as f:\n\nجزوه روش دستی (باز کردن + close() دستی) رو نشون داده، ولی در عمل استفاده از with رایج‌تره\nمزیت: فایل خودکار بسته می‌شه، حتی اگه وسط کار خطا رخ بده — نیازی به close() دستی نیست\n\nwith open('mbox.txt') as fhand:\n    for line in fhand:\n        print(line.rstrip())\n# اینجا فایل خودش بسته شده\nwith open('output.txt', 'w') as fout:\n    fout.write(\"This here's the wattle,\\n\")",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>خواندن و ویرایش فایل</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/binary.html",
+    "href": "chapter/files/binary.html",
+    "title": "فایل‌های باینری",
+    "section": "",
+    "text": "تفاوت فایل متنی و باینری",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های باینری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/binary.html#تفاوت-فایل-متنی-و-باینری",
+    "href": "chapter/files/binary.html#تفاوت-فایل-متنی-و-باینری",
+    "title": "فایل‌های باینری",
+    "section": "",
+    "text": "نوع\nمحتوا\nمثال\n\n\n\n\nمتنی (text)\nکاراکترهای قابل‌خواندن، با encoding رمزگذاری می‌شه\n.txt، .csv\n\n\nباینری (binary)\nدنباله خام بایت‌ها، بدون تفسیر متنی\n.jpg، .png، .mp3، .pdf، .zip\n\n\n\n\nدر حالت متنی، پایتون بایت‌ها رو با یک encoding (مثلاً UTF-8) به رشته تبدیل می‌کنه\nدر حالت باینری، هیچ تبدیلی انجام نمی‌شه — داده به‌صورت خام (bytes) خونده/نوشته می‌شه",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های باینری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/binary.html#باز-کردن-فایل-باینری-حرف-b",
+    "href": "chapter/files/binary.html#باز-کردن-فایل-باینری-حرف-b",
+    "title": "فایل‌های باینری",
+    "section": "باز کردن فایل باینری — حرف b",
+    "text": "باز کردن فایل باینری — حرف b\n\n\n\nحالت\nکاربرد\n\n\n\n\n'rb'\nخواندن باینری\n\n\n'wb'\nنوشتن باینری (پاک‌کردن محتوای قبلی)\n\n\n'ab'\nappend باینری\n\n\n'xb'\nساخت فایل باینری جدید (خطا اگه وجود داشته باشه)",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های باینری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/binary.html#خواندن-فایل-باینری",
+    "href": "chapter/files/binary.html#خواندن-فایل-باینری",
+    "title": "فایل‌های باینری",
+    "section": "خواندن فایل باینری",
+    "text": "خواندن فایل باینری\nwith open('image.jpg', 'rb') as f:\n    data = f.read()\n    print(type(data))   # &lt;class 'bytes'&gt;\n    print(len(data))    # تعداد بایت‌ها\n\nخروجی از نوع bytes هست، نه str\n⚠️ متدهای رشته‌ای مثل .rstrip() یا .startswith('متن') روی bytes فرق دارن (باید با b'...' مقایسه بشن)",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های باینری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/binary.html#نوشتن-فایل-باینری",
+    "href": "chapter/files/binary.html#نوشتن-فایل-باینری",
+    "title": "فایل‌های باینری",
+    "section": "نوشتن فایل باینری",
+    "text": "نوشتن فایل باینری\ndata = b'\\x89PNG\\r\\n\\x1a\\n...'\nwith open('output.bin', 'wb') as f:\n    f.write(data)\n\nفقط bytes یا bytearray قابل نوشتنه، نه رشته معمولی",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های باینری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/binary.html#کپی-کردن-یک-فایل-باینری-مثال-کاربردی",
+    "href": "chapter/files/binary.html#کپی-کردن-یک-فایل-باینری-مثال-کاربردی",
+    "title": "فایل‌های باینری",
+    "section": "کپی کردن یک فایل باینری (مثال کاربردی)",
+    "text": "کپی کردن یک فایل باینری (مثال کاربردی)\nwith open('source.jpg', 'rb') as fin:\n    with open('copy.jpg', 'wb') as fout:\n        fout.write(fin.read())\n\nبرای فایل‌های بزرگ بهتره تکه‌تکه (chunk) بخونیم تا حافظه پر نشه:\n\nwith open('source.jpg', 'rb') as fin, open('copy.jpg', 'wb') as fout:\n    while True:\n        chunk = fin.read(4096)   # هر بار ۴۰۹۶ بایت\n        if not chunk:\n            break\n        fout.write(chunk)",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های باینری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/binary.html#تبدیل-بین-str-و-bytes",
+    "href": "chapter/files/binary.html#تبدیل-بین-str-و-bytes",
+    "title": "فایل‌های باینری",
+    "section": "تبدیل بین str و bytes",
+    "text": "تبدیل بین str و bytes\n\n\n\nمتد\nکار\n\n\n\n\nstr.encode()\nتبدیل رشته به بایت\n\n\nbytes.decode()\nتبدیل بایت به رشته\n\n\n\ns = \"سلام\"\nb = s.encode('utf-8')     # str → bytes\nprint(b)\n\ns2 = b.decode('utf-8')    # bytes → str\nprint(s2)",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های باینری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/binary.html#نکته-مهم-باز-کردن-فایل-متنی-بهجای-باینری-و-برعکس-خطا-میده",
+    "href": "chapter/files/binary.html#نکته-مهم-باز-کردن-فایل-متنی-بهجای-باینری-و-برعکس-خطا-میده",
+    "title": "فایل‌های باینری",
+    "section": "نکته مهم: باز کردن فایل متنی به‌جای باینری (و برعکس) خطا می‌ده",
+    "text": "نکته مهم: باز کردن فایل متنی به‌جای باینری (و برعکس) خطا می‌ده\n\nسعی در خواندن فایل باینری (مثل عکس) با حالت 'r' معمولاً باعث خطای decode می‌شه:\n\nUnicodeDecodeError: 'utf-8' codec can't decode byte...\n\nقانون کلی: فایل‌های غیرمتنی (عکس، صدا، فایل فشرده، اجرایی) → همیشه با b",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های باینری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os.html",
+    "href": "chapter/files/os.html",
+    "title": "ماژول os",
+    "section": "",
+    "text": "چرا os؟",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>ماژول `os`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os.html#چرا-os",
+    "href": "chapter/files/os.html#چرا-os",
+    "title": "ماژول os",
+    "section": "",
+    "text": "ماژول os برای کار با سیستم‌عامل (فایل، پوشه، مسیر) استفاده می‌شه — چیزی فراتر از خواندن/نوشتن محتوای فایل\nوارد کردن: import os",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>ماژول `os`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os.html#بررسی-وجود-فایلپوشه",
+    "href": "chapter/files/os.html#بررسی-وجود-فایلپوشه",
+    "title": "ماژول os",
+    "section": "بررسی وجود فایل/پوشه",
+    "text": "بررسی وجود فایل/پوشه\nimport os\n\nos.path.exists('mbox.txt')     # True / False\nos.path.isfile('mbox.txt')     # آیا فایله؟\nos.path.isdir('data')          # آیا پوشه‌ست؟\n\nنکته کلاسی: قبل از باز کردن فایل با open()، می‌شه اول با os.path.exists() چک کرد (هرچند try-except هم روش رایج و ایمن‌تریه)",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>ماژول `os`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os.html#حذف-فایل",
+    "href": "chapter/files/os.html#حذف-فایل",
+    "title": "ماژول os",
+    "section": "حذف فایل",
+    "text": "حذف فایل\nos.remove('output.txt')\n\n⚠️ اگه فایل وجود نداشته باشه → خطای FileNotFoundError",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>ماژول `os`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os.html#تغییر-نام-جابهجایی-فایل",
+    "href": "chapter/files/os.html#تغییر-نام-جابهجایی-فایل",
+    "title": "ماژول os",
+    "section": "تغییر نام / جابه‌جایی فایل",
+    "text": "تغییر نام / جابه‌جایی فایل\nos.rename('old_name.txt', 'new_name.txt')",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>ماژول `os`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os.html#کار-با-پوشهها",
+    "href": "chapter/files/os.html#کار-با-پوشهها",
+    "title": "ماژول os",
+    "section": "کار با پوشه‌ها",
+    "text": "کار با پوشه‌ها\n\n\n\nتابع\nکار\n\n\n\n\nos.mkdir('folder')\nساخت یک پوشه\n\n\nos.makedirs('a/b/c')\nساخت پوشه‌های تودرتو (چند سطحی)\n\n\nos.rmdir('folder')\nحذف پوشه (فقط اگه خالی باشه)\n\n\nos.listdir('.')\nلیست فایل‌ها و پوشه‌های داخل یک مسیر\n\n\n\nos.mkdir('new_folder')\nprint(os.listdir('.'))",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>ماژول `os`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os.html#مسیر-فعلی-و-تغییر-مسیر",
+    "href": "chapter/files/os.html#مسیر-فعلی-و-تغییر-مسیر",
+    "title": "ماژول os",
+    "section": "مسیر فعلی و تغییر مسیر",
+    "text": "مسیر فعلی و تغییر مسیر\nprint(os.getcwd())      # مسیر فعلی که برنامه در اون اجرا می‌شه\nos.chdir('data')        # تغییر مسیر فعلی به پوشه data",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>ماژول `os`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os.html#کار-با-مسیرها-os.path",
+    "href": "chapter/files/os.html#کار-با-مسیرها-os.path",
+    "title": "ماژول os",
+    "section": "کار با مسیرها — os.path",
+    "text": "کار با مسیرها — os.path\n\n\n\n\n\n\n\n\nتابع\nکار\nمثال\n\n\n\n\nos.path.join()\nساخت مسیر به‌صورت درست (سازگار با ویندوز/لینوکس)\nos.path.join('data', 'mbox.txt')\n\n\nos.path.basename()\nفقط نام فایل از مسیر\n'data/mbox.txt' → 'mbox.txt'\n\n\nos.path.dirname()\nفقط مسیر پوشه\n'data/mbox.txt' → 'data'\n\n\nos.path.splitext()\nجدا کردن نام و پسوند فایل\n'mbox.txt' → ('mbox', '.txt')\n\n\n\n\nنکته کلاسی مهم: به‌جای الحاق دستی رشته‌ها برای مسیر (مثل 'data' + '/' + 'mbox.txt')، همیشه از os.path.join() استفاده بشه — چون در ویندوز جداکننده مسیر \\ است نه /",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>ماژول `os`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os.html#گرفتن-اطلاعات-فایل",
+    "href": "chapter/files/os.html#گرفتن-اطلاعات-فایل",
+    "title": "ماژول os",
+    "section": "گرفتن اطلاعات فایل",
+    "text": "گرفتن اطلاعات فایل\nos.path.getsize('mbox.txt')    # حجم فایل بر حسب بایت",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>ماژول `os`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os.html#پیمایش-کامل-یک-درخت-پوشه",
+    "href": "chapter/files/os.html#پیمایش-کامل-یک-درخت-پوشه",
+    "title": "ماژول os",
+    "section": "پیمایش کامل یک درخت پوشه",
+    "text": "پیمایش کامل یک درخت پوشه\nfor root, dirs, files in os.walk('.'):\n    for f in files:\n        print(os.path.join(root, f))\n\nos.walk() به‌صورت بازگشتی همه‌ی زیرپوشه‌ها و فایل‌ها رو برمی‌گردونه",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>ماژول `os`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os.html#نکته-پایانی",
+    "href": "chapter/files/os.html#نکته-پایانی",
+    "title": "ماژول os",
+    "section": "نکته پایانی",
+    "text": "نکته پایانی\n\nبرای عملیات پیشرفته‌تر روی مسیرها (به‌خصوص در پروژه‌های جدید)، پایتون کتابخانه pathlib رو هم داره که شیءگراتره و امروزه ترجیح داده می‌شه؛ ولی os همچنان رایج و ضروریه برای یادگیری پایه",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>ماژول `os`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/csv-excel.html",
+    "href": "chapter/files/csv-excel.html",
+    "title": "اکسل و CSV",
+    "section": "",
+    "text": "چرا pandas؟",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>اکسل و CSV</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/csv-excel.html#چرا-pandas",
+    "href": "chapter/files/csv-excel.html#چرا-pandas",
+    "title": "اکسل و CSV",
+    "section": "",
+    "text": "برای فایل‌های جدولی (CSV، Excel) روش دستی با open() خیلی دست‌وپاگیره\npandas داده رو به‌صورت جدول (DataFrame) میاره که کار باهاش راحت‌تره",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>اکسل و CSV</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/csv-excel.html#نصب-و-وارد-کردن",
+    "href": "chapter/files/csv-excel.html#نصب-و-وارد-کردن",
+    "title": "اکسل و CSV",
+    "section": "نصب و وارد کردن",
+    "text": "نصب و وارد کردن\npip install pandas openpyxl\nimport pandas as pd\n\nopenpyxl برای خواندن/نوشتن فایل‌های Excel لازمه (pandas از پشت صحنه ازش استفاده می‌کنه)",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>اکسل و CSV</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/csv-excel.html#خواندن-فایل-csv",
+    "href": "chapter/files/csv-excel.html#خواندن-فایل-csv",
+    "title": "اکسل و CSV",
+    "section": "خواندن فایل CSV",
+    "text": "خواندن فایل CSV\ndf = pd.read_csv('data.csv')\nprint(df)\n\nخروجی از نوع DataFrame هست — شبیه یک جدول اکسل",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>اکسل و CSV</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/csv-excel.html#خواندن-فایل-excel",
+    "href": "chapter/files/csv-excel.html#خواندن-فایل-excel",
+    "title": "اکسل و CSV",
+    "section": "خواندن فایل Excel",
+    "text": "خواندن فایل Excel\ndf = pd.read_excel('data.xlsx')\nprint(df)\n\nاگه فایل چند شیت داشته باشه، می‌شه شیت رو مشخص کرد:\n\ndf = pd.read_excel('data.xlsx', sheet_name='Sheet1')",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>اکسل و CSV</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/csv-excel.html#نگاه-سریع-به-داده",
+    "href": "chapter/files/csv-excel.html#نگاه-سریع-به-داده",
+    "title": "اکسل و CSV",
+    "section": "نگاه سریع به داده",
+    "text": "نگاه سریع به داده\n\n\n\nمتد\nکار\n\n\n\n\ndf.head()\nنمایش ۵ ردیف اول\n\n\ndf.shape\nتعداد (ردیف, ستون)\n\n\ndf.columns\nلیست نام ستون‌ها\n\n\ndf.info()\nنوع داده هر ستون + تعداد مقادیر",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>اکسل و CSV</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/csv-excel.html#دسترسی-به-داده",
+    "href": "chapter/files/csv-excel.html#دسترسی-به-داده",
+    "title": "اکسل و CSV",
+    "section": "دسترسی به داده",
+    "text": "دسترسی به داده\nprint(df['name'])          # یک ستون\nprint(df.iloc[0])           # یک ردیف با اندیس عددی\nprint(df.loc[0, 'name'])    # یک سلول خاص",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>اکسل و CSV</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/csv-excel.html#فیلتر-کردن-داده",
+    "href": "chapter/files/csv-excel.html#فیلتر-کردن-داده",
+    "title": "اکسل و CSV",
+    "section": "فیلتر کردن داده",
+    "text": "فیلتر کردن داده\nadults = df[df['age'] &gt;= 18]\nprint(adults)",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>اکسل و CSV</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/csv-excel.html#نوشتن-در-فایل",
+    "href": "chapter/files/csv-excel.html#نوشتن-در-فایل",
+    "title": "اکسل و CSV",
+    "section": "نوشتن در فایل",
+    "text": "نوشتن در فایل\ndf.to_csv('output.csv', index=False)\ndf.to_excel('output.xlsx', index=False)\n\nindex=False : ستون اندیس اضافه (0,1,2,…) توی فایل خروجی نوشته نشه",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>اکسل و CSV</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/csv-excel.html#ساخت-dataframe-از-صفر-بدون-فایل-ورودی",
+    "href": "chapter/files/csv-excel.html#ساخت-dataframe-از-صفر-بدون-فایل-ورودی",
+    "title": "اکسل و CSV",
+    "section": "ساخت DataFrame از صفر (بدون فایل ورودی)",
+    "text": "ساخت DataFrame از صفر (بدون فایل ورودی)\ndata = {\n    'name': ['Ali', 'Sara'],\n    'age': [25, 30]\n}\ndf = pd.DataFrame(data)",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>اکسل و CSV</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/csv-excel.html#نکته-کلاسی",
+    "href": "chapter/files/csv-excel.html#نکته-کلاسی",
+    "title": "اکسل و CSV",
+    "section": "نکته کلاسی",
+    "text": "نکته کلاسی\n\nبرای کار سریع و ساده با جدول (فیلتر، مرتب‌سازی، خروجی گرفتن)، pandas خیلی سریع‌تر و خواناتر از خواندن دستی خط‌به‌خط فایله؛ ولی برای فایل‌های متنی ساده (مثل log) همون روش open() کافیه.",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>اکسل و CSV</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/string.html",
+    "href": "chapter/regex/string.html",
+    "title": "دستکاری رشته",
+    "section": "",
+    "text": "پاک‌سازی و حذف فضای خالی",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>دستکاری رشته</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/string.html#پاکسازی-و-حذف-فضای-خالی",
+    "href": "chapter/regex/string.html#پاکسازی-و-حذف-فضای-خالی",
+    "title": "دستکاری رشته",
+    "section": "",
+    "text": "متد\nکار\n\n\n\n\n.strip()\nحذف فضای خالی از دو طرف\n\n\n.lstrip()\nحذف فضای خالی از چپ\n\n\n.rstrip()\nحذف فضای خالی از راست\n\n\n.strip('xyz')\nحذف کاراکترهای مشخص‌شده از دو طرف\n\n\n\n\"  hello  \".strip()   # 'hello'",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>دستکاری رشته</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/string.html#تغییر-حالت-حروف",
+    "href": "chapter/regex/string.html#تغییر-حالت-حروف",
+    "title": "دستکاری رشته",
+    "section": "تغییر حالت حروف",
+    "text": "تغییر حالت حروف\n\n\n\nمتد\nکار\n\n\n\n\n.upper()\nهمه حروف بزرگ\n\n\n.lower()\nهمه حروف کوچک\n\n\n.title()\nحرف اول هر کلمه بزرگ\n\n\n.capitalize()\nفقط حرف اول رشته بزرگ\n\n\n.swapcase()\nبزرگ↔︎کوچک برعکس بشه",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>دستکاری رشته</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/string.html#جستجو-و-جایگزینی",
+    "href": "chapter/regex/string.html#جستجو-و-جایگزینی",
+    "title": "دستکاری رشته",
+    "section": "جستجو و جایگزینی",
+    "text": "جستجو و جایگزینی\n\n\n\nمتد\nکار\n\n\n\n\n.find(x)\nاندیس اولین وقوع (اگه نبود -1)\n\n\n.index(x)\nمثل find ولی اگه نبود خطا می‌ده\n\n\n.count(x)\nتعداد تکرار\n\n\n.replace(old, new)\nجایگزینی همه موارد\n\n\n\n\"banana\".replace(\"a\", \"o\")   # 'bonono'",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>دستکاری رشته</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/string.html#تقسیم-و-اتصال",
+    "href": "chapter/regex/string.html#تقسیم-و-اتصال",
+    "title": "دستکاری رشته",
+    "section": "تقسیم و اتصال",
+    "text": "تقسیم و اتصال\n\"a,b,c\".split(\",\")          # ['a', 'b', 'c']\n\"-\".join(['a', 'b', 'c'])   # 'a-b-c'",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>دستکاری رشته</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/string.html#بررسی-نوع-محتوا",
+    "href": "chapter/regex/string.html#بررسی-نوع-محتوا",
+    "title": "دستکاری رشته",
+    "section": "بررسی نوع محتوا",
+    "text": "بررسی نوع محتوا\n\n\n\nمتد\nکار\n\n\n\n\n.isdigit()\nآیا فقط عدده\n\n\n.isalpha()\nآیا فقط حرفه\n\n\n.isalnum()\nآیا فقط حرف/عدده\n\n\n.isspace()\nآیا فقط فضای خالیه",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>دستکاری رشته</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/string.html#چیدمان-و-پرکردن-padding",
+    "href": "chapter/regex/string.html#چیدمان-و-پرکردن-padding",
+    "title": "دستکاری رشته",
+    "section": "چیدمان و پرکردن (padding)",
+    "text": "چیدمان و پرکردن (padding)\n\"5\".zfill(3)          # '005'\n\"hi\".center(10, '*')  # '****hi****'\n\"hi\".ljust(10, '-')   # 'hi--------'\n\"hi\".rjust(10, '-')   # '--------hi'",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>دستکاری رشته</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/string.html#قالببندی-رشته-سه-روش",
+    "href": "chapter/regex/string.html#قالببندی-رشته-سه-روش",
+    "title": "دستکاری رشته",
+    "section": "قالب‌بندی رشته — سه روش",
+    "text": "قالب‌بندی رشته — سه روش\n\n\n\nروش\nمثال\n\n\n\n\n% (قدیمی)\n'%d camels' % camels\n\n\n.format()\n'{} camels'.format(camels)\n\n\nf-string (پیشنهادی)\nf'{camels} camels'\n\n\n\nname = \"Ali\"\nscore = 95.678\n\nprint(f\"{name}: {score:.2f}\")   # Ali: 95.68\n\n:.2f : دو رقم اعشار\n\n\nتنظیم عرض و تراز در f-string\nprint(f\"{name:&gt;10}\")   # تراز راست، عرض ۱۰\nprint(f\"{name:&lt;10}\")   # تراز چپ\nprint(f\"{name:^10}\")   # وسط‌چین",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>دستکاری رشته</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/re.html",
+    "href": "chapter/regex/re.html",
+    "title": "عبارات منظم re",
+    "section": "",
+    "text": "عبارت منظم (Regex) چیست؟",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>عبارات منظم `re`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/re.html#عبارت-منظم-regex-چیست",
+    "href": "chapter/regex/re.html#عبارت-منظم-regex-چیست",
+    "title": "عبارات منظم re",
+    "section": "",
+    "text": "یک الگوی متنی برای جستجو، تطبیق یا استخراج بخش‌هایی از رشته\nدر پایتون با ماژول re کار می‌کنیم\n\nimport re",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>عبارات منظم `re`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/re.html#توابع-اصلی-ماژول-re",
+    "href": "chapter/regex/re.html#توابع-اصلی-ماژول-re",
+    "title": "عبارات منظم re",
+    "section": "توابع اصلی ماژول re",
+    "text": "توابع اصلی ماژول re\n\n\n\nتابع\nکار\n\n\n\n\nre.search()\nجستجوی اولین تطبیق در هر جای رشته\n\n\nre.match()\nبررسی تطبیق فقط از ابتدای رشته\n\n\nre.findall()\nبرگرداندن لیست همه تطبیق‌ها\n\n\nre.sub()\nجایگزینی بخش‌های منطبق با متن دیگر\n\n\nre.split()\nتقسیم رشته بر اساس الگو",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>عبارات منظم `re`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/re.html#مثال-search",
+    "href": "chapter/regex/re.html#مثال-search",
+    "title": "عبارات منظم re",
+    "section": "مثال: search",
+    "text": "مثال: search\ntext = \"My email is ali@example.com\"\nresult = re.search(r'\\w+@\\w+\\.\\w+', text)\nprint(result.group())   # ali@example.com\n\nr'...' : raw string — همیشه برای regex استفاده بشه تا \\ اشتباه تفسیر نشه",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>عبارات منظم `re`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/re.html#نمادهای-پرکاربرد-در-regex",
+    "href": "chapter/regex/re.html#نمادهای-پرکاربرد-در-regex",
+    "title": "عبارات منظم re",
+    "section": "نمادهای پرکاربرد در regex",
+    "text": "نمادهای پرکاربرد در regex\n\n\n\nنماد\nمعنی\n\n\n\n\n\\d\nیک رقم (0-9)\n\n\n\\w\nیک کاراکتر حرفی/عددی یا _\n\n\n\\s\nفضای خالی (space, tab, …)\n\n\n.\nهر کاراکتری (به‌جز خط جدید)\n\n\n*\nصفر یا بیشتر تکرار\n\n\n+\nیک یا بیشتر تکرار\n\n\n?\nصفر یا یک بار (اختیاری)\n\n\n^\nشروع رشته\n\n\n$\nپایان رشته\n\n\n[]\nیکی از کاراکترهای داخل براکت\n\n\n{n,m}\nتکرار بین n تا m بار",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>عبارات منظم `re`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/re.html#findall-استخراج-همه-موارد",
+    "href": "chapter/regex/re.html#findall-استخراج-همه-موارد",
+    "title": "عبارات منظم re",
+    "section": "findall — استخراج همه موارد",
+    "text": "findall — استخراج همه موارد\ntext = \"Numbers: 12, 45, 78\"\nnumbers = re.findall(r'\\d+', text)\nprint(numbers)   # ['12', '45', '78']",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>عبارات منظم `re`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/re.html#sub-جایگزینی",
+    "href": "chapter/regex/re.html#sub-جایگزینی",
+    "title": "عبارات منظم re",
+    "section": "sub — جایگزینی",
+    "text": "sub — جایگزینی\ntext = \"Contact: 0912-1234567\"\nmasked = re.sub(r'\\d', '*', text)\nprint(masked)   # Contact: ****-*******",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>عبارات منظم `re`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/re.html#استخراج-با-گروه",
+    "href": "chapter/regex/re.html#استخراج-با-گروه",
+    "title": "عبارات منظم re",
+    "section": "استخراج با گروه (())",
+    "text": "استخراج با گروه (())\ntext = \"Name: Ali, Age: 25\"\nmatch = re.search(r'Name: (\\w+), Age: (\\d+)', text)\nprint(match.group(1))   # Ali\nprint(match.group(2))   # 25\n\nهر پرانتز یک گروه جدا می‌سازه که به‌صورت مستقل قابل دسترسیه",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>عبارات منظم `re`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/re.html#کامپایل-کردن-الگو-برای-استفاده-مکرر",
+    "href": "chapter/regex/re.html#کامپایل-کردن-الگو-برای-استفاده-مکرر",
+    "title": "عبارات منظم re",
+    "section": "کامپایل کردن الگو (برای استفاده مکرر)",
+    "text": "کامپایل کردن الگو (برای استفاده مکرر)\npattern = re.compile(r'\\d+')\nprint(pattern.findall(\"a1 b22 c333\"))\n\nوقتی یک الگو رو چندبار قراره استفاده کنیم، کامپایل کردنش بهینه‌تره",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>عبارات منظم `re`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/re.html#نکته",
+    "href": "chapter/regex/re.html#نکته",
+    "title": "عبارات منظم re",
+    "section": "نکته",
+    "text": "نکته\n\nبرای موارد ساده (مثل startswith()، in) نیازی به regex نیست — regex برای الگوهای پیچیده‌تر (مثل ایمیل، شماره تلفن، فرمت تاریخ) به‌کار می‌ره",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>عبارات منظم `re`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/unicode.html",
+    "href": "chapter/regex/unicode.html",
+    "title": "یونیکد و رمزگذاری",
+    "section": "",
+    "text": "چرا این بحث مهمه؟",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>یونیکد و رمزگذاری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/unicode.html#چرا-این-بحث-مهمه",
+    "href": "chapter/regex/unicode.html#چرا-این-بحث-مهمه",
+    "title": "یونیکد و رمزگذاری",
+    "section": "",
+    "text": "هر متنی که کامپیوتر ذخیره/منتقل می‌کنه، در نهایت به‌صورت بایت هست\nبرای تبدیل بین کاراکتر و بایت، به یک استاندارد رمزگذاری (Encoding) نیاز داریم",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>یونیکد و رمزگذاری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/unicode.html#یونیکد-unicode-چیست",
+    "href": "chapter/regex/unicode.html#یونیکد-unicode-چیست",
+    "title": "یونیکد و رمزگذاری",
+    "section": "یونیکد (Unicode) چیست؟",
+    "text": "یونیکد (Unicode) چیست؟\n\nاستانداردی که به هر کاراکتر (از هر زبانی — فارسی، انگلیسی، ایموجی و…) یک عدد یکتا (Code Point) اختصاص می‌ده\nدر پایتون ۳، رشته‌ها (str) به‌صورت پیش‌فرض یونیکد هستن\n\nprint(ord('A'))    # 65   -&gt; کد یونیکد کاراکتر\nprint(chr(65))      # 'A'  -&gt; کاراکتر متناظر با کد\nprint(ord('س'))     # کد یونیکد حرف فارسی",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>یونیکد و رمزگذاری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/unicode.html#رمزگذاری-encoding-چیست",
+    "href": "chapter/regex/unicode.html#رمزگذاری-encoding-چیست",
+    "title": "یونیکد و رمزگذاری",
+    "section": "رمزگذاری (Encoding) چیست؟",
+    "text": "رمزگذاری (Encoding) چیست؟\n\nروش تبدیل کاراکتر یونیکد به دنباله‌ای از بایت‌ها (برای ذخیره در فایل یا ارسال روی شبکه)\nرایج‌ترین: UTF-8\n\n\n\n\nencoding\nویژگی\n\n\n\n\nUTF-8\nاستاندارد، پشتیبانی از همه زبان‌ها، حجم بهینه — پیش‌فرض پایتون\n\n\nASCII\nفقط حروف انگلیسی و علائم پایه\n\n\nUTF-16 / UTF-32\nفضای بیشتر، کمتر رایج در وب",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>یونیکد و رمزگذاری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/unicode.html#تبدیل-بین-str-و-bytes",
+    "href": "chapter/regex/unicode.html#تبدیل-بین-str-و-bytes",
+    "title": "یونیکد و رمزگذاری",
+    "section": "تبدیل بین str و bytes",
+    "text": "تبدیل بین str و bytes\ns = \"سلام دنیا\"\nb = s.encode('utf-8')     # str -&gt; bytes\nprint(b)\nprint(type(b))            # &lt;class 'bytes'&gt;\n\ns2 = b.decode('utf-8')    # bytes -&gt; str\nprint(s2)                 # سلام دنیا",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>یونیکد و رمزگذاری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/unicode.html#خطای-رایج-unicodedecodeerror",
+    "href": "chapter/regex/unicode.html#خطای-رایج-unicodedecodeerror",
+    "title": "یونیکد و رمزگذاری",
+    "section": "خطای رایج: UnicodeDecodeError",
+    "text": "خطای رایج: UnicodeDecodeError\n\nوقتی بایت‌هایی رو با encoding اشتباه بخوایم decode کنیم\n\nb = \"سلام\".encode('utf-8')\nb.decode('ascii')   # خطا! چون ascii فارسی رو نمی‌شناسه\nUnicodeDecodeError: 'ascii' codec can't decode byte...",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>یونیکد و رمزگذاری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/unicode.html#نکته-مهم-خواندن-فایل-با-encoding-درست",
+    "href": "chapter/regex/unicode.html#نکته-مهم-خواندن-فایل-با-encoding-درست",
+    "title": "یونیکد و رمزگذاری",
+    "section": "نکته مهم: خواندن فایل با encoding درست",
+    "text": "نکته مهم: خواندن فایل با encoding درست\n\nاگه فایل با UTF-8 ذخیره شده ولی با encoding اشتباه باز بشه، متن به‌هم می‌ریزه\n\nwith open('data.txt', encoding='utf-8') as f:\n    text = f.read()\n\nنکته کلاسی: اگه هنگام باز کردن فایل متنی، محتوا به‌صورت کاراکترهای عجیب یا خطا نمایش داده شد، اولین چیزی که باید چک کرد encoding فایله",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>یونیکد و رمزگذاری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/unicode.html#نکته-unicodeencodeerror",
+    "href": "chapter/regex/unicode.html#نکته-unicodeencodeerror",
+    "title": "یونیکد و رمزگذاری",
+    "section": "نکته: UnicodeEncodeError",
+    "text": "نکته: UnicodeEncodeError\n\nبرعکس حالت قبل، وقتی بخوایم رشته‌ای رو با یک encoding محدود ذخیره کنیم که پشتیبانی نمی‌کنه\n\n\"سلام\".encode('ascii')\nUnicodeEncodeError: 'ascii' codec can't encode characters...",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>یونیکد و رمزگذاری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/unicode.html#جمعبندی",
+    "href": "chapter/regex/unicode.html#جمعبندی",
+    "title": "یونیکد و رمزگذاری",
+    "section": "جمع‌بندی",
+    "text": "جمع‌بندی\n\nstr = کاراکتر (یونیکد) → برای نمایش و پردازش متن\nbytes = بایت خام → برای ذخیره/انتقال\nتبدیل: str → bytes با .encode()، bytes → str با .decode()\nهمیشه UTF-8 رو به‌عنوان پیش‌فرض ترجیح بدیم مگه دلیل خاصی برای غیر اون باشه",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>یونیکد و رمزگذاری</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/text-processing.html",
+    "href": "chapter/regex/text-processing.html",
+    "title": "پردازش متن",
+    "section": "",
+    "text": "اصل کلی: کِی regex و کِی متد رشته‌ای؟",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>پردازش متن</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/text-processing.html#اصل-کلی-کی-regex-و-کی-متد-رشتهای",
+    "href": "chapter/regex/text-processing.html#اصل-کلی-کی-regex-و-کی-متد-رشتهای",
+    "title": "پردازش متن",
+    "section": "",
+    "text": "موقعیت\nابزار مناسب\n\n\n\n\nبررسی ساده (شروع/پایان/شامل بودن)\nمتدهای رشته‌ای (in، startswith())\n\n\nالگوی پیچیده یا متغیر (ایمیل، شماره، تاریخ)\nre\n\n\nجایگزینی ساده یک کلمه\n.replace()\n\n\nجایگزینی بر اساس یک الگو\nre.sub()",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>پردازش متن</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/text-processing.html#مثال-۱-استخراج-ایمیلها-از-یک-متن",
+    "href": "chapter/regex/text-processing.html#مثال-۱-استخراج-ایمیلها-از-یک-متن",
+    "title": "پردازش متن",
+    "section": "مثال ۱: استخراج ایمیل‌ها از یک متن",
+    "text": "مثال ۱: استخراج ایمیل‌ها از یک متن\nimport re\n\ntext = \"تماس با ali@test.com یا sara.k@company.org\"\nemails = re.findall(r'[\\w.]+@[\\w.]+', text)\nprint(emails)\n['ali@test.com', 'sara.k@company.org']",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>پردازش متن</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/text-processing.html#مثال-۲-اعتبارسنجی-شماره-موبایل-ایرانی",
+    "href": "chapter/regex/text-processing.html#مثال-۲-اعتبارسنجی-شماره-موبایل-ایرانی",
+    "title": "پردازش متن",
+    "section": "مثال ۲: اعتبارسنجی شماره موبایل ایرانی",
+    "text": "مثال ۲: اعتبارسنجی شماره موبایل ایرانی\nimport re\n\ndef is_valid_mobile(number):\n    pattern = r'^09\\d{9}$'\n    return bool(re.match(pattern, number))\n\nprint(is_valid_mobile(\"09121234567\"))   # True\nprint(is_valid_mobile(\"0912123456\"))    # False (کوتاهه)",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>پردازش متن</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/text-processing.html#مثال-۳-پاکسازی-متن-ورودی-کاربر",
+    "href": "chapter/regex/text-processing.html#مثال-۳-پاکسازی-متن-ورودی-کاربر",
+    "title": "پردازش متن",
+    "section": "مثال ۳: پاک‌سازی متن ورودی کاربر",
+    "text": "مثال ۳: پاک‌سازی متن ورودی کاربر\ndef clean_text(text):\n    text = text.strip()                     # حذف فاصله اضافه\n    text = re.sub(r'\\s+', ' ', text)         # چند فاصله پشت سرهم -&gt; یک فاصله\n    text = re.sub(r'[^\\w\\s]', '', text)      # حذف علائم نگارشی\n    return text\n\nraw = \"   سلام!!   دنیای    پایتون؟؟   \"\nprint(clean_text(raw))\nسلام دنیای پایتون",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>پردازش متن</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/text-processing.html#مثال-۴-شمارش-کلمات-یک-متن",
+    "href": "chapter/regex/text-processing.html#مثال-۴-شمارش-کلمات-یک-متن",
+    "title": "پردازش متن",
+    "section": "مثال ۴: شمارش کلمات یک متن",
+    "text": "مثال ۴: شمارش کلمات یک متن\ntext = \"پایتون زبان خوبی است. پایتون ساده است.\"\nwords = re.findall(r'\\w+', text)\nprint(len(words))\n\nfrom collections import Counter\nprint(Counter(words))",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>پردازش متن</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/text-processing.html#مثال-۵-استخراج-اعداد-از-یک-رشته-و-جمع-کردن-آنها",
+    "href": "chapter/regex/text-processing.html#مثال-۵-استخراج-اعداد-از-یک-رشته-و-جمع-کردن-آنها",
+    "title": "پردازش متن",
+    "section": "مثال ۵: استخراج اعداد از یک رشته و جمع کردن آن‌ها",
+    "text": "مثال ۵: استخراج اعداد از یک رشته و جمع کردن آن‌ها\ntext = \"قیمت‌ها: 120, 45.5, 900\"\nnumbers = re.findall(r'\\d+\\.?\\d*', text)\nnumbers = [float(n) for n in numbers]\nprint(sum(numbers))",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>پردازش متن</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/text-processing.html#مثال-۶-تبدیل-snake_case-به-camelcase-ترکیب-split-join",
+    "href": "chapter/regex/text-processing.html#مثال-۶-تبدیل-snake_case-به-camelcase-ترکیب-split-join",
+    "title": "پردازش متن",
+    "section": "مثال ۶: تبدیل snake_case به camelCase (ترکیب split + join)",
+    "text": "مثال ۶: تبدیل snake_case به camelCase (ترکیب split + join)\ndef to_camel_case(text):\n    parts = text.split('_')\n    return parts[0] + ''.join(p.title() for p in parts[1:])\n\nprint(to_camel_case(\"this_is_snake_case\"))\nthisIsSnakeCase",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>پردازش متن</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/text-processing.html#مثال-۷-بررسی-معتبر-بودن-رمز-عبور-ترکیب-چند-شرط-با-regex",
+    "href": "chapter/regex/text-processing.html#مثال-۷-بررسی-معتبر-بودن-رمز-عبور-ترکیب-چند-شرط-با-regex",
+    "title": "پردازش متن",
+    "section": "مثال ۷: بررسی معتبر بودن رمز عبور (ترکیب چند شرط با regex)",
+    "text": "مثال ۷: بررسی معتبر بودن رمز عبور (ترکیب چند شرط با regex)\ndef is_strong_password(pw):\n    if len(pw) &lt; 8:\n        return False\n    if not re.search(r'[A-Z]', pw):     # حداقل یک حرف بزرگ\n        return False\n    if not re.search(r'\\d', pw):        # حداقل یک عدد\n        return False\n    return True\n\nprint(is_strong_password(\"Abc12345\"))   # True\nprint(is_strong_password(\"abc\"))        # False",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>پردازش متن</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/regex/text-processing.html#جمعبندی",
+    "href": "chapter/regex/text-processing.html#جمعبندی",
+    "title": "پردازش متن",
+    "section": "جمع‌بندی",
+    "text": "جمع‌بندی\n\nتمرین اصلی این بخش: ترکیب split، join، replace با re.findall و re.sub برای حل مسائل واقعی پردازش متن — معمولاً راه‌حل نهایی از ترکیب چند تا از این ابزارها به‌دست میاد، نه فقط یکی",
+    "crumbs": [
+      "عبارات منظم",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>پردازش متن</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/tkinter/tkinter.html",
+    "href": "chapter/tkinter/tkinter.html",
+    "title": "رابط گرافیکی (tkinter)",
+    "section": "",
+    "text": "ورود به دنیای گرافیک",
+    "crumbs": [
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>رابط گرافیکی (`tkinter`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/tkinter/tkinter.html#ورود-به-دنیای-گرافیک",
+    "href": "chapter/tkinter/tkinter.html#ورود-به-دنیای-گرافیک",
+    "title": "رابط گرافیکی (tkinter)",
+    "section": "",
+    "text": "ایجاد Loop برای بدنه\nدر این بخش با ساختن یک پنجره ساده وارد دنیای رابط گرافیکی می‌شویم. متد mainloop() باعث می‌شود پنجره باز بماند و منتظر تعامل کاربر بماند.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.mainloop()\n\n\n\nعنوان\nدر این مرحله برای پنجره یک عنوان مشخص می‌کنیم. متد title() متن نمایش داده‌شده در نوار بالای پنجره را تنظیم می‌کند.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\n\nwindow.mainloop()\n\n\n\nتغییر سایز پنجره\nدر این بخش اندازه اولیه پنجره را مشخص می‌کنیم. متد geometry() عرض و ارتفاع پنجره را بر حسب پیکسل تعیین می‌کند.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.title(\"Hello World!\")\n\nwindow.geometry(\"480x360\")  # width x height\n# window.minsize(width=400, height=300)\n# window.maxsize(width=640, height=450)\n# window.resizable(width=False, height=False)\n\nwindow.mainloop()",
+    "crumbs": [
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>رابط گرافیکی (`tkinter`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/tkinter/tkinter.html#ابزارهای-اصلی-widgets",
+    "href": "chapter/tkinter/tkinter.html#ابزارهای-اصلی-widgets",
+    "title": "رابط گرافیکی (tkinter)",
+    "section": "ابزارهای اصلی (Widgets)",
+    "text": "ابزارهای اصلی (Widgets)\n\nبرچسب\nبرچسب یا Label برای نمایش متن در پنجره استفاده می‌شود. می‌توان ظاهر آن مثل فونت، رنگ پس‌زمینه و رنگ متن را تغییر داد.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntk.Label(window, text=\"Hello Mohsen\").pack()\ntk.Label(\n    window,\n    text=\"How are you?\",\n    font=(\"Roboto\", 18, \"Bold\"),  # family size face\n    bg=\"blue\",  # background\n    fg=\"white\",  # forground\n).pack(pady=10) # padding in y axis\n\nwindow.mainloop()\n\n\n\nدکمه\nدکمه یا Button برای انجام یک عمل هنگام کلیک کاربر استفاده می‌شود. با استفاده از پارامتر command می‌توان یک تابع را به دکمه متصل کرد.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    # print(\"Hello World!\")\n    lbl.configure(text=\"Hello World!\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nbtn = tk.Button(window)\nbtn.configure(text=\"Say hello\", command=btn_print)\nbtn.pack(pady=10)\n\nlbl = Label(window, text=\"\")\nlbl.pack(pady=10)\n\nwindow.mainloop()\n\n\n\n\n\n\n\nاحتیاطگوسفند شمار\n\n\n\nدینا کوچولو که خوابش نمیبره مادرش بهش یاد داده قبل خواب توی ذهنش گوسفندهایی رو تصور کنه که از روی نرده رد میشن و سعی کنه تعداد اونهارو بشماره تا ذهنش خسته بشه بخوابه. اما دینا که تازه برنامه نویسی یاد گرفته بود به فکر این بود که چطور یک نرم افزار گوسفند شمار بسازه. دینا رو برای ساخت این نرم افزار راهنمایی کنید.\n\n\n\n\n\n\nنکتهپاسخ\n\n\n\n\n\n\nfrom tkinter import *\n\ncounter = 0\n\n\ndef btn_counter():\n    global counter\n    counter += 1\n    lbl.configure(text=f\"{counter} گوسفند.\")\n\n\nwindow = Tk()\nwindow.title(\"گوسفند شمار\")\nwindow.geometry(\"480x360\")\n\n\nbtn = Button(window)\nbtn.configure(text=\"بشمار\", command=btn_counter)\nbtn.pack(pady=10)\n\nlbl = Label(window, text=\"0 گوسفند.\")\nlbl.pack(pady=10)\n\nwindow.mainloop()\n\n\n\n\n\n\n\n\nورودی\nویجت Entry برای دریافت ورودی از کاربر استفاده می‌شود. با متد get() می‌توان مقدار واردشده را خواند و بر اساس آن تصمیم‌گیری کرد.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    name = ntr.get()\n    if name == \"\":\n        result.configure(\n            text=\"Please Enter your name!\",\n            fg=\"red\"\n        )\n    else:\n        result.configure(\n            text=f\"Hello {name}!\",\n            fg=\"blue\"\n        )\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nlbl = tk.Label(\n    window,\n    text=\"Enter your name:\",\n    font=(\"Roboto\", 10)\n)\nlbl.pack(pady=10)\n\nntr = tk.Entry(window)\nntr.pack(pady=5)\n\nbtn = tk.Button(window)\nbtn.configure(text=\"Say hello\", command=btn_print)\nbtn.pack()\n\nresult = tk.Label(\n    window,\n    text=\"\",\n    font=(\"Roboto\", 12, \"bold\")\n)\nresult.pack(pady=10)\n\nwindow.mainloop()",
+    "crumbs": [
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>رابط گرافیکی (`tkinter`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/tkinter/tkinter.html#تمرین",
+    "href": "chapter/tkinter/tkinter.html#تمرین",
+    "title": "رابط گرافیکی (tkinter)",
+    "section": "تمرین",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش پروژه ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "crumbs": [
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>رابط گرافیکی (`tkinter`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/project/project.html",
+    "href": "chapter/project/project.html",
+    "title": "پروژه",
+    "section": "",
+    "text": "پروژه ماشین حساب\nبرای اینکه کمی یادگیری جذاب‌تر شود یک سری پروژه در پایتون پیاده سازی کنید.\nپیش نیاز‌ها را در ترمینال یا کنسول اجرا کنید:\n--onefile: فقط یه فایل خروجی بسازه (نه یه پوشه‌ی پر از فایل)\n--noconsole: چون برنامه گرافیکی‌ـه و به پنجره‌ی ترمینال نیازی نداره\nبه کد زیر نگاه کنید که یک ماشین حساب ساده است و ببینید کدام مطالبی که توی این بخش گفته شده استفاده شده.",
+    "crumbs": [
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>پروژه</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/project/project.html#sec-project-calculator",
+    "href": "chapter/project/project.html#sec-project-calculator",
+    "title": "پروژه",
+    "section": "",
+    "text": "import tkinter as tk\n\n\ndef calculate():\n    try:\n        num1 = float(entry1.get())\n        num2 = float(entry2.get())\n        op = operator.get()\n\n        if op == \"+\":\n            result = num1 + num2\n        elif op == \"-\":\n            result = num1 - num2\n        elif op == \"*\":\n            result = num1 * num2\n        elif op == \"/\":\n            if num2 == 0:\n                result_label.config(text=\"خطا: تقسیم بر صفر!\")\n                return\n            result = num1 / num2\n        else:\n            result_label.config(text=\"عملگر نامعتبر است\")\n            return\n\n        result_label.config(text=f\"نتیجه: {result}\")\n\n    except ValueError:\n        result_label.config(text=\"لطفاً فقط عدد وارد کنید\")\n\n\nwindow = tk.Tk()\nwindow.title(\"ماشین حساب ساده\")\nwindow.geometry(\"300x250\")\n\nlabel1 = tk.Label(window, text=\"عدد اول:\")\nentry1 = tk.Entry(window)\n\nlabel2 = tk.Label(window, text=\"عدد دوم:\")\nentry2 = tk.Entry(window)\n\nlabel_op = tk.Label(window, text=\"عملگر (+ - * /):\")\noperator = tk.Entry(window)\n\ncalc_button = tk.Button(window, text=\"محاسبه\", command=calculate)\nresult_label = tk.Label(window, text=\"نتیجه: \", fg=\"blue\")\n\nlabel1.pack()\nentry1.pack()\n\nlabel2.pack()\nentry2.pack()\n\nlabel_op.pack()\noperator.pack()\n\ncalc_button.pack(pady=10)\nresult_label.pack()\n\nwindow.mainloop()",
+    "crumbs": [
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>پروژه</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/quera/answer.html",
+    "href": "chapter/quera/answer.html",
+    "title": "پاسخ سوالات کوئرا",
+    "section": "",
+    "text": "عبارات و دستورات",
+    "crumbs": [
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/quera/answer.html#عبارات-و-دستورات",
+    "href": "chapter/quera/answer.html#عبارات-و-دستورات",
+    "title": "پاسخ سوالات کوئرا",
+    "section": "",
+    "text": "3537 - سوال زرد\n\n\nکد\n\"\"\"\n----input\n2\n----output\nWoow!\n\"\"\"\nn = int(input())\nprint(\"W\",\"o\"*n,\"w!\", sep=\"\")",
+    "crumbs": [
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/quera/answer.html#ساختمان",
+    "href": "chapter/quera/answer.html#ساختمان",
+    "title": "پاسخ سوالات کوئرا",
+    "section": "ساختمان",
+    "text": "ساختمان\n\n2885 - سوال ساده\n\n\nکد\n\"\"\"\n----input\n2\n----output\nman khoshghlab hastam\nman khoshghlab hastam\n\"\"\"\nn = int(input())\ntext = \"man khoshghlab hastam\\n\"\n\nprint((text * n).strip())\n\n# for i in range(n):\n#     print(\"man khoshghlab hastam\")\n\n\n\n\n2636 - شطرنج حرفه‌ای\n\n\nکد\n\"\"\"\n----input\n0 2 2 2 3 7\n----output\n1 -1 0 0 -1 1\n\"\"\"\nx = input().split(\" \")\n\nprint(\n    1 - int(x[0]),\n    1 - int(x[1]),\n    2 - int(x[2]),\n    2 - int(x[3]),\n    2 - int(x[4]),\n    8 - int(x[5])\n)\n\n\n\n\n615 - تاریخ تولد\n\n\nکد\n\"\"\"\n----input\n7106\n----output\nsaal:71\nmaah:06\n----input\n7011\n----output\nsaal:70\nmaah:11\n----input\n0012\n----output\nsaal:00\nmaah:12\n\"\"\"\nyymm = input()\n\nprint(\"saal:\",yymm[0:2])\nprint(\"maah:\", yymm[2:4])\n\n\n\n\n8838 - کمک به کاپی\n\n\nکد\n\"\"\"\n----input\n2 shoma\n----output\ncopy of copy of shoma\n\"\"\"\nn_text = input()\nn, text = n_text.split(\" \")\n\nprint(\"copy of \" * int(n) + text)",
+    "crumbs": [
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/quera/answer.html#شرط",
+    "href": "chapter/quera/answer.html#شرط",
+    "title": "پاسخ سوالات کوئرا",
+    "section": "شرط",
+    "text": "شرط\n\n3429 - یخدارچی\n\n\nکد\n\"\"\"\n----input\n110\n----output\nSteam\n----input\n100\n----output\nWater\n----input\n-200\n----output\nIce\n\"\"\"\nn = int(input())\nif n &lt; 0:\n    print(\"Ice\")\nelif n &gt; 100:\n    print(\"Steam\")\nelse:\n    print(\"Water\")\n\n\n\n\n10162 - روز آزادی بیان در برره\n\n\nکد\n\"\"\"\n----input\n1\n----output\nPayin Barare\n----input\n74\n----output\nBala Barare\n\"\"\"\nprint(\"Bala Barare\" if int(input()) % 2 == 0 else \"Payin Barare\")\n\n\n\n\n280 - اعداد فیثاغورثی\n\n\nکد\n\"\"\"\n----input\n3\n4\n5\n----output\nYES\n\"\"\"\na, b, c = int(input()), int(input()), int(input())\n\nif a == 0 or b == 0 or c == 0:\n    print(\"NO\")\nelif a*a+b*b==c*c or a*a+c*c==b*b or c*c+b*b==a*a:\n    print(\"YES\")\nelse:\n    print(\"NO\")\n\n\n\n\n10230 - مشق امشب باقر\n\n\nکد\n\"\"\"\n----input\n70 60 50\n----output\nYes\n----input\n180 0 0\n----output\nNo\n----input\n150 40 10\n----output\nNo\n\"\"\"\nangles = input()\n\na1, a2, a3 = angles.split(\" \")\na1 = int(a1)\na2 = int(a2)\na3 = int(a3)\n\nif a1 == 0 or a2 == 0 or a3 == 0:\n    print(\"No\")\nelif a1 + a2 + a3 != 180:\n    print(\"No\")\nelse:\n    print(\"Yes\")\n\n\n\n\n3406 - صدگان خسته\n\n\nکد\n\"\"\"\n----input\n123\n421\n----output\n421 &lt; 123\n----input\n123\n123\n----output\n123 = 123\n----input\n201\n800\n----output\n800 &lt; 201\n\"\"\"\nx = input()\ny = input()\n\nif x[2] &lt; y [2]:\n    print(x, \"&lt;\", y)\nelif x[2] &gt; y [2]:\n    print(y, \"&lt;\", x)\nelse:\n    if x[1] &lt; y [1]:\n        print(x, \"&lt;\", y)\n    elif x[1] &gt; y [1]:\n        print(y, \"&lt;\", x)\n    else:\n        if x[0] &lt; y [0]:\n            print(x, \"&lt;\", y)\n        elif x[0] &gt; y [0]:\n            print(y, \"&lt;\", x)\n        else:\n            print(x, \"=\", y)\n\n\n\n\n51865 - بهداشت و سلامت\n\n\nکد\n\"\"\"\n----input\n14\n0\n----output\n20\n----input\n6\n7\n----output\n6\n----input\n13\n9\n----output\n4\n\"\"\"\nscore = int(input())\ndays = int(input())\n\nif days == 0:\n    print(20)\n\nelif days == 7:\n    print(score)\n\nelse:\n    final = score - days\n    if final &gt; 0:\n        print(final)\n    else:\n        print(0)\n\n\n\n\n10325 - همایش زندگی بهتر\n\n\nکد\n\"\"\"\n----input\n1 1\n----output\nRight 10 1\n----input\n4 15\n----output\nLeft 7 6\n\"\"\"\n\nr, c = input().split(\" \")\nr = int(r)\nc = int(c)\nd = \"Right\" if c &lt;= 10 else \"Left\"\na = 11 - r\nb = c if c &lt;= 10 else 21 - c\n\nprint(d, a, b)",
+    "crumbs": [
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/quera/answer.html#حلقه",
+    "href": "chapter/quera/answer.html#حلقه",
+    "title": "پاسخ سوالات کوئرا",
+    "section": "حلقه",
+    "text": "حلقه\n\n9774 - عدد چاپ‌کن\n\n\nکد\n\"\"\"\n----input\n50943\n----output\n5: 55555\n0:\n9: 999999999\n4: 4444\n3: 333\n\"\"\"\ndigits = input()\n\nfor i in digits:\n    print(i + \":\", i * int(i))\n\n\n\n\n17244 - شارژ موبایل\n\n\nکد\n\"\"\"\n----input\n1\n----output\n1\n----input\n3\n----output\n6\n\"\"\"\nk = int(input())\n\ntime = 0\n\nfor i in range(k):\n    time += i + 1\n\nprint(time)\n\n\n\n\n589 - فاکتوریل\n\n\nکد\n\"\"\"\n----input\n5\n----output\n120\n\"\"\"\nn = int(input())\nn_fact = 1\nfor i in range(1, n+1):\n    n_fact *= i\n\nprint(n_fact)\n\n\n\n\n3409 - جدول ضرب گنده\n\n\nکد\n\"\"\"\n----input\n3\n----output\n1 2 3\n2 4 6\n3 6 9\n\"\"\"\nn = int(input())\nfor i in range(1, n+1):\n    for j in range(1, n+1):\n        print(i*j, end=\" \")\n    print()\n\n\n\n\n3539 - تک‌رقمی\n\n\nکد\n\"\"\"\n----input\n14\n----output\n5\n\"\"\"\ndigits = list(input())\n\nwhile len(digits) &gt; 1:\n    sum_digits = 0\n    for d in digits:\n        sum_digits += int(d)\n    \n    digits = str(sum_digits)\n\n# while len(digits) &gt; 1:\n#     digits = str(sum([int(d) for d in digits]))\n#     digits = str(sum(list(map(int, digits)))\n\nprint(digits)\n\n\n\n\n282 - کامل بودن یا نبودن\n\n\nکد\n\"\"\"\n----input\n27\n----output\nNo\n----input\n6\n----output\nYES\n\"\"\"\nn = int(input())\ns = 0\nfor i in range(1, int(n/2) + 1):\n    if n % i == 0:\n        s += i\n\nprint(\"YES\" if n == s else \"NO\")\n\n\n\n\n616 - توان دو\n\n\nکد\n\"\"\"\n----input\n95\n----output\n128\n\"\"\"\nn = int(input())\n\nfor i in range(n):\n    if 2**i &gt; n:\n        print(2**i)\n        break\n\n\n\n\n591 - چاپ مربع\n\n\nکد\n\"\"\"\n----input\n6\n----output\n******\n*    *\n*    *\n*    *\n*    *\n******\n\"\"\"\nn = int(input())\n\nfor i in range(1,n+1):\n    for j in range(1, n+1):\n        if i == 1 or i == n or j == 1 or j == n:\n            print(\"*\", end=\"\")\n        else:\n            print(\" \", end=\"\")\n    print()\n\n\n\n\n618 - چاپ لوزی\n\n\nکد\n\"\"\"\n----input\n3\n----output\n   *\n  ***\n *****\n*******\n *****\n  ***\n   *\n\"\"\"\nn = int(input())\n\nfor i in range(n):\n    print(\" \" * (n - i) + \"*\" * (2 * i + 1))\n\nfor i in range(n + 1):\n    print(\" \" * i + \"*\" * (2 * (n - i) + 1))\n\n\n\n\n3405 - چاپ برعکس\n\n\nکد\n\"\"\"\n----input\n3\n4\n7\n4\n9\n0\n----output\n9\n4\n7\n4\n3\n\"\"\"\nnums = []\n\nwhile True:\n    num = input()\n    if num == \"0\":\n        break\n\n    nums.append(num)\n\nnums.reverse()\n\nfor num in nums:\n    print(num)\n\n\n\n\n617 - عدد خودمغلوب\n\n\nکد\n\"\"\"\n----input\n2356532\n----output\nYES\n\"\"\"\n\ndigits = input()\ndigits_reverse = \"\"\nfor d in digits:\n    digits_reverse = d + digits_reverse\n\nprint(\"YES\" if digits == digits_reverse else \"NO\")\n\n\n\n\n4065 - خر در چمن فراوونه!!\n\n\nکد\n\"\"\"\n----input\n1 1 1\n----output\n1\n----input\n3 4 5\n----output\n17\n----input\n10 3 2\n----output\n13\n\"\"\"\n\na, b, l = [int(x) for x in input().split(\" \")]\nn = 0\ntime = 0\n\ni = j = 0\n\nwhile n &lt; l:\n    if i == j:\n        i += 1\n    else:\n        j += 1\n\n    time = i * a + j * b\n    n += 1\n\n\nprint(time)",
+    "crumbs": [
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/quera/answer.html#رشته",
+    "href": "chapter/quera/answer.html#رشته",
+    "title": "پاسخ سوالات کوئرا",
+    "section": "رشته",
+    "text": "رشته\n\n10231 - خُب باقر سرما خورده\n\n\nکد\n\"\"\"\n----input\nN-MOLANA1\n9A-UKOK\nSAYE-NTERP\nG-SANAEI\nRF-MOLLASADRA\n----output\n1\n----input\nN321-HAFEEZ\nF3-B12I\nF-BI-12\nOVO-JE-FE\nKASHANI \n----output\nNOT FOUND!\n----input\n47-MOLANA\nBOND-007\nRF-MOLANA18\nMARICA-13\n13A-HAFEZLL\n----output\n1 3 5\n\"\"\"\nresult = []\nfor i in range(1, 5 + 1):\n    x = input()\n    if \"MOLANA\" in x or \"HAFEZ\" in x:\n        result.append(str(i))\n\nif result == []:\n    result = \"NOT FOUND!\"\n\nprint(' '.join(result))\n\n\n\n\n10232 - باقر خسته‌ست ولی بی‌فرهنگ نه\n\n\nکد\n\"\"\"\n----input\n2 10\n3 5 5\n5 2 2\n----output\n12\n----input\n4 30\n7 13 5\n14 4 4\n15 3 10\n25 1 1\n----output\n36\n\"\"\"\nn, l = [int(i) for i in input().split(\" \")]\ntime = 0\nlast_redlight = 0\n\nfor i in range(n):\n    d, r, g = [int(i) for i in input().split(\" \")]\n\n    time +=  d - last_redlight\n\n    if time % (r + g) &lt; r:\n        time += r - time % (r + g)\n    \n    last_redlight = d\n\ntime += l - last_redlight\nprint(time)",
+    "crumbs": [
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/quera/answer.html#تابع",
+    "href": "chapter/quera/answer.html#تابع",
+    "title": "پاسخ سوالات کوئرا",
+    "section": "تابع",
+    "text": "تابع\n\n102250 - پیدایِش!\n\n\nکد\n\"\"\"\ndef find(num1, num2, num3):\n    pass\n----input\n&gt;&gt;&gt; find(1, 2, 3)\n----output\n4\n----input\n&gt;&gt;&gt; find(1, 4, 3)\n----output\n2\n\"\"\"\ndef find(num1, num2, num3):\n    for i in range(1, 5):\n        if i not in [num1, num2, num3]:\n            return i\n\n\n\n\n148640 - آزمون تستی\n\n\nکد\n\"\"\"\n----input\n1\nC\n4\nOO#O\nOOOO\n#OOO\nOO##\n----output\n3\n0\n-1\n-1\n----input\n10\nAABBDCABCD\n1\n#OOO\n#OOO\nO#OO\nO#OO\nOOO#\nOO#O\n#OOO\nO#OO\nOO#O\nOOO#\n----output\n30\n\"\"\"\ndef check_score(answer, response):\n    abcd = {\"A\": 0, \"B\": 1, \"C\": 2, \"D\": 3}\n    score = 0\n    if \"#\" not in response:\n        return 0\n\n    for i in range(4):\n        if response[i] == \"#\":\n            if i != abcd[answer]:\n                return -1\n            else:\n                score = 3\n\n    return score\n\nquestions = int(input())\nanswers = input()\npapers = int(input())\n\n\nfor p in range(papers):\n    score = 0\n    for q in range(questions):\n        response = input()\n        score += check_score(answers[q], response)\n    \n    print(score)",
+    "crumbs": [
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "منابع",
+    "section": "",
+    "text": "[1] C.\nR. Severance, S. Blumenberg, and E. Hauser, “Python for everybody:\nExploring data in python 3,” 2016. https://www.py4e.com/\n\n\n[2] “New york university - statistic\nsoftware.” https://guides.nyu.edu/quant/statsoft\n\n\n[3] “Stack over flow - 2023 developer\nsurvey.” https://survey.stackoverflow.co/2023/",
+    "crumbs": [
+      "منابع"
+    ]
+  }
+]
