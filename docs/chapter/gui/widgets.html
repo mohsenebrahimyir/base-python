@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>پردازش متن – مبانی پایتون</title>
+<title>ابزارهای اصلی (Widgets) – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapter/gui/index.html" rel="next">
-<link href="../../chapter/regex/unicode.html" rel="prev">
+<link href="../../chapter/project/project.html" rel="next">
+<link href="../../chapter/gui/tkinter.html" rel="prev">
 <link href="../../img/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/regex/string.html">عبارات منظم</a></li><li class="breadcrumb-item"><a href="../../chapter/regex/text-processing.html"><span class="chapter-title">پردازش متن</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/gui/index.html">رابط گرافیکی</a></li><li class="breadcrumb-item"><a href="../../chapter/gui/widgets.html"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -637,7 +637,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/regex/text-processing.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">پردازش متن</span></a>
+  <a href="../../chapter/regex/text-processing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پردازش متن</span></a>
   </div>
 </li>
       </ul>
@@ -663,7 +663,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
+  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
@@ -710,15 +710,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#اصل-کلی-کی-regex-و-کی-متد-رشتهای" id="toc-اصل-کلی-کی-regex-و-کی-متد-رشتهای" class="nav-link active" data-scroll-target="#اصل-کلی-کی-regex-و-کی-متد-رشتهای">اصل کلی: کِی regex و کِی متد رشته‌ای؟</a></li>
-  <li><a href="#مثال-۱-استخراج-ایمیلها-از-یک-متن" id="toc-مثال-۱-استخراج-ایمیلها-از-یک-متن" class="nav-link" data-scroll-target="#مثال-۱-استخراج-ایمیلها-از-یک-متن">مثال ۱: استخراج ایمیل‌ها از یک متن</a></li>
-  <li><a href="#مثال-۲-اعتبارسنجی-شماره-موبایل-ایرانی" id="toc-مثال-۲-اعتبارسنجی-شماره-موبایل-ایرانی" class="nav-link" data-scroll-target="#مثال-۲-اعتبارسنجی-شماره-موبایل-ایرانی">مثال ۲: اعتبارسنجی شماره موبایل ایرانی</a></li>
-  <li><a href="#مثال-۳-پاکسازی-متن-ورودی-کاربر" id="toc-مثال-۳-پاکسازی-متن-ورودی-کاربر" class="nav-link" data-scroll-target="#مثال-۳-پاکسازی-متن-ورودی-کاربر">مثال ۳: پاک‌سازی متن ورودی کاربر</a></li>
-  <li><a href="#مثال-۴-شمارش-کلمات-یک-متن" id="toc-مثال-۴-شمارش-کلمات-یک-متن" class="nav-link" data-scroll-target="#مثال-۴-شمارش-کلمات-یک-متن">مثال ۴: شمارش کلمات یک متن</a></li>
-  <li><a href="#مثال-۵-استخراج-اعداد-از-یک-رشته-و-جمع-کردن-آنها" id="toc-مثال-۵-استخراج-اعداد-از-یک-رشته-و-جمع-کردن-آنها" class="nav-link" data-scroll-target="#مثال-۵-استخراج-اعداد-از-یک-رشته-و-جمع-کردن-آنها">مثال ۵: استخراج اعداد از یک رشته و جمع کردن آن‌ها</a></li>
-  <li><a href="#مثال-۶-تبدیل-snake_case-به-camelcase-ترکیب-split-join" id="toc-مثال-۶-تبدیل-snake_case-به-camelcase-ترکیب-split-join" class="nav-link" data-scroll-target="#مثال-۶-تبدیل-snake_case-به-camelcase-ترکیب-split-join">مثال ۶: تبدیل snake_case به camelCase (ترکیب split + join)</a></li>
-  <li><a href="#مثال-۷-بررسی-معتبر-بودن-رمز-عبور-ترکیب-چند-شرط-با-regex" id="toc-مثال-۷-بررسی-معتبر-بودن-رمز-عبور-ترکیب-چند-شرط-با-regex" class="nav-link" data-scroll-target="#مثال-۷-بررسی-معتبر-بودن-رمز-عبور-ترکیب-چند-شرط-با-regex">مثال ۷: بررسی معتبر بودن رمز عبور (ترکیب چند شرط با regex)</a></li>
-  <li><a href="#جمعبندی" id="toc-جمعبندی" class="nav-link" data-scroll-target="#جمعبندی">جمع‌بندی</a></li>
+  <li><a href="#برچسب" id="toc-برچسب" class="nav-link active" data-scroll-target="#برچسب">برچسب</a></li>
+  <li><a href="#دکمه" id="toc-دکمه" class="nav-link" data-scroll-target="#دکمه">دکمه</a></li>
+  <li><a href="#ورودی" id="toc-ورودی" class="nav-link" data-scroll-target="#ورودی">ورودی</a></li>
+  <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
   </ul>
 </nav>
     </div>
@@ -726,9 +721,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/regex/string.html">عبارات منظم</a></li><li class="breadcrumb-item"><a href="../../chapter/regex/text-processing.html"><span class="chapter-title">پردازش متن</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/gui/index.html">رابط گرافیکی</a></li><li class="breadcrumb-item"><a href="../../chapter/gui/widgets.html"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">پردازش متن</span></h1>
+<h1 class="title"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></h1>
 </div>
 
 
@@ -751,115 +746,173 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="اصل-کلی-کی-regex-و-کی-متد-رشتهای" class="level2">
-<h2 class="anchored" data-anchor-id="اصل-کلی-کی-regex-و-کی-متد-رشتهای">اصل کلی: کِی regex و کِی متد رشته‌ای؟</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>موقعیت</th>
-<th>ابزار مناسب</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>بررسی ساده (شروع/پایان/شامل بودن)</td>
-<td>متدهای رشته‌ای (<span dir="ltr"><code>in</code></span>، <span dir="ltr"><code>startswith()</code></span>)</td>
-</tr>
-<tr class="even">
-<td>الگوی پیچیده یا متغیر (ایمیل، شماره، تاریخ)</td>
-<td><span dir="ltr"><code>re</code></span></td>
-</tr>
-<tr class="odd">
-<td>جایگزینی ساده یک کلمه</td>
-<td><span dir="ltr"><code>.replace()</code></span></td>
-</tr>
-<tr class="even">
-<td>جایگزینی بر اساس یک الگو</td>
-<td><span dir="ltr"><code>re.sub()</code></span></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="مثال-۱-استخراج-ایمیلها-از-یک-متن" class="level2">
-<h2 class="anchored" data-anchor-id="مثال-۱-استخراج-ایمیلها-از-یک-متن">مثال ۱: استخراج ایمیل‌ها از یک متن</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<section id="برچسب" class="level2">
+<h2 class="anchored" data-anchor-id="برچسب">برچسب</h2>
+<p>برچسب یا <code>Label</code> برای نمایش متن در پنجره استفاده می‌شود. می‌توان ظاهر آن مثل فونت، رنگ پس‌زمینه و رنگ متن را تغییر داد.</p>
+<div id="743240a8" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"تماس با ali@test.com یا sara.k@company.org"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>emails <span class="op">=</span> re.findall(<span class="vs">r'</span><span class="pp">[</span><span class="dv">\w</span><span class="pp">.]</span><span class="op">+</span><span class="vs">@</span><span class="pp">[</span><span class="dv">\w</span><span class="pp">.]</span><span class="op">+</span><span class="vs">'</span>, text)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(emails)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>['ali@test.com', 'sara.k@company.org']</code></pre>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>tk.Label(window, text<span class="op">=</span><span class="st">"Hello Mohsen"</span>).pack()</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>tk.Label(</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    window,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span><span class="st">"How are you?"</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span>(<span class="st">"Roboto"</span>, <span class="dv">18</span>, <span class="st">"Bold"</span>),  <span class="co"># family size face</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    bg<span class="op">=</span><span class="st">"blue"</span>,  <span class="co"># background</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    fg<span class="op">=</span><span class="st">"white"</span>,  <span class="co"># forground</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>).pack(pady<span class="op">=</span><span class="dv">10</span>) <span class="co"># padding in y axis</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </section>
-<section id="مثال-۲-اعتبارسنجی-شماره-موبایل-ایرانی" class="level2">
-<h2 class="anchored" data-anchor-id="مثال-۲-اعتبارسنجی-شماره-موبایل-ایرانی">مثال ۲: اعتبارسنجی شماره موبایل ایرانی</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<section id="دکمه" class="level2">
+<h2 class="anchored" data-anchor-id="دکمه">دکمه</h2>
+<p>دکمه یا <code>Button</code> برای انجام یک عمل هنگام کلیک کاربر استفاده می‌شود. با استفاده از پارامتر <code>command</code> می‌توان یک تابع را به دکمه متصل کرد.</p>
+<div id="6d22082c" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> btn_print():</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># print("Hello World!")</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    lbl.configure(text<span class="op">=</span><span class="st">"Hello World!"</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>btn <span class="op">=</span> tk.Button(window)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>btn.configure(text<span class="op">=</span><span class="st">"Say hello"</span>, command<span class="op">=</span>btn_print)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>btn.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>lbl <span class="op">=</span> Label(window, text<span class="op">=</span><span class="st">""</span>)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>lbl.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="گوسفند شمار">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">احتیاط</span>گوسفند شمار
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>دینا کوچولو که خوابش نمیبره مادرش بهش یاد داده قبل خواب توی ذهنش گوسفندهایی رو تصور کنه که از روی نرده رد میشن و سعی کنه تعداد اونهارو بشماره تا ذهنش خسته بشه بخوابه. اما دینا که تازه برنامه نویسی یاد گرفته بود به فکر این بود که چطور یک نرم افزار گوسفند شمار بسازه. دینا رو برای ساخت این نرم افزار راهنمایی کنید.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="پاسخ">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">نکته</span>پاسخ
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div id="58661f4c" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tkinter <span class="im">import</span> <span class="op">*</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> is_valid_mobile(number):</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    pattern <span class="op">=</span> <span class="vs">r'</span><span class="dv">^</span><span class="vs">09</span><span class="dv">\d</span><span class="op">{9}</span><span class="dv">$</span><span class="vs">'</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">bool</span>(re.match(pattern, number))</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_valid_mobile(<span class="st">"09121234567"</span>))   <span class="co"># True</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_valid_mobile(<span class="st">"0912123456"</span>))    <span class="co"># False (کوتاهه)</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>counter <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> btn_counter():</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">global</span> counter</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    counter <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    lbl.configure(text<span class="op">=</span><span class="ss">f"</span><span class="sc">{</span>counter<span class="sc">}</span><span class="ss"> گوسفند."</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> Tk()</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"گوسفند شمار"</span>)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>btn <span class="op">=</span> Button(window)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>btn.configure(text<span class="op">=</span><span class="st">"بشمار"</span>, command<span class="op">=</span>btn_counter)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>btn.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>lbl <span class="op">=</span> Label(window, text<span class="op">=</span><span class="st">"0 گوسفند."</span>)</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>lbl.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="مثال-۳-پاکسازی-متن-ورودی-کاربر" class="level2">
-<h2 class="anchored" data-anchor-id="مثال-۳-پاکسازی-متن-ورودی-کاربر">مثال ۳: پاک‌سازی متن ورودی کاربر</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> clean_text(text):</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> text.strip()                     <span class="co"># حذف فاصله اضافه</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> re.sub(<span class="vs">r'</span><span class="dv">\s</span><span class="op">+</span><span class="vs">'</span>, <span class="st">' '</span>, text)         <span class="co"># چند فاصله پشت سرهم -&gt; یک فاصله</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> re.sub(<span class="vs">r'</span><span class="pp">[^</span><span class="dv">\w\s</span><span class="pp">]</span><span class="vs">'</span>, <span class="st">''</span>, text)      <span class="co"># حذف علائم نگارشی</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> text</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>raw <span class="op">=</span> <span class="st">"   سلام!!   دنیای    پایتون؟؟   "</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(clean_text(raw))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>سلام دنیای پایتون</code></pre>
+<section id="ورودی" class="level2">
+<h2 class="anchored" data-anchor-id="ورودی">ورودی</h2>
+<p>ویجت <code>Entry</code> برای دریافت ورودی از کاربر استفاده می‌شود. با متد <span dir="ltr"><code>get()</code></span> می‌توان مقدار واردشده را خواند و بر اساس آن تصمیم‌گیری کرد.</p>
+<div id="f162507e" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> btn_print():</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    name <span class="op">=</span> ntr.get()</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> name <span class="op">==</span> <span class="st">""</span>:</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        result.configure(</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>            text<span class="op">=</span><span class="st">"Please Enter your name!"</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>            fg<span class="op">=</span><span class="st">"red"</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        result.configure(</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>            text<span class="op">=</span><span class="ss">f"Hello </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span>,</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>            fg<span class="op">=</span><span class="st">"blue"</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>lbl <span class="op">=</span> tk.Label(</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    window,</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span><span class="st">"Enter your name:"</span>,</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span>(<span class="st">"Roboto"</span>, <span class="dv">10</span>)</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>lbl.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>ntr <span class="op">=</span> tk.Entry(window)</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>ntr.pack(pady<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>btn <span class="op">=</span> tk.Button(window)</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>btn.configure(text<span class="op">=</span><span class="st">"Say hello"</span>, command<span class="op">=</span>btn_print)</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>btn.pack()</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> tk.Label(</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>    window,</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span><span class="st">""</span>,</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span>(<span class="st">"Roboto"</span>, <span class="dv">12</span>, <span class="st">"bold"</span>)</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>result.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </section>
-<section id="مثال-۴-شمارش-کلمات-یک-متن" class="level2">
-<h2 class="anchored" data-anchor-id="مثال-۴-شمارش-کلمات-یک-متن">مثال ۴: شمارش کلمات یک متن</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"پایتون زبان خوبی است. پایتون ساده است."</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> re.findall(<span class="vs">r'</span><span class="dv">\w</span><span class="op">+</span><span class="vs">'</span>, text)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(words))</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Counter(words))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="مثال-۵-استخراج-اعداد-از-یک-رشته-و-جمع-کردن-آنها" class="level2">
-<h2 class="anchored" data-anchor-id="مثال-۵-استخراج-اعداد-از-یک-رشته-و-جمع-کردن-آنها">مثال ۵: استخراج اعداد از یک رشته و جمع کردن آن‌ها</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"قیمت‌ها: 120, 45.5, 900"</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> re.findall(<span class="vs">r'</span><span class="dv">\d</span><span class="op">+</span><span class="ch">\.</span><span class="op">?</span><span class="dv">\d</span><span class="op">*</span><span class="vs">'</span>, text)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="bu">float</span>(n) <span class="cf">for</span> n <span class="kw">in</span> numbers]</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">sum</span>(numbers))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="مثال-۶-تبدیل-snake_case-به-camelcase-ترکیب-split-join" class="level2">
-<h2 class="anchored" data-anchor-id="مثال-۶-تبدیل-snake_case-به-camelcase-ترکیب-split-join">مثال ۶: تبدیل snake_case به camelCase (ترکیب split + join)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> to_camel_case(text):</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    parts <span class="op">=</span> text.split(<span class="st">'_'</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> parts[<span class="dv">0</span>] <span class="op">+</span> <span class="st">''</span>.join(p.title() <span class="cf">for</span> p <span class="kw">in</span> parts[<span class="dv">1</span>:])</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(to_camel_case(<span class="st">"this_is_snake_case"</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>thisIsSnakeCase</code></pre>
-</section>
-<section id="مثال-۷-بررسی-معتبر-بودن-رمز-عبور-ترکیب-چند-شرط-با-regex" class="level2">
-<h2 class="anchored" data-anchor-id="مثال-۷-بررسی-معتبر-بودن-رمز-عبور-ترکیب-چند-شرط-با-regex">مثال ۷: بررسی معتبر بودن رمز عبور (ترکیب چند شرط با regex)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> is_strong_password(pw):</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(pw) <span class="op">&lt;</span> <span class="dv">8</span>:</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">False</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> re.search(<span class="vs">r'</span><span class="pp">[A-Z]</span><span class="vs">'</span>, pw):     <span class="co"># حداقل یک حرف بزرگ</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">False</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> re.search(<span class="vs">r'</span><span class="dv">\d</span><span class="vs">'</span>, pw):        <span class="co"># حداقل یک عدد</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">False</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">True</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_strong_password(<span class="st">"Abc12345"</span>))   <span class="co"># True</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_strong_password(<span class="st">"abc"</span>))        <span class="co"># False</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="جمعبندی" class="level2">
-<h2 class="anchored" data-anchor-id="جمعبندی">جمع‌بندی</h2>
-<ul>
-<li>تمرین اصلی این بخش: ترکیب <span dir="ltr"><code>split</code></span>، <span dir="ltr"><code>join</code></span>، <span dir="ltr"><code>replace</code></span> با <span dir="ltr"><code>re.findall</code></span> و <span dir="ltr"><code>re.sub</code></span> برای حل مسائل واقعی پردازش متن — معمولاً راه‌حل نهایی از ترکیب چند تا از این ابزارها به‌دست میاد، نه فقط یکی</li>
-</ul>
+<section id="تمرین" class="level2">
+<h2 class="anchored" data-anchor-id="تمرین">تمرین</h2>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="پروژه">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">احتیاط</span>پروژه
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>به بخش <a href="../project/calculator.html" class="quarto-xref"><span>ماشین حساب</span></a> بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.</p>
+</div>
+</div>
 
 
 </section>
@@ -1280,13 +1333,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapter/regex/unicode.html" class="pagination-link" aria-label="یونیکد و رمزگذاری">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">یونیکد و رمزگذاری</span></span>
+      <a href="../../chapter/gui/tkinter.html" class="pagination-link" aria-label="رابط گرافیکی (`tkinter`)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapter/gui/index.html" class="pagination-link" aria-label="۱۰ پکیج رابط گرافیکی (GUI)">
-        <span class="nav-page-text"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapter/project/project.html" class="pagination-link" aria-label="پروژه">
+        <span class="nav-page-text"><span class="chapter-title">پروژه</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
