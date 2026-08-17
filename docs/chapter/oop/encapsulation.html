@@ -66,7 +66,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../chapter/oop/other-options.html" rel="next">
-<link href="../../chapter/oop/inheritance-polymorphism.html" rel="prev">
+<link href="../../chapter/oop/inheritance.html" rel="prev">
 <link href="../../img/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -524,7 +524,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/def.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
+  <a href="../../chapter/functions/def-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -537,17 +537,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <a href="../../chapter/functions/import.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">خارجی (<code>import</code>)</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/map-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تابع <code>map</code> و <code>lambda</code></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">کلاس و شئ گرایی</span></a>
+ <span class="menu-text">کار با فایل</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -555,12 +550,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/os-open.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">کار با فایل‌ها</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌های داده</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/sqlite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">بانک اطلاعاتی (SQLite)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">کلاس و شئ گرایی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapter/oop/class-object.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">کلاس‌ها و اشیاء (<code>class</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/oop/inheritance-polymorphism.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">وراثت و چندشکلی</span></a>
+  <a href="../../chapter/oop/inheritance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">وراثت و چندشکلی</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -582,44 +603,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
- <span class="menu-text">کار با فایل</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">رابط گرافیکی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/read-write.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">خواندن و ویرایش فایل</span></a>
+  <a href="../../chapter/gui/top-10-gui.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/binary.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌های باینری</span></a>
+  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/os.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماژول <code>os</code></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/csv-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اکسل و CSV</span></a>
+  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
  <span class="menu-text">عبارات منظم</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">دستکاری رشته</span></a>
@@ -638,32 +654,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/text-processing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پردازش متن</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
- <span class="menu-text">رابط گرافیکی</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
@@ -737,7 +727,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-08-15</p>
+      <p class="date-modified">2026-08-17</p>
     </div>
   </div>
     
@@ -799,7 +789,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(acc.get_balance())    <span class="co"># 1000</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(acc.__balance)        <span class="co"># خطا: AttributeError</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <blockquote class="blockquote">
-<p>نکته کلاسی: پایتون واقعاً private نداره — <span dir="ltr"><code>__balance</code></span> در پشت صحنه به <span dir="ltr"><code>_Account__balance</code></span> تبدیل می‌شه (Name Mangling)؛ یعنی هنوز قابل دسترسیه ولی سخت‌تر و دلسردکننده‌ست.</p>
+<p>نکته: پایتون واقعاً private نداره — <span dir="ltr"><code>__balance</code></span> در پشت صحنه به <span dir="ltr"><code>_Account__balance</code></span> تبدیل می‌شه (Name Mangling)؛ یعنی هنوز قابل دسترسیه ولی سخت‌تر و دلسردکننده‌ست.</p>
 </blockquote>
 </section>
 <section id="دسترسی-کنترلشده-با-property" class="level2">
@@ -1302,7 +1292,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapter/oop/inheritance-polymorphism.html" class="pagination-link" aria-label="وراثت و چندشکلی">
+      <a href="../../chapter/oop/inheritance.html" class="pagination-link" aria-label="وراثت و چندشکلی">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">وراثت و چندشکلی</span></span>
       </a>          
   </div>

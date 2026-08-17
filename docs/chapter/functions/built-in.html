@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -31,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../chapter/functions/import.html" rel="next">
-<link href="../../chapter/functions/def.html" rel="prev">
+<link href="../../chapter/functions/def-lambda.html" rel="prev">
 <link href="../../img/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -263,7 +298,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/functions/def.html">تابع</a></li><li class="breadcrumb-item"><a href="../../chapter/functions/built-in.html"><span class="chapter-title">داخلی (<code>built-in</code>)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/functions/def-lambda.html">تابع</a></li><li class="breadcrumb-item"><a href="../../chapter/functions/built-in.html"><span class="chapter-title">داخلی (<code>built-in</code>)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -489,7 +524,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/def.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
+  <a href="../../chapter/functions/def-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -502,17 +537,12 @@ ul.task-list li input[type="checkbox"] {
   <a href="../../chapter/functions/import.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">خارجی (<code>import</code>)</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/map-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تابع <code>map</code> و <code>lambda</code></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">کلاس و شئ گرایی</span></a>
+ <span class="menu-text">کار با فایل</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -520,12 +550,38 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/os-open.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">کار با فایل‌ها</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌های داده</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/sqlite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">بانک اطلاعاتی (SQLite)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">کلاس و شئ گرایی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapter/oop/class-object.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">کلاس‌ها و اشیاء (<code>class</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/oop/inheritance-polymorphism.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">وراثت و چندشکلی</span></a>
+  <a href="../../chapter/oop/inheritance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">وراثت و چندشکلی</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -547,44 +603,39 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
- <span class="menu-text">کار با فایل</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">رابط گرافیکی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/read-write.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">خواندن و ویرایش فایل</span></a>
+  <a href="../../chapter/gui/top-10-gui.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/binary.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌های باینری</span></a>
+  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/os.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماژول <code>os</code></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/csv-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اکسل و CSV</span></a>
+  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
  <span class="menu-text">عبارات منظم</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">دستکاری رشته</span></a>
@@ -603,32 +654,6 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/text-processing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پردازش متن</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
- <span class="menu-text">رابط گرافیکی</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
@@ -670,14 +695,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">فهرست مطالب</h2>
+   
+  <ul>
+  <li><a href="#اعمال-تابع-روی-لیست-با-map" id="toc-اعمال-تابع-روی-لیست-با-map" class="nav-link active" data-scroll-target="#اعمال-تابع-روی-لیست-با-map">اعمال تابع روی لیست با <code>map</code></a></li>
+  <li><a href="#جستجوی-مقادیر-مشخص-در-لیست-با-filter" id="toc-جستجوی-مقادیر-مشخص-در-لیست-با-filter" class="nav-link" data-scroll-target="#جستجوی-مقادیر-مشخص-در-لیست-با-filter">جستجوی مقادیر مشخص در لیست با <code>filter</code></a></li>
+  <li><a href="#جفت-سازی-مقادیر-چند-لیست-با-zip" id="toc-جفت-سازی-مقادیر-چند-لیست-با-zip" class="nav-link" data-scroll-target="#جفت-سازی-مقادیر-چند-لیست-با-zip">جفت سازی مقادیر چند لیست با <code>zip</code></a></li>
+  <li><a href="#ترکیب-هر-سه-با-هم" id="toc-ترکیب-هر-سه-با-هم" class="nav-link" data-scroll-target="#ترکیب-هر-سه-با-هم">ترکیب هر سه با هم</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/functions/def.html">تابع</a></li><li class="breadcrumb-item"><a href="../../chapter/functions/built-in.html"><span class="chapter-title">داخلی (<code>built-in</code>)</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/functions/def-lambda.html">تابع</a></li><li class="breadcrumb-item"><a href="../../chapter/functions/built-in.html"><span class="chapter-title">داخلی (<code>built-in</code>)</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">داخلی (<code>built-in</code>)</span></h1>
 </div>
@@ -691,7 +725,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-08-15</p>
+      <p class="date-modified">2026-08-17</p>
     </div>
   </div>
     
@@ -702,10 +736,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<ul>
-<li>توابع داخلی = توابعی که خود پایتون آماده کرده، بدون نیاز به <span dir="ltr"><code>import</code></span></li>
-<li>برای حل مسائل عمومی و رایج</li>
-</ul>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -757,8 +787,68 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <p>نکته: <span dir="ltr"><code>int()</code></span> روی عدد اعشاری، <strong>رند نمی‌کنه</strong>، فقط اعشار رو قطع می‌کنه (نه گرد به بالا/پایین)</p>
 </blockquote>
+<section id="اعمال-تابع-روی-لیست-با-map" class="level2">
+<h2 class="anchored" data-anchor-id="اعمال-تابع-روی-لیست-با-map">اعمال تابع روی لیست با <code>map</code></h2>
+<ul>
+<li><span dir="ltr"><code>map()</code></span> یک تابع رو روی تک‌تک عضوهای یک لیست (یا هر iterable) اجرا می‌کنه و یک نتیجه‌ی جدید برمی‌گردونه</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>squared <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x <span class="op">**</span> <span class="dv">2</span>, numbers))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(squared)   <span class="co"># [1, 4, 9, 16]</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>بدون lambda هم می‌شه از یک تابع معمولی استفاده کرد:</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> square(x):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>squared <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(square, numbers))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="جستجوی-مقادیر-مشخص-در-لیست-با-filter" class="level2">
+<h2 class="anchored" data-anchor-id="جستجوی-مقادیر-مشخص-در-لیست-با-filter">جستجوی مقادیر مشخص در لیست با <code>filter</code></h2>
+<ul>
+<li><span dir="ltr"><code>filter()</code></span> از بین عضوهای یک لیست، فقط اون‌هایی که شرط <span dir="ltr"><code>True</code></span> برمی‌گردونن رو نگه می‌داره</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>evens <span class="op">=</span> <span class="bu">list</span>(<span class="bu">filter</span>(<span class="kw">lambda</span> x: x <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>, numbers))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(evens)   <span class="co"># [2, 4, 6]</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>تفاوت با <span dir="ltr"><code>map</code></span>: <span dir="ltr"><code>map</code></span> همه‌ی عضوها رو تبدیل می‌کنه، <span dir="ltr"><code>filter</code></span> فقط بعضی‌ها رو انتخاب می‌کنه (خروجیش کوچیک‌تر یا مساوی ورودیه)</li>
+</ul>
+</section>
+<section id="جفت-سازی-مقادیر-چند-لیست-با-zip" class="level2">
+<h2 class="anchored" data-anchor-id="جفت-سازی-مقادیر-چند-لیست-با-zip">جفت سازی مقادیر چند لیست با <code>zip</code></h2>
+<ul>
+<li><span dir="ltr"><code>zip()</code></span> چند لیست رو عضو به عضو با هم جفت می‌کنه</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>names <span class="op">=</span> [<span class="st">'Ali'</span>, <span class="st">'Sara'</span>, <span class="st">'Reza'</span>]</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>ages <span class="op">=</span> [<span class="dv">25</span>, <span class="dv">30</span>, <span class="dv">28</span>]</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>zipped <span class="op">=</span> <span class="bu">list</span>(<span class="bu">zip</span>(names, ages))</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(zipped)   <span class="co"># [('Ali', 25), ('Sara', 30), ('Reza', 28)]</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>کاربرد رایج: پیمایش هم‌زمان دو لیست</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, age <span class="kw">in</span> <span class="bu">zip</span>(names, ages):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(name, age)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>اگه طول لیست‌ها متفاوت باشه، <span dir="ltr"><code>zip</code></span> به اندازه‌ی کوتاه‌ترین لیست جلو می‌ره</li>
+</ul>
+</section>
+<section id="ترکیب-هر-سه-با-هم" class="level2">
+<h2 class="anchored" data-anchor-id="ترکیب-هر-سه-با-هم">ترکیب هر سه با هم</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>names <span class="op">=</span> [<span class="st">'Ali'</span>, <span class="st">'Sara'</span>, <span class="st">'Reza'</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>scores <span class="op">=</span> [<span class="dv">15</span>, <span class="dv">8</span>, <span class="dv">19</span>]</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># فقط اسم کسایی که نمره‌شون بالای 10 هست، با یک پسوند "Pass" جلوش</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>passed <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x[<span class="dv">0</span>] <span class="op">+</span> <span class="st">' - Pass'</span>,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                   <span class="bu">filter</span>(<span class="kw">lambda</span> x: x[<span class="dv">1</span>] <span class="op">&gt;</span> <span class="dv">10</span>, <span class="bu">zip</span>(names, scores))))</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(passed)   <span class="co"># ['Ali - Pass', 'Reza - Pass']</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<blockquote class="blockquote">
+<p>هر جا دیدین دارین با یک حلقه‌ی <span dir="ltr"><code>for</code></span> روی یک لیست، مقادیرش رو تبدیل یا فیلتر می‌کنین، احتمالاً می‌شه همون کار رو با ترکیب <span dir="ltr"><code>map</code></span>/<span dir="ltr"><code>filter</code></span> و <span dir="ltr"><code>lambda</code></span> در یک خط نوشت — ولی اگه منطق پیچیده بشه، خوانایی کد با یک تابع معمولی و حلقه‌ی <span dir="ltr"><code>for</code></span> بهتره.</p>
+</blockquote>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1176,7 +1266,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapter/functions/def.html" class="pagination-link" aria-label="تعریف تابع (`def`)">
+      <a href="../../chapter/functions/def-lambda.html" class="pagination-link" aria-label="تعریف تابع (`def`)">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></span>
       </a>          
   </div>

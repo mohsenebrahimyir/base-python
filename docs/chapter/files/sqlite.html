@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>خواندن و ویرایش فایل – مبانی پایتون</title>
+<title>بانک اطلاعاتی (SQLite) – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapter/files/binary.html" rel="next">
-<link href="../../chapter/oop/zoo.html" rel="prev">
+<link href="../../chapter/oop/class-object.html" rel="next">
+<link href="../../chapter/files/data.html" rel="prev">
 <link href="../../img/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/files/read-write.html">کار با فایل</a></li><li class="breadcrumb-item"><a href="../../chapter/files/read-write.html"><span class="chapter-title">خواندن و ویرایش فایل</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/files/os-open.html">کار با فایل</a></li><li class="breadcrumb-item"><a href="../../chapter/files/sqlite.html"><span class="chapter-title">بانک اطلاعاتی (SQLite)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -524,7 +524,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/def.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
+  <a href="../../chapter/functions/def-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -537,17 +537,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <a href="../../chapter/functions/import.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">خارجی (<code>import</code>)</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/map-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تابع <code>map</code> و <code>lambda</code></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">کلاس و شئ گرایی</span></a>
+ <span class="menu-text">کار با فایل</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -555,12 +550,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/os-open.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">کار با فایل‌ها</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌های داده</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/sqlite.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">بانک اطلاعاتی (SQLite)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">کلاس و شئ گرایی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapter/oop/class-object.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">کلاس‌ها و اشیاء (<code>class</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/oop/inheritance-polymorphism.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">وراثت و چندشکلی</span></a>
+  <a href="../../chapter/oop/inheritance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">وراثت و چندشکلی</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -582,44 +603,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
- <span class="menu-text">کار با فایل</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">رابط گرافیکی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/read-write.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">خواندن و ویرایش فایل</span></a>
+  <a href="../../chapter/gui/top-10-gui.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/binary.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌های باینری</span></a>
+  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/os.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماژول <code>os</code></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/csv-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اکسل و CSV</span></a>
+  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
  <span class="menu-text">عبارات منظم</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">دستکاری رشته</span></a>
@@ -638,32 +654,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/text-processing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پردازش متن</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
- <span class="menu-text">رابط گرافیکی</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
@@ -710,20 +700,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#بازکردن-فایل-open" id="toc-بازکردن-فایل-open" class="nav-link active" data-scroll-target="#بازکردن-فایل-open">بازکردن فایل (<span dir="ltr"><code>open</code></span>)</a></li>
-  <li><a href="#حالتهای-open" id="toc-حالتهای-open" class="nav-link" data-scroll-target="#حالتهای-open">حالت‌های <span dir="ltr"><code>open()</code></span></a></li>
-  <li><a href="#خواندن-فایل" id="toc-خواندن-فایل" class="nav-link" data-scroll-target="#خواندن-فایل">خواندن فایل</a>
-  <ul class="collapse">
-  <li><a href="#روش-۱-خط-به-خط-با-for-برای-فایلهای-بزرگ" id="toc-روش-۱-خط-به-خط-با-for-برای-فایلهای-بزرگ" class="nav-link" data-scroll-target="#روش-۱-خط-به-خط-با-for-برای-فایلهای-بزرگ">روش ۱: خط به خط با <span dir="ltr"><code>for</code></span> (برای فایل‌های بزرگ)</a></li>
-  <li><a href="#روش-۲-خواندن-کل-فایل-یکجا-برای-فایلهای-کوچک" id="toc-روش-۲-خواندن-کل-فایل-یکجا-برای-فایلهای-کوچک" class="nav-link" data-scroll-target="#روش-۲-خواندن-کل-فایل-یکجا-برای-فایلهای-کوچک">روش ۲: خواندن کل فایل یکجا (برای فایل‌های کوچک)</a></li>
-  </ul></li>
-  <li><a href="#جستجو-در-فایل" id="toc-جستجو-در-فایل" class="nav-link" data-scroll-target="#جستجو-در-فایل">جستجو در فایل</a></li>
-  <li><a href="#گرفتن-نام-فایل-از-کاربر-مدیریت-خطا" id="toc-گرفتن-نام-فایل-از-کاربر-مدیریت-خطا" class="nav-link" data-scroll-target="#گرفتن-نام-فایل-از-کاربر-مدیریت-خطا">گرفتن نام فایل از کاربر + مدیریت خطا</a></li>
-  <li><a href="#نوشتن-در-فایل" id="toc-نوشتن-در-فایل" class="nav-link" data-scroll-target="#نوشتن-در-فایل">نوشتن در فایل</a>
-  <ul class="collapse">
-  <li><a href="#بستن-فایل" id="toc-بستن-فایل" class="nav-link" data-scroll-target="#بستن-فایل">بستن فایل</a></li>
-  </ul></li>
-  <li><a href="#روش-استاندارد-و-توصیهشده-with-open...-as-f" id="toc-روش-استاندارد-و-توصیهشده-with-open...-as-f" class="nav-link" data-scroll-target="#روش-استاندارد-و-توصیهشده-with-open...-as-f">روش استاندارد و توصیه‌شده: <span dir="ltr"><code>with open(...) as f:</code></span></a></li>
+  <li><a href="#مروری-بر-بانک-اطلاعاتی" id="toc-مروری-بر-بانک-اطلاعاتی" class="nav-link active" data-scroll-target="#مروری-بر-بانک-اطلاعاتی">مروری بر بانک اطلاعاتی</a></li>
+  <li><a href="#دستورات-sql" id="toc-دستورات-sql" class="nav-link" data-scroll-target="#دستورات-sql">دستورات SQL</a></li>
+  <li><a href="#اتصال-به-بانک-اطلاعاتی" id="toc-اتصال-به-بانک-اطلاعاتی" class="nav-link" data-scroll-target="#اتصال-به-بانک-اطلاعاتی">اتصال به بانک اطلاعاتی</a></li>
+  <li><a href="#ساخت-cursor-و-اجرای-دستور-sql" id="toc-ساخت-cursor-و-اجرای-دستور-sql" class="nav-link" data-scroll-target="#ساخت-cursor-و-اجرای-دستور-sql">ساخت cursor و اجرای دستور SQL</a></li>
+  <li><a href="#درج-اطلاعات" id="toc-درج-اطلاعات" class="nav-link" data-scroll-target="#درج-اطلاعات">درج اطلاعات</a></li>
+  <li><a href="#حذف-و-ویرایش-اطلاعات" id="toc-حذف-و-ویرایش-اطلاعات" class="nav-link" data-scroll-target="#حذف-و-ویرایش-اطلاعات">حذف و ویرایش اطلاعات</a></li>
+  <li><a href="#خواندن-اطلاعات-با-fetch" id="toc-خواندن-اطلاعات-با-fetch" class="nav-link" data-scroll-target="#خواندن-اطلاعات-با-fetch">خواندن اطلاعات با fetch</a></li>
+  <li><a href="#بستن-اتصال" id="toc-بستن-اتصال" class="nav-link" data-scroll-target="#بستن-اتصال">بستن اتصال</a></li>
   </ul>
 </nav>
     </div>
@@ -731,9 +715,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/files/read-write.html">کار با فایل</a></li><li class="breadcrumb-item"><a href="../../chapter/files/read-write.html"><span class="chapter-title">خواندن و ویرایش فایل</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/files/os-open.html">کار با فایل</a></li><li class="breadcrumb-item"><a href="../../chapter/files/sqlite.html"><span class="chapter-title">بانک اطلاعاتی (SQLite)</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">خواندن و ویرایش فایل</span></h1>
+<h1 class="title"><span class="chapter-title">بانک اطلاعاتی (SQLite)</span></h1>
 </div>
 
 
@@ -745,7 +729,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-08-15</p>
+      <p class="date-modified">2026-08-17</p>
     </div>
   </div>
     
@@ -756,126 +740,121 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="بازکردن-فایل-open" class="level2">
-<h2 class="anchored" data-anchor-id="بازکردن-فایل-open">بازکردن فایل (<span dir="ltr"><code>open</code></span>)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="مروری-بر-بانک-اطلاعاتی" class="level2">
+<h2 class="anchored" data-anchor-id="مروری-بر-بانک-اطلاعاتی">مروری بر بانک اطلاعاتی</h2>
 <ul>
-<li>خروجی یک <strong>handle</strong> به فایله، نه محتوای واقعی — برای خوندن ازش استفاده می‌شه</li>
-<li>اگه فایل وجود نداشته باشه → خطا: <span dir="ltr"><code>FileNotFoundError</code></span></li>
+<li>بانک اطلاعاتی (Database) جایی برای ذخیره‌ی منظم و دائمی داده‌هاست — برخلاف متغیر یا فایل ساده، امکان جست‌وجو، فیلتر و مدیریت حجم بالای داده رو راحت‌تر می‌کنه</li>
+<li><span dir="ltr"><code>SQLite</code></span> یک بانک اطلاعاتی سبک و فایل‌محوره — کل بانک توی یک فایل <span dir="ltr"><code>.db</code></span> ذخیره می‌شه و نیازی به نصب سرور جداگانه نداره</li>
+<li>پایتون از قبل ماژول <span dir="ltr"><code>sqlite3</code></span> رو داره — نیازی به نصب اضافه نیست</li>
 </ul>
 </section>
-<section id="حالتهای-open" class="level2">
-<h2 class="anchored" data-anchor-id="حالتهای-open">حالت‌های <span dir="ltr"><code>open()</code></span></h2>
+<section id="دستورات-sql" class="level2">
+<h2 class="anchored" data-anchor-id="دستورات-sql">دستورات SQL</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>حالت</th>
-<th>کاربرد</th>
+<th>دستور</th>
+<th>کار</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span dir="ltr"><code>'r'</code></span></td>
-<td>خواندن (پیش‌فرض)</td>
+<td><span dir="ltr"><code>CREATE TABLE</code></span></td>
+<td>ساخت جدول جدید</td>
 </tr>
 <tr class="even">
-<td><span dir="ltr"><code>'w'</code></span></td>
-<td>نوشتن — ⚠️ محتوای قبلی فایل پاک می‌شه</td>
+<td><span dir="ltr"><code>INSERT INTO</code></span></td>
+<td>افزودن ردیف جدید</td>
 </tr>
 <tr class="odd">
-<td><span dir="ltr"><code>'a'</code></span></td>
-<td>append — اضافه‌کردن به انتهای فایل، بدون پاک کردن محتوای قبلی</td>
+<td><span dir="ltr"><code>SELECT</code></span></td>
+<td>خواندن داده</td>
 </tr>
 <tr class="even">
-<td><span dir="ltr"><code>'x'</code></span></td>
-<td>ساخت فایل جدید — اگه از قبل وجود داشته باشه خطا می‌ده</td>
+<td><span dir="ltr"><code>UPDATE</code></span></td>
+<td>ویرایش داده</td>
+</tr>
+<tr class="odd">
+<td><span dir="ltr"><code>DELETE</code></span></td>
+<td>حذف داده</td>
+</tr>
+<tr class="even">
+<td><span dir="ltr"><code>WHERE</code></span></td>
+<td>شرط روی ردیف‌ها</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="خواندن-فایل" class="level2">
-<h2 class="anchored" data-anchor-id="خواندن-فایل">خواندن فایل</h2>
-<section id="روش-۱-خط-به-خط-با-for-برای-فایلهای-بزرگ" class="level3">
-<h3 class="anchored" data-anchor-id="روش-۱-خط-به-خط-با-for-برای-فایلهای-بزرگ">روش ۱: خط به خط با <span dir="ltr"><code>for</code></span> (برای فایل‌های بزرگ)</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> line <span class="kw">in</span> fhand:</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Line Count:'</span>, count)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="روش-۲-خواندن-کل-فایل-یکجا-برای-فایلهای-کوچک" class="level3">
-<h3 class="anchored" data-anchor-id="روش-۲-خواندن-کل-فایل-یکجا-برای-فایلهای-کوچک">روش ۲: خواندن کل فایل یکجا (برای فایل‌های کوچک)</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>inp <span class="op">=</span> fhand.read()</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(inp))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="اتصال-به-بانک-اطلاعاتی" class="level2">
+<h2 class="anchored" data-anchor-id="اتصال-به-بانک-اطلاعاتی">اتصال به بانک اطلاعاتی</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sqlite3</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>conn <span class="op">=</span> sqlite3.<span class="ex">connect</span>(<span class="st">'school.db'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>⚠️ نکته: محتوا رو حتماً توی متغیر ذخیره کنیم، وگرنه با خواندن مجدد از دست می‌ره</li>
+<li>اگه فایل <span dir="ltr"><code>school.db</code></span> وجود نداشته باشه، خودش می‌سازتش</li>
+<li><span dir="ltr"><code>conn</code></span> پل ارتباطی بین پایتون و فایل بانک اطلاعاتیه</li>
 </ul>
 </section>
-</section>
-<section id="جستجو-در-فایل" class="level2">
-<h2 class="anchored" data-anchor-id="جستجو-در-فایل">جستجو در فایل</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> line <span class="kw">in</span> fhand:</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> line.rstrip()</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> line.startswith(<span class="st">'From:'</span>):</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(line)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="ساخت-cursor-و-اجرای-دستور-sql" class="level2">
+<h2 class="anchored" data-anchor-id="ساخت-cursor-و-اجرای-دستور-sql">ساخت cursor و اجرای دستور SQL</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>cursor <span class="op">=</span> conn.cursor()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li><span dir="ltr"><code>rstrip()</code></span> : حذف فضای خالی سمت راست رشته</li>
-<li><span dir="ltr"><code>startswith()</code></span> : بررسی شروع خط با یک کلمه/رشته خاص</li>
+<li><span dir="ltr"><code>cursor</code></span> همون چیزیه که دستورات SQL رو واقعاً اجرا می‌کنه</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>cursor.execute(<span class="st">'''</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="st">    CREATE TABLE IF NOT EXISTS students (</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="st">        id INTEGER PRIMARY KEY AUTOINCREMENT,</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="st">        name TEXT,</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="st">        age INTEGER</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="st">    )</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="st">'''</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>conn.commit()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><span dir="ltr"><code>conn.commit()</code></span> : تغییرات رو واقعاً روی فایل ذخیره می‌کنه — بدون این خط، تغییرات موقتی می‌مونن</li>
 </ul>
 </section>
-<section id="گرفتن-نام-فایل-از-کاربر-مدیریت-خطا" class="level2">
-<h2 class="anchored" data-anchor-id="گرفتن-نام-فایل-از-کاربر-مدیریت-خطا">گرفتن نام فایل از کاربر + مدیریت خطا</h2>
+<section id="درج-اطلاعات" class="level2">
+<h2 class="anchored" data-anchor-id="درج-اطلاعات">درج اطلاعات</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>cursor.execute(<span class="st">'INSERT INTO students (name, age) VALUES (?, ?)'</span>, (<span class="st">'Ali'</span>, <span class="dv">25</span>))</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>conn.commit()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>به‌جای هاردکد کردن نام فایل، از کاربر می‌گیریم — ولی چون فایل ممکنه وجود نداشته باشه، حتماً با <span dir="ltr"><code>try-except</code></span> پوشش بدیم</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fname <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter the file name: '</span>)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    fhand <span class="op">=</span> <span class="bu">open</span>(fname)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span>:</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'File cannot be opened:'</span>, fname)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    exit()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ul>
-<li><span dir="ltr"><code>exit()</code></span> : خروج کامل از اجرای برنامه اگه فایل باز نشد</li>
+<li>استفاده از <span dir="ltr"><code>?</code></span> به‌جای چسبوندن مستقیم مقادیر به رشته‌ی SQL، جلوی خطا و حملات SQL Injection رو می‌گیره</li>
 </ul>
 </section>
-<section id="نوشتن-در-فایل" class="level2">
-<h2 class="anchored" data-anchor-id="نوشتن-در-فایل">نوشتن در فایل</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fout <span class="op">=</span> <span class="bu">open</span>(<span class="st">'output.txt'</span>, <span class="st">'w'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="حذف-و-ویرایش-اطلاعات" class="level2">
+<h2 class="anchored" data-anchor-id="حذف-و-ویرایش-اطلاعات">حذف و ویرایش اطلاعات</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ویرایش</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>cursor.execute(<span class="st">'UPDATE students SET age = ? WHERE name = ?'</span>, (<span class="dv">26</span>, <span class="st">'Ali'</span>))</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># حذف</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>cursor.execute(<span class="st">'DELETE FROM students WHERE name = ?'</span>, (<span class="st">'Ali'</span>,))</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>conn.commit()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="خواندن-اطلاعات-با-fetch" class="level2">
+<h2 class="anchored" data-anchor-id="خواندن-اطلاعات-با-fetch">خواندن اطلاعات با fetch</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>cursor.execute(<span class="st">'SELECT * FROM students'</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>row <span class="op">=</span> cursor.fetchone()   <span class="co"># فقط یک ردیف</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(row)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>پارامتر <span dir="ltr"><code>'w'</code></span>:
-<ul>
-<li>اگه فایل وجود داشته باشه → باز می‌شه برای نوشتن (⚠️ محتوای قبلی پاک می‌شه)</li>
-<li>اگه وجود نداشته باشه → فایل جدید ساخته می‌شه</li>
-</ul></li>
+<li>برای خواندن همه‌ی ردیف‌ها:</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>line1 <span class="op">=</span> <span class="st">"This here's the wattle,</span><span class="ch">\n</span><span class="st">"</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>fout.write(line1)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<section id="بستن-فایل" class="level3">
-<h3 class="anchored" data-anchor-id="بستن-فایل">بستن فایل</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fout.close()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cursor.execute(<span class="st">'SELECT * FROM students'</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> cursor.fetchall()</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> row <span class="kw">in</span> rows:</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(row)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>بعد از اتمام کار با فایل، <strong>همیشه</strong> باید بسته بشه</li>
+<li>هر <span dir="ltr"><code>row</code></span> یک <span dir="ltr"><code>tuple</code></span> از مقادیر ستون‌هاست</li>
 </ul>
 </section>
-</section>
-<section id="روش-استاندارد-و-توصیهشده-with-open...-as-f" class="level2">
-<h2 class="anchored" data-anchor-id="روش-استاندارد-و-توصیهشده-with-open...-as-f">روش استاندارد و توصیه‌شده: <span dir="ltr"><code>with open(...) as f:</code></span></h2>
+<section id="بستن-اتصال" class="level2">
+<h2 class="anchored" data-anchor-id="بستن-اتصال">بستن اتصال</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>conn.close()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>جزوه روش دستی (باز کردن + <span dir="ltr"><code>close()</code></span> دستی) رو نشون داده، ولی در عمل استفاده از <span dir="ltr"><code>with</code></span> رایج‌تره</li>
-<li>مزیت: فایل <strong>خودکار بسته می‌شه</strong>، حتی اگه وسط کار خطا رخ بده — نیازی به <span dir="ltr"><code>close()</code></span> دستی نیست</li>
+<li>بعد از اتمام کار با بانک اطلاعاتی، حتماً اتصال رو ببندین</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>) <span class="im">as</span> fhand:</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> line <span class="kw">in</span> fhand:</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(line.rstrip())</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># اینجا فایل خودش بسته شده</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'output.txt'</span>, <span class="st">'w'</span>) <span class="im">as</span> fout:</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    fout.write(<span class="st">"This here's the wattle,</span><span class="ch">\n</span><span class="st">"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>
@@ -1296,13 +1275,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapter/oop/zoo.html" class="pagination-link" aria-label="مدیریت باغ وحش">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">مدیریت باغ وحش</span></span>
+      <a href="../../chapter/files/data.html" class="pagination-link" aria-label="فایل‌های داده">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">فایل‌های داده</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapter/files/binary.html" class="pagination-link" aria-label="فایل‌های باینری">
-        <span class="nav-page-text"><span class="chapter-title">فایل‌های باینری</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapter/oop/class-object.html" class="pagination-link" aria-label="کلاس‌ها و اشیاء (`class`)">
+        <span class="nav-page-text"><span class="chapter-title">کلاس‌ها و اشیاء (<code>class</code>)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

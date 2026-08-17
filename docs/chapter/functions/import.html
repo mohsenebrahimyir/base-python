@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapter/functions/map-lambda.html" rel="next">
+<link href="../../chapter/files/os-open.html" rel="next">
 <link href="../../chapter/functions/built-in.html" rel="prev">
 <link href="../../img/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/functions/def.html">تابع</a></li><li class="breadcrumb-item"><a href="../../chapter/functions/import.html"><span class="chapter-title">خارجی (<code>import</code>)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/functions/def-lambda.html">تابع</a></li><li class="breadcrumb-item"><a href="../../chapter/functions/import.html"><span class="chapter-title">خارجی (<code>import</code>)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -524,7 +524,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/def.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
+  <a href="../../chapter/functions/def-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -537,17 +537,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <a href="../../chapter/functions/import.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">خارجی (<code>import</code>)</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/map-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تابع <code>map</code> و <code>lambda</code></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">کلاس و شئ گرایی</span></a>
+ <span class="menu-text">کار با فایل</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -555,12 +550,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/os-open.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">کار با فایل‌ها</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌های داده</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/sqlite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">بانک اطلاعاتی (SQLite)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">کلاس و شئ گرایی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapter/oop/class-object.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">کلاس‌ها و اشیاء (<code>class</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/oop/inheritance-polymorphism.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">وراثت و چندشکلی</span></a>
+  <a href="../../chapter/oop/inheritance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">وراثت و چندشکلی</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -582,44 +603,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
- <span class="menu-text">کار با فایل</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">رابط گرافیکی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/read-write.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">خواندن و ویرایش فایل</span></a>
+  <a href="../../chapter/gui/top-10-gui.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/binary.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌های باینری</span></a>
+  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/os.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماژول <code>os</code></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/csv-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اکسل و CSV</span></a>
+  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
  <span class="menu-text">عبارات منظم</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">دستکاری رشته</span></a>
@@ -638,32 +654,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/text-processing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پردازش متن</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
- <span class="menu-text">رابط گرافیکی</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
@@ -715,6 +705,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#ماژول-random" id="toc-ماژول-random" class="nav-link" data-scroll-target="#ماژول-random">ماژول random</a></li>
   <li><a href="#نصب-پکیج-خارجی-pip" id="toc-نصب-پکیج-خارجی-pip" class="nav-link" data-scroll-target="#نصب-پکیج-خارجی-pip">نصب پکیج خارجی (pip)</a></li>
   <li><a href="#سه-روش-import" id="toc-سه-روش-import" class="nav-link" data-scroll-target="#سه-روش-import">سه روش import</a></li>
+  <li><a href="#ساخت-ماژول-شخصی" id="toc-ساخت-ماژول-شخصی" class="nav-link" data-scroll-target="#ساخت-ماژول-شخصی">ساخت ماژول شخصی</a></li>
+  <li><a href="#فایل-پکیج" id="toc-فایل-پکیج" class="nav-link" data-scroll-target="#فایل-پکیج">فایل پکیج</a></li>
+  <li><a href="#if-__name__-__main__-چیه-و-چرا-استفاده-میشه" id="toc-if-__name__-__main__-چیه-و-چرا-استفاده-میشه" class="nav-link" data-scroll-target="#if-__name__-__main__-چیه-و-چرا-استفاده-میشه"><code>if __name__ == "__main__"</code> چیه و چرا استفاده می‌شه؟</a>
+  <ul class="collapse">
+  <li><a href="#چرا-این-کار-مفیده" id="toc-چرا-این-کار-مفیده" class="nav-link" data-scroll-target="#چرا-این-کار-مفیده">چرا این کار مفیده؟</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -722,7 +718,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/functions/def.html">تابع</a></li><li class="breadcrumb-item"><a href="../../chapter/functions/import.html"><span class="chapter-title">خارجی (<code>import</code>)</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/functions/def-lambda.html">تابع</a></li><li class="breadcrumb-item"><a href="../../chapter/functions/import.html"><span class="chapter-title">خارجی (<code>import</code>)</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">خارجی (<code>import</code>)</span></h1>
 </div>
@@ -736,7 +732,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-08-15</p>
+      <p class="date-modified">2026-08-17</p>
     </div>
   </div>
     
@@ -844,11 +840,98 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
+<hr>
+</section>
+<section id="ساخت-ماژول-شخصی" class="level2">
+<h2 class="anchored" data-anchor-id="ساخت-ماژول-شخصی">ساخت ماژول شخصی</h2>
+<ul>
+<li>هر فایل <span dir="ltr"><code>.py</code></span> خودش یک ماژوله — می‌شه از توابع یک فایل، توی فایل دیگه استفاده کرد، دقیقاً مثل <span dir="ltr"><code>math</code></span> یا <span dir="ltr"><code>random</code></span></li>
+</ul>
+<p>فرض کنیم فایلی به اسم <span dir="ltr"><code>calc.py</code></span> داریم:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calc.py</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add(a, b):</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> square(x):</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">**</span> <span class="dv">2</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>حالا توی یک فایل دیگه (مثلاً <span dir="ltr"><code>main.py</code></span>) که کنار همون فایل قرار داره:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># main.py</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> calc</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(calc.add(<span class="dv">2</span>, <span class="dv">3</span>))      <span class="co"># 5</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(calc.square(<span class="dv">4</span>))      <span class="co"># 16</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>توجه: اسم فایل بدون پسوند <span dir="ltr"><code>.py</code></span> می‌شه اسم ماژول — یعنی <span dir="ltr"><code>import calc</code></span>، نه <span dir="ltr"><code>import calc.py</code></span></li>
+<li>می‌شه از همون روش‌های alias یا <span dir="ltr"><code>from ... import ...</code></span> هم استفاده کرد:</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> calc <span class="im">import</span> add</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> calc <span class="im">as</span> c</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="فایل-پکیج" class="level2">
+<h2 class="anchored" data-anchor-id="فایل-پکیج">فایل پکیج</h2>
+<ul>
+<li>وقتی چند ماژول مرتبط رو توی یک پوشه کنار هم می‌ذاریم، اون پوشه یه <strong>پکیج</strong> می‌شه</li>
+<li>برای اینکه پایتون اون پوشه رو به‌عنوان پکیج بشناسه، باید داخلش یک فایل به اسم <span dir="ltr"><code>__init__.py</code></span> وجود داشته باشه (حتی اگه خالی باشه)</li>
+</ul>
+<p>ساختار پوشه‌ای:</p>
+<pre><code>mypackage/
+    __init__.py
+    calc.py
+    strings.py</code></pre>
+<p>استفاده:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mypackage <span class="im">import</span> calc</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(calc.add(<span class="dv">2</span>, <span class="dv">3</span>))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># یا:</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> mypackage.calc <span class="im">as</span> calc</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><span dir="ltr"><code>__init__.py</code></span> می‌تونه خالی باشه (فقط برای معرفی پوشه به‌عنوان پکیج)، یا می‌تونه کدی داشته باشه که وقتی پکیج import می‌شه، اجرا بشه — مثلاً import کردن خودکار زیرماژول‌ها:</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># __init__.py</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> .calc <span class="im">import</span> add, square</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>با این کار می‌شه مستقیم نوشت:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mypackage <span class="im">import</span> add</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>بدون اینکه لازم باشه اسم فایل <span dir="ltr"><code>calc</code></span> رو هم بدونیم</p>
 <blockquote class="blockquote">
-<p>نکته کلاسی: روش <span dir="ltr"><code>as np</code></span> برای پکیج‌های پرکاربرد مثل numpy رایج‌ترین روشه</p>
+<p>نکته: از پایتون ۳.۳ به بعد، پکیج بدون <span dir="ltr"><code>__init__.py</code></span> هم کار می‌کنه (namespace package)، ولی برای وضوح بیشتر و سازگاری، همچنان رایجه که این فایل رو (حتی خالی) بذارین.</p>
 </blockquote>
+</section>
+<section id="if-__name__-__main__-چیه-و-چرا-استفاده-میشه" class="level2">
+<h2 class="anchored" data-anchor-id="if-__name__-__main__-چیه-و-چرا-استفاده-میشه"><code>if __name__ == "__main__"</code> چیه و چرا استفاده می‌شه؟</h2>
+<ul>
+<li>هر فایل پایتون یه متغیر داخلی به اسم <span dir="ltr"><code>__name__</code></span> داره</li>
+<li>وقتی فایل <strong>مستقیم اجرا</strong> بشه (مثلاً <span dir="ltr"><code>python calc.py</code></span>)، مقدار <span dir="ltr"><code>__name__</code></span> برابر <span dir="ltr"><code>"__main__"</code></span> می‌شه</li>
+<li>وقتی همون فایل به‌عنوان ماژول <strong>import</strong> بشه، مقدار <span dir="ltr"><code>__name__</code></span> برابر اسم خود فایل می‌شه (مثلاً <span dir="ltr"><code>"calc"</code></span>)</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calc.py</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add(a, b):</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"این خط همیشه اجرا می‌شه، چه import بشه چه مستقیم اجرا بشه"</span>)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"این خط فقط وقتی اجرا می‌شه که calc.py مستقیم اجرا بشه"</span>)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(add(<span class="dv">2</span>, <span class="dv">3</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>اگه <span dir="ltr"><code>main.py</code></span> این فایل رو import کنه (<span dir="ltr"><code>import calc</code></span>)، خط اول <span dir="ltr"><code>print</code></span> اجرا می‌شه ولی بخش داخل <span dir="ltr"><code>if</code></span> اجرا <strong>نمی‌شه</strong></li>
+<li>اگه خود <span dir="ltr"><code>calc.py</code></span> مستقیم اجرا بشه، هر دو اجرا می‌شن</li>
+</ul>
+<section id="چرا-این-کار-مفیده" class="level3">
+<h3 class="anchored" data-anchor-id="چرا-این-کار-مفیده">چرا این کار مفیده؟</h3>
+<ul>
+<li>به ما اجازه می‌ده یک فایل هم به‌عنوان <strong>ماژول قابل‌استفاده</strong> توسط فایل‌های دیگه باشه، هم به‌عنوان <strong>برنامه‌ی مستقل</strong> قابل اجرا</li>
+<li>معمولاً برای تست سریع توابع یک فایل، بدون اینکه اون تست‌ها وقتی فایل import می‌شه هم اجرا بشن:</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process(data):</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [x <span class="op">*</span> <span class="dv">2</span> <span class="cf">for</span> x <span class="kw">in</span> data]</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># این بخش فقط برای تست دستیه، وقتی فایل import بشه اجرا نمی‌شه</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    sample <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(process(sample))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1272,8 +1355,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapter/functions/map-lambda.html" class="pagination-link" aria-label="تابع `map` و `lambda`">
-        <span class="nav-page-text"><span class="chapter-title">تابع <code>map</code> و <code>lambda</code></span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapter/files/os-open.html" class="pagination-link" aria-label="کار با فایل‌ها">
+        <span class="nav-page-text"><span class="chapter-title">کار با فایل‌ها</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>وراثت و چندشکلی – مبانی پایتون</title>
+<title>کار با فایل‌ها – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapter/oop/encapsulation.html" rel="next">
-<link href="../../chapter/oop/class-object.html" rel="prev">
+<link href="../../chapter/files/data.html" rel="next">
+<link href="../../chapter/functions/import.html" rel="prev">
 <link href="../../img/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/oop/class-object.html">کلاس و شئ گرایی</a></li><li class="breadcrumb-item"><a href="../../chapter/oop/inheritance-polymorphism.html"><span class="chapter-title">وراثت و چندشکلی</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/files/os-open.html">کار با فایل</a></li><li class="breadcrumb-item"><a href="../../chapter/files/os-open.html"><span class="chapter-title">کار با فایل‌ها</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -524,7 +524,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/def.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
+  <a href="../../chapter/functions/def-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -537,17 +537,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <a href="../../chapter/functions/import.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">خارجی (<code>import</code>)</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/map-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تابع <code>map</code> و <code>lambda</code></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">کلاس و شئ گرایی</span></a>
+ <span class="menu-text">کار با فایل</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -555,12 +550,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/os-open.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">کار با فایل‌ها</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌های داده</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/sqlite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">بانک اطلاعاتی (SQLite)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">کلاس و شئ گرایی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapter/oop/class-object.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">کلاس‌ها و اشیاء (<code>class</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/oop/inheritance-polymorphism.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">وراثت و چندشکلی</span></a>
+  <a href="../../chapter/oop/inheritance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">وراثت و چندشکلی</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -582,44 +603,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
- <span class="menu-text">کار با فایل</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">رابط گرافیکی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/read-write.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">خواندن و ویرایش فایل</span></a>
+  <a href="../../chapter/gui/top-10-gui.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/binary.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌های باینری</span></a>
+  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/os.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماژول <code>os</code></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/csv-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اکسل و CSV</span></a>
+  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
  <span class="menu-text">عبارات منظم</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">دستکاری رشته</span></a>
@@ -638,32 +654,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/text-processing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پردازش متن</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
- <span class="menu-text">رابط گرافیکی</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
@@ -710,13 +700,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#وراثت-inheritance-چیست" id="toc-وراثت-inheritance-چیست" class="nav-link active" data-scroll-target="#وراثت-inheritance-چیست">وراثت (Inheritance) چیست؟</a></li>
-  <li><a href="#تعریف-وراثت" id="toc-تعریف-وراثت" class="nav-link" data-scroll-target="#تعریف-وراثت">تعریف وراثت</a></li>
-  <li><a href="#override-کردن-متد-بازنویسی" id="toc-override-کردن-متد-بازنویسی" class="nav-link" data-scroll-target="#override-کردن-متد-بازنویسی">Override کردن متد (بازنویسی)</a></li>
-  <li><a href="#استفاده-از-super" id="toc-استفاده-از-super" class="nav-link" data-scroll-target="#استفاده-از-super">استفاده از <span dir="ltr"><code>super()</code></span></a></li>
-  <li><a href="#چندشکلی-polymorphism-چیست" id="toc-چندشکلی-polymorphism-چیست" class="nav-link" data-scroll-target="#چندشکلی-polymorphism-چیست">چندشکلی (Polymorphism) چیست؟</a></li>
-  <li><a href="#بررسی-رابطه-کلاسها" id="toc-بررسی-رابطه-کلاسها" class="nav-link" data-scroll-target="#بررسی-رابطه-کلاسها">بررسی رابطه کلاس‌ها</a></li>
-  <li><a href="#وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه" id="toc-وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه" class="nav-link" data-scroll-target="#وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه">وراثت چندگانه (Multiple Inheritance) — اشاره کوتاه</a></li>
+  <li><a href="#خواندن-و-نوشتن-فایل-متنی" id="toc-خواندن-و-نوشتن-فایل-متنی" class="nav-link active" data-scroll-target="#خواندن-و-نوشتن-فایل-متنی">خواندن و نوشتن فایل متنی</a>
+  <ul class="collapse">
+  <li><a href="#بازکردن-فایل-متنی" id="toc-بازکردن-فایل-متنی" class="nav-link" data-scroll-target="#بازکردن-فایل-متنی">بازکردن فایل متنی</a></li>
+  </ul></li>
+  <li><a href="#فایلهای-باینری" id="toc-فایلهای-باینری" class="nav-link" data-scroll-target="#فایلهای-باینری">فایل‌های باینری</a>
+  <ul class="collapse">
+  <li><a href="#تفاوت-فایل-متنی-و-باینری" id="toc-تفاوت-فایل-متنی-و-باینری" class="nav-link" data-scroll-target="#تفاوت-فایل-متنی-و-باینری">تفاوت فایل متنی و باینری</a></li>
+  <li><a href="#باز-کردن-فایل-باینری-حرف-b" id="toc-باز-کردن-فایل-باینری-حرف-b" class="nav-link" data-scroll-target="#باز-کردن-فایل-باینری-حرف-b">باز کردن فایل باینری — حرف <span dir="ltr"><code>b</code></span></a></li>
+  <li><a href="#خواندن-فایل-باینری" id="toc-خواندن-فایل-باینری" class="nav-link" data-scroll-target="#خواندن-فایل-باینری">خواندن فایل باینری</a></li>
+  <li><a href="#نوشتن-فایل-باینری" id="toc-نوشتن-فایل-باینری" class="nav-link" data-scroll-target="#نوشتن-فایل-باینری">نوشتن فایل باینری</a></li>
+  <li><a href="#کپی-کردن-یک-فایل-باینری-مثال-کاربردی" id="toc-کپی-کردن-یک-فایل-باینری-مثال-کاربردی" class="nav-link" data-scroll-target="#کپی-کردن-یک-فایل-باینری-مثال-کاربردی">کپی کردن یک فایل باینری (مثال کاربردی)</a></li>
+  <li><a href="#تبدیل-بین-str-و-bytes" id="toc-تبدیل-بین-str-و-bytes" class="nav-link" data-scroll-target="#تبدیل-بین-str-و-bytes">تبدیل بین <span dir="ltr"><code>str</code></span> و <span dir="ltr"><code>bytes</code></span></a></li>
+  <li><a href="#نکته-مهم-باز-کردن-فایل-متنی-بهجای-باینری-و-برعکس-خطا-میده" id="toc-نکته-مهم-باز-کردن-فایل-متنی-بهجای-باینری-و-برعکس-خطا-میده" class="nav-link" data-scroll-target="#نکته-مهم-باز-کردن-فایل-متنی-بهجای-باینری-و-برعکس-خطا-میده">نکته مهم: باز کردن فایل متنی به‌جای باینری (و برعکس) خطا می‌ده</a></li>
+  </ul></li>
+  <li><a href="#ماژول-os" id="toc-ماژول-os" class="nav-link" data-scroll-target="#ماژول-os">ماژول os</a>
+  <ul class="collapse">
+  <li><a href="#چرا-os" id="toc-چرا-os" class="nav-link" data-scroll-target="#چرا-os">چرا os؟</a></li>
+  <li><a href="#بررسی-وجود-فایلپوشه" id="toc-بررسی-وجود-فایلپوشه" class="nav-link" data-scroll-target="#بررسی-وجود-فایلپوشه">بررسی وجود فایل/پوشه</a></li>
+  <li><a href="#حذف-فایل" id="toc-حذف-فایل" class="nav-link" data-scroll-target="#حذف-فایل">حذف فایل</a></li>
+  <li><a href="#تغییر-نام-جابهجایی-فایل" id="toc-تغییر-نام-جابهجایی-فایل" class="nav-link" data-scroll-target="#تغییر-نام-جابهجایی-فایل">تغییر نام / جابه‌جایی فایل</a></li>
+  <li><a href="#کار-با-پوشهها" id="toc-کار-با-پوشهها" class="nav-link" data-scroll-target="#کار-با-پوشهها">کار با پوشه‌ها</a></li>
+  <li><a href="#مسیر-فعلی-و-تغییر-مسیر" id="toc-مسیر-فعلی-و-تغییر-مسیر" class="nav-link" data-scroll-target="#مسیر-فعلی-و-تغییر-مسیر">مسیر فعلی و تغییر مسیر</a></li>
+  <li><a href="#کار-با-مسیرها-os.path" id="toc-کار-با-مسیرها-os.path" class="nav-link" data-scroll-target="#کار-با-مسیرها-os.path">کار با مسیرها — <span dir="ltr"><code>os.path</code></span></a></li>
+  <li><a href="#گرفتن-اطلاعات-فایل" id="toc-گرفتن-اطلاعات-فایل" class="nav-link" data-scroll-target="#گرفتن-اطلاعات-فایل">گرفتن اطلاعات فایل</a></li>
+  <li><a href="#پیمایش-کامل-یک-درخت-پوشه" id="toc-پیمایش-کامل-یک-درخت-پوشه" class="nav-link" data-scroll-target="#پیمایش-کامل-یک-درخت-پوشه">پیمایش کامل یک درخت پوشه</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -724,9 +733,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/oop/class-object.html">کلاس و شئ گرایی</a></li><li class="breadcrumb-item"><a href="../../chapter/oop/inheritance-polymorphism.html"><span class="chapter-title">وراثت و چندشکلی</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/files/os-open.html">کار با فایل</a></li><li class="breadcrumb-item"><a href="../../chapter/files/os-open.html"><span class="chapter-title">کار با فایل‌ها</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">وراثت و چندشکلی</span></h1>
+<h1 class="title"><span class="chapter-title">کار با فایل‌ها</span></h1>
 </div>
 
 
@@ -738,7 +747,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-08-15</p>
+      <p class="date-modified">2026-08-17</p>
     </div>
   </div>
     
@@ -749,91 +758,300 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="وراثت-inheritance-چیست" class="level2">
-<h2 class="anchored" data-anchor-id="وراثت-inheritance-چیست">وراثت (Inheritance) چیست؟</h2>
+<section id="خواندن-و-نوشتن-فایل-متنی" class="level2">
+<h2 class="anchored" data-anchor-id="خواندن-و-نوشتن-فایل-متنی">خواندن و نوشتن فایل متنی</h2>
+<section id="بازکردن-فایل-متنی" class="level3">
+<h3 class="anchored" data-anchor-id="بازکردن-فایل-متنی">بازکردن فایل متنی</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>یک کلاس (فرزند/Child) می‌تونه ویژگی‌ها و متدهای کلاس دیگه (والد/Parent) رو به ارث ببره</li>
-<li>هدف: جلوگیری از تکرار کد، سازمان‌دهی سلسله‌مراتبی</li>
+<li>خروجی یک <strong>handle</strong> به فایله، نه محتوای واقعی — برای خوندن ازش استفاده می‌شه</li>
+<li>اگه فایل وجود نداشته باشه → خطا: <span dir="ltr"><code>FileNotFoundError</code></span></li>
 </ul>
-</section>
-<section id="تعریف-وراثت" class="level2">
-<h2 class="anchored" data-anchor-id="تعریف-وراثت">تعریف وراثت</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Animal:</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name):</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> makes a sound."</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog(Animal):    <span class="co"># Dog از Animal ارث می‌بره</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>d.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>Rex makes a sound.</code></pre>
-<ul>
-<li><span dir="ltr"><code>Dog(Animal)</code></span> یعنی <span dir="ltr"><code>Dog</code></span> فرزند <span dir="ltr"><code>Animal</code></span> هست</li>
-</ul>
-</section>
-<section id="override-کردن-متد-بازنویسی" class="level2">
-<h2 class="anchored" data-anchor-id="override-کردن-متد-بازنویسی">Override کردن متد (بازنویسی)</h2>
-<ul>
-<li>کلاس فرزند می‌تونه متد کلاس والد رو با رفتار متفاوت بازنویسی کنه</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog(Animal):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> says: Woof!"</span>)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>d.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>Rex says: Woof!</code></pre>
-</section>
-<section id="استفاده-از-super" class="level2">
-<h2 class="anchored" data-anchor-id="استفاده-از-super">استفاده از <span dir="ltr"><code>super()</code></span></h2>
-<ul>
-<li>برای فراخوانی متد کلاس والد از داخل کلاس فرزند (بدون بازنویسی کامل)</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog(Animal):</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, breed):</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>(name)     <span class="co"># فراخوانی __init__ کلاس والد</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.breed <span class="op">=</span> breed</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().speak()            <span class="co"># اجرای رفتار والد هم</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> says: Woof!"</span>)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>, <span class="st">"Labrador"</span>)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>d.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>Rex makes a sound.
-Rex says: Woof!</code></pre>
-</section>
-<section id="چندشکلی-polymorphism-چیست" class="level2">
-<h2 class="anchored" data-anchor-id="چندشکلی-polymorphism-چیست">چندشکلی (Polymorphism) چیست؟</h2>
-<ul>
-<li>یعنی اشیاء از کلاس‌های مختلف، با همون نام متد، رفتار متفاوتی نشون بدن</li>
-<li>کد می‌تونه با اشیاء مختلف به یک شکل کار کنه، بدون اینکه نوع دقیقشون رو بدونه</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Cat(Animal):</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> says: Meow!"</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>animals <span class="op">=</span> [Dog(<span class="st">"Rex"</span>, <span class="st">"Labrador"</span>), Cat(<span class="st">"Whiskers"</span>)]</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> a <span class="kw">in</span> animals:</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    a.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>Rex says: Woof!
-Whiskers says: Meow!</code></pre>
-<ul>
-<li>همه‌ی متد <span dir="ltr"><code>speak()</code></span> رو یکسان صدا زدیم، ولی هرکدوم رفتار خودشون رو دارن</li>
-</ul>
-</section>
-<section id="بررسی-رابطه-کلاسها" class="level2">
-<h2 class="anchored" data-anchor-id="بررسی-رابطه-کلاسها">بررسی رابطه کلاس‌ها</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
 <col style="width: 50%">
 </colgroup>
+<thead>
+<tr class="header">
+<th>حالت</th>
+<th>کاربرد</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span dir="ltr"><code>'r'</code></span></td>
+<td>خواندن (پیش‌فرض)</td>
+</tr>
+<tr class="even">
+<td><span dir="ltr"><code>'w'</code></span></td>
+<td>نوشتن — ⚠️ محتوای قبلی فایل پاک می‌شه</td>
+</tr>
+<tr class="odd">
+<td><span dir="ltr"><code>'a'</code></span></td>
+<td>append — اضافه‌کردن به انتهای فایل، بدون پاک کردن محتوای قبلی</td>
+</tr>
+<tr class="even">
+<td><span dir="ltr"><code>'x'</code></span></td>
+<td>ساخت فایل جدید — اگه از قبل وجود داشته باشه خطا می‌ده</td>
+</tr>
+</tbody>
+</table>
+<section id="خواندن-فایل" class="level4">
+<h4 class="anchored" data-anchor-id="خواندن-فایل">خواندن فایل</h4>
+<ul>
+<li>روش ۱: خط به خط با <span dir="ltr"><code>for</code></span> (برای فایل‌های بزرگ)</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> line <span class="kw">in</span> fhand:</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Line Count:'</span>, count)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>روش ۲: خواندن کل فایل یکجا (برای فایل‌های کوچک)</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>inp <span class="op">=</span> fhand.read()</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(inp))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>⚠️ نکته: محتوا رو حتماً توی متغیر ذخیره کنیم، وگرنه با خواندن مجدد از دست می‌ره</li>
+</ul>
+</section>
+<section id="جستجو-در-فایل" class="level4">
+<h4 class="anchored" data-anchor-id="جستجو-در-فایل">جستجو در فایل</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fhand <span class="op">=</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> line <span class="kw">in</span> fhand:</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> line.rstrip()</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> line.startswith(<span class="st">'From:'</span>):</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(line)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><span dir="ltr"><code>rstrip()</code></span> : حذف فضای خالی سمت راست رشته</li>
+<li><span dir="ltr"><code>startswith()</code></span> : بررسی شروع خط با یک کلمه/رشته خاص</li>
+</ul>
+</section>
+<section id="مدیریت-خطا" class="level4">
+<h4 class="anchored" data-anchor-id="مدیریت-خطا">مدیریت خطا</h4>
+<ul>
+<li>به‌جای هاردکد کردن نام فایل، از کاربر می‌گیریم — ولی چون فایل ممکنه وجود نداشته باشه، حتماً با <span dir="ltr"><code>try-except</code></span> پوشش بدیم</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fname <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter the file name: '</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    fhand <span class="op">=</span> <span class="bu">open</span>(fname)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span>:</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'File cannot be opened:'</span>, fname)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    exit()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><span dir="ltr"><code>exit()</code></span> : خروج کامل از اجرای برنامه اگه فایل باز نشد</li>
+</ul>
+</section>
+<section id="نوشتن-در-فایل" class="level4">
+<h4 class="anchored" data-anchor-id="نوشتن-در-فایل">نوشتن در فایل</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fout <span class="op">=</span> <span class="bu">open</span>(<span class="st">'output.txt'</span>, <span class="st">'w'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>پارامتر <span dir="ltr"><code>'w'</code></span>:
+<ul>
+<li>اگه فایل وجود داشته باشه → باز می‌شه برای نوشتن (⚠️ محتوای قبلی پاک می‌شه)</li>
+<li>اگه وجود نداشته باشه → فایل جدید ساخته می‌شه</li>
+</ul></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>line1 <span class="op">=</span> <span class="st">"This here's the wattle,</span><span class="ch">\n</span><span class="st">"</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>fout.write(line1)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="بستن-فایل" class="level4">
+<h4 class="anchored" data-anchor-id="بستن-فایل">بستن فایل</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fout.close()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>بعد از اتمام کار با فایل، <strong>همیشه</strong> باید بسته بشه</li>
+</ul>
+</section>
+<section id="روش-استاندارد-و-توصیهشده" class="level4">
+<h4 class="anchored" data-anchor-id="روش-استاندارد-و-توصیهشده">روش استاندارد و توصیه‌شده</h4>
+<ul>
+<li>روش دستی (باز کردن + <span dir="ltr"><code>close()</code></span> دستی) رایجه، ولی در عمل استفاده از <span dir="ltr"><code>with</code></span> توصیه‌شده‌تره</li>
+<li>مزیت: فایل <strong>خودکار بسته می‌شه</strong>، حتی اگه وسط کار خطا رخ بده — نیازی به <span dir="ltr"><code>close()</code></span> دستی نیست</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'mbox.txt'</span>) <span class="im">as</span> fhand:</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> line <span class="kw">in</span> fhand:</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(line.rstrip())</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># اینجا فایل خودش بسته شده</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'output.txt'</span>, <span class="st">'w'</span>) <span class="im">as</span> fout:</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    fout.write(<span class="st">"This here's the wattle,</span><span class="ch">\n</span><span class="st">"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+</section>
+<section id="فایلهای-باینری" class="level2">
+<h2 class="anchored" data-anchor-id="فایلهای-باینری">فایل‌های باینری</h2>
+<section id="تفاوت-فایل-متنی-و-باینری" class="level3">
+<h3 class="anchored" data-anchor-id="تفاوت-فایل-متنی-و-باینری">تفاوت فایل متنی و باینری</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>نوع</th>
+<th>محتوا</th>
+<th>مثال</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>متنی (text)</td>
+<td>کاراکترهای قابل‌خواندن، با encoding رمزگذاری می‌شه</td>
+<td><span dir="ltr"><code>.txt</code></span>، <span dir="ltr"><code>.csv</code></span></td>
+</tr>
+<tr class="even">
+<td>باینری (binary)</td>
+<td>دنباله خام بایت‌ها، بدون تفسیر متنی</td>
+<td><span dir="ltr"><code>.jpg</code></span>، <span dir="ltr"><code>.png</code></span>، <span dir="ltr"><code>.mp3</code></span>، <span dir="ltr"><code>.pdf</code></span>، <span dir="ltr"><code>.zip</code></span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>در حالت متنی، پایتون بایت‌ها رو با یک encoding (مثلاً UTF-8) به رشته تبدیل می‌کنه</li>
+<li>در حالت باینری، هیچ تبدیلی انجام نمی‌شه — داده به‌صورت خام (<span dir="ltr"><code>bytes</code></span>) خونده/نوشته می‌شه</li>
+</ul>
+</section>
+<section id="باز-کردن-فایل-باینری-حرف-b" class="level3">
+<h3 class="anchored" data-anchor-id="باز-کردن-فایل-باینری-حرف-b">باز کردن فایل باینری — حرف <span dir="ltr"><code>b</code></span></h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>حالت</th>
+<th>کاربرد</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span dir="ltr"><code>'rb'</code></span></td>
+<td>خواندن باینری</td>
+</tr>
+<tr class="even">
+<td><span dir="ltr"><code>'wb'</code></span></td>
+<td>نوشتن باینری (پاک‌کردن محتوای قبلی)</td>
+</tr>
+<tr class="odd">
+<td><span dir="ltr"><code>'ab'</code></span></td>
+<td>append باینری</td>
+</tr>
+<tr class="even">
+<td><span dir="ltr"><code>'xb'</code></span></td>
+<td>ساخت فایل باینری جدید (خطا اگه وجود داشته باشه)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="خواندن-فایل-باینری" class="level3">
+<h3 class="anchored" data-anchor-id="خواندن-فایل-باینری">خواندن فایل باینری</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'image.jpg'</span>, <span class="st">'rb'</span>) <span class="im">as</span> f:</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> f.read()</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="bu">type</span>(data))   <span class="co"># &lt;class 'bytes'&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="bu">len</span>(data))    <span class="co"># تعداد بایت‌ها</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>خروجی از نوع <span dir="ltr"><code>bytes</code></span> هست، نه <span dir="ltr"><code>str</code></span></li>
+<li>⚠️ متدهای رشته‌ای مثل <span dir="ltr"><code>.rstrip()</code></span> یا <span dir="ltr"><code>.startswith('متن')</code></span> روی <span dir="ltr"><code>bytes</code></span> فرق دارن (باید با <span dir="ltr"><code>b'...'</code></span> مقایسه بشن)</li>
+</ul>
+</section>
+<section id="نوشتن-فایل-باینری" class="level3">
+<h3 class="anchored" data-anchor-id="نوشتن-فایل-باینری">نوشتن فایل باینری</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> <span class="st">b'</span><span class="ch">\x89</span><span class="st">PNG</span><span class="ch">\r\n\x1a\n</span><span class="st">...'</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'output.bin'</span>, <span class="st">'wb'</span>) <span class="im">as</span> f:</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    f.write(data)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>فقط <span dir="ltr"><code>bytes</code></span> یا <span dir="ltr"><code>bytearray</code></span> قابل نوشتنه، نه رشته معمولی</li>
+</ul>
+</section>
+<section id="کپی-کردن-یک-فایل-باینری-مثال-کاربردی" class="level3">
+<h3 class="anchored" data-anchor-id="کپی-کردن-یک-فایل-باینری-مثال-کاربردی">کپی کردن یک فایل باینری (مثال کاربردی)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'source.jpg'</span>, <span class="st">'rb'</span>) <span class="im">as</span> fin:</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(<span class="st">'copy.jpg'</span>, <span class="st">'wb'</span>) <span class="im">as</span> fout:</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>        fout.write(fin.read())</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>برای فایل‌های بزرگ بهتره تکه‌تکه (chunk) بخونیم تا حافظه پر نشه:</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'source.jpg'</span>, <span class="st">'rb'</span>) <span class="im">as</span> fin, <span class="bu">open</span>(<span class="st">'copy.jpg'</span>, <span class="st">'wb'</span>) <span class="im">as</span> fout:</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>        chunk <span class="op">=</span> fin.read(<span class="dv">4096</span>)   <span class="co"># هر بار ۴۰۹۶ بایت</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> chunk:</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>        fout.write(chunk)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="تبدیل-بین-str-و-bytes" class="level3">
+<h3 class="anchored" data-anchor-id="تبدیل-بین-str-و-bytes">تبدیل بین <span dir="ltr"><code>str</code></span> و <span dir="ltr"><code>bytes</code></span></h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>متد</th>
+<th>کار</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span dir="ltr"><code>str.encode()</code></span></td>
+<td>تبدیل رشته به بایت</td>
+</tr>
+<tr class="even">
+<td><span dir="ltr"><code>bytes.decode()</code></span></td>
+<td>تبدیل بایت به رشته</td>
+</tr>
+</tbody>
+</table>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">"سلام"</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> s.encode(<span class="st">'utf-8'</span>)     <span class="co"># str → bytes</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(b)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>s2 <span class="op">=</span> b.decode(<span class="st">'utf-8'</span>)    <span class="co"># bytes → str</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s2)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="نکته-مهم-باز-کردن-فایل-متنی-بهجای-باینری-و-برعکس-خطا-میده" class="level3">
+<h3 class="anchored" data-anchor-id="نکته-مهم-باز-کردن-فایل-متنی-بهجای-باینری-و-برعکس-خطا-میده">نکته مهم: باز کردن فایل متنی به‌جای باینری (و برعکس) خطا می‌ده</h3>
+<ul>
+<li>سعی در خواندن فایل باینری (مثل عکس) با حالت <span dir="ltr"><code>'r'</code></span> معمولاً باعث خطای decode می‌شه:</li>
+</ul>
+<pre><code>UnicodeDecodeError: 'utf-8' codec can't decode byte...</code></pre>
+<ul>
+<li>قانون کلی: فایل‌های غیرمتنی (عکس، صدا، فایل فشرده، اجرایی) → همیشه با <span dir="ltr"><code>b</code></span></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="ماژول-os" class="level2">
+<h2 class="anchored" data-anchor-id="ماژول-os">ماژول os</h2>
+<section id="چرا-os" class="level3">
+<h3 class="anchored" data-anchor-id="چرا-os">چرا os؟</h3>
+<ul>
+<li>ماژول <span dir="ltr"><code>os</code></span> برای کار با سیستم‌عامل (فایل، پوشه، مسیر) استفاده می‌شه — چیزی فراتر از خواندن/نوشتن محتوای فایل</li>
+<li>وارد کردن: <span dir="ltr"><code>import os</code></span></li>
+</ul>
+</section>
+<section id="بررسی-وجود-فایلپوشه" class="level3">
+<h3 class="anchored" data-anchor-id="بررسی-وجود-فایلپوشه">بررسی وجود فایل/پوشه</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>os.path.exists(<span class="st">'mbox.txt'</span>)     <span class="co"># True / False</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>os.path.isfile(<span class="st">'mbox.txt'</span>)     <span class="co"># آیا فایله؟</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>os.path.isdir(<span class="st">'data'</span>)          <span class="co"># آیا پوشه‌ست؟</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<blockquote class="blockquote">
+<p>نکته: قبل از باز کردن فایل با <span dir="ltr"><code>open()</code></span>، می‌شه اول با <span dir="ltr"><code>os.path.exists()</code></span> چک کرد (هرچند <span dir="ltr"><code>try-except</code></span> هم روش رایج و ایمن‌تریه)</p>
+</blockquote>
+</section>
+<section id="حذف-فایل" class="level3">
+<h3 class="anchored" data-anchor-id="حذف-فایل">حذف فایل</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>os.remove(<span class="st">'output.txt'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>⚠️ اگه فایل وجود نداشته باشه → خطای <span dir="ltr"><code>FileNotFoundError</code></span></li>
+</ul>
+</section>
+<section id="تغییر-نام-جابهجایی-فایل" class="level3">
+<h3 class="anchored" data-anchor-id="تغییر-نام-جابهجایی-فایل">تغییر نام / جابه‌جایی فایل</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>os.rename(<span class="st">'old_name.txt'</span>, <span class="st">'new_name.txt'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="کار-با-پوشهها" class="level3">
+<h3 class="anchored" data-anchor-id="کار-با-پوشهها">کار با پوشه‌ها</h3>
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>تابع</th>
@@ -842,34 +1060,88 @@ Whiskers says: Meow!</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span dir="ltr"><code>isinstance(obj, Class)</code></span></td>
-<td>آیا شیء نمونه‌ای از این کلاس (یا فرزندانش) هست</td>
+<td><span dir="ltr"><code>os.mkdir('folder')</code></span></td>
+<td>ساخت یک پوشه</td>
 </tr>
 <tr class="even">
-<td><span dir="ltr"><code>issubclass(Child, Parent)</code></span></td>
-<td>آیا این کلاس فرزند اون کلاسه</td>
+<td><span dir="ltr"><code>os.makedirs('a/b/c')</code></span></td>
+<td>ساخت پوشه‌های تودرتو (چند سطحی)</td>
+</tr>
+<tr class="odd">
+<td><span dir="ltr"><code>os.rmdir('folder')</code></span></td>
+<td>حذف پوشه (فقط اگه خالی باشه)</td>
+</tr>
+<tr class="even">
+<td><span dir="ltr"><code>os.listdir('.')</code></span></td>
+<td>لیست فایل‌ها و پوشه‌های داخل یک مسیر</td>
 </tr>
 </tbody>
 </table>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">isinstance</span>(d, Animal))    <span class="co"># True</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">issubclass</span>(Dog, Animal))  <span class="co"># True</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>os.mkdir(<span class="st">'new_folder'</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(os.listdir(<span class="st">'.'</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه" class="level2">
-<h2 class="anchored" data-anchor-id="وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه">وراثت چندگانه (Multiple Inheritance) — اشاره کوتاه</h2>
-<ul>
-<li>پایتون اجازه می‌ده یک کلاس از چند کلاس ارث ببره</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> A:</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> B:</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> C(A, B):</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="مسیر-فعلی-و-تغییر-مسیر" class="level3">
+<h3 class="anchored" data-anchor-id="مسیر-فعلی-و-تغییر-مسیر">مسیر فعلی و تغییر مسیر</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(os.getcwd())      <span class="co"># مسیر فعلی که برنامه در اون اجرا می‌شه</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>os.chdir(<span class="st">'data'</span>)        <span class="co"># تغییر مسیر فعلی به پوشه data</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="کار-با-مسیرها-os.path" class="level3">
+<h3 class="anchored" data-anchor-id="کار-با-مسیرها-os.path">کار با مسیرها — <span dir="ltr"><code>os.path</code></span></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>تابع</th>
+<th>کار</th>
+<th>مثال</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span dir="ltr"><code>os.path.join()</code></span></td>
+<td>ساخت مسیر به‌صورت درست (سازگار با ویندوز/لینوکس)</td>
+<td><span dir="ltr"><code>os.path.join('data', 'mbox.txt')</code></span></td>
+</tr>
+<tr class="even">
+<td><span dir="ltr"><code>os.path.basename()</code></span></td>
+<td>فقط نام فایل از مسیر</td>
+<td><span dir="ltr"><code>'data/mbox.txt'</code></span> → <span dir="ltr"><code>'mbox.txt'</code></span></td>
+</tr>
+<tr class="odd">
+<td><span dir="ltr"><code>os.path.dirname()</code></span></td>
+<td>فقط مسیر پوشه</td>
+<td><span dir="ltr"><code>'data/mbox.txt'</code></span> → <span dir="ltr"><code>'data'</code></span></td>
+</tr>
+<tr class="even">
+<td><span dir="ltr"><code>os.path.splitext()</code></span></td>
+<td>جدا کردن نام و پسوند فایل</td>
+<td><span dir="ltr"><code>'mbox.txt'</code></span> → <span dir="ltr"><code>('mbox', '.txt')</code></span></td>
+</tr>
+</tbody>
+</table>
 <blockquote class="blockquote">
-<p>نکته کلاسی: وراثت چندگانه قدرتمنده ولی می‌تونه پیچیدگی ایجاد کنه (ترتیب جستجوی متدها — MRO)؛ فعلاً فقط آشنایی کافیه.</p>
+<p>نکته مهم: به‌جای الحاق دستی رشته‌ها برای مسیر (مثل <span dir="ltr"><code>'data' + '/' + 'mbox.txt'</code></span>)، همیشه از <span dir="ltr"><code>os.path.join()</code></span> استفاده بشه — چون در ویندوز جداکننده مسیر <span dir="ltr"><code>\</code></span> است نه <span dir="ltr"><code>/</code></span></p>
 </blockquote>
+</section>
+<section id="گرفتن-اطلاعات-فایل" class="level3">
+<h3 class="anchored" data-anchor-id="گرفتن-اطلاعات-فایل">گرفتن اطلاعات فایل</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>os.path.getsize(<span class="st">'mbox.txt'</span>)    <span class="co"># حجم فایل بر حسب بایت</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="پیمایش-کامل-یک-درخت-پوشه" class="level3">
+<h3 class="anchored" data-anchor-id="پیمایش-کامل-یک-درخت-پوشه">پیمایش کامل یک درخت پوشه</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> root, dirs, files <span class="kw">in</span> os.walk(<span class="st">'.'</span>):</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> f <span class="kw">in</span> files:</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(os.path.join(root, f))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><span dir="ltr"><code>os.walk()</code></span> به‌صورت بازگشتی همه‌ی زیرپوشه‌ها و فایل‌ها رو برمی‌گردونه</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1288,13 +1560,13 @@ Whiskers says: Meow!</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapter/oop/class-object.html" class="pagination-link" aria-label="کلاس‌ها و اشیاء (`class`)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">کلاس‌ها و اشیاء (<code>class</code>)</span></span>
+      <a href="../../chapter/functions/import.html" class="pagination-link" aria-label="خارجی (`import`)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">خارجی (<code>import</code>)</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapter/oop/encapsulation.html" class="pagination-link" aria-label="اصول کپسوله‌سازی و انتزاع">
-        <span class="nav-page-text"><span class="chapter-title">اصول کپسوله‌سازی و انتزاع</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapter/files/data.html" class="pagination-link" aria-label="فایل‌های داده">
+        <span class="nav-page-text"><span class="chapter-title">فایل‌های داده</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

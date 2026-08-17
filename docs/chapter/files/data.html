@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>تابع map و lambda – مبانی پایتون</title>
+<title>فایل‌های داده – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapter/oop/class-object.html" rel="next">
-<link href="../../chapter/functions/import.html" rel="prev">
+<link href="../../chapter/files/sqlite.html" rel="next">
+<link href="../../chapter/files/os-open.html" rel="prev">
 <link href="../../img/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/functions/def.html">تابع</a></li><li class="breadcrumb-item"><a href="../../chapter/functions/map-lambda.html"><span class="chapter-title">تابع <code>map</code> و <code>lambda</code></span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/files/os-open.html">کار با فایل</a></li><li class="breadcrumb-item"><a href="../../chapter/files/data.html"><span class="chapter-title">فایل‌های داده</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -524,7 +524,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/def.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
+  <a href="../../chapter/functions/def-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -537,17 +537,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <a href="../../chapter/functions/import.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">خارجی (<code>import</code>)</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/map-lambda.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">تابع <code>map</code> و <code>lambda</code></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">کلاس و شئ گرایی</span></a>
+ <span class="menu-text">کار با فایل</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -555,12 +550,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/os-open.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">کار با فایل‌ها</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/data.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">فایل‌های داده</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/files/sqlite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">بانک اطلاعاتی (SQLite)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">کلاس و شئ گرایی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapter/oop/class-object.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">کلاس‌ها و اشیاء (<code>class</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/oop/inheritance-polymorphism.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">وراثت و چندشکلی</span></a>
+  <a href="../../chapter/oop/inheritance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">وراثت و چندشکلی</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -582,44 +603,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
- <span class="menu-text">کار با فایل</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">رابط گرافیکی</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/read-write.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">خواندن و ویرایش فایل</span></a>
+  <a href="../../chapter/gui/top-10-gui.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/binary.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">فایل‌های باینری</span></a>
+  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/os.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماژول <code>os</code></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/files/csv-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">اکسل و CSV</span></a>
+  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
  <span class="menu-text">عبارات منظم</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/string.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">دستکاری رشته</span></a>
@@ -638,32 +654,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapter/regex/text-processing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">پردازش متن</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
- <span class="menu-text">رابط گرافیکی</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="تغییر بخش">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/tkinter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/widgets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ابزارهای اصلی (Widgets)</span></a>
   </div>
 </li>
       </ul>
@@ -710,14 +700,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#map-چیست" id="toc-map-چیست" class="nav-link active" data-scroll-target="#map-چیست">map چیست؟</a></li>
-  <li><a href="#سینتکس" id="toc-سینتکس" class="nav-link" data-scroll-target="#سینتکس">سینتکس</a></li>
-  <li><a href="#مثال-ساده-مقایسه-با-for" id="toc-مثال-ساده-مقایسه-با-for" class="nav-link" data-scroll-target="#مثال-ساده-مقایسه-با-for">مثال ساده: مقایسه با for</a></li>
-  <li><a href="#نکته-مهم-خروجی-map-یک-map-object-است" id="toc-نکته-مهم-خروجی-map-یک-map-object-است" class="nav-link" data-scroll-target="#نکته-مهم-خروجی-map-یک-map-object-است">نکته مهم: خروجی map یک <span dir="ltr"><code>map object</code></span> است</a></li>
-  <li><a href="#استفاده-با-تابع-معمولی-نه-فقط-lambda" id="toc-استفاده-با-تابع-معمولی-نه-فقط-lambda" class="nav-link" data-scroll-target="#استفاده-با-تابع-معمولی-نه-فقط-lambda">استفاده با تابع معمولی (نه فقط lambda)</a></li>
-  <li><a href="#map-روی-چند-لیست-همزمان" id="toc-map-روی-چند-لیست-همزمان" class="nav-link" data-scroll-target="#map-روی-چند-لیست-همزمان">map روی چند لیست همزمان</a></li>
-  <li><a href="#map-در-مقابل-list-comprehension" id="toc-map-در-مقابل-list-comprehension" class="nav-link" data-scroll-target="#map-در-مقابل-list-comprehension">map در مقابل list comprehension</a></li>
-  <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
+  <li><a href="#چرا-این-فرمتها" id="toc-چرا-این-فرمتها" class="nav-link active" data-scroll-target="#چرا-این-فرمتها">چرا این فرمت‌ها؟</a></li>
+  <li><a href="#json" id="toc-json" class="nav-link" data-scroll-target="#json">JSON</a>
+  <ul class="collapse">
+  <li><a href="#خواندن-فایل-json" id="toc-خواندن-فایل-json" class="nav-link" data-scroll-target="#خواندن-فایل-json">خواندن فایل JSON</a></li>
+  <li><a href="#نوشتن-فایل-json" id="toc-نوشتن-فایل-json" class="nav-link" data-scroll-target="#نوشتن-فایل-json">نوشتن فایل JSON</a></li>
+  <li><a href="#تبدیل-رشته-json-به-دیتای-پایتون-و-برعکس" id="toc-تبدیل-رشته-json-به-دیتای-پایتون-و-برعکس" class="nav-link" data-scroll-target="#تبدیل-رشته-json-به-دیتای-پایتون-و-برعکس">تبدیل رشته JSON به دیتای پایتون (و برعکس)</a></li>
+  </ul></li>
+  <li><a href="#csv-با-ماژول-استاندارد" id="toc-csv-با-ماژول-استاندارد" class="nav-link" data-scroll-target="#csv-با-ماژول-استاندارد">CSV (با ماژول استاندارد)</a>
+  <ul class="collapse">
+  <li><a href="#خواندن-فایل-csv" id="toc-خواندن-فایل-csv" class="nav-link" data-scroll-target="#خواندن-فایل-csv">خواندن فایل CSV</a></li>
+  <li><a href="#نوشتن-فایل-csv" id="toc-نوشتن-فایل-csv" class="nav-link" data-scroll-target="#نوشتن-فایل-csv">نوشتن فایل CSV</a></li>
+  </ul></li>
+  <li><a href="#xml" id="toc-xml" class="nav-link" data-scroll-target="#xml">XML</a>
+  <ul class="collapse">
+  <li><a href="#خواندن-فایل-xml" id="toc-خواندن-فایل-xml" class="nav-link" data-scroll-target="#خواندن-فایل-xml">خواندن فایل XML</a></li>
+  <li><a href="#ساخت-و-نوشتن-فایل-xml" id="toc-ساخت-و-نوشتن-فایل-xml" class="nav-link" data-scroll-target="#ساخت-و-نوشتن-فایل-xml">ساخت و نوشتن فایل XML</a></li>
+  </ul></li>
+  <li><a href="#pandas" id="toc-pandas" class="nav-link" data-scroll-target="#pandas">pandas</a>
+  <ul class="collapse">
+  <li><a href="#نصب-و-وارد-کردن" id="toc-نصب-و-وارد-کردن" class="nav-link" data-scroll-target="#نصب-و-وارد-کردن">نصب و وارد کردن</a></li>
+  <li><a href="#خواندن-فایل-csv-1" id="toc-خواندن-فایل-csv-1" class="nav-link" data-scroll-target="#خواندن-فایل-csv-1">خواندن فایل CSV</a></li>
+  <li><a href="#خواندن-فایل-excel" id="toc-خواندن-فایل-excel" class="nav-link" data-scroll-target="#خواندن-فایل-excel">خواندن فایل Excel</a></li>
+  <li><a href="#نگاه-سریع-به-داده" id="toc-نگاه-سریع-به-داده" class="nav-link" data-scroll-target="#نگاه-سریع-به-داده">نگاه سریع به داده</a></li>
+  <li><a href="#دسترسی-به-داده" id="toc-دسترسی-به-داده" class="nav-link" data-scroll-target="#دسترسی-به-داده">دسترسی به داده</a></li>
+  <li><a href="#فیلتر-کردن-داده" id="toc-فیلتر-کردن-داده" class="nav-link" data-scroll-target="#فیلتر-کردن-داده">فیلتر کردن داده</a></li>
+  <li><a href="#نوشتن-در-فایل" id="toc-نوشتن-در-فایل" class="nav-link" data-scroll-target="#نوشتن-در-فایل">نوشتن در فایل</a></li>
+  <li><a href="#ساخت-dataframe" id="toc-ساخت-dataframe" class="nav-link" data-scroll-target="#ساخت-dataframe">ساخت <code>DataFrame</code></a></li>
+  </ul></li>
+  <li><a href="#مقایسه-سریع" id="toc-مقایسه-سریع" class="nav-link" data-scroll-target="#مقایسه-سریع">مقایسه سریع</a></li>
   </ul>
 </nav>
     </div>
@@ -725,9 +736,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/functions/def.html">تابع</a></li><li class="breadcrumb-item"><a href="../../chapter/functions/map-lambda.html"><span class="chapter-title">تابع <code>map</code> و <code>lambda</code></span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/files/os-open.html">کار با فایل</a></li><li class="breadcrumb-item"><a href="../../chapter/files/data.html"><span class="chapter-title">فایل‌های داده</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">تابع <code>map</code> و <code>lambda</code></span></h1>
+<h1 class="title"><span class="chapter-title">فایل‌های داده</span></h1>
 </div>
 
 
@@ -739,7 +750,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-08-15</p>
+      <p class="date-modified">2026-08-17</p>
     </div>
   </div>
     
@@ -750,98 +761,238 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="map-چیست" class="level2">
-<h2 class="anchored" data-anchor-id="map-چیست">map چیست؟</h2>
+<section id="چرا-این-فرمتها" class="level2">
+<h2 class="anchored" data-anchor-id="چرا-این-فرمتها">چرا این فرمت‌ها؟</h2>
 <ul>
-<li>یک تابع رو روی <strong>همه عناصر</strong> یک لیست (یا هر iterable دیگه) اعمال می‌کنه</li>
-<li>جایگزین سریع‌تر و خواناتر برای نوشتن یک حلقه <span dir="ltr"><code>for</code></span> ساده جهت تغییر همه عناصر</li>
+<li><span dir="ltr"><code>JSON</code></span>، <span dir="ltr"><code>CSV</code></span> و <span dir="ltr"><code>XML</code></span> سه فرمت پرکاربرد برای ذخیره و تبادل داده هستن — فایل‌های متنی ساده‌ای که پایتون خودش ماژول آماده براشون داره</li>
+<li>برای فایل‌های جدولی حجیم‌تر (CSV، Excel) کار کردن دستی با <span dir="ltr"><code>open()</code></span> دست‌وپاگیر می‌شه؛ اونجا کتابخونه‌ی <span dir="ltr"><code>pandas</code></span> به کمک میاد</li>
+</ul>
+<hr>
+</section>
+<section id="json" class="level2">
+<h2 class="anchored" data-anchor-id="json">JSON</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="خواندن-فایل-json" class="level3">
+<h3 class="anchored" data-anchor-id="خواندن-فایل-json">خواندن فایل JSON</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'data.json'</span>, <span class="st">'r'</span>, encoding<span class="op">=</span><span class="st">'utf-8'</span>) <span class="im">as</span> f:</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> json.load(f)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>خروجی معمولاً یک <span dir="ltr"><code>dict</code></span> یا <span dir="ltr"><code>list</code></span> پایتونیه</li>
 </ul>
 </section>
-<section id="سینتکس" class="level2">
-<h2 class="anchored" data-anchor-id="سینتکس">سینتکس</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">map</span>(function, iterable)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="مثال-ساده-مقایسه-با-for" class="level2">
-<h2 class="anchored" data-anchor-id="مثال-ساده-مقایسه-با-for">مثال ساده: مقایسه با for</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># روش قبلی با for</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>squares <span class="op">=</span> []</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> numbers:</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    squares.append(n <span class="op">**</span> <span class="dv">2</span>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(squares)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># همون کار با map</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>squares <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> n: n <span class="op">**</span> <span class="dv">2</span>, numbers))</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(squares)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>[1, 4, 9, 16]</code></pre>
-</section>
-<section id="نکته-مهم-خروجی-map-یک-map-object-است" class="level2">
-<h2 class="anchored" data-anchor-id="نکته-مهم-خروجی-map-یک-map-object-است">نکته مهم: خروجی map یک <span dir="ltr"><code>map object</code></span> است</h2>
+<section id="نوشتن-فایل-json" class="level3">
+<h3 class="anchored" data-anchor-id="نوشتن-فایل-json">نوشتن فایل JSON</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {<span class="st">'name'</span>: <span class="st">'Ali'</span>, <span class="st">'age'</span>: <span class="dv">25</span>}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'output.json'</span>, <span class="st">'w'</span>, encoding<span class="op">=</span><span class="st">'utf-8'</span>) <span class="im">as</span> f:</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    json.dump(data, f, ensure_ascii<span class="op">=</span><span class="va">False</span>, indent<span class="op">=</span><span class="dv">2</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>باید با <span dir="ltr"><code>list()</code></span>، <span dir="ltr"><code>tuple()</code></span> یا حلقه، به چیز قابل‌استفاده تبدیلش کنیم</li>
+<li><span dir="ltr"><code>ensure_ascii=False</code></span> : حروف فارسی درست نوشته بشن، نه به‌صورت کد یونیکد</li>
+<li><span dir="ltr"><code>indent=2</code></span> : خروجی مرتب و خوانا باشه</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> <span class="bu">map</span>(<span class="kw">lambda</span> n: n <span class="op">*</span> <span class="dv">2</span>, [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)          <span class="co"># &lt;map object at 0x...&gt;</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">list</span>(result))    <span class="co"># [2, 4, 6]</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="استفاده-با-تابع-معمولی-نه-فقط-lambda" class="level2">
-<h2 class="anchored" data-anchor-id="استفاده-با-تابع-معمولی-نه-فقط-lambda">استفاده با تابع معمولی (نه فقط lambda)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> to_upper(word):</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> word.upper()</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> [<span class="st">'salam'</span>, <span class="st">'khoobi'</span>]</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">list</span>(<span class="bu">map</span>(to_upper, words)))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>['SALAM', 'KHOOBI']</code></pre>
+<section id="تبدیل-رشته-json-به-دیتای-پایتون-و-برعکس" class="level3">
+<h3 class="anchored" data-anchor-id="تبدیل-رشته-json-به-دیتای-پایتون-و-برعکس">تبدیل رشته JSON به دیتای پایتون (و برعکس)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">'{"name": "Ali", "age": 25}'</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> json.loads(text)      <span class="co"># رشته -&gt; دیکشنری</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>text2 <span class="op">=</span> json.dumps(data, ensure_ascii<span class="op">=</span><span class="va">False</span>)   <span class="co"># دیکشنری -&gt; رشته</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="map-روی-چند-لیست-همزمان" class="level2">
-<h2 class="anchored" data-anchor-id="map-روی-چند-لیست-همزمان">map روی چند لیست همزمان</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> [<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>]</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x, y: x <span class="op">+</span> y, a, b))</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<pre><code>[11, 22, 33]</code></pre>
 </section>
-<section id="map-در-مقابل-list-comprehension" class="level2">
-<h2 class="anchored" data-anchor-id="map-در-مقابل-list-comprehension">map در مقابل list comprehension</h2>
+<section id="csv-با-ماژول-استاندارد" class="level2">
+<h2 class="anchored" data-anchor-id="csv-با-ماژول-استاندارد">CSV (با ماژول استاندارد)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="خواندن-فایل-csv" class="level3">
+<h3 class="anchored" data-anchor-id="خواندن-فایل-csv">خواندن فایل CSV</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'data.csv'</span>, <span class="st">'r'</span>, encoding<span class="op">=</span><span class="st">'utf-8'</span>) <span class="im">as</span> f:</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    reader <span class="op">=</span> csv.reader(f)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> row <span class="kw">in</span> reader:</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(row)   <span class="co"># هر row یک لیست از رشته‌هاست</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>برای دسترسی با نام ستون‌ها به‌جای اندیس عددی:</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'data.csv'</span>, <span class="st">'r'</span>, encoding<span class="op">=</span><span class="st">'utf-8'</span>) <span class="im">as</span> f:</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    reader <span class="op">=</span> csv.DictReader(f)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> row <span class="kw">in</span> reader:</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(row[<span class="st">'name'</span>])   <span class="co"># row یک دیکشنریه</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="نوشتن-فایل-csv" class="level3">
+<h3 class="anchored" data-anchor-id="نوشتن-فایل-csv">نوشتن فایل CSV</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> [</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'name'</span>: <span class="st">'Ali'</span>, <span class="st">'age'</span>: <span class="dv">25</span>},</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'name'</span>: <span class="st">'Sara'</span>, <span class="st">'age'</span>: <span class="dv">30</span>}</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'output.csv'</span>, <span class="st">'w'</span>, encoding<span class="op">=</span><span class="st">'utf-8'</span>, newline<span class="op">=</span><span class="st">''</span>) <span class="im">as</span> f:</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    writer <span class="op">=</span> csv.DictWriter(f, fieldnames<span class="op">=</span>[<span class="st">'name'</span>, <span class="st">'age'</span>])</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    writer.writeheader()</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    writer.writerows(rows)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><span dir="ltr"><code>newline=''</code></span> : جلوی افتادن یک خط خالی اضافه بین ردیف‌ها رو می‌گیره</li>
+</ul>
+</section>
+</section>
+<section id="xml" class="level2">
+<h2 class="anchored" data-anchor-id="xml">XML</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> xml.etree.ElementTree <span class="im">as</span> ET</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="خواندن-فایل-xml" class="level3">
+<h3 class="anchored" data-anchor-id="خواندن-فایل-xml">خواندن فایل XML</h3>
+<p>فرض کنیم فایل به این شکله:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">students</span>&gt;</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">student</span>&gt;</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">name</span>&gt;Ali&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">age</span>&gt;25&lt;/<span class="kw">age</span>&gt;</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">student</span>&gt;</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">students</span>&gt;</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>tree <span class="op">=</span> ET.parse(<span class="st">'data.xml'</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>root <span class="op">=</span> tree.getroot()</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> student <span class="kw">in</span> root.findall(<span class="st">'student'</span>):</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    name <span class="op">=</span> student.find(<span class="st">'name'</span>).text</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    age <span class="op">=</span> student.find(<span class="st">'age'</span>).text</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(name, age)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="ساخت-و-نوشتن-فایل-xml" class="level3">
+<h3 class="anchored" data-anchor-id="ساخت-و-نوشتن-فایل-xml">ساخت و نوشتن فایل XML</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>root <span class="op">=</span> ET.Element(<span class="st">'students'</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>student <span class="op">=</span> ET.SubElement(root, <span class="st">'student'</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>ET.SubElement(student, <span class="st">'name'</span>).text <span class="op">=</span> <span class="st">'Ali'</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>ET.SubElement(student, <span class="st">'age'</span>).text <span class="op">=</span> <span class="st">'25'</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>tree <span class="op">=</span> ET.ElementTree(root)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>tree.write(<span class="st">'output.xml'</span>, encoding<span class="op">=</span><span class="st">'utf-8'</span>, xml_declaration<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="pandas" class="level2">
+<h2 class="anchored" data-anchor-id="pandas">pandas</h2>
+<ul>
+<li><span dir="ltr"><code>pandas</code></span> داده رو به‌صورت جدول (DataFrame) میاره که کار باهاش خیلی راحت‌تر از کار دستی با <span dir="ltr"><code>csv</code></span> هست، مخصوصاً وقتی حجم داده بالا بره یا نیاز به فیلتر/تحلیل داشته باشیم</li>
+</ul>
+<section id="نصب-و-وارد-کردن" class="level3">
+<h3 class="anchored" data-anchor-id="نصب-و-وارد-کردن">نصب و وارد کردن</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install pandas openpyxl</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<blockquote class="blockquote">
+<p><span dir="ltr"><code>openpyxl</code></span> برای خواندن/نوشتن فایل‌های Excel لازمه (pandas از پشت صحنه ازش استفاده می‌کنه)</p>
+</blockquote>
+</section>
+<section id="خواندن-فایل-csv-1" class="level3">
+<h3 class="anchored" data-anchor-id="خواندن-فایل-csv-1">خواندن فایل CSV</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'data.csv'</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>خروجی از نوع <span dir="ltr"><code>DataFrame</code></span> هست — شبیه یک جدول اکسل</li>
+</ul>
+</section>
+<section id="خواندن-فایل-excel" class="level3">
+<h3 class="anchored" data-anchor-id="خواندن-فایل-excel">خواندن فایل Excel</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(<span class="st">'data.xlsx'</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>اگه فایل چند شیت داشته باشه، می‌شه شیت رو مشخص کرد:</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(<span class="st">'data.xlsx'</span>, sheet_name<span class="op">=</span><span class="st">'Sheet1'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="نگاه-سریع-به-داده" class="level3">
+<h3 class="anchored" data-anchor-id="نگاه-سریع-به-داده">نگاه سریع به داده</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>روش</th>
-<th>مثال</th>
+<th>متد</th>
+<th>کار</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span dir="ltr"><code>map</code></span></td>
-<td><span dir="ltr"><code>list(map(lambda n: n**2, numbers))</code></span></td>
+<td><span dir="ltr"><code>df.head()</code></span></td>
+<td>نمایش ۵ ردیف اول</td>
 </tr>
 <tr class="even">
-<td>list comprehension</td>
-<td><span dir="ltr"><code>[n**2 for n in numbers]</code></span></td>
+<td><span dir="ltr"><code>df.shape</code></span></td>
+<td>تعداد (ردیف, ستون)</td>
+</tr>
+<tr class="odd">
+<td><span dir="ltr"><code>df.columns</code></span></td>
+<td>لیست نام ستون‌ها</td>
+</tr>
+<tr class="even">
+<td><span dir="ltr"><code>df.info()</code></span></td>
+<td>نوع داده هر ستون + تعداد مقادیر</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="دسترسی-به-داده" class="level3">
+<h3 class="anchored" data-anchor-id="دسترسی-به-داده">دسترسی به داده</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[<span class="st">'name'</span>])          <span class="co"># یک ستون</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.iloc[<span class="dv">0</span>])           <span class="co"># یک ردیف با اندیس عددی</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.loc[<span class="dv">0</span>, <span class="st">'name'</span>])    <span class="co"># یک سلول خاص</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="فیلتر-کردن-داده" class="level3">
+<h3 class="anchored" data-anchor-id="فیلتر-کردن-داده">فیلتر کردن داده</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>adults <span class="op">=</span> df[df[<span class="st">'age'</span>] <span class="op">&gt;=</span> <span class="dv">18</span>]</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(adults)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="نوشتن-در-فایل" class="level3">
+<h3 class="anchored" data-anchor-id="نوشتن-در-فایل">نوشتن در فایل</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df.to_csv(<span class="st">'output.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>df.to_excel(<span class="st">'output.xlsx'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>هر دو یک نتیجه می‌دن؛ list comprehension معمولاً در پایتون خواناتر و رایج‌تره، ولی <span dir="ltr"><code>map</code></span> وقتی یک تابع از قبل تعریف‌شده داریم (نه lambda)، خیلی خلوت‌تره</li>
+<li><span dir="ltr"><code>index=False</code></span> : ستون اندیس اضافه (0,1,2,…) توی فایل خروجی نوشته نشه</li>
 </ul>
 </section>
-<section id="تمرین" class="level2">
-<h2 class="anchored" data-anchor-id="تمرین">تمرین</h2>
-<div class="callout callout-style-default callout-caution no-icon callout-titled" title="[کوئرا](https://quera.ir)">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">احتیاط</span><a href="https://quera.ir">کوئرا</a>
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="../quera/answer.html#sec-3539" class="quarto-xref"><span>3539 - تک‌رقمی</span></a></li>
-</ul>
-</div>
-</div>
+<section id="ساخت-dataframe" class="level3">
+<h3 class="anchored" data-anchor-id="ساخت-dataframe">ساخت <code>DataFrame</code></h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'name'</span>: [<span class="st">'Ali'</span>, <span class="st">'Sara'</span>],</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'age'</span>: [<span class="dv">25</span>, <span class="dv">30</span>]</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="مقایسه-سریع" class="level2">
+<h2 class="anchored" data-anchor-id="مقایسه-سریع">مقایسه سریع</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>فرمت</th>
+<th>مناسب برای</th>
+<th>روش پیشنهادی</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>JSON</td>
+<td>داده‌های تودرتو (شیء/آرایه)، تنظیمات، API</td>
+<td>ماژول <span dir="ltr"><code>json</code></span></td>
+</tr>
+<tr class="even">
+<td>CSV ساده</td>
+<td>داده‌های جدولی کوچک، بدون نیاز به تحلیل</td>
+<td>ماژول <span dir="ltr"><code>csv</code></span></td>
+</tr>
+<tr class="odd">
+<td>CSV / Excel حجیم</td>
+<td>داده‌های جدولی بزرگ، نیاز به فیلتر و تحلیل</td>
+<td><span dir="ltr"><code>pandas</code></span></td>
+</tr>
+<tr class="even">
+<td>XML</td>
+<td>داده‌های ساخت‌یافته با تگ، فایل‌های قدیمی‌تر</td>
+<td><span dir="ltr"><code>xml.etree.ElementTree</code></span></td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
@@ -1262,13 +1413,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapter/functions/import.html" class="pagination-link" aria-label="خارجی (`import`)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">خارجی (<code>import</code>)</span></span>
+      <a href="../../chapter/files/os-open.html" class="pagination-link" aria-label="کار با فایل‌ها">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">کار با فایل‌ها</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapter/oop/class-object.html" class="pagination-link" aria-label="کلاس‌ها و اشیاء (`class`)">
-        <span class="nav-page-text"><span class="chapter-title">کلاس‌ها و اشیاء (<code>class</code>)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapter/files/sqlite.html" class="pagination-link" aria-label="بانک اطلاعاتی (SQLite)">
+        <span class="nav-page-text"><span class="chapter-title">بانک اطلاعاتی (SQLite)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
