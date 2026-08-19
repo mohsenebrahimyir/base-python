@@ -105,6 +105,18 @@
     <lastmod>2026-08-17T18:50:10.643Z</lastmod>
   </url>
   <url>
+    <loc>https://mohsenebrahimy.ir/base-python/chapter/gui/top-10-gui.html</loc>
+    <lastmod>2026-08-17T15:08:26.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mohsenebrahimy.ir/base-python/chapter/gui/tkinter.html</loc>
+    <lastmod>2026-08-15T15:02:57.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mohsenebrahimy.ir/base-python/chapter/gui/widgets.html</loc>
+    <lastmod>2026-08-19T11:58:34.377Z</lastmod>
+  </url>
+  <url>
     <loc>https://mohsenebrahimy.ir/base-python/chapter/files/os-open.html</loc>
     <lastmod>2026-08-17T18:56:59.123Z</lastmod>
   </url>
@@ -137,18 +149,6 @@
     <lastmod>2026-07-17T20:44:25.300Z</lastmod>
   </url>
   <url>
-    <loc>https://mohsenebrahimy.ir/base-python/chapter/gui/top-10-gui.html</loc>
-    <lastmod>2026-08-17T15:08:26.176Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mohsenebrahimy.ir/base-python/chapter/gui/tkinter.html</loc>
-    <lastmod>2026-08-15T15:02:57.377Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mohsenebrahimy.ir/base-python/chapter/gui/widgets.html</loc>
-    <lastmod>2026-08-15T15:03:10.828Z</lastmod>
-  </url>
-  <url>
     <loc>https://mohsenebrahimy.ir/base-python/chapter/regex/string.html</loc>
     <lastmod>2026-07-17T20:37:59.570Z</lastmod>
   </url>
@@ -167,6 +167,10 @@
   <url>
     <loc>https://mohsenebrahimy.ir/base-python/chapter/project/project.html</loc>
     <lastmod>2026-08-15T15:05:39.662Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mohsenebrahimy.ir/base-python/chapter/project/counter.html</loc>
+    <lastmod>2026-08-19T10:54:16.341Z</lastmod>
   </url>
   <url>
     <loc>https://mohsenebrahimy.ir/base-python/chapter/project/calculator.html</loc>

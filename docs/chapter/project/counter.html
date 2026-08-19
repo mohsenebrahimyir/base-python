@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ویژگی‌های دیگر – مبانی پایتون</title>
+<title>گوسفند شمار – مبانی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapter/oop/zoo.html" rel="next">
-<link href="../../chapter/oop/encapsulation.html" rel="prev">
+<link href="../../chapter/project/calculator.html" rel="next">
+<link href="../../chapter/project/project.html" rel="prev">
 <link href="../../img/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/oop/class-object.html">کلاس و شئ گرایی</a></li><li class="breadcrumb-item"><a href="../../chapter/oop/other-options.html"><span class="chapter-title">ویژگی‌های دیگر</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/project/project.html">پروژه</a></li><li class="breadcrumb-item"><a href="../../chapter/project/counter.html"><span class="chapter-title">گوسفند شمار</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -617,7 +617,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/oop/other-options.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">ویژگی‌های دیگر</span></a>
+  <a href="../../chapter/oop/other-options.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ویژگی‌های دیگر</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -674,7 +674,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
+  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">گوسفند شمار</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -700,25 +700,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
-    <h2 id="toc-title">فهرست مطالب</h2>
-   
-  <ul>
-  <li><a href="#متدهای-ویژه-dunder-magic-methods" id="toc-متدهای-ویژه-dunder-magic-methods" class="nav-link active" data-scroll-target="#متدهای-ویژه-dunder-magic-methods">متدهای ویژه (Dunder / Magic Methods)</a></li>
-  <li><a href="#متد-کلاسی-و-متد-استاتیک" id="toc-متد-کلاسی-و-متد-استاتیک" class="nav-link" data-scroll-target="#متد-کلاسی-و-متد-استاتیک">متد کلاسی و متد استاتیک</a></li>
-  <li><a href="#کلاسهای-انتزاعی-و-duck-typing" id="toc-کلاسهای-انتزاعی-و-duck-typing" class="nav-link" data-scroll-target="#کلاسهای-انتزاعی-و-duck-typing">کلاس‌های انتزاعی و Duck Typing</a></li>
-  <li><a href="#بازبینی-خودکار-اشیاء" id="toc-بازبینی-خودکار-اشیاء" class="nav-link" data-scroll-target="#بازبینی-خودکار-اشیاء">بازبینی خودکار اشیاء</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/oop/class-object.html">کلاس و شئ گرایی</a></li><li class="breadcrumb-item"><a href="../../chapter/oop/other-options.html"><span class="chapter-title">ویژگی‌های دیگر</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/project/project.html">پروژه</a></li><li class="breadcrumb-item"><a href="../../chapter/project/counter.html"><span class="chapter-title">گوسفند شمار</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">ویژگی‌های دیگر</span></h1>
+<h1 class="title"><span id="sec-project-counter" class="quarto-section-identifier"><span class="chapter-title">گوسفند شمار</span></span></h1>
 </div>
 
 
@@ -741,167 +732,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="متدهای-ویژه-dunder-magic-methods" class="level2">
-<h2 class="anchored" data-anchor-id="متدهای-ویژه-dunder-magic-methods">متدهای ویژه (Dunder / Magic Methods)</h2>
-<ul>
-<li>متدهایی با دو آندرلاین در ابتدا و انتهای نام (<span dir="ltr"><code>__name__</code></span>)</li>
-<li>پایتون خودش در موقعیت‌های خاص این متدها رو صدا می‌زنه</li>
-</ul>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>متد</th>
-<th>صدا زده می‌شه وقتی</th>
-<th>مثال</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span dir="ltr"><code>__init__</code></span></td>
-<td>ساخت شیء</td>
-<td><span dir="ltr"><code>Dog("Rex")</code></span></td>
-</tr>
-<tr class="even">
-<td><span dir="ltr"><code>__str__</code></span></td>
-<td><span dir="ltr"><code>print(obj)</code></span> یا <span dir="ltr"><code>str(obj)</code></span></td>
-<td>نمایش خوانا برای انسان</td>
-</tr>
-<tr class="odd">
-<td><span dir="ltr"><code>__repr__</code></span></td>
-<td>نمایش رسمی/دیباگی شیء</td>
-<td>معمولاً برای برنامه‌نویس</td>
-</tr>
-<tr class="even">
-<td><span dir="ltr"><code>__len__</code></span></td>
-<td><span dir="ltr"><code>len(obj)</code></span></td>
-<td>طول شیء</td>
-</tr>
-<tr class="odd">
-<td><span dir="ltr"><code>__eq__</code></span></td>
-<td><span dir="ltr"><code>obj1 == obj2</code></span></td>
-<td>مقایسه برابری</td>
-</tr>
-<tr class="even">
-<td><span dir="ltr"><code>__add__</code></span></td>
-<td><span dir="ltr"><code>obj1 + obj2</code></span></td>
-<td>جمع دو شیء</td>
-</tr>
-</tbody>
-</table>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Point:</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, x, y):</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.x <span class="op">=</span> x</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.y <span class="op">=</span> y</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>):</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="ss">f"(</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>x<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>y<span class="sc">}</span><span class="ss">)"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__eq__</span>(<span class="va">self</span>, other):</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.x <span class="op">==</span> other.x <span class="kw">and</span> <span class="va">self</span>.y <span class="op">==</span> other.y</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__add__</span>(<span class="va">self</span>, other):</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> Point(<span class="va">self</span>.x <span class="op">+</span> other.x, <span class="va">self</span>.y <span class="op">+</span> other.y)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>p1 <span class="op">=</span> Point(<span class="dv">1</span>, <span class="dv">2</span>)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>p2 <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p1)              <span class="co"># (1, 2)   -&gt; از __str__</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p1 <span class="op">==</span> p2)         <span class="co"># False    -&gt; از __eq__</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p1 <span class="op">+</span> p2)          <span class="co"># (4, 6)   -&gt; از __add__</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="متد-کلاسی-و-متد-استاتیک" class="level2">
-<h2 class="anchored" data-anchor-id="متد-کلاسی-و-متد-استاتیک">متد کلاسی و متد استاتیک</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>نوع</th>
-<th>دکوراتور</th>
-<th>پارامتر اول</th>
-<th>دسترسی به</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>متد نمونه (معمولی)</td>
-<td>—</td>
-<td><span dir="ltr"><code>self</code></span></td>
-<td>داده‌های شیء</td>
-</tr>
-<tr class="even">
-<td>متد کلاسی</td>
-<td><span dir="ltr"><code>@classmethod</code></span></td>
-<td><span dir="ltr"><code>cls</code></span></td>
-<td>خود کلاس</td>
-</tr>
-<tr class="odd">
-<td>متد استاتیک</td>
-<td><span dir="ltr"><code>@staticmethod</code></span></td>
-<td>ندارد</td>
-<td>نه شیء نه کلاس، فقط تابع مرتبط</td>
-</tr>
-</tbody>
-</table>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog:</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name):</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        Dog.count <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">@classmethod</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> get_count(cls):</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> cls.count</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">@staticmethod</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> is_valid_name(name):</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="bu">len</span>(name) <span class="op">&gt;</span> <span class="dv">0</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Dog.is_valid_name(<span class="st">"Rex"</span>))   <span class="co"># True</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>d1 <span class="op">=</span> Dog(<span class="st">"Rex"</span>)</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>d2 <span class="op">=</span> Dog(<span class="st">"Buddy"</span>)</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Dog.get_count())            <span class="co"># 2</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="کلاسهای-انتزاعی-و-duck-typing" class="level2">
-<h2 class="anchored" data-anchor-id="کلاسهای-انتزاعی-و-duck-typing">کلاس‌های انتزاعی و Duck Typing</h2>
-<ul>
-<li>در پایتون معمولاً نوع دقیق شیء مهم نیست، مهم اینه که <strong>رفتار موردنیاز رو داشته باشه</strong></li>
-<li>به این ویژگی <strong>Duck Typing</strong> می‌گن: “اگه مثل اردک راه بره و مثل اردک صدا کنه، اردکه”</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Duck:</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> sound(<span class="va">self</span>):</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Quack!"</span>)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog:</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> sound(<span class="va">self</span>):</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Woof!"</span>)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_it_sound(animal):</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    animal.sound()   <span class="co"># فرقی نمی‌کنه از چه کلاسی باشه، فقط باید sound() داشته باشه</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>make_it_sound(Duck())</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>make_it_sound(Dog())</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="بازبینی-خودکار-اشیاء" class="level2">
-<h2 class="anchored" data-anchor-id="بازبینی-خودکار-اشیاء">بازبینی خودکار اشیاء</h2>
-<ul>
-<li><span dir="ltr"><code>dir(obj)</code></span> : لیست همه‌ی متدها و ویژگی‌های یک شیء</li>
-<li><span dir="ltr"><code>vars(obj)</code></span> یا <span dir="ltr"><code>obj.__dict__</code></span> : دیکشنری ویژگی‌های نمونه (instance attributes)</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> Point(<span class="dv">1</span>, <span class="dv">2</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">vars</span>(p))    <span class="co"># {'x': 1, 'y': 2}</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>دینا کوچولو که خوابش نمیبره مادرش بهش یاد داده قبل خواب توی ذهنش گوسفندهایی رو تصور کنه که از روی نرده رد میشن و سعی کنه تعداد اونهارو بشماره تا ذهنش خسته بشه بخوابه. اما دینا که تازه برنامه نویسی یاد گرفته بود به فکر این بود که چطور یک نرم افزار گوسفند شمار بسازه. دینا رو برای ساخت این نرم افزار راهنمایی کنید.</p>
+<div id="ce57e8c6" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tkinter <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>counter <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> btn_counter():</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">global</span> counter</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    counter <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    lbl.configure(text<span class="op">=</span><span class="ss">f"</span><span class="sc">{</span>counter<span class="sc">}</span><span class="ss"> x 🐑."</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> Tk()</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Sheep counter"</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>btn <span class="op">=</span> Button(window)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>btn.configure(text<span class="op">=</span><span class="st">"count"</span>, command<span class="op">=</span>btn_counter)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>btn.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>lbl <span class="op">=</span> Label(window, text<span class="op">=</span><span class="st">"0 x 🐑."</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>lbl.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1319,13 +1175,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapter/oop/encapsulation.html" class="pagination-link" aria-label="اصول کپسوله‌سازی و انتزاع">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">اصول کپسوله‌سازی و انتزاع</span></span>
+      <a href="../../chapter/project/project.html" class="pagination-link" aria-label="پروژه">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">پروژه</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapter/oop/zoo.html" class="pagination-link" aria-label="مدیریت باغ وحش">
-        <span class="nav-page-text"><span class="chapter-title">مدیریت باغ وحش</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapter/project/calculator.html" class="pagination-link" aria-label="ماشین حساب">
+        <span class="nav-page-text"><span class="chapter-title">ماشین حساب</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "مبانی پایتون",
     "section": "",
-    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل info@mohsenebrahimy.ir برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۵-۰۵-۲۶ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: mohsenebrahimy.ir/book/base-python\n\n\n\n\n\n\n\nمهمتوجه\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
+    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل info@mohsenebrahimy.ir برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۵-۰۵-۲۸ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: mohsenebrahimy.ir/book/base-python\n\n\n\n\n\n\n\nمهمتوجه\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
     "crumbs": [
       "پیش گفتار"
     ]
@@ -1330,545 +1330,6 @@
     ]
   },
   {
-    "objectID": "chapter/files/os-open.html",
-    "href": "chapter/files/os-open.html",
-    "title": "کار با فایل‌ها",
-    "section": "",
-    "text": "خواندن و نوشتن فایل متنی",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>کار با فایل‌ها</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/os-open.html#خواندن-و-نوشتن-فایل-متنی",
-    "href": "chapter/files/os-open.html#خواندن-و-نوشتن-فایل-متنی",
-    "title": "کار با فایل‌ها",
-    "section": "",
-    "text": "بازکردن فایل متنی\nfhand = open('mbox.txt')\n\nخروجی یک handle به فایله، نه محتوای واقعی — برای خوندن ازش استفاده می‌شه\nاگه فایل وجود نداشته باشه → خطا: FileNotFoundError\n\n\n\n\n\n\n\n\nحالت\nکاربرد\n\n\n\n\n'r'\nخواندن (پیش‌فرض)\n\n\n'w'\nنوشتن — ⚠️ محتوای قبلی فایل پاک می‌شه\n\n\n'a'\nappend — اضافه‌کردن به انتهای فایل، بدون پاک کردن محتوای قبلی\n\n\n'x'\nساخت فایل جدید — اگه از قبل وجود داشته باشه خطا می‌ده\n\n\n\n\nخواندن فایل\n\nروش ۱: خط به خط با for (برای فایل‌های بزرگ)\n\nfhand = open('mbox.txt')\ncount = 0\nfor line in fhand:\n    count += 1\nprint('Line Count:', count)\n\nروش ۲: خواندن کل فایل یکجا (برای فایل‌های کوچک)\n\nfhand = open('mbox.txt')\ninp = fhand.read()\nprint(len(inp))\n\n⚠️ نکته: محتوا رو حتماً توی متغیر ذخیره کنیم، وگرنه با خواندن مجدد از دست می‌ره\n\n\n\nجستجو در فایل\nfhand = open('mbox.txt')\nfor line in fhand:\n    line = line.rstrip()\n    if line.startswith('From:'):\n        print(line)\n\nrstrip() : حذف فضای خالی سمت راست رشته\nstartswith() : بررسی شروع خط با یک کلمه/رشته خاص\n\n\n\nمدیریت خطا\n\nبه‌جای هاردکد کردن نام فایل، از کاربر می‌گیریم — ولی چون فایل ممکنه وجود نداشته باشه، حتماً با try-except پوشش بدیم\n\nfname = input('Enter the file name: ')\ntry:\n    fhand = open(fname)\nexcept:\n    print('File cannot be opened:', fname)\n    exit()\n\nexit() : خروج کامل از اجرای برنامه اگه فایل باز نشد\n\n\n\nنوشتن در فایل\nfout = open('output.txt', 'w')\n\nپارامتر 'w':\n\nاگه فایل وجود داشته باشه → باز می‌شه برای نوشتن (⚠️ محتوای قبلی پاک می‌شه)\nاگه وجود نداشته باشه → فایل جدید ساخته می‌شه\n\n\nline1 = \"This here's the wattle,\\n\"\nfout.write(line1)\n\n\nبستن فایل\nfout.close()\n\nبعد از اتمام کار با فایل، همیشه باید بسته بشه\n\n\n\nروش استاندارد و توصیه‌شده\n\nروش دستی (باز کردن + close() دستی) رایجه، ولی در عمل استفاده از with توصیه‌شده‌تره\nمزیت: فایل خودکار بسته می‌شه، حتی اگه وسط کار خطا رخ بده — نیازی به close() دستی نیست\n\nwith open('mbox.txt') as fhand:\n    for line in fhand:\n        print(line.rstrip())\n# اینجا فایل خودش بسته شده\nwith open('output.txt', 'w') as fout:\n    fout.write(\"This here's the wattle,\\n\")",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>کار با فایل‌ها</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/os-open.html#فایلهای-باینری",
-    "href": "chapter/files/os-open.html#فایلهای-باینری",
-    "title": "کار با فایل‌ها",
-    "section": "فایل‌های باینری",
-    "text": "فایل‌های باینری\n\nتفاوت فایل متنی و باینری\n\n\n\n\n\n\n\n\nنوع\nمحتوا\nمثال\n\n\n\n\nمتنی (text)\nکاراکترهای قابل‌خواندن، با encoding رمزگذاری می‌شه\n.txt، .csv\n\n\nباینری (binary)\nدنباله خام بایت‌ها، بدون تفسیر متنی\n.jpg، .png، .mp3، .pdf، .zip\n\n\n\n\nدر حالت متنی، پایتون بایت‌ها رو با یک encoding (مثلاً UTF-8) به رشته تبدیل می‌کنه\nدر حالت باینری، هیچ تبدیلی انجام نمی‌شه — داده به‌صورت خام (bytes) خونده/نوشته می‌شه\n\n\n\nباز کردن فایل باینری — حرف b\n\n\n\nحالت\nکاربرد\n\n\n\n\n'rb'\nخواندن باینری\n\n\n'wb'\nنوشتن باینری (پاک‌کردن محتوای قبلی)\n\n\n'ab'\nappend باینری\n\n\n'xb'\nساخت فایل باینری جدید (خطا اگه وجود داشته باشه)\n\n\n\n\n\nخواندن فایل باینری\nwith open('image.jpg', 'rb') as f:\n    data = f.read()\n    print(type(data))   # &lt;class 'bytes'&gt;\n    print(len(data))    # تعداد بایت‌ها\n\nخروجی از نوع bytes هست، نه str\n⚠️ متدهای رشته‌ای مثل .rstrip() یا .startswith('متن') روی bytes فرق دارن (باید با b'...' مقایسه بشن)\n\n\n\nنوشتن فایل باینری\ndata = b'\\x89PNG\\r\\n\\x1a\\n...'\nwith open('output.bin', 'wb') as f:\n    f.write(data)\n\nفقط bytes یا bytearray قابل نوشتنه، نه رشته معمولی\n\n\n\nکپی کردن یک فایل باینری (مثال کاربردی)\nwith open('source.jpg', 'rb') as fin:\n    with open('copy.jpg', 'wb') as fout:\n        fout.write(fin.read())\n\nبرای فایل‌های بزرگ بهتره تکه‌تکه (chunk) بخونیم تا حافظه پر نشه:\n\nwith open('source.jpg', 'rb') as fin, open('copy.jpg', 'wb') as fout:\n    while True:\n        chunk = fin.read(4096)   # هر بار ۴۰۹۶ بایت\n        if not chunk:\n            break\n        fout.write(chunk)\n\n\nتبدیل بین str و bytes\n\n\n\nمتد\nکار\n\n\n\n\nstr.encode()\nتبدیل رشته به بایت\n\n\nbytes.decode()\nتبدیل بایت به رشته\n\n\n\ns = \"سلام\"\nb = s.encode('utf-8')     # str → bytes\nprint(b)\n\ns2 = b.decode('utf-8')    # bytes → str\nprint(s2)\n\n\nنکته مهم: باز کردن فایل متنی به‌جای باینری (و برعکس) خطا می‌ده\n\nسعی در خواندن فایل باینری (مثل عکس) با حالت 'r' معمولاً باعث خطای decode می‌شه:\n\nUnicodeDecodeError: 'utf-8' codec can't decode byte...\n\nقانون کلی: فایل‌های غیرمتنی (عکس، صدا، فایل فشرده، اجرایی) → همیشه با b",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>کار با فایل‌ها</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/os-open.html#ماژول-os",
-    "href": "chapter/files/os-open.html#ماژول-os",
-    "title": "کار با فایل‌ها",
-    "section": "ماژول os",
-    "text": "ماژول os\n\nچرا os؟\n\nماژول os برای کار با سیستم‌عامل (فایل، پوشه، مسیر) استفاده می‌شه — چیزی فراتر از خواندن/نوشتن محتوای فایل\nوارد کردن: import os\n\n\n\nبررسی وجود فایل/پوشه\nimport os\n\nos.path.exists('mbox.txt')     # True / False\nos.path.isfile('mbox.txt')     # آیا فایله؟\nos.path.isdir('data')          # آیا پوشه‌ست؟\n\nنکته: قبل از باز کردن فایل با open()، می‌شه اول با os.path.exists() چک کرد (هرچند try-except هم روش رایج و ایمن‌تریه)\n\n\n\nحذف فایل\nos.remove('output.txt')\n\n⚠️ اگه فایل وجود نداشته باشه → خطای FileNotFoundError\n\n\n\nتغییر نام / جابه‌جایی فایل\nos.rename('old_name.txt', 'new_name.txt')\n\n\nکار با پوشه‌ها\n\n\n\nتابع\nکار\n\n\n\n\nos.mkdir('folder')\nساخت یک پوشه\n\n\nos.makedirs('a/b/c')\nساخت پوشه‌های تودرتو (چند سطحی)\n\n\nos.rmdir('folder')\nحذف پوشه (فقط اگه خالی باشه)\n\n\nos.listdir('.')\nلیست فایل‌ها و پوشه‌های داخل یک مسیر\n\n\n\nos.mkdir('new_folder')\nprint(os.listdir('.'))\n\n\nمسیر فعلی و تغییر مسیر\nprint(os.getcwd())      # مسیر فعلی که برنامه در اون اجرا می‌شه\nos.chdir('data')        # تغییر مسیر فعلی به پوشه data\n\n\nکار با مسیرها — os.path\n\n\n\n\n\n\n\n\nتابع\nکار\nمثال\n\n\n\n\nos.path.join()\nساخت مسیر به‌صورت درست (سازگار با ویندوز/لینوکس)\nos.path.join('data', 'mbox.txt')\n\n\nos.path.basename()\nفقط نام فایل از مسیر\n'data/mbox.txt' → 'mbox.txt'\n\n\nos.path.dirname()\nفقط مسیر پوشه\n'data/mbox.txt' → 'data'\n\n\nos.path.splitext()\nجدا کردن نام و پسوند فایل\n'mbox.txt' → ('mbox', '.txt')\n\n\n\n\nنکته مهم: به‌جای الحاق دستی رشته‌ها برای مسیر (مثل 'data' + '/' + 'mbox.txt')، همیشه از os.path.join() استفاده بشه — چون در ویندوز جداکننده مسیر \\ است نه /\n\n\n\nگرفتن اطلاعات فایل\nos.path.getsize('mbox.txt')    # حجم فایل بر حسب بایت\n\n\nپیمایش کامل یک درخت پوشه\nfor root, dirs, files in os.walk('.'):\n    for f in files:\n        print(os.path.join(root, f))\n\nos.walk() به‌صورت بازگشتی همه‌ی زیرپوشه‌ها و فایل‌ها رو برمی‌گردونه",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>کار با فایل‌ها</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/data.html",
-    "href": "chapter/files/data.html",
-    "title": "فایل‌های داده",
-    "section": "",
-    "text": "چرا این فرمت‌ها؟",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>فایل‌های داده</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/data.html#چرا-این-فرمتها",
-    "href": "chapter/files/data.html#چرا-این-فرمتها",
-    "title": "فایل‌های داده",
-    "section": "",
-    "text": "JSON، CSV و XML سه فرمت پرکاربرد برای ذخیره و تبادل داده هستن — فایل‌های متنی ساده‌ای که پایتون خودش ماژول آماده براشون داره\nبرای فایل‌های جدولی حجیم‌تر (CSV، Excel) کار کردن دستی با open() دست‌وپاگیر می‌شه؛ اونجا کتابخونه‌ی pandas به کمک میاد",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>فایل‌های داده</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/data.html#json",
-    "href": "chapter/files/data.html#json",
-    "title": "فایل‌های داده",
-    "section": "JSON",
-    "text": "JSON\nimport json\n\nخواندن فایل JSON\nwith open('data.json', 'r', encoding='utf-8') as f:\n    data = json.load(f)\n\nprint(data)\n\nخروجی معمولاً یک dict یا list پایتونیه\n\n\n\nنوشتن فایل JSON\ndata = {'name': 'Ali', 'age': 25}\n\nwith open('output.json', 'w', encoding='utf-8') as f:\n    json.dump(data, f, ensure_ascii=False, indent=2)\n\nensure_ascii=False : حروف فارسی درست نوشته بشن، نه به‌صورت کد یونیکد\nindent=2 : خروجی مرتب و خوانا باشه\n\n\n\nتبدیل رشته JSON به دیتای پایتون (و برعکس)\ntext = '{\"name\": \"Ali\", \"age\": 25}'\ndata = json.loads(text)      # رشته -&gt; دیکشنری\n\ntext2 = json.dumps(data, ensure_ascii=False)   # دیکشنری -&gt; رشته",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>فایل‌های داده</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/data.html#csv-با-ماژول-استاندارد",
-    "href": "chapter/files/data.html#csv-با-ماژول-استاندارد",
-    "title": "فایل‌های داده",
-    "section": "CSV (با ماژول استاندارد)",
-    "text": "CSV (با ماژول استاندارد)\nimport csv\n\nخواندن فایل CSV\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.reader(f)\n    for row in reader:\n        print(row)   # هر row یک لیست از رشته‌هاست\n\nبرای دسترسی با نام ستون‌ها به‌جای اندیس عددی:\n\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        print(row['name'])   # row یک دیکشنریه\n\n\nنوشتن فایل CSV\nrows = [\n    {'name': 'Ali', 'age': 25},\n    {'name': 'Sara', 'age': 30}\n]\n\nwith open('output.csv', 'w', encoding='utf-8', newline='') as f:\n    writer = csv.DictWriter(f, fieldnames=['name', 'age'])\n    writer.writeheader()\n    writer.writerows(rows)\n\nnewline='' : جلوی افتادن یک خط خالی اضافه بین ردیف‌ها رو می‌گیره",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>فایل‌های داده</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/data.html#xml",
-    "href": "chapter/files/data.html#xml",
-    "title": "فایل‌های داده",
-    "section": "XML",
-    "text": "XML\nimport xml.etree.ElementTree as ET\n\nخواندن فایل XML\nفرض کنیم فایل به این شکله:\n&lt;students&gt;\n    &lt;student&gt;\n        &lt;name&gt;Ali&lt;/name&gt;\n        &lt;age&gt;25&lt;/age&gt;\n    &lt;/student&gt;\n&lt;/students&gt;\ntree = ET.parse('data.xml')\nroot = tree.getroot()\n\nfor student in root.findall('student'):\n    name = student.find('name').text\n    age = student.find('age').text\n    print(name, age)\n\n\nساخت و نوشتن فایل XML\nroot = ET.Element('students')\n\nstudent = ET.SubElement(root, 'student')\nET.SubElement(student, 'name').text = 'Ali'\nET.SubElement(student, 'age').text = '25'\n\ntree = ET.ElementTree(root)\ntree.write('output.xml', encoding='utf-8', xml_declaration=True)",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>فایل‌های داده</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/data.html#pandas",
-    "href": "chapter/files/data.html#pandas",
-    "title": "فایل‌های داده",
-    "section": "pandas",
-    "text": "pandas\n\npandas داده رو به‌صورت جدول (DataFrame) میاره که کار باهاش خیلی راحت‌تر از کار دستی با csv هست، مخصوصاً وقتی حجم داده بالا بره یا نیاز به فیلتر/تحلیل داشته باشیم\n\n\nنصب و وارد کردن\npip install pandas openpyxl\nimport pandas as pd\n\nopenpyxl برای خواندن/نوشتن فایل‌های Excel لازمه (pandas از پشت صحنه ازش استفاده می‌کنه)\n\n\n\nخواندن فایل CSV\ndf = pd.read_csv('data.csv')\nprint(df)\n\nخروجی از نوع DataFrame هست — شبیه یک جدول اکسل\n\n\n\nخواندن فایل Excel\ndf = pd.read_excel('data.xlsx')\nprint(df)\n\nاگه فایل چند شیت داشته باشه، می‌شه شیت رو مشخص کرد:\n\ndf = pd.read_excel('data.xlsx', sheet_name='Sheet1')\n\n\nنگاه سریع به داده\n\n\n\nمتد\nکار\n\n\n\n\ndf.head()\nنمایش ۵ ردیف اول\n\n\ndf.shape\nتعداد (ردیف, ستون)\n\n\ndf.columns\nلیست نام ستون‌ها\n\n\ndf.info()\nنوع داده هر ستون + تعداد مقادیر\n\n\n\n\n\nدسترسی به داده\nprint(df['name'])          # یک ستون\nprint(df.iloc[0])           # یک ردیف با اندیس عددی\nprint(df.loc[0, 'name'])    # یک سلول خاص\n\n\nفیلتر کردن داده\nadults = df[df['age'] &gt;= 18]\nprint(adults)\n\n\nنوشتن در فایل\ndf.to_csv('output.csv', index=False)\ndf.to_excel('output.xlsx', index=False)\n\nindex=False : ستون اندیس اضافه (0,1,2,…) توی فایل خروجی نوشته نشه\n\n\n\nساخت DataFrame\ndata = {\n    'name': ['Ali', 'Sara'],\n    'age': [25, 30]\n}\ndf = pd.DataFrame(data)",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>فایل‌های داده</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/data.html#مقایسه-سریع",
-    "href": "chapter/files/data.html#مقایسه-سریع",
-    "title": "فایل‌های داده",
-    "section": "مقایسه سریع",
-    "text": "مقایسه سریع\n\n\n\n\n\n\n\n\nفرمت\nمناسب برای\nروش پیشنهادی\n\n\n\n\nJSON\nداده‌های تودرتو (شیء/آرایه)، تنظیمات، API\nماژول json\n\n\nCSV ساده\nداده‌های جدولی کوچک، بدون نیاز به تحلیل\nماژول csv\n\n\nCSV / Excel حجیم\nداده‌های جدولی بزرگ، نیاز به فیلتر و تحلیل\npandas\n\n\nXML\nداده‌های ساخت‌یافته با تگ، فایل‌های قدیمی‌تر\nxml.etree.ElementTree",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>فایل‌های داده</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/sqlite.html",
-    "href": "chapter/files/sqlite.html",
-    "title": "بانک اطلاعاتی (SQLite)",
-    "section": "",
-    "text": "مروری بر بانک اطلاعاتی",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/sqlite.html#مروری-بر-بانک-اطلاعاتی",
-    "href": "chapter/files/sqlite.html#مروری-بر-بانک-اطلاعاتی",
-    "title": "بانک اطلاعاتی (SQLite)",
-    "section": "",
-    "text": "بانک اطلاعاتی (Database) جایی برای ذخیره‌ی منظم و دائمی داده‌هاست — برخلاف متغیر یا فایل ساده، امکان جست‌وجو، فیلتر و مدیریت حجم بالای داده رو راحت‌تر می‌کنه\nSQLite یک بانک اطلاعاتی سبک و فایل‌محوره — کل بانک توی یک فایل .db ذخیره می‌شه و نیازی به نصب سرور جداگانه نداره\nپایتون از قبل ماژول sqlite3 رو داره — نیازی به نصب اضافه نیست",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/sqlite.html#دستورات-sql",
-    "href": "chapter/files/sqlite.html#دستورات-sql",
-    "title": "بانک اطلاعاتی (SQLite)",
-    "section": "دستورات SQL",
-    "text": "دستورات SQL\n\n\n\nدستور\nکار\n\n\n\n\nCREATE TABLE\nساخت جدول جدید\n\n\nINSERT INTO\nافزودن ردیف جدید\n\n\nSELECT\nخواندن داده\n\n\nUPDATE\nویرایش داده\n\n\nDELETE\nحذف داده\n\n\nWHERE\nشرط روی ردیف‌ها",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/sqlite.html#اتصال-به-بانک-اطلاعاتی",
-    "href": "chapter/files/sqlite.html#اتصال-به-بانک-اطلاعاتی",
-    "title": "بانک اطلاعاتی (SQLite)",
-    "section": "اتصال به بانک اطلاعاتی",
-    "text": "اتصال به بانک اطلاعاتی\nimport sqlite3\n\nconn = sqlite3.connect('school.db')\n\nاگه فایل school.db وجود نداشته باشه، خودش می‌سازتش\nconn پل ارتباطی بین پایتون و فایل بانک اطلاعاتیه",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/sqlite.html#ساخت-cursor-و-اجرای-دستور-sql",
-    "href": "chapter/files/sqlite.html#ساخت-cursor-و-اجرای-دستور-sql",
-    "title": "بانک اطلاعاتی (SQLite)",
-    "section": "ساخت cursor و اجرای دستور SQL",
-    "text": "ساخت cursor و اجرای دستور SQL\ncursor = conn.cursor()\n\ncursor همون چیزیه که دستورات SQL رو واقعاً اجرا می‌کنه\n\ncursor.execute('''\n    CREATE TABLE IF NOT EXISTS students (\n        id INTEGER PRIMARY KEY AUTOINCREMENT,\n        name TEXT,\n        age INTEGER\n    )\n''')\nconn.commit()\n\nconn.commit() : تغییرات رو واقعاً روی فایل ذخیره می‌کنه — بدون این خط، تغییرات موقتی می‌مونن",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/sqlite.html#درج-اطلاعات",
-    "href": "chapter/files/sqlite.html#درج-اطلاعات",
-    "title": "بانک اطلاعاتی (SQLite)",
-    "section": "درج اطلاعات",
-    "text": "درج اطلاعات\ncursor.execute('INSERT INTO students (name, age) VALUES (?, ?)', ('Ali', 25))\nconn.commit()\n\nاستفاده از ? به‌جای چسبوندن مستقیم مقادیر به رشته‌ی SQL، جلوی خطا و حملات SQL Injection رو می‌گیره",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/sqlite.html#حذف-و-ویرایش-اطلاعات",
-    "href": "chapter/files/sqlite.html#حذف-و-ویرایش-اطلاعات",
-    "title": "بانک اطلاعاتی (SQLite)",
-    "section": "حذف و ویرایش اطلاعات",
-    "text": "حذف و ویرایش اطلاعات\n# ویرایش\ncursor.execute('UPDATE students SET age = ? WHERE name = ?', (26, 'Ali'))\n\n# حذف\ncursor.execute('DELETE FROM students WHERE name = ?', ('Ali',))\n\nconn.commit()",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/sqlite.html#خواندن-اطلاعات-با-fetch",
-    "href": "chapter/files/sqlite.html#خواندن-اطلاعات-با-fetch",
-    "title": "بانک اطلاعاتی (SQLite)",
-    "section": "خواندن اطلاعات با fetch",
-    "text": "خواندن اطلاعات با fetch\ncursor.execute('SELECT * FROM students')\n\nrow = cursor.fetchone()   # فقط یک ردیف\nprint(row)\n\nبرای خواندن همه‌ی ردیف‌ها:\n\ncursor.execute('SELECT * FROM students')\nrows = cursor.fetchall()\n\nfor row in rows:\n    print(row)\n\nهر row یک tuple از مقادیر ستون‌هاست",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/files/sqlite.html#بستن-اتصال",
-    "href": "chapter/files/sqlite.html#بستن-اتصال",
-    "title": "بانک اطلاعاتی (SQLite)",
-    "section": "بستن اتصال",
-    "text": "بستن اتصال\nconn.close()\n\nبعد از اتمام کار با بانک اطلاعاتی، حتماً اتصال رو ببندین",
-    "crumbs": [
-      "کار با فایل",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/class-object.html",
-    "href": "chapter/oop/class-object.html",
-    "title": "کلاس‌ها و اشیاء (class)",
-    "section": "",
-    "text": "کلاس چیست؟",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/class-object.html#کلاس-چیست",
-    "href": "chapter/oop/class-object.html#کلاس-چیست",
-    "title": "کلاس‌ها و اشیاء (class)",
-    "section": "",
-    "text": "کلاس (Class) = قالب/طرح برای ساخت اشیاء (Objects)\nشیء (Object) = نمونه‌ای واقعی ساخته‌شده از یک کلاس\nکلیدواژه تعریف: class",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/class-object.html#تعریف-یک-کلاس-ساده",
-    "href": "chapter/oop/class-object.html#تعریف-یک-کلاس-ساده",
-    "title": "کلاس‌ها و اشیاء (class)",
-    "section": "تعریف یک کلاس ساده",
-    "text": "تعریف یک کلاس ساده\nclass Dog:\n    pass\n\nd = Dog()\nprint(type(d))\n&lt;class '__main__.Dog'&gt;",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/class-object.html#متد-سازنده-__init__",
-    "href": "chapter/oop/class-object.html#متد-سازنده-__init__",
-    "title": "کلاس‌ها و اشیاء (class)",
-    "section": "متد سازنده — __init__",
-    "text": "متد سازنده — __init__\n\nهر بار که یک شیء ساخته می‌شه، این متد به‌طور خودکار اجرا می‌شه\nبرای مقداردهی اولیه ویژگی‌های (attributes) شیء استفاده می‌شه\nself : اشاره به خود شیء — همیشه اولین پارامتر متدهای کلاسه\n\nclass Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\nd = Dog(\"Rex\", 3)\nprint(d.name, d.age)\nRex 3",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/class-object.html#متدها-رفتار-اشیاء",
-    "href": "chapter/oop/class-object.html#متدها-رفتار-اشیاء",
-    "title": "کلاس‌ها و اشیاء (class)",
-    "section": "متدها (رفتار اشیاء)",
-    "text": "متدها (رفتار اشیاء)\n\nتوابعی که داخل کلاس تعریف می‌شن و روی داده‌های شیء کار می‌کنن\n\nclass Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def bark(self):\n        print(f\"{self.name} says: Woof!\")\n\nd = Dog(\"Rex\", 3)\nd.bark()\nRex says: Woof!",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/class-object.html#ویژگیهای-نمونه-instance-attributes-در-مقابل-ویژگیهای-کلاس-class-attributes",
-    "href": "chapter/oop/class-object.html#ویژگیهای-نمونه-instance-attributes-در-مقابل-ویژگیهای-کلاس-class-attributes",
-    "title": "کلاس‌ها و اشیاء (class)",
-    "section": "ویژگی‌های نمونه (Instance Attributes) در مقابل ویژگی‌های کلاس (Class Attributes)",
-    "text": "ویژگی‌های نمونه (Instance Attributes) در مقابل ویژگی‌های کلاس (Class Attributes)\n\n\n\n\n\n\n\n\nنوع\nتعلق داره به\nمثال\n\n\n\n\nInstance Attribute\nهر شیء مقدار جدا داره\nself.name\n\n\nClass Attribute\nمشترک بین همه‌ی نمونه‌ها\nتعریف مستقیم داخل کلاس، بیرون __init__\n\n\n\nclass Dog:\n    species = \"Canis familiaris\"   # class attribute\n\n    def __init__(self, name):\n        self.name = name           # instance attribute\n\nd1 = Dog(\"Rex\")\nd2 = Dog(\"Buddy\")\nprint(d1.species, d2.species)   # هر دو یکی\nprint(d1.name, d2.name)         # جدا از هم",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/class-object.html#ساخت-چند-شیء-از-یک-کلاس",
-    "href": "chapter/oop/class-object.html#ساخت-چند-شیء-از-یک-کلاس",
-    "title": "کلاس‌ها و اشیاء (class)",
-    "section": "ساخت چند شیء از یک کلاس",
-    "text": "ساخت چند شیء از یک کلاس\n\nهر شیء داده‌های مستقل خودش رو داره، حتی اگه از یک کلاس ساخته شده باشن\n\nd1 = Dog(\"Rex\", 3)\nd2 = Dog(\"Buddy\", 5)",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/class-object.html#نکته-تفاوت-self-با-پارامترهای-دیگه",
-    "href": "chapter/oop/class-object.html#نکته-تفاوت-self-با-پارامترهای-دیگه",
-    "title": "کلاس‌ها و اشیاء (class)",
-    "section": "نکته: تفاوت self با پارامترهای دیگه",
-    "text": "نکته: تفاوت self با پارامترهای دیگه\n\nself به‌طور خودکار توسط پایتون پاس داده می‌شه، لازم نیست هنگام فراخوانی متد صداش کنیم\n\nd.bark()   # نه d.bark(d) !",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/inheritance.html",
-    "href": "chapter/oop/inheritance.html",
-    "title": "وراثت و چندشکلی",
-    "section": "",
-    "text": "وراثت (Inheritance) چیست؟",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/inheritance.html#وراثت-inheritance-چیست",
-    "href": "chapter/oop/inheritance.html#وراثت-inheritance-چیست",
-    "title": "وراثت و چندشکلی",
-    "section": "",
-    "text": "یک کلاس (فرزند/Child) می‌تونه ویژگی‌ها و متدهای کلاس دیگه (والد/Parent) رو به ارث ببره\nهدف: جلوگیری از تکرار کد، سازمان‌دهی سلسله‌مراتبی",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/inheritance.html#تعریف-وراثت",
-    "href": "chapter/oop/inheritance.html#تعریف-وراثت",
-    "title": "وراثت و چندشکلی",
-    "section": "تعریف وراثت",
-    "text": "تعریف وراثت\nclass Animal:\n    def __init__(self, name):\n        self.name = name\n\n    def speak(self):\n        print(f\"{self.name} makes a sound.\")\n\nclass Dog(Animal):    # Dog از Animal ارث می‌بره\n    pass\n\nd = Dog(\"Rex\")\nd.speak()\nRex makes a sound.\n\nDog(Animal) یعنی Dog فرزند Animal هست",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/inheritance.html#override-کردن-متد-بازنویسی",
-    "href": "chapter/oop/inheritance.html#override-کردن-متد-بازنویسی",
-    "title": "وراثت و چندشکلی",
-    "section": "Override کردن متد (بازنویسی)",
-    "text": "Override کردن متد (بازنویسی)\n\nکلاس فرزند می‌تونه متد کلاس والد رو با رفتار متفاوت بازنویسی کنه\n\nclass Dog(Animal):\n    def speak(self):\n        print(f\"{self.name} says: Woof!\")\n\nd = Dog(\"Rex\")\nd.speak()\nRex says: Woof!",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/inheritance.html#استفاده-از-super",
-    "href": "chapter/oop/inheritance.html#استفاده-از-super",
-    "title": "وراثت و چندشکلی",
-    "section": "استفاده از super()",
-    "text": "استفاده از super()\n\nبرای فراخوانی متد کلاس والد از داخل کلاس فرزند (بدون بازنویسی کامل)\n\nclass Dog(Animal):\n    def __init__(self, name, breed):\n        super().__init__(name)     # فراخوانی __init__ کلاس والد\n        self.breed = breed\n\n    def speak(self):\n        super().speak()            # اجرای رفتار والد هم\n        print(f\"{self.name} says: Woof!\")\n\nd = Dog(\"Rex\", \"Labrador\")\nd.speak()\nRex makes a sound.\nRex says: Woof!",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/inheritance.html#چندشکلی-polymorphism-چیست",
-    "href": "chapter/oop/inheritance.html#چندشکلی-polymorphism-چیست",
-    "title": "وراثت و چندشکلی",
-    "section": "چندشکلی (Polymorphism) چیست؟",
-    "text": "چندشکلی (Polymorphism) چیست؟\n\nیعنی اشیاء از کلاس‌های مختلف، با همون نام متد، رفتار متفاوتی نشون بدن\nکد می‌تونه با اشیاء مختلف به یک شکل کار کنه، بدون اینکه نوع دقیقشون رو بدونه\n\nclass Cat(Animal):\n    def speak(self):\n        print(f\"{self.name} says: Meow!\")\n\nanimals = [Dog(\"Rex\", \"Labrador\"), Cat(\"Whiskers\")]\n\nfor a in animals:\n    a.speak()\nRex says: Woof!\nWhiskers says: Meow!\n\nهمه‌ی متد speak() رو یکسان صدا زدیم، ولی هرکدوم رفتار خودشون رو دارن",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/inheritance.html#بررسی-رابطه-کلاسها",
-    "href": "chapter/oop/inheritance.html#بررسی-رابطه-کلاسها",
-    "title": "وراثت و چندشکلی",
-    "section": "بررسی رابطه کلاس‌ها",
-    "text": "بررسی رابطه کلاس‌ها\n\n\n\n\n\n\n\nتابع\nکار\n\n\n\n\nisinstance(obj, Class)\nآیا شیء نمونه‌ای از این کلاس (یا فرزندانش) هست\n\n\nissubclass(Child, Parent)\nآیا این کلاس فرزند اون کلاسه\n\n\n\nprint(isinstance(d, Animal))    # True\nprint(issubclass(Dog, Animal))  # True",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/inheritance.html#وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه",
-    "href": "chapter/oop/inheritance.html#وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه",
-    "title": "وراثت و چندشکلی",
-    "section": "وراثت چندگانه (Multiple Inheritance) — اشاره کوتاه",
-    "text": "وراثت چندگانه (Multiple Inheritance) — اشاره کوتاه\n\nپایتون اجازه می‌ده یک کلاس از چند کلاس ارث ببره\n\nclass A:\n    pass\nclass B:\n    pass\nclass C(A, B):\n    pass\n\nنکته: وراثت چندگانه قدرتمنده ولی می‌تونه پیچیدگی ایجاد کنه (ترتیب جستجوی متدها — MRO)؛ فعلاً فقط آشنایی کافیه.",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/encapsulation.html",
-    "href": "chapter/oop/encapsulation.html",
-    "title": "اصول کپسوله‌سازی و انتزاع",
-    "section": "",
-    "text": "کپسوله‌سازی (Encapsulation) چیست؟",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/encapsulation.html#کپسولهسازی-encapsulation-چیست",
-    "href": "chapter/oop/encapsulation.html#کپسولهسازی-encapsulation-چیست",
-    "title": "اصول کپسوله‌سازی و انتزاع",
-    "section": "",
-    "text": "محدود کردن دسترسی مستقیم به داده‌های داخلی یک شیء\nهدف: جلوگیری از تغییر ناخواسته/نادرست داده‌ها از بیرون کلاس",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/encapsulation.html#سطوح-دسترسی-در-پایتون-بر-پایه-قرارداد-نه-اجبار-سخت",
-    "href": "chapter/oop/encapsulation.html#سطوح-دسترسی-در-پایتون-بر-پایه-قرارداد-نه-اجبار-سخت",
-    "title": "اصول کپسوله‌سازی و انتزاع",
-    "section": "سطوح دسترسی در پایتون (بر پایه قرارداد، نه اجبار سخت)",
-    "text": "سطوح دسترسی در پایتون (بر پایه قرارداد، نه اجبار سخت)\n\n\n\n\n\n\n\n\nنوع\nنوشتار\nمعنی\n\n\n\n\nPublic\nself.name\nاز همه‌جا در دسترسه\n\n\nProtected\nself._name (یک آندرلاین)\nقرارداده که فقط داخل کلاس/فرزندان استفاده بشه (اجباری نیست)\n\n\nPrivate\nself.__name (دو آندرلاین)\nبا name mangling محافظت می‌شه، دسترسی مستقیم بیرون سخت‌تره\n\n\n\nclass Account:\n    def __init__(self, balance):\n        self.__balance = balance   # private\n\n    def get_balance(self):\n        return self.__balance\n\nacc = Account(1000)\nprint(acc.get_balance())    # 1000\nprint(acc.__balance)        # خطا: AttributeError\n\nنکته: پایتون واقعاً private نداره — __balance در پشت صحنه به _Account__balance تبدیل می‌شه (Name Mangling)؛ یعنی هنوز قابل دسترسیه ولی سخت‌تر و دلسردکننده‌ست.",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/encapsulation.html#دسترسی-کنترلشده-با-property",
-    "href": "chapter/oop/encapsulation.html#دسترسی-کنترلشده-با-property",
-    "title": "اصول کپسوله‌سازی و انتزاع",
-    "section": "دسترسی کنترل‌شده با property",
-    "text": "دسترسی کنترل‌شده با property\n\nروش استاندارد پایتون برای getter/setter، به‌جای متدهای دستی\n\nclass Account:\n    def __init__(self, balance):\n        self.__balance = balance\n\n    @property\n    def balance(self):          # getter\n        return self.__balance\n\n    @balance.setter\n    def balance(self, value):   # setter\n        if value &lt; 0:\n            raise ValueError(\"موجودی نمی‌تونه منفی باشه\")\n        self.__balance = value\n\nacc = Account(1000)\nprint(acc.balance)      # مثل یک attribute استفاده می‌شه، نه متد\nacc.balance = 2000       # از setter عبور می‌کنه و اعتبارسنجی می‌شه\n\nمزیت: می‌تونیم منطق اعتبارسنجی رو بدون تغییر نحوه استفاده بیرون از کلاس، اضافه کنیم",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/encapsulation.html#انتزاع-abstraction-چیست",
-    "href": "chapter/oop/encapsulation.html#انتزاع-abstraction-چیست",
-    "title": "اصول کپسوله‌سازی و انتزاع",
-    "section": "انتزاع (Abstraction) چیست؟",
-    "text": "انتزاع (Abstraction) چیست؟\n\nمخفی کردن جزئیات پیاده‌سازی و نمایش فقط رابط (Interface) ضروری به کاربر کلاس\nتمرکز روی “چه کاری انجام می‌شه” نه “چطور انجام می‌شه”",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/encapsulation.html#پیادهسازی-انتزاع-با-abc-abstract-base-class",
-    "href": "chapter/oop/encapsulation.html#پیادهسازی-انتزاع-با-abc-abstract-base-class",
-    "title": "اصول کپسوله‌سازی و انتزاع",
-    "section": "پیاده‌سازی انتزاع با abc (Abstract Base Class)",
-    "text": "پیاده‌سازی انتزاع با abc (Abstract Base Class)\nfrom abc import ABC, abstractmethod\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self):\n        pass\n\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n\n    def area(self):\n        return 3.14 * self.radius ** 2\n\nc = Circle(5)\nprint(c.area())\n78.5\n\nShape یک کلاس انتزاعیه — نمی‌شه مستقیم ازش شیء ساخت\n\ns = Shape()   # خطا: TypeError: Can't instantiate abstract class\n\nهر کلاس فرزند مجبوره متد area() رو پیاده‌سازی کنه، وگرنه خودش هم انتزاعی می‌مونه",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/encapsulation.html#جمعبندی-تفاوت-کپسولهسازی-و-انتزاع",
-    "href": "chapter/oop/encapsulation.html#جمعبندی-تفاوت-کپسولهسازی-و-انتزاع",
-    "title": "اصول کپسوله‌سازی و انتزاع",
-    "section": "جمع‌بندی تفاوت کپسوله‌سازی و انتزاع",
-    "text": "جمع‌بندی تفاوت کپسوله‌سازی و انتزاع\n\n\n\nمفهوم\nتمرکز\n\n\n\n\nکپسوله‌سازی\nمحافظت از داده (چه کسی بهش دسترسی داره)\n\n\nانتزاع\nساده‌سازی رابط (چی نشون داده بشه، چی مخفی بمونه)",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/other-options.html",
-    "href": "chapter/oop/other-options.html",
-    "title": "ویژگی‌های دیگر",
-    "section": "",
-    "text": "متدهای ویژه (Dunder / Magic Methods)",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/other-options.html#متدهای-ویژه-dunder-magic-methods",
-    "href": "chapter/oop/other-options.html#متدهای-ویژه-dunder-magic-methods",
-    "title": "ویژگی‌های دیگر",
-    "section": "",
-    "text": "متدهایی با دو آندرلاین در ابتدا و انتهای نام (__name__)\nپایتون خودش در موقعیت‌های خاص این متدها رو صدا می‌زنه\n\n\n\n\n\n\n\n\n\nمتد\nصدا زده می‌شه وقتی\nمثال\n\n\n\n\n__init__\nساخت شیء\nDog(\"Rex\")\n\n\n__str__\nprint(obj) یا str(obj)\nنمایش خوانا برای انسان\n\n\n__repr__\nنمایش رسمی/دیباگی شیء\nمعمولاً برای برنامه‌نویس\n\n\n__len__\nlen(obj)\nطول شیء\n\n\n__eq__\nobj1 == obj2\nمقایسه برابری\n\n\n__add__\nobj1 + obj2\nجمع دو شیء\n\n\n\nclass Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\n    def __str__(self):\n        return f\"({self.x}, {self.y})\"\n\n    def __eq__(self, other):\n        return self.x == other.x and self.y == other.y\n\n    def __add__(self, other):\n        return Point(self.x + other.x, self.y + other.y)\n\np1 = Point(1, 2)\np2 = Point(3, 4)\nprint(p1)              # (1, 2)   -&gt; از __str__\nprint(p1 == p2)         # False    -&gt; از __eq__\nprint(p1 + p2)          # (4, 6)   -&gt; از __add__",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/other-options.html#متد-کلاسی-و-متد-استاتیک",
-    "href": "chapter/oop/other-options.html#متد-کلاسی-و-متد-استاتیک",
-    "title": "ویژگی‌های دیگر",
-    "section": "متد کلاسی و متد استاتیک",
-    "text": "متد کلاسی و متد استاتیک\n\n\n\n\n\n\n\n\n\nنوع\nدکوراتور\nپارامتر اول\nدسترسی به\n\n\n\n\nمتد نمونه (معمولی)\n—\nself\nداده‌های شیء\n\n\nمتد کلاسی\n@classmethod\ncls\nخود کلاس\n\n\nمتد استاتیک\n@staticmethod\nندارد\nنه شیء نه کلاس، فقط تابع مرتبط\n\n\n\nclass Dog:\n    count = 0\n\n    def __init__(self, name):\n        self.name = name\n        Dog.count += 1\n\n    @classmethod\n    def get_count(cls):\n        return cls.count\n\n    @staticmethod\n    def is_valid_name(name):\n        return len(name) &gt; 0\n\nprint(Dog.is_valid_name(\"Rex\"))   # True\nd1 = Dog(\"Rex\")\nd2 = Dog(\"Buddy\")\nprint(Dog.get_count())            # 2",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/other-options.html#کلاسهای-انتزاعی-و-duck-typing",
-    "href": "chapter/oop/other-options.html#کلاسهای-انتزاعی-و-duck-typing",
-    "title": "ویژگی‌های دیگر",
-    "section": "کلاس‌های انتزاعی و Duck Typing",
-    "text": "کلاس‌های انتزاعی و Duck Typing\n\nدر پایتون معمولاً نوع دقیق شیء مهم نیست، مهم اینه که رفتار موردنیاز رو داشته باشه\nبه این ویژگی Duck Typing می‌گن: “اگه مثل اردک راه بره و مثل اردک صدا کنه، اردکه”\n\nclass Duck:\n    def sound(self):\n        print(\"Quack!\")\n\nclass Dog:\n    def sound(self):\n        print(\"Woof!\")\n\ndef make_it_sound(animal):\n    animal.sound()   # فرقی نمی‌کنه از چه کلاسی باشه، فقط باید sound() داشته باشه\n\nmake_it_sound(Duck())\nmake_it_sound(Dog())",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/other-options.html#بازبینی-خودکار-اشیاء",
-    "href": "chapter/oop/other-options.html#بازبینی-خودکار-اشیاء",
-    "title": "ویژگی‌های دیگر",
-    "section": "بازبینی خودکار اشیاء",
-    "text": "بازبینی خودکار اشیاء\n\ndir(obj) : لیست همه‌ی متدها و ویژگی‌های یک شیء\nvars(obj) یا obj.__dict__ : دیکشنری ویژگی‌های نمونه (instance attributes)\n\np = Point(1, 2)\nprint(vars(p))    # {'x': 1, 'y': 2}",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/oop/zoo.html",
-    "href": "chapter/oop/zoo.html",
-    "title": "مدیریت باغ وحش",
-    "section": "",
-    "text": "from abc import ABC, abstractmethod\n\n\n# ---------------------------------------------------------\n# بخش ۱ و ۳: تعریف کلاس پایه انتزاعی (Abstraction)\n# ---------------------------------------------------------\nclass Animal(ABC):\n    \"\"\"کلاس پایه انتزاعی برای همه حیوانات باغ‌وحش\"\"\"\n\n    total_animals = 0  # class attribute -&gt; مشترک بین همه نمونه‌ها\n\n    def __init__(self, name, age):\n        self.name = name                 # public attribute\n        self._age = age                  # protected attribute (قرارداد: فقط داخلی)\n        self.__health = 100              # private attribute (کپسوله‌سازی)\n        Animal.total_animals += 1        # هر بار ساخت شیء جدید، شمارنده رو زیاد می‌کنه\n\n    # --- کپسوله‌سازی با property ---\n    @property\n    def health(self):\n        \"\"\"getter برای سلامت حیوان\"\"\"\n        return self.__health\n\n    @health.setter\n    def health(self, value):\n        \"\"\"setter با اعتبارسنجی - جلوگیری از مقدار نامعتبر\"\"\"\n        if not 0 &lt;= value &lt;= 100:\n            raise ValueError(\"سلامت باید بین 0 تا 100 باشد\")\n        self.__health = value\n\n    # --- متد انتزاعی: هر کلاس فرزند مجبوره پیاده‌سازی کنه ---\n    @abstractmethod\n    def make_sound(self):\n        pass\n\n    # --- متد کلاسی: کار با خود کلاس، نه یک نمونه خاص ---\n    @classmethod\n    def get_total_animals(cls):\n        return cls.total_animals\n\n    # --- متد استاتیک: فقط یک تابع کمکی مرتبط با کلاس ---\n    @staticmethod\n    def is_valid_age(age):\n        return age &gt; 0\n\n    # --- متد ویژه (dunder): نمایش خوانا هنگام print ---\n    def __str__(self):\n        return f\"{self.name} ({self.__class__.__name__}), سن: {self._age}, سلامت: {self.__health}\"\n\n    # --- متد ویژه: مقایسه دو حیوان بر اساس نام ---\n    def __eq__(self, other):\n        return self.name == other.name\n\n\n# ---------------------------------------------------------\n# بخش ۲: وراثت - هر کلاس فرزند، Animal رو گسترش می‌ده\n# ---------------------------------------------------------\nclass Lion(Animal):\n    def make_sound(self):\n        print(f\"{self.name} says: Roar!\")\n\n\nclass Parrot(Animal):\n    def __init__(self, name, age, can_talk=True):\n        super().__init__(name, age)      # فراخوانی سازنده والد\n        self.can_talk = can_talk\n\n    def make_sound(self):\n        if self.can_talk:\n            print(f\"{self.name} says: Hello!\")\n        else:\n            print(f\"{self.name} says: Squawk!\")\n\n\nclass Elephant(Animal):\n    def make_sound(self):\n        print(f\"{self.name} says: Pawoo!\")\n\n\n# ---------------------------------------------------------\n# کلاسی که مجموعه‌ای از حیوانات رو نگه می‌داره\n# نمایش __len__ و duck typing\n# ---------------------------------------------------------\nclass Zoo:\n    def __init__(self, name):\n        self.name = name\n        self.animals = []\n\n    def add_animal(self, animal):\n        self.animals.append(animal)\n\n    def __len__(self):\n        return len(self.animals)\n\n    # --- چندشکلی: صدا زدن یک متد یکسان روی انواع مختلف حیوان ---\n    def make_all_sounds(self):\n        for animal in self.animals:\n            animal.make_sound()   # هرکدوم رفتار خودشون رو دارن\n\n\n# ---------------------------------------------------------\n# اجرای برنامه (Demo)\n# ---------------------------------------------------------\nif __name__ == \"__main__\":\n\n    zoo = Zoo(\"باغ‌وحش تهران\")\n\n    lion = Lion(\"Simba\", 5)\n    parrot = Parrot(\"Polly\", 2, can_talk=True)\n    elephant = Elephant(\"Dumbo\", 8)\n\n    zoo.add_animal(lion)\n    zoo.add_animal(parrot)\n    zoo.add_animal(elephant)\n\n    print(\"--- نمایش اطلاعات همه حیوانات (dunder __str__) ---\")\n    for a in zoo.animals:\n        print(a)\n\n    print(\"\\n--- چندشکلی: هر حیوان صدای خودش رو تولید می‌کنه ---\")\n    zoo.make_all_sounds()\n\n    print(\"\\n--- کپسوله‌سازی: تغییر سلامت با اعتبارسنجی ---\")\n    lion.health = 80\n    print(f\"سلامت {lion.name}: {lion.health}\")\n    try:\n        lion.health = 150   # مقدار نامعتبر\n    except ValueError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- تلاش برای دسترسی مستقیم به متغیر private ---\")\n    try:\n        print(lion.__health)\n    except AttributeError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- متد کلاسی: تعداد کل حیوانات ساخته‌شده ---\")\n    print(\"تعداد کل:\", Animal.get_total_animals())\n    print(\"طول باغ‌وحش (__len__):\", len(zoo))\n\n    print(\"\\n--- متد استاتیک: بررسی معتبر بودن سن ---\")\n    print(Animal.is_valid_age(5))    # True\n    print(Animal.is_valid_age(-3))   # False\n\n    print(\"\\n--- تلاش برای ساخت شیء از کلاس انتزاعی ---\")\n    try:\n        a = Animal(\"X\", 1)\n    except TypeError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- مقایسه دو شیء (__eq__) ---\")\n    lion2 = Lion(\"Simba\", 5)\n    print(lion == lion2)   # True چون نام یکسانه\n\n    print(\"\\n--- Duck Typing: هر شیئی که make_sound() داشته باشه کار می‌کنه ---\")\n    class RobotAnimal:\n        def __init__(self, name):\n            self.name = name\n        def make_sound(self):\n            print(f\"{self.name} says: Beep Boop!\")\n\n    zoo.add_animal(RobotAnimal(\"R2D2\"))  # نه از Animal ارث می‌بره، نه انتزاعیه\n    zoo.make_all_sounds()",
-    "crumbs": [
-      "کلاس و شئ گرایی",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>مدیریت باغ وحش</span>"
-    ]
-  },
-  {
     "objectID": "chapter/gui/top-10-gui.html",
     "href": "chapter/gui/top-10-gui.html",
     "title": "۱۰ پکیج رابط گرافیکی (GUI)",
@@ -1876,7 +1337,7 @@
     "text": "۱. Tkinter",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
     ]
   },
   {
@@ -1887,7 +1348,7 @@
     "text": "مزیت‌ها: جزو کتابخانه استاندارد پایتونه، نیاز به نصب جداگانه نداره، سبک و سریعه، یادگیریش خیلی ساده‌ست.\nمعایب‌ها: ظاهر ویجت‌ها قدیمی و غیرمدرنه (مگر با ttk کمی بهتر بشه)، برای اپ‌های پیچیده و بزرگ مقیاس مناسب نیست، امکانات گرافیکی پیشرفته (انیمیشن، افکت) نداره.\nتاریخ پیدایش: اواسط دهه ۱۹۹۰ (بر پایه Tcl/Tk که قدیمی‌تره)، از همون ابتدا با پایتون همراه شده.\nپروژه‌های مهم: بیشتر در ابزارهای داخلی، اسکریپت‌های آموزشی و IDLE (ویرایشگر پیش‌فرض پایتون) دیده می‌شه؛ پروژه تجاری بزرگ و معروف کم داره.\nستاره گیت‌هاب: خود Tkinter بخشی از سورس CPython‌ـه و ریپوی مستقل پرستاره‌ای نداره (مقایسه‌پذیر نیست).\nجامعه توسعه‌دهندگان: فوق‌العاده بزرگ چون هر برنامه‌نویس پایتون باهاش آشناست، ولی توسعه‌ی خودِ کتابخانه کند و محافظه‌کارانه‌ست.\nقابلیت نرم‌افزار تجاری: بله، لایسنس PSF کاملاً آزاد و رایگانه، محدودیتی برای فروش نداره.\nخروجی مالتی‌پلتفرم: ویندوز، مک، لینوکس؛ برای موبایل و وب پشتیبانی رسمی نداره.",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
     ]
   },
   {
@@ -1898,7 +1359,7 @@
     "text": "۲. PyQt (PyQt5 / PyQt6)\n\n\n\n\n\n\nمزیت‌ها: یکی از قدرتمندترین و کامل‌ترین فریم‌ورک‌ها، ویجت‌های فراوان، ابزار طراحی بصری (Qt Designer)، مستندات غنی.\nمعایب‌ها: برای استفاده تجاری (کلوزدسورس) نیاز به لایسنس تجاری از Riverbank داره، حجم و پیچیدگی یادگیری بیشتر از Tkinter.\nتاریخ پیدایش: سال ۱۹۹۸ (بایندینگ پایتون برای Qt که توسط Riverbank Computing توسعه داده شد).\nپروژه‌های مهم: نرم‌افزارهایی مثل Spyder IDE، Dropbox (نسخه‌های قدیمی)، بسیاری از ابزارهای مهندسی و علمی از Qt/PyQt استفاده کردن.\nستاره گیت‌هاب: خود PyQt در گیت‌هاب رسمی نیست (روی SourceForge/Riverbank میزبانی می‌شه)؛ پروژه‌های نمونه و ابزارهای جانبی مرتبط با PyQt در گیت‌هاب هزاران ستاره دارند.\nجامعه توسعه‌دهندگان: بزرگ و باتجربه، مخصوصاً در حوزه‌ی اپ‌های دسکتاپ صنعتی و علمی.\nقابلیت نرم‌افزار تجاری: بله ولی برای پروژه‌های کلوزدسورس باید لایسنس تجاری خرید (GPL برای اوپن‌سورس رایگانه).\nخروجی مالتی‌پلتفرم: ویندوز، مک، لینوکس؛ با Qt for Python و ابزارهای جانبی امکان خروجی محدود موبایل هم هست، ولی وب رسمی ندارد.",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
     ]
   },
   {
@@ -1909,7 +1370,7 @@
     "text": "۳. Kivy\n\n\n\n\n\n\nمزیت‌ها: طراحی‌شده برای رابط‌های لمسی و چندسکویی، خروجی مستقیم روی موبایل (اندروید/iOS) داره، مناسب بازی‌های ساده و اپ‌های گرافیکی.\nمعایب‌ها: ظاهرش native نیست (خودش رندر می‌کنه، شبیه هیچ‌کدوم از سیستم‌عامل‌ها نیست)، منحنی یادگیری زبان توصیف رابط (KV language) اضافه‌ست.\nتاریخ پیدایش: سال ۲۰۱۱ (پروژه‌ای در ادامه PyMT).\nپروژه‌های مهم: اپ‌های موبایل مستقل، بازی‌های ساده، پروژه‌های آموزشی و هنری تعاملی.\nستاره گیت‌هاب: یکی از پرستاره‌ترین فریم‌ورک‌های GUI پایتون (در محدوده چند ده هزار ستاره).\nجامعه توسعه‌دهندگان: فعال و بین‌المللی، مخصوصاً در حوزه توسعه اپ موبایل با پایتون.\nقابلیت نرم‌افزار تجاری: بله، لایسنس MIT کاملاً آزاده.\nخروجی مالتی‌پلتفرم: ویندوز، مک، لینوکس، اندروید، iOS و Raspberry Pi؛ برای وب امکان محدود (از طریق ابزارهای جانبی).",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
     ]
   },
   {
@@ -1920,7 +1381,7 @@
     "text": "۴. Streamlit\n\n\n\n\n\n\nمزیت‌ها: برای ساخت داشبورد و ابزار داده خیلی سریع و با حداقل کد، محبوب در حوزه دیتاساینس و یادگیری ماشین، خروجی مستقیم وب.\nمعایب‌ها: GUI سنتی دسکتاپی نیست (فقط تحت وب اجرا می‌شه)، برای اپ‌های پیچیده با تعامل سفارشی زیاد محدودیت داره.\nتاریخ پیدایش: سال ۲۰۱۹.\nپروژه‌های مهم: بی‌شمار داشبورد و دمو در حوزه هوش مصنوعی و علم داده، خیلی از پروژه‌های نمایشی مدل‌های ML باهاش ساخته می‌شن.\nستاره گیت‌هاب: یکی از پرستاره‌ترین ابزارهای این لیست (چند ده هزار ستاره).\nجامعه توسعه‌دهندگان: بسیار بزرگ و فعال، مخصوصاً در جامعه هوش مصنوعی و علم داده.\nقابلیت نرم‌افزار تجاری: بله، لایسنس Apache 2.0، همچنین سرویس ابری Streamlit Cloud برای دیپلوی وجود داره.\nخروجی مالتی‌پلتفرم: فقط وب (که خودش روی هر دستگاهی با مرورگر باز می‌شه)، مفهوم دسکتاپ/موبایل native نداره.",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
     ]
   },
   {
@@ -1931,7 +1392,7 @@
     "text": "۵. Flet\n\n\n\n\n\n\nمزیت‌ها: با پایتون خالص می‌نویسی ولی زیرِ هود از Flutter استفاده می‌کنه، ظاهر مدرن، خروجی هم‌زمان دسکتاپ/وب/موبایل خیلی راحت‌تر از رقبا.\nمعایب‌ها: نسبتاً جدیده، اکوسیستم و منابع آموزشی فارسی/انگلیسی هنوز کوچیکه، وابسته به موتور Flutter در پس‌زمینه.\nتاریخ پیدایش: سال ۲۰۲۲.\nپروژه‌های مهم: بیشتر پروژه‌های استارتاپی و ابزارهای داخلی که سریع می‌خوان هم دسکتاپ هم وب داشته باشن.\nستاره گیت‌هاب: رشد بسیار سریع داشته و به سرعت به چندین هزار ستاره رسیده.\nجامعه توسعه‌دهندگان: کوچک ولی به‌سرعت در حال رشد، به خصوص بین کسانی که دنبال جایگزین ساده‌تر برای Kivy/BeeWare هستن.\nقابلیت نرم‌افزار تجاری: بله، لایسنس Apache 2.0.\nخروجی مالتی‌پلتفرم: دسکتاپ، وب و موبایل همزمان، یکی از قوی‌ترین گزینه‌ها از نظر خروجی چندسکویی واقعی (شامل وب).",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
     ]
   },
   {
@@ -1942,7 +1403,7 @@
     "text": "جمع‌بندی\n\n\n\nپکیج\nنوع خروجی اصلی\nسطح دشواری\nلایسنس تجاری\n\n\n\n\nTkinter\nدسکتاپ\nآسان\nآزاد\n\n\nPyQt\nدسکتاپ\nمتوسط-سخت\nنیاز به خرید لایسنس\n\n\nKivy\nدسکتاپ + موبایل\nمتوسط\nآزاد\n\n\nStreamlit\nفقط وب/داشبورد\nآسان\nآزاد\n\n\nFlet\nدسکتاپ+وب+موبایل\nآسان-متوسط\nآزاد",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
     ]
   },
   {
@@ -1953,7 +1414,7 @@
     "text": "ورود به دنیای گرافیک",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>رابط گرافیکی (`tkinter`)</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>رابط گرافیکی (`tkinter`)</span>"
     ]
   },
   {
@@ -1964,7 +1425,7 @@
     "text": "ایجاد Loop برای بدنه\nدر این بخش با ساختن یک پنجره ساده وارد دنیای رابط گرافیکی می‌شویم. متد mainloop() باعث می‌شود پنجره باز بماند و منتظر تعامل کاربر بماند.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.mainloop()\n\n\n\nعنوان\nدر این مرحله برای پنجره یک عنوان مشخص می‌کنیم. متد title() متن نمایش داده‌شده در نوار بالای پنجره را تنظیم می‌کند.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\n\nwindow.mainloop()\n\n\n\nتغییر سایز پنجره\nدر این بخش اندازه اولیه پنجره را مشخص می‌کنیم. متد geometry() عرض و ارتفاع پنجره را بر حسب پیکسل تعیین می‌کند.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.title(\"Hello World!\")\n\nwindow.geometry(\"480x360\")  # width x height\n# window.minsize(width=400, height=300)\n# window.maxsize(width=640, height=450)\n# window.resizable(width=False, height=False)\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>رابط گرافیکی (`tkinter`)</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>رابط گرافیکی (`tkinter`)</span>"
     ]
   },
   {
@@ -1972,10 +1433,10 @@
     "href": "chapter/gui/widgets.html",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "",
-    "text": "برچسب\nبرچسب یا Label برای نمایش متن در پنجره استفاده می‌شود. می‌توان ظاهر آن مثل فونت، رنگ پس‌زمینه و رنگ متن را تغییر داد.\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntk.Label(window, text=\"Hello Mohsen\").pack()\ntk.Label(\n    window,\n    text=\"How are you?\",\n    font=(\"Roboto\", 18, \"Bold\"),  # family size face\n    bg=\"blue\",  # background\n    fg=\"white\",  # forground\n).pack(pady=10) # padding in y axis\n\nwindow.mainloop()",
+    "text": "برچسب\nبرچسب یا Label برای نمایش متن در پنجره استفاده می‌شود. می‌توان ظاهر آن مثل فونت، رنگ پس‌زمینه و رنگ متن را تغییر داد.\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntk.Label(window, text=\"Hello Mohsen\").pack()\ntk.Label(\n    window,\n    text=\"How are you?\",\n    font=(\"Roboto\", 18),  # family size\n    bg=\"blue\",  # background\n    fg=\"white\",  # forground\n).pack(pady=10) # padding in y axis\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>36</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
     ]
   },
   {
@@ -1983,10 +1444,10 @@
     "href": "chapter/gui/widgets.html#دکمه",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "دکمه",
-    "text": "دکمه\nدکمه یا Button برای انجام یک عمل هنگام کلیک کاربر استفاده می‌شود. با استفاده از پارامتر command می‌توان یک تابع را به دکمه متصل کرد.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    # print(\"Hello World!\")\n    lbl.configure(text=\"Hello World!\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nbtn = tk.Button(window)\nbtn.configure(text=\"Say hello\", command=btn_print)\nbtn.pack(pady=10)\n\nlbl = Label(window, text=\"\")\nlbl.pack(pady=10)\n\nwindow.mainloop()\n\n\n\n\n\n\n\nاحتیاطگوسفند شمار\n\n\n\nدینا کوچولو که خوابش نمیبره مادرش بهش یاد داده قبل خواب توی ذهنش گوسفندهایی رو تصور کنه که از روی نرده رد میشن و سعی کنه تعداد اونهارو بشماره تا ذهنش خسته بشه بخوابه. اما دینا که تازه برنامه نویسی یاد گرفته بود به فکر این بود که چطور یک نرم افزار گوسفند شمار بسازه. دینا رو برای ساخت این نرم افزار راهنمایی کنید.\n\n\n\n\n\n\nنکتهپاسخ\n\n\n\n\n\n\nfrom tkinter import *\n\ncounter = 0\n\n\ndef btn_counter():\n    global counter\n    counter += 1\n    lbl.configure(text=f\"{counter} گوسفند.\")\n\n\nwindow = Tk()\nwindow.title(\"گوسفند شمار\")\nwindow.geometry(\"480x360\")\n\n\nbtn = Button(window)\nbtn.configure(text=\"بشمار\", command=btn_counter)\nbtn.pack(pady=10)\n\nlbl = Label(window, text=\"0 گوسفند.\")\nlbl.pack(pady=10)\n\nwindow.mainloop()",
+    "text": "دکمه\nدکمه یا Button برای انجام یک عمل هنگام کلیک کاربر استفاده می‌شود. با استفاده از پارامتر command می‌توان یک تابع را به دکمه متصل کرد.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    print(\"Print in Terminal!\")\n    lbl.configure(text=\"Print in Tkinter GUI\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nbtn = tk.Button(window)\nbtn.configure(text=\"Say hello\", command=btn_print)\nbtn.pack(pady=10)\n\nlbl = tk.Label(window, text=\"\")\nlbl.pack(pady=10)\n\nwindow.mainloop()\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبا توجه به مواردی که تاکنون یادگرفتید میتوانید پروژه گوسفند شمار را انجام دهید گوسفند شمار.",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>36</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
     ]
   },
   {
@@ -1997,7 +1458,84 @@
     "text": "ورودی\nویجت Entry برای دریافت ورودی از کاربر استفاده می‌شود. با متد get() می‌توان مقدار واردشده را خواند و بر اساس آن تصمیم‌گیری کرد.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    name = ntr.get()\n    if name == \"\":\n        result.configure(\n            text=\"Please Enter your name!\",\n            fg=\"red\"\n        )\n    else:\n        result.configure(\n            text=f\"Hello {name}!\",\n            fg=\"blue\"\n        )\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nlbl = tk.Label(\n    window,\n    text=\"Enter your name:\",\n    font=(\"Roboto\", 10)\n)\nlbl.pack(pady=10)\n\nntr = tk.Entry(window)\nntr.pack(pady=5)\n\nbtn = tk.Button(window)\nbtn.configure(text=\"Say hello\", command=btn_print)\nbtn.pack()\n\nresult = tk.Label(\n    window,\n    text=\"\",\n    font=(\"Roboto\", 12, \"bold\")\n)\nresult.pack(pady=10)\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>36</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/gui/widgets.html#دکمه-رادیویی",
+    "href": "chapter/gui/widgets.html#دکمه-رادیویی",
+    "title": "ابزارهای اصلی (Widgets)",
+    "section": "دکمه رادیویی",
+    "text": "دکمه رادیویی\nویجت Radiobutton برای انتخاب یکی از چند گزینه استفاده می‌شود. همه‌ی رادیوباتن‌هایی که یک متغیر مشترک دارند به‌صورت خودکار وابسته به هم می‌شوند (انتخاب یکی، بقیه را غیرفعال می‌کند).\n\nimport tkinter as tk\n\n\ndef btn_print():\n    result.configure(text=f\"You selected: {gender.get()}\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ngender = tk.StringVar(value=\"male\")  # shared variable\n\ntk.Radiobutton(\n    window, text=\"Male\", variable=gender, value=\"male\"\n).pack()\ntk.Radiobutton(\n    window, text=\"Female\", variable=gender, value=\"female\"\n).pack()\n\nbtn = tk.Button(window, text=\"Submit\", command=btn_print)\nbtn.pack(pady=10)\n\nresult = tk.Label(window, text=\"\")\nresult.pack(pady=10)\n\nwindow.mainloop()",
+    "crumbs": [
+      "رابط گرافیکی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/gui/widgets.html#چکباکس",
+    "href": "chapter/gui/widgets.html#چکباکس",
+    "title": "ابزارهای اصلی (Widgets)",
+    "section": "چک‌باکس",
+    "text": "چک‌باکس\nویجت Checkbutton برای انتخاب گزینه‌هایی استفاده می‌شود که می‌توانند به‌صورت مستقل (چندتایی) انتخاب یا غیرفعال شوند. با متغیر IntVar مقدار ۰ یا ۱ (تیک‌نخورده / تیک‌خورده) نگه‌داری می‌شود.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    if agree.get() == 1:\n        result.configure(text=\"You agreed!\", fg=\"green\")\n    else:\n        result.configure(text=\"You must agree first!\", fg=\"red\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nagree = tk.IntVar()  # 0 = unchecked, 1 = checked\n\nchk = tk.Checkbutton(window, text=\"I agree to the terms\", variable=agree)\nchk.pack(pady=10)\n\nbtn = tk.Button(window, text=\"Submit\", command=btn_print)\nbtn.pack()\n\nresult = tk.Label(window, text=\"\")\nresult.pack(pady=10)\n\nwindow.mainloop()",
+    "crumbs": [
+      "رابط گرافیکی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/gui/widgets.html#لیستباکس",
+    "href": "chapter/gui/widgets.html#لیستباکس",
+    "title": "ابزارهای اصلی (Widgets)",
+    "section": "لیست‌باکس",
+    "text": "لیست‌باکس\nویجت Listbox برای نمایش یک لیست از آیتم‌ها و انتخاب یک یا چند مورد از بین آن‌ها استفاده می‌شود. با متد curselection() اندیس آیتم انتخاب‌شده و با get() مقدار آن خوانده می‌شود.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    selection = lst.curselection()  # returns a tuple of indexes\n    if selection:\n        index = selection[0]\n        result.configure(text=f\"You selected: {lst.get(index)}\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nlst = tk.Listbox(window)\nlst.pack(pady=10)\n\nfruits = [\"Apple\", \"Banana\", \"Cherry\", \"Melon\"]\nfor fruit in fruits:\n    lst.insert(tk.END, fruit)  # add item to the end of the list\n\nbtn = tk.Button(window, text=\"Select\", command=btn_print)\nbtn.pack()\n\nresult = tk.Label(window, text=\"\")\nresult.pack(pady=10)\n\nwindow.mainloop()",
+    "crumbs": [
+      "رابط گرافیکی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/gui/widgets.html#اسلایدر",
+    "href": "chapter/gui/widgets.html#اسلایدر",
+    "title": "ابزارهای اصلی (Widgets)",
+    "section": "اسلایدر",
+    "text": "اسلایدر\nویجت Scale یک نوار لغزنده برای انتخاب یک عدد در یک بازه‌ی مشخص است. با پارامترهای from_ و to بازه و با orient جهت افقی یا عمودی آن مشخص می‌شود.\n\nimport tkinter as tk\n\n\ndef slider_changed(value):\n    result.configure(text=f\"Value: {value}\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nscale = tk.Scale(\n    window,\n    from_=0,\n    to=100,\n    orient=\"horizontal\",  # or \"vertical\"\n    command=slider_changed,\n)\nscale.pack(pady=10)\n\nresult = tk.Label(window, text=\"Value: 0\")\nresult.pack(pady=10)\n\nwindow.mainloop()",
+    "crumbs": [
+      "رابط گرافیکی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/gui/widgets.html#قاب-frame",
+    "href": "chapter/gui/widgets.html#قاب-frame",
+    "title": "ابزارهای اصلی (Widgets)",
+    "section": "قاب (Frame)",
+    "text": "قاب (Frame)\nویجت Frame یک ظرف (container) خالی است که برای دسته‌بندی و سازمان‌دهی سایر ویجت‌ها داخل پنجره استفاده می‌شود. مثلاً می‌توان چند ویجت را در یک قاب کنار هم و چند ویجت دیگر را در قاب دیگری زیر هم چید.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntop_frame = tk.Frame(window)\ntop_frame.pack(pady=10)\n\ntk.Label(top_frame, text=\"Name:\").pack(side=\"left\", padx=5)\ntk.Entry(top_frame).pack(side=\"left\")\n\nbottom_frame = tk.Frame(window)\nbottom_frame.pack(pady=10)\n\ntk.Button(bottom_frame, text=\"OK\").pack(side=\"left\", padx=5)\ntk.Button(bottom_frame, text=\"Cancel\").pack(side=\"left\", padx=5)\n\nwindow.mainloop()",
+    "crumbs": [
+      "رابط گرافیکی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/gui/widgets.html#جعبه-پیام",
+    "href": "chapter/gui/widgets.html#جعبه-پیام",
+    "title": "ابزارهای اصلی (Widgets)",
+    "section": "جعبه پیام",
+    "text": "جعبه پیام\nماژول messagebox برای نمایش پیام‌های هشدار، خطا یا سوال به‌صورت یک پنجره‌ی جداگانه (Popup) استفاده می‌شود.\n\nimport tkinter as tk\nfrom tkinter import messagebox\n\n\ndef btn_print():\n    answer = messagebox.askyesno(\"Confirm\", \"Are you sure?\")\n    if answer:\n        messagebox.showinfo(\"Result\", \"You clicked Yes!\")\n    else:\n        messagebox.showwarning(\"Result\", \"You clicked No!\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nbtn = tk.Button(window, text=\"Click me\", command=btn_print)\nbtn.pack(pady=20)\n\nwindow.mainloop()",
+    "crumbs": [
+      "رابط گرافیکی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/gui/widgets.html#متن-چندخطی",
+    "href": "chapter/gui/widgets.html#متن-چندخطی",
+    "title": "ابزارهای اصلی (Widgets)",
+    "section": "متن چندخطی",
+    "text": "متن چندخطی\nویجت Text برای دریافت یا نمایش چند خط متن استفاده می‌شود (برخلاف Entry که فقط یک خط است). با متد get(\"1.0\", tk.END) تمام متن از خط اول تا انتها خوانده می‌شود.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    content = txt.get(\"1.0\", tk.END)  # from line 1, char 0 to the end\n    print(content)\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntxt = tk.Text(window, height=8, width=40)\ntxt.pack(pady=10)\n\nbtn = tk.Button(window, text=\"Print\", command=btn_print)\nbtn.pack()\n\nwindow.mainloop()",
+    "crumbs": [
+      "رابط گرافیکی",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
     ]
   },
   {
@@ -2008,7 +1546,546 @@
     "text": "تمرین\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>36</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os-open.html",
+    "href": "chapter/files/os-open.html",
+    "title": "کار با فایل‌ها",
+    "section": "",
+    "text": "خواندن و نوشتن فایل متنی",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کار با فایل‌ها</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os-open.html#خواندن-و-نوشتن-فایل-متنی",
+    "href": "chapter/files/os-open.html#خواندن-و-نوشتن-فایل-متنی",
+    "title": "کار با فایل‌ها",
+    "section": "",
+    "text": "بازکردن فایل متنی\nfhand = open('mbox.txt')\n\nخروجی یک handle به فایله، نه محتوای واقعی — برای خوندن ازش استفاده می‌شه\nاگه فایل وجود نداشته باشه → خطا: FileNotFoundError\n\n\n\n\n\n\n\n\nحالت\nکاربرد\n\n\n\n\n'r'\nخواندن (پیش‌فرض)\n\n\n'w'\nنوشتن — ⚠️ محتوای قبلی فایل پاک می‌شه\n\n\n'a'\nappend — اضافه‌کردن به انتهای فایل، بدون پاک کردن محتوای قبلی\n\n\n'x'\nساخت فایل جدید — اگه از قبل وجود داشته باشه خطا می‌ده\n\n\n\n\nخواندن فایل\n\nروش ۱: خط به خط با for (برای فایل‌های بزرگ)\n\nfhand = open('mbox.txt')\ncount = 0\nfor line in fhand:\n    count += 1\nprint('Line Count:', count)\n\nروش ۲: خواندن کل فایل یکجا (برای فایل‌های کوچک)\n\nfhand = open('mbox.txt')\ninp = fhand.read()\nprint(len(inp))\n\n⚠️ نکته: محتوا رو حتماً توی متغیر ذخیره کنیم، وگرنه با خواندن مجدد از دست می‌ره\n\n\n\nجستجو در فایل\nfhand = open('mbox.txt')\nfor line in fhand:\n    line = line.rstrip()\n    if line.startswith('From:'):\n        print(line)\n\nrstrip() : حذف فضای خالی سمت راست رشته\nstartswith() : بررسی شروع خط با یک کلمه/رشته خاص\n\n\n\nمدیریت خطا\n\nبه‌جای هاردکد کردن نام فایل، از کاربر می‌گیریم — ولی چون فایل ممکنه وجود نداشته باشه، حتماً با try-except پوشش بدیم\n\nfname = input('Enter the file name: ')\ntry:\n    fhand = open(fname)\nexcept:\n    print('File cannot be opened:', fname)\n    exit()\n\nexit() : خروج کامل از اجرای برنامه اگه فایل باز نشد\n\n\n\nنوشتن در فایل\nfout = open('output.txt', 'w')\n\nپارامتر 'w':\n\nاگه فایل وجود داشته باشه → باز می‌شه برای نوشتن (⚠️ محتوای قبلی پاک می‌شه)\nاگه وجود نداشته باشه → فایل جدید ساخته می‌شه\n\n\nline1 = \"This here's the wattle,\\n\"\nfout.write(line1)\n\n\nبستن فایل\nfout.close()\n\nبعد از اتمام کار با فایل، همیشه باید بسته بشه\n\n\n\nروش استاندارد و توصیه‌شده\n\nروش دستی (باز کردن + close() دستی) رایجه، ولی در عمل استفاده از with توصیه‌شده‌تره\nمزیت: فایل خودکار بسته می‌شه، حتی اگه وسط کار خطا رخ بده — نیازی به close() دستی نیست\n\nwith open('mbox.txt') as fhand:\n    for line in fhand:\n        print(line.rstrip())\n# اینجا فایل خودش بسته شده\nwith open('output.txt', 'w') as fout:\n    fout.write(\"This here's the wattle,\\n\")",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کار با فایل‌ها</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os-open.html#فایلهای-باینری",
+    "href": "chapter/files/os-open.html#فایلهای-باینری",
+    "title": "کار با فایل‌ها",
+    "section": "فایل‌های باینری",
+    "text": "فایل‌های باینری\n\nتفاوت فایل متنی و باینری\n\n\n\n\n\n\n\n\nنوع\nمحتوا\nمثال\n\n\n\n\nمتنی (text)\nکاراکترهای قابل‌خواندن، با encoding رمزگذاری می‌شه\n.txt، .csv\n\n\nباینری (binary)\nدنباله خام بایت‌ها، بدون تفسیر متنی\n.jpg، .png، .mp3، .pdf، .zip\n\n\n\n\nدر حالت متنی، پایتون بایت‌ها رو با یک encoding (مثلاً UTF-8) به رشته تبدیل می‌کنه\nدر حالت باینری، هیچ تبدیلی انجام نمی‌شه — داده به‌صورت خام (bytes) خونده/نوشته می‌شه\n\n\n\nباز کردن فایل باینری — حرف b\n\n\n\nحالت\nکاربرد\n\n\n\n\n'rb'\nخواندن باینری\n\n\n'wb'\nنوشتن باینری (پاک‌کردن محتوای قبلی)\n\n\n'ab'\nappend باینری\n\n\n'xb'\nساخت فایل باینری جدید (خطا اگه وجود داشته باشه)\n\n\n\n\n\nخواندن فایل باینری\nwith open('image.jpg', 'rb') as f:\n    data = f.read()\n    print(type(data))   # &lt;class 'bytes'&gt;\n    print(len(data))    # تعداد بایت‌ها\n\nخروجی از نوع bytes هست، نه str\n⚠️ متدهای رشته‌ای مثل .rstrip() یا .startswith('متن') روی bytes فرق دارن (باید با b'...' مقایسه بشن)\n\n\n\nنوشتن فایل باینری\ndata = b'\\x89PNG\\r\\n\\x1a\\n...'\nwith open('output.bin', 'wb') as f:\n    f.write(data)\n\nفقط bytes یا bytearray قابل نوشتنه، نه رشته معمولی\n\n\n\nکپی کردن یک فایل باینری (مثال کاربردی)\nwith open('source.jpg', 'rb') as fin:\n    with open('copy.jpg', 'wb') as fout:\n        fout.write(fin.read())\n\nبرای فایل‌های بزرگ بهتره تکه‌تکه (chunk) بخونیم تا حافظه پر نشه:\n\nwith open('source.jpg', 'rb') as fin, open('copy.jpg', 'wb') as fout:\n    while True:\n        chunk = fin.read(4096)   # هر بار ۴۰۹۶ بایت\n        if not chunk:\n            break\n        fout.write(chunk)\n\n\nتبدیل بین str و bytes\n\n\n\nمتد\nکار\n\n\n\n\nstr.encode()\nتبدیل رشته به بایت\n\n\nbytes.decode()\nتبدیل بایت به رشته\n\n\n\ns = \"سلام\"\nb = s.encode('utf-8')     # str → bytes\nprint(b)\n\ns2 = b.decode('utf-8')    # bytes → str\nprint(s2)\n\n\nنکته مهم: باز کردن فایل متنی به‌جای باینری (و برعکس) خطا می‌ده\n\nسعی در خواندن فایل باینری (مثل عکس) با حالت 'r' معمولاً باعث خطای decode می‌شه:\n\nUnicodeDecodeError: 'utf-8' codec can't decode byte...\n\nقانون کلی: فایل‌های غیرمتنی (عکس، صدا، فایل فشرده، اجرایی) → همیشه با b",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کار با فایل‌ها</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/os-open.html#ماژول-os",
+    "href": "chapter/files/os-open.html#ماژول-os",
+    "title": "کار با فایل‌ها",
+    "section": "ماژول os",
+    "text": "ماژول os\n\nچرا os؟\n\nماژول os برای کار با سیستم‌عامل (فایل، پوشه، مسیر) استفاده می‌شه — چیزی فراتر از خواندن/نوشتن محتوای فایل\nوارد کردن: import os\n\n\n\nبررسی وجود فایل/پوشه\nimport os\n\nos.path.exists('mbox.txt')     # True / False\nos.path.isfile('mbox.txt')     # آیا فایله؟\nos.path.isdir('data')          # آیا پوشه‌ست؟\n\nنکته: قبل از باز کردن فایل با open()، می‌شه اول با os.path.exists() چک کرد (هرچند try-except هم روش رایج و ایمن‌تریه)\n\n\n\nحذف فایل\nos.remove('output.txt')\n\n⚠️ اگه فایل وجود نداشته باشه → خطای FileNotFoundError\n\n\n\nتغییر نام / جابه‌جایی فایل\nos.rename('old_name.txt', 'new_name.txt')\n\n\nکار با پوشه‌ها\n\n\n\nتابع\nکار\n\n\n\n\nos.mkdir('folder')\nساخت یک پوشه\n\n\nos.makedirs('a/b/c')\nساخت پوشه‌های تودرتو (چند سطحی)\n\n\nos.rmdir('folder')\nحذف پوشه (فقط اگه خالی باشه)\n\n\nos.listdir('.')\nلیست فایل‌ها و پوشه‌های داخل یک مسیر\n\n\n\nos.mkdir('new_folder')\nprint(os.listdir('.'))\n\n\nمسیر فعلی و تغییر مسیر\nprint(os.getcwd())      # مسیر فعلی که برنامه در اون اجرا می‌شه\nos.chdir('data')        # تغییر مسیر فعلی به پوشه data\n\n\nکار با مسیرها — os.path\n\n\n\n\n\n\n\n\nتابع\nکار\nمثال\n\n\n\n\nos.path.join()\nساخت مسیر به‌صورت درست (سازگار با ویندوز/لینوکس)\nos.path.join('data', 'mbox.txt')\n\n\nos.path.basename()\nفقط نام فایل از مسیر\n'data/mbox.txt' → 'mbox.txt'\n\n\nos.path.dirname()\nفقط مسیر پوشه\n'data/mbox.txt' → 'data'\n\n\nos.path.splitext()\nجدا کردن نام و پسوند فایل\n'mbox.txt' → ('mbox', '.txt')\n\n\n\n\nنکته مهم: به‌جای الحاق دستی رشته‌ها برای مسیر (مثل 'data' + '/' + 'mbox.txt')، همیشه از os.path.join() استفاده بشه — چون در ویندوز جداکننده مسیر \\ است نه /\n\n\n\nگرفتن اطلاعات فایل\nos.path.getsize('mbox.txt')    # حجم فایل بر حسب بایت\n\n\nپیمایش کامل یک درخت پوشه\nfor root, dirs, files in os.walk('.'):\n    for f in files:\n        print(os.path.join(root, f))\n\nos.walk() به‌صورت بازگشتی همه‌ی زیرپوشه‌ها و فایل‌ها رو برمی‌گردونه",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>کار با فایل‌ها</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/data.html",
+    "href": "chapter/files/data.html",
+    "title": "فایل‌های داده",
+    "section": "",
+    "text": "چرا این فرمت‌ها؟",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>فایل‌های داده</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/data.html#چرا-این-فرمتها",
+    "href": "chapter/files/data.html#چرا-این-فرمتها",
+    "title": "فایل‌های داده",
+    "section": "",
+    "text": "JSON، CSV و XML سه فرمت پرکاربرد برای ذخیره و تبادل داده هستن — فایل‌های متنی ساده‌ای که پایتون خودش ماژول آماده براشون داره\nبرای فایل‌های جدولی حجیم‌تر (CSV، Excel) کار کردن دستی با open() دست‌وپاگیر می‌شه؛ اونجا کتابخونه‌ی pandas به کمک میاد",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>فایل‌های داده</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/data.html#json",
+    "href": "chapter/files/data.html#json",
+    "title": "فایل‌های داده",
+    "section": "JSON",
+    "text": "JSON\nimport json\n\nخواندن فایل JSON\nwith open('data.json', 'r', encoding='utf-8') as f:\n    data = json.load(f)\n\nprint(data)\n\nخروجی معمولاً یک dict یا list پایتونیه\n\n\n\nنوشتن فایل JSON\ndata = {'name': 'Ali', 'age': 25}\n\nwith open('output.json', 'w', encoding='utf-8') as f:\n    json.dump(data, f, ensure_ascii=False, indent=2)\n\nensure_ascii=False : حروف فارسی درست نوشته بشن، نه به‌صورت کد یونیکد\nindent=2 : خروجی مرتب و خوانا باشه\n\n\n\nتبدیل رشته JSON به دیتای پایتون (و برعکس)\ntext = '{\"name\": \"Ali\", \"age\": 25}'\ndata = json.loads(text)      # رشته -&gt; دیکشنری\n\ntext2 = json.dumps(data, ensure_ascii=False)   # دیکشنری -&gt; رشته",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>فایل‌های داده</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/data.html#csv-با-ماژول-استاندارد",
+    "href": "chapter/files/data.html#csv-با-ماژول-استاندارد",
+    "title": "فایل‌های داده",
+    "section": "CSV (با ماژول استاندارد)",
+    "text": "CSV (با ماژول استاندارد)\nimport csv\n\nخواندن فایل CSV\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.reader(f)\n    for row in reader:\n        print(row)   # هر row یک لیست از رشته‌هاست\n\nبرای دسترسی با نام ستون‌ها به‌جای اندیس عددی:\n\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        print(row['name'])   # row یک دیکشنریه\n\n\nنوشتن فایل CSV\nrows = [\n    {'name': 'Ali', 'age': 25},\n    {'name': 'Sara', 'age': 30}\n]\n\nwith open('output.csv', 'w', encoding='utf-8', newline='') as f:\n    writer = csv.DictWriter(f, fieldnames=['name', 'age'])\n    writer.writeheader()\n    writer.writerows(rows)\n\nnewline='' : جلوی افتادن یک خط خالی اضافه بین ردیف‌ها رو می‌گیره",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>فایل‌های داده</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/data.html#xml",
+    "href": "chapter/files/data.html#xml",
+    "title": "فایل‌های داده",
+    "section": "XML",
+    "text": "XML\nimport xml.etree.ElementTree as ET\n\nخواندن فایل XML\nفرض کنیم فایل به این شکله:\n&lt;students&gt;\n    &lt;student&gt;\n        &lt;name&gt;Ali&lt;/name&gt;\n        &lt;age&gt;25&lt;/age&gt;\n    &lt;/student&gt;\n&lt;/students&gt;\ntree = ET.parse('data.xml')\nroot = tree.getroot()\n\nfor student in root.findall('student'):\n    name = student.find('name').text\n    age = student.find('age').text\n    print(name, age)\n\n\nساخت و نوشتن فایل XML\nroot = ET.Element('students')\n\nstudent = ET.SubElement(root, 'student')\nET.SubElement(student, 'name').text = 'Ali'\nET.SubElement(student, 'age').text = '25'\n\ntree = ET.ElementTree(root)\ntree.write('output.xml', encoding='utf-8', xml_declaration=True)",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>فایل‌های داده</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/data.html#pandas",
+    "href": "chapter/files/data.html#pandas",
+    "title": "فایل‌های داده",
+    "section": "pandas",
+    "text": "pandas\n\npandas داده رو به‌صورت جدول (DataFrame) میاره که کار باهاش خیلی راحت‌تر از کار دستی با csv هست، مخصوصاً وقتی حجم داده بالا بره یا نیاز به فیلتر/تحلیل داشته باشیم\n\n\nنصب و وارد کردن\npip install pandas openpyxl\nimport pandas as pd\n\nopenpyxl برای خواندن/نوشتن فایل‌های Excel لازمه (pandas از پشت صحنه ازش استفاده می‌کنه)\n\n\n\nخواندن فایل CSV\ndf = pd.read_csv('data.csv')\nprint(df)\n\nخروجی از نوع DataFrame هست — شبیه یک جدول اکسل\n\n\n\nخواندن فایل Excel\ndf = pd.read_excel('data.xlsx')\nprint(df)\n\nاگه فایل چند شیت داشته باشه، می‌شه شیت رو مشخص کرد:\n\ndf = pd.read_excel('data.xlsx', sheet_name='Sheet1')\n\n\nنگاه سریع به داده\n\n\n\nمتد\nکار\n\n\n\n\ndf.head()\nنمایش ۵ ردیف اول\n\n\ndf.shape\nتعداد (ردیف, ستون)\n\n\ndf.columns\nلیست نام ستون‌ها\n\n\ndf.info()\nنوع داده هر ستون + تعداد مقادیر\n\n\n\n\n\nدسترسی به داده\nprint(df['name'])          # یک ستون\nprint(df.iloc[0])           # یک ردیف با اندیس عددی\nprint(df.loc[0, 'name'])    # یک سلول خاص\n\n\nفیلتر کردن داده\nadults = df[df['age'] &gt;= 18]\nprint(adults)\n\n\nنوشتن در فایل\ndf.to_csv('output.csv', index=False)\ndf.to_excel('output.xlsx', index=False)\n\nindex=False : ستون اندیس اضافه (0,1,2,…) توی فایل خروجی نوشته نشه\n\n\n\nساخت DataFrame\ndata = {\n    'name': ['Ali', 'Sara'],\n    'age': [25, 30]\n}\ndf = pd.DataFrame(data)",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>فایل‌های داده</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/data.html#مقایسه-سریع",
+    "href": "chapter/files/data.html#مقایسه-سریع",
+    "title": "فایل‌های داده",
+    "section": "مقایسه سریع",
+    "text": "مقایسه سریع\n\n\n\n\n\n\n\n\nفرمت\nمناسب برای\nروش پیشنهادی\n\n\n\n\nJSON\nداده‌های تودرتو (شیء/آرایه)، تنظیمات، API\nماژول json\n\n\nCSV ساده\nداده‌های جدولی کوچک، بدون نیاز به تحلیل\nماژول csv\n\n\nCSV / Excel حجیم\nداده‌های جدولی بزرگ، نیاز به فیلتر و تحلیل\npandas\n\n\nXML\nداده‌های ساخت‌یافته با تگ، فایل‌های قدیمی‌تر\nxml.etree.ElementTree",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>فایل‌های داده</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/sqlite.html",
+    "href": "chapter/files/sqlite.html",
+    "title": "بانک اطلاعاتی (SQLite)",
+    "section": "",
+    "text": "مروری بر بانک اطلاعاتی",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/sqlite.html#مروری-بر-بانک-اطلاعاتی",
+    "href": "chapter/files/sqlite.html#مروری-بر-بانک-اطلاعاتی",
+    "title": "بانک اطلاعاتی (SQLite)",
+    "section": "",
+    "text": "بانک اطلاعاتی (Database) جایی برای ذخیره‌ی منظم و دائمی داده‌هاست — برخلاف متغیر یا فایل ساده، امکان جست‌وجو، فیلتر و مدیریت حجم بالای داده رو راحت‌تر می‌کنه\nSQLite یک بانک اطلاعاتی سبک و فایل‌محوره — کل بانک توی یک فایل .db ذخیره می‌شه و نیازی به نصب سرور جداگانه نداره\nپایتون از قبل ماژول sqlite3 رو داره — نیازی به نصب اضافه نیست",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/sqlite.html#دستورات-sql",
+    "href": "chapter/files/sqlite.html#دستورات-sql",
+    "title": "بانک اطلاعاتی (SQLite)",
+    "section": "دستورات SQL",
+    "text": "دستورات SQL\n\n\n\nدستور\nکار\n\n\n\n\nCREATE TABLE\nساخت جدول جدید\n\n\nINSERT INTO\nافزودن ردیف جدید\n\n\nSELECT\nخواندن داده\n\n\nUPDATE\nویرایش داده\n\n\nDELETE\nحذف داده\n\n\nWHERE\nشرط روی ردیف‌ها",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/sqlite.html#اتصال-به-بانک-اطلاعاتی",
+    "href": "chapter/files/sqlite.html#اتصال-به-بانک-اطلاعاتی",
+    "title": "بانک اطلاعاتی (SQLite)",
+    "section": "اتصال به بانک اطلاعاتی",
+    "text": "اتصال به بانک اطلاعاتی\nimport sqlite3\n\nconn = sqlite3.connect('school.db')\n\nاگه فایل school.db وجود نداشته باشه، خودش می‌سازتش\nconn پل ارتباطی بین پایتون و فایل بانک اطلاعاتیه",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/sqlite.html#ساخت-cursor-و-اجرای-دستور-sql",
+    "href": "chapter/files/sqlite.html#ساخت-cursor-و-اجرای-دستور-sql",
+    "title": "بانک اطلاعاتی (SQLite)",
+    "section": "ساخت cursor و اجرای دستور SQL",
+    "text": "ساخت cursor و اجرای دستور SQL\ncursor = conn.cursor()\n\ncursor همون چیزیه که دستورات SQL رو واقعاً اجرا می‌کنه\n\ncursor.execute('''\n    CREATE TABLE IF NOT EXISTS students (\n        id INTEGER PRIMARY KEY AUTOINCREMENT,\n        name TEXT,\n        age INTEGER\n    )\n''')\nconn.commit()\n\nconn.commit() : تغییرات رو واقعاً روی فایل ذخیره می‌کنه — بدون این خط، تغییرات موقتی می‌مونن",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/sqlite.html#درج-اطلاعات",
+    "href": "chapter/files/sqlite.html#درج-اطلاعات",
+    "title": "بانک اطلاعاتی (SQLite)",
+    "section": "درج اطلاعات",
+    "text": "درج اطلاعات\ncursor.execute('INSERT INTO students (name, age) VALUES (?, ?)', ('Ali', 25))\nconn.commit()\n\nاستفاده از ? به‌جای چسبوندن مستقیم مقادیر به رشته‌ی SQL، جلوی خطا و حملات SQL Injection رو می‌گیره",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/sqlite.html#حذف-و-ویرایش-اطلاعات",
+    "href": "chapter/files/sqlite.html#حذف-و-ویرایش-اطلاعات",
+    "title": "بانک اطلاعاتی (SQLite)",
+    "section": "حذف و ویرایش اطلاعات",
+    "text": "حذف و ویرایش اطلاعات\n# ویرایش\ncursor.execute('UPDATE students SET age = ? WHERE name = ?', (26, 'Ali'))\n\n# حذف\ncursor.execute('DELETE FROM students WHERE name = ?', ('Ali',))\n\nconn.commit()",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/sqlite.html#خواندن-اطلاعات-با-fetch",
+    "href": "chapter/files/sqlite.html#خواندن-اطلاعات-با-fetch",
+    "title": "بانک اطلاعاتی (SQLite)",
+    "section": "خواندن اطلاعات با fetch",
+    "text": "خواندن اطلاعات با fetch\ncursor.execute('SELECT * FROM students')\n\nrow = cursor.fetchone()   # فقط یک ردیف\nprint(row)\n\nبرای خواندن همه‌ی ردیف‌ها:\n\ncursor.execute('SELECT * FROM students')\nrows = cursor.fetchall()\n\nfor row in rows:\n    print(row)\n\nهر row یک tuple از مقادیر ستون‌هاست",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/files/sqlite.html#بستن-اتصال",
+    "href": "chapter/files/sqlite.html#بستن-اتصال",
+    "title": "بانک اطلاعاتی (SQLite)",
+    "section": "بستن اتصال",
+    "text": "بستن اتصال\nconn.close()\n\nبعد از اتمام کار با بانک اطلاعاتی، حتماً اتصال رو ببندین",
+    "crumbs": [
+      "کار با فایل",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html",
+    "href": "chapter/oop/class-object.html",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "",
+    "text": "کلاس چیست؟",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#کلاس-چیست",
+    "href": "chapter/oop/class-object.html#کلاس-چیست",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "",
+    "text": "کلاس (Class) = قالب/طرح برای ساخت اشیاء (Objects)\nشیء (Object) = نمونه‌ای واقعی ساخته‌شده از یک کلاس\nکلیدواژه تعریف: class",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#تعریف-یک-کلاس-ساده",
+    "href": "chapter/oop/class-object.html#تعریف-یک-کلاس-ساده",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "تعریف یک کلاس ساده",
+    "text": "تعریف یک کلاس ساده\nclass Dog:\n    pass\n\nd = Dog()\nprint(type(d))\n&lt;class '__main__.Dog'&gt;",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#متد-سازنده-__init__",
+    "href": "chapter/oop/class-object.html#متد-سازنده-__init__",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "متد سازنده — __init__",
+    "text": "متد سازنده — __init__\n\nهر بار که یک شیء ساخته می‌شه، این متد به‌طور خودکار اجرا می‌شه\nبرای مقداردهی اولیه ویژگی‌های (attributes) شیء استفاده می‌شه\nself : اشاره به خود شیء — همیشه اولین پارامتر متدهای کلاسه\n\nclass Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\nd = Dog(\"Rex\", 3)\nprint(d.name, d.age)\nRex 3",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#متدها-رفتار-اشیاء",
+    "href": "chapter/oop/class-object.html#متدها-رفتار-اشیاء",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "متدها (رفتار اشیاء)",
+    "text": "متدها (رفتار اشیاء)\n\nتوابعی که داخل کلاس تعریف می‌شن و روی داده‌های شیء کار می‌کنن\n\nclass Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def bark(self):\n        print(f\"{self.name} says: Woof!\")\n\nd = Dog(\"Rex\", 3)\nd.bark()\nRex says: Woof!",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#ویژگیهای-نمونه-instance-attributes-در-مقابل-ویژگیهای-کلاس-class-attributes",
+    "href": "chapter/oop/class-object.html#ویژگیهای-نمونه-instance-attributes-در-مقابل-ویژگیهای-کلاس-class-attributes",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "ویژگی‌های نمونه (Instance Attributes) در مقابل ویژگی‌های کلاس (Class Attributes)",
+    "text": "ویژگی‌های نمونه (Instance Attributes) در مقابل ویژگی‌های کلاس (Class Attributes)\n\n\n\n\n\n\n\n\nنوع\nتعلق داره به\nمثال\n\n\n\n\nInstance Attribute\nهر شیء مقدار جدا داره\nself.name\n\n\nClass Attribute\nمشترک بین همه‌ی نمونه‌ها\nتعریف مستقیم داخل کلاس، بیرون __init__\n\n\n\nclass Dog:\n    species = \"Canis familiaris\"   # class attribute\n\n    def __init__(self, name):\n        self.name = name           # instance attribute\n\nd1 = Dog(\"Rex\")\nd2 = Dog(\"Buddy\")\nprint(d1.species, d2.species)   # هر دو یکی\nprint(d1.name, d2.name)         # جدا از هم",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#ساخت-چند-شیء-از-یک-کلاس",
+    "href": "chapter/oop/class-object.html#ساخت-چند-شیء-از-یک-کلاس",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "ساخت چند شیء از یک کلاس",
+    "text": "ساخت چند شیء از یک کلاس\n\nهر شیء داده‌های مستقل خودش رو داره، حتی اگه از یک کلاس ساخته شده باشن\n\nd1 = Dog(\"Rex\", 3)\nd2 = Dog(\"Buddy\", 5)",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/class-object.html#نکته-تفاوت-self-با-پارامترهای-دیگه",
+    "href": "chapter/oop/class-object.html#نکته-تفاوت-self-با-پارامترهای-دیگه",
+    "title": "کلاس‌ها و اشیاء (class)",
+    "section": "نکته: تفاوت self با پارامترهای دیگه",
+    "text": "نکته: تفاوت self با پارامترهای دیگه\n\nself به‌طور خودکار توسط پایتون پاس داده می‌شه، لازم نیست هنگام فراخوانی متد صداش کنیم\n\nd.bark()   # نه d.bark(d) !",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance.html",
+    "href": "chapter/oop/inheritance.html",
+    "title": "وراثت و چندشکلی",
+    "section": "",
+    "text": "وراثت (Inheritance) چیست؟",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance.html#وراثت-inheritance-چیست",
+    "href": "chapter/oop/inheritance.html#وراثت-inheritance-چیست",
+    "title": "وراثت و چندشکلی",
+    "section": "",
+    "text": "یک کلاس (فرزند/Child) می‌تونه ویژگی‌ها و متدهای کلاس دیگه (والد/Parent) رو به ارث ببره\nهدف: جلوگیری از تکرار کد، سازمان‌دهی سلسله‌مراتبی",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance.html#تعریف-وراثت",
+    "href": "chapter/oop/inheritance.html#تعریف-وراثت",
+    "title": "وراثت و چندشکلی",
+    "section": "تعریف وراثت",
+    "text": "تعریف وراثت\nclass Animal:\n    def __init__(self, name):\n        self.name = name\n\n    def speak(self):\n        print(f\"{self.name} makes a sound.\")\n\nclass Dog(Animal):    # Dog از Animal ارث می‌بره\n    pass\n\nd = Dog(\"Rex\")\nd.speak()\nRex makes a sound.\n\nDog(Animal) یعنی Dog فرزند Animal هست",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance.html#override-کردن-متد-بازنویسی",
+    "href": "chapter/oop/inheritance.html#override-کردن-متد-بازنویسی",
+    "title": "وراثت و چندشکلی",
+    "section": "Override کردن متد (بازنویسی)",
+    "text": "Override کردن متد (بازنویسی)\n\nکلاس فرزند می‌تونه متد کلاس والد رو با رفتار متفاوت بازنویسی کنه\n\nclass Dog(Animal):\n    def speak(self):\n        print(f\"{self.name} says: Woof!\")\n\nd = Dog(\"Rex\")\nd.speak()\nRex says: Woof!",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance.html#استفاده-از-super",
+    "href": "chapter/oop/inheritance.html#استفاده-از-super",
+    "title": "وراثت و چندشکلی",
+    "section": "استفاده از super()",
+    "text": "استفاده از super()\n\nبرای فراخوانی متد کلاس والد از داخل کلاس فرزند (بدون بازنویسی کامل)\n\nclass Dog(Animal):\n    def __init__(self, name, breed):\n        super().__init__(name)     # فراخوانی __init__ کلاس والد\n        self.breed = breed\n\n    def speak(self):\n        super().speak()            # اجرای رفتار والد هم\n        print(f\"{self.name} says: Woof!\")\n\nd = Dog(\"Rex\", \"Labrador\")\nd.speak()\nRex makes a sound.\nRex says: Woof!",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance.html#چندشکلی-polymorphism-چیست",
+    "href": "chapter/oop/inheritance.html#چندشکلی-polymorphism-چیست",
+    "title": "وراثت و چندشکلی",
+    "section": "چندشکلی (Polymorphism) چیست؟",
+    "text": "چندشکلی (Polymorphism) چیست؟\n\nیعنی اشیاء از کلاس‌های مختلف، با همون نام متد، رفتار متفاوتی نشون بدن\nکد می‌تونه با اشیاء مختلف به یک شکل کار کنه، بدون اینکه نوع دقیقشون رو بدونه\n\nclass Cat(Animal):\n    def speak(self):\n        print(f\"{self.name} says: Meow!\")\n\nanimals = [Dog(\"Rex\", \"Labrador\"), Cat(\"Whiskers\")]\n\nfor a in animals:\n    a.speak()\nRex says: Woof!\nWhiskers says: Meow!\n\nهمه‌ی متد speak() رو یکسان صدا زدیم، ولی هرکدوم رفتار خودشون رو دارن",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance.html#بررسی-رابطه-کلاسها",
+    "href": "chapter/oop/inheritance.html#بررسی-رابطه-کلاسها",
+    "title": "وراثت و چندشکلی",
+    "section": "بررسی رابطه کلاس‌ها",
+    "text": "بررسی رابطه کلاس‌ها\n\n\n\n\n\n\n\nتابع\nکار\n\n\n\n\nisinstance(obj, Class)\nآیا شیء نمونه‌ای از این کلاس (یا فرزندانش) هست\n\n\nissubclass(Child, Parent)\nآیا این کلاس فرزند اون کلاسه\n\n\n\nprint(isinstance(d, Animal))    # True\nprint(issubclass(Dog, Animal))  # True",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/inheritance.html#وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه",
+    "href": "chapter/oop/inheritance.html#وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه",
+    "title": "وراثت و چندشکلی",
+    "section": "وراثت چندگانه (Multiple Inheritance) — اشاره کوتاه",
+    "text": "وراثت چندگانه (Multiple Inheritance) — اشاره کوتاه\n\nپایتون اجازه می‌ده یک کلاس از چند کلاس ارث ببره\n\nclass A:\n    pass\nclass B:\n    pass\nclass C(A, B):\n    pass\n\nنکته: وراثت چندگانه قدرتمنده ولی می‌تونه پیچیدگی ایجاد کنه (ترتیب جستجوی متدها — MRO)؛ فعلاً فقط آشنایی کافیه.",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html",
+    "href": "chapter/oop/encapsulation.html",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "",
+    "text": "کپسوله‌سازی (Encapsulation) چیست؟",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#کپسولهسازی-encapsulation-چیست",
+    "href": "chapter/oop/encapsulation.html#کپسولهسازی-encapsulation-چیست",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "",
+    "text": "محدود کردن دسترسی مستقیم به داده‌های داخلی یک شیء\nهدف: جلوگیری از تغییر ناخواسته/نادرست داده‌ها از بیرون کلاس",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#سطوح-دسترسی-در-پایتون-بر-پایه-قرارداد-نه-اجبار-سخت",
+    "href": "chapter/oop/encapsulation.html#سطوح-دسترسی-در-پایتون-بر-پایه-قرارداد-نه-اجبار-سخت",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "سطوح دسترسی در پایتون (بر پایه قرارداد، نه اجبار سخت)",
+    "text": "سطوح دسترسی در پایتون (بر پایه قرارداد، نه اجبار سخت)\n\n\n\n\n\n\n\n\nنوع\nنوشتار\nمعنی\n\n\n\n\nPublic\nself.name\nاز همه‌جا در دسترسه\n\n\nProtected\nself._name (یک آندرلاین)\nقرارداده که فقط داخل کلاس/فرزندان استفاده بشه (اجباری نیست)\n\n\nPrivate\nself.__name (دو آندرلاین)\nبا name mangling محافظت می‌شه، دسترسی مستقیم بیرون سخت‌تره\n\n\n\nclass Account:\n    def __init__(self, balance):\n        self.__balance = balance   # private\n\n    def get_balance(self):\n        return self.__balance\n\nacc = Account(1000)\nprint(acc.get_balance())    # 1000\nprint(acc.__balance)        # خطا: AttributeError\n\nنکته: پایتون واقعاً private نداره — __balance در پشت صحنه به _Account__balance تبدیل می‌شه (Name Mangling)؛ یعنی هنوز قابل دسترسیه ولی سخت‌تر و دلسردکننده‌ست.",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#دسترسی-کنترلشده-با-property",
+    "href": "chapter/oop/encapsulation.html#دسترسی-کنترلشده-با-property",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "دسترسی کنترل‌شده با property",
+    "text": "دسترسی کنترل‌شده با property\n\nروش استاندارد پایتون برای getter/setter، به‌جای متدهای دستی\n\nclass Account:\n    def __init__(self, balance):\n        self.__balance = balance\n\n    @property\n    def balance(self):          # getter\n        return self.__balance\n\n    @balance.setter\n    def balance(self, value):   # setter\n        if value &lt; 0:\n            raise ValueError(\"موجودی نمی‌تونه منفی باشه\")\n        self.__balance = value\n\nacc = Account(1000)\nprint(acc.balance)      # مثل یک attribute استفاده می‌شه، نه متد\nacc.balance = 2000       # از setter عبور می‌کنه و اعتبارسنجی می‌شه\n\nمزیت: می‌تونیم منطق اعتبارسنجی رو بدون تغییر نحوه استفاده بیرون از کلاس، اضافه کنیم",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#انتزاع-abstraction-چیست",
+    "href": "chapter/oop/encapsulation.html#انتزاع-abstraction-چیست",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "انتزاع (Abstraction) چیست؟",
+    "text": "انتزاع (Abstraction) چیست؟\n\nمخفی کردن جزئیات پیاده‌سازی و نمایش فقط رابط (Interface) ضروری به کاربر کلاس\nتمرکز روی “چه کاری انجام می‌شه” نه “چطور انجام می‌شه”",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#پیادهسازی-انتزاع-با-abc-abstract-base-class",
+    "href": "chapter/oop/encapsulation.html#پیادهسازی-انتزاع-با-abc-abstract-base-class",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "پیاده‌سازی انتزاع با abc (Abstract Base Class)",
+    "text": "پیاده‌سازی انتزاع با abc (Abstract Base Class)\nfrom abc import ABC, abstractmethod\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self):\n        pass\n\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n\n    def area(self):\n        return 3.14 * self.radius ** 2\n\nc = Circle(5)\nprint(c.area())\n78.5\n\nShape یک کلاس انتزاعیه — نمی‌شه مستقیم ازش شیء ساخت\n\ns = Shape()   # خطا: TypeError: Can't instantiate abstract class\n\nهر کلاس فرزند مجبوره متد area() رو پیاده‌سازی کنه، وگرنه خودش هم انتزاعی می‌مونه",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/encapsulation.html#جمعبندی-تفاوت-کپسولهسازی-و-انتزاع",
+    "href": "chapter/oop/encapsulation.html#جمعبندی-تفاوت-کپسولهسازی-و-انتزاع",
+    "title": "اصول کپسوله‌سازی و انتزاع",
+    "section": "جمع‌بندی تفاوت کپسوله‌سازی و انتزاع",
+    "text": "جمع‌بندی تفاوت کپسوله‌سازی و انتزاع\n\n\n\nمفهوم\nتمرکز\n\n\n\n\nکپسوله‌سازی\nمحافظت از داده (چه کسی بهش دسترسی داره)\n\n\nانتزاع\nساده‌سازی رابط (چی نشون داده بشه، چی مخفی بمونه)",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/other-options.html",
+    "href": "chapter/oop/other-options.html",
+    "title": "ویژگی‌های دیگر",
+    "section": "",
+    "text": "متدهای ویژه (Dunder / Magic Methods)",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/other-options.html#متدهای-ویژه-dunder-magic-methods",
+    "href": "chapter/oop/other-options.html#متدهای-ویژه-dunder-magic-methods",
+    "title": "ویژگی‌های دیگر",
+    "section": "",
+    "text": "متدهایی با دو آندرلاین در ابتدا و انتهای نام (__name__)\nپایتون خودش در موقعیت‌های خاص این متدها رو صدا می‌زنه\n\n\n\n\n\n\n\n\n\nمتد\nصدا زده می‌شه وقتی\nمثال\n\n\n\n\n__init__\nساخت شیء\nDog(\"Rex\")\n\n\n__str__\nprint(obj) یا str(obj)\nنمایش خوانا برای انسان\n\n\n__repr__\nنمایش رسمی/دیباگی شیء\nمعمولاً برای برنامه‌نویس\n\n\n__len__\nlen(obj)\nطول شیء\n\n\n__eq__\nobj1 == obj2\nمقایسه برابری\n\n\n__add__\nobj1 + obj2\nجمع دو شیء\n\n\n\nclass Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\n    def __str__(self):\n        return f\"({self.x}, {self.y})\"\n\n    def __eq__(self, other):\n        return self.x == other.x and self.y == other.y\n\n    def __add__(self, other):\n        return Point(self.x + other.x, self.y + other.y)\n\np1 = Point(1, 2)\np2 = Point(3, 4)\nprint(p1)              # (1, 2)   -&gt; از __str__\nprint(p1 == p2)         # False    -&gt; از __eq__\nprint(p1 + p2)          # (4, 6)   -&gt; از __add__",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/other-options.html#متد-کلاسی-و-متد-استاتیک",
+    "href": "chapter/oop/other-options.html#متد-کلاسی-و-متد-استاتیک",
+    "title": "ویژگی‌های دیگر",
+    "section": "متد کلاسی و متد استاتیک",
+    "text": "متد کلاسی و متد استاتیک\n\n\n\n\n\n\n\n\n\nنوع\nدکوراتور\nپارامتر اول\nدسترسی به\n\n\n\n\nمتد نمونه (معمولی)\n—\nself\nداده‌های شیء\n\n\nمتد کلاسی\n@classmethod\ncls\nخود کلاس\n\n\nمتد استاتیک\n@staticmethod\nندارد\nنه شیء نه کلاس، فقط تابع مرتبط\n\n\n\nclass Dog:\n    count = 0\n\n    def __init__(self, name):\n        self.name = name\n        Dog.count += 1\n\n    @classmethod\n    def get_count(cls):\n        return cls.count\n\n    @staticmethod\n    def is_valid_name(name):\n        return len(name) &gt; 0\n\nprint(Dog.is_valid_name(\"Rex\"))   # True\nd1 = Dog(\"Rex\")\nd2 = Dog(\"Buddy\")\nprint(Dog.get_count())            # 2",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/other-options.html#کلاسهای-انتزاعی-و-duck-typing",
+    "href": "chapter/oop/other-options.html#کلاسهای-انتزاعی-و-duck-typing",
+    "title": "ویژگی‌های دیگر",
+    "section": "کلاس‌های انتزاعی و Duck Typing",
+    "text": "کلاس‌های انتزاعی و Duck Typing\n\nدر پایتون معمولاً نوع دقیق شیء مهم نیست، مهم اینه که رفتار موردنیاز رو داشته باشه\nبه این ویژگی Duck Typing می‌گن: “اگه مثل اردک راه بره و مثل اردک صدا کنه، اردکه”\n\nclass Duck:\n    def sound(self):\n        print(\"Quack!\")\n\nclass Dog:\n    def sound(self):\n        print(\"Woof!\")\n\ndef make_it_sound(animal):\n    animal.sound()   # فرقی نمی‌کنه از چه کلاسی باشه، فقط باید sound() داشته باشه\n\nmake_it_sound(Duck())\nmake_it_sound(Dog())",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/other-options.html#بازبینی-خودکار-اشیاء",
+    "href": "chapter/oop/other-options.html#بازبینی-خودکار-اشیاء",
+    "title": "ویژگی‌های دیگر",
+    "section": "بازبینی خودکار اشیاء",
+    "text": "بازبینی خودکار اشیاء\n\ndir(obj) : لیست همه‌ی متدها و ویژگی‌های یک شیء\nvars(obj) یا obj.__dict__ : دیکشنری ویژگی‌های نمونه (instance attributes)\n\np = Point(1, 2)\nprint(vars(p))    # {'x': 1, 'y': 2}",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/oop/zoo.html",
+    "href": "chapter/oop/zoo.html",
+    "title": "مدیریت باغ وحش",
+    "section": "",
+    "text": "from abc import ABC, abstractmethod\n\n\n# ---------------------------------------------------------\n# بخش ۱ و ۳: تعریف کلاس پایه انتزاعی (Abstraction)\n# ---------------------------------------------------------\nclass Animal(ABC):\n    \"\"\"کلاس پایه انتزاعی برای همه حیوانات باغ‌وحش\"\"\"\n\n    total_animals = 0  # class attribute -&gt; مشترک بین همه نمونه‌ها\n\n    def __init__(self, name, age):\n        self.name = name                 # public attribute\n        self._age = age                  # protected attribute (قرارداد: فقط داخلی)\n        self.__health = 100              # private attribute (کپسوله‌سازی)\n        Animal.total_animals += 1        # هر بار ساخت شیء جدید، شمارنده رو زیاد می‌کنه\n\n    # --- کپسوله‌سازی با property ---\n    @property\n    def health(self):\n        \"\"\"getter برای سلامت حیوان\"\"\"\n        return self.__health\n\n    @health.setter\n    def health(self, value):\n        \"\"\"setter با اعتبارسنجی - جلوگیری از مقدار نامعتبر\"\"\"\n        if not 0 &lt;= value &lt;= 100:\n            raise ValueError(\"سلامت باید بین 0 تا 100 باشد\")\n        self.__health = value\n\n    # --- متد انتزاعی: هر کلاس فرزند مجبوره پیاده‌سازی کنه ---\n    @abstractmethod\n    def make_sound(self):\n        pass\n\n    # --- متد کلاسی: کار با خود کلاس، نه یک نمونه خاص ---\n    @classmethod\n    def get_total_animals(cls):\n        return cls.total_animals\n\n    # --- متد استاتیک: فقط یک تابع کمکی مرتبط با کلاس ---\n    @staticmethod\n    def is_valid_age(age):\n        return age &gt; 0\n\n    # --- متد ویژه (dunder): نمایش خوانا هنگام print ---\n    def __str__(self):\n        return f\"{self.name} ({self.__class__.__name__}), سن: {self._age}, سلامت: {self.__health}\"\n\n    # --- متد ویژه: مقایسه دو حیوان بر اساس نام ---\n    def __eq__(self, other):\n        return self.name == other.name\n\n\n# ---------------------------------------------------------\n# بخش ۲: وراثت - هر کلاس فرزند، Animal رو گسترش می‌ده\n# ---------------------------------------------------------\nclass Lion(Animal):\n    def make_sound(self):\n        print(f\"{self.name} says: Roar!\")\n\n\nclass Parrot(Animal):\n    def __init__(self, name, age, can_talk=True):\n        super().__init__(name, age)      # فراخوانی سازنده والد\n        self.can_talk = can_talk\n\n    def make_sound(self):\n        if self.can_talk:\n            print(f\"{self.name} says: Hello!\")\n        else:\n            print(f\"{self.name} says: Squawk!\")\n\n\nclass Elephant(Animal):\n    def make_sound(self):\n        print(f\"{self.name} says: Pawoo!\")\n\n\n# ---------------------------------------------------------\n# کلاسی که مجموعه‌ای از حیوانات رو نگه می‌داره\n# نمایش __len__ و duck typing\n# ---------------------------------------------------------\nclass Zoo:\n    def __init__(self, name):\n        self.name = name\n        self.animals = []\n\n    def add_animal(self, animal):\n        self.animals.append(animal)\n\n    def __len__(self):\n        return len(self.animals)\n\n    # --- چندشکلی: صدا زدن یک متد یکسان روی انواع مختلف حیوان ---\n    def make_all_sounds(self):\n        for animal in self.animals:\n            animal.make_sound()   # هرکدوم رفتار خودشون رو دارن\n\n\n# ---------------------------------------------------------\n# اجرای برنامه (Demo)\n# ---------------------------------------------------------\nif __name__ == \"__main__\":\n\n    zoo = Zoo(\"باغ‌وحش تهران\")\n\n    lion = Lion(\"Simba\", 5)\n    parrot = Parrot(\"Polly\", 2, can_talk=True)\n    elephant = Elephant(\"Dumbo\", 8)\n\n    zoo.add_animal(lion)\n    zoo.add_animal(parrot)\n    zoo.add_animal(elephant)\n\n    print(\"--- نمایش اطلاعات همه حیوانات (dunder __str__) ---\")\n    for a in zoo.animals:\n        print(a)\n\n    print(\"\\n--- چندشکلی: هر حیوان صدای خودش رو تولید می‌کنه ---\")\n    zoo.make_all_sounds()\n\n    print(\"\\n--- کپسوله‌سازی: تغییر سلامت با اعتبارسنجی ---\")\n    lion.health = 80\n    print(f\"سلامت {lion.name}: {lion.health}\")\n    try:\n        lion.health = 150   # مقدار نامعتبر\n    except ValueError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- تلاش برای دسترسی مستقیم به متغیر private ---\")\n    try:\n        print(lion.__health)\n    except AttributeError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- متد کلاسی: تعداد کل حیوانات ساخته‌شده ---\")\n    print(\"تعداد کل:\", Animal.get_total_animals())\n    print(\"طول باغ‌وحش (__len__):\", len(zoo))\n\n    print(\"\\n--- متد استاتیک: بررسی معتبر بودن سن ---\")\n    print(Animal.is_valid_age(5))    # True\n    print(Animal.is_valid_age(-3))   # False\n\n    print(\"\\n--- تلاش برای ساخت شیء از کلاس انتزاعی ---\")\n    try:\n        a = Animal(\"X\", 1)\n    except TypeError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- مقایسه دو شیء (__eq__) ---\")\n    lion2 = Lion(\"Simba\", 5)\n    print(lion == lion2)   # True چون نام یکسانه\n\n    print(\"\\n--- Duck Typing: هر شیئی که make_sound() داشته باشه کار می‌کنه ---\")\n    class RobotAnimal:\n        def __init__(self, name):\n            self.name = name\n        def make_sound(self):\n            print(f\"{self.name} says: Beep Boop!\")\n\n    zoo.add_animal(RobotAnimal(\"R2D2\"))  # نه از Animal ارث می‌بره، نه انتزاعیه\n    zoo.make_all_sounds()",
+    "crumbs": [
+      "کلاس و شئ گرایی",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>مدیریت باغ وحش</span>"
     ]
   },
   {
@@ -2419,6 +2496,17 @@
     ]
   },
   {
+    "objectID": "chapter/project/counter.html",
+    "href": "chapter/project/counter.html",
+    "title": "گوسفند شمار",
+    "section": "",
+    "text": "دینا کوچولو که خوابش نمیبره مادرش بهش یاد داده قبل خواب توی ذهنش گوسفندهایی رو تصور کنه که از روی نرده رد میشن و سعی کنه تعداد اونهارو بشماره تا ذهنش خسته بشه بخوابه. اما دینا که تازه برنامه نویسی یاد گرفته بود به فکر این بود که چطور یک نرم افزار گوسفند شمار بسازه. دینا رو برای ساخت این نرم افزار راهنمایی کنید.\n\nfrom tkinter import *\n\ncounter = 0\n\ndef btn_counter():\n    global counter\n    counter += 1\n    lbl.configure(text=f\"{counter} x 🐑.\")\n\nwindow = Tk()\nwindow.title(\"Sheep counter\")\nwindow.geometry(\"480x360\")\n\nbtn = Button(window)\nbtn.configure(text=\"count\", command=btn_counter)\nbtn.pack(pady=10)\n\nlbl = Label(window, text=\"0 x 🐑.\")\nlbl.pack(pady=10)\n\nwindow.mainloop()",
+    "crumbs": [
+      "پروژه",
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>گوسفند شمار</span>"
+    ]
+  },
+  {
     "objectID": "chapter/project/calculator.html",
     "href": "chapter/project/calculator.html",
     "title": "ماشین حساب",
@@ -2426,7 +2514,7 @@
     "text": "به کد زیر نگاه کنید که یک ماشین حساب ساده است و ببینید کدام مطالبی که توی این بخش گفته شده استفاده شده.\n\nimport tkinter as tk\n\n\ndef calculate():\n    try:\n        num1 = float(entry1.get())\n        num2 = float(entry2.get())\n        op = operator.get()\n\n        if op == \"+\":\n            result = num1 + num2\n        elif op == \"-\":\n            result = num1 - num2\n        elif op == \"*\":\n            result = num1 * num2\n        elif op == \"/\":\n            if num2 == 0:\n                result_label.config(text=\"خطا: تقسیم بر صفر!\")\n                return\n            result = num1 / num2\n        else:\n            result_label.config(text=\"عملگر نامعتبر است\")\n            return\n\n        result_label.config(text=f\"نتیجه: {result}\")\n\n    except ValueError:\n        result_label.config(text=\"لطفاً فقط عدد وارد کنید\")\n\n\nwindow = tk.Tk()\nwindow.title(\"ماشین حساب ساده\")\nwindow.geometry(\"300x250\")\n\nlabel1 = tk.Label(window, text=\"عدد اول:\")\nentry1 = tk.Entry(window)\n\nlabel2 = tk.Label(window, text=\"عدد دوم:\")\nentry2 = tk.Entry(window)\n\nlabel_op = tk.Label(window, text=\"عملگر (+ - * /):\")\noperator = tk.Entry(window)\n\ncalc_button = tk.Button(window, text=\"محاسبه\", command=calculate)\nresult_label = tk.Label(window, text=\"نتیجه: \", fg=\"blue\")\n\nlabel1.pack()\nentry1.pack()\n\nlabel2.pack()\nentry2.pack()\n\nlabel_op.pack()\noperator.pack()\n\ncalc_button.pack(pady=10)\nresult_label.pack()\n\nwindow.mainloop()",
     "crumbs": [
       "پروژه",
-      "<span class='chapter-number'>42</span>  <span class='chapter-title'>ماشین حساب</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>ماشین حساب</span>"
     ]
   },
   {
@@ -2436,7 +2524,7 @@
     "section": "",
     "text": "عبارات و دستورات",
     "crumbs": [
-      "<span class='chapter-number'>43</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
     ]
   },
   {
@@ -2446,7 +2534,7 @@
     "section": "",
     "text": "3537 - سوال زرد\n\n\nکد\n\"\"\"\n----input\n2\n----output\nWoow!\n\"\"\"\nn = int(input())\nprint(\"W\",\"o\"*n,\"w!\", sep=\"\")",
     "crumbs": [
-      "<span class='chapter-number'>43</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
     ]
   },
   {
@@ -2456,7 +2544,7 @@
     "section": "ساختمان",
     "text": "ساختمان\n\n2885 - سوال ساده\n\n\nکد\n\"\"\"\n----input\n2\n----output\nman khoshghlab hastam\nman khoshghlab hastam\n\"\"\"\nn = int(input())\ntext = \"man khoshghlab hastam\\n\"\n\nprint((text * n).strip())\n\n# for i in range(n):\n#     print(\"man khoshghlab hastam\")\n\n\n\n\n2636 - شطرنج حرفه‌ای\n\n\nکد\n\"\"\"\n----input\n0 2 2 2 3 7\n----output\n1 -1 0 0 -1 1\n\"\"\"\nx = input().split(\" \")\n\nprint(\n    1 - int(x[0]),\n    1 - int(x[1]),\n    2 - int(x[2]),\n    2 - int(x[3]),\n    2 - int(x[4]),\n    8 - int(x[5])\n)\n\n\n\n\n615 - تاریخ تولد\n\n\nکد\n\"\"\"\n----input\n7106\n----output\nsaal:71\nmaah:06\n----input\n7011\n----output\nsaal:70\nmaah:11\n----input\n0012\n----output\nsaal:00\nmaah:12\n\"\"\"\nyymm = input()\n\nprint(\"saal:\",yymm[0:2])\nprint(\"maah:\", yymm[2:4])\n\n\n\n\n8838 - کمک به کاپی\n\n\nکد\n\"\"\"\n----input\n2 shoma\n----output\ncopy of copy of shoma\n\"\"\"\nn_text = input()\nn, text = n_text.split(\" \")\n\nprint(\"copy of \" * int(n) + text)\n\n\n\n\n28947 - کمک به کاپی\n\n\nکد\n\"\"\"\n----input\n2\n----output\nsib\nsamanoo\n\"\"\"\nhaftsin = [\"sib\", \"samanoo\", \"seke\", \"senjed\", \"sonbol\", \"serke\", \"sabze\"]\nn = int(input())\n\nprint('\\n'.join(haftsin[:n]))",
     "crumbs": [
-      "<span class='chapter-number'>43</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
     ]
   },
   {
@@ -2466,7 +2554,7 @@
     "section": "شرط",
     "text": "شرط\n\n3429 - یخدارچی\n\n\nکد\n\"\"\"\n----input\n110\n----output\nSteam\n----input\n100\n----output\nWater\n----input\n-200\n----output\nIce\n\"\"\"\nn = int(input())\nif n &lt; 0:\n    print(\"Ice\")\nelif n &gt; 100:\n    print(\"Steam\")\nelse:\n    print(\"Water\")\n\n\n\n\n10162 - روز آزادی بیان در برره\n\n\nکد\n\"\"\"\n----input\n1\n----output\nPayin Barare\n----input\n74\n----output\nBala Barare\n\"\"\"\nprint(\"Bala Barare\" if int(input()) % 2 == 0 else \"Payin Barare\")\n\n\n\n\n280 - اعداد فیثاغورثی\n\n\nکد\n\"\"\"\n----input\n3\n4\n5\n----output\nYES\n\"\"\"\na, b, c = int(input()), int(input()), int(input())\n\nif a == 0 or b == 0 or c == 0:\n    print(\"NO\")\nelif a*a+b*b==c*c or a*a+c*c==b*b or c*c+b*b==a*a:\n    print(\"YES\")\nelse:\n    print(\"NO\")\n\n\n\n\n10230 - مشق امشب باقر\n\n\nکد\n\"\"\"\n----input\n70 60 50\n----output\nYes\n----input\n180 0 0\n----output\nNo\n----input\n150 40 10\n----output\nNo\n\"\"\"\nangles = input()\n\na1, a2, a3 = angles.split(\" \")\na1 = int(a1)\na2 = int(a2)\na3 = int(a3)\n\nif a1 == 0 or a2 == 0 or a3 == 0:\n    print(\"No\")\nelif a1 + a2 + a3 != 180:\n    print(\"No\")\nelse:\n    print(\"Yes\")\n\n\n\n\n3406 - صدگان خسته\n\n\nکد\n\"\"\"\n----input\n123\n421\n----output\n421 &lt; 123\n----input\n123\n123\n----output\n123 = 123\n----input\n201\n800\n----output\n800 &lt; 201\n\"\"\"\nx = input()\ny = input()\n\nif x[2] &lt; y [2]:\n    print(x, \"&lt;\", y)\nelif x[2] &gt; y [2]:\n    print(y, \"&lt;\", x)\nelse:\n    if x[1] &lt; y [1]:\n        print(x, \"&lt;\", y)\n    elif x[1] &gt; y [1]:\n        print(y, \"&lt;\", x)\n    else:\n        if x[0] &lt; y [0]:\n            print(x, \"&lt;\", y)\n        elif x[0] &gt; y [0]:\n            print(y, \"&lt;\", x)\n        else:\n            print(x, \"=\", y)\n\n\n\n\n51865 - بهداشت و سلامت\n\n\nکد\n\"\"\"\n----input\n14\n0\n----output\n20\n----input\n6\n7\n----output\n6\n----input\n13\n9\n----output\n4\n\"\"\"\nscore = int(input())\ndays = int(input())\n\nif days == 0:\n    print(20)\n\nelif days == 7:\n    print(score)\n\nelse:\n    final = score - days\n    if final &gt; 0:\n        print(final)\n    else:\n        print(0)\n\n\n\n\n10325 - همایش زندگی بهتر\n\n\nکد\n\"\"\"\n----input\n1 1\n----output\nRight 10 1\n----input\n4 15\n----output\nLeft 7 6\n\"\"\"\n\nr, c = input().split(\" \")\nr = int(r)\nc = int(c)\nd = \"Right\" if c &lt;= 10 else \"Left\"\na = 11 - r\nb = c if c &lt;= 10 else 21 - c\n\nprint(d, a, b)\n\n\n\n\n106795 - رشته چکر\n\n\nکد\n\"\"\"\n----input\nsalam\nkhodafes\n----output\nYES\n----input\nsnapp\nbox\n----output\nNO\n\"\"\"\nx = input()\ny = input()\n\nprint(\"YES\" if x[0] == y[-1] else \"NO\")\n\n\n\n\n3414 - دو نقطه خط\n\n\nکد\n\"\"\"\n----input\n1 1 2 1 \n----output\nHorizontal\n----input\n2 3 2 8 \n----output\nVertical\n----input\n1 2 5 3 \n----output\nTry again\n\"\"\"\nx1, y1, x2, y2 = input().split(\" \")\n\nif x1 == x2:\n    print(\"Vertical\")\nelif y1 == y2:\n    print(\"Horizontal\")\nelse:\n    print(\"Try again\")",
     "crumbs": [
-      "<span class='chapter-number'>43</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
     ]
   },
   {
@@ -2476,7 +2564,7 @@
     "section": "حلقه",
     "text": "حلقه\n\n9774 - عدد چاپ‌کن\n\n\nکد\n\"\"\"\n----input\n50943\n----output\n5: 55555\n0:\n9: 999999999\n4: 4444\n3: 333\n\"\"\"\ndigits = input()\n\nfor i in digits:\n    print(i + \":\", i * int(i))\n\n\n\n\n17244 - شارژ موبایل\n\n\nکد\n\"\"\"\n----input\n1\n----output\n1\n----input\n3\n----output\n6\n\"\"\"\nk = int(input())\n\ntime = 0\n\nfor i in range(k):\n    time += i + 1\n\nprint(time)\n\n\n\n\n589 - فاکتوریل\n\n\nکد\n\"\"\"\n----input\n5\n----output\n120\n\"\"\"\nn = int(input())\nn_fact = 1\nfor i in range(1, n+1):\n    n_fact *= i\n\nprint(n_fact)\n\n\n\n\n2529 - اسم‌ها\n\n\nکد\n\"\"\"\n----input\n4\nali\nkarim\nabbas\nmohammad\n----output\n5\n\"\"\"\nn = int(input())\nnames_len = []\n\nfor i in range(n):\n    names_len.append(len(set(input())))\n\nprint(max(names_len))\n\n\n\n\n3409 - جدول ضرب گنده\n\n\nکد\n\"\"\"\n----input\n3\n----output\n1 2 3\n2 4 6\n3 6 9\n\"\"\"\nn = int(input())\nfor i in range(1, n+1):\n    for j in range(1, n+1):\n        print(i*j, end=\" \")\n    print()\n\n\n\n\n3539 - تک‌رقمی\n\n\nکد\n\"\"\"\n----input\n14\n----output\n5\n\"\"\"\ndigits = list(input())\n\nwhile len(digits) &gt; 1:\n    sum_digits = 0\n    for d in digits:\n        sum_digits += int(d)\n    \n    digits = str(sum_digits)\n\n# while len(digits) &gt; 1:\n#     digits = str(sum([int(d) for d in digits]))\n#     digits = str(sum(list(map(int, digits)))\n\nprint(digits)\n\n\n\n\n282 - کامل بودن یا نبودن\n\n\nکد\n\"\"\"\n----input\n27\n----output\nNo\n----input\n6\n----output\nYES\n\"\"\"\nn = int(input())\ns = 0\nfor i in range(1, int(n/2) + 1):\n    if n % i == 0:\n        s += i\n\nprint(\"YES\" if n == s else \"NO\")\n\n\n\n\n616 - توان دو\n\n\nکد\n\"\"\"\n----input\n95\n----output\n128\n\"\"\"\nn = int(input())\n\nfor i in range(n):\n    if 2**i &gt; n:\n        print(2**i)\n        break\n\n\n\n\n591 - چاپ مربع\n\n\nکد\n\"\"\"\n----input\n6\n----output\n******\n*    *\n*    *\n*    *\n*    *\n******\n\"\"\"\nn = int(input())\n\nfor i in range(1,n+1):\n    for j in range(1, n+1):\n        if i == 1 or i == n or j == 1 or j == n:\n            print(\"*\", end=\"\")\n        else:\n            print(\" \", end=\"\")\n    print()\n\n\n\n\n618 - چاپ لوزی\n\n\nکد\n\"\"\"\n----input\n3\n----output\n   *\n  ***\n *****\n*******\n *****\n  ***\n   *\n\"\"\"\nn = int(input())\n\nfor i in range(n):\n    print(\" \" * (n - i) + \"*\" * (2 * i + 1))\n\nfor i in range(n + 1):\n    print(\" \" * i + \"*\" * (2 * (n - i) + 1))\n\n\n\n\n3405 - چاپ برعکس\n\n\nکد\n\"\"\"\n----input\n3\n4\n7\n4\n9\n0\n----output\n9\n4\n7\n4\n3\n\"\"\"\nnums = []\n\nwhile True:\n    num = input()\n    if num == \"0\":\n        break\n\n    nums.append(num)\n\nnums.reverse()\n\nfor num in nums:\n    print(num)\n\n\n\n\n617 - عدد خودمغلوب\n\n\nکد\n\"\"\"\n----input\n2356532\n----output\nYES\n\"\"\"\n\ndigits = input()\ndigits_reverse = \"\"\nfor d in digits:\n    digits_reverse = d + digits_reverse\n\nprint(\"YES\" if digits == digits_reverse else \"NO\")\n\n\n\n\n4065 - خر در چمن فراوونه!!\n\n\nکد\n\"\"\"\n----input\n1 1 1\n----output\n1\n----input\n3 4 5\n----output\n17\n----input\n10 3 2\n----output\n13\n\"\"\"\n\na, b, l = [int(x) for x in input().split(\" \")]\nn = 0\ntime = 0\n\ni = j = 0\n\nwhile n &lt; l:\n    if i == j:\n        i += 1\n    else:\n        j += 1\n\n    time = i * a + j * b\n    n += 1\n\n\nprint(time)\n\n\n\n\n588 - ماکزیمم\n\n\nکد\n\"\"\"\n----input\n4\n1 5 6 2\n----output\n6\n----input\n3\n10 30 20\n----output\n30\n\"\"\"\n\nn = input()\nnums = input()\nnums = nums.split(\" \")\n\nnums_int = []\nfor num in nums:\n    nums_int.append(int(num))\n\nprint(max(nums_int))\n\n# print(max([int(i) for i in input().split(\" \")]))\n\n\n\n\n10231 - خُب باقر سرما خورده\n\n\nکد\n\"\"\"\n----input\nN-MOLANA1\n9A-UKOK\nSAYE-NTERP\nG-SANAEI\nRF-MOLLASADRA\n----output\n1\n----input\nN321-HAFEEZ\nF3-B12I\nF-BI-12\nOVO-JE-FE\nKASHANI \n----output\nNOT FOUND!\n----input\n47-MOLANA\nBOND-007\nRF-MOLANA18\nMARICA-13\n13A-HAFEZLL\n----output\n1 3 5\n\"\"\"\nresult = []\nfor i in range(1, 5 + 1):\n    x = input()\n    if \"MOLANA\" in x or \"HAFEZ\" in x:\n        result.append(str(i))\n\nif result == []:\n    result = \"NOT FOUND!\"\n\nprint(' '.join(result))\n\n\n\n\n10232 - باقر خسته‌ست ولی بی‌فرهنگ نه\n\n\nکد\n\"\"\"\n----input\n2 10\n3 5 5\n5 2 2\n----output\n12\n----input\n4 30\n7 13 5\n14 4 4\n15 3 10\n25 1 1\n----output\n36\n\"\"\"\nn, l = [int(i) for i in input().split(\" \")]\ntime = 0\nlast_redlight = 0\n\nfor i in range(n):\n    d, r, g = [int(i) for i in input().split(\" \")]\n\n    time +=  d - last_redlight\n\n    if time % (r + g) &lt; r:\n        time += r - time % (r + g)\n    \n    last_redlight = d\n\ntime += l - last_redlight\nprint(time)",
     "crumbs": [
-      "<span class='chapter-number'>43</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
     ]
   },
   {
@@ -2486,7 +2574,7 @@
     "section": "تابع",
     "text": "تابع\n\n102250 - پیدایِش!\n\n\nکد\n\"\"\"\ndef find(num1, num2, num3):\n    pass\n----input\n&gt;&gt;&gt; find(1, 2, 3)\n----output\n4\n----input\n&gt;&gt;&gt; find(1, 4, 3)\n----output\n2\n\"\"\"\ndef find(num1, num2, num3):\n    for i in range(1, 5):\n        if i not in [num1, num2, num3]:\n            return i\n\n\n\n\n148640 - آزمون تستی\n\n\nکد\n\"\"\"\n----input\n1\nC\n4\nOO#O\nOOOO\n#OOO\nOO##\n----output\n3\n0\n-1\n-1\n----input\n10\nAABBDCABCD\n1\n#OOO\n#OOO\nO#OO\nO#OO\nOOO#\nOO#O\n#OOO\nO#OO\nOO#O\nOOO#\n----output\n30\n\"\"\"\ndef check_score(answer, response):\n    abcd = {\"A\": 0, \"B\": 1, \"C\": 2, \"D\": 3}\n    if \"#\" not in response:\n        return 0\n\n    score = 0\n    for i in range(4):\n        if response[i] == \"#\":\n            if i != abcd[answer]:\n                return -1\n            else:\n                score = 3\n\n    return score\n\nquestions = int(input())\nanswers = input()\npapers = int(input())\n\n\nfor p in range(papers):\n    score = 0\n    for q in range(questions):\n        response = input()\n        score += check_score(answers[q], response)\n    \n    print(score)",
     "crumbs": [
-      "<span class='chapter-number'>43</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>پاسخ سوالات کوئرا</span>"
     ]
   },
   {
