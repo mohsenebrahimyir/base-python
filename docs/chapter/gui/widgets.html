@@ -524,7 +524,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/def-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
+  <a href="../../chapter/functions/def.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/functions/lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تابع با <code>lambda</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/functions/recursive.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تابع بازگشتی (Recursive Function)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -737,7 +747,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-08-19</p>
+      <p class="date-modified">2026-08-20</p>
     </div>
   </div>
     
@@ -751,7 +761,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="برچسب" class="level2">
 <h2 class="anchored" data-anchor-id="برچسب">برچسب</h2>
 <p>برچسب یا <code>Label</code> برای نمایش متن در پنجره استفاده می‌شود. می‌توان ظاهر آن مثل فونت، رنگ پس‌زمینه و رنگ متن را تغییر داد.</p>
-<div id="394235e2" class="cell" data-execution_count="1">
+<div id="e06ac1ef" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
@@ -774,7 +784,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="دکمه" class="level2">
 <h2 class="anchored" data-anchor-id="دکمه">دکمه</h2>
 <p>دکمه یا <code>Button</code> برای انجام یک عمل هنگام کلیک کاربر استفاده می‌شود. با استفاده از پارامتر <code>command</code> می‌توان یک تابع را به دکمه متصل کرد.</p>
-<div id="db8509a0" class="cell" data-execution_count="2">
+<div id="35d05bb1" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -813,7 +823,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="ورودی" class="level2">
 <h2 class="anchored" data-anchor-id="ورودی">ورودی</h2>
 <p>ویجت <code>Entry</code> برای دریافت ورودی از کاربر استفاده می‌شود. با متد <span dir="ltr"><code>get()</code></span> می‌توان مقدار واردشده را خواند و بر اساس آن تصمیم‌گیری کرد.</p>
-<div id="104bb447" class="cell" data-execution_count="3">
+<div id="112caaf7" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -862,7 +872,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="دکمه-رادیویی" class="level2">
 <h2 class="anchored" data-anchor-id="دکمه-رادیویی">دکمه رادیویی</h2>
 <p>ویجت <code>Radiobutton</code> برای انتخاب یکی از چند گزینه استفاده می‌شود. همه‌ی رادیوباتن‌هایی که یک متغیر مشترک دارند به‌صورت خودکار وابسته به هم می‌شوند (انتخاب یکی، بقیه را غیرفعال می‌کند).</p>
-<div id="4c1b5a56" class="cell" data-execution_count="4">
+<div id="4a71b84d" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -895,7 +905,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="چکباکس" class="level2">
 <h2 class="anchored" data-anchor-id="چکباکس">چک‌باکس</h2>
 <p>ویجت <code>Checkbutton</code> برای انتخاب گزینه‌هایی استفاده می‌شود که می‌توانند به‌صورت مستقل (چندتایی) انتخاب یا غیرفعال شوند. با متغیر <code>IntVar</code> مقدار ۰ یا ۱ (تیک‌نخورده / تیک‌خورده) نگه‌داری می‌شود.</p>
-<div id="353e86f6" class="cell" data-execution_count="5">
+<div id="cdf99399" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -927,7 +937,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="لیستباکس" class="level2">
 <h2 class="anchored" data-anchor-id="لیستباکس">لیست‌باکس</h2>
 <p>ویجت <code>Listbox</code> برای نمایش یک لیست از آیتم‌ها و انتخاب یک یا چند مورد از بین آن‌ها استفاده می‌شود. با متد <span dir="ltr"><code>curselection()</code></span> اندیس آیتم انتخاب‌شده و با <span dir="ltr"><code>get()</code></span> مقدار آن خوانده می‌شود.</p>
-<div id="90cb26d2" class="cell" data-execution_count="6">
+<div id="5b82d1eb" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -961,7 +971,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="اسلایدر" class="level2">
 <h2 class="anchored" data-anchor-id="اسلایدر">اسلایدر</h2>
 <p>ویجت <code>Scale</code> یک نوار لغزنده برای انتخاب یک عدد در یک بازه‌ی مشخص است. با پارامترهای <span dir="ltr"><code>from_</code></span> و <span dir="ltr"><code>to</code></span> بازه و با <span dir="ltr"><code>orient</code></span> جهت افقی یا عمودی آن مشخص می‌شود.</p>
-<div id="eb8a2400" class="cell" data-execution_count="7">
+<div id="ccfbae47" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -991,7 +1001,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="قاب-frame" class="level2">
 <h2 class="anchored" data-anchor-id="قاب-frame">قاب (Frame)</h2>
 <p>ویجت <code>Frame</code> یک ظرف (container) خالی است که برای دسته‌بندی و سازمان‌دهی سایر ویجت‌ها داخل پنجره استفاده می‌شود. مثلاً می‌توان چند ویجت را در یک قاب کنار هم و چند ویجت دیگر را در قاب دیگری زیر هم چید.</p>
-<div id="d2192ae7" class="cell" data-execution_count="8">
+<div id="0b5c8554" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
@@ -1016,7 +1026,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="جعبه-پیام" class="level2">
 <h2 class="anchored" data-anchor-id="جعبه-پیام">جعبه پیام</h2>
 <p>ماژول <span dir="ltr"><code>messagebox</code></span> برای نمایش پیام‌های هشدار، خطا یا سوال به‌صورت یک پنجره‌ی جداگانه (Popup) استفاده می‌شود.</p>
-<div id="d08b18db" class="cell" data-execution_count="9">
+<div id="8102b6b7" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tkinter <span class="im">import</span> messagebox</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1042,7 +1052,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="متن-چندخطی" class="level2">
 <h2 class="anchored" data-anchor-id="متن-چندخطی">متن چندخطی</h2>
 <p>ویجت <code>Text</code> برای دریافت یا نمایش چند خط متن استفاده می‌شود (برخلاف <code>Entry</code> که فقط یک خط است). با متد <span dir="ltr"><code>get("1.0", tk.END)</code></span> تمام متن از خط اول تا انتها خوانده می‌شود.</p>
-<div id="50790702" class="cell" data-execution_count="10">
+<div id="57cda05b" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>

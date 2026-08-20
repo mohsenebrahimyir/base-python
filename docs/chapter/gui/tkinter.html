@@ -524,7 +524,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/functions/def-lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
+  <a href="../../chapter/functions/def.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تعریف تابع (<code>def</code>)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/functions/lambda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تابع با <code>lambda</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/functions/recursive.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">تابع بازگشتی (Recursive Function)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -732,7 +742,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-08-19</p>
+      <p class="date-modified">2026-08-20</p>
     </div>
   </div>
     
@@ -748,7 +758,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="ایجاد-loop-برای-بدنه" class="level3">
 <h3 class="anchored" data-anchor-id="ایجاد-loop-برای-بدنه">ایجاد Loop برای بدنه</h3>
 <p>در این بخش با ساختن یک پنجره ساده وارد دنیای رابط گرافیکی می‌شویم. متد <span dir="ltr"><code>mainloop()</code></span> باعث می‌شود پنجره باز بماند و منتظر تعامل کاربر بماند.</p>
-<div id="9fc685d2" class="cell" data-execution_count="1">
+<div id="28cab3ac" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
@@ -759,7 +769,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="عنوان" class="level3">
 <h3 class="anchored" data-anchor-id="عنوان">عنوان</h3>
 <p>در این مرحله برای پنجره یک عنوان مشخص می‌کنیم. متد <span dir="ltr"><code>title()</code></span> متن نمایش داده‌شده در نوار بالای پنجره را تنظیم می‌کند.</p>
-<div id="df342ae3" class="cell" data-execution_count="2">
+<div id="5a8b51e0" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
@@ -771,7 +781,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="تغییر-سایز-پنجره" class="level3">
 <h3 class="anchored" data-anchor-id="تغییر-سایز-پنجره">تغییر سایز پنجره</h3>
 <p>در این بخش اندازه اولیه پنجره را مشخص می‌کنیم. متد <span dir="ltr"><code>geometry()</code></span> عرض و ارتفاع پنجره را بر حسب پیکسل تعیین می‌کند.</p>
-<div id="a5fc8a60" class="cell" data-execution_count="3">
+<div id="db2126ad" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
