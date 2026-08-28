@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "مبانی پایتون",
     "section": "",
-    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل info@mohsenebrahimy.ir برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۵-۰۵-۲۹ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: mohsenebrahimy.ir/book/base-python\n\n\n\n\n\n\n\nمهمتوجه\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
+    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل info@mohsenebrahimy.ir برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۵-۰۶-۰۶ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: mohsenebrahimy.ir/book/base-python\n\n\n\n\n\n\n\nمهمتوجه\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
     "crumbs": [
       "پیش گفتار"
     ]
@@ -1730,7 +1730,7 @@
     "href": "chapter/files/sqlite.html#ساخت-cursor-و-اجرای-دستور-sql",
     "title": "بانک اطلاعاتی (SQLite)",
     "section": "ساخت cursor و اجرای دستور SQL",
-    "text": "ساخت cursor و اجرای دستور SQL\ncursor = conn.cursor()\n\ncursor همون چیزیه که دستورات SQL رو واقعاً اجرا می‌کنه\n\ncursor.execute('''\n    CREATE TABLE IF NOT EXISTS students (\n        id INTEGER PRIMARY KEY AUTOINCREMENT,\n        name TEXT,\n        age INTEGER\n    )\n''')\nconn.commit()\n\nconn.commit() : تغییرات رو واقعاً روی فایل ذخیره می‌کنه — بدون این خط، تغییرات موقتی می‌مونن",
+    "text": "ساخت cursor و اجرای دستور SQL\ncursor = conn.cursor()\n\ncursor همون چیزیه که دستورات SQL رو واقعاً اجرا می‌کنه\n\ncursor.execute(\n    '''\n    CREATE TABLE IF NOT EXISTS students (\n        id INTEGER PRIMARY KEY AUTOINCREMENT,\n        name TEXT,\n        age INTEGER\n    )\n    '''\n)\nconn.commit()\n\nconn.commit() : تغییرات رو واقعاً روی فایل ذخیره می‌کنه — بدون این خط، تغییرات موقتی می‌مونن",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>33</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
@@ -1741,7 +1741,7 @@
     "href": "chapter/files/sqlite.html#درج-اطلاعات",
     "title": "بانک اطلاعاتی (SQLite)",
     "section": "درج اطلاعات",
-    "text": "درج اطلاعات\ncursor.execute('INSERT INTO students (name, age) VALUES (?, ?)', ('Ali', 25))\nconn.commit()\n\nاستفاده از ? به‌جای چسبوندن مستقیم مقادیر به رشته‌ی SQL، جلوی خطا و حملات SQL Injection رو می‌گیره",
+    "text": "درج اطلاعات\ncursor.execute(\n    '''\n    INSERT INTO students (name, age)\n    VALUES (?, ?)\n    ''', \n    ('Ali', 25)\n)\nconn.commit()\n\nاستفاده از ? به‌جای چسبوندن مستقیم مقادیر به رشته‌ی SQL، جلوی خطا و حملات SQL Injection رو می‌گیره",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>33</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
@@ -1752,7 +1752,7 @@
     "href": "chapter/files/sqlite.html#حذف-و-ویرایش-اطلاعات",
     "title": "بانک اطلاعاتی (SQLite)",
     "section": "حذف و ویرایش اطلاعات",
-    "text": "حذف و ویرایش اطلاعات\n# ویرایش\ncursor.execute('UPDATE students SET age = ? WHERE name = ?', (26, 'Ali'))\n\n# حذف\ncursor.execute('DELETE FROM students WHERE name = ?', ('Ali',))\n\nconn.commit()",
+    "text": "حذف و ویرایش اطلاعات\n# ویرایش\ncursor.execute(\n    '''\n    UPDATE students SET age = ?\n    WHERE name = ?\n    ''',\n    (26, 'Ali')\n)\n\n# حذف\ncursor.execute(\n    '''\n    DELETE FROM students WHERE name = ?\n    ''',\n    ('Ali',)\n)\n\nconn.commit()",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>33</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
@@ -2522,7 +2522,73 @@
     "href": "chapter/project/calculator.html",
     "title": "ماشین حساب",
     "section": "",
-    "text": "به کد زیر نگاه کنید که یک ماشین حساب ساده است و ببینید کدام مطالبی که توی این بخش گفته شده استفاده شده.\n\nimport tkinter as tk\n\n\ndef calculate():\n    try:\n        num1 = float(entry1.get())\n        num2 = float(entry2.get())\n        op = operator.get()\n\n        if op == \"+\":\n            result = num1 + num2\n        elif op == \"-\":\n            result = num1 - num2\n        elif op == \"*\":\n            result = num1 * num2\n        elif op == \"/\":\n            if num2 == 0:\n                result_label.config(text=\"خطا: تقسیم بر صفر!\")\n                return\n            result = num1 / num2\n        else:\n            result_label.config(text=\"عملگر نامعتبر است\")\n            return\n\n        result_label.config(text=f\"نتیجه: {result}\")\n\n    except ValueError:\n        result_label.config(text=\"لطفاً فقط عدد وارد کنید\")\n\n\nwindow = tk.Tk()\nwindow.title(\"ماشین حساب ساده\")\nwindow.geometry(\"300x250\")\n\nlabel1 = tk.Label(window, text=\"عدد اول:\")\nentry1 = tk.Entry(window)\n\nlabel2 = tk.Label(window, text=\"عدد دوم:\")\nentry2 = tk.Entry(window)\n\nlabel_op = tk.Label(window, text=\"عملگر (+ - * /):\")\noperator = tk.Entry(window)\n\ncalc_button = tk.Button(window, text=\"محاسبه\", command=calculate)\nresult_label = tk.Label(window, text=\"نتیجه: \", fg=\"blue\")\n\nlabel1.pack()\nentry1.pack()\n\nlabel2.pack()\nentry2.pack()\n\nlabel_op.pack()\noperator.pack()\n\ncalc_button.pack(pady=10)\nresult_label.pack()\n\nwindow.mainloop()",
+    "text": "مقدار\nبا استفاده از مطالبی که آموخته‌اید میتوانید کدهای زیر را بخوانید.\nprint(1 + 2)",
+    "crumbs": [
+      "پروژه",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/project/calculator.html#متغیر",
+    "href": "chapter/project/calculator.html#متغیر",
+    "title": "ماشین حساب",
+    "section": "متغیر",
+    "text": "متغیر\n\nn1 = 1\nn2 = 2\n\nprint(n1 + n2)",
+    "crumbs": [
+      "پروژه",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/project/calculator.html#ورودی",
+    "href": "chapter/project/calculator.html#ورودی",
+    "title": "ماشین حساب",
+    "section": "ورودی",
+    "text": "ورودی\n\nn1 = float(input(\"n1: \"))\nn2 = float(input(\"n2: \"))\n\nprint(n1 + n2)",
+    "crumbs": [
+      "پروژه",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/project/calculator.html#عملگرهای-دیگر",
+    "href": "chapter/project/calculator.html#عملگرهای-دیگر",
+    "title": "ماشین حساب",
+    "section": "عملگرهای دیگر",
+    "text": "عملگرهای دیگر\n\nعملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.\n\n\nn1 = float(input(\"n1: \"))\nn2 = float(input(\"n2: \"))\n\nprint(n1 + n2)\nprint(n1 - n2)\nprint(n1 * n2)\nprint(n1 / n2)",
+    "crumbs": [
+      "پروژه",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/project/calculator.html#دستورات-شرطی",
+    "href": "chapter/project/calculator.html#دستورات-شرطی",
+    "title": "ماشین حساب",
+    "section": "دستورات شرطی",
+    "text": "دستورات شرطی\n\nعملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.\n\n\nn1 = float(input(\"n1: \"))\nn2 = float(input(\"n2: \"))\nop = input(\"+,-,*,/: \")\n\nif op == \"+\":\n    print(n1 + n2)\nelif op == \"-\":\n    print(n1 - n2)\nelif op == \"*\":\n    print(n1 * n2)\nelif op == \"/\":\n    print(n1 / n2)\nelse:\n    print(\"operator is not valid!\")",
+    "crumbs": [
+      "پروژه",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/project/calculator.html#مدیریت-خطا",
+    "href": "chapter/project/calculator.html#مدیریت-خطا",
+    "title": "ماشین حساب",
+    "section": "مدیریت خطا",
+    "text": "مدیریت خطا\n\nعملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.\n\n\ntry:\n    n1 = float(input(\"n1: \"))\n    n2 = float(input(\"n2: \"))\n    op = input(\"+ - * /: \")\n\n    if op == \"+\":\n        print(n1 + n2)\n    elif op == \"-\":\n        print(n1 - n2)\n    elif op == \"*\":\n        print(n1 * n2)\n    elif op == \"/\":\n        print(n1 / n2)\n    else:\n        print(\"operator is not valid!\")\nexcept Exception as e:\n    print(\"Error:\", str(e))",
+    "crumbs": [
+      "پروژه",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/project/calculator.html#رابط-گرافیکی",
+    "href": "chapter/project/calculator.html#رابط-گرافیکی",
+    "title": "ماشین حساب",
+    "section": "رابط گرافیکی",
+    "text": "رابط گرافیکی\n\nعملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.\n\n\nimport tkinter as tk\n\n\ndef calculate():\n    try:\n        n1 = float(entry1.get())\n        n2 = float(entry2.get())\n        op = operator.get()\n\n        if op == \"+\":\n            result = n1 + n2\n        elif op == \"-\":\n            result = n1 - n2\n        elif op == \"*\":\n            result = n1 * n2\n        elif op == \"/\":\n            if n2 == 0:\n                result_label.config(text=\"خطا: تقسیم بر صفر!\")\n                return\n            result = n1 / n2\n        else:\n            result_label.config(text=\"عملگر نامعتبر است\")\n            return\n\n        result_label.config(text=f\"نتیجه: {result}\")\n\n    except ValueError:\n        result_label.config(text=\"لطفاً فقط عدد وارد کنید\")\n\n\nwindow = tk.Tk()\nwindow.title(\"ماشین حساب ساده\")\nwindow.geometry(\"300x250\")\n\nlabel1 = tk.Label(window, text=\"عدد اول:\")\nentry1 = tk.Entry(window)\n\nlabel2 = tk.Label(window, text=\"عدد دوم:\")\nentry2 = tk.Entry(window)\n\nlabel_op = tk.Label(window, text=\"عملگر (+ - * /):\")\noperator = tk.Entry(window)\n\ncalc_button = tk.Button(window, text=\"محاسبه\", command=calculate)\nresult_label = tk.Label(window, text=\"نتیجه: \", fg=\"blue\")\n\nlabel1.pack()\nentry1.pack()\n\nlabel2.pack()\nentry2.pack()\n\nlabel_op.pack()\noperator.pack()\n\ncalc_button.pack(pady=10)\nresult_label.pack()\n\nwindow.mainloop()",
     "crumbs": [
       "پروژه",
       "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
