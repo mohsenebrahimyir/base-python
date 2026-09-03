@@ -547,6 +547,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <a href="../../chapter/functions/import.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">خارجی (<code>import</code>)</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapter/functions/args-kwargs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">آرگومان‌های متغیر (<code>args</code>, <code>kwargs</code>)</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -719,6 +724,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#تفاوت-for-و-while" id="toc-تفاوت-for-و-while" class="nav-link" data-scroll-target="#تفاوت-for-و-while">تفاوت <span dir="ltr"><code>for</code></span> و <span dir="ltr"><code>while</code></span></a></li>
   <li><a href="#مثال" id="toc-مثال" class="nav-link" data-scroll-target="#مثال">مثال</a></li>
   <li><a href="#پیمایش-روی-لیست" id="toc-پیمایش-روی-لیست" class="nav-link" data-scroll-target="#پیمایش-روی-لیست">پیمایش روی لیست</a></li>
+  <li><a href="#پیمایش-روی-دیکشنری" id="toc-پیمایش-روی-دیکشنری" class="nav-link" data-scroll-target="#پیمایش-روی-دیکشنری">پیمایش روی دیکشنری</a></li>
   <li><a href="#تمرین" id="toc-تمرین" class="nav-link" data-scroll-target="#تمرین">تمرین</a></li>
   </ul>
 </nav>
@@ -741,7 +747,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-08-28</p>
+      <p class="date-modified">2026-09-03</p>
     </div>
   </div>
     
@@ -806,6 +812,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>nums_power <span class="op">=</span> [n <span class="op">**</span> <span class="dv">2</span> <span class="cf">for</span> n <span class="kw">in</span> nums]</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nums_power)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>[1, 4, 9, 16]</code></pre>
+</section>
+<section id="پیمایش-روی-دیکشنری" class="level2">
+<h2 class="anchored" data-anchor-id="پیمایش-روی-دیکشنری">پیمایش روی دیکشنری</h2>
+<p>برای پیمایش روی دیکشنری چند روش رایج وجود داره:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>person <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>, <span class="st">"age"</span>: <span class="dv">32</span>, <span class="st">"city"</span>: <span class="st">"Sari"</span>}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key <span class="kw">in</span> person:</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(key)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key <span class="kw">in</span> person.keys():</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(key)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> value <span class="kw">in</span> person.values():</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(value)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key, value <span class="kw">in</span> person.items():</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(key, value)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>می‌تونید مثل لیست، از <strong>دیکشنری کامپرینشن (Dict Comprehension)</strong> هم برای ساخت دیکشنری جدید حین پیمایش استفاده کنید:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>prices <span class="op">=</span> {<span class="st">"apple"</span>: <span class="dv">10</span>, <span class="st">"banana"</span>: <span class="dv">5</span>, <span class="st">"cherry"</span>: <span class="dv">20</span>}</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>discounted <span class="op">=</span> {item: price <span class="op">*</span> <span class="fl">0.9</span> <span class="cf">for</span> item, price <span class="kw">in</span> prices.items()}</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(discounted)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>{'apple': 9.0, 'banana': 4.5, 'cherry': 18.0}</code></pre>
+<blockquote class="blockquote">
+<p><strong>نکته:</strong> پیمایش مستقیم روی دیکشنری (<code>for key in person</code>) همون کلیدها رو برمی‌گردونه؛ پس معمولاً نیازی به نوشتن <code>.keys()</code> نیست، مگه اینکه بخواید کد خواناتر باشه.</p>
+</blockquote>
 </section>
 <section id="تمرین" class="level2">
 <h2 class="anchored" data-anchor-id="تمرین">تمرین</h2>
