@@ -1000,6 +1000,39 @@
     ]
   },
   {
+    "objectID": "chapter/conditions/try-except.html#مدیریت-خطاهای-مشخص-و-نامشخص",
+    "href": "chapter/conditions/try-except.html#مدیریت-خطاهای-مشخص-و-نامشخص",
+    "title": "مدیریت خطا (try-except)",
+    "section": "مدیریت خطاهای مشخص و نامشخص",
+    "text": "مدیریت خطاهای مشخص و نامشخص\ntry:\n    number = int(input('Enter a number: '))\n    print(10 / number)\nexcept ValueError:\n    print('That is not a valid number')\nexcept ZeroDivisionError:\n    print('You cannot divide by zero')\nexcept Exception as e:\n    print('Error:', str(e))",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>مدیریت خطا (`try-except`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/try-except.html#خطاهای-رایج-common-errors",
+    "href": "chapter/conditions/try-except.html#خطاهای-رایج-common-errors",
+    "title": "مدیریت خطا (try-except)",
+    "section": "خطاهای رایج (Common Errors)",
+    "text": "خطاهای رایج (Common Errors)\n\n\n\n\n\n\n\n\nدسته\nزمان بروز\nمثال\n\n\n\n\nخطای نحوی (Syntax)\nقبل از اجرا، حین خوندن کد\nفراموش کردن :\n\n\nخطای زمان اجرا (Runtime)\nحین اجرای کد\nتقسیم بر صفر\n\n\nخطای منطقی (Logical)\nکد اجرا می‌شه ولی نتیجه غلطه\nخطا نمی‌ده، باید خودمون پیدا کنیم\n\n\n\n\n\nSyntaxError\n\nساختار کد با قواعد پایتون نمی‌خونه، اصلاً اجرا نمی‌شه\n\nif True\n    print('hello')\nSyntaxError: expected ':'\n\n\nIndentationError\n\nتورفتگی (فاصله‌گذاری ابتدای خط) رعایت نشده\n\nif True:\nprint('hello')\nIndentationError: expected an indented block\n\n\nNameError\n\nاستفاده از متغیر یا نامی که تعریف نشده\n\nprint(age)\nNameError: name 'age' is not defined\n\n\nTypeError\n\nعملیات روی نوع‌های داده‌ی ناسازگار\n\nresult = '5' + 5\nTypeError: can only concatenate str (not \"int\") to str\n\n\nValueError\n\nنوع داده درسته ولی مقدارش برای عملیات مناسب نیست\n\nnumber = int('abc')\nValueError: invalid literal for int() with base 10: 'abc'\n\n\nIndexError\n\nدسترسی به اندیسی خارج از محدوده‌ی لیست یا رشته\n\nnums = [1, 2, 3]\nprint(nums[5])\nIndexError: list index out of range\n\n\nKeyError\n\nدسترسی به کلیدی که در دیکشنری وجود نداره\n\nperson = {'name': 'Sara'}\nprint(person['age'])\nKeyError: 'age'\n\n\nAttributeError\n\nصدا زدن متد یا ویژگی‌ای که برای اون نوع داده وجود نداره\n\nnumber = 5\nnumber.append(1)\nAttributeError: 'int' object has no attribute 'append'\n\n\nZeroDivisionError\n\nتقسیم هر عددی بر صفر\n\nresult = 10 / 0\nZeroDivisionError: division by zero",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>مدیریت خطا (`try-except`)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/conditions/try-except.html#خواندن-پیام-خطا-traceback",
+    "href": "chapter/conditions/try-except.html#خواندن-پیام-خطا-traceback",
+    "title": "مدیریت خطا (try-except)",
+    "section": "خواندن پیام خطا (Traceback)",
+    "text": "خواندن پیام خطا (Traceback)\n\nآخرین خط پیام خطا، نوع خطا و دلیل رو نشون می‌ده\nخط‌های بالاتر، مسیر اجرای کد تا رسیدن به خطا رو نشون می‌دن (از بیرونی‌ترین تا خط دقیق خطا)",
+    "crumbs": [
+      "شرطها و استثنا",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>مدیریت خطا (`try-except`)</span>"
+    ]
+  },
+  {
     "objectID": "chapter/loops/while.html",
     "href": "chapter/loops/while.html",
     "title": "حلقه شرطی (while)",
@@ -1396,80 +1429,80 @@
     ]
   },
   {
-    "objectID": "chapter/gui/top-10-gui.html",
-    "href": "chapter/gui/top-10-gui.html",
-    "title": "۱۰ پکیج رابط گرافیکی (GUI)",
+    "objectID": "chapter/gui/python-gui.html",
+    "href": "chapter/gui/python-gui.html",
+    "title": "رابطهای گرافیکی (GUI) پایتون",
     "section": "",
     "text": "۱. Tkinter",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>رابطهای گرافیکی (GUI) پایتون</span>"
     ]
   },
   {
-    "objectID": "chapter/gui/top-10-gui.html#tkinter",
-    "href": "chapter/gui/top-10-gui.html#tkinter",
-    "title": "۱۰ پکیج رابط گرافیکی (GUI)",
+    "objectID": "chapter/gui/python-gui.html#tkinter",
+    "href": "chapter/gui/python-gui.html#tkinter",
+    "title": "رابطهای گرافیکی (GUI) پایتون",
     "section": "",
     "text": "مزیت‌ها: جزو کتابخانه استاندارد پایتونه، نیاز به نصب جداگانه نداره، سبک و سریعه، یادگیریش خیلی ساده‌ست.\nمعایب‌ها: ظاهر ویجت‌ها قدیمی و غیرمدرنه (مگر با ttk کمی بهتر بشه)، برای اپ‌های پیچیده و بزرگ مقیاس مناسب نیست، امکانات گرافیکی پیشرفته (انیمیشن، افکت) نداره.\nتاریخ پیدایش: اواسط دهه ۱۹۹۰ (بر پایه Tcl/Tk که قدیمی‌تره)، از همون ابتدا با پایتون همراه شده.\nپروژه‌های مهم: بیشتر در ابزارهای داخلی، اسکریپت‌های آموزشی و IDLE (ویرایشگر پیش‌فرض پایتون) دیده می‌شه؛ پروژه تجاری بزرگ و معروف کم داره.\nستاره گیت‌هاب: خود Tkinter بخشی از سورس CPython‌ـه و ریپوی مستقل پرستاره‌ای نداره (مقایسه‌پذیر نیست).\nجامعه توسعه‌دهندگان: فوق‌العاده بزرگ چون هر برنامه‌نویس پایتون باهاش آشناست، ولی توسعه‌ی خودِ کتابخانه کند و محافظه‌کارانه‌ست.\nقابلیت نرم‌افزار تجاری: بله، لایسنس PSF کاملاً آزاد و رایگانه، محدودیتی برای فروش نداره.\nخروجی مالتی‌پلتفرم: ویندوز، مک، لینوکس؛ برای موبایل و وب پشتیبانی رسمی نداره.",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>رابطهای گرافیکی (GUI) پایتون</span>"
     ]
   },
   {
-    "objectID": "chapter/gui/top-10-gui.html#pyqt-pyqt5-pyqt6",
-    "href": "chapter/gui/top-10-gui.html#pyqt-pyqt5-pyqt6",
-    "title": "۱۰ پکیج رابط گرافیکی (GUI)",
+    "objectID": "chapter/gui/python-gui.html#pyqt-pyqt5-pyqt6",
+    "href": "chapter/gui/python-gui.html#pyqt-pyqt5-pyqt6",
+    "title": "رابطهای گرافیکی (GUI) پایتون",
     "section": "۲. PyQt (PyQt5 / PyQt6)",
     "text": "۲. PyQt (PyQt5 / PyQt6)\n\n\n\n\n\n\nمزیت‌ها: یکی از قدرتمندترین و کامل‌ترین فریم‌ورک‌ها، ویجت‌های فراوان، ابزار طراحی بصری (Qt Designer)، مستندات غنی.\nمعایب‌ها: برای استفاده تجاری (کلوزدسورس) نیاز به لایسنس تجاری از Riverbank داره، حجم و پیچیدگی یادگیری بیشتر از Tkinter.\nتاریخ پیدایش: سال ۱۹۹۸ (بایندینگ پایتون برای Qt که توسط Riverbank Computing توسعه داده شد).\nپروژه‌های مهم: نرم‌افزارهایی مثل Spyder IDE، Dropbox (نسخه‌های قدیمی)، بسیاری از ابزارهای مهندسی و علمی از Qt/PyQt استفاده کردن.\nستاره گیت‌هاب: خود PyQt در گیت‌هاب رسمی نیست (روی SourceForge/Riverbank میزبانی می‌شه)؛ پروژه‌های نمونه و ابزارهای جانبی مرتبط با PyQt در گیت‌هاب هزاران ستاره دارند.\nجامعه توسعه‌دهندگان: بزرگ و باتجربه، مخصوصاً در حوزه‌ی اپ‌های دسکتاپ صنعتی و علمی.\nقابلیت نرم‌افزار تجاری: بله ولی برای پروژه‌های کلوزدسورس باید لایسنس تجاری خرید (GPL برای اوپن‌سورس رایگانه).\nخروجی مالتی‌پلتفرم: ویندوز، مک، لینوکس؛ با Qt for Python و ابزارهای جانبی امکان خروجی محدود موبایل هم هست، ولی وب رسمی ندارد.",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>رابطهای گرافیکی (GUI) پایتون</span>"
     ]
   },
   {
-    "objectID": "chapter/gui/top-10-gui.html#kivy",
-    "href": "chapter/gui/top-10-gui.html#kivy",
-    "title": "۱۰ پکیج رابط گرافیکی (GUI)",
+    "objectID": "chapter/gui/python-gui.html#kivy",
+    "href": "chapter/gui/python-gui.html#kivy",
+    "title": "رابطهای گرافیکی (GUI) پایتون",
     "section": "۳. Kivy",
     "text": "۳. Kivy\n\n\n\n\n\n\nمزیت‌ها: طراحی‌شده برای رابط‌های لمسی و چندسکویی، خروجی مستقیم روی موبایل (اندروید/iOS) داره، مناسب بازی‌های ساده و اپ‌های گرافیکی.\nمعایب‌ها: ظاهرش native نیست (خودش رندر می‌کنه، شبیه هیچ‌کدوم از سیستم‌عامل‌ها نیست)، منحنی یادگیری زبان توصیف رابط (KV language) اضافه‌ست.\nتاریخ پیدایش: سال ۲۰۱۱ (پروژه‌ای در ادامه PyMT).\nپروژه‌های مهم: اپ‌های موبایل مستقل، بازی‌های ساده، پروژه‌های آموزشی و هنری تعاملی.\nستاره گیت‌هاب: یکی از پرستاره‌ترین فریم‌ورک‌های GUI پایتون (در محدوده چند ده هزار ستاره).\nجامعه توسعه‌دهندگان: فعال و بین‌المللی، مخصوصاً در حوزه توسعه اپ موبایل با پایتون.\nقابلیت نرم‌افزار تجاری: بله، لایسنس MIT کاملاً آزاده.\nخروجی مالتی‌پلتفرم: ویندوز، مک، لینوکس، اندروید، iOS و Raspberry Pi؛ برای وب امکان محدود (از طریق ابزارهای جانبی).",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>رابطهای گرافیکی (GUI) پایتون</span>"
     ]
   },
   {
-    "objectID": "chapter/gui/top-10-gui.html#streamlit",
-    "href": "chapter/gui/top-10-gui.html#streamlit",
-    "title": "۱۰ پکیج رابط گرافیکی (GUI)",
+    "objectID": "chapter/gui/python-gui.html#streamlit",
+    "href": "chapter/gui/python-gui.html#streamlit",
+    "title": "رابطهای گرافیکی (GUI) پایتون",
     "section": "۴. Streamlit",
     "text": "۴. Streamlit\n\n\n\n\n\n\nمزیت‌ها: برای ساخت داشبورد و ابزار داده خیلی سریع و با حداقل کد، محبوب در حوزه دیتاساینس و یادگیری ماشین، خروجی مستقیم وب.\nمعایب‌ها: GUI سنتی دسکتاپی نیست (فقط تحت وب اجرا می‌شه)، برای اپ‌های پیچیده با تعامل سفارشی زیاد محدودیت داره.\nتاریخ پیدایش: سال ۲۰۱۹.\nپروژه‌های مهم: بی‌شمار داشبورد و دمو در حوزه هوش مصنوعی و علم داده، خیلی از پروژه‌های نمایشی مدل‌های ML باهاش ساخته می‌شن.\nستاره گیت‌هاب: یکی از پرستاره‌ترین ابزارهای این لیست (چند ده هزار ستاره).\nجامعه توسعه‌دهندگان: بسیار بزرگ و فعال، مخصوصاً در جامعه هوش مصنوعی و علم داده.\nقابلیت نرم‌افزار تجاری: بله، لایسنس Apache 2.0، همچنین سرویس ابری Streamlit Cloud برای دیپلوی وجود داره.\nخروجی مالتی‌پلتفرم: فقط وب (که خودش روی هر دستگاهی با مرورگر باز می‌شه)، مفهوم دسکتاپ/موبایل native نداره.",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>رابطهای گرافیکی (GUI) پایتون</span>"
     ]
   },
   {
-    "objectID": "chapter/gui/top-10-gui.html#flet",
-    "href": "chapter/gui/top-10-gui.html#flet",
-    "title": "۱۰ پکیج رابط گرافیکی (GUI)",
+    "objectID": "chapter/gui/python-gui.html#flet",
+    "href": "chapter/gui/python-gui.html#flet",
+    "title": "رابطهای گرافیکی (GUI) پایتون",
     "section": "۵. Flet",
     "text": "۵. Flet\n\n\n\n\n\n\nمزیت‌ها: با پایتون خالص می‌نویسی ولی زیرِ هود از Flutter استفاده می‌کنه، ظاهر مدرن، خروجی هم‌زمان دسکتاپ/وب/موبایل خیلی راحت‌تر از رقبا.\nمعایب‌ها: نسبتاً جدیده، اکوسیستم و منابع آموزشی فارسی/انگلیسی هنوز کوچیکه، وابسته به موتور Flutter در پس‌زمینه.\nتاریخ پیدایش: سال ۲۰۲۲.\nپروژه‌های مهم: بیشتر پروژه‌های استارتاپی و ابزارهای داخلی که سریع می‌خوان هم دسکتاپ هم وب داشته باشن.\nستاره گیت‌هاب: رشد بسیار سریع داشته و به سرعت به چندین هزار ستاره رسیده.\nجامعه توسعه‌دهندگان: کوچک ولی به‌سرعت در حال رشد، به خصوص بین کسانی که دنبال جایگزین ساده‌تر برای Kivy/BeeWare هستن.\nقابلیت نرم‌افزار تجاری: بله، لایسنس Apache 2.0.\nخروجی مالتی‌پلتفرم: دسکتاپ، وب و موبایل همزمان، یکی از قوی‌ترین گزینه‌ها از نظر خروجی چندسکویی واقعی (شامل وب).",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>رابطهای گرافیکی (GUI) پایتون</span>"
     ]
   },
   {
-    "objectID": "chapter/gui/top-10-gui.html#جمعبندی",
-    "href": "chapter/gui/top-10-gui.html#جمعبندی",
-    "title": "۱۰ پکیج رابط گرافیکی (GUI)",
+    "objectID": "chapter/gui/python-gui.html#جمعبندی",
+    "href": "chapter/gui/python-gui.html#جمعبندی",
+    "title": "رابطهای گرافیکی (GUI) پایتون",
     "section": "جمع‌بندی",
     "text": "جمع‌بندی\n\n\n\nپکیج\nنوع خروجی اصلی\nسطح دشواری\nلایسنس تجاری\n\n\n\n\nTkinter\nدسکتاپ\nآسان\nآزاد\n\n\nPyQt\nدسکتاپ\nمتوسط-سخت\nنیاز به خرید لایسنس\n\n\nKivy\nدسکتاپ + موبایل\nمتوسط\nآزاد\n\n\nStreamlit\nفقط وب/داشبورد\nآسان\nآزاد\n\n\nFlet\nدسکتاپ+وب+موبایل\nآسان-متوسط\nآزاد",
     "crumbs": [
       "رابط گرافیکی",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>۱۰ پکیج رابط گرافیکی (GUI)</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>رابطهای گرافیکی (GUI) پایتون</span>"
     ]
   },
   {

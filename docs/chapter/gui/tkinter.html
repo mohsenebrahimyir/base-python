@@ -66,7 +66,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../chapter/gui/widgets.html" rel="next">
-<link href="../../chapter/gui/top-10-gui.html" rel="prev">
+<link href="../../chapter/gui/python-gui.html" rel="prev">
 <link href="../../img/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/gui/top-10-gui.html">رابط گرافیکی</a></li><li class="breadcrumb-item"><a href="../../chapter/gui/tkinter.html"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/gui/python-gui.html">رابط گرافیکی</a></li><li class="breadcrumb-item"><a href="../../chapter/gui/tkinter.html"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="جستجو" onclick="window.quartoOpenSearch();">
@@ -565,7 +565,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/gui/top-10-gui.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></a>
+  <a href="../../chapter/gui/python-gui.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">رابطهای گرافیکی (GUI) پایتون</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -733,7 +733,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/gui/top-10-gui.html">رابط گرافیکی</a></li><li class="breadcrumb-item"><a href="../../chapter/gui/tkinter.html"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapter/gui/python-gui.html">رابط گرافیکی</a></li><li class="breadcrumb-item"><a href="../../chapter/gui/tkinter.html"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">رابط گرافیکی (<code>tkinter</code>)</span></h1>
 </div>
@@ -763,7 +763,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="ایجاد-loop-برای-بدنه" class="level3">
 <h3 class="anchored" data-anchor-id="ایجاد-loop-برای-بدنه">ایجاد Loop برای بدنه</h3>
 <p>در این بخش با ساختن یک پنجره ساده وارد دنیای رابط گرافیکی می‌شویم. متد <span dir="ltr"><code>mainloop()</code></span> باعث می‌شود پنجره باز بماند و منتظر تعامل کاربر بماند.</p>
-<div id="a9634710" class="cell" data-execution_count="1">
+<div id="5eabb91b" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
@@ -774,7 +774,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="عنوان" class="level3">
 <h3 class="anchored" data-anchor-id="عنوان">عنوان</h3>
 <p>در این مرحله برای پنجره یک عنوان مشخص می‌کنیم. متد <span dir="ltr"><code>title()</code></span> متن نمایش داده‌شده در نوار بالای پنجره را تنظیم می‌کند.</p>
-<div id="057fee54" class="cell" data-execution_count="2">
+<div id="51184d20" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
@@ -786,7 +786,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="تغییر-سایز-پنجره" class="level3">
 <h3 class="anchored" data-anchor-id="تغییر-سایز-پنجره">تغییر سایز پنجره</h3>
 <p>در این بخش اندازه اولیه پنجره را مشخص می‌کنیم. متد <span dir="ltr"><code>geometry()</code></span> عرض و ارتفاع پنجره را بر حسب پیکسل تعیین می‌کند.</p>
-<div id="fce83ab1" class="cell" data-execution_count="3">
+<div id="10377470" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
@@ -1221,8 +1221,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapter/gui/top-10-gui.html" class="pagination-link" aria-label="۱۰ پکیج رابط گرافیکی (GUI)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">۱۰ پکیج رابط گرافیکی (GUI)</span></span>
+      <a href="../../chapter/gui/python-gui.html" class="pagination-link" aria-label="رابطهای گرافیکی (GUI) پایتون">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">رابطهای گرافیکی (GUI) پایتون</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
