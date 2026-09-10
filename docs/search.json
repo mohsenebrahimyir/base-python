@@ -377,7 +377,7 @@
     "href": "chapter/expression/operator.html#تمرین",
     "title": "عملگر (Operand)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nهشدار\n\n\n\nبا استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\n\n\n\n\n\n\nاحتیاطیک ماشین‌ حساب ساده برای جمع و تفریق بنویسید.\n\n\n\n\n\nnum1 = input(\"Number 1: \")\nnum1 = float(num1)\n\nnum2 = input(\"Number 2: \")\nnum2 = float(num2)\n\nadd = num1 + num2\nsubtract = num1 - num2\n\nprint(num1, \"+\", num2, \"=\", add)\nprint(num1, \"-\", num2, \"=\", subtract)\nآیا میتونید برای ضرب و تقیسم هم بنویسید؟\n\n\n\n\n\n\n\n\n\nاحتیاطدو عدد بگیرد و بزرگی عدد اول را بررسی کند.\n\n\n\n\n\nnum1 = input(\"عدد اول را وارد کن: \")\nnum1 = float(num1)\n\nnum2 = input(\"عدد دوم را وارد کن: \")\nnum2 = float(num2)\n\nresult = num1 &gt; num2\n\nprint(\"Is\", num1,\"greater than\", num2, \"? \", result)\n\n\n\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3537\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "text": "تمرین\n\n\n\n\n\n\nهشدار\n\n\n\nبا استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\n\n\n\n\n\n\nاحتیاطیک ماشین‌ حساب ساده برای جمع و تفریق بنویسید.\n\n\n\n\n\nnum1 = input(\"Number 1: \")\nnum1 = float(num1)\n\nnum2 = input(\"Number 2: \")\nnum2 = float(num2)\n\nadd = num1 + num2\nsubtract = num1 - num2\n\nprint(num1, \"+\", num2, \"=\", add)\nprint(num1, \"-\", num2, \"=\", subtract)\nآیا میتونید برای ضرب و تقیسم هم بنویسید؟\n\n\n\n\n\n\n\n\n\nاحتیاطدو عدد بگیرد و بزرگی عدد اول را بررسی کند.\n\n\n\n\n\nnum1 = input(\"عدد اول را وارد کن: \")\nnum1 = float(num1)\n\nnum2 = input(\"عدد دوم را وارد کن: \")\nnum2 = float(num2)\n\nresult = num1 &gt; num2\n\nprint(\"Is\", num1,\"greater than\", num2, \"? \", result)\n\n\n\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3537 - سوال زرد\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
     "crumbs": [
       "عبارات و دستورات",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>عملگر (Operand)</span>"
@@ -520,7 +520,7 @@
     "href": "chapter/structure/string.html#تمرین",
     "title": "رشته (str)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n2885\n2636\n615\n8838",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n2885 - سوال ساده\n2636 - شطرنج حرفه‌ای\n615 - تاریخ تولد\n8838 - کمک به کاپی",
     "crumbs": [
       "ساختار داده",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
@@ -630,7 +630,7 @@
     "href": "chapter/structure/list.html#تمرین",
     "title": "لیست (list)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n28947",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n28947 - کمک به کاپی",
     "crumbs": [
       "ساختار داده",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>لیست (`list`)</span>"
@@ -949,7 +949,7 @@
     "href": "chapter/conditions/if-else-elif.html#تمرین",
     "title": "اجرای شرطی (if-else-elif)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3429\n10162\n280\n10230\n3406\n51865\n10325\n106795\n3414\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3429 - یخدارچی\n10162 - روز آزادی بیان در برره\n280 - اعداد فیثاغورثی\n10230 - مشق امشب باقر\n3406 - صدگان خسته\n51865 - بهداشت و سلامت\n10325 - همایش زندگی بهتر\n106795 - رشته چکر\n3414 - دو نقطه خط\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
     "crumbs": [
       "شرطها و استثنا",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>اجرای شرطی (`if-else-elif`)</span>"
@@ -1092,7 +1092,7 @@
     "href": "chapter/loops/while.html#تمرین",
     "title": "حلقه شرطی (while)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n9774\n17244\n589\n2529\n3409\n3539\n282\n616\n591\n618\n3405\n617\n4065\n3537\n2885\n28947\n588\n10231\n10232",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n9774 - عدد چاپ‌کن\n17244 - شارژ موبایل\n589 - فاکتوریل\n2529 - اسم‌ها\n3409 - جدول ضرب گنده\n3539 - تک‌رقمی\n282 - کامل بودن یا نبودن\n616 - توان دو\n591 - چاپ مربع\n618 - چاپ لوزی\n3405 - چاپ برعکس\n617 - عدد خودمغلوب\n4065 - خر در چمن فراوونه!!\n3537 - سوال زرد\n2885 - سوال ساده\n28947 - کمک به کاپی\n588 - ماکزیمم\n10231 - خُب باقر سرما خورده\n10232 - باقر خسته‌ست ولی بی‌فرهنگ نه",
     "crumbs": [
       "حلقه‌ها",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>حلقه شرطی (`while`)</span>"
@@ -1169,7 +1169,7 @@
     "href": "chapter/loops/for.html#تمرین",
     "title": "حلقه معین (for)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n9774\n17244\n589\n2529\n3409\n3539\n282\n616\n591\n618\n3405\n617\n4065\n3537\n2885\n28947\n588\n10231\n10232",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n9774 - عدد چاپ‌کن\n17244 - شارژ موبایل\n589 - فاکتوریل\n2529 - اسم‌ها\n3409 - جدول ضرب گنده\n3539 - تک‌رقمی\n282 - کامل بودن یا نبودن\n616 - توان دو\n591 - چاپ مربع\n618 - چاپ لوزی\n3405 - چاپ برعکس\n617 - عدد خودمغلوب\n4065 - خر در چمن فراوونه!!\n3537 - سوال زرد\n2885 - سوال ساده\n28947 - کمک به کاپی\n588 - ماکزیمم\n10231 - خُب باقر سرما خورده\n10232 - باقر خسته‌ست ولی بی‌فرهنگ نه",
     "crumbs": [
       "حلقه‌ها",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>حلقه معین (`for`)</span>"
@@ -1235,7 +1235,7 @@
     "href": "chapter/functions/def.html#تمرین",
     "title": "تعریف تابع (def)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n102250\n148640\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n102250 - پیدایِش!\n148640 - آزمون تستی\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>تعریف تابع (`def`)</span>"
