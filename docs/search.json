@@ -2610,15 +2610,15 @@
     "href": "chapter/project/calculator.html",
     "title": "ماشین حساب",
     "section": "",
-    "text": "مقدار\nبا استفاده از مطالبی که آموخته‌اید میتوانید برنامه‌های زیر را بسازید.\nیک برنامه بنویسید که:\nکد\nn1 = input(\"n1: \")\nn1 = float(n1)\nn2 = input(\"n2: \")\nn2 = float(n2)\n\nprint(n1, \"+ \", n2, \"=\", n1 + n2)\nprint(n1, \"- \", n2, \"=\", n1 - n2)\nprint(n1, \"* \", n2, \"=\", n1 * n2)\nprint(n1, \"**\", n2, \"=\", n1 ** n2)\nprint(n1, \"/ \", n2, \"=\", n1 / n2)\nprint(n1, \"//\", n2, \"=\", n1 // n2)\nprint(n1, \"% \", n2, \"=\", n1 % n2)\nprint(n1, \"==\", n2, \"=\", n1 == n2)\nprint(n1, \"! \", n2, \"=\", n1 != n2)\nprint(n1, \"&lt; \", n2, \"=\", n1 &lt; n2)\nprint(n1, \"&lt;=\", n2, \"=\", n1 &lt;= n2)\nprint(n1, \"&gt; \", n2, \"=\", n1 &gt; n2)\nprint(n1, \"&gt;=\", n2, \"=\", n1 &gt;= n2)",
+    "text": "عبارات و دستورات\nبا استفاده از مطالبی که آموخته‌اید میتوانید برنامه‌های زیر را بسازید.\nیک برنامه بنویسید که:\nکد\nn1 = input(\"n1: \")\nn1 = float(n1)\nn2 = input(\"n2: \")\nn2 = float(n2)\n\nprint(n1, \"+ \", n2, \"=\", n1 + n2)\nprint(n1, \"- \", n2, \"=\", n1 - n2)\nprint(n1, \"* \", n2, \"=\", n1 * n2)\nprint(n1, \"**\", n2, \"=\", n1 ** n2)\nprint(n1, \"/ \", n2, \"=\", n1 / n2)\nprint(n1, \"//\", n2, \"=\", n1 // n2)\nprint(n1, \"% \", n2, \"=\", n1 % n2)\nprint(n1, \"==\", n2, \"=\", n1 == n2)\nprint(n1, \"! \", n2, \"=\", n1 != n2)\nprint(n1, \"&lt; \", n2, \"=\", n1 &lt; n2)\nprint(n1, \"&lt;=\", n2, \"=\", n1 &lt;= n2)\nprint(n1, \"&gt; \", n2, \"=\", n1 &gt; n2)\nprint(n1, \"&gt;=\", n2, \"=\", n1 &gt;= n2)",
     "crumbs": [
       "پروژه",
       "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
     ]
   },
   {
-    "objectID": "chapter/project/calculator.html#مقدار",
-    "href": "chapter/project/calculator.html#مقدار",
+    "objectID": "chapter/project/calculator.html#عبارات-و-دستورات",
+    "href": "chapter/project/calculator.html#عبارات-و-دستورات",
     "title": "ماشین حساب",
     "section": "",
     "text": "از کاربر دو عدد دریافت کند و تمام عملیات‌های ریاضی و مقایسه‌ای را برای آن‌ها بنویسد.",
