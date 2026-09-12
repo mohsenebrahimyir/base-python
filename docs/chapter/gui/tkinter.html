@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -742,7 +737,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -758,43 +753,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="ایجاد-loop-برای-بدنه" class="level3">
 <h3 class="anchored" data-anchor-id="ایجاد-loop-برای-بدنه">ایجاد Loop برای بدنه</h3>
 <p>در این بخش با ساختن یک پنجره ساده وارد دنیای رابط گرافیکی می‌شویم. متد <span dir="ltr"><code>mainloop()</code></span> باعث می‌شود پنجره باز بماند و منتظر تعامل کاربر بماند.</p>
-<div id="150c9bc4" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="عنوان" class="level3">
 <h3 class="anchored" data-anchor-id="عنوان">عنوان</h3>
 <p>در این مرحله برای پنجره یک عنوان مشخص می‌کنیم. متد <span dir="ltr"><code>title()</code></span> متن نمایش داده‌شده در نوار بالای پنجره را تنظیم می‌کند.</p>
-<div id="1ece2ee2" class="cell" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb2-4"><a href="#cb2-4"></a>window.title(<span class="st">"Hello World!"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="تغییر-سایز-پنجره" class="level3">
 <h3 class="anchored" data-anchor-id="تغییر-سایز-پنجره">تغییر سایز پنجره</h3>
 <p>در این بخش اندازه اولیه پنجره را مشخص می‌کنیم. متد <span dir="ltr"><code>geometry()</code></span> عرض و ارتفاع پنجره را بر حسب پیکسل تعیین می‌کند.</p>
-<div id="6df611ab" class="cell" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"Hello World!"</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"480x360"</span>)  <span class="co"># width x height</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># window.minsize(width=400, height=300)</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># window.maxsize(width=640, height=450)</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># window.resizable(width=False, height=False)</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a>window.title(<span class="st">"Hello World!"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7"></a>window.geometry(<span class="st">"480x360"</span>)  <span class="co"># width x height</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="co"># window.minsize(width=400, height=300)</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="co"># window.maxsize(width=640, height=450)</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a><span class="co"># window.resizable(width=False, height=False)</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="co"># window.config(background="red")</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a></span>
+<span id="cb3-13"><a href="#cb3-13"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>

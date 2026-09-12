@@ -66,7 +66,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../references.html" rel="next">
-<link href="../../chapter/project/counter.html" rel="prev">
+<link href="../../chapter/project/project.html" rel="prev">
 <link href="../../img/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -716,12 +711,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#مقدار" id="toc-مقدار" class="nav-link active" data-scroll-target="#مقدار">مقدار</a></li>
-  <li><a href="#متغیر" id="toc-متغیر" class="nav-link" data-scroll-target="#متغیر">متغیر</a></li>
-  <li><a href="#ورودی" id="toc-ورودی" class="nav-link" data-scroll-target="#ورودی">ورودی</a></li>
-  <li><a href="#عملگرهای-دیگر" id="toc-عملگرهای-دیگر" class="nav-link" data-scroll-target="#عملگرهای-دیگر">عملگرهای دیگر</a></li>
-  <li><a href="#دستورات-شرطی" id="toc-دستورات-شرطی" class="nav-link" data-scroll-target="#دستورات-شرطی">دستورات شرطی</a></li>
-  <li><a href="#مدیریت-خطا" id="toc-مدیریت-خطا" class="nav-link" data-scroll-target="#مدیریت-خطا">مدیریت خطا</a></li>
+  <li><a href="#ساختار-داده" id="toc-ساختار-داده" class="nav-link" data-scroll-target="#ساختار-داده">ساختار داده</a></li>
+  <li><a href="#دستورات-شرطی-و-مدیریت-خطا" id="toc-دستورات-شرطی-و-مدیریت-خطا" class="nav-link" data-scroll-target="#دستورات-شرطی-و-مدیریت-خطا">دستورات شرطی و مدیریت خطا</a></li>
+  <li><a href="#حلقه" id="toc-حلقه" class="nav-link" data-scroll-target="#حلقه">حلقه</a></li>
+  <li><a href="#تابع" id="toc-تابع" class="nav-link" data-scroll-target="#تابع">تابع</a></li>
   <li><a href="#رابط-گرافیکی" id="toc-رابط-گرافیکی" class="nav-link" data-scroll-target="#رابط-گرافیکی">رابط گرافیکی</a></li>
+  <li><a href="#فایل" id="toc-فایل" class="nav-link" data-scroll-target="#فایل">فایل</a></li>
   </ul>
 </nav>
     </div>
@@ -743,7 +738,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -754,159 +749,492 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>با استفاده از مطالبی که آموخته‌اید میتوانید کدهای زیر را بخوانید.</p>
+<p>با استفاده از مطالبی که آموخته‌اید میتوانید برنامه‌های زیر را بسازید.</p>
 <section id="مقدار" class="level2">
 <h2 class="anchored" data-anchor-id="مقدار">مقدار</h2>
-<div id="8ea252b5" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</section>
-<section id="متغیر" class="level2">
-<h2 class="anchored" data-anchor-id="متغیر">متغیر</h2>
-<div id="669f0e89" class="cell" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>n1 <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>n2 <span class="op">=</span> <span class="dv">2</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n1 <span class="op">+</span> n2)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</section>
-<section id="ورودی" class="level2">
-<h2 class="anchored" data-anchor-id="ورودی">ورودی</h2>
-<div id="2ceadfc6" class="cell" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n1 <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"n1: "</span>))</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>n2 <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"n2: "</span>))</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n1 <span class="op">+</span> n2)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</section>
-<section id="عملگرهای-دیگر" class="level2">
-<h2 class="anchored" data-anchor-id="عملگرهای-دیگر">عملگرهای دیگر</h2>
+<p>یک برنامه بنویسید که:</p>
 <ul>
-<li>عملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.</li>
+<li>از کاربر دو عدد دریافت کند و تمام عملیات‌های ریاضی و مقایسه‌ای را برای آن‌ها بنویسد.</li>
 </ul>
-<div id="bcee4d8e" class="cell" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>n1 <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"n1: "</span>))</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>n2 <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"n2: "</span>))</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n1 <span class="op">+</span> n2)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n1 <span class="op">-</span> n2)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n1 <span class="op">*</span> n2)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n1 <span class="op">/</span> n2)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cb29a26a" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>کد</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>n1 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"n1: "</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a>n1 <span class="op">=</span> <span class="bu">float</span>(n1)</span>
+<span id="cb1-3"><a href="#cb1-3"></a>n2 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"n2: "</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a>n2 <span class="op">=</span> <span class="bu">float</span>(n2)</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="bu">print</span>(n1, <span class="st">"+ "</span>, n2, <span class="st">"="</span>, n1 <span class="op">+</span> n2)</span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="bu">print</span>(n1, <span class="st">"- "</span>, n2, <span class="st">"="</span>, n1 <span class="op">-</span> n2)</span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="bu">print</span>(n1, <span class="st">"* "</span>, n2, <span class="st">"="</span>, n1 <span class="op">*</span> n2)</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="bu">print</span>(n1, <span class="st">"**"</span>, n2, <span class="st">"="</span>, n1 <span class="op">**</span> n2)</span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="bu">print</span>(n1, <span class="st">"/ "</span>, n2, <span class="st">"="</span>, n1 <span class="op">/</span> n2)</span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="bu">print</span>(n1, <span class="st">"//"</span>, n2, <span class="st">"="</span>, n1 <span class="op">//</span> n2)</span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="bu">print</span>(n1, <span class="st">"% "</span>, n2, <span class="st">"="</span>, n1 <span class="op">%</span> n2)</span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="bu">print</span>(n1, <span class="st">"=="</span>, n2, <span class="st">"="</span>, n1 <span class="op">==</span> n2)</span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="bu">print</span>(n1, <span class="st">"! "</span>, n2, <span class="st">"="</span>, n1 <span class="op">!=</span> n2)</span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="bu">print</span>(n1, <span class="st">"&lt; "</span>, n2, <span class="st">"="</span>, n1 <span class="op">&lt;</span> n2)</span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="bu">print</span>(n1, <span class="st">"&lt;="</span>, n2, <span class="st">"="</span>, n1 <span class="op">&lt;=</span> n2)</span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="bu">print</span>(n1, <span class="st">"&gt; "</span>, n2, <span class="st">"="</span>, n1 <span class="op">&gt;</span> n2)</span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="bu">print</span>(n1, <span class="st">"&gt;="</span>, n2, <span class="st">"="</span>, n1 <span class="op">&gt;=</span> n2)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 </div>
 </section>
-<section id="دستورات-شرطی" class="level2">
-<h2 class="anchored" data-anchor-id="دستورات-شرطی">دستورات شرطی</h2>
+<section id="ساختار-داده" class="level2">
+<h2 class="anchored" data-anchor-id="ساختار-داده">ساختار داده</h2>
+<p>یک برنامه بنویسید که:</p>
 <ul>
-<li>عملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.</li>
+<li>از کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند.</li>
 </ul>
-<div id="09a0523e" class="cell" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>n1 <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"n1: "</span>))</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>n2 <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"n2: "</span>))</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>op <span class="op">=</span> <span class="bu">input</span>(<span class="st">"+,-,*,/: "</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> op <span class="op">==</span> <span class="st">"+"</span>:</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(n1 <span class="op">+</span> n2)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> op <span class="op">==</span> <span class="st">"-"</span>:</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(n1 <span class="op">-</span> n2)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> op <span class="op">==</span> <span class="st">"*"</span>:</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(n1 <span class="op">*</span> n2)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> op <span class="op">==</span> <span class="st">"/"</span>:</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(n1 <span class="op">/</span> n2)</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"operator is not valid!"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="9de75640" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>کد</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>n1 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"n1: "</span>)</span>
+<span id="cb2-2"><a href="#cb2-2"></a>n1 <span class="op">=</span> <span class="bu">float</span>(n1)</span>
+<span id="cb2-3"><a href="#cb2-3"></a>n2 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"n2: "</span>)</span>
+<span id="cb2-4"><a href="#cb2-4"></a>n2 <span class="op">=</span> <span class="bu">float</span>(n2)</span>
+<span id="cb2-5"><a href="#cb2-5"></a>op <span class="op">=</span> <span class="bu">input</span>(<span class="st">"(+,-,*,**,/,//,%,==,!=,&lt;,&lt;=,&gt;,&gt;=)</span><span class="ch">\n</span><span class="st">op: "</span>)</span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a>n1_op_n2 <span class="op">=</span> {</span>
+<span id="cb2-8"><a href="#cb2-8"></a>    <span class="st">"+"</span>: n1 <span class="op">+</span> n2,</span>
+<span id="cb2-9"><a href="#cb2-9"></a>    <span class="st">"-"</span>: n1 <span class="op">-</span> n2,</span>
+<span id="cb2-10"><a href="#cb2-10"></a>    <span class="st">"*"</span>: n1 <span class="op">*</span> n2,</span>
+<span id="cb2-11"><a href="#cb2-11"></a>    <span class="st">"**"</span>: n1<span class="op">**</span>n2,</span>
+<span id="cb2-12"><a href="#cb2-12"></a>    <span class="st">"/"</span>: n1 <span class="op">/</span> n2,</span>
+<span id="cb2-13"><a href="#cb2-13"></a>    <span class="st">"//"</span>: n1 <span class="op">//</span> n2,</span>
+<span id="cb2-14"><a href="#cb2-14"></a>    <span class="st">"%"</span>: n1 <span class="op">%</span> n2,</span>
+<span id="cb2-15"><a href="#cb2-15"></a>    <span class="st">"=="</span>: n1 <span class="op">==</span> n2,</span>
+<span id="cb2-16"><a href="#cb2-16"></a>    <span class="st">"!="</span>: n1 <span class="op">!=</span> n2,</span>
+<span id="cb2-17"><a href="#cb2-17"></a>    <span class="st">"&lt;"</span>: n1 <span class="op">&lt;</span> n2,</span>
+<span id="cb2-18"><a href="#cb2-18"></a>    <span class="st">"&lt;="</span>: n1 <span class="op">&lt;=</span> n2,</span>
+<span id="cb2-19"><a href="#cb2-19"></a>    <span class="st">"&gt;"</span>: n1 <span class="op">&gt;</span> n2,</span>
+<span id="cb2-20"><a href="#cb2-20"></a>    <span class="st">"&gt;="</span>: n1 <span class="op">&gt;=</span> n2,</span>
+<span id="cb2-21"><a href="#cb2-21"></a>}</span>
+<span id="cb2-22"><a href="#cb2-22"></a></span>
+<span id="cb2-23"><a href="#cb2-23"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>n1<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>n2<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>n1_op_n2[op]<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 </div>
 </section>
-<section id="مدیریت-خطا" class="level2">
-<h2 class="anchored" data-anchor-id="مدیریت-خطا">مدیریت خطا</h2>
+<section id="دستورات-شرطی-و-مدیریت-خطا" class="level2">
+<h2 class="anchored" data-anchor-id="دستورات-شرطی-و-مدیریت-خطا">دستورات شرطی و مدیریت خطا</h2>
+<p>یک برنامه بنویسید که:</p>
 <ul>
-<li>عملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.</li>
+<li>از کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند.</li>
+<li>برای عملگرهایی که وجود ندارن یک پیام برای کاربر چاپ کند.</li>
+<li>خطای تقسیم بر صفر را به طور خاص مدیریت کند.</li>
+<li>برای باقی خطاها یک پیام متناسب با نوع خطا چاپ کند.</li>
 </ul>
-<div id="352b672e" class="cell" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    n1 <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"n1: "</span>))</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    n2 <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"n2: "</span>))</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    op <span class="op">=</span> <span class="bu">input</span>(<span class="st">"+ - * /: "</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> op <span class="op">==</span> <span class="st">"+"</span>:</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(n1 <span class="op">+</span> n2)</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"-"</span>:</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(n1 <span class="op">-</span> n2)</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"*"</span>:</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(n1 <span class="op">*</span> n2)</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"/"</span>:</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(n1 <span class="op">/</span> n2)</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"operator is not valid!"</span>)</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Error:"</span>, <span class="bu">str</span>(e))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="4a5ff79c" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>کد</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>valid_op <span class="op">=</span> <span class="st">"+,-,*,**,/,//,%,==,!=,&lt;,&lt;=,&gt;,&gt;="</span>.split(<span class="st">","</span>)</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="cf">try</span>:</span>
+<span id="cb3-4"><a href="#cb3-4"></a>    n1 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"n1: "</span>)</span>
+<span id="cb3-5"><a href="#cb3-5"></a>    n1 <span class="op">=</span> <span class="bu">float</span>(n1)</span>
+<span id="cb3-6"><a href="#cb3-6"></a>    n2 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"n2: "</span>)</span>
+<span id="cb3-7"><a href="#cb3-7"></a>    n2 <span class="op">=</span> <span class="bu">float</span>(n2)</span>
+<span id="cb3-8"><a href="#cb3-8"></a>    op <span class="op">=</span> <span class="bu">input</span>(<span class="ss">f"op: "</span>)</span>
+<span id="cb3-9"><a href="#cb3-9"></a></span>
+<span id="cb3-10"><a href="#cb3-10"></a>    <span class="cf">if</span> op <span class="kw">not</span> <span class="kw">in</span> valid_op:</span>
+<span id="cb3-11"><a href="#cb3-11"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> is not valid operator!"</span>)</span>
+<span id="cb3-12"><a href="#cb3-12"></a>        <span class="bu">print</span>(<span class="ss">f"(</span><span class="sc">{</span><span class="st">','</span><span class="sc">.</span>join(valid_op)<span class="sc">}</span><span class="ss">)"</span>)</span>
+<span id="cb3-13"><a href="#cb3-13"></a>    <span class="cf">else</span>:</span>
+<span id="cb3-14"><a href="#cb3-14"></a>        n1_op_n2 <span class="op">=</span> {</span>
+<span id="cb3-15"><a href="#cb3-15"></a>            <span class="st">"+"</span>: n1 <span class="op">+</span> n2,</span>
+<span id="cb3-16"><a href="#cb3-16"></a>            <span class="st">"-"</span>: n1 <span class="op">-</span> n2,</span>
+<span id="cb3-17"><a href="#cb3-17"></a>            <span class="st">"*"</span>: n1 <span class="op">*</span> n2,</span>
+<span id="cb3-18"><a href="#cb3-18"></a>            <span class="st">"**"</span>: n1<span class="op">**</span>n2,</span>
+<span id="cb3-19"><a href="#cb3-19"></a>            <span class="st">"/"</span>: n1 <span class="op">/</span> n2,</span>
+<span id="cb3-20"><a href="#cb3-20"></a>            <span class="st">"//"</span>: n1 <span class="op">//</span> n2,</span>
+<span id="cb3-21"><a href="#cb3-21"></a>            <span class="st">"%"</span>: n1 <span class="op">%</span> n2,</span>
+<span id="cb3-22"><a href="#cb3-22"></a>            <span class="st">"=="</span>: n1 <span class="op">==</span> n2,</span>
+<span id="cb3-23"><a href="#cb3-23"></a>            <span class="st">"!="</span>: n1 <span class="op">!=</span> n2,</span>
+<span id="cb3-24"><a href="#cb3-24"></a>            <span class="st">"&lt;"</span>: n1 <span class="op">&lt;</span> n2,</span>
+<span id="cb3-25"><a href="#cb3-25"></a>            <span class="st">"&lt;="</span>: n1 <span class="op">&lt;=</span> n2,</span>
+<span id="cb3-26"><a href="#cb3-26"></a>            <span class="st">"&gt;"</span>: n1 <span class="op">&gt;</span> n2,</span>
+<span id="cb3-27"><a href="#cb3-27"></a>            <span class="st">"&gt;="</span>: n1 <span class="op">&gt;=</span> n2,</span>
+<span id="cb3-28"><a href="#cb3-28"></a>        }</span>
+<span id="cb3-29"><a href="#cb3-29"></a></span>
+<span id="cb3-30"><a href="#cb3-30"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>n1<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>n2<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>n1_op_n2[op]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-31"><a href="#cb3-31"></a><span class="cf">except</span> <span class="pp">ZeroDivisionError</span>:</span>
+<span id="cb3-32"><a href="#cb3-32"></a>    <span class="bu">print</span>(<span class="ss">f"ZeroDivisionError: </span><span class="sc">{</span>n1<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>n2<span class="sc">}</span><span class="ss"> is not valid output"</span>)</span>
+<span id="cb3-33"><a href="#cb3-33"></a><span class="cf">except</span> <span class="pp">ValueError</span>:</span>
+<span id="cb3-34"><a href="#cb3-34"></a>    <span class="bu">print</span>(<span class="st">"ValueError: Please enter just number for n1 and n2!"</span>)</span>
+<span id="cb3-35"><a href="#cb3-35"></a><span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb3-36"><a href="#cb3-36"></a>    <span class="bu">print</span>(<span class="ss">f"Error: </span><span class="sc">{</span><span class="bu">str</span>(e)<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="حلقه" class="level2">
+<h2 class="anchored" data-anchor-id="حلقه">حلقه</h2>
+<p>یک برنامه بنویسید که:</p>
+<ul>
+<li>از کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند.</li>
+<li>برای عملگرهایی که وجود ندارن یک پیام برای کاربر چاپ کند.</li>
+<li>خطای تقسیم بر صفر را به طور خاص مدیریت کند.</li>
+<li>برای باقی خطاها یک پیام متناسب با نوع خطا چاپ کند.</li>
+<li>بعد از چاپ خروجی دوباره بتواند حداکثر ۳ بار ورودی جدید از کاربر دریافت کند. دقت کنید که فقط در صورت انجام عملیات بدون خطا، تعداد دفعات محاسبه شود.</li>
+<li>با نوشتن exit در ورودی اول از برنامه خارج شود.</li>
+<li>برای اصلاح ورودی‌ها اگر به جای عملگر عبارت edit وارد شود تا ورودی دوباره دریافت شود.</li>
+</ul>
+<div id="17363888" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>کد</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>valid_op <span class="op">=</span> <span class="st">"+,-,*,**,/,//,%,==,!=,&lt;,&lt;=,&gt;,&gt;="</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>counter <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="cf">while</span> counter <span class="op">&lt;=</span> <span class="dv">3</span>:</span>
+<span id="cb4-4"><a href="#cb4-4"></a>    <span class="cf">try</span>:</span>
+<span id="cb4-5"><a href="#cb4-5"></a>        n1 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"n1: "</span>)</span>
+<span id="cb4-6"><a href="#cb4-6"></a>        <span class="cf">if</span> n1 <span class="op">==</span> <span class="st">"exit"</span>:</span>
+<span id="cb4-7"><a href="#cb4-7"></a>            <span class="cf">break</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a></span>
+<span id="cb4-9"><a href="#cb4-9"></a>        n1 <span class="op">=</span> <span class="bu">float</span>(n1)</span>
+<span id="cb4-10"><a href="#cb4-10"></a>        n2 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"n2: "</span>)</span>
+<span id="cb4-11"><a href="#cb4-11"></a>        n2 <span class="op">=</span> <span class="bu">float</span>(n2)</span>
+<span id="cb4-12"><a href="#cb4-12"></a>        op <span class="op">=</span> <span class="bu">input</span>(<span class="ss">f"op: "</span>)</span>
+<span id="cb4-13"><a href="#cb4-13"></a></span>
+<span id="cb4-14"><a href="#cb4-14"></a>        <span class="cf">if</span> op <span class="op">==</span> <span class="st">"edit"</span>:</span>
+<span id="cb4-15"><a href="#cb4-15"></a>            <span class="cf">continue</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a></span>
+<span id="cb4-17"><a href="#cb4-17"></a>        <span class="cf">if</span> op <span class="kw">not</span> <span class="kw">in</span> valid_op.split(<span class="st">","</span>):</span>
+<span id="cb4-18"><a href="#cb4-18"></a>            <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> is not valid operator!"</span>)</span>
+<span id="cb4-19"><a href="#cb4-19"></a>            <span class="bu">print</span>(<span class="ss">f"(</span><span class="sc">{</span>valid_op<span class="sc">}</span><span class="ss">)"</span>)</span>
+<span id="cb4-20"><a href="#cb4-20"></a>            <span class="cf">continue</span></span>
+<span id="cb4-21"><a href="#cb4-21"></a></span>
+<span id="cb4-22"><a href="#cb4-22"></a>        n1_op_n2 <span class="op">=</span> {</span>
+<span id="cb4-23"><a href="#cb4-23"></a>            <span class="st">"+"</span>: n1 <span class="op">+</span> n2,</span>
+<span id="cb4-24"><a href="#cb4-24"></a>            <span class="st">"-"</span>: n1 <span class="op">-</span> n2,</span>
+<span id="cb4-25"><a href="#cb4-25"></a>            <span class="st">"*"</span>: n1 <span class="op">*</span> n2,</span>
+<span id="cb4-26"><a href="#cb4-26"></a>            <span class="st">"**"</span>: n1<span class="op">**</span>n2,</span>
+<span id="cb4-27"><a href="#cb4-27"></a>            <span class="st">"/"</span>: n1 <span class="op">/</span> n2,</span>
+<span id="cb4-28"><a href="#cb4-28"></a>            <span class="st">"//"</span>: n1 <span class="op">//</span> n2,</span>
+<span id="cb4-29"><a href="#cb4-29"></a>            <span class="st">"%"</span>: n1 <span class="op">%</span> n2,</span>
+<span id="cb4-30"><a href="#cb4-30"></a>            <span class="st">"=="</span>: n1 <span class="op">==</span> n2,</span>
+<span id="cb4-31"><a href="#cb4-31"></a>            <span class="st">"!="</span>: n1 <span class="op">!=</span> n2,</span>
+<span id="cb4-32"><a href="#cb4-32"></a>            <span class="st">"&lt;"</span>: n1 <span class="op">&lt;</span> n2,</span>
+<span id="cb4-33"><a href="#cb4-33"></a>            <span class="st">"&lt;="</span>: n1 <span class="op">&lt;=</span> n2,</span>
+<span id="cb4-34"><a href="#cb4-34"></a>            <span class="st">"&gt;"</span>: n1 <span class="op">&gt;</span> n2,</span>
+<span id="cb4-35"><a href="#cb4-35"></a>            <span class="st">"&gt;="</span>: n1 <span class="op">&gt;=</span> n2,</span>
+<span id="cb4-36"><a href="#cb4-36"></a>        }</span>
+<span id="cb4-37"><a href="#cb4-37"></a></span>
+<span id="cb4-38"><a href="#cb4-38"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>n1<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>n2<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>n1_op_n2[op]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb4-39"><a href="#cb4-39"></a>        counter <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb4-40"><a href="#cb4-40"></a></span>
+<span id="cb4-41"><a href="#cb4-41"></a>    <span class="cf">except</span> <span class="pp">ZeroDivisionError</span>:</span>
+<span id="cb4-42"><a href="#cb4-42"></a>        <span class="bu">print</span>(<span class="ss">f"ZeroDivisionError: </span><span class="sc">{</span>n1<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>n2<span class="sc">}</span><span class="ss"> is not valid output"</span>)</span>
+<span id="cb4-43"><a href="#cb4-43"></a>    <span class="cf">except</span> <span class="pp">ValueError</span>:</span>
+<span id="cb4-44"><a href="#cb4-44"></a>        <span class="bu">print</span>(<span class="st">"ValueError: Please enter just number for n1 and n2!"</span>)</span>
+<span id="cb4-45"><a href="#cb4-45"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb4-46"><a href="#cb4-46"></a>        <span class="bu">print</span>(<span class="ss">f"Error: </span><span class="sc">{</span><span class="bu">str</span>(e)<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="تابع" class="level2">
+<h2 class="anchored" data-anchor-id="تابع">تابع</h2>
+<p>یک برنامه بنویسید که:</p>
+<ul>
+<li>از کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند.</li>
+<li>برای عملگرهایی که وجود ندارن یک پیام برای کاربر چاپ کند.</li>
+<li>خطای تقسیم بر صفر را به طور خاص مدیریت کند.</li>
+<li>برای باقی خطاها یک پیام متناسب با نوع خطا چاپ کند.</li>
+<li>بعد از چاپ خروجی دوباره بتواند حداکثر ۳ بار ورودی جدید از کاربر دریافت کند. دقت کنید که در صورت انجام عملیات بدون تعداد دفعات محاسبه شود.</li>
+<li>با نوشتن exit در ورودی اول از برنامه خارج شود.</li>
+<li>برای اصلاح ورودی‌ها اگر در ورودی عملگر عبارت edit وارد شود تا ورودی دوباره دریافت شود.</li>
+<li>یک تابع برای ثبت تاریخچه هر رویداد بنویسید</li>
+<li>در هنگام بسته شدن برنامه، تاریخچه را از آخر به اول چاپ کنید.</li>
+<li>برنامه را به گونه‌ای بنویسید که اگر فایل برنامه به صورت مستقیم اجرا شود برنامه اجرا شود.</li>
+</ul>
+<div id="933ff9cc" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>کد</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>history <span class="op">=</span> []</span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="kw">def</span> save_event(event):</span>
+<span id="cb5-5"><a href="#cb5-5"></a>    history.append(event)</span>
+<span id="cb5-6"><a href="#cb5-6"></a>    <span class="bu">print</span>(event)</span>
+<span id="cb5-7"><a href="#cb5-7"></a></span>
+<span id="cb5-8"><a href="#cb5-8"></a></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="kw">def</span> print_events():</span>
+<span id="cb5-10"><a href="#cb5-10"></a>    <span class="cf">for</span> event <span class="kw">in</span> history[::<span class="op">-</span><span class="dv">1</span>]:</span>
+<span id="cb5-11"><a href="#cb5-11"></a>        <span class="bu">print</span>(event)</span>
+<span id="cb5-12"><a href="#cb5-12"></a></span>
+<span id="cb5-13"><a href="#cb5-13"></a></span>
+<span id="cb5-14"><a href="#cb5-14"></a><span class="kw">def</span> pretty_text(text, symbol<span class="op">=</span><span class="st">"="</span>):</span>
+<span id="cb5-15"><a href="#cb5-15"></a>    <span class="cf">return</span> <span class="ss">f"&lt;&lt; </span><span class="sc">{</span>text<span class="sc">}</span><span class="ss"> &gt;&gt;"</span>.center(<span class="dv">20</span>, symbol)</span>
+<span id="cb5-16"><a href="#cb5-16"></a></span>
+<span id="cb5-17"><a href="#cb5-17"></a></span>
+<span id="cb5-18"><a href="#cb5-18"></a><span class="kw">def</span> opration(n1, n2, op):</span>
+<span id="cb5-19"><a href="#cb5-19"></a>    n1_op_n2 <span class="op">=</span> {</span>
+<span id="cb5-20"><a href="#cb5-20"></a>        <span class="st">"+"</span>: n1 <span class="op">+</span> n2,</span>
+<span id="cb5-21"><a href="#cb5-21"></a>        <span class="st">"-"</span>: n1 <span class="op">-</span> n2,</span>
+<span id="cb5-22"><a href="#cb5-22"></a>        <span class="st">"*"</span>: n1 <span class="op">*</span> n2,</span>
+<span id="cb5-23"><a href="#cb5-23"></a>        <span class="st">"**"</span>: n1<span class="op">**</span>n2,</span>
+<span id="cb5-24"><a href="#cb5-24"></a>        <span class="st">"/"</span>: n1 <span class="op">/</span> n2,</span>
+<span id="cb5-25"><a href="#cb5-25"></a>        <span class="st">"//"</span>: n1 <span class="op">//</span> n2,</span>
+<span id="cb5-26"><a href="#cb5-26"></a>        <span class="st">"%"</span>: n1 <span class="op">%</span> n2,</span>
+<span id="cb5-27"><a href="#cb5-27"></a>        <span class="st">"=="</span>: n1 <span class="op">==</span> n2,</span>
+<span id="cb5-28"><a href="#cb5-28"></a>        <span class="st">"!="</span>: n1 <span class="op">!=</span> n2,</span>
+<span id="cb5-29"><a href="#cb5-29"></a>        <span class="st">"&lt;"</span>: n1 <span class="op">&lt;</span> n2,</span>
+<span id="cb5-30"><a href="#cb5-30"></a>        <span class="st">"&lt;="</span>: n1 <span class="op">&lt;=</span> n2,</span>
+<span id="cb5-31"><a href="#cb5-31"></a>        <span class="st">"&gt;"</span>: n1 <span class="op">&gt;</span> n2,</span>
+<span id="cb5-32"><a href="#cb5-32"></a>        <span class="st">"&gt;="</span>: n1 <span class="op">&gt;=</span> n2,</span>
+<span id="cb5-33"><a href="#cb5-33"></a>    }</span>
+<span id="cb5-34"><a href="#cb5-34"></a></span>
+<span id="cb5-35"><a href="#cb5-35"></a>    <span class="cf">return</span> <span class="ss">f"</span><span class="sc">{</span>n1<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>n2<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>n1_op_n2[op]<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb5-36"><a href="#cb5-36"></a></span>
+<span id="cb5-37"><a href="#cb5-37"></a></span>
+<span id="cb5-38"><a href="#cb5-38"></a><span class="kw">def</span> main():</span>
+<span id="cb5-39"><a href="#cb5-39"></a>    save_event(pretty_text(<span class="st">"Start"</span>))</span>
+<span id="cb5-40"><a href="#cb5-40"></a>    counter <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb5-41"><a href="#cb5-41"></a>    <span class="cf">while</span> counter <span class="op">&lt;=</span> <span class="dv">3</span>:</span>
+<span id="cb5-42"><a href="#cb5-42"></a>        <span class="bu">print</span>(pretty_text(<span class="st">"Input"</span>, <span class="st">"-"</span>))</span>
+<span id="cb5-43"><a href="#cb5-43"></a>        <span class="cf">try</span>:</span>
+<span id="cb5-44"><a href="#cb5-44"></a>            n1 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"n1: "</span>)</span>
+<span id="cb5-45"><a href="#cb5-45"></a>            <span class="cf">if</span> n1 <span class="op">==</span> <span class="st">"exit"</span>:</span>
+<span id="cb5-46"><a href="#cb5-46"></a>                save_event(pretty_text(<span class="st">"Exit"</span>))</span>
+<span id="cb5-47"><a href="#cb5-47"></a>                <span class="cf">break</span></span>
+<span id="cb5-48"><a href="#cb5-48"></a></span>
+<span id="cb5-49"><a href="#cb5-49"></a>            n1 <span class="op">=</span> <span class="bu">float</span>(n1)</span>
+<span id="cb5-50"><a href="#cb5-50"></a>            n2 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"n2: "</span>)</span>
+<span id="cb5-51"><a href="#cb5-51"></a>            n2 <span class="op">=</span> <span class="bu">float</span>(n2)</span>
+<span id="cb5-52"><a href="#cb5-52"></a>            op <span class="op">=</span> <span class="bu">input</span>(<span class="ss">f"op: "</span>)</span>
+<span id="cb5-53"><a href="#cb5-53"></a></span>
+<span id="cb5-54"><a href="#cb5-54"></a>            <span class="cf">if</span> op <span class="op">==</span> <span class="st">"edit"</span>:</span>
+<span id="cb5-55"><a href="#cb5-55"></a>                save_event(pretty_text(<span class="st">"Edit"</span>))</span>
+<span id="cb5-56"><a href="#cb5-56"></a>                <span class="cf">continue</span></span>
+<span id="cb5-57"><a href="#cb5-57"></a></span>
+<span id="cb5-58"><a href="#cb5-58"></a>            valid_op <span class="op">=</span> <span class="st">"+,-,*,**,/,//,%,==,!=,&lt;,&lt;=,&gt;,&gt;="</span></span>
+<span id="cb5-59"><a href="#cb5-59"></a>            <span class="cf">if</span> op <span class="kw">not</span> <span class="kw">in</span> valid_op.split(<span class="st">","</span>):</span>
+<span id="cb5-60"><a href="#cb5-60"></a>                save_event(<span class="ss">f"</span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> is not valid operator! (</span><span class="sc">{</span>valid_op<span class="sc">}</span><span class="ss">)"</span>)</span>
+<span id="cb5-61"><a href="#cb5-61"></a>                <span class="cf">continue</span></span>
+<span id="cb5-62"><a href="#cb5-62"></a></span>
+<span id="cb5-63"><a href="#cb5-63"></a>            save_event(<span class="ss">f"</span><span class="sc">{</span>counter<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>opration(n1, n2, op)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-64"><a href="#cb5-64"></a>            counter <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb5-65"><a href="#cb5-65"></a></span>
+<span id="cb5-66"><a href="#cb5-66"></a>        <span class="cf">except</span> <span class="pp">ZeroDivisionError</span>:</span>
+<span id="cb5-67"><a href="#cb5-67"></a>            save_event(<span class="ss">f"ZeroDivisionError: </span><span class="sc">{</span>n1<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>n2<span class="sc">}</span><span class="ss"> is not valid output"</span>)</span>
+<span id="cb5-68"><a href="#cb5-68"></a>        <span class="cf">except</span> <span class="pp">ValueError</span>:</span>
+<span id="cb5-69"><a href="#cb5-69"></a>            save_event(<span class="st">"ValueError: Please enter number for n1 and n2!"</span>)</span>
+<span id="cb5-70"><a href="#cb5-70"></a>        <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb5-71"><a href="#cb5-71"></a>            save_event(<span class="ss">f"Error: </span><span class="sc">{</span><span class="bu">str</span>(e)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-72"><a href="#cb5-72"></a></span>
+<span id="cb5-73"><a href="#cb5-73"></a>    save_event(pretty_text(<span class="st">"End"</span>))</span>
+<span id="cb5-74"><a href="#cb5-74"></a></span>
+<span id="cb5-75"><a href="#cb5-75"></a></span>
+<span id="cb5-76"><a href="#cb5-76"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb5-77"><a href="#cb5-77"></a>    main()</span>
+<span id="cb5-78"><a href="#cb5-78"></a>    print_events()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 </div>
 </section>
 <section id="رابط-گرافیکی" class="level2">
 <h2 class="anchored" data-anchor-id="رابط-گرافیکی">رابط گرافیکی</h2>
+<p>یک برنامه گرافیکی بنویسید که:</p>
 <ul>
-<li>عملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.</li>
+<li>از کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند. برچسب و ورودی هر بخش در یک ردیف باشد و حاصل با یک دکمه در پنجره نمایش داده شود.</li>
+<li>تمام خطاهای ممکن با پیام مناسب در یک جعبه پیام نمایش داده شود.</li>
+<li>یک دکمه برای خروج درنظر گرفته شود.</li>
+<li>تاریخچه را در یک لیست باکس از آخر به اول نمایش دهد.</li>
+<li>یک دکمه برای پاک کردن تاریخچه انتخاب شده در لیست باکس در نظر گرفته شود..</li>
 </ul>
-<div id="a000d76d" class="cell" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate():</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        n1 <span class="op">=</span> <span class="bu">float</span>(entry1.get())</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        n2 <span class="op">=</span> <span class="bu">float</span>(entry2.get())</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        op <span class="op">=</span> operator.get()</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> op <span class="op">==</span> <span class="st">"+"</span>:</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> n1 <span class="op">+</span> n2</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"-"</span>:</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> n1 <span class="op">-</span> n2</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"*"</span>:</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> n1 <span class="op">*</span> n2</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> op <span class="op">==</span> <span class="st">"/"</span>:</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> n2 <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>                result_label.config(text<span class="op">=</span><span class="st">"خطا: تقسیم بر صفر!"</span>)</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span></span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> n1 <span class="op">/</span> n2</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>            result_label.config(text<span class="op">=</span><span class="st">"عملگر نامعتبر است"</span>)</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span></span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>        result_label.config(text<span class="op">=</span><span class="ss">f"نتیجه: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">ValueError</span>:</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>        result_label.config(text<span class="op">=</span><span class="st">"لطفاً فقط عدد وارد کنید"</span>)</span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>window.title(<span class="st">"ماشین حساب ساده"</span>)</span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>window.geometry(<span class="st">"300x250"</span>)</span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>label1 <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عدد اول:"</span>)</span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>entry1 <span class="op">=</span> tk.Entry(window)</span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>label2 <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عدد دوم:"</span>)</span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>entry2 <span class="op">=</span> tk.Entry(window)</span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>label_op <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"عملگر (+ - * /):"</span>)</span>
-<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>operator <span class="op">=</span> tk.Entry(window)</span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>calc_button <span class="op">=</span> tk.Button(window, text<span class="op">=</span><span class="st">"محاسبه"</span>, command<span class="op">=</span>calculate)</span>
-<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>result_label <span class="op">=</span> tk.Label(window, text<span class="op">=</span><span class="st">"نتیجه: "</span>, fg<span class="op">=</span><span class="st">"blue"</span>)</span>
-<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>label1.pack()</span>
-<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a>entry1.pack()</span>
-<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>label2.pack()</span>
-<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>entry2.pack()</span>
-<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a>label_op.pack()</span>
-<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a>operator.pack()</span>
-<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a>calc_button.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a>result_label.pack()</span>
-<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="f586fd13" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>کد</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="im">from</span> tkinter <span class="im">import</span> messagebox</span>
+<span id="cb6-3"><a href="#cb6-3"></a></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="co"># =========== Variables ================</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="bu">vars</span> <span class="op">=</span> {</span>
+<span id="cb6-6"><a href="#cb6-6"></a>    <span class="st">"counter"</span>: <span class="dv">1</span>,</span>
+<span id="cb6-7"><a href="#cb6-7"></a>    <span class="st">"valid_op"</span>: <span class="st">"+,-,*,**,/,//,%,==,!=,&lt;,&lt;=,&gt;,&gt;="</span>,</span>
+<span id="cb6-8"><a href="#cb6-8"></a>}</span>
+<span id="cb6-9"><a href="#cb6-9"></a></span>
+<span id="cb6-10"><a href="#cb6-10"></a></span>
+<span id="cb6-11"><a href="#cb6-11"></a><span class="co"># =========== Functions ================</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a><span class="kw">def</span> save_event(event):</span>
+<span id="cb6-13"><a href="#cb6-13"></a>    lbl_rsl.config(text<span class="op">=</span>event)</span>
+<span id="cb6-14"><a href="#cb6-14"></a>    lst_hst.insert(<span class="dv">0</span>, event)</span>
+<span id="cb6-15"><a href="#cb6-15"></a></span>
+<span id="cb6-16"><a href="#cb6-16"></a></span>
+<span id="cb6-17"><a href="#cb6-17"></a><span class="kw">def</span> showerror(title, msg):</span>
+<span id="cb6-18"><a href="#cb6-18"></a>    save_event(<span class="ss">f"</span><span class="sc">{</span>title<span class="sc">}</span><span class="ss">:</span><span class="ch">\n</span><span class="sc">{</span>msg<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb6-19"><a href="#cb6-19"></a>    messagebox.showerror(title<span class="op">=</span>title, message<span class="op">=</span>msg)</span>
+<span id="cb6-20"><a href="#cb6-20"></a></span>
+<span id="cb6-21"><a href="#cb6-21"></a></span>
+<span id="cb6-22"><a href="#cb6-22"></a><span class="kw">def</span> clear_entries():</span>
+<span id="cb6-23"><a href="#cb6-23"></a>    ntr_n1.delete(<span class="dv">0</span>, tk.END)</span>
+<span id="cb6-24"><a href="#cb6-24"></a>    ntr_n2.delete(<span class="dv">0</span>, tk.END)</span>
+<span id="cb6-25"><a href="#cb6-25"></a>    ntr_op.delete(<span class="dv">0</span>, tk.END)</span>
+<span id="cb6-26"><a href="#cb6-26"></a></span>
+<span id="cb6-27"><a href="#cb6-27"></a></span>
+<span id="cb6-28"><a href="#cb6-28"></a><span class="kw">def</span> clear_events():</span>
+<span id="cb6-29"><a href="#cb6-29"></a>    lst_hst.delete(<span class="dv">0</span>, tk.END)</span>
+<span id="cb6-30"><a href="#cb6-30"></a></span>
+<span id="cb6-31"><a href="#cb6-31"></a></span>
+<span id="cb6-32"><a href="#cb6-32"></a><span class="kw">def</span> selection(event):</span>
+<span id="cb6-33"><a href="#cb6-33"></a>    selection <span class="op">=</span> lst_hst.curselection()</span>
+<span id="cb6-34"><a href="#cb6-34"></a>    index <span class="op">=</span> selection[<span class="dv">0</span>]</span>
+<span id="cb6-35"><a href="#cb6-35"></a>    lbl_rsl.config(text<span class="op">=</span>lst_hst.get(index))</span>
+<span id="cb6-36"><a href="#cb6-36"></a></span>
+<span id="cb6-37"><a href="#cb6-37"></a></span>
+<span id="cb6-38"><a href="#cb6-38"></a><span class="kw">def</span> remove():</span>
+<span id="cb6-39"><a href="#cb6-39"></a>    selection <span class="op">=</span> lst_hst.curselection()</span>
+<span id="cb6-40"><a href="#cb6-40"></a>    <span class="cf">if</span> <span class="kw">not</span> selection:</span>
+<span id="cb6-41"><a href="#cb6-41"></a>        <span class="cf">return</span></span>
+<span id="cb6-42"><a href="#cb6-42"></a></span>
+<span id="cb6-43"><a href="#cb6-43"></a>    index <span class="op">=</span> selection[<span class="dv">0</span>]</span>
+<span id="cb6-44"><a href="#cb6-44"></a>    lst_hst.delete(index)</span>
+<span id="cb6-45"><a href="#cb6-45"></a></span>
+<span id="cb6-46"><a href="#cb6-46"></a></span>
+<span id="cb6-47"><a href="#cb6-47"></a><span class="kw">def</span> close():</span>
+<span id="cb6-48"><a href="#cb6-48"></a>    root.destroy()</span>
+<span id="cb6-49"><a href="#cb6-49"></a></span>
+<span id="cb6-50"><a href="#cb6-50"></a></span>
+<span id="cb6-51"><a href="#cb6-51"></a><span class="kw">def</span> opration(n1, n2, op):</span>
+<span id="cb6-52"><a href="#cb6-52"></a>    n1_op_n2 <span class="op">=</span> {</span>
+<span id="cb6-53"><a href="#cb6-53"></a>        <span class="st">"+"</span>: n1 <span class="op">+</span> n2,</span>
+<span id="cb6-54"><a href="#cb6-54"></a>        <span class="st">"-"</span>: n1 <span class="op">-</span> n2,</span>
+<span id="cb6-55"><a href="#cb6-55"></a>        <span class="st">"*"</span>: n1 <span class="op">*</span> n2,</span>
+<span id="cb6-56"><a href="#cb6-56"></a>        <span class="st">"**"</span>: n1<span class="op">**</span>n2,</span>
+<span id="cb6-57"><a href="#cb6-57"></a>        <span class="st">"/"</span>: n1 <span class="op">/</span> n2,</span>
+<span id="cb6-58"><a href="#cb6-58"></a>        <span class="st">"//"</span>: n1 <span class="op">//</span> n2,</span>
+<span id="cb6-59"><a href="#cb6-59"></a>        <span class="st">"%"</span>: n1 <span class="op">%</span> n2,</span>
+<span id="cb6-60"><a href="#cb6-60"></a>        <span class="st">"=="</span>: n1 <span class="op">==</span> n2,</span>
+<span id="cb6-61"><a href="#cb6-61"></a>        <span class="st">"!="</span>: n1 <span class="op">!=</span> n2,</span>
+<span id="cb6-62"><a href="#cb6-62"></a>        <span class="st">"&lt;"</span>: n1 <span class="op">&lt;</span> n2,</span>
+<span id="cb6-63"><a href="#cb6-63"></a>        <span class="st">"&lt;="</span>: n1 <span class="op">&lt;=</span> n2,</span>
+<span id="cb6-64"><a href="#cb6-64"></a>        <span class="st">"&gt;"</span>: n1 <span class="op">&gt;</span> n2,</span>
+<span id="cb6-65"><a href="#cb6-65"></a>        <span class="st">"&gt;="</span>: n1 <span class="op">&gt;=</span> n2,</span>
+<span id="cb6-66"><a href="#cb6-66"></a>    }</span>
+<span id="cb6-67"><a href="#cb6-67"></a></span>
+<span id="cb6-68"><a href="#cb6-68"></a>    <span class="cf">return</span> <span class="ss">f"</span><span class="sc">{</span>n1<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>n2<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>n1_op_n2[op]<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb6-69"><a href="#cb6-69"></a></span>
+<span id="cb6-70"><a href="#cb6-70"></a></span>
+<span id="cb6-71"><a href="#cb6-71"></a><span class="kw">def</span> calculate():</span>
+<span id="cb6-72"><a href="#cb6-72"></a>    <span class="cf">try</span>:</span>
+<span id="cb6-73"><a href="#cb6-73"></a>        n1 <span class="op">=</span> ntr_n1.get()</span>
+<span id="cb6-74"><a href="#cb6-74"></a>        n1 <span class="op">=</span> <span class="bu">float</span>(n1)</span>
+<span id="cb6-75"><a href="#cb6-75"></a>        n2 <span class="op">=</span> ntr_n2.get()</span>
+<span id="cb6-76"><a href="#cb6-76"></a>        n2 <span class="op">=</span> <span class="bu">float</span>(n2)</span>
+<span id="cb6-77"><a href="#cb6-77"></a>        op <span class="op">=</span> ntr_op.get()</span>
+<span id="cb6-78"><a href="#cb6-78"></a></span>
+<span id="cb6-79"><a href="#cb6-79"></a>        <span class="cf">if</span> op <span class="kw">not</span> <span class="kw">in</span> <span class="bu">vars</span>[<span class="st">"valid_op"</span>].split(<span class="st">","</span>):</span>
+<span id="cb6-80"><a href="#cb6-80"></a>            title <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> عملگر معتبر نیست!"</span></span>
+<span id="cb6-81"><a href="#cb6-81"></a>            msg <span class="op">=</span> <span class="ss">f"عملگرهای معتبر: "</span> <span class="op">+</span> <span class="bu">vars</span>[<span class="st">"valid_op"</span>]</span>
+<span id="cb6-82"><a href="#cb6-82"></a>            showerror(title, msg)</span>
+<span id="cb6-83"><a href="#cb6-83"></a>            <span class="cf">return</span></span>
+<span id="cb6-84"><a href="#cb6-84"></a></span>
+<span id="cb6-85"><a href="#cb6-85"></a>        title <span class="op">=</span> <span class="bu">vars</span>[<span class="st">"counter"</span>]</span>
+<span id="cb6-86"><a href="#cb6-86"></a>        msg <span class="op">=</span> opration(n1, n2, op)</span>
+<span id="cb6-87"><a href="#cb6-87"></a>        save_event(<span class="ss">f"</span><span class="sc">{</span>title<span class="sc">}</span><span class="ss">:</span><span class="ch">\n</span><span class="sc">{</span>msg<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb6-88"><a href="#cb6-88"></a>        <span class="bu">vars</span>[<span class="st">"counter"</span>] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb6-89"><a href="#cb6-89"></a></span>
+<span id="cb6-90"><a href="#cb6-90"></a>    <span class="cf">except</span> <span class="pp">ZeroDivisionError</span>:</span>
+<span id="cb6-91"><a href="#cb6-91"></a>        title <span class="op">=</span> <span class="ss">f"خطا تقسیم بر صفر"</span></span>
+<span id="cb6-92"><a href="#cb6-92"></a>        msg <span class="op">=</span> <span class="ss">f"حاصل </span><span class="sc">{</span>n1<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>n2<span class="sc">}</span><span class="ss"> تعریف نشده است!"</span></span>
+<span id="cb6-93"><a href="#cb6-93"></a>        showerror(title, msg)</span>
+<span id="cb6-94"><a href="#cb6-94"></a>    <span class="cf">except</span> <span class="pp">ValueError</span>:</span>
+<span id="cb6-95"><a href="#cb6-95"></a>        title <span class="op">=</span> <span class="ss">f"خطا مقدار"</span></span>
+<span id="cb6-96"><a href="#cb6-96"></a>        msg <span class="op">=</span> <span class="ss">f"لطفا مقدار معتبر وارد کنید!"</span></span>
+<span id="cb6-97"><a href="#cb6-97"></a>        showerror(title, msg)</span>
+<span id="cb6-98"><a href="#cb6-98"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb6-99"><a href="#cb6-99"></a>        title <span class="op">=</span> <span class="ss">f"خطا"</span></span>
+<span id="cb6-100"><a href="#cb6-100"></a>        msg <span class="op">=</span> <span class="bu">str</span>(e)</span>
+<span id="cb6-101"><a href="#cb6-101"></a>        showerror(title, msg)</span>
+<span id="cb6-102"><a href="#cb6-102"></a></span>
+<span id="cb6-103"><a href="#cb6-103"></a></span>
+<span id="cb6-104"><a href="#cb6-104"></a><span class="co"># ===========    GUI    ================</span></span>
+<span id="cb6-105"><a href="#cb6-105"></a>root <span class="op">=</span> tk.Tk()</span>
+<span id="cb6-106"><a href="#cb6-106"></a>root.title(<span class="st">"ماشین حساب"</span>)</span>
+<span id="cb6-107"><a href="#cb6-107"></a>root.geometry(<span class="st">"400x400"</span>)</span>
+<span id="cb6-108"><a href="#cb6-108"></a></span>
+<span id="cb6-109"><a href="#cb6-109"></a>frm_n1 <span class="op">=</span> tk.Frame(root)</span>
+<span id="cb6-110"><a href="#cb6-110"></a>frm_n1.pack(pady<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb6-111"><a href="#cb6-111"></a>lbl_n1 <span class="op">=</span> tk.Label(frm_n1, text<span class="op">=</span><span class="st">"عدد اول:"</span>)</span>
+<span id="cb6-112"><a href="#cb6-112"></a>lbl_n1.pack(side<span class="op">=</span><span class="st">"right"</span>, padx<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb6-113"><a href="#cb6-113"></a>ntr_n1 <span class="op">=</span> tk.Entry(frm_n1)</span>
+<span id="cb6-114"><a href="#cb6-114"></a>ntr_n1.pack(side<span class="op">=</span><span class="st">"right"</span>, padx<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb6-115"><a href="#cb6-115"></a></span>
+<span id="cb6-116"><a href="#cb6-116"></a>frm_n2 <span class="op">=</span> tk.Frame(root)</span>
+<span id="cb6-117"><a href="#cb6-117"></a>frm_n2.pack(pady<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb6-118"><a href="#cb6-118"></a>lbl_n2 <span class="op">=</span> tk.Label(frm_n2, text<span class="op">=</span><span class="st">"عدد دوم:"</span>)</span>
+<span id="cb6-119"><a href="#cb6-119"></a>lbl_n2.pack(side<span class="op">=</span><span class="st">"right"</span>, padx<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb6-120"><a href="#cb6-120"></a>ntr_n2 <span class="op">=</span> tk.Entry(frm_n2)</span>
+<span id="cb6-121"><a href="#cb6-121"></a>ntr_n2.pack(side<span class="op">=</span><span class="st">"right"</span>, padx<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb6-122"><a href="#cb6-122"></a></span>
+<span id="cb6-123"><a href="#cb6-123"></a>frm_op <span class="op">=</span> tk.Frame(root)</span>
+<span id="cb6-124"><a href="#cb6-124"></a>frm_op.pack(pady<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb6-125"><a href="#cb6-125"></a>lbl_op <span class="op">=</span> tk.Label(frm_op, text<span class="op">=</span><span class="st">"عملگر:"</span>)</span>
+<span id="cb6-126"><a href="#cb6-126"></a>lbl_op.pack(side<span class="op">=</span><span class="st">"right"</span>, padx<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb6-127"><a href="#cb6-127"></a>ntr_op <span class="op">=</span> tk.Entry(frm_op)</span>
+<span id="cb6-128"><a href="#cb6-128"></a>ntr_op.pack(side<span class="op">=</span><span class="st">"right"</span>, padx<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb6-129"><a href="#cb6-129"></a></span>
+<span id="cb6-130"><a href="#cb6-130"></a>tk.Button(</span>
+<span id="cb6-131"><a href="#cb6-131"></a>    root,</span>
+<span id="cb6-132"><a href="#cb6-132"></a>    text<span class="op">=</span><span class="st">"محاسبه"</span>,</span>
+<span id="cb6-133"><a href="#cb6-133"></a>    command<span class="op">=</span>calculate,</span>
+<span id="cb6-134"><a href="#cb6-134"></a>).pack(pady<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb6-135"><a href="#cb6-135"></a></span>
+<span id="cb6-136"><a href="#cb6-136"></a>lbl_rsl <span class="op">=</span> tk.Label(root, text<span class="op">=</span><span class="st">"---"</span>)</span>
+<span id="cb6-137"><a href="#cb6-137"></a>lbl_rsl.pack(pady<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb6-138"><a href="#cb6-138"></a></span>
+<span id="cb6-139"><a href="#cb6-139"></a></span>
+<span id="cb6-140"><a href="#cb6-140"></a>frm_lst <span class="op">=</span> tk.Frame(root)</span>
+<span id="cb6-141"><a href="#cb6-141"></a>frm_lst.pack(padx<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb6-142"><a href="#cb6-142"></a>scb <span class="op">=</span> tk.Scrollbar(</span>
+<span id="cb6-143"><a href="#cb6-143"></a>    frm_lst,</span>
+<span id="cb6-144"><a href="#cb6-144"></a>    cursor<span class="op">=</span><span class="st">"hand1"</span>,</span>
+<span id="cb6-145"><a href="#cb6-145"></a>)</span>
+<span id="cb6-146"><a href="#cb6-146"></a>scb.pack(side<span class="op">=</span><span class="st">"right"</span>, fill<span class="op">=</span><span class="st">"y"</span>, pady<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb6-147"><a href="#cb6-147"></a>lst_hst <span class="op">=</span> tk.Listbox(</span>
+<span id="cb6-148"><a href="#cb6-148"></a>    frm_lst,</span>
+<span id="cb6-149"><a href="#cb6-149"></a>    height<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb6-150"><a href="#cb6-150"></a>    width<span class="op">=</span><span class="dv">50</span>,</span>
+<span id="cb6-151"><a href="#cb6-151"></a>    yscrollcommand<span class="op">=</span>scb.<span class="bu">set</span>,</span>
+<span id="cb6-152"><a href="#cb6-152"></a>)</span>
+<span id="cb6-153"><a href="#cb6-153"></a>lst_hst.bind(<span class="st">"&lt;Double-1&gt;"</span>, selection)</span>
+<span id="cb6-154"><a href="#cb6-154"></a>lst_hst.pack(side<span class="op">=</span><span class="st">"right"</span>, pady<span class="op">=</span><span class="dv">5</span>, padx<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb6-155"><a href="#cb6-155"></a>scb.config(command<span class="op">=</span>lst_hst.yview)</span>
+<span id="cb6-156"><a href="#cb6-156"></a></span>
+<span id="cb6-157"><a href="#cb6-157"></a>frm_btn <span class="op">=</span> tk.Frame(root)</span>
+<span id="cb6-158"><a href="#cb6-158"></a>frm_btn.pack(pady<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb6-159"><a href="#cb6-159"></a></span>
+<span id="cb6-160"><a href="#cb6-160"></a>tk.Button(</span>
+<span id="cb6-161"><a href="#cb6-161"></a>    frm_btn,</span>
+<span id="cb6-162"><a href="#cb6-162"></a>    text<span class="op">=</span><span class="st">"حذف رویداد"</span>,</span>
+<span id="cb6-163"><a href="#cb6-163"></a>    command<span class="op">=</span>remove,</span>
+<span id="cb6-164"><a href="#cb6-164"></a>).pack(side<span class="op">=</span><span class="st">"right"</span>, padx<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb6-165"><a href="#cb6-165"></a>tk.Button(</span>
+<span id="cb6-166"><a href="#cb6-166"></a>    frm_btn,</span>
+<span id="cb6-167"><a href="#cb6-167"></a>    text<span class="op">=</span><span class="st">"حذف کل رویدادها"</span>,</span>
+<span id="cb6-168"><a href="#cb6-168"></a>    command<span class="op">=</span>clear_events,</span>
+<span id="cb6-169"><a href="#cb6-169"></a>).pack(side<span class="op">=</span><span class="st">"right"</span>, padx<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb6-170"><a href="#cb6-170"></a>tk.Button(</span>
+<span id="cb6-171"><a href="#cb6-171"></a>    frm_btn,</span>
+<span id="cb6-172"><a href="#cb6-172"></a>    text<span class="op">=</span><span class="st">"بستن"</span>,</span>
+<span id="cb6-173"><a href="#cb6-173"></a>    command<span class="op">=</span>close,</span>
+<span id="cb6-174"><a href="#cb6-174"></a>).pack(side<span class="op">=</span><span class="st">"right"</span>, padx<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb6-175"><a href="#cb6-175"></a></span>
+<span id="cb6-176"><a href="#cb6-176"></a>root.mainloop()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 </div>
+</section>
+<section id="فایل" class="level2">
+<h2 class="anchored" data-anchor-id="فایل">فایل</h2>
+<p>یک برنامه گرافیکی بنویسید که:</p>
+<ul>
+<li>از کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند.</li>
+<li>برای عملگرهایی که وجود ندارن یک پیام برای کاربر چاپ کند.</li>
+<li>خطای تقسیم بر صفر را به طور خاص مدیریت کند.</li>
+<li>برای باقی خطاها یک پیام متناسب با نوع خطا چاپ کند.</li>
+<li>یک دکمه برای خروج درنظر بگیرید.</li>
+<li>یک تابع برای ثبت تاریخچه هر رویداد بنویسید</li>
+<li>تاریخچه را در یک لیست باکس از آخر به اول چاپ کنید.</li>
+<li>یک دکمه برای پاک کردن تاریخچه وقتی آنرا انتخاب کرده است در نظر بگیرید.</li>
+<li>تغییرات تاریخچه در هنگام اجرای برنامه بارگذاری شود و در هنگام بسته شدن در فایل ثبت شود.</li>
+</ul>
 
 
 </section>
@@ -1327,8 +1655,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapter/project/counter.html" class="pagination-link" aria-label="گوسفند شمار">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">گوسفند شمار</span></span>
+      <a href="../../chapter/project/project.html" class="pagination-link" aria-label="پروژه">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">پروژه</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

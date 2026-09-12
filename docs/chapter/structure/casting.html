@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -742,7 +737,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -766,10 +761,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>خود پایتون <strong>بدون دخالت برنامه‌نویس</strong> نوع رو تبدیل می‌کنه</li>
 <li>معمولاً در عملیات ریاضی بین انواع مختلف عددی رخ می‌ده</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span>        <span class="co"># int</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fl">2.5</span>      <span class="co"># float</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> x <span class="op">+</span> y</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(z, <span class="bu">type</span>(z))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>x <span class="op">=</span> <span class="dv">5</span>        <span class="co"># int</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>y <span class="op">=</span> <span class="fl">2.5</span>      <span class="co"># float</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>z <span class="op">=</span> x <span class="op">+</span> y</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="bu">print</span>(z, <span class="bu">type</span>(z))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>7.5 &lt;class 'float'&gt;</code></pre>
 <ul>
 <li>چون <span dir="ltr"><code>float</code></span> دقت بیشتری داره، پایتون <span dir="ltr"><code>int</code></span> رو به <span dir="ltr"><code>float</code></span> تبدیل می‌کنه تا اطلاعات از دست نره</li>
@@ -822,22 +817,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="st">"25"</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="bu">int</span>(a)          <span class="co"># str -&gt; int</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(b, <span class="bu">type</span>(b))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>a <span class="op">=</span> <span class="st">"25"</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>b <span class="op">=</span> <span class="bu">int</span>(a)          <span class="co"># str -&gt; int</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="bu">print</span>(b, <span class="bu">type</span>(b))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>25 &lt;class 'int'&gt;</code></pre>
 </section>
 <section id="مثالهای-ترکیبی" class="level2">
 <h2 class="anchored" data-anchor-id="مثالهای-ترکیبی">مثال‌های ترکیبی</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">int</span>(<span class="fl">3.99</span>))       <span class="co"># 3   -&gt; قطع اعشار (نه گرد کردن)</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">float</span>(<span class="st">"3.14"</span>))   <span class="co"># 3.14</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">str</span>(<span class="dv">100</span>))        <span class="co"># '100'</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">list</span>(<span class="st">"abc"</span>))     <span class="co"># ['a', 'b', 'c']</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">tuple</span>([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]))  <span class="co"># (1, 2, 3)</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="bu">print</span>(<span class="bu">int</span>(<span class="fl">3.99</span>))       <span class="co"># 3   -&gt; قطع اعشار (نه گرد کردن)</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="bu">print</span>(<span class="bu">float</span>(<span class="st">"3.14"</span>))   <span class="co"># 3.14</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="bu">print</span>(<span class="bu">str</span>(<span class="dv">100</span>))        <span class="co"># '100'</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="bu">print</span>(<span class="bu">list</span>(<span class="st">"abc"</span>))     <span class="co"># ['a', 'b', 'c']</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="bu">print</span>(<span class="bu">tuple</span>([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]))  <span class="co"># (1, 2, 3)</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="نکته-خطا-در-تبدیل-نامعتبر" class="level2">
 <h2 class="anchored" data-anchor-id="نکته-خطا-در-تبدیل-نامعتبر">نکته: خطا در تبدیل نامعتبر</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">int</span>(<span class="st">"hello"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="bu">int</span>(<span class="st">"hello"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>ValueError: invalid literal for int() with base 10: 'hello'</code></pre>
 <ul>
 <li>تبدیل صریح فقط وقتی کار می‌کنه که محتوا با نوع مقصد سازگار باشه (مثلاً رشته‌ای که واقعاً عدده)</li>

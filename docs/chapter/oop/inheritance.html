@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -743,7 +738,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -763,18 +758,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="تعریف-وراثت" class="level2">
 <h2 class="anchored" data-anchor-id="تعریف-وراثت">تعریف وراثت</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Animal:</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name):</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> makes a sound."</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog(Animal):    <span class="co"># Dog از Animal ارث می‌بره</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>d.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">class</span> Animal:</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name):</span>
+<span id="cb1-3"><a href="#cb1-3"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
+<span id="cb1-6"><a href="#cb1-6"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> makes a sound."</span>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="kw">class</span> Dog(Animal):</span>
+<span id="cb1-9"><a href="#cb1-9"></a>    <span class="cf">pass</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>)</span>
+<span id="cb1-12"><a href="#cb1-12"></a>d.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Rex makes a sound.</code></pre>
 <ul>
 <li><span dir="ltr"><code>Dog(Animal)</code></span> یعنی <span dir="ltr"><code>Dog</code></span> فرزند <span dir="ltr"><code>Animal</code></span> هست</li>
@@ -785,12 +780,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>کلاس فرزند می‌تونه متد کلاس والد رو با رفتار متفاوت بازنویسی کنه</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog(Animal):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> says: Woof!"</span>)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>d.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">class</span> Dog(Animal):</span>
+<span id="cb3-2"><a href="#cb3-2"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
+<span id="cb3-3"><a href="#cb3-3"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> says: Woof!"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6"></a>d.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Rex says: Woof!</code></pre>
 </section>
 <section id="استفاده-از-super" class="level2">
@@ -798,17 +793,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>برای فراخوانی متد کلاس والد از داخل کلاس فرزند (بدون بازنویسی کامل)</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog(Animal):</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, breed):</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>(name)     <span class="co"># فراخوانی __init__ کلاس والد</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.breed <span class="op">=</span> breed</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().speak()            <span class="co"># اجرای رفتار والد هم</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> says: Woof!"</span>)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>, <span class="st">"Labrador"</span>)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>d.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">class</span> Dog(Animal):</span>
+<span id="cb5-2"><a href="#cb5-2"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, breed):</span>
+<span id="cb5-3"><a href="#cb5-3"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>(name) </span>
+<span id="cb5-4"><a href="#cb5-4"></a>        <span class="va">self</span>.breed <span class="op">=</span> breed</span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
+<span id="cb5-7"><a href="#cb5-7"></a>        <span class="bu">super</span>().speak()</span>
+<span id="cb5-8"><a href="#cb5-8"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> says: Woof!"</span>)</span>
+<span id="cb5-9"><a href="#cb5-9"></a></span>
+<span id="cb5-10"><a href="#cb5-10"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>, <span class="st">"Labrador"</span>)</span>
+<span id="cb5-11"><a href="#cb5-11"></a>d.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Rex makes a sound.
 Rex says: Woof!</code></pre>
 </section>
@@ -818,14 +813,17 @@ Rex says: Woof!</code></pre>
 <li>یعنی اشیاء از کلاس‌های مختلف، با همون نام متد، رفتار متفاوتی نشون بدن</li>
 <li>کد می‌تونه با اشیاء مختلف به یک شکل کار کنه، بدون اینکه نوع دقیقشون رو بدونه</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Cat(Animal):</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> says: Meow!"</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>animals <span class="op">=</span> [Dog(<span class="st">"Rex"</span>, <span class="st">"Labrador"</span>), Cat(<span class="st">"Whiskers"</span>)]</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> a <span class="kw">in</span> animals:</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    a.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">class</span> Cat(Animal):</span>
+<span id="cb7-2"><a href="#cb7-2"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
+<span id="cb7-3"><a href="#cb7-3"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> says: Meow!"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4"></a></span>
+<span id="cb7-5"><a href="#cb7-5"></a>animals <span class="op">=</span> [</span>
+<span id="cb7-6"><a href="#cb7-6"></a>    Dog(<span class="st">"Rex"</span>, <span class="st">"Labrador"</span>),</span>
+<span id="cb7-7"><a href="#cb7-7"></a>    Cat(<span class="st">"Whiskers"</span>),</span>
+<span id="cb7-8"><a href="#cb7-8"></a>]</span>
+<span id="cb7-9"><a href="#cb7-9"></a></span>
+<span id="cb7-10"><a href="#cb7-10"></a><span class="cf">for</span> a <span class="kw">in</span> animals:</span>
+<span id="cb7-11"><a href="#cb7-11"></a>    a.speak()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Rex says: Woof!
 Whiskers says: Meow!</code></pre>
 <ul>
@@ -856,20 +854,22 @@ Whiskers says: Meow!</code></pre>
 </tr>
 </tbody>
 </table>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">isinstance</span>(d, Animal))    <span class="co"># True</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">issubclass</span>(Dog, Animal))  <span class="co"># True</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="bu">print</span>(<span class="bu">isinstance</span>(d, Animal))</span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="bu">print</span>(<span class="bu">issubclass</span>(Dog, Animal))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>True
+True</code></pre>
 </section>
 <section id="وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه" class="level2">
 <h2 class="anchored" data-anchor-id="وراثت-چندگانه-multiple-inheritance-اشاره-کوتاه">وراثت چندگانه (Multiple Inheritance) — اشاره کوتاه</h2>
 <ul>
 <li>پایتون اجازه می‌ده یک کلاس از چند کلاس ارث ببره</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> A:</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> B:</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> C(A, B):</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">class</span> A:</span>
+<span id="cb11-2"><a href="#cb11-2"></a>    <span class="cf">pass</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="kw">class</span> B:</span>
+<span id="cb11-4"><a href="#cb11-4"></a>    <span class="cf">pass</span></span>
+<span id="cb11-5"><a href="#cb11-5"></a><span class="kw">class</span> C(A, B):</span>
+<span id="cb11-6"><a href="#cb11-6"></a>    <span class="cf">pass</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <blockquote class="blockquote">
 <p>نکته: وراثت چندگانه قدرتمنده ولی می‌تونه پیچیدگی ایجاد کنه (ترتیب جستجوی متدها — MRO)؛ فعلاً فقط آشنایی کافیه.</p>
 </blockquote>

@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -737,7 +732,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -757,22 +752,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>حالت بازگشتی (Recursive Case)</strong>: تابع خودش رو با ورودی کوچیک‌تر صدا می‌زنه</li>
 </ul></li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> factorial(n):</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:          <span class="co"># حالت پایه</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">1</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:                <span class="co"># حالت بازگشتی</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> n <span class="op">*</span> factorial(n <span class="op">-</span> <span class="dv">1</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(factorial(<span class="dv">5</span>))   <span class="co"># 120</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">def</span> factorial(n):</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-3"><a href="#cb1-3"></a>        <span class="cf">return</span> <span class="dv">1</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-5"><a href="#cb1-5"></a>        <span class="cf">return</span> n <span class="op">*</span> factorial(n <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="bu">print</span>(factorial(<span class="dv">5</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>120</code></pre>
 <ul>
 <li>روند اجرا برای <span dir="ltr"><code>factorial(3)</code></span>:</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>factorial(<span class="dv">3</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> factorial(<span class="dv">2</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> (<span class="dv">2</span> <span class="op">*</span> factorial(<span class="dv">1</span>))</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> (<span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">*</span> factorial(<span class="dv">0</span>)))</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> (<span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">*</span> <span class="dv">1</span>))</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="op">=</span> <span class="dv">6</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>factorial(<span class="dv">3</span>)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> factorial(<span class="dv">2</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> (<span class="dv">2</span> <span class="op">*</span> factorial(<span class="dv">1</span>))</span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> (<span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">*</span> factorial(<span class="dv">0</span>)))</span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> (<span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">*</span> <span class="dv">1</span>))</span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="op">=</span> <span class="dv">6</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-warning callout-titled" title="نکته">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -789,30 +785,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>مثال دیگه: دنباله فیبوناچی</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fib(n):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">&lt;=</span> <span class="dv">1</span>:              <span class="co"># حالت پایه</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> n</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> fib(n <span class="op">-</span> <span class="dv">1</span>) <span class="op">+</span> fib(n <span class="op">-</span> <span class="dv">2</span>)   <span class="co"># حالت بازگشتی</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fib(<span class="dv">6</span>))   <span class="co"># 8</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">def</span> fib(n):</span>
+<span id="cb4-2"><a href="#cb4-2"></a>    <span class="cf">if</span> n <span class="op">&lt;=</span> <span class="dv">1</span>:</span>
+<span id="cb4-3"><a href="#cb4-3"></a>        <span class="cf">return</span> n</span>
+<span id="cb4-4"><a href="#cb4-4"></a>    <span class="cf">return</span> fib(n <span class="op">-</span> <span class="dv">1</span>) <span class="op">+</span> fib(n <span class="op">-</span> <span class="dv">2</span>)</span>
+<span id="cb4-5"><a href="#cb4-5"></a></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="bu">print</span>(fib(<span class="dv">6</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>8</code></pre>
 <section id="مقایسه-با-حلقه-loop" class="level3">
 <h3 class="anchored" data-anchor-id="مقایسه-با-حلقه-loop">مقایسه با حلقه (Loop)</h3>
 <ul>
 <li>خیلی از مسائل بازگشتی رو می‌شه با حلقه هم حل کرد</li>
 <li>بازگشت معمولاً <strong>خواناتر</strong> ولی حلقه معمولاً <strong>بهینه‌تر</strong> (از نظر حافظه) هست</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># نسخه بازگشتی</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> factorial_recursive(n):</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">1</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> n <span class="op">*</span> factorial_recursive(n <span class="op">-</span> <span class="dv">1</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># نسخه حلقه‌ای</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> factorial_loop(n):</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n <span class="op">+</span> <span class="dv">1</span>):</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        result <span class="op">*=</span> i</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">def</span> factorial_recursive(n):</span>
+<span id="cb6-2"><a href="#cb6-2"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb6-3"><a href="#cb6-3"></a>        <span class="cf">return</span> <span class="dv">1</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>    <span class="cf">return</span> n <span class="op">*</span> factorial_recursive(n <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb6-5"><a href="#cb6-5"></a></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="kw">def</span> factorial_loop(n):</span>
+<span id="cb6-7"><a href="#cb6-7"></a>    result <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb6-9"><a href="#cb6-9"></a>        result <span class="op">*=</span> i</span>
+<span id="cb6-10"><a href="#cb6-10"></a>    <span class="cf">return</span> result</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>

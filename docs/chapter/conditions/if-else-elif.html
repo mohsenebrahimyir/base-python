@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -742,7 +737,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -759,53 +754,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>ساختار: <span dir="ltr"><code>if condition:</code></span> + بلوک تورفته</li>
 <li>اگه شرط <span dir="ltr"><code>True</code></span> باشه → بلوک اجرا می‌شه، وگرنه نادیده گرفته می‌شه</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x is positive'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="bu">print</span>(<span class="st">'x is positive'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="اجرای-جایگزین-if-else" class="level2">
 <h2 class="anchored" data-anchor-id="اجرای-جایگزین-if-else">اجرای جایگزین (<span dir="ltr"><code>if-else</code></span>)</h2>
 <ul>
 <li>بین دو حالت، دقیقاً <strong>یکی</strong> اجرا می‌شه (branch)</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x<span class="op">%</span><span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x is even'</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x is odd'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="cf">if</span> x<span class="op">%</span><span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb2-2"><a href="#cb2-2"></a>    <span class="bu">print</span>(<span class="st">'x is even'</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="cf">else</span>:</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="bu">print</span>(<span class="st">'x is odd'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="شرطهای-زنجیرهای-elif" class="level2">
 <h2 class="anchored" data-anchor-id="شرطهای-زنجیرهای-elif">شرط‌های زنجیره‌ای (<span dir="ltr"><code>elif</code></span>)</h2>
 <ul>
 <li>برای بررسی بیش از دو حالت</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">&lt;</span> y:</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x is less than y'</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> x <span class="op">&gt;</span> y:</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x is greater than y'</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x and y are equal'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="cf">if</span> x <span class="op">&lt;</span> y:</span>
+<span id="cb3-2"><a href="#cb3-2"></a>    <span class="bu">print</span>(<span class="st">'x is less than y'</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="cf">elif</span> x <span class="op">&gt;</span> y:</span>
+<span id="cb3-4"><a href="#cb3-4"></a>    <span class="bu">print</span>(<span class="st">'x is greater than y'</span>)</span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="cf">else</span>:</span>
+<span id="cb3-6"><a href="#cb3-6"></a>    <span class="bu">print</span>(<span class="st">'x and y are equal'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="شرطهای-تو-در-تو-nested" class="level2">
 <h2 class="anchored" data-anchor-id="شرطهای-تو-در-تو-nested">شرط‌های تو در تو (Nested)</h2>
 <ul>
 <li>یک <span dir="ltr"><code>if</code></span> می‌تونه داخل <span dir="ltr"><code>if</code></span> دیگه باشه</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">==</span> y:</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x and y are equal'</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> x <span class="op">&lt;</span> y:</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'x is less than y'</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'x is greater than y'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="cf">if</span> x <span class="op">==</span> y:</span>
+<span id="cb4-2"><a href="#cb4-2"></a>    <span class="bu">print</span>(<span class="st">'x and y are equal'</span>)</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="cf">else</span>:</span>
+<span id="cb4-4"><a href="#cb4-4"></a>    <span class="cf">if</span> x <span class="op">&lt;</span> y:</span>
+<span id="cb4-5"><a href="#cb4-5"></a>        <span class="bu">print</span>(<span class="st">'x is less than y'</span>)</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    <span class="cf">else</span>:</span>
+<span id="cb4-7"><a href="#cb4-7"></a>        <span class="bu">print</span>(<span class="st">'x is greater than y'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 <section id="بررسی-شرط-در-یک-خط" class="level2">
 <h2 class="anchored" data-anchor-id="بررسی-شرط-در-یک-خط">بررسی شرط در یک خط</h2>
 <p>در بعضی مواقع می‌توانیم از شیوه زیر برای بررسی شرطها استفاده کنیم.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Mohsen"</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>is_male <span class="op">=</span> <span class="va">True</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>say_hi <span class="op">=</span> <span class="ss">f"""Hi </span><span class="sc">{</span><span class="st">"Mr"</span> <span class="cf">if</span> is_male <span class="cf">else</span> <span class="st">"Mrs"</span><span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">"""</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(say_hi)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>name <span class="op">=</span> <span class="st">"Mohsen"</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>is_male <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a>say_hi <span class="op">=</span> <span class="ss">f"""Hi </span><span class="sc">{</span><span class="st">"Mr"</span> <span class="cf">if</span> is_male <span class="cf">else</span> <span class="st">"Mrs"</span><span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">"""</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="bu">print</span>(say_hi)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Hi Mr Mohsen</code></pre>
 </section>
 <section id="تمرین" class="level2">
@@ -821,15 +816,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><a href="https://quera.org/problemset/3429"><code>3429</code> - یخدارچی</a></li>
-<li><a href="https://quera.org/problemset/10162"><code>10162</code> - روز آزادی بیان در برره</a></li>
-<li><a href="https://quera.org/problemset/280"><code>280</code> - اعداد فیثاغورثی</a></li>
-<li><a href="https://quera.org/problemset/10230"><code>10230</code> - مشق امشب باقر</a></li>
-<li><a href="https://quera.org/problemset/3406"><code>3406</code> - صدگان خسته</a></li>
-<li><a href="https://quera.org/problemset/51865"><code>51865</code> - بهداشت و سلامت</a></li>
-<li><a href="https://quera.org/problemset/10325"><code>10325</code> - همایش زندگی بهتر</a></li>
-<li><a href="https://quera.org/problemset/106795"><code>106795</code> - رشته چکر</a></li>
-<li><a href="https://quera.org/problemset/3414"><code>3414</code> - دو نقطه خط</a></li>
+<li><a href="https://quera.org/problemset/3429"><code>3429</code> - یخدارچی</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-3429">راه حل</a></li>
+<li><a href="https://quera.org/problemset/10162"><code>10162</code> - روز آزادی بیان در برره</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-10162">راه حل</a></li>
+<li><a href="https://quera.org/problemset/280"><code>280</code> - اعداد فیثاغورثی</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-280">راه حل</a></li>
+<li><a href="https://quera.org/problemset/10230"><code>10230</code> - مشق امشب باقر</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-10230">راه حل</a></li>
+<li><a href="https://quera.org/problemset/3406"><code>3406</code> - صدگان خسته</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-3406">راه حل</a></li>
+<li><a href="https://quera.org/problemset/51865"><code>51865</code> - بهداشت و سلامت</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-51865">راه حل</a></li>
+<li><a href="https://quera.org/problemset/10325"><code>10325</code> - همایش زندگی بهتر</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-10325">راه حل</a></li>
+<li><a href="https://quera.org/problemset/106795"><code>106795</code> - رشته چکر</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-106795">راه حل</a></li>
+<li><a href="https://quera.org/problemset/3414"><code>3414</code> - دو نقطه خط</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-3414">راه حل</a></li>
 </ul>
 </div>
 </div>

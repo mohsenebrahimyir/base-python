@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -740,7 +735,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -807,25 +802,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><span dir="ltr"><code>map()</code></span> یک تابع رو روی تک‌تک عضوهای یک لیست (یا هر iterable) اجرا می‌کنه و یک نتیجه‌ی جدید برمی‌گردونه</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>squared <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x <span class="op">**</span> <span class="dv">2</span>, numbers))</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(squared)   <span class="co"># [1, 4, 9, 16]</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
+<span id="cb1-2"><a href="#cb1-2"></a>squared <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x <span class="op">**</span> <span class="dv">2</span>, numbers))</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="bu">print</span>(squared)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>[1, 4, 9, 16]</code></pre>
 <ul>
 <li>بدون lambda هم می‌شه از یک تابع معمولی استفاده کرد:</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> square(x):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">**</span> <span class="dv">2</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>squared <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(square, numbers))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">def</span> square(x):</span>
+<span id="cb3-2"><a href="#cb3-2"></a>    <span class="cf">return</span> x <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a>squared <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(square, numbers))</span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="bu">print</span>(squared)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>[1, 4, 9, 16]</code></pre>
 </section>
 <section id="جستجوی-مقادیر-مشخص-در-لیست-با-filter" class="level2">
 <h2 class="anchored" data-anchor-id="جستجوی-مقادیر-مشخص-در-لیست-با-filter">جستجوی مقادیر مشخص در لیست با <code>filter</code></h2>
 <ul>
 <li><span dir="ltr"><code>filter()</code></span> از بین عضوهای یک لیست، فقط اون‌هایی که شرط <span dir="ltr"><code>True</code></span> برمی‌گردونن رو نگه می‌داره</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>evens <span class="op">=</span> <span class="bu">list</span>(<span class="bu">filter</span>(<span class="kw">lambda</span> x: x <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>, numbers))</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(evens)   <span class="co"># [2, 4, 6]</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb5-2"><a href="#cb5-2"></a>evens <span class="op">=</span> <span class="bu">list</span>(<span class="bu">filter</span>(<span class="kw">lambda</span> x: x <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>, numbers))</span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="bu">print</span>(evens)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>[2, 4, 6]</code></pre>
 <ul>
 <li>تفاوت با <span dir="ltr"><code>map</code></span>: <span dir="ltr"><code>map</code></span> همه‌ی عضوها رو تبدیل می‌کنه، <span dir="ltr"><code>filter</code></span> فقط بعضی‌ها رو انتخاب می‌کنه (خروجیش کوچیک‌تر یا مساوی ورودیه)</li>
 </ul>
@@ -835,29 +834,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><span dir="ltr"><code>zip()</code></span> چند لیست رو عضو به عضو با هم جفت می‌کنه</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>names <span class="op">=</span> [<span class="st">'Ali'</span>, <span class="st">'Sara'</span>, <span class="st">'Reza'</span>]</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>ages <span class="op">=</span> [<span class="dv">25</span>, <span class="dv">30</span>, <span class="dv">28</span>]</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>zipped <span class="op">=</span> <span class="bu">list</span>(<span class="bu">zip</span>(names, ages))</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(zipped)   <span class="co"># [('Ali', 25), ('Sara', 30), ('Reza', 28)]</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>names <span class="op">=</span> [<span class="st">'Ali'</span>, <span class="st">'Sara'</span>, <span class="st">'Reza'</span>]</span>
+<span id="cb7-2"><a href="#cb7-2"></a>ages <span class="op">=</span> [<span class="dv">25</span>, <span class="dv">30</span>, <span class="dv">28</span>]</span>
+<span id="cb7-3"><a href="#cb7-3"></a></span>
+<span id="cb7-4"><a href="#cb7-4"></a>zipped <span class="op">=</span> <span class="bu">list</span>(<span class="bu">zip</span>(names, ages))</span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="bu">print</span>(zipped)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>[('Ali', 25), ('Sara', 30), ('Reza', 28)]</code></pre>
 <ul>
 <li>کاربرد رایج: پیمایش هم‌زمان دو لیست</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, age <span class="kw">in</span> <span class="bu">zip</span>(names, ages):</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(name, age)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="cf">for</span> name, age <span class="kw">in</span> <span class="bu">zip</span>(names, ages):</span>
+<span id="cb9-2"><a href="#cb9-2"></a>    <span class="bu">print</span>(name, age)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>Ali 25
+Sara 30
+Reza 28</code></pre>
 <ul>
 <li>اگه طول لیست‌ها متفاوت باشه، <span dir="ltr"><code>zip</code></span> به اندازه‌ی کوتاه‌ترین لیست جلو می‌ره</li>
 </ul>
 </section>
 <section id="ترکیب-هر-سه-با-هم" class="level2">
 <h2 class="anchored" data-anchor-id="ترکیب-هر-سه-با-هم">ترکیب هر سه با هم</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>names <span class="op">=</span> [<span class="st">'Ali'</span>, <span class="st">'Sara'</span>, <span class="st">'Reza'</span>]</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>scores <span class="op">=</span> [<span class="dv">15</span>, <span class="dv">8</span>, <span class="dv">19</span>]</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># فقط اسم کسایی که نمره‌شون بالای 10 هست، با یک پسوند "Pass" جلوش</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>passed <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x[<span class="dv">0</span>] <span class="op">+</span> <span class="st">' - Pass'</span>,</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                   <span class="bu">filter</span>(<span class="kw">lambda</span> x: x[<span class="dv">1</span>] <span class="op">&gt;</span> <span class="dv">10</span>, <span class="bu">zip</span>(names, scores))))</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(passed)   <span class="co"># ['Ali - Pass', 'Reza - Pass']</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a>names <span class="op">=</span> [<span class="st">'Ali'</span>, <span class="st">'Sara'</span>, <span class="st">'Reza'</span>]</span>
+<span id="cb11-2"><a href="#cb11-2"></a>scores <span class="op">=</span> [<span class="dv">15</span>, <span class="dv">8</span>, <span class="dv">19</span>]</span>
+<span id="cb11-3"><a href="#cb11-3"></a></span>
+<span id="cb11-4"><a href="#cb11-4"></a>passed <span class="op">=</span> <span class="bu">list</span>(</span>
+<span id="cb11-5"><a href="#cb11-5"></a>    <span class="bu">map</span>(</span>
+<span id="cb11-6"><a href="#cb11-6"></a>        <span class="kw">lambda</span> x: x[<span class="dv">0</span>] <span class="op">+</span> <span class="st">' - Pass'</span>,</span>
+<span id="cb11-7"><a href="#cb11-7"></a>        <span class="bu">filter</span>(</span>
+<span id="cb11-8"><a href="#cb11-8"></a>            <span class="kw">lambda</span> x: x[<span class="dv">1</span>] <span class="op">&gt;</span> <span class="dv">10</span>,</span>
+<span id="cb11-9"><a href="#cb11-9"></a>            <span class="bu">zip</span>(names, scores))</span>
+<span id="cb11-10"><a href="#cb11-10"></a>        ),</span>
+<span id="cb11-11"><a href="#cb11-11"></a>    )</span>
+<span id="cb11-12"><a href="#cb11-12"></a><span class="bu">print</span>(passed)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>['Ali - Pass', 'Reza - Pass']</code></pre>
 <blockquote class="blockquote">
 <p>هر جا دیدین دارین با یک حلقه‌ی <span dir="ltr"><code>for</code></span> روی یک لیست، مقادیرش رو تبدیل یا فیلتر می‌کنین، احتمالاً می‌شه همون کار رو با ترکیب <span dir="ltr"><code>map</code></span>/<span dir="ltr"><code>filter</code></span> و <span dir="ltr"><code>lambda</code></span> در یک خط نوشت — ولی اگه منطق پیچیده بشه، خوانایی کد با یک تابع معمولی و حلقه‌ی <span dir="ltr"><code>for</code></span> بهتره.</p>
 </blockquote>

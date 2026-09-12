@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -745,7 +740,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -794,61 +789,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="ایجاد-دیکشنری" class="level2">
 <h2 class="anchored" data-anchor-id="ایجاد-دیکشنری">ایجاد دیکشنری</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># روش‌های مختلف ایجاد</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>my_dict1 <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>, <span class="st">"age"</span>: <span class="dv">32</span>}</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>my_dict2 <span class="op">=</span> <span class="bu">dict</span>(name<span class="op">=</span><span class="st">"Mohsen"</span>, age<span class="op">=</span><span class="dv">32</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>my_dict3 <span class="op">=</span> <span class="bu">dict</span>([(<span class="st">"name"</span>, <span class="st">"Mohsen"</span>), (<span class="st">"age"</span>, <span class="dv">32</span>)])</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>my_dict4 <span class="op">=</span> {}  <span class="co"># دیکشنری خالی</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># روش‌های مختلف ایجاد</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>my_dict1 <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>, <span class="st">"age"</span>: <span class="dv">32</span>}</span>
+<span id="cb1-3"><a href="#cb1-3"></a>my_dict2 <span class="op">=</span> <span class="bu">dict</span>(name<span class="op">=</span><span class="st">"Mohsen"</span>, age<span class="op">=</span><span class="dv">32</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a>my_dict3 <span class="op">=</span> <span class="bu">dict</span>([(<span class="st">"name"</span>, <span class="st">"Mohsen"</span>), (<span class="st">"age"</span>, <span class="dv">32</span>)])</span>
+<span id="cb1-5"><a href="#cb1-5"></a>my_dict4 <span class="op">=</span> {}  <span class="co"># دیکشنری خالی</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <section id="دسترسی-به-مقادیر" class="level3">
 <h3 class="anchored" data-anchor-id="دسترسی-به-مقادیر">دسترسی به مقادیر</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>my_dict <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>, <span class="st">"age"</span>: <span class="dv">32</span>}</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> my_dict[<span class="st">"name"</span>]</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> my_dict.get(<span class="st">"name"</span>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> my_dict.get(<span class="st">"city"</span>, <span class="st">"unknown"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>my_dict <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>, <span class="st">"age"</span>: <span class="dv">32</span>}</span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>name <span class="op">=</span> my_dict[<span class="st">"name"</span>]</span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a>name <span class="op">=</span> my_dict.get(<span class="st">"name"</span>)</span>
+<span id="cb2-6"><a href="#cb2-6"></a>age <span class="op">=</span> my_dict.get(<span class="st">"city"</span>, <span class="st">"unknown"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="اضافه-کردن-و-بهروزرسانی" class="level3">
 <h3 class="anchored" data-anchor-id="اضافه-کردن-و-بهروزرسانی">اضافه کردن و به‌روزرسانی</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>my_dict <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>}</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>my_dict[<span class="st">"age"</span>] <span class="op">=</span> <span class="dv">32</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>my_dict[<span class="st">"name"</span>] <span class="op">=</span> <span class="st">"Reza"</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>my_dict.update({<span class="st">"city"</span>: <span class="st">"Sari"</span>, <span class="st">"age"</span>: <span class="dv">25</span>})</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>my_dict <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>}</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a>my_dict[<span class="st">"age"</span>] <span class="op">=</span> <span class="dv">32</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a>my_dict[<span class="st">"name"</span>] <span class="op">=</span> <span class="st">"Reza"</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7"></a>my_dict.update({<span class="st">"city"</span>: <span class="st">"Sari"</span>, <span class="st">"age"</span>: <span class="dv">25</span>})</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="حذف-کردن" class="level3">
 <h3 class="anchored" data-anchor-id="حذف-کردن">حذف کردن</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>my_dict <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>, <span class="st">"age"</span>: <span class="dv">32</span>, <span class="st">"city"</span>: <span class="st">"Sari"</span>}</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">del</span> my_dict[<span class="st">"age"</span>]</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>city <span class="op">=</span> my_dict.pop(<span class="st">"city"</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>item <span class="op">=</span> my_dict.popitem()</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>my_dict.clear()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>my_dict <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>, <span class="st">"age"</span>: <span class="dv">32</span>, <span class="st">"city"</span>: <span class="st">"Sari"</span>}</span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="kw">del</span> my_dict[<span class="st">"age"</span>]</span>
+<span id="cb4-4"><a href="#cb4-4"></a></span>
+<span id="cb4-5"><a href="#cb4-5"></a>city <span class="op">=</span> my_dict.pop(<span class="st">"city"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a>item <span class="op">=</span> my_dict.popitem()</span>
+<span id="cb4-8"><a href="#cb4-8"></a></span>
+<span id="cb4-9"><a href="#cb4-9"></a>my_dict.clear()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="کپی-کردن-دیکشنری" class="level3">
 <h3 class="anchored" data-anchor-id="کپی-کردن-دیکشنری">کپی کردن دیکشنری</h3>
 <p>اگه فقط با <code>=</code> یه دیکشنری رو به متغیر دیگه نسبت بدید، هر دو متغیر به همون دیکشنری اشاره می‌کنن و تغییر تو یکی، اون یکی رو هم تغییر می‌ده. برای کپی واقعی از <code>copy()</code> یا ماژول <code>copy</code> استفاده کنید.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> copy</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>original <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>, <span class="st">"scores"</span>: [<span class="dv">10</span>, <span class="dv">20</span>]}</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>shallow1 <span class="op">=</span> original.copy()</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>shallow2 <span class="op">=</span> <span class="bu">dict</span>(original)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>shallow1[<span class="st">"name"</span>] <span class="op">=</span> <span class="st">"Reza"</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(original[<span class="st">"name"</span>])</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>shallow1[<span class="st">"scores"</span>].append(<span class="dv">30</span>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(original[<span class="st">"scores"</span>])</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>deep <span class="op">=</span> copy.deepcopy(original)</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>deep[<span class="st">"scores"</span>].append(<span class="dv">40</span>)</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(original[<span class="st">"scores"</span>])</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">import</span> copy</span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a>original <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>, <span class="st">"scores"</span>: [<span class="dv">10</span>, <span class="dv">20</span>]}</span>
+<span id="cb5-4"><a href="#cb5-4"></a></span>
+<span id="cb5-5"><a href="#cb5-5"></a>shallow1 <span class="op">=</span> original.copy()</span>
+<span id="cb5-6"><a href="#cb5-6"></a>shallow2 <span class="op">=</span> <span class="bu">dict</span>(original)</span>
+<span id="cb5-7"><a href="#cb5-7"></a></span>
+<span id="cb5-8"><a href="#cb5-8"></a>shallow1[<span class="st">"name"</span>] <span class="op">=</span> <span class="st">"Reza"</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="bu">print</span>(original[<span class="st">"name"</span>])</span>
+<span id="cb5-10"><a href="#cb5-10"></a></span>
+<span id="cb5-11"><a href="#cb5-11"></a>shallow1[<span class="st">"scores"</span>].append(<span class="dv">30</span>)</span>
+<span id="cb5-12"><a href="#cb5-12"></a><span class="bu">print</span>(original[<span class="st">"scores"</span>])</span>
+<span id="cb5-13"><a href="#cb5-13"></a></span>
+<span id="cb5-14"><a href="#cb5-14"></a>deep <span class="op">=</span> copy.deepcopy(original)</span>
+<span id="cb5-15"><a href="#cb5-15"></a>deep[<span class="st">"scores"</span>].append(<span class="dv">40</span>)</span>
+<span id="cb5-16"><a href="#cb5-16"></a><span class="bu">print</span>(original[<span class="st">"scores"</span>])</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Mohsen
 [10, 20, 30]
 [10, 20, 30]</code></pre>
@@ -860,18 +855,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="ادغام-دیکشنریها-python-3.9" class="level2">
 <h2 class="anchored" data-anchor-id="ادغام-دیکشنریها-python-3.9">ادغام دیکشنری‌ها (Python 3.9+)</h2>
-<div id="2970a4fa" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dict1 <span class="op">=</span> {<span class="st">"a"</span>: <span class="dv">1</span>, <span class="st">"b"</span>: <span class="dv">2</span>}</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>dict2 <span class="op">=</span> {<span class="st">"b"</span>: <span class="dv">3</span>, <span class="st">"c"</span>: <span class="dv">4</span>}</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>merged <span class="op">=</span> dict1 <span class="op">|</span> dict2 </span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(merged)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>merged <span class="op">=</span> {<span class="op">**</span>dict1, <span class="op">**</span>dict2}</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(merged)</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>dict1.update(dict2)</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dict1)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="c54e3990" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>dict1 <span class="op">=</span> {<span class="st">"a"</span>: <span class="dv">1</span>, <span class="st">"b"</span>: <span class="dv">2</span>}</span>
+<span id="cb7-2"><a href="#cb7-2"></a>dict2 <span class="op">=</span> {<span class="st">"b"</span>: <span class="dv">3</span>, <span class="st">"c"</span>: <span class="dv">4</span>}</span>
+<span id="cb7-3"><a href="#cb7-3"></a></span>
+<span id="cb7-4"><a href="#cb7-4"></a>merged <span class="op">=</span> dict1 <span class="op">|</span> dict2 </span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="bu">print</span>(merged)</span>
+<span id="cb7-6"><a href="#cb7-6"></a></span>
+<span id="cb7-7"><a href="#cb7-7"></a>merged <span class="op">=</span> {<span class="op">**</span>dict1, <span class="op">**</span>dict2}</span>
+<span id="cb7-8"><a href="#cb7-8"></a><span class="bu">print</span>(merged)</span>
+<span id="cb7-9"><a href="#cb7-9"></a></span>
+<span id="cb7-10"><a href="#cb7-10"></a>dict1.update(dict2)</span>
+<span id="cb7-11"><a href="#cb7-11"></a><span class="bu">print</span>(dict1)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <pre><code>{'a': 1, 'b': 3, 'c': 4}
 {'a': 1, 'b': 3, 'c': 4}

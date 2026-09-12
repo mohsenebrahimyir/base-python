@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -745,7 +740,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -791,74 +786,74 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="مثال-۱-استخراج-ایمیلها-از-یک-متن" class="level2">
 <h2 class="anchored" data-anchor-id="مثال-۱-استخراج-ایمیلها-از-یک-متن">مثال ۱: استخراج ایمیل‌ها از یک متن</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"تماس با ali@test.com یا sara.k@company.org"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>emails <span class="op">=</span> re.findall(<span class="vs">r'</span><span class="pp">[</span><span class="dv">\w</span><span class="pp">.]</span><span class="op">+</span><span class="vs">@</span><span class="pp">[</span><span class="dv">\w</span><span class="pp">.]</span><span class="op">+</span><span class="vs">'</span>, text)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(emails)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> re</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>text <span class="op">=</span> <span class="st">"تماس با ali@test.com یا sara.k@company.org"</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>emails <span class="op">=</span> re.findall(<span class="vs">r'</span><span class="pp">[</span><span class="dv">\w</span><span class="pp">.]</span><span class="op">+</span><span class="vs">@</span><span class="pp">[</span><span class="dv">\w</span><span class="pp">.]</span><span class="op">+</span><span class="vs">'</span>, text)</span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="bu">print</span>(emails)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>['ali@test.com', 'sara.k@company.org']</code></pre>
 </section>
 <section id="مثال-۲-اعتبارسنجی-شماره-موبایل-ایرانی" class="level2">
 <h2 class="anchored" data-anchor-id="مثال-۲-اعتبارسنجی-شماره-موبایل-ایرانی">مثال ۲: اعتبارسنجی شماره موبایل ایرانی</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> is_valid_mobile(number):</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    pattern <span class="op">=</span> <span class="vs">r'</span><span class="dv">^</span><span class="vs">09</span><span class="dv">\d</span><span class="op">{9}</span><span class="dv">$</span><span class="vs">'</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">bool</span>(re.match(pattern, number))</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_valid_mobile(<span class="st">"09121234567"</span>))   <span class="co"># True</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_valid_mobile(<span class="st">"0912123456"</span>))    <span class="co"># False (کوتاهه)</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="im">import</span> re</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">def</span> is_valid_mobile(number):</span>
+<span id="cb3-4"><a href="#cb3-4"></a>    pattern <span class="op">=</span> <span class="vs">r'</span><span class="dv">^</span><span class="vs">09</span><span class="dv">\d</span><span class="op">{9}</span><span class="dv">$</span><span class="vs">'</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>    <span class="cf">return</span> <span class="bu">bool</span>(re.match(pattern, number))</span>
+<span id="cb3-6"><a href="#cb3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="bu">print</span>(is_valid_mobile(<span class="st">"09121234567"</span>))   <span class="co"># True</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="bu">print</span>(is_valid_mobile(<span class="st">"0912123456"</span>))    <span class="co"># False (کوتاهه)</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="مثال-۳-پاکسازی-متن-ورودی-کاربر" class="level2">
 <h2 class="anchored" data-anchor-id="مثال-۳-پاکسازی-متن-ورودی-کاربر">مثال ۳: پاک‌سازی متن ورودی کاربر</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> clean_text(text):</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> text.strip()                     <span class="co"># حذف فاصله اضافه</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> re.sub(<span class="vs">r'</span><span class="dv">\s</span><span class="op">+</span><span class="vs">'</span>, <span class="st">' '</span>, text)         <span class="co"># چند فاصله پشت سرهم -&gt; یک فاصله</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> re.sub(<span class="vs">r'</span><span class="pp">[^</span><span class="dv">\w\s</span><span class="pp">]</span><span class="vs">'</span>, <span class="st">''</span>, text)      <span class="co"># حذف علائم نگارشی</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> text</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>raw <span class="op">=</span> <span class="st">"   سلام!!   دنیای    پایتون؟؟   "</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(clean_text(raw))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">def</span> clean_text(text):</span>
+<span id="cb4-2"><a href="#cb4-2"></a>    text <span class="op">=</span> text.strip()                     <span class="co"># حذف فاصله اضافه</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>    text <span class="op">=</span> re.sub(<span class="vs">r'</span><span class="dv">\s</span><span class="op">+</span><span class="vs">'</span>, <span class="st">' '</span>, text)         <span class="co"># چند فاصله پشت سرهم -&gt; یک فاصله</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>    text <span class="op">=</span> re.sub(<span class="vs">r'</span><span class="pp">[^</span><span class="dv">\w\s</span><span class="pp">]</span><span class="vs">'</span>, <span class="st">''</span>, text)      <span class="co"># حذف علائم نگارشی</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>    <span class="cf">return</span> text</span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a>raw <span class="op">=</span> <span class="st">"   سلام!!   دنیای    پایتون؟؟   "</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="bu">print</span>(clean_text(raw))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>سلام دنیای پایتون</code></pre>
 </section>
 <section id="مثال-۴-شمارش-کلمات-یک-متن" class="level2">
 <h2 class="anchored" data-anchor-id="مثال-۴-شمارش-کلمات-یک-متن">مثال ۴: شمارش کلمات یک متن</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"پایتون زبان خوبی است. پایتون ساده است."</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> re.findall(<span class="vs">r'</span><span class="dv">\w</span><span class="op">+</span><span class="vs">'</span>, text)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(words))</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Counter(words))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>text <span class="op">=</span> <span class="st">"پایتون زبان خوبی است. پایتون ساده است."</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>words <span class="op">=</span> re.findall(<span class="vs">r'</span><span class="dv">\w</span><span class="op">+</span><span class="vs">'</span>, text)</span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="bu">print</span>(<span class="bu">len</span>(words))</span>
+<span id="cb6-4"><a href="#cb6-4"></a></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="bu">print</span>(Counter(words))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="مثال-۵-استخراج-اعداد-از-یک-رشته-و-جمع-کردن-آنها" class="level2">
 <h2 class="anchored" data-anchor-id="مثال-۵-استخراج-اعداد-از-یک-رشته-و-جمع-کردن-آنها">مثال ۵: استخراج اعداد از یک رشته و جمع کردن آن‌ها</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"قیمت‌ها: 120, 45.5, 900"</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> re.findall(<span class="vs">r'</span><span class="dv">\d</span><span class="op">+</span><span class="ch">\.</span><span class="op">?</span><span class="dv">\d</span><span class="op">*</span><span class="vs">'</span>, text)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="bu">float</span>(n) <span class="cf">for</span> n <span class="kw">in</span> numbers]</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">sum</span>(numbers))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>text <span class="op">=</span> <span class="st">"قیمت‌ها: 120, 45.5, 900"</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>numbers <span class="op">=</span> re.findall(<span class="vs">r'</span><span class="dv">\d</span><span class="op">+</span><span class="ch">\.</span><span class="op">?</span><span class="dv">\d</span><span class="op">*</span><span class="vs">'</span>, text)</span>
+<span id="cb7-3"><a href="#cb7-3"></a>numbers <span class="op">=</span> [<span class="bu">float</span>(n) <span class="cf">for</span> n <span class="kw">in</span> numbers]</span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="bu">print</span>(<span class="bu">sum</span>(numbers))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="مثال-۶-تبدیل-snake_case-به-camelcase-ترکیب-split-join" class="level2">
 <h2 class="anchored" data-anchor-id="مثال-۶-تبدیل-snake_case-به-camelcase-ترکیب-split-join">مثال ۶: تبدیل snake_case به camelCase (ترکیب split + join)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> to_camel_case(text):</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    parts <span class="op">=</span> text.split(<span class="st">'_'</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> parts[<span class="dv">0</span>] <span class="op">+</span> <span class="st">''</span>.join(p.title() <span class="cf">for</span> p <span class="kw">in</span> parts[<span class="dv">1</span>:])</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(to_camel_case(<span class="st">"this_is_snake_case"</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">def</span> to_camel_case(text):</span>
+<span id="cb8-2"><a href="#cb8-2"></a>    parts <span class="op">=</span> text.split(<span class="st">'_'</span>)</span>
+<span id="cb8-3"><a href="#cb8-3"></a>    <span class="cf">return</span> parts[<span class="dv">0</span>] <span class="op">+</span> <span class="st">''</span>.join(p.title() <span class="cf">for</span> p <span class="kw">in</span> parts[<span class="dv">1</span>:])</span>
+<span id="cb8-4"><a href="#cb8-4"></a></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="bu">print</span>(to_camel_case(<span class="st">"this_is_snake_case"</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>thisIsSnakeCase</code></pre>
 </section>
 <section id="مثال-۷-بررسی-معتبر-بودن-رمز-عبور-ترکیب-چند-شرط-با-regex" class="level2">
 <h2 class="anchored" data-anchor-id="مثال-۷-بررسی-معتبر-بودن-رمز-عبور-ترکیب-چند-شرط-با-regex">مثال ۷: بررسی معتبر بودن رمز عبور (ترکیب چند شرط با regex)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> is_strong_password(pw):</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(pw) <span class="op">&lt;</span> <span class="dv">8</span>:</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">False</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> re.search(<span class="vs">r'</span><span class="pp">[A-Z]</span><span class="vs">'</span>, pw):     <span class="co"># حداقل یک حرف بزرگ</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">False</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> re.search(<span class="vs">r'</span><span class="dv">\d</span><span class="vs">'</span>, pw):        <span class="co"># حداقل یک عدد</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">False</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">True</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_strong_password(<span class="st">"Abc12345"</span>))   <span class="co"># True</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_strong_password(<span class="st">"abc"</span>))        <span class="co"># False</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw">def</span> is_strong_password(pw):</span>
+<span id="cb10-2"><a href="#cb10-2"></a>    <span class="cf">if</span> <span class="bu">len</span>(pw) <span class="op">&lt;</span> <span class="dv">8</span>:</span>
+<span id="cb10-3"><a href="#cb10-3"></a>        <span class="cf">return</span> <span class="va">False</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a>    <span class="cf">if</span> <span class="kw">not</span> re.search(<span class="vs">r'</span><span class="pp">[A-Z]</span><span class="vs">'</span>, pw):     <span class="co"># حداقل یک حرف بزرگ</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a>        <span class="cf">return</span> <span class="va">False</span></span>
+<span id="cb10-6"><a href="#cb10-6"></a>    <span class="cf">if</span> <span class="kw">not</span> re.search(<span class="vs">r'</span><span class="dv">\d</span><span class="vs">'</span>, pw):        <span class="co"># حداقل یک عدد</span></span>
+<span id="cb10-7"><a href="#cb10-7"></a>        <span class="cf">return</span> <span class="va">False</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a>    <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb10-9"><a href="#cb10-9"></a></span>
+<span id="cb10-10"><a href="#cb10-10"></a><span class="bu">print</span>(is_strong_password(<span class="st">"Abc12345"</span>))   <span class="co"># True</span></span>
+<span id="cb10-11"><a href="#cb10-11"></a><span class="bu">print</span>(is_strong_password(<span class="st">"abc"</span>))        <span class="co"># False</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="جمعبندی" class="level2">
 <h2 class="anchored" data-anchor-id="جمعبندی">جمع‌بندی</h2>

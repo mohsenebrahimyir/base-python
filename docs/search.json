@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "مبانی پایتون",
     "section": "",
-    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل info@mohsenebrahimy.ir برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۵-۰۶-۲۰ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: mohsenebrahimy.ir/book/base-python\n\n\n\n\n\n\n\nمهمتوجه\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
+    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل info@mohsenebrahimy.ir برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۵-۰۶-۲۱ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: mohsenebrahimy.ir/book/base-python\n\n\n\n\n\n\n\nمهمتوجه\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
     "crumbs": [
       "پیش گفتار"
     ]
@@ -223,7 +223,7 @@
     "href": "chapter/expression/value.html#نکته-مهم-تبدیل-به-بولی",
     "title": "مقدار (Value)",
     "section": "نکته مهم: تبدیل به بولی",
-    "text": "نکته مهم: تبدیل به بولی\n\nمقادیر پوچ/خالی\\rightarrowFalse: \"\"، None، 0\nهر مقدار دیگری (حتی رشته‌ی \"False\", \"0\")\\rightarrowTrue\n\nچون رشته‌ی غیرخالیه، محتواش مهم نیست!\n\n\nprint(bool(\"\"))      # False\nprint(bool(None))    # False\nprint(bool(0))       # False\n\nprint(bool(\"False\")) # True  ⚠️\nprint(bool(\"0\"))     # True  ⚠️",
+    "text": "نکته مهم: تبدیل به بولی\n\nمقادیر پوچ/خالی\\rightarrowFalse: \"\"، None، 0\nهر مقدار دیگری (حتی رشته‌ی \"False\", \"0\")\\rightarrowTrue\n\nچون رشته‌ی غیرخالیه، محتواش مهم نیست!\n\n\nprint(bool(\"\"))      # False\nprint(bool(None))    # False\nprint(bool(0))       # False\n\nprint(bool(\"False\")) # True  ⚠️\nprint(bool(\"0\"))     # True  ⚠️\nprint(bool(\"None\"))  # True  ⚠️",
     "crumbs": [
       "عبارات و دستورات",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>مقدار (Value)</span>"
@@ -322,7 +322,7 @@
     "href": "chapter/expression/variable.html#تمرین",
     "title": "متغیر (Variable)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nهشدار\n\n\n\nبا استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\n\n\n\n\n\n\nاحتیاطنام و سن کاربر را نمایش دهد\n\n\n\n\n\nname = input(\"Enter your name: \")\n\nage = input(\"Enter your age: \")\n\nprint(\"Name:\", name)\nprint(\"Age:\", age)\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "text": "تمرین\n\n\n\n\n\n\nهشدار\n\n\n\nبا استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\n\n\n\n\n\n\nاحتیاطنام و سن کاربر را نمایش دهد\n\n\n\n\n\nname = input(\"Enter your name: \")\nage = input(\"Enter your age: \")\n\nprint(\"Name:\", name)\nprint(\"Age:\", age)\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
     "crumbs": [
       "عبارات و دستورات",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>متغیر (Variable)</span>"
@@ -377,7 +377,7 @@
     "href": "chapter/expression/operator.html#تمرین",
     "title": "عملگر (Operand)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nهشدار\n\n\n\nبا استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\n\n\n\n\n\n\nاحتیاطیک ماشین‌ حساب ساده برای جمع و تفریق بنویسید.\n\n\n\n\n\nnum1 = input(\"Number 1: \")\nnum1 = float(num1)\n\nnum2 = input(\"Number 2: \")\nnum2 = float(num2)\n\nadd = num1 + num2\nsubtract = num1 - num2\n\nprint(num1, \"+\", num2, \"=\", add)\nprint(num1, \"-\", num2, \"=\", subtract)\nآیا میتونید برای ضرب و تقیسم هم بنویسید؟\n\n\n\n\n\n\n\n\n\nاحتیاطدو عدد بگیرد و بزرگی عدد اول را بررسی کند.\n\n\n\n\n\nnum1 = input(\"عدد اول را وارد کن: \")\nnum1 = float(num1)\n\nnum2 = input(\"عدد دوم را وارد کن: \")\nnum2 = float(num2)\n\nresult = num1 &gt; num2\n\nprint(\"Is\", num1,\"greater than\", num2, \"? \", result)\n\n\n\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3537 - سوال زرد\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "text": "تمرین\n\n\n\n\n\n\nهشدار\n\n\n\nبا استفاده از ورودی (input()) تمرین‌ها انجام شود.\n\n\n\n\n\n\n\n\nاحتیاطیک ماشین‌ حساب ساده برای جمع و تفریق بنویسید.\n\n\n\n\n\nnum1 = input(\"Number 1: \")\nnum1 = float(num1)\n\nnum2 = input(\"Number 2: \")\nnum2 = float(num2)\n\nadd = num1 + num2\nsubtract = num1 - num2\n\nprint(num1, \"+\", num2, \"=\", add)\nprint(num1, \"-\", num2, \"=\", subtract)\nآیا میتونید برای ضرب و تقیسم هم بنویسید؟\n\n\n\n\n\n\n\n\n\nاحتیاطدو عدد بگیرد و بزرگی عدد اول را بررسی کند.\n\n\n\n\n\nnum1 = input(\"Enter Number 1: \")\nnum1 = float(num1)\n\nnum2 = input(\"Enter Number 2: \")\nnum2 = float(num2)\n\nresult = num1 &gt; num2\n\nprint(\"Is\", num1,\"greater than\", num2, \"? \", result)\n\n\n\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3537 - سوال زرد - راه حل\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
     "crumbs": [
       "عبارات و دستورات",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>عملگر (Operand)</span>"
@@ -520,7 +520,7 @@
     "href": "chapter/structure/string.html#تمرین",
     "title": "رشته (str)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n2885 - سوال ساده\n2636 - شطرنج حرفه‌ای\n615 - تاریخ تولد\n8838 - کمک به کاپی",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n2885 - سوال ساده - راه حل\n2636 - شطرنج حرفه‌ای - راه حل\n615 - تاریخ تولد - راه حل\n8838 - کمک به کاپی - راه حل",
     "crumbs": [
       "ساختار داده",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>رشته (`str`)</span>"
@@ -630,7 +630,7 @@
     "href": "chapter/structure/list.html#تمرین",
     "title": "لیست (list)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n28947 - کمک به کاپی",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n28947 - کمک به کاپی - راه حل",
     "crumbs": [
       "ساختار داده",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>لیست (`list`)</span>"
@@ -949,7 +949,7 @@
     "href": "chapter/conditions/if-else-elif.html#تمرین",
     "title": "اجرای شرطی (if-else-elif)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3429 - یخدارچی\n10162 - روز آزادی بیان در برره\n280 - اعداد فیثاغورثی\n10230 - مشق امشب باقر\n3406 - صدگان خسته\n51865 - بهداشت و سلامت\n10325 - همایش زندگی بهتر\n106795 - رشته چکر\n3414 - دو نقطه خط\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n3429 - یخدارچی - راه حل\n10162 - روز آزادی بیان در برره - راه حل\n280 - اعداد فیثاغورثی - راه حل\n10230 - مشق امشب باقر - راه حل\n3406 - صدگان خسته - راه حل\n51865 - بهداشت و سلامت - راه حل\n10325 - همایش زندگی بهتر - راه حل\n106795 - رشته چکر - راه حل\n3414 - دو نقطه خط - راه حل\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
     "crumbs": [
       "شرطها و استثنا",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>اجرای شرطی (`if-else-elif`)</span>"
@@ -1092,7 +1092,7 @@
     "href": "chapter/loops/while.html#تمرین",
     "title": "حلقه شرطی (while)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n9774 - عدد چاپ‌کن\n17244 - شارژ موبایل\n589 - فاکتوریل\n2529 - اسم‌ها\n3409 - جدول ضرب گنده\n3539 - تک‌رقمی\n282 - کامل بودن یا نبودن\n616 - توان دو\n591 - چاپ مربع\n618 - چاپ لوزی\n3405 - چاپ برعکس\n617 - عدد خودمغلوب\n4065 - خر در چمن فراوونه!!\n3537 - سوال زرد\n2885 - سوال ساده\n28947 - کمک به کاپی\n588 - ماکزیمم\n10231 - خُب باقر سرما خورده\n10232 - باقر خسته‌ست ولی بی‌فرهنگ نه",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n9774 - عدد چاپ‌کن - راه حل\n17244 - شارژ موبایل - راه حل\n589 - فاکتوریل - راه حل\n2529 - اسم‌ها - راه حل\n3409 - جدول ضرب گنده - راه حل\n3539 - تک‌رقمی - راه حل\n282 - کامل بودن یا نبودن - راه حل\n616 - توان دو - راه حل\n591 - چاپ مربع - راه حل\n618 - چاپ لوزی - راه حل\n3405 - چاپ برعکس - راه حل\n617 - عدد خودمغلوب - راه حل\n4065 - خر در چمن فراوونه!! - راه حل\n3537 - سوال زرد - راه حل\n2885 - سوال ساده - راه حل\n28947 - کمک به کاپی - راه حل\n588 - ماکزیمم - راه حل\n10231 - خُب باقر سرما خورده - راه حل\n10232 - باقر خسته‌ست ولی بی‌فرهنگ نه - راه حل",
     "crumbs": [
       "حلقه‌ها",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>حلقه شرطی (`while`)</span>"
@@ -1136,7 +1136,7 @@
     "href": "chapter/loops/for.html#مثال",
     "title": "حلقه معین (for)",
     "section": "مثال",
-    "text": "مثال\nfriends = ['Joseph', 'Glenn', 'Sally']\nfor friend in friends:\n    print('Happy New Year: ', friend)\nprint('Done!')\n\nمتغیر friend به ترتیب مقدار هر عنصر لیست رو می‌گیره\nبعد از تموم شدن حلقه، خط بعدی (Done!) اجرا می‌شه",
+    "text": "مثال\nfriends = [\n    'Joseph', 'Glenn', 'Sally'\n]\nfor friend in friends:\n    print('Happy New Year: ', friend)\n\nprint('Done!')\n\nمتغیر friend به ترتیب مقدار هر عنصر لیست رو می‌گیره\nبعد از تموم شدن حلقه، خط بعدی (Done!) اجرا می‌شه",
     "crumbs": [
       "حلقه‌ها",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>حلقه معین (`for`)</span>"
@@ -1158,7 +1158,7 @@
     "href": "chapter/loops/for.html#پیمایش-روی-دیکشنری",
     "title": "حلقه معین (for)",
     "section": "پیمایش روی دیکشنری",
-    "text": "پیمایش روی دیکشنری\nبرای پیمایش روی دیکشنری چند روش رایج وجود داره:\nperson = {\"name\": \"Mohsen\", \"age\": 32, \"city\": \"Sari\"}\n\nfor key in person:\n    print(key)\n\nfor key in person.keys():\n    print(key)\n\nfor value in person.values():\n    print(value)\n\nfor key, value in person.items():\n    print(key, value)\nمی‌تونید مثل لیست، از دیکشنری کامپرینشن (Dict Comprehension) هم برای ساخت دیکشنری جدید حین پیمایش استفاده کنید:\nprices = {\"apple\": 10, \"banana\": 5, \"cherry\": 20}\ndiscounted = {item: price * 0.9 for item, price in prices.items()}\nprint(discounted)\n{'apple': 9.0, 'banana': 4.5, 'cherry': 18.0}\n\nنکته: پیمایش مستقیم روی دیکشنری (for key in person) همون کلیدها رو برمی‌گردونه؛ پس معمولاً نیازی به نوشتن .keys() نیست، مگه اینکه بخواید کد خواناتر باشه.",
+    "text": "پیمایش روی دیکشنری\nبرای پیمایش روی دیکشنری چند روش رایج وجود داره:\nperson = {\n    \"name\": \"Mohsen\",\n    \"age\": 32,\n    \"city\": \"Sari\",\n}\n\nfor key in person:\n    print(key)\n\nfor key in person.keys():\n    print(key)\n\nfor value in person.values():\n    print(value)\n\nfor key, value in person.items():\n    print(key, value)\nمی‌تونید مثل لیست، از دیکشنری کامپرینشن (Dict Comprehension) هم برای ساخت دیکشنری جدید حین پیمایش استفاده کنید:\nprices = {\n    \"apple\": 10,\n    \"banana\": 5,\n    \"cherry\": 20,\n}\ndiscounted = {\n    item: price * 0.9 for item, price in prices.items()\n}\nprint(discounted)\n{'apple': 9.0, 'banana': 4.5, 'cherry': 18.0}\n\nنکته: پیمایش مستقیم روی دیکشنری (for key in person) همون کلیدها رو برمی‌گردونه؛ پس معمولاً نیازی به نوشتن .keys() نیست، مگه اینکه بخواید کد خواناتر باشه.",
     "crumbs": [
       "حلقه‌ها",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>حلقه معین (`for`)</span>"
@@ -1169,7 +1169,7 @@
     "href": "chapter/loops/for.html#تمرین",
     "title": "حلقه معین (for)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n9774 - عدد چاپ‌کن\n17244 - شارژ موبایل\n589 - فاکتوریل\n2529 - اسم‌ها\n3409 - جدول ضرب گنده\n3539 - تک‌رقمی\n282 - کامل بودن یا نبودن\n616 - توان دو\n591 - چاپ مربع\n618 - چاپ لوزی\n3405 - چاپ برعکس\n617 - عدد خودمغلوب\n4065 - خر در چمن فراوونه!!\n3537 - سوال زرد\n2885 - سوال ساده\n28947 - کمک به کاپی\n588 - ماکزیمم\n10231 - خُب باقر سرما خورده\n10232 - باقر خسته‌ست ولی بی‌فرهنگ نه",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n9774 - عدد چاپ‌کن - راه حل\n17244 - شارژ موبایل - راه حل\n589 - فاکتوریل - راه حل\n2529 - اسم‌ها - راه حل\n3409 - جدول ضرب گنده - راه حل\n3539 - تک‌رقمی - راه حل\n282 - کامل بودن یا نبودن - راه حل\n616 - توان دو - راه حل\n591 - چاپ مربع - راه حل\n618 - چاپ لوزی - راه حل\n3405 - چاپ برعکس - راه حل\n617 - عدد خودمغلوب - راه حل\n4065 - خر در چمن فراوونه!! - راه حل\n3537 - سوال زرد - راه حل\n2885 - سوال ساده - راه حل\n28947 - کمک به کاپی - راه حل\n588 - ماکزیمم - راه حل\n10231 - خُب باقر سرما خورده - راه حل\n10232 - باقر خسته‌ست ولی بی‌فرهنگ نه - راه حل",
     "crumbs": [
       "حلقه‌ها",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>حلقه معین (`for`)</span>"
@@ -1213,7 +1213,7 @@
     "href": "chapter/functions/def.html#توابع-fruitful-خروجیدار-و-void-بدون-خروجی",
     "title": "تعریف تابع (def)",
     "section": "توابع Fruitful (خروجی‌دار) و Void (بدون خروجی)",
-    "text": "توابع Fruitful (خروجی‌دار) و Void (بدون خروجی)\n\n\n\n\n\n\n\n\nنوع\nویژگی\nمثال\n\n\n\n\nFruitful\nبا return یک مقدار برمی‌گردونه\nmath.sqrt(5)\n\n\nVoid\nفقط کاری انجام می‌ده، خروجی قابل نمایش نداره\nتابعی بدون return\n\n\n\ndef get_sum(x, y):\n    return x + y\n\nget_sum(2, 3)   # 5\ndef no_result_func():\n    x = math.cos(radians)   # خروجی برنمی‌گردونه",
+    "text": "توابع Fruitful (خروجی‌دار) و Void (بدون خروجی)\n\n\n\n\n\n\n\n\nنوع\nویژگی\nمثال\n\n\n\n\nFruitful\nبا return یک مقدار برمی‌گردونه\nmath.sqrt(5)\n\n\nVoid\nفقط کاری انجام می‌ده، خروجی قابل نمایش نداره\nتابعی بدون return\n\n\n\n\nبازگرداندن حاصل جمع\n\ndef get_sum(x, y):\n    return x + y\n\nget_sum(2, 3)\n\nذخیره حاصل جمع در متغیر محلی که از بیرون در دسترس نیست.\n\ndef no_result_func(x, y):\n    z = x + y",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>تعریف تابع (`def`)</span>"
@@ -1224,7 +1224,7 @@
     "href": "chapter/functions/def.html#متغیرهای-سراسری-global",
     "title": "تعریف تابع (def)",
     "section": "متغیرهای سراسری (global)",
-    "text": "متغیرهای سراسری (global)\n\nبه‌طور پیش‌فرض، تابع نمی‌تونه متغیر بیرونی رو تغییر بده (فقط می‌تونه بخونه)\nبرای تغییر دادن متغیر بیرون تابع از داخل تابع، باید با global اعلام بشه\n\nn = 0\ndef counter():\n    global n\n    n += 1\n\ncounter()\nprint(n)   # 1",
+    "text": "متغیرهای سراسری (global)\n\nبه‌طور پیش‌فرض، تابع نمی‌تونه متغیر بیرونی رو تغییر بده (فقط می‌تونه بخونه)\nبرای تغییر دادن متغیر بیرون تابع از داخل تابع، باید با global اعلام بشه\n\nn = 0\ndef counter():\n    global n\n    n += 1\n\ncounter()\nprint(n)\n1",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>تعریف تابع (`def`)</span>"
@@ -1235,7 +1235,7 @@
     "href": "chapter/functions/def.html#تمرین",
     "title": "تعریف تابع (def)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n102250 - پیدایِش!\n148640 - آزمون تستی\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطسوالات سایت کوئرا\n\n\n\n\n102250 - پیدایِش! - راه حل\n148640 - آزمون تستی - راه حل\n\n\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>تعریف تابع (`def`)</span>"
@@ -1246,7 +1246,7 @@
     "href": "chapter/functions/lambda.html",
     "title": "تابع با lambda",
     "section": "",
-    "text": "lambda یه راه سریع برای ساخت تابعه، بدون نیاز به def و بدون نام\nبرای توابع کوتاه و یک‌خطی به‌کار می‌ره\n\nsquare = lambda x: x ** 2\nprint(square(5))   # 25\n\nمقایسه با تابع معمولی:\n\ndef square(x):\n    return x ** 2\n\n# همون کار با lambda:\nsquare = lambda x: x ** 2\n\nمی‌تونه چند ورودی هم بگیره:\n\nadd = lambda a, b: a + b\nprint(add(3, 4))   # 7",
+    "text": "lambda یه راه سریع برای ساخت تابعه، بدون نیاز به def و بدون نام\nبرای توابع کوتاه و یک‌خطی به‌کار می‌ره\n\nsquare = lambda x: x ** 2\nprint(square(5))\n25\n\nمقایسه با تابع معمولی:\n\ndef square(x):\n    return x ** 2\n\nsquare = lambda x: x ** 2\n\nمی‌تونه چند ورودی هم بگیره:\n\nadd = lambda a, b: a + b\nprint(add(3, 4))\n7",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>تابع با `lambda`</span>"
@@ -1257,7 +1257,7 @@
     "href": "chapter/functions/recursive.html",
     "title": "تابع بازگشتی (Recursive Function)",
     "section": "",
-    "text": "تابعی که در تعریف خودش، خودش رو صدا می‌زنه\nبرای مسائلی که می‌شه اونا رو به نسخه‌های کوچیک‌تر از خودشون تقسیم کرد مناسبه\nهر تابع بازگشتی باید دو بخش داشته باشه:\n\nحالت پایه (Base Case): شرطی که بازگشت رو متوقف می‌کنه\nحالت بازگشتی (Recursive Case): تابع خودش رو با ورودی کوچیک‌تر صدا می‌زنه\n\n\ndef factorial(n):\n    if n == 0:          # حالت پایه\n        return 1\n    else:                # حالت بازگشتی\n        return n * factorial(n - 1)\n\nprint(factorial(5))   # 120\n\nروند اجرا برای factorial(3):\n\nfactorial(3)\n= 3 * factorial(2)\n= 3 * (2 * factorial(1))\n= 3 * (2 * (1 * factorial(0)))\n= 3 * (2 * (1 * 1))\n= 6\n\n\n\n\n\n\nهشدارنکته\n\n\n\nاگه حالت پایه تعریف نشه یا هیچ‌وقت برقرار نشه، تابع بی‌نهایت خودش رو صدا می‌زنه و در نهایت خطای RecursionError می‌ده.\n\n\n\nمثال دیگه: دنباله فیبوناچی\n\ndef fib(n):\n    if n &lt;= 1:              # حالت پایه\n        return n\n    return fib(n - 1) + fib(n - 2)   # حالت بازگشتی\n\nprint(fib(6))   # 8\n\nمقایسه با حلقه (Loop)\n\nخیلی از مسائل بازگشتی رو می‌شه با حلقه هم حل کرد\nبازگشت معمولاً خواناتر ولی حلقه معمولاً بهینه‌تر (از نظر حافظه) هست\n\n# نسخه بازگشتی\ndef factorial_recursive(n):\n    if n == 0:\n        return 1\n    return n * factorial_recursive(n - 1)\n\n# نسخه حلقه‌ای\ndef factorial_loop(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result",
+    "text": "تابعی که در تعریف خودش، خودش رو صدا می‌زنه\nبرای مسائلی که می‌شه اونا رو به نسخه‌های کوچیک‌تر از خودشون تقسیم کرد مناسبه\nهر تابع بازگشتی باید دو بخش داشته باشه:\n\nحالت پایه (Base Case): شرطی که بازگشت رو متوقف می‌کنه\nحالت بازگشتی (Recursive Case): تابع خودش رو با ورودی کوچیک‌تر صدا می‌زنه\n\n\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))\n120\n\nروند اجرا برای factorial(3):\n\nfactorial(3)\n= 3 * factorial(2)\n= 3 * (2 * factorial(1))\n= 3 * (2 * (1 * factorial(0)))\n= 3 * (2 * (1 * 1))\n= 6\n\n\n\n\n\n\nهشدارنکته\n\n\n\nاگه حالت پایه تعریف نشه یا هیچ‌وقت برقرار نشه، تابع بی‌نهایت خودش رو صدا می‌زنه و در نهایت خطای RecursionError می‌ده.\n\n\n\nمثال دیگه: دنباله فیبوناچی\n\ndef fib(n):\n    if n &lt;= 1:\n        return n\n    return fib(n - 1) + fib(n - 2)\n\nprint(fib(6))\n8\n\nمقایسه با حلقه (Loop)\n\nخیلی از مسائل بازگشتی رو می‌شه با حلقه هم حل کرد\nبازگشت معمولاً خواناتر ولی حلقه معمولاً بهینه‌تر (از نظر حافظه) هست\n\ndef factorial_recursive(n):\n    if n == 0:\n        return 1\n    return n * factorial_recursive(n - 1)\n\ndef factorial_loop(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>25</span>  <span class='chapter-title'>تابع بازگشتی (Recursive Function)</span>"
@@ -1279,7 +1279,7 @@
     "href": "chapter/functions/built-in.html#اعمال-تابع-روی-لیست-با-map",
     "title": "داخلی (built-in)",
     "section": "",
-    "text": "map() یک تابع رو روی تک‌تک عضوهای یک لیست (یا هر iterable) اجرا می‌کنه و یک نتیجه‌ی جدید برمی‌گردونه\n\nnumbers = [1, 2, 3, 4]\nsquared = list(map(lambda x: x ** 2, numbers))\nprint(squared)   # [1, 4, 9, 16]\n\nبدون lambda هم می‌شه از یک تابع معمولی استفاده کرد:\n\ndef square(x):\n    return x ** 2\n\nsquared = list(map(square, numbers))",
+    "text": "map() یک تابع رو روی تک‌تک عضوهای یک لیست (یا هر iterable) اجرا می‌کنه و یک نتیجه‌ی جدید برمی‌گردونه\n\nnumbers = [1, 2, 3, 4]\nsquared = list(map(lambda x: x ** 2, numbers))\nprint(squared)\n[1, 4, 9, 16]\n\nبدون lambda هم می‌شه از یک تابع معمولی استفاده کرد:\n\ndef square(x):\n    return x ** 2\n\nsquared = list(map(square, numbers))\nprint(squared)\n[1, 4, 9, 16]",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>داخلی (`built-in`)</span>"
@@ -1290,7 +1290,7 @@
     "href": "chapter/functions/built-in.html#جستجوی-مقادیر-مشخص-در-لیست-با-filter",
     "title": "داخلی (built-in)",
     "section": "جستجوی مقادیر مشخص در لیست با filter",
-    "text": "جستجوی مقادیر مشخص در لیست با filter\n\nfilter() از بین عضوهای یک لیست، فقط اون‌هایی که شرط True برمی‌گردونن رو نگه می‌داره\n\nnumbers = [1, 2, 3, 4, 5, 6]\nevens = list(filter(lambda x: x % 2 == 0, numbers))\nprint(evens)   # [2, 4, 6]\n\nتفاوت با map: map همه‌ی عضوها رو تبدیل می‌کنه، filter فقط بعضی‌ها رو انتخاب می‌کنه (خروجیش کوچیک‌تر یا مساوی ورودیه)",
+    "text": "جستجوی مقادیر مشخص در لیست با filter\n\nfilter() از بین عضوهای یک لیست، فقط اون‌هایی که شرط True برمی‌گردونن رو نگه می‌داره\n\nnumbers = [1, 2, 3, 4, 5, 6]\nevens = list(filter(lambda x: x % 2 == 0, numbers))\nprint(evens)\n[2, 4, 6]\n\nتفاوت با map: map همه‌ی عضوها رو تبدیل می‌کنه، filter فقط بعضی‌ها رو انتخاب می‌کنه (خروجیش کوچیک‌تر یا مساوی ورودیه)",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>داخلی (`built-in`)</span>"
@@ -1301,7 +1301,7 @@
     "href": "chapter/functions/built-in.html#جفت-سازی-مقادیر-چند-لیست-با-zip",
     "title": "داخلی (built-in)",
     "section": "جفت سازی مقادیر چند لیست با zip",
-    "text": "جفت سازی مقادیر چند لیست با zip\n\nzip() چند لیست رو عضو به عضو با هم جفت می‌کنه\n\nnames = ['Ali', 'Sara', 'Reza']\nages = [25, 30, 28]\n\nzipped = list(zip(names, ages))\nprint(zipped)   # [('Ali', 25), ('Sara', 30), ('Reza', 28)]\n\nکاربرد رایج: پیمایش هم‌زمان دو لیست\n\nfor name, age in zip(names, ages):\n    print(name, age)\n\nاگه طول لیست‌ها متفاوت باشه، zip به اندازه‌ی کوتاه‌ترین لیست جلو می‌ره",
+    "text": "جفت سازی مقادیر چند لیست با zip\n\nzip() چند لیست رو عضو به عضو با هم جفت می‌کنه\n\nnames = ['Ali', 'Sara', 'Reza']\nages = [25, 30, 28]\n\nzipped = list(zip(names, ages))\nprint(zipped)\n[('Ali', 25), ('Sara', 30), ('Reza', 28)]\n\nکاربرد رایج: پیمایش هم‌زمان دو لیست\n\nfor name, age in zip(names, ages):\n    print(name, age)\nAli 25\nSara 30\nReza 28\n\nاگه طول لیست‌ها متفاوت باشه، zip به اندازه‌ی کوتاه‌ترین لیست جلو می‌ره",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>داخلی (`built-in`)</span>"
@@ -1312,7 +1312,7 @@
     "href": "chapter/functions/built-in.html#ترکیب-هر-سه-با-هم",
     "title": "داخلی (built-in)",
     "section": "ترکیب هر سه با هم",
-    "text": "ترکیب هر سه با هم\nnames = ['Ali', 'Sara', 'Reza']\nscores = [15, 8, 19]\n\n# فقط اسم کسایی که نمره‌شون بالای 10 هست، با یک پسوند \"Pass\" جلوش\npassed = list(map(lambda x: x[0] + ' - Pass',\n                   filter(lambda x: x[1] &gt; 10, zip(names, scores))))\nprint(passed)   # ['Ali - Pass', 'Reza - Pass']\n\nهر جا دیدین دارین با یک حلقه‌ی for روی یک لیست، مقادیرش رو تبدیل یا فیلتر می‌کنین، احتمالاً می‌شه همون کار رو با ترکیب map/filter و lambda در یک خط نوشت — ولی اگه منطق پیچیده بشه، خوانایی کد با یک تابع معمولی و حلقه‌ی for بهتره.",
+    "text": "ترکیب هر سه با هم\nnames = ['Ali', 'Sara', 'Reza']\nscores = [15, 8, 19]\n\npassed = list(\n    map(\n        lambda x: x[0] + ' - Pass',\n        filter(\n            lambda x: x[1] &gt; 10,\n            zip(names, scores))\n        ),\n    )\nprint(passed)\n['Ali - Pass', 'Reza - Pass']\n\nهر جا دیدین دارین با یک حلقه‌ی for روی یک لیست، مقادیرش رو تبدیل یا فیلتر می‌کنین، احتمالاً می‌شه همون کار رو با ترکیب map/filter و lambda در یک خط نوشت — ولی اگه منطق پیچیده بشه، خوانایی کد با یک تابع معمولی و حلقه‌ی for بهتره.",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>داخلی (`built-in`)</span>"
@@ -1389,7 +1389,7 @@
     "href": "chapter/functions/import.html#ساخت-ماژول-شخصی",
     "title": "خارجی (import)",
     "section": "ساخت ماژول شخصی",
-    "text": "ساخت ماژول شخصی\n\nهر فایل .py خودش یک ماژوله — می‌شه از توابع یک فایل، توی فایل دیگه استفاده کرد، دقیقاً مثل math یا random\n\nفرض کنیم فایلی به اسم calc.py داریم:\n# calc.py\ndef add(a, b):\n    return a + b\n\ndef square(x):\n    return x ** 2\nحالا توی یک فایل دیگه (مثلاً main.py) که کنار همون فایل قرار داره:\n# main.py\nimport calc\n\nprint(calc.add(2, 3))      # 5\nprint(calc.square(4))      # 16\n\nتوجه: اسم فایل بدون پسوند .py می‌شه اسم ماژول — یعنی import calc، نه import calc.py\nمی‌شه از همون روش‌های alias یا from ... import ... هم استفاده کرد:\n\nfrom calc import add\nimport calc as c",
+    "text": "ساخت ماژول شخصی\n\nهر فایل .py خودش یک ماژوله — می‌شه از توابع یک فایل، توی فایل دیگه استفاده کرد، دقیقاً مثل math یا random\n\nفرض کنیم فایلی به اسم calc.py داریم:\n# calc.py\ndef add(a, b):\n    return a + b\n\ndef square(x):\n    return x ** 2\nحالا توی یک فایل دیگه (مثلاً main.py) که کنار همون فایل قرار داره:\n# main.py\nimport calc\n\nprint(calc.add(2, 3))\nprint(calc.square(4))\n5\n16\n\nتوجه: اسم فایل بدون پسوند .py می‌شه اسم ماژول — یعنی import calc، نه import calc.py\nمی‌شه از همون روش‌های alias یا from ... import ... هم استفاده کرد:\n\nfrom calc import add\nimport calc as c",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>27</span>  <span class='chapter-title'>خارجی (`import`)</span>"
@@ -1411,7 +1411,7 @@
     "href": "chapter/functions/import.html#if-__name__-__main__-چیه-و-چرا-استفاده-میشه",
     "title": "خارجی (import)",
     "section": "if __name__ == \"__main__\" چیه و چرا استفاده می‌شه؟",
-    "text": "if __name__ == \"__main__\" چیه و چرا استفاده می‌شه؟\n\nهر فایل پایتون یه متغیر داخلی به اسم __name__ داره\nوقتی فایل مستقیم اجرا بشه (مثلاً python calc.py)، مقدار __name__ برابر \"__main__\" می‌شه\nوقتی همون فایل به‌عنوان ماژول import بشه، مقدار __name__ برابر اسم خود فایل می‌شه (مثلاً \"calc\")\n\n# calc.py\ndef add(a, b):\n    return a + b\n\nprint(\"این خط همیشه اجرا می‌شه، چه import بشه چه مستقیم اجرا بشه\")\n\nif __name__ == \"__main__\":\n    print(\"این خط فقط وقتی اجرا می‌شه که calc.py مستقیم اجرا بشه\")\n    print(add(2, 3))\n\nاگه main.py این فایل رو import کنه (import calc)، خط اول print اجرا می‌شه ولی بخش داخل if اجرا نمی‌شه\nاگه خود calc.py مستقیم اجرا بشه، هر دو اجرا می‌شن\n\n\nچرا این کار مفیده؟\n\nبه ما اجازه می‌ده یک فایل هم به‌عنوان ماژول قابل‌استفاده توسط فایل‌های دیگه باشه، هم به‌عنوان برنامه‌ی مستقل قابل اجرا\nمعمولاً برای تست سریع توابع یک فایل، بدون اینکه اون تست‌ها وقتی فایل import می‌شه هم اجرا بشن:\n\ndef process(data):\n    return [x * 2 for x in data]\n\nif __name__ == \"__main__\":\n    # این بخش فقط برای تست دستیه، وقتی فایل import بشه اجرا نمی‌شه\n    sample = [1, 2, 3]\n    print(process(sample))",
+    "text": "if __name__ == \"__main__\" چیه و چرا استفاده می‌شه؟\n\nهر فایل پایتون یه متغیر داخلی به اسم __name__ داره\nوقتی فایل مستقیم اجرا بشه (مثلاً python calc.py)، مقدار __name__ برابر \"__main__\" می‌شه\nوقتی همون فایل به‌عنوان ماژول import بشه، مقدار __name__ برابر اسم خود فایل می‌شه (مثلاً \"calc\")\n\n# calc.py\ndef add(a, b):\n    return a + b\n\nprint(\"این خط همیشه اجرا می‌شه، چه import بشه چه مستقیم اجرا بشه\")\n\nif __name__ == \"__main__\":\n    print(\"این خط فقط وقتی اجرا می‌شه که calc.py مستقیم اجرا بشه\")\n    print(add(2, 3))\n\nاگه main.py این فایل رو import کنه (import calc)، خط اول print اجرا می‌شه ولی بخش داخل if اجرا نمی‌شه\nاگه خود calc.py مستقیم اجرا بشه، هر دو اجرا می‌شن\n\n\nچرا این کار مفیده؟\n\nبه ما اجازه می‌ده یک فایل هم به‌عنوان ماژول قابل‌استفاده توسط فایل‌های دیگه باشه، هم به‌عنوان برنامه‌ی مستقل قابل اجرا\nمعمولاً برای تست سریع توابع یک فایل، بدون اینکه اون تست‌ها وقتی فایل import می‌شه هم اجرا بشن:\n\ndef process(data):\n    return [x * 2 for x in data]\n\nif __name__ == \"__main__\":\n    sample = [1, 2, 3]\n    print(process(sample))",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>27</span>  <span class='chapter-title'>خارجی (`import`)</span>"
@@ -1422,7 +1422,7 @@
     "href": "chapter/functions/args-kwargs.html",
     "title": "آرگومان‌های متغیر (args, kwargs)",
     "section": "",
-    "text": "دو ابزار قدرتمند در پایتون برای نوشتن توابعی با تعداد ورودی نامشخص\nباعث می‌شن تابع شما انعطاف‌پذیرتر بشه و تعداد پارامترهای ورودی محدود نباشه\n\n\n\n*args (Arguments)\n\nبرای دریافت تعداد متغیری آرگومان غیر کلیدی (positional arguments) به صورت تاپل استفاده می‌شه\nاسم args قراردادی‌ست، ستاره (*) مهمه\n\n\ndef avr(*args):\n    return sum(args) / len(args)\n\n\nprint(avr(1, 2, 3))\nprint(avr(10, 20, 30, 40))\n\n2.0\n25.0\n\nمی‌تونیم کنارش پارامترهای معمولی هم داشته باشیم:\n\n\ndef greet(prefix, *names):\n    for name in names:\n        print(f\"{prefix} {name}\")\n\n\ngreet(\"Hi\", \"Mohsen\", \"Nasim\", \"Reza\")\n\nHi Mohsen\nHi Nasim\nHi Reza\n\n\n**kwargs (Keyword Arguments)\n\nبرای دریافت تعداد متغیری آرگومان کلیدی (named arguments) به صورت دیکشنری استفاده می‌شه\nدو ستاره (**) مهمه، اسم kwargs قراردادی‌ست\n\n\ndef show_info(**kwargs):\n    for key, value in kwargs.items():\n        print(f\"{key}: {value}\")\n\nshow_info(name=\"Mohsen\", age=32, city=\"Sari\")\n\nname: Mohsen\nage: 32\ncity: Sari\n\nترکیب با پارامترهای معمولی:\n\n\ndef introduce(greeting, **details):\n    print(greeting)\n    for key, value in details.items():\n        print(f\"{key} = {value}\")\n\n\nintroduce(\"Welcome!\", name=\"Mohsen\", job=\"Teacher\")\n\nWelcome!\nname = Mohsen\njob = Teacher\n\n\nاستفاده همزمان از *args و **kwargs\nپارامترهای معمولی → *args → پارامترهای کلیدی پیش‌فرض → **kwargs\n\ndef example(a, b, *args, c=10, **kwargs):\n    print(f\"a={a}, b={b}\")\n    print(f\"args={args}\")\n    print(f\"c={c}\")\n    print(f\"kwargs={kwargs}\")\n\nexample(1, 2, 3, 4, 5, c=20, name=\"Mohsen\", age=32)\n\na=1, b=2\nargs=(3, 4, 5)\nc=20\nkwargs={'name': 'Mohsen', 'age': 32}\n\n\nپاس دادن لیست یا دیکشنری به تابع\n\nمی‌تونیم یک لیست رو با * و یک دیکشنری رو با ** به تابع پاس بدیم:\n\n\ndef show(a, b, c):\n    print(a, b, c)\n\n\nnumbers = [1, 2, 3]\nshow(*numbers)\n\ndata = {\"a\": 10, \"b\": 20, \"c\": 30}\nshow(**data)\n\n1 2 3\n10 20 30\n\n\nجمع‌بندی\n\n\n\n\n\n\nنکتهنکته\n\n\n\nبرای اکثر موارد، نام‌های args و kwargs قراردادی هستن، ولی ستاره و دو ستاره اجباری هستن. می‌تونید از نام‌های دیگه مثل *items و **options هم استفاده کنید.",
+    "text": "دو ابزار قدرتمند در پایتون برای نوشتن توابعی با تعداد ورودی نامشخص\nباعث می‌شن تابع شما انعطاف‌پذیرتر بشه و تعداد پارامترهای ورودی محدود نباشه\n\n\n\n*args (Arguments)\n\nبرای دریافت تعداد متغیری آرگومان غیر کلیدی (positional arguments) به صورت تاپل استفاده می‌شه\nاسم args قراردادی‌ست، ستاره (*) مهمه\n\ndef avr(*args):\n    return sum(args) / len(args)\n\n\nprint(avr(1, 2, 3))\nprint(avr(10, 20, 30, 40))\n2.0\n25.0\n\nمی‌تونیم کنارش پارامترهای معمولی هم داشته باشیم:\n\ndef greet(prefix, *names):\n    for name in names:\n        print(f\"{prefix} {name}\")\n\n\ngreet(\"Hi\", \"Mohsen\", \"Nasim\", \"Reza\")\nHi Mohsen\nHi Nasim\nHi Reza\n\n\n**kwargs (Keyword Arguments)\n\nبرای دریافت تعداد متغیری آرگومان کلیدی (named arguments) به صورت دیکشنری استفاده می‌شه\nدو ستاره (**) مهمه، اسم kwargs قراردادی‌ست\n\ndef show_info(**kwargs):\n    for key, value in kwargs.items():\n        print(f\"{key}: {value}\")\n\nshow_info(name=\"Mohsen\", age=32, city=\"Sari\")\nname: Mohsen\nage: 32\ncity: Sari\n\nترکیب با پارامترهای معمولی:\n\ndef introduce(greeting, **details):\n    print(greeting)\n    for key, value in details.items():\n        print(f\"{key} = {value}\")\n\n\nintroduce(\"Welcome!\", name=\"Mohsen\", job=\"Teacher\")\nWelcome!\nname = Mohsen\njob = Teacher\n\n\nاستفاده همزمان از *args و **kwargs\nپارامترهای معمولی → *args → پارامترهای کلیدی پیش‌فرض → **kwargs\ndef example(a, b, *args, c=10, **kwargs):\n    print(f\"a={a}, b={b}\")\n    print(f\"args={args}\")\n    print(f\"c={c}\")\n    print(f\"kwargs={kwargs}\")\n\nexample(1, 2, 3, 4, 5, c=20, name=\"Mohsen\", age=32)\na=1, b=2\nargs=(3, 4, 5)\nc=20\nkwargs={'name': 'Mohsen', 'age': 32}\n\n\nپاس دادن لیست یا دیکشنری به تابع\n\nمی‌تونیم یک لیست رو با * و یک دیکشنری رو با ** به تابع پاس بدیم:\n\ndef show(a, b, c):\n    print(a, b, c)\n\n\nnumbers = [1, 2, 3]\nshow(*numbers)\n\ndata = {\"a\": 10, \"b\": 20, \"c\": 30}\nshow(**data)\n1 2 3\n10 20 30\n\n\nجمع‌بندی\n\n\n\n\n\n\nنکتهنکته\n\n\n\nبرای اکثر موارد، نام‌های args و kwargs قراردادی هستن، ولی ستاره و دو ستاره اجباری هستن. می‌تونید از نام‌های دیگه مثل *items و **options هم استفاده کنید.",
     "crumbs": [
       "تابع",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>آرگومان‌های متغیر (`args`, `kwargs`)</span>"
@@ -1521,7 +1521,7 @@
     "href": "chapter/gui/tkinter.html#ورود-به-دنیای-گرافیک",
     "title": "رابط گرافیکی (tkinter)",
     "section": "",
-    "text": "ایجاد Loop برای بدنه\nدر این بخش با ساختن یک پنجره ساده وارد دنیای رابط گرافیکی می‌شویم. متد mainloop() باعث می‌شود پنجره باز بماند و منتظر تعامل کاربر بماند.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.mainloop()\n\n\n\nعنوان\nدر این مرحله برای پنجره یک عنوان مشخص می‌کنیم. متد title() متن نمایش داده‌شده در نوار بالای پنجره را تنظیم می‌کند.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\n\nwindow.mainloop()\n\n\n\nتغییر سایز پنجره\nدر این بخش اندازه اولیه پنجره را مشخص می‌کنیم. متد geometry() عرض و ارتفاع پنجره را بر حسب پیکسل تعیین می‌کند.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.title(\"Hello World!\")\n\nwindow.geometry(\"480x360\")  # width x height\n# window.minsize(width=400, height=300)\n# window.maxsize(width=640, height=450)\n# window.resizable(width=False, height=False)\n\nwindow.mainloop()",
+    "text": "ایجاد Loop برای بدنه\nدر این بخش با ساختن یک پنجره ساده وارد دنیای رابط گرافیکی می‌شویم. متد mainloop() باعث می‌شود پنجره باز بماند و منتظر تعامل کاربر بماند.\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.mainloop()\n\n\nعنوان\nدر این مرحله برای پنجره یک عنوان مشخص می‌کنیم. متد title() متن نمایش داده‌شده در نوار بالای پنجره را تنظیم می‌کند.\nimport tkinter as tk\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\n\nwindow.mainloop()\n\n\nتغییر سایز پنجره\nدر این بخش اندازه اولیه پنجره را مشخص می‌کنیم. متد geometry() عرض و ارتفاع پنجره را بر حسب پیکسل تعیین می‌کند.\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.title(\"Hello World!\")\n\nwindow.geometry(\"480x360\")  # width x height\n# window.minsize(width=400, height=300)\n# window.maxsize(width=640, height=450)\n# window.resizable(width=False, height=False)\n# window.config(background=\"red\")\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>30</span>  <span class='chapter-title'>رابط گرافیکی (`tkinter`)</span>"
@@ -1532,7 +1532,18 @@
     "href": "chapter/gui/widgets.html",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "",
-    "text": "برچسب\nبرچسب یا Label برای نمایش متن در پنجره استفاده می‌شود. می‌توان ظاهر آن مثل فونت، رنگ پس‌زمینه و رنگ متن را تغییر داد.\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntk.Label(window, text=\"Hello Mohsen\").pack()\ntk.Label(\n    window,\n    text=\"How are you?\",\n    font=(\"Roboto\", 18),  # family size\n    bg=\"blue\",  # background\n    fg=\"white\",  # forground\n).pack(pady=10) # padding in y axis\n\nwindow.mainloop()",
+    "text": "برچسب\nبرچسب یا Label برای نمایش متن در پنجره استفاده می‌شود. می‌توان ظاهر آن مثل فونت، رنگ پس‌زمینه و رنگ متن را تغییر داد.",
+    "crumbs": [
+      "رابط گرافیکی",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/gui/widgets.html#برچسب",
+    "href": "chapter/gui/widgets.html#برچسب",
+    "title": "ابزارهای اصلی (Widgets)",
+    "section": "",
+    "text": "import tkinter as tk\n\nwindow = tk.Tk()\n\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntk.Label(window, text=\"Hello Mohsen\").pack()\ntk.Label(\n    window,\n    text=\"How are you?\",\n    font=(\"Roboto\", 18),  # family size\n    bg=\"blue\",  # background\n    fg=\"white\",  # forground\n).pack(pady=10) # padding in y axis\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
@@ -1543,7 +1554,7 @@
     "href": "chapter/gui/widgets.html#دکمه",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "دکمه",
-    "text": "دکمه\nدکمه یا Button برای انجام یک عمل هنگام کلیک کاربر استفاده می‌شود. با استفاده از پارامتر command می‌توان یک تابع را به دکمه متصل کرد.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    print(\"Print in Terminal!\")\n    lbl.configure(text=\"Print in Tkinter GUI\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nbtn = tk.Button(window)\nbtn.configure(text=\"Say hello\", command=btn_print)\nbtn.pack(pady=10)\n\nlbl = tk.Label(window, text=\"\")\nlbl.pack(pady=10)\n\nwindow.mainloop()\n\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبا توجه به مواردی که تاکنون یادگرفتید میتوانید پروژه گوسفند شمار را انجام دهید گوسفند شمار.",
+    "text": "دکمه\nدکمه یا Button برای انجام یک عمل هنگام کلیک کاربر استفاده می‌شود. با استفاده از پارامتر command می‌توان یک تابع را به دکمه متصل کرد.\nimport tkinter as tk\n\n\ndef btn_print():\n    print(\"Print in Terminal!\")\n    lbl.configure(text=\"Print in Tkinter GUI\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nbtn = tk.Button(window)\nbtn.configure(text=\"Say hello\", command=btn_print)\nbtn.pack(pady=10)\n\nlbl = tk.Label(window, text=\"\")\nlbl.pack(pady=10)\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
@@ -1554,7 +1565,7 @@
     "href": "chapter/gui/widgets.html#ورودی",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "ورودی",
-    "text": "ورودی\nویجت Entry برای دریافت ورودی از کاربر استفاده می‌شود. با متد get() می‌توان مقدار واردشده را خواند و بر اساس آن تصمیم‌گیری کرد.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    name = ntr.get()\n    if name == \"\":\n        result.configure(\n            text=\"Please Enter your name!\",\n            fg=\"red\"\n        )\n    else:\n        result.configure(\n            text=f\"Hello {name}!\",\n            fg=\"blue\"\n        )\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nlbl = tk.Label(\n    window,\n    text=\"Enter your name:\",\n    font=(\"Roboto\", 10)\n)\nlbl.pack(pady=10)\n\nntr = tk.Entry(window)\nntr.pack(pady=5)\n\nbtn = tk.Button(window)\nbtn.configure(text=\"Say hello\", command=btn_print)\nbtn.pack()\n\nresult = tk.Label(\n    window,\n    text=\"\",\n    font=(\"Roboto\", 12, \"bold\")\n)\nresult.pack(pady=10)\n\nwindow.mainloop()",
+    "text": "ورودی\nویجت Entry برای دریافت ورودی از کاربر استفاده می‌شود. با متد get() می‌توان مقدار واردشده را خواند و بر اساس آن تصمیم‌گیری کرد.\nimport tkinter as tk\n\n\ndef btn_print():\n    name = ntr.get()\n    if name == \"\":\n        result.configure(\n            text=\"Please Enter your name!\",\n            fg=\"red\"\n        )\n    else:\n        result.configure(\n            text=f\"Hello {name}!\",\n            fg=\"blue\"\n        )\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nlbl = tk.Label(\n    window,\n    text=\"Enter your name:\",\n    font=(\"Roboto\", 10)\n)\nlbl.pack(pady=10)\n\nntr = tk.Entry(window)\nntr.pack(pady=5)\n\nbtn = tk.Button(window)\nbtn.configure(text=\"Say hello\", command=btn_print)\nbtn.pack()\n\nresult = tk.Label(\n    window,\n    text=\"\",\n    font=(\"Roboto\", 12, \"bold\")\n)\nresult.pack(pady=10)\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
@@ -1565,7 +1576,7 @@
     "href": "chapter/gui/widgets.html#دکمه-رادیویی",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "دکمه رادیویی",
-    "text": "دکمه رادیویی\nویجت Radiobutton برای انتخاب یکی از چند گزینه استفاده می‌شود. همه‌ی رادیوباتن‌هایی که یک متغیر مشترک دارند به‌صورت خودکار وابسته به هم می‌شوند (انتخاب یکی، بقیه را غیرفعال می‌کند).\n\nimport tkinter as tk\n\n\ndef btn_print():\n    result.configure(text=f\"You selected: {gender.get()}\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ngender = tk.StringVar(value=\"male\")  # shared variable\n\ntk.Radiobutton(\n    window, text=\"Male\", variable=gender, value=\"male\"\n).pack()\ntk.Radiobutton(\n    window, text=\"Female\", variable=gender, value=\"female\"\n).pack()\n\nbtn = tk.Button(window, text=\"Submit\", command=btn_print)\nbtn.pack(pady=10)\n\nresult = tk.Label(window, text=\"\")\nresult.pack(pady=10)\n\nwindow.mainloop()",
+    "text": "دکمه رادیویی\nویجت Radiobutton برای انتخاب یکی از چند گزینه استفاده می‌شود. همه‌ی رادیوباتن‌هایی که یک متغیر مشترک دارند به‌صورت خودکار وابسته به هم می‌شوند (انتخاب یکی، بقیه را غیرفعال می‌کند).\nimport tkinter as tk\n\n\ndef btn_print():\n    result.configure(\n        text=f\"You selected: {gender.get()}\"\n    )\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ngender = tk.StringVar(value=\"male\")  # shared variable\n\ntk.Radiobutton(\n    window,\n    text=\"Male\",\n    variable=gender,\n    value=\"male\",\n).pack()\ntk.Radiobutton(\n    window,\n    text=\"Female\",\n    variable=gender,\n    value=\"female\",\n).pack()\n\nbtn = tk.Button(\n    window,\n    text=\"Submit\",\n    command=btn_print,\n)\nbtn.pack(pady=10)\n\nresult = tk.Label(window, text=\"\")\nresult.pack(pady=10)\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
@@ -1576,7 +1587,7 @@
     "href": "chapter/gui/widgets.html#چکباکس",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "چک‌باکس",
-    "text": "چک‌باکس\nویجت Checkbutton برای انتخاب گزینه‌هایی استفاده می‌شود که می‌توانند به‌صورت مستقل (چندتایی) انتخاب یا غیرفعال شوند. با متغیر IntVar مقدار ۰ یا ۱ (تیک‌نخورده / تیک‌خورده) نگه‌داری می‌شود.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    if agree.get() == 1:\n        result.configure(text=\"You agreed!\", fg=\"green\")\n    else:\n        result.configure(text=\"You must agree first!\", fg=\"red\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nagree = tk.IntVar()  # 0 = unchecked, 1 = checked\n\nchk = tk.Checkbutton(window, text=\"I agree to the terms\", variable=agree)\nchk.pack(pady=10)\n\nbtn = tk.Button(window, text=\"Submit\", command=btn_print)\nbtn.pack()\n\nresult = tk.Label(window, text=\"\")\nresult.pack(pady=10)\n\nwindow.mainloop()",
+    "text": "چک‌باکس\nویجت Checkbutton برای انتخاب گزینه‌هایی استفاده می‌شود که می‌توانند به‌صورت مستقل (چندتایی) انتخاب یا غیرفعال شوند. با متغیر IntVar مقدار ۰ یا ۱ (تیک‌نخورده / تیک‌خورده) نگه‌داری می‌شود.\nimport tkinter as tk\n\n\ndef btn_print():\n    if agree.get() == 1:\n        result.configure(\n            text=\"You agreed!\",\n            fg=\"green\",\n        )\n    else:\n        result.configure(\n            text=\"You must agree first!\",\n            fg=\"red\",\n        )\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nagree = tk.IntVar()  # 0 = unchecked, 1 = checked\n\nchk = tk.Checkbutton(\n    window,\n    text=\"I agree to the terms\",\n    variable=agree,\n)\nchk.pack(pady=10)\n\nbtn = tk.Button(\n    window,\n    text=\"Submit\",\n    command=btn_print,\n)\nbtn.pack()\n\nresult = tk.Label(window, text=\"\")\nresult.pack(pady=10)\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
@@ -1587,7 +1598,7 @@
     "href": "chapter/gui/widgets.html#لیستباکس",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "لیست‌باکس",
-    "text": "لیست‌باکس\nویجت Listbox برای نمایش یک لیست از آیتم‌ها و انتخاب یک یا چند مورد از بین آن‌ها استفاده می‌شود. با متد curselection() اندیس آیتم انتخاب‌شده و با get() مقدار آن خوانده می‌شود.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    selection = lst.curselection()  # returns a tuple of indexes\n    if selection:\n        index = selection[0]\n        result.configure(text=f\"You selected: {lst.get(index)}\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nlst = tk.Listbox(window)\nlst.pack(pady=10)\n\nfruits = [\"Apple\", \"Banana\", \"Cherry\", \"Melon\"]\nfor fruit in fruits:\n    lst.insert(tk.END, fruit)  # add item to the end of the list\n\nbtn = tk.Button(window, text=\"Select\", command=btn_print)\nbtn.pack()\n\nresult = tk.Label(window, text=\"\")\nresult.pack(pady=10)\n\nwindow.mainloop()",
+    "text": "لیست‌باکس\nویجت Listbox برای نمایش یک لیست از آیتم‌ها و انتخاب یک یا چند مورد از بین آن‌ها استفاده می‌شود. با متد curselection() اندیس آیتم انتخاب‌شده و با get() مقدار آن خوانده می‌شود.\nimport tkinter as tk\n\n\ndef btn_print():\n    # returns a tuple of indexes\n    selection = lst.curselection()\n    if selection:\n        index = selection[0]\n        result.configure(\n            text=f\"You selected: {lst.get(index)}\"\n        )\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nlst = tk.Listbox(window)\nlst.pack(pady=10)\n\nfruits = [\n    \"Apple\", \"Banana\",\n    \"Cherry\", \"Melon\",\n]\nfor fruit in fruits:\n    # add item to the end of the list\n    lst.insert(tk.END, fruit)\n\nbtn = tk.Button(\n    window,\n    text=\"Select\",\n    command=btn_print,\n)\nbtn.pack()\n\nresult = tk.Label(window, text=\"\")\nresult.pack(pady=10)\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
@@ -1598,7 +1609,7 @@
     "href": "chapter/gui/widgets.html#اسلایدر",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "اسلایدر",
-    "text": "اسلایدر\nویجت Scale یک نوار لغزنده برای انتخاب یک عدد در یک بازه‌ی مشخص است. با پارامترهای from_ و to بازه و با orient جهت افقی یا عمودی آن مشخص می‌شود.\n\nimport tkinter as tk\n\n\ndef slider_changed(value):\n    result.configure(text=f\"Value: {value}\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nscale = tk.Scale(\n    window,\n    from_=0,\n    to=100,\n    orient=\"horizontal\",  # or \"vertical\"\n    command=slider_changed,\n)\nscale.pack(pady=10)\n\nresult = tk.Label(window, text=\"Value: 0\")\nresult.pack(pady=10)\n\nwindow.mainloop()",
+    "text": "اسلایدر\nویجت Scale یک نوار لغزنده برای انتخاب یک عدد در یک بازه‌ی مشخص است. با پارامترهای from_ و to بازه و با orient جهت افقی یا عمودی آن مشخص می‌شود.\nimport tkinter as tk\n\n\ndef slider_changed(value):\n    result.configure(\n        text=f\"Value: {value}\"\n    )\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nscale = tk.Scale(\n    window,\n    from_=0,\n    to=100,\n    orient=\"horizontal\",  # or \"vertical\"\n    command=slider_changed,\n)\nscale.pack(pady=10)\n\nresult = tk.Label(\n    window,\n    text=\"Value: 0\",\n)\nresult.pack(pady=10)\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
@@ -1609,7 +1620,7 @@
     "href": "chapter/gui/widgets.html#قاب-frame",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "قاب (Frame)",
-    "text": "قاب (Frame)\nویجت Frame یک ظرف (container) خالی است که برای دسته‌بندی و سازمان‌دهی سایر ویجت‌ها داخل پنجره استفاده می‌شود. مثلاً می‌توان چند ویجت را در یک قاب کنار هم و چند ویجت دیگر را در قاب دیگری زیر هم چید.\n\nimport tkinter as tk\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntop_frame = tk.Frame(window)\ntop_frame.pack(pady=10)\n\ntk.Label(top_frame, text=\"Name:\").pack(side=\"left\", padx=5)\ntk.Entry(top_frame).pack(side=\"left\")\n\nbottom_frame = tk.Frame(window)\nbottom_frame.pack(pady=10)\n\ntk.Button(bottom_frame, text=\"OK\").pack(side=\"left\", padx=5)\ntk.Button(bottom_frame, text=\"Cancel\").pack(side=\"left\", padx=5)\n\nwindow.mainloop()",
+    "text": "قاب (Frame)\nویجت Frame یک ظرف (container) خالی است که برای دسته‌بندی و سازمان‌دهی سایر ویجت‌ها داخل پنجره استفاده می‌شود. مثلاً می‌توان چند ویجت را در یک قاب کنار هم و چند ویجت دیگر را در قاب دیگری زیر هم چید.\nimport tkinter as tk\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntop_frame = tk.Frame(window)\ntop_frame.pack(pady=10)\n\ntk.Label(\n    top_frame,\n    text=\"Name:\",\n).pack(side=\"left\", padx=5)\ntk.Entry(\n    top_frame\n).pack(side=\"left\")\n\nbottom_frame = tk.Frame(window)\nbottom_frame.pack(pady=10)\n\ntk.Button(\n    bottom_frame,\n    text=\"OK\",\n).pack(side=\"left\", padx=5)\ntk.Button(\n    bottom_frame,\n    text=\"Cancel\",\n).pack(side=\"left\", padx=5)\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
@@ -1620,7 +1631,7 @@
     "href": "chapter/gui/widgets.html#جعبه-پیام",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "جعبه پیام",
-    "text": "جعبه پیام\nماژول messagebox برای نمایش پیام‌های هشدار، خطا یا سوال به‌صورت یک پنجره‌ی جداگانه (Popup) استفاده می‌شود.\n\nimport tkinter as tk\nfrom tkinter import messagebox\n\n\ndef btn_print():\n    answer = messagebox.askyesno(\"Confirm\", \"Are you sure?\")\n    if answer:\n        messagebox.showinfo(\"Result\", \"You clicked Yes!\")\n    else:\n        messagebox.showwarning(\"Result\", \"You clicked No!\")\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nbtn = tk.Button(window, text=\"Click me\", command=btn_print)\nbtn.pack(pady=20)\n\nwindow.mainloop()",
+    "text": "جعبه پیام\nماژول messagebox برای نمایش پیام‌های هشدار، خطا یا سوال به‌صورت یک پنجره‌ی جداگانه (Popup) استفاده می‌شود.\nimport tkinter as tk\nfrom tkinter import messagebox\n\n\ndef btn_print():\n    answer = messagebox.askyesno(\n        \"Confirm\", \"Are you sure?\"\n    )\n    if answer:\n        messagebox.showinfo(\n            \"Result\", \"You clicked Yes!\"\n        )\n    else:\n        messagebox.showwarning(\n            \"Result\", \"You clicked No!\"\n        )\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\nbtn = tk.Button(\n    window,\n    text=\"Click me\",\n    command=btn_print,\n)\nbtn.pack(pady=20)\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
@@ -1631,7 +1642,7 @@
     "href": "chapter/gui/widgets.html#متن-چندخطی",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "متن چندخطی",
-    "text": "متن چندخطی\nویجت Text برای دریافت یا نمایش چند خط متن استفاده می‌شود (برخلاف Entry که فقط یک خط است). با متد get(\"1.0\", tk.END) تمام متن از خط اول تا انتها خوانده می‌شود.\n\nimport tkinter as tk\n\n\ndef btn_print():\n    content = txt.get(\"1.0\", tk.END)  # from line 1, char 0 to the end\n    print(content)\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntxt = tk.Text(window, height=8, width=40)\ntxt.pack(pady=10)\n\nbtn = tk.Button(window, text=\"Print\", command=btn_print)\nbtn.pack()\n\nwindow.mainloop()",
+    "text": "متن چندخطی\nویجت Text برای دریافت یا نمایش چند خط متن استفاده می‌شود (برخلاف Entry که فقط یک خط است). با متد get(\"1.0\", tk.END) تمام متن از خط اول تا انتها خوانده می‌شود.\nimport tkinter as tk\n\n\ndef btn_print():\n    # from line 1, char 0 to the end\n    content = txt.get(\"1.0\", tk.END)\n    print(content)\n\n\nwindow = tk.Tk()\nwindow.title(\"Hello World!\")\nwindow.geometry(\"480x360\")\n\ntxt = tk.Text(\n    window,\n    height=8,\n    width=40,\n)\ntxt.pack(pady=10)\n\nbtn = tk.Button(\n    window,\n    text=\"Print\",\n    command=btn_print,\n)\nbtn.pack()\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
@@ -1642,7 +1653,7 @@
     "href": "chapter/gui/widgets.html#تمرین",
     "title": "ابزارهای اصلی (Widgets)",
     "section": "تمرین",
-    "text": "تمرین\n\n\n\n\n\n\nاحتیاطپروژه\n\n\n\nبه بخش ماشین حساب بروید و نگاه کنید کدام قسمت از کد را می‌توانید بفهید.",
+    "text": "تمرین\n\n\n\n\n\n\nاحتیاطگوسفند شمار\n\n\n\nدینا کوچولو که خوابش نمیبره مادرش بهش یاد داده قبل خواب توی ذهنش گوسفندهایی رو تصور کنه که از روی نرده رد میشن و سعی کنه تعداد اونهارو بشماره تا ذهنش خسته بشه بخوابه. اما دینا که تازه برنامه نویسی یاد گرفته بود به فکر این بود که چطور یک نرم افزار گوسفند شمار بسازه. دینا رو برای ساخت این نرم افزار راهنمایی کنید.\n\n\nکد\nfrom tkinter import *\n\ncounter = 0\n\ndef btn_counter():\n    global counter\n    counter += 1\n    lbl.configure(text=f\"{counter} x 🐑.\")\n\nwindow = Tk()\nwindow.title(\"Sheep counter\")\nwindow.geometry(\"480x360\")\n\nbtn = Button(window)\nbtn.configure(text=\"count\", command=btn_counter)\nbtn.pack(pady=10)\n\nlbl = Label(window, text=\"0 x 🐑.\")\nlbl.pack(pady=10)\n\nwindow.mainloop()",
     "crumbs": [
       "رابط گرافیکی",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>ابزارهای اصلی (Widgets)</span>"
@@ -1664,7 +1675,7 @@
     "href": "chapter/files/os-open.html#خواندن-و-نوشتن-فایل-متنی",
     "title": "کار با فایل‌ها",
     "section": "",
-    "text": "بازکردن فایل متنی\nfhand = open('mbox.txt')\n\nخروجی یک handle به فایله، نه محتوای واقعی — برای خوندن ازش استفاده می‌شه\nاگه فایل وجود نداشته باشه → خطا: FileNotFoundError\n\n\n\n\n\n\n\n\nحالت\nکاربرد\n\n\n\n\n'r'\nخواندن (پیش‌فرض)\n\n\n'w'\nنوشتن — ⚠️ محتوای قبلی فایل پاک می‌شه\n\n\n'a'\nappend — اضافه‌کردن به انتهای فایل، بدون پاک کردن محتوای قبلی\n\n\n'x'\nساخت فایل جدید — اگه از قبل وجود داشته باشه خطا می‌ده\n\n\n\n\nخواندن فایل\n\nروش ۱: خط به خط با for (برای فایل‌های بزرگ)\n\nfhand = open('mbox.txt')\ncount = 0\nfor line in fhand:\n    count += 1\nprint('Line Count:', count)\n\nروش ۲: خواندن کل فایل یکجا (برای فایل‌های کوچک)\n\nfhand = open('mbox.txt')\ninp = fhand.read()\nprint(len(inp))\n\n⚠️ نکته: محتوا رو حتماً توی متغیر ذخیره کنیم، وگرنه با خواندن مجدد از دست می‌ره\n\n\n\nجستجو در فایل\nfhand = open('mbox.txt')\nfor line in fhand:\n    line = line.rstrip()\n    if line.startswith('From:'):\n        print(line)\n\nrstrip() : حذف فضای خالی سمت راست رشته\nstartswith() : بررسی شروع خط با یک کلمه/رشته خاص\n\n\n\nمدیریت خطا\n\nبه‌جای هاردکد کردن نام فایل، از کاربر می‌گیریم — ولی چون فایل ممکنه وجود نداشته باشه، حتماً با try-except پوشش بدیم\n\nfname = input('Enter the file name: ')\ntry:\n    fhand = open(fname)\nexcept:\n    print('File cannot be opened:', fname)\n    exit()\n\nexit() : خروج کامل از اجرای برنامه اگه فایل باز نشد\n\n\n\nنوشتن در فایل\nfout = open('output.txt', 'w')\n\nپارامتر 'w':\n\nاگه فایل وجود داشته باشه → باز می‌شه برای نوشتن (⚠️ محتوای قبلی پاک می‌شه)\nاگه وجود نداشته باشه → فایل جدید ساخته می‌شه\n\n\nline1 = \"This here's the wattle,\\n\"\nfout.write(line1)\n\n\nبستن فایل\nfout.close()\n\nبعد از اتمام کار با فایل، همیشه باید بسته بشه\n\n\n\nروش استاندارد و توصیه‌شده\n\nروش دستی (باز کردن + close() دستی) رایجه، ولی در عمل استفاده از with توصیه‌شده‌تره\nمزیت: فایل خودکار بسته می‌شه، حتی اگه وسط کار خطا رخ بده — نیازی به close() دستی نیست\n\nwith open('mbox.txt') as fhand:\n    for line in fhand:\n        print(line.rstrip())\n# اینجا فایل خودش بسته شده\nwith open('output.txt', 'w') as fout:\n    fout.write(\"This here's the wattle,\\n\")",
+    "text": "بازکردن فایل متنی\nfhand = open('mbox.txt')\n\nخروجی یک handle به فایله، نه محتوای واقعی — برای خوندن ازش استفاده می‌شه\nاگه فایل وجود نداشته باشه → خطا: FileNotFoundError\n\n\n\n\n\n\n\n\nحالت\nکاربرد\n\n\n\n\n'r'\nخواندن (پیش‌فرض)\n\n\n'w'\nنوشتن — ⚠️ محتوای قبلی فایل پاک می‌شه\n\n\n'a'\nappend — اضافه‌کردن به انتهای فایل، بدون پاک کردن محتوای قبلی\n\n\n'x'\nساخت فایل جدید — اگه از قبل وجود داشته باشه خطا می‌ده\n\n\n\n\nخواندن فایل\n\nروش ۱: خط به خط با for (برای فایل‌های بزرگ)\n\nfhand = open('mbox.txt')\ncount = 0\nfor line in fhand:\n    count += 1\nprint('Line Count:', count)\n\nروش ۲: خواندن کل فایل یکجا (برای فایل‌های کوچک)\n\nfhand = open('mbox.txt')\ninp = fhand.read()\nprint(len(inp))\n\n⚠️ نکته: محتوا رو حتماً توی متغیر ذخیره کنیم، وگرنه با خواندن مجدد از دست می‌ره\n\n\n\nجستجو در فایل\nfhand = open('mbox.txt')\nfor line in fhand:\n    line = line.rstrip()\n    if line.startswith('From:'):\n        print(line)\n\nrstrip() : حذف فضای خالی سمت راست رشته\nstartswith() : بررسی شروع خط با یک کلمه/رشته خاص\n\n\n\nمدیریت خطا\n\nبه‌جای هاردکد کردن نام فایل، از کاربر می‌گیریم — ولی چون فایل ممکنه وجود نداشته باشه، حتماً با try-except پوشش بدیم\n\nfname = input('Enter the file name: ')\ntry:\n    fhand = open(fname)\nexcept:\n    print('File cannot be opened:', fname)\n    exit()\n\nexit() : خروج کامل از اجرای برنامه اگه فایل باز نشد\n\n\n\nنوشتن در فایل\nfout = open('output.txt', 'w')\n\nپارامتر 'w':\n\nاگه فایل وجود داشته باشه → باز می‌شه برای نوشتن (⚠️ محتوای قبلی پاک می‌شه)\nاگه وجود نداشته باشه → فایل جدید ساخته می‌شه\n\n\nline1 = \"This here's the wattle,\\n\"\nfout.write(line1)\n\n\nبستن فایل\nfout.close()\n\nبعد از اتمام کار با فایل، همیشه باید بسته بشه\n\n\n\nروش استاندارد و توصیه‌شده\n\nروش دستی (باز کردن + close() دستی) رایجه، ولی در عمل استفاده از with توصیه‌شده‌تره\nمزیت: فایل خودکار بسته می‌شه، حتی اگه وسط کار خطا رخ بده — نیازی به close() دستی نیست\n\nwith open('mbox.txt') as fhand:\n    for line in fhand:\n        print(line.rstrip())\nwith open('output.txt', 'w') as fout:\n    fout.write(\"This here's the wattle,\\n\")",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>32</span>  <span class='chapter-title'>کار با فایل‌ها</span>"
@@ -1675,7 +1686,7 @@
     "href": "chapter/files/os-open.html#فایلهای-باینری",
     "title": "کار با فایل‌ها",
     "section": "فایل‌های باینری",
-    "text": "فایل‌های باینری\n\nتفاوت فایل متنی و باینری\n\n\n\n\n\n\n\n\nنوع\nمحتوا\nمثال\n\n\n\n\nمتنی (text)\nکاراکترهای قابل‌خواندن، با encoding رمزگذاری می‌شه\n.txt، .csv\n\n\nباینری (binary)\nدنباله خام بایت‌ها، بدون تفسیر متنی\n.jpg، .png، .mp3، .pdf، .zip\n\n\n\n\nدر حالت متنی، پایتون بایت‌ها رو با یک encoding (مثلاً UTF-8) به رشته تبدیل می‌کنه\nدر حالت باینری، هیچ تبدیلی انجام نمی‌شه — داده به‌صورت خام (bytes) خونده/نوشته می‌شه\n\n\n\nباز کردن فایل باینری — حرف b\n\n\n\nحالت\nکاربرد\n\n\n\n\n'rb'\nخواندن باینری\n\n\n'wb'\nنوشتن باینری (پاک‌کردن محتوای قبلی)\n\n\n'ab'\nappend باینری\n\n\n'xb'\nساخت فایل باینری جدید (خطا اگه وجود داشته باشه)\n\n\n\n\n\nخواندن فایل باینری\nwith open('image.jpg', 'rb') as f:\n    data = f.read()\n    print(type(data))   # &lt;class 'bytes'&gt;\n    print(len(data))    # تعداد بایت‌ها\n\nخروجی از نوع bytes هست، نه str\n⚠️ متدهای رشته‌ای مثل .rstrip() یا .startswith('متن') روی bytes فرق دارن (باید با b'...' مقایسه بشن)\n\n\n\nنوشتن فایل باینری\ndata = b'\\x89PNG\\r\\n\\x1a\\n...'\nwith open('output.bin', 'wb') as f:\n    f.write(data)\n\nفقط bytes یا bytearray قابل نوشتنه، نه رشته معمولی\n\n\n\nکپی کردن یک فایل باینری (مثال کاربردی)\nwith open('source.jpg', 'rb') as fin:\n    with open('copy.jpg', 'wb') as fout:\n        fout.write(fin.read())\n\nبرای فایل‌های بزرگ بهتره تکه‌تکه (chunk) بخونیم تا حافظه پر نشه:\n\nwith open('source.jpg', 'rb') as fin, open('copy.jpg', 'wb') as fout:\n    while True:\n        chunk = fin.read(4096)   # هر بار ۴۰۹۶ بایت\n        if not chunk:\n            break\n        fout.write(chunk)\n\n\nتبدیل بین str و bytes\n\n\n\nمتد\nکار\n\n\n\n\nstr.encode()\nتبدیل رشته به بایت\n\n\nbytes.decode()\nتبدیل بایت به رشته\n\n\n\ns = \"سلام\"\nb = s.encode('utf-8')     # str → bytes\nprint(b)\n\ns2 = b.decode('utf-8')    # bytes → str\nprint(s2)\n\n\nنکته مهم: باز کردن فایل متنی به‌جای باینری (و برعکس) خطا می‌ده\n\nسعی در خواندن فایل باینری (مثل عکس) با حالت 'r' معمولاً باعث خطای decode می‌شه:\n\nUnicodeDecodeError: 'utf-8' codec can't decode byte...\n\nقانون کلی: فایل‌های غیرمتنی (عکس، صدا، فایل فشرده، اجرایی) → همیشه با b",
+    "text": "فایل‌های باینری\n\nتفاوت فایل متنی و باینری\n\n\n\n\n\n\n\n\nنوع\nمحتوا\nمثال\n\n\n\n\nمتنی (text)\nکاراکترهای قابل‌خواندن، با encoding رمزگذاری می‌شه\n.txt، .csv\n\n\nباینری (binary)\nدنباله خام بایت‌ها، بدون تفسیر متنی\n.jpg، .png، .mp3، .pdf، .zip\n\n\n\n\nدر حالت متنی، پایتون بایت‌ها رو با یک encoding (مثلاً UTF-8) به رشته تبدیل می‌کنه\nدر حالت باینری، هیچ تبدیلی انجام نمی‌شه — داده به‌صورت خام (bytes) خونده/نوشته می‌شه\n\n\n\nباز کردن فایل باینری — حرف b\n\n\n\nحالت\nکاربرد\n\n\n\n\n'rb'\nخواندن باینری\n\n\n'wb'\nنوشتن باینری (پاک‌کردن محتوای قبلی)\n\n\n'ab'\nappend باینری\n\n\n'xb'\nساخت فایل باینری جدید (خطا اگه وجود داشته باشه)\n\n\n\n\n\nخواندن فایل باینری\nwith open('image.jpg', 'rb') as f:\n    data = f.read()\n    print(type(data))\n    print(len(data))\n\nخروجی از نوع bytes هست، نه str\n⚠️ متدهای رشته‌ای مثل .rstrip() یا .startswith('متن') روی bytes فرق دارن (باید با b'...' مقایسه بشن)\n\n\n\nنوشتن فایل باینری\ndata = b'\\x89PNG\\r\\n\\x1a\\n...'\nwith open('output.bin', 'wb') as f:\n    f.write(data)\n\nفقط bytes یا bytearray قابل نوشتنه، نه رشته معمولی\n\n\n\nکپی کردن یک فایل باینری (مثال کاربردی)\nwith open('source.jpg', 'rb') as fin:\n    with open('copy.jpg', 'wb') as fout:\n        fout.write(fin.read())\n\nبرای فایل‌های بزرگ بهتره تکه‌تکه (chunk) بخونیم تا حافظه پر نشه:\n\nwith open('source.jpg', 'rb') as fin, open('copy.jpg', 'wb') as fout:\n    while True:\n        chunk = fin.read(4096) \n        if not chunk:\n            break\n        fout.write(chunk)\n\n\nتبدیل بین str و bytes\n\n\n\nمتد\nکار\n\n\n\n\nstr.encode()\nتبدیل رشته به بایت\n\n\nbytes.decode()\nتبدیل بایت به رشته\n\n\n\ns = \"سلام\"\nb = s.encode('utf-8') # str → bytes\nprint(b)\n\ns2 = b.decode('utf-8') # bytes → str\nprint(s2)\n\n\nنکته مهم: باز کردن فایل متنی به‌جای باینری (و برعکس) خطا می‌ده\n\nسعی در خواندن فایل باینری (مثل عکس) با حالت 'r' معمولاً باعث خطای decode می‌شه:\n\nUnicodeDecodeError: 'utf-8' codec can't decode byte...\n\nقانون کلی: فایل‌های غیرمتنی (عکس، صدا، فایل فشرده، اجرایی) → همیشه با b",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>32</span>  <span class='chapter-title'>کار با فایل‌ها</span>"
@@ -1686,7 +1697,7 @@
     "href": "chapter/files/os-open.html#ماژول-os",
     "title": "کار با فایل‌ها",
     "section": "ماژول os",
-    "text": "ماژول os\n\nچرا os؟\n\nماژول os برای کار با سیستم‌عامل (فایل، پوشه، مسیر) استفاده می‌شه — چیزی فراتر از خواندن/نوشتن محتوای فایل\nوارد کردن: import os\n\n\n\nبررسی وجود فایل/پوشه\nimport os\n\nos.path.exists('mbox.txt')     # True / False\nos.path.isfile('mbox.txt')     # آیا فایله؟\nos.path.isdir('data')          # آیا پوشه‌ست؟\n\nنکته: قبل از باز کردن فایل با open()، می‌شه اول با os.path.exists() چک کرد (هرچند try-except هم روش رایج و ایمن‌تریه)\n\n\n\nحذف فایل\nos.remove('output.txt')\n\n⚠️ اگه فایل وجود نداشته باشه → خطای FileNotFoundError\n\n\n\nتغییر نام / جابه‌جایی فایل\nos.rename('old_name.txt', 'new_name.txt')\n\n\nکار با پوشه‌ها\n\n\n\nتابع\nکار\n\n\n\n\nos.mkdir('folder')\nساخت یک پوشه\n\n\nos.makedirs('a/b/c')\nساخت پوشه‌های تودرتو (چند سطحی)\n\n\nos.rmdir('folder')\nحذف پوشه (فقط اگه خالی باشه)\n\n\nos.listdir('.')\nلیست فایل‌ها و پوشه‌های داخل یک مسیر\n\n\n\nos.mkdir('new_folder')\nprint(os.listdir('.'))\n\n\nمسیر فعلی و تغییر مسیر\nprint(os.getcwd())      # مسیر فعلی که برنامه در اون اجرا می‌شه\nos.chdir('data')        # تغییر مسیر فعلی به پوشه data\n\n\nکار با مسیرها — os.path\n\n\n\n\n\n\n\n\nتابع\nکار\nمثال\n\n\n\n\nos.path.join()\nساخت مسیر به‌صورت درست (سازگار با ویندوز/لینوکس)\nos.path.join('data', 'mbox.txt')\n\n\nos.path.basename()\nفقط نام فایل از مسیر\n'data/mbox.txt' → 'mbox.txt'\n\n\nos.path.dirname()\nفقط مسیر پوشه\n'data/mbox.txt' → 'data'\n\n\nos.path.splitext()\nجدا کردن نام و پسوند فایل\n'mbox.txt' → ('mbox', '.txt')\n\n\n\n\nنکته مهم: به‌جای الحاق دستی رشته‌ها برای مسیر (مثل 'data' + '/' + 'mbox.txt')، همیشه از os.path.join() استفاده بشه — چون در ویندوز جداکننده مسیر \\ است نه /\n\n\n\nگرفتن اطلاعات فایل\nos.path.getsize('mbox.txt')    # حجم فایل بر حسب بایت\n\n\nپیمایش کامل یک درخت پوشه\nfor root, dirs, files in os.walk('.'):\n    for f in files:\n        print(os.path.join(root, f))\n\nos.walk() به‌صورت بازگشتی همه‌ی زیرپوشه‌ها و فایل‌ها رو برمی‌گردونه",
+    "text": "ماژول os\n\nچرا os؟\n\nماژول os برای کار با سیستم‌عامل (فایل، پوشه، مسیر) استفاده می‌شه — چیزی فراتر از خواندن/نوشتن محتوای فایل\nوارد کردن: import os\n\n\n\nبررسی وجود فایل/پوشه\nimport os\n\nos.path.exists('mbox.txt')\nos.path.isfile('mbox.txt')\nos.path.isdir('data')\n\nنکته: قبل از باز کردن فایل با open()، می‌شه اول با os.path.exists() چک کرد (هرچند try-except هم روش رایج و ایمن‌تریه)\n\n\n\nحذف فایل\nos.remove('output.txt')\n\n⚠️ اگه فایل وجود نداشته باشه → خطای FileNotFoundError\n\n\n\nتغییر نام / جابه‌جایی فایل\nos.rename('old_name.txt', 'new_name.txt')\n\n\nکار با پوشه‌ها\n\n\n\nتابع\nکار\n\n\n\n\nos.mkdir('folder')\nساخت یک پوشه\n\n\nos.makedirs('a/b/c')\nساخت پوشه‌های تودرتو (چند سطحی)\n\n\nos.rmdir('folder')\nحذف پوشه (فقط اگه خالی باشه)\n\n\nos.listdir('.')\nلیست فایل‌ها و پوشه‌های داخل یک مسیر\n\n\n\nos.mkdir('new_folder')\nprint(os.listdir('.'))\n\n\nمسیر فعلی و تغییر مسیر\nprint(os.getcwd())\nos.chdir('data')\n\n\nکار با مسیرها — os.path\n\n\n\n\n\n\n\n\nتابع\nکار\nمثال\n\n\n\n\nos.path.join()\nساخت مسیر به‌صورت درست (سازگار با ویندوز/لینوکس)\nos.path.join('data', 'mbox.txt')\n\n\nos.path.basename()\nفقط نام فایل از مسیر\n'data/mbox.txt' → 'mbox.txt'\n\n\nos.path.dirname()\nفقط مسیر پوشه\n'data/mbox.txt' → 'data'\n\n\nos.path.splitext()\nجدا کردن نام و پسوند فایل\n'mbox.txt' → ('mbox', '.txt')\n\n\n\n\nنکته مهم: به‌جای الحاق دستی رشته‌ها برای مسیر (مثل 'data' + '/' + 'mbox.txt')، همیشه از os.path.join() استفاده بشه — چون در ویندوز جداکننده مسیر \\ است نه /\n\n\n\nگرفتن اطلاعات فایل\nos.path.getsize('mbox.txt')\n\n\nپیمایش کامل یک درخت پوشه\nfor root, dirs, files in os.walk('.'):\n    for f in files:\n        print(os.path.join(root, f))\n\nos.walk() به‌صورت بازگشتی همه‌ی زیرپوشه‌ها و فایل‌ها رو برمی‌گردونه",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>32</span>  <span class='chapter-title'>کار با فایل‌ها</span>"
@@ -1719,7 +1730,7 @@
     "href": "chapter/files/data.html#json",
     "title": "فایل‌های داده",
     "section": "JSON",
-    "text": "JSON\nimport json\n\nخواندن فایل JSON\nwith open('data.json', 'r', encoding='utf-8') as f:\n    data = json.load(f)\n\nprint(data)\n\nخروجی معمولاً یک dict یا list پایتونیه\n\n\n\nنوشتن فایل JSON\ndata = {'name': 'Ali', 'age': 25}\n\nwith open('output.json', 'w', encoding='utf-8') as f:\n    json.dump(data, f, ensure_ascii=False, indent=2)\n\nensure_ascii=False : حروف فارسی درست نوشته بشن، نه به‌صورت کد یونیکد\nindent=2 : خروجی مرتب و خوانا باشه\n\n\n\nتبدیل رشته JSON به دیتای پایتون (و برعکس)\ntext = '{\"name\": \"Ali\", \"age\": 25}'\ndata = json.loads(text)      # رشته -&gt; دیکشنری\n\ntext2 = json.dumps(data, ensure_ascii=False)   # دیکشنری -&gt; رشته",
+    "text": "JSON\nimport json\n\nخواندن فایل JSON\nwith open('data.json', 'r', encoding='utf-8') as f:\n    data = json.load(f)\n\nprint(data)\n\nخروجی معمولاً یک dict یا list پایتونیه\n\n\n\nنوشتن فایل JSON\ndata = {'name': 'Ali', 'age': 25}\n\nwith open('output.json', 'w', encoding='utf-8') as f:\n    json.dump(data, f, ensure_ascii=False, indent=2)\n\nensure_ascii=False : حروف فارسی درست نوشته بشن، نه به‌صورت کد یونیکد\nindent=2 : خروجی مرتب و خوانا باشه\n\n\n\nتبدیل رشته JSON به دیتای پایتون (و برعکس)\ntext = '{\"name\": \"Ali\", \"age\": 25}'\ndata = json.loads(text)\n\ntext2 = json.dumps(data, ensure_ascii=False)",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های داده</span>"
@@ -1730,7 +1741,7 @@
     "href": "chapter/files/data.html#csv-با-ماژول-استاندارد",
     "title": "فایل‌های داده",
     "section": "CSV (با ماژول استاندارد)",
-    "text": "CSV (با ماژول استاندارد)\nimport csv\n\nخواندن فایل CSV\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.reader(f)\n    for row in reader:\n        print(row)   # هر row یک لیست از رشته‌هاست\n\nبرای دسترسی با نام ستون‌ها به‌جای اندیس عددی:\n\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        print(row['name'])   # row یک دیکشنریه\n\n\nنوشتن فایل CSV\nrows = [\n    {'name': 'Ali', 'age': 25},\n    {'name': 'Sara', 'age': 30}\n]\n\nwith open('output.csv', 'w', encoding='utf-8', newline='') as f:\n    writer = csv.DictWriter(f, fieldnames=['name', 'age'])\n    writer.writeheader()\n    writer.writerows(rows)\n\nnewline='' : جلوی افتادن یک خط خالی اضافه بین ردیف‌ها رو می‌گیره",
+    "text": "CSV (با ماژول استاندارد)\nimport csv\n\nخواندن فایل CSV\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.reader(f)\n    for row in reader:\n        print(row)\n\nبرای دسترسی با نام ستون‌ها به‌جای اندیس عددی:\n\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        print(row['name'])\n\n\nنوشتن فایل CSV\nrows = [\n    {'name': 'Ali', 'age': 25},\n    {'name': 'Sara', 'age': 30},\n]\n\nwith open('output.csv', 'w', encoding='utf-8', newline='') as f:\n    writer = csv.DictWriter(f, fieldnames=['name', 'age'])\n    writer.writeheader()\n    writer.writerows(rows)\n\nnewline='' : جلوی افتادن یک خط خالی اضافه بین ردیف‌ها رو می‌گیره",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های داده</span>"
@@ -1741,7 +1752,7 @@
     "href": "chapter/files/data.html#xml",
     "title": "فایل‌های داده",
     "section": "XML",
-    "text": "XML\nimport xml.etree.ElementTree as ET\n\nخواندن فایل XML\nفرض کنیم فایل به این شکله:\n&lt;students&gt;\n    &lt;student&gt;\n        &lt;name&gt;Ali&lt;/name&gt;\n        &lt;age&gt;25&lt;/age&gt;\n    &lt;/student&gt;\n&lt;/students&gt;\ntree = ET.parse('data.xml')\nroot = tree.getroot()\n\nfor student in root.findall('student'):\n    name = student.find('name').text\n    age = student.find('age').text\n    print(name, age)\n\n\nساخت و نوشتن فایل XML\nroot = ET.Element('students')\n\nstudent = ET.SubElement(root, 'student')\nET.SubElement(student, 'name').text = 'Ali'\nET.SubElement(student, 'age').text = '25'\n\ntree = ET.ElementTree(root)\ntree.write('output.xml', encoding='utf-8', xml_declaration=True)",
+    "text": "XML\nimport xml.etree.ElementTree as ET\n\nخواندن فایل XML\nفرض کنیم فایل به این شکله:\n&lt;students&gt;\n    &lt;student&gt;\n        &lt;name&gt;Ali&lt;/name&gt;\n        &lt;age&gt;25&lt;/age&gt;\n    &lt;/student&gt;\n&lt;/students&gt;\ntree = ET.parse('data.xml')\nroot = tree.getroot()\n\nfor student in root.findall('student'):\n    name = student.find('name').text\n    age = student.find('age').text\n    print(name, age)\n\n\nساخت و نوشتن فایل XML\nroot = ET.Element('students')\n\nstudent = ET.SubElement(root, 'student')\nET.SubElement(student, 'name').text = 'Ali'\nET.SubElement(student, 'age').text = '25'\n\ntree = ET.ElementTree(root)\ntree.write(\n    'output.xml',\n    encoding='utf-8',\n    xml_declaration=True\n)",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های داده</span>"
@@ -1752,7 +1763,7 @@
     "href": "chapter/files/data.html#pandas",
     "title": "فایل‌های داده",
     "section": "pandas",
-    "text": "pandas\n\npandas داده رو به‌صورت جدول (DataFrame) میاره که کار باهاش خیلی راحت‌تر از کار دستی با csv هست، مخصوصاً وقتی حجم داده بالا بره یا نیاز به فیلتر/تحلیل داشته باشیم\n\n\nنصب و وارد کردن\npip install pandas openpyxl\nimport pandas as pd\n\nopenpyxl برای خواندن/نوشتن فایل‌های Excel لازمه (pandas از پشت صحنه ازش استفاده می‌کنه)\n\n\n\nخواندن فایل CSV\ndf = pd.read_csv('data.csv')\nprint(df)\n\nخروجی از نوع DataFrame هست — شبیه یک جدول اکسل\n\n\n\nخواندن فایل Excel\ndf = pd.read_excel('data.xlsx')\nprint(df)\n\nاگه فایل چند شیت داشته باشه، می‌شه شیت رو مشخص کرد:\n\ndf = pd.read_excel('data.xlsx', sheet_name='Sheet1')\n\n\nنگاه سریع به داده\n\n\n\nمتد\nکار\n\n\n\n\ndf.head()\nنمایش ۵ ردیف اول\n\n\ndf.shape\nتعداد (ردیف, ستون)\n\n\ndf.columns\nلیست نام ستون‌ها\n\n\ndf.info()\nنوع داده هر ستون + تعداد مقادیر\n\n\n\n\n\nدسترسی به داده\nprint(df['name'])          # یک ستون\nprint(df.iloc[0])           # یک ردیف با اندیس عددی\nprint(df.loc[0, 'name'])    # یک سلول خاص\n\n\nفیلتر کردن داده\nadults = df[df['age'] &gt;= 18]\nprint(adults)\n\n\nنوشتن در فایل\ndf.to_csv('output.csv', index=False)\ndf.to_excel('output.xlsx', index=False)\n\nindex=False : ستون اندیس اضافه (0,1,2,…) توی فایل خروجی نوشته نشه\n\n\n\nساخت DataFrame\ndata = {\n    'name': ['Ali', 'Sara'],\n    'age': [25, 30]\n}\ndf = pd.DataFrame(data)",
+    "text": "pandas\n\npandas داده رو به‌صورت جدول (DataFrame) میاره که کار باهاش خیلی راحت‌تر از کار دستی با csv هست، مخصوصاً وقتی حجم داده بالا بره یا نیاز به فیلتر/تحلیل داشته باشیم\n\n\nنصب و وارد کردن\npip install pandas openpyxl\nimport pandas as pd\n\nopenpyxl برای خواندن/نوشتن فایل‌های Excel لازمه (pandas از پشت صحنه ازش استفاده می‌کنه)\n\n\n\nخواندن فایل CSV\ndf = pd.read_csv('data.csv')\nprint(df)\n\nخروجی از نوع DataFrame هست — شبیه یک جدول اکسل\n\n\n\nخواندن فایل Excel\ndf = pd.read_excel('data.xlsx')\nprint(df)\n\nاگه فایل چند شیت داشته باشه، می‌شه شیت رو مشخص کرد:\n\n\ndf = pd.read_excel('data.xlsx', sheet_name='Sheet1')\n\n\nنگاه سریع به داده\n\n\n\nمتد\nکار\n\n\n\n\ndf.head()\nنمایش ۵ ردیف اول\n\n\ndf.shape\nتعداد (ردیف, ستون)\n\n\ndf.columns\nلیست نام ستون‌ها\n\n\ndf.info()\nنوع داده هر ستون + تعداد مقادیر\n\n\n\n\n\nدسترسی به داده\nprint(df['name'])\nprint(df.iloc[0])\nprint(df.loc[0, 'name'])\n\n\nفیلتر کردن داده\nadults = df[df['age'] &gt;= 18]\nprint(adults)\n\n\nنوشتن در فایل\ndf.to_csv('output.csv', index=False)\ndf.to_excel('output.xlsx', index=False)\n\nindex=False : ستون اندیس اضافه (0,1,2,…) توی فایل خروجی نوشته نشه\n\n\n\nساخت DataFrame\ndata = {\n    'name': ['Ali', 'Sara'],\n    'age': [25, 30],\n}\ndf = pd.DataFrame(data)",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های داده</span>"
@@ -1840,7 +1851,7 @@
     "href": "chapter/files/sqlite.html#حذف-و-ویرایش-اطلاعات",
     "title": "بانک اطلاعاتی (SQLite)",
     "section": "حذف و ویرایش اطلاعات",
-    "text": "حذف و ویرایش اطلاعات\n# ویرایش\ncursor.execute(\n    '''\n    UPDATE students SET age = ?\n    WHERE name = ?\n    ''',\n    (26, 'Ali')\n)\n\n# حذف\ncursor.execute(\n    '''\n    DELETE FROM students WHERE name = ?\n    ''',\n    ('Ali',)\n)\n\nconn.commit()",
+    "text": "حذف و ویرایش اطلاعات\ncursor.execute(\n    '''\n    UPDATE students SET age = ?\n    WHERE name = ?\n    ''',\n    (26, 'Ali')\n)\n\ncursor.execute(\n    '''\n    DELETE FROM students WHERE name = ?\n    ''',\n    ('Ali',)\n)\n\nconn.commit()",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>34</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
@@ -1851,7 +1862,7 @@
     "href": "chapter/files/sqlite.html#خواندن-اطلاعات-با-fetch",
     "title": "بانک اطلاعاتی (SQLite)",
     "section": "خواندن اطلاعات با fetch",
-    "text": "خواندن اطلاعات با fetch\ncursor.execute('SELECT * FROM students')\n\nrow = cursor.fetchone()   # فقط یک ردیف\nprint(row)\n\nبرای خواندن همه‌ی ردیف‌ها:\n\ncursor.execute('SELECT * FROM students')\nrows = cursor.fetchall()\n\nfor row in rows:\n    print(row)\n\nهر row یک tuple از مقادیر ستون‌هاست",
+    "text": "خواندن اطلاعات با fetch\ncursor.execute('SELECT * FROM students')\n\nrow = cursor.fetchone()\nprint(row)\n\nبرای خواندن همه‌ی ردیف‌ها:\n\ncursor.execute('SELECT * FROM students')\nrows = cursor.fetchall()\n\nfor row in rows:\n    print(row)\n\nهر row یک tuple از مقادیر ستون‌هاست",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>34</span>  <span class='chapter-title'>بانک اطلاعاتی (SQLite)</span>"
@@ -1928,7 +1939,7 @@
     "href": "chapter/oop/class-object.html#ویژگیهای-نمونه-instance-attributes-در-مقابل-ویژگیهای-کلاس-class-attributes",
     "title": "کلاس‌ها و اشیاء (class)",
     "section": "ویژگی‌های نمونه (Instance Attributes) در مقابل ویژگی‌های کلاس (Class Attributes)",
-    "text": "ویژگی‌های نمونه (Instance Attributes) در مقابل ویژگی‌های کلاس (Class Attributes)\n\n\n\n\n\n\n\n\nنوع\nتعلق داره به\nمثال\n\n\n\n\nInstance Attribute\nهر شیء مقدار جدا داره\nself.name\n\n\nClass Attribute\nمشترک بین همه‌ی نمونه‌ها\nتعریف مستقیم داخل کلاس، بیرون __init__\n\n\n\nclass Dog:\n    species = \"Canis familiaris\"   # class attribute\n\n    def __init__(self, name):\n        self.name = name           # instance attribute\n\nd1 = Dog(\"Rex\")\nd2 = Dog(\"Buddy\")\nprint(d1.species, d2.species)   # هر دو یکی\nprint(d1.name, d2.name)         # جدا از هم",
+    "text": "ویژگی‌های نمونه (Instance Attributes) در مقابل ویژگی‌های کلاس (Class Attributes)\n\n\n\n\n\n\n\n\nنوع\nتعلق داره به\nمثال\n\n\n\n\nInstance Attribute\nهر شیء مقدار جدا داره\nself.name\n\n\nClass Attribute\nمشترک بین همه‌ی نمونه‌ها\nتعریف مستقیم داخل کلاس، بیرون __init__\n\n\n\nclass Dog:\n    # class attribute\n    species = \"Canis familiaris\"\n\n    def __init__(self, name):\n        # instance attribute\n        self.name = name\n\nd1 = Dog(\"Rex\")\nd2 = Dog(\"Buddy\")\nprint(d1.species, d2.species)\nprint(d1.name, d2.name)",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>35</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
@@ -1950,7 +1961,7 @@
     "href": "chapter/oop/class-object.html#نکته-تفاوت-self-با-پارامترهای-دیگه",
     "title": "کلاس‌ها و اشیاء (class)",
     "section": "نکته: تفاوت self با پارامترهای دیگه",
-    "text": "نکته: تفاوت self با پارامترهای دیگه\n\nself به‌طور خودکار توسط پایتون پاس داده می‌شه، لازم نیست هنگام فراخوانی متد صداش کنیم\n\nd.bark()   # نه d.bark(d) !",
+    "text": "نکته: تفاوت self با پارامترهای دیگه\n\nself به‌طور خودکار توسط پایتون پاس داده می‌شه، لازم نیست هنگام فراخوانی متد صداش کنیم\n\nd.bark()   # no d.bark(d) !",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>35</span>  <span class='chapter-title'>کلاس‌ها و اشیاء (`class`)</span>"
@@ -1983,7 +1994,7 @@
     "href": "chapter/oop/inheritance.html#تعریف-وراثت",
     "title": "وراثت و چندشکلی",
     "section": "تعریف وراثت",
-    "text": "تعریف وراثت\nclass Animal:\n    def __init__(self, name):\n        self.name = name\n\n    def speak(self):\n        print(f\"{self.name} makes a sound.\")\n\nclass Dog(Animal):    # Dog از Animal ارث می‌بره\n    pass\n\nd = Dog(\"Rex\")\nd.speak()\nRex makes a sound.\n\nDog(Animal) یعنی Dog فرزند Animal هست",
+    "text": "تعریف وراثت\nclass Animal:\n    def __init__(self, name):\n        self.name = name\n\n    def speak(self):\n        print(f\"{self.name} makes a sound.\")\n\nclass Dog(Animal):\n    pass\n\nd = Dog(\"Rex\")\nd.speak()\nRex makes a sound.\n\nDog(Animal) یعنی Dog فرزند Animal هست",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>36</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
@@ -2005,7 +2016,7 @@
     "href": "chapter/oop/inheritance.html#استفاده-از-super",
     "title": "وراثت و چندشکلی",
     "section": "استفاده از super()",
-    "text": "استفاده از super()\n\nبرای فراخوانی متد کلاس والد از داخل کلاس فرزند (بدون بازنویسی کامل)\n\nclass Dog(Animal):\n    def __init__(self, name, breed):\n        super().__init__(name)     # فراخوانی __init__ کلاس والد\n        self.breed = breed\n\n    def speak(self):\n        super().speak()            # اجرای رفتار والد هم\n        print(f\"{self.name} says: Woof!\")\n\nd = Dog(\"Rex\", \"Labrador\")\nd.speak()\nRex makes a sound.\nRex says: Woof!",
+    "text": "استفاده از super()\n\nبرای فراخوانی متد کلاس والد از داخل کلاس فرزند (بدون بازنویسی کامل)\n\nclass Dog(Animal):\n    def __init__(self, name, breed):\n        super().__init__(name) \n        self.breed = breed\n\n    def speak(self):\n        super().speak()\n        print(f\"{self.name} says: Woof!\")\n\nd = Dog(\"Rex\", \"Labrador\")\nd.speak()\nRex makes a sound.\nRex says: Woof!",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>36</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
@@ -2016,7 +2027,7 @@
     "href": "chapter/oop/inheritance.html#چندشکلی-polymorphism-چیست",
     "title": "وراثت و چندشکلی",
     "section": "چندشکلی (Polymorphism) چیست؟",
-    "text": "چندشکلی (Polymorphism) چیست؟\n\nیعنی اشیاء از کلاس‌های مختلف، با همون نام متد، رفتار متفاوتی نشون بدن\nکد می‌تونه با اشیاء مختلف به یک شکل کار کنه، بدون اینکه نوع دقیقشون رو بدونه\n\nclass Cat(Animal):\n    def speak(self):\n        print(f\"{self.name} says: Meow!\")\n\nanimals = [Dog(\"Rex\", \"Labrador\"), Cat(\"Whiskers\")]\n\nfor a in animals:\n    a.speak()\nRex says: Woof!\nWhiskers says: Meow!\n\nهمه‌ی متد speak() رو یکسان صدا زدیم، ولی هرکدوم رفتار خودشون رو دارن",
+    "text": "چندشکلی (Polymorphism) چیست؟\n\nیعنی اشیاء از کلاس‌های مختلف، با همون نام متد، رفتار متفاوتی نشون بدن\nکد می‌تونه با اشیاء مختلف به یک شکل کار کنه، بدون اینکه نوع دقیقشون رو بدونه\n\nclass Cat(Animal):\n    def speak(self):\n        print(f\"{self.name} says: Meow!\")\n\nanimals = [\n    Dog(\"Rex\", \"Labrador\"),\n    Cat(\"Whiskers\"),\n]\n\nfor a in animals:\n    a.speak()\nRex says: Woof!\nWhiskers says: Meow!\n\nهمه‌ی متد speak() رو یکسان صدا زدیم، ولی هرکدوم رفتار خودشون رو دارن",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>36</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
@@ -2027,7 +2038,7 @@
     "href": "chapter/oop/inheritance.html#بررسی-رابطه-کلاسها",
     "title": "وراثت و چندشکلی",
     "section": "بررسی رابطه کلاس‌ها",
-    "text": "بررسی رابطه کلاس‌ها\n\n\n\n\n\n\n\nتابع\nکار\n\n\n\n\nisinstance(obj, Class)\nآیا شیء نمونه‌ای از این کلاس (یا فرزندانش) هست\n\n\nissubclass(Child, Parent)\nآیا این کلاس فرزند اون کلاسه\n\n\n\nprint(isinstance(d, Animal))    # True\nprint(issubclass(Dog, Animal))  # True",
+    "text": "بررسی رابطه کلاس‌ها\n\n\n\n\n\n\n\nتابع\nکار\n\n\n\n\nisinstance(obj, Class)\nآیا شیء نمونه‌ای از این کلاس (یا فرزندانش) هست\n\n\nissubclass(Child, Parent)\nآیا این کلاس فرزند اون کلاسه\n\n\n\nprint(isinstance(d, Animal))\nprint(issubclass(Dog, Animal))\nTrue\nTrue",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>36</span>  <span class='chapter-title'>وراثت و چندشکلی</span>"
@@ -2071,7 +2082,7 @@
     "href": "chapter/oop/encapsulation.html#سطوح-دسترسی-در-پایتون-بر-پایه-قرارداد-نه-اجبار-سخت",
     "title": "اصول کپسوله‌سازی و انتزاع",
     "section": "سطوح دسترسی در پایتون (بر پایه قرارداد، نه اجبار سخت)",
-    "text": "سطوح دسترسی در پایتون (بر پایه قرارداد، نه اجبار سخت)\n\n\n\n\n\n\n\n\nنوع\nنوشتار\nمعنی\n\n\n\n\nPublic\nself.name\nاز همه‌جا در دسترسه\n\n\nProtected\nself._name (یک آندرلاین)\nقرارداده که فقط داخل کلاس/فرزندان استفاده بشه (اجباری نیست)\n\n\nPrivate\nself.__name (دو آندرلاین)\nبا name mangling محافظت می‌شه، دسترسی مستقیم بیرون سخت‌تره\n\n\n\nclass Account:\n    def __init__(self, balance):\n        self.__balance = balance   # private\n\n    def get_balance(self):\n        return self.__balance\n\nacc = Account(1000)\nprint(acc.get_balance())    # 1000\nprint(acc.__balance)        # خطا: AttributeError\n\nنکته: پایتون واقعاً private نداره — __balance در پشت صحنه به _Account__balance تبدیل می‌شه (Name Mangling)؛ یعنی هنوز قابل دسترسیه ولی سخت‌تر و دلسردکننده‌ست.",
+    "text": "سطوح دسترسی در پایتون (بر پایه قرارداد، نه اجبار سخت)\n\n\n\n\n\n\n\n\nنوع\nنوشتار\nمعنی\n\n\n\n\nPublic\nself.name\nاز همه‌جا در دسترسه\n\n\nProtected\nself._name (یک آندرلاین)\nقرارداده که فقط داخل کلاس/فرزندان استفاده بشه (اجباری نیست)\n\n\nPrivate\nself.__name (دو آندرلاین)\nبا name mangling محافظت می‌شه، دسترسی مستقیم بیرون سخت‌تره\n\n\n\nclass Account:\n    def __init__(self, balance):\n        # private\n        self.__balance = balance\n\n    def get_balance(self):\n        return self.__balance\n\nacc = Account(1000)\nprint(acc.get_balance())\nprint(acc.__balance)\n1000\nAttributeError: ...\n\nنکته: پایتون واقعاً private نداره — __balance در پشت صحنه به _Account__balance تبدیل می‌شه (Name Mangling)؛ یعنی هنوز قابل دسترسیه ولی سخت‌تر و دلسردکننده‌ست.",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>37</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
@@ -2082,7 +2093,7 @@
     "href": "chapter/oop/encapsulation.html#دسترسی-کنترلشده-با-property",
     "title": "اصول کپسوله‌سازی و انتزاع",
     "section": "دسترسی کنترل‌شده با property",
-    "text": "دسترسی کنترل‌شده با property\n\nروش استاندارد پایتون برای getter/setter، به‌جای متدهای دستی\n\nclass Account:\n    def __init__(self, balance):\n        self.__balance = balance\n\n    @property\n    def balance(self):          # getter\n        return self.__balance\n\n    @balance.setter\n    def balance(self, value):   # setter\n        if value &lt; 0:\n            raise ValueError(\"موجودی نمی‌تونه منفی باشه\")\n        self.__balance = value\n\nacc = Account(1000)\nprint(acc.balance)      # مثل یک attribute استفاده می‌شه، نه متد\nacc.balance = 2000       # از setter عبور می‌کنه و اعتبارسنجی می‌شه\n\nمزیت: می‌تونیم منطق اعتبارسنجی رو بدون تغییر نحوه استفاده بیرون از کلاس، اضافه کنیم",
+    "text": "دسترسی کنترل‌شده با property\n\nروش استاندارد پایتون برای getter/setter، به‌جای متدهای دستی\n\nclass Account:\n    def __init__(self, balance):\n        self.__balance = balance\n\n    # getter\n    @property\n    def balance(self):   \n        return self.__balance\n\n    # setter\n    @balance.setter\n    def balance(self, value):\n        if value &lt; 0:\n            raise ValueError(\n                \"موجودی نمی‌تونه منفی باشه\"\n            )\n        self.__balance = value\n\nacc = Account(1000)\nprint(acc.balance)\nacc.balance = 2000\nacc.balance = -2000 # Error\n\nمزیت: می‌تونیم منطق اعتبارسنجی رو بدون تغییر نحوه استفاده بیرون از کلاس، اضافه کنیم",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>37</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
@@ -2104,7 +2115,7 @@
     "href": "chapter/oop/encapsulation.html#پیادهسازی-انتزاع-با-abc-abstract-base-class",
     "title": "اصول کپسوله‌سازی و انتزاع",
     "section": "پیاده‌سازی انتزاع با abc (Abstract Base Class)",
-    "text": "پیاده‌سازی انتزاع با abc (Abstract Base Class)\nfrom abc import ABC, abstractmethod\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self):\n        pass\n\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n\n    def area(self):\n        return 3.14 * self.radius ** 2\n\nc = Circle(5)\nprint(c.area())\n78.5\n\nShape یک کلاس انتزاعیه — نمی‌شه مستقیم ازش شیء ساخت\n\ns = Shape()   # خطا: TypeError: Can't instantiate abstract class\n\nهر کلاس فرزند مجبوره متد area() رو پیاده‌سازی کنه، وگرنه خودش هم انتزاعی می‌مونه",
+    "text": "پیاده‌سازی انتزاع با abc (Abstract Base Class)\nfrom abc import ABC, abstractmethod\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self):\n        pass\n\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n\n    def area(self):\n        return 3.14 * self.radius ** 2\n\nc = Circle(5)\nprint(c.area())\n78.5\n\nShape یک کلاس انتزاعیه — نمی‌شه مستقیم ازش شیء ساخت\n\ns = Shape()\nTypeError: Can't instantiate abstract class\n\nهر کلاس فرزند مجبوره متد area() رو پیاده‌سازی کنه، وگرنه خودش هم انتزاعی می‌مونه",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>37</span>  <span class='chapter-title'>اصول کپسوله‌سازی و انتزاع</span>"
@@ -2137,7 +2148,7 @@
     "href": "chapter/oop/other-options.html#متدهای-ویژه-dunder-magic-methods",
     "title": "ویژگی‌های دیگر",
     "section": "",
-    "text": "متدهایی با دو آندرلاین در ابتدا و انتهای نام (__name__)\nپایتون خودش در موقعیت‌های خاص این متدها رو صدا می‌زنه\n\n\n\n\n\n\n\n\n\nمتد\nصدا زده می‌شه وقتی\nمثال\n\n\n\n\n__init__\nساخت شیء\nDog(\"Rex\")\n\n\n__str__\nprint(obj) یا str(obj)\nنمایش خوانا برای انسان\n\n\n__repr__\nنمایش رسمی/دیباگی شیء\nمعمولاً برای برنامه‌نویس\n\n\n__len__\nlen(obj)\nطول شیء\n\n\n__eq__\nobj1 == obj2\nمقایسه برابری\n\n\n__add__\nobj1 + obj2\nجمع دو شیء\n\n\n\nclass Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\n    def __str__(self):\n        return f\"({self.x}, {self.y})\"\n\n    def __eq__(self, other):\n        return self.x == other.x and self.y == other.y\n\n    def __add__(self, other):\n        return Point(self.x + other.x, self.y + other.y)\n\np1 = Point(1, 2)\np2 = Point(3, 4)\nprint(p1)              # (1, 2)   -&gt; از __str__\nprint(p1 == p2)         # False    -&gt; از __eq__\nprint(p1 + p2)          # (4, 6)   -&gt; از __add__",
+    "text": "متدهایی با دو آندرلاین در ابتدا و انتهای نام (__name__)\nپایتون خودش در موقعیت‌های خاص این متدها رو صدا می‌زنه\n\n\n\n\n\n\n\n\n\nمتد\nصدا زده می‌شه وقتی\nمثال\n\n\n\n\n__init__\nساخت شیء\nDog(\"Rex\")\n\n\n__str__\nprint(obj) یا str(obj)\nنمایش خوانا برای انسان\n\n\n__repr__\nنمایش رسمی/دیباگی شیء\nمعمولاً برای برنامه‌نویس\n\n\n__len__\nlen(obj)\nطول شیء\n\n\n__eq__\nobj1 == obj2\nمقایسه برابری\n\n\n__add__\nobj1 + obj2\nجمع دو شیء\n\n\n\nclass Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\n    def __str__(self):\n        return f\"({self.x}, {self.y})\"\n\n    def __eq__(self, other):\n        return self.x == other.x and self.y == other.y\n\n    def __add__(self, other):\n        return Point(\n            self.x + other.x,\n            self.y + other.y,\n        )\n\np1 = Point(1, 2)\np2 = Point(3, 4)\nprint(p1)\nprint(p1 == p2)\nprint(p1 + p2)\n(1, 2)\nFalse\n(4, 6)",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>38</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
@@ -2148,7 +2159,7 @@
     "href": "chapter/oop/other-options.html#متد-کلاسی-و-متد-استاتیک",
     "title": "ویژگی‌های دیگر",
     "section": "متد کلاسی و متد استاتیک",
-    "text": "متد کلاسی و متد استاتیک\n\n\n\n\n\n\n\n\n\nنوع\nدکوراتور\nپارامتر اول\nدسترسی به\n\n\n\n\nمتد نمونه (معمولی)\n—\nself\nداده‌های شیء\n\n\nمتد کلاسی\n@classmethod\ncls\nخود کلاس\n\n\nمتد استاتیک\n@staticmethod\nندارد\nنه شیء نه کلاس، فقط تابع مرتبط\n\n\n\nclass Dog:\n    count = 0\n\n    def __init__(self, name):\n        self.name = name\n        Dog.count += 1\n\n    @classmethod\n    def get_count(cls):\n        return cls.count\n\n    @staticmethod\n    def is_valid_name(name):\n        return len(name) &gt; 0\n\nprint(Dog.is_valid_name(\"Rex\"))   # True\nd1 = Dog(\"Rex\")\nd2 = Dog(\"Buddy\")\nprint(Dog.get_count())            # 2",
+    "text": "متد کلاسی و متد استاتیک\n\n\n\n\n\n\n\n\n\nنوع\nدکوراتور\nپارامتر اول\nدسترسی به\n\n\n\n\nمتد نمونه (معمولی)\n—\nself\nداده‌های شیء\n\n\nمتد کلاسی\n@classmethod\ncls\nخود کلاس\n\n\nمتد استاتیک\n@staticmethod\nندارد\nنه شیء نه کلاس، فقط تابع مرتبط\n\n\n\nclass Dog:\n    count = 0\n\n    def __init__(self, name):\n        self.name = name\n        Dog.count += 1\n\n    @classmethod\n    def get_count(cls):\n        return cls.count\n\n    @staticmethod\n    def is_valid_name(name):\n        return len(name) &gt; 0\n\nprint(Dog.is_valid_name(\"Rex\"))\nd1 = Dog(\"Rex\")\nd2 = Dog(\"Buddy\")\nprint(Dog.get_count())\nTrue\n2",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>38</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
@@ -2159,7 +2170,7 @@
     "href": "chapter/oop/other-options.html#کلاسهای-انتزاعی-و-duck-typing",
     "title": "ویژگی‌های دیگر",
     "section": "کلاس‌های انتزاعی و Duck Typing",
-    "text": "کلاس‌های انتزاعی و Duck Typing\n\nدر پایتون معمولاً نوع دقیق شیء مهم نیست، مهم اینه که رفتار موردنیاز رو داشته باشه\nبه این ویژگی Duck Typing می‌گن: “اگه مثل اردک راه بره و مثل اردک صدا کنه، اردکه”\n\nclass Duck:\n    def sound(self):\n        print(\"Quack!\")\n\nclass Dog:\n    def sound(self):\n        print(\"Woof!\")\n\ndef make_it_sound(animal):\n    animal.sound()   # فرقی نمی‌کنه از چه کلاسی باشه، فقط باید sound() داشته باشه\n\nmake_it_sound(Duck())\nmake_it_sound(Dog())",
+    "text": "کلاس‌های انتزاعی و Duck Typing\n\nدر پایتون معمولاً نوع دقیق شیء مهم نیست، مهم اینه که رفتار موردنیاز رو داشته باشه\nبه این ویژگی Duck Typing می‌گن: “اگه مثل اردک راه بره و مثل اردک صدا کنه، اردکه”\n\nclass Duck:\n    def sound(self):\n        print(\"Quack!\")\n\nclass Dog:\n    def sound(self):\n        print(\"Woof!\")\n\ndef make_it_sound(animal):\n    animal.sound()\n\nmake_it_sound(Duck())\nmake_it_sound(Dog())",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>38</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
@@ -2170,7 +2181,7 @@
     "href": "chapter/oop/other-options.html#بازبینی-خودکار-اشیاء",
     "title": "ویژگی‌های دیگر",
     "section": "بازبینی خودکار اشیاء",
-    "text": "بازبینی خودکار اشیاء\n\ndir(obj) : لیست همه‌ی متدها و ویژگی‌های یک شیء\nvars(obj) یا obj.__dict__ : دیکشنری ویژگی‌های نمونه (instance attributes)\n\np = Point(1, 2)\nprint(vars(p))    # {'x': 1, 'y': 2}",
+    "text": "بازبینی خودکار اشیاء\n\ndir(obj) : لیست همه‌ی متدها و ویژگی‌های یک شیء\nvars(obj) یا obj.__dict__ : دیکشنری ویژگی‌های نمونه (instance attributes)\n\np = Point(1, 2)\nprint(vars(p))\n{'x': 1, 'y': 2}",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>38</span>  <span class='chapter-title'>ویژگی‌های دیگر</span>"
@@ -2181,7 +2192,7 @@
     "href": "chapter/oop/zoo.html",
     "title": "مدیریت باغ وحش",
     "section": "",
-    "text": "from abc import ABC, abstractmethod\n\n\n# ---------------------------------------------------------\n# بخش ۱ و ۳: تعریف کلاس پایه انتزاعی (Abstraction)\n# ---------------------------------------------------------\nclass Animal(ABC):\n    \"\"\"کلاس پایه انتزاعی برای همه حیوانات باغ‌وحش\"\"\"\n\n    total_animals = 0  # class attribute -&gt; مشترک بین همه نمونه‌ها\n\n    def __init__(self, name, age):\n        self.name = name                 # public attribute\n        self._age = age                  # protected attribute (قرارداد: فقط داخلی)\n        self.__health = 100              # private attribute (کپسوله‌سازی)\n        Animal.total_animals += 1        # هر بار ساخت شیء جدید، شمارنده رو زیاد می‌کنه\n\n    # --- کپسوله‌سازی با property ---\n    @property\n    def health(self):\n        \"\"\"getter برای سلامت حیوان\"\"\"\n        return self.__health\n\n    @health.setter\n    def health(self, value):\n        \"\"\"setter با اعتبارسنجی - جلوگیری از مقدار نامعتبر\"\"\"\n        if not 0 &lt;= value &lt;= 100:\n            raise ValueError(\"سلامت باید بین 0 تا 100 باشد\")\n        self.__health = value\n\n    # --- متد انتزاعی: هر کلاس فرزند مجبوره پیاده‌سازی کنه ---\n    @abstractmethod\n    def make_sound(self):\n        pass\n\n    # --- متد کلاسی: کار با خود کلاس، نه یک نمونه خاص ---\n    @classmethod\n    def get_total_animals(cls):\n        return cls.total_animals\n\n    # --- متد استاتیک: فقط یک تابع کمکی مرتبط با کلاس ---\n    @staticmethod\n    def is_valid_age(age):\n        return age &gt; 0\n\n    # --- متد ویژه (dunder): نمایش خوانا هنگام print ---\n    def __str__(self):\n        return f\"{self.name} ({self.__class__.__name__}), سن: {self._age}, سلامت: {self.__health}\"\n\n    # --- متد ویژه: مقایسه دو حیوان بر اساس نام ---\n    def __eq__(self, other):\n        return self.name == other.name\n\n\n# ---------------------------------------------------------\n# بخش ۲: وراثت - هر کلاس فرزند، Animal رو گسترش می‌ده\n# ---------------------------------------------------------\nclass Lion(Animal):\n    def make_sound(self):\n        print(f\"{self.name} says: Roar!\")\n\n\nclass Parrot(Animal):\n    def __init__(self, name, age, can_talk=True):\n        super().__init__(name, age)      # فراخوانی سازنده والد\n        self.can_talk = can_talk\n\n    def make_sound(self):\n        if self.can_talk:\n            print(f\"{self.name} says: Hello!\")\n        else:\n            print(f\"{self.name} says: Squawk!\")\n\n\nclass Elephant(Animal):\n    def make_sound(self):\n        print(f\"{self.name} says: Pawoo!\")\n\n\n# ---------------------------------------------------------\n# کلاسی که مجموعه‌ای از حیوانات رو نگه می‌داره\n# نمایش __len__ و duck typing\n# ---------------------------------------------------------\nclass Zoo:\n    def __init__(self, name):\n        self.name = name\n        self.animals = []\n\n    def add_animal(self, animal):\n        self.animals.append(animal)\n\n    def __len__(self):\n        return len(self.animals)\n\n    # --- چندشکلی: صدا زدن یک متد یکسان روی انواع مختلف حیوان ---\n    def make_all_sounds(self):\n        for animal in self.animals:\n            animal.make_sound()   # هرکدوم رفتار خودشون رو دارن\n\n\n# ---------------------------------------------------------\n# اجرای برنامه (Demo)\n# ---------------------------------------------------------\nif __name__ == \"__main__\":\n\n    zoo = Zoo(\"باغ‌وحش تهران\")\n\n    lion = Lion(\"Simba\", 5)\n    parrot = Parrot(\"Polly\", 2, can_talk=True)\n    elephant = Elephant(\"Dumbo\", 8)\n\n    zoo.add_animal(lion)\n    zoo.add_animal(parrot)\n    zoo.add_animal(elephant)\n\n    print(\"--- نمایش اطلاعات همه حیوانات (dunder __str__) ---\")\n    for a in zoo.animals:\n        print(a)\n\n    print(\"\\n--- چندشکلی: هر حیوان صدای خودش رو تولید می‌کنه ---\")\n    zoo.make_all_sounds()\n\n    print(\"\\n--- کپسوله‌سازی: تغییر سلامت با اعتبارسنجی ---\")\n    lion.health = 80\n    print(f\"سلامت {lion.name}: {lion.health}\")\n    try:\n        lion.health = 150   # مقدار نامعتبر\n    except ValueError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- تلاش برای دسترسی مستقیم به متغیر private ---\")\n    try:\n        print(lion.__health)\n    except AttributeError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- متد کلاسی: تعداد کل حیوانات ساخته‌شده ---\")\n    print(\"تعداد کل:\", Animal.get_total_animals())\n    print(\"طول باغ‌وحش (__len__):\", len(zoo))\n\n    print(\"\\n--- متد استاتیک: بررسی معتبر بودن سن ---\")\n    print(Animal.is_valid_age(5))    # True\n    print(Animal.is_valid_age(-3))   # False\n\n    print(\"\\n--- تلاش برای ساخت شیء از کلاس انتزاعی ---\")\n    try:\n        a = Animal(\"X\", 1)\n    except TypeError as e:\n        print(\"خطا:\", e)\n\n    print(\"\\n--- مقایسه دو شیء (__eq__) ---\")\n    lion2 = Lion(\"Simba\", 5)\n    print(lion == lion2)   # True چون نام یکسانه\n\n    print(\"\\n--- Duck Typing: هر شیئی که make_sound() داشته باشه کار می‌کنه ---\")\n    class RobotAnimal:\n        def __init__(self, name):\n            self.name = name\n        def make_sound(self):\n            print(f\"{self.name} says: Beep Boop!\")\n\n    zoo.add_animal(RobotAnimal(\"R2D2\"))  # نه از Animal ارث می‌بره، نه انتزاعیه\n    zoo.make_all_sounds()",
+    "text": "from abc import ABC, abstractmethod\n\n\n# ---------------------------------------------------------\n# بخش ۱ و ۳: تعریف کلاس پایه انتزاعی (Abstraction)\n# ---------------------------------------------------------\nclass Animal(ABC):\n    # class attribute\n    total_animals = 0\n\n    def __init__(self, name, age):\n        # public attribute\n        self.name = name\n        # protected attribute      \n        self._age = age\n        # private attribute\n        self.__health = 100\n        # Increase after create object\n        Animal.total_animals += 1\n\n    # getter\n    @property\n    def health(self):\n        return self.__health\n\n    # setter\n    @health.setter\n    def health(self, value):\n        if not 0 &lt;= value &lt;= 100:\n            raise ValueError(\n                \"Health must be between 0 and 100\"\n            )\n        self.__health = value\n\n    @abstractmethod\n    def make_sound(self):\n        pass\n\n    @classmethod\n    def get_total_animals(cls):\n        return cls.total_animals\n\n    @staticmethod\n    def is_valid_age(age):\n        return age &gt; 0\n\n    def __str__(self):\n        return f\"{self.name} ({self.__class__.__name__}),\"\n                \"age: {self._age},\"\n                \"health: {self.__health}\"\n\n    def __eq__(self, other):\n        return self.name == other.name\n\n\n# ---------------------------------------------------------\n# بخش ۲: وراثت - هر کلاس فرزند، Animal رو گسترش می‌ده\n# ---------------------------------------------------------\nclass Lion(Animal):\n    def make_sound(self):\n        print(f\"{self.name} says: Roar!\")\n\n\nclass Parrot(Animal):\n    def __init__(self, name, age, can_talk=True):\n        super().__init__(name, age)\n        self.can_talk = can_talk\n\n    def make_sound(self):\n        if self.can_talk:\n            print(f\"{self.name} says: Hello!\")\n        else:\n            print(f\"{self.name} says: Squawk!\")\n\n\nclass Elephant(Animal):\n    def make_sound(self):\n        print(f\"{self.name} says: Pawoo!\")\n\n\n# ---------------------------------------------------------\n# کلاسی که مجموعه‌ای از حیوانات رو نگه می‌داره\n# ---------------------------------------------------------\nclass Zoo:\n    def __init__(self, name):\n        self.name = name\n        self.animals = []\n\n    def add_animal(self, animal):\n        self.animals.append(animal)\n\n    def __len__(self):\n        return len(self.animals)\n\n    def make_all_sounds(self):\n        for animal in self.animals:\n            animal.make_sound()\n\n\n# ---------------------------------------------------------\n# اجرای برنامه (Demo)\n# ---------------------------------------------------------\nif __name__ == \"__main__\":\n\n    zoo = Zoo(\"Sari Zoo\")\n\n    lion = Lion(\"Simba\", 5)\n    parrot = Parrot(\"Polly\", 2, can_talk=True)\n    elephant = Elephant(\"Dumbo\", 8)\n\n    zoo.add_animal(lion)\n    zoo.add_animal(parrot)\n    zoo.add_animal(elephant)\n\n    print(\"--- __str__ ---\")\n    for a in zoo.animals:\n        print(a)\n\n    print(\"\\n--- Polymorphism ---\")\n    zoo.make_all_sounds()\n\n    print(\"\\n--- Encapsulation ---\")\n    lion.health = 80\n    print(f\"سلامت {lion.name}: {lion.health}\")\n    try:\n        # Invalid value =&gt; Error\n        lion.health = 150\n    except ValueError as e:\n        print(\"Error:\", e)\n\n    print(\"\\n--- Private Variable ---\")\n    try:\n        print(lion.__health)\n    except AttributeError as e:\n        print(\"Error:\", e)\n\n    print(\"\\n--- Class Method ---\")\n    print(\"Total Animal:\", Animal.get_total_animals())\n    print(\"Length (__len__):\", len(zoo))\n\n    print(\"\\n--- Static Method ---\")\n    print(Animal.is_valid_age(5))\n    print(Animal.is_valid_age(-3))\n\n    print(\"\\n--- Abstract Object ---\")\n    try:\n        a = Animal(\"X\", 1)\n    except TypeError as e:\n        print(\"Error:\", e)\n\n    print(\"\\n--- (__eq__) ---\")\n    lion2 = Lion(\"Simba\", 5)\n    print(lion == lion2)\n\n    class RobotAnimal:\n        def __init__(self, name):\n            self.name = name\n        def make_sound(self):\n            print(f\"{self.name} says: Beep Boop!\")\n\n    zoo.add_animal(RobotAnimal(\"R2D2\"))\n    zoo.make_all_sounds()",
     "crumbs": [
       "کلاس و شئ گرایی",
       "<span class='chapter-number'>39</span>  <span class='chapter-title'>مدیریت باغ وحش</span>"
@@ -2588,21 +2599,10 @@
     "href": "chapter/project/project.html",
     "title": "پروژه",
     "section": "",
-    "text": "برای اینکه کمی یادگیری جذاب‌تر شود یک سری پروژه در پایتون پیاده سازی کنید.\nپیش نیاز‌ها را در ترمینال یا کنسول اجرا کنید:\n\nنصب پیکیج‌های مورد نیاز:\n\npip install pyinstaller\n\nبرای تبدیل فایل‌های پایتون به فایل اجرایی در ویندوز از کد زیر استفاده کنید.\n\npyinstaller --onefile --noconsole myproject.py\n--onefile: فقط یه فایل خروجی بسازه (نه یه پوشه‌ی پر از فایل)\n--noconsole: چون برنامه گرافیکی‌ـه و به پنجره‌ی ترمینال نیازی نداره\n\nساختار پروژه:\n\nmy_project_folder/\n│\n├── myproject.py\n├── build/\n├── dist/\n│   └── myproject.exe  ✅✅✅ اینه فایل اجرایی!",
+    "text": "برای اینکه کمی یادگیری جذاب‌تر شود یک سری پروژه در پایتون پیاده سازی کنید.\nپیش نیاز‌ها را در ترمینال یا کنسول اجرا کنید:\n\nنصب پیکیج‌های مورد نیاز:\n\npip install pyinstaller\n\nبرای تبدیل فایل‌های پایتون به فایل اجرایی در ویندوز از کد زیر استفاده کنید.\n\npyinstaller --onefile --noconsole myproject.py\n--onefile: فقط یه فایل خروجی بسازه (نه یه پوشه‌ی پر از فایل)\n--noconsole: چون برنامه گرافیکی‌ـه و به پنجره‌ی ترمینال نیازی نداره\n\nساختار پروژه:\n\nmyproject/\n│\n├── myproject.py\n├── build/\n├── dist/\n│   └── myproject.exe  ✅✅✅ اینه فایل اجرایی!",
     "crumbs": [
       "پروژه",
       "<span class='chapter-number'>44</span>  <span class='chapter-title'>پروژه</span>"
-    ]
-  },
-  {
-    "objectID": "chapter/project/counter.html",
-    "href": "chapter/project/counter.html",
-    "title": "گوسفند شمار",
-    "section": "",
-    "text": "دینا کوچولو که خوابش نمیبره مادرش بهش یاد داده قبل خواب توی ذهنش گوسفندهایی رو تصور کنه که از روی نرده رد میشن و سعی کنه تعداد اونهارو بشماره تا ذهنش خسته بشه بخوابه. اما دینا که تازه برنامه نویسی یاد گرفته بود به فکر این بود که چطور یک نرم افزار گوسفند شمار بسازه. دینا رو برای ساخت این نرم افزار راهنمایی کنید.\n\nfrom tkinter import *\n\ncounter = 0\n\ndef btn_counter():\n    global counter\n    counter += 1\n    lbl.configure(text=f\"{counter} x 🐑.\")\n\nwindow = Tk()\nwindow.title(\"Sheep counter\")\nwindow.geometry(\"480x360\")\n\nbtn = Button(window)\nbtn.configure(text=\"count\", command=btn_counter)\nbtn.pack(pady=10)\n\nlbl = Label(window, text=\"0 x 🐑.\")\nlbl.pack(pady=10)\n\nwindow.mainloop()",
-    "crumbs": [
-      "پروژه",
-      "<span class='chapter-number'>45</span>  <span class='chapter-title'>گوسفند شمار</span>"
     ]
   },
   {
@@ -2610,65 +2610,65 @@
     "href": "chapter/project/calculator.html",
     "title": "ماشین حساب",
     "section": "",
-    "text": "مقدار\nبا استفاده از مطالبی که آموخته‌اید میتوانید کدهای زیر را بخوانید.\nprint(1 + 2)",
+    "text": "مقدار\nبا استفاده از مطالبی که آموخته‌اید میتوانید برنامه‌های زیر را بسازید.\nیک برنامه بنویسید که:\nکد\nn1 = input(\"n1: \")\nn1 = float(n1)\nn2 = input(\"n2: \")\nn2 = float(n2)\n\nprint(n1, \"+ \", n2, \"=\", n1 + n2)\nprint(n1, \"- \", n2, \"=\", n1 - n2)\nprint(n1, \"* \", n2, \"=\", n1 * n2)\nprint(n1, \"**\", n2, \"=\", n1 ** n2)\nprint(n1, \"/ \", n2, \"=\", n1 / n2)\nprint(n1, \"//\", n2, \"=\", n1 // n2)\nprint(n1, \"% \", n2, \"=\", n1 % n2)\nprint(n1, \"==\", n2, \"=\", n1 == n2)\nprint(n1, \"! \", n2, \"=\", n1 != n2)\nprint(n1, \"&lt; \", n2, \"=\", n1 &lt; n2)\nprint(n1, \"&lt;=\", n2, \"=\", n1 &lt;= n2)\nprint(n1, \"&gt; \", n2, \"=\", n1 &gt; n2)\nprint(n1, \"&gt;=\", n2, \"=\", n1 &gt;= n2)",
     "crumbs": [
       "پروژه",
-      "<span class='chapter-number'>46</span>  <span class='chapter-title'>ماشین حساب</span>"
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
     ]
   },
   {
-    "objectID": "chapter/project/calculator.html#متغیر",
-    "href": "chapter/project/calculator.html#متغیر",
+    "objectID": "chapter/project/calculator.html#مقدار",
+    "href": "chapter/project/calculator.html#مقدار",
     "title": "ماشین حساب",
-    "section": "متغیر",
-    "text": "متغیر\n\nn1 = 1\nn2 = 2\n\nprint(n1 + n2)",
+    "section": "",
+    "text": "از کاربر دو عدد دریافت کند و تمام عملیات‌های ریاضی و مقایسه‌ای را برای آن‌ها بنویسد.",
     "crumbs": [
       "پروژه",
-      "<span class='chapter-number'>46</span>  <span class='chapter-title'>ماشین حساب</span>"
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
     ]
   },
   {
-    "objectID": "chapter/project/calculator.html#ورودی",
-    "href": "chapter/project/calculator.html#ورودی",
+    "objectID": "chapter/project/calculator.html#ساختار-داده",
+    "href": "chapter/project/calculator.html#ساختار-داده",
     "title": "ماشین حساب",
-    "section": "ورودی",
-    "text": "ورودی\n\nn1 = float(input(\"n1: \"))\nn2 = float(input(\"n2: \"))\n\nprint(n1 + n2)",
+    "section": "ساختار داده",
+    "text": "ساختار داده\nیک برنامه بنویسید که:\n\nاز کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند.\n\n\n\nکد\nn1 = input(\"n1: \")\nn1 = float(n1)\nn2 = input(\"n2: \")\nn2 = float(n2)\nop = input(\"(+,-,*,**,/,//,%,==,!=,&lt;,&lt;=,&gt;,&gt;=)\\nop: \")\n\nn1_op_n2 = {\n    \"+\": n1 + n2,\n    \"-\": n1 - n2,\n    \"*\": n1 * n2,\n    \"**\": n1**n2,\n    \"/\": n1 / n2,\n    \"//\": n1 // n2,\n    \"%\": n1 % n2,\n    \"==\": n1 == n2,\n    \"!=\": n1 != n2,\n    \"&lt;\": n1 &lt; n2,\n    \"&lt;=\": n1 &lt;= n2,\n    \"&gt;\": n1 &gt; n2,\n    \"&gt;=\": n1 &gt;= n2,\n}\n\nprint(f\"{n1} {op} {n2} = {n1_op_n2[op]}\")",
     "crumbs": [
       "پروژه",
-      "<span class='chapter-number'>46</span>  <span class='chapter-title'>ماشین حساب</span>"
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
     ]
   },
   {
-    "objectID": "chapter/project/calculator.html#عملگرهای-دیگر",
-    "href": "chapter/project/calculator.html#عملگرهای-دیگر",
+    "objectID": "chapter/project/calculator.html#دستورات-شرطی-و-مدیریت-خطا",
+    "href": "chapter/project/calculator.html#دستورات-شرطی-و-مدیریت-خطا",
     "title": "ماشین حساب",
-    "section": "عملگرهای دیگر",
-    "text": "عملگرهای دیگر\n\nعملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.\n\n\nn1 = float(input(\"n1: \"))\nn2 = float(input(\"n2: \"))\n\nprint(n1 + n2)\nprint(n1 - n2)\nprint(n1 * n2)\nprint(n1 / n2)",
+    "section": "دستورات شرطی و مدیریت خطا",
+    "text": "دستورات شرطی و مدیریت خطا\nیک برنامه بنویسید که:\n\nاز کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند.\nبرای عملگرهایی که وجود ندارن یک پیام برای کاربر چاپ کند.\nخطای تقسیم بر صفر را به طور خاص مدیریت کند.\nبرای باقی خطاها یک پیام متناسب با نوع خطا چاپ کند.\n\n\n\nکد\nvalid_op = \"+,-,*,**,/,//,%,==,!=,&lt;,&lt;=,&gt;,&gt;=\".split(\",\")\n\ntry:\n    n1 = input(\"n1: \")\n    n1 = float(n1)\n    n2 = input(\"n2: \")\n    n2 = float(n2)\n    op = input(f\"op: \")\n\n    if op not in valid_op:\n        print(f\"{op} is not valid operator!\")\n        print(f\"({','.join(valid_op)})\")\n    else:\n        n1_op_n2 = {\n            \"+\": n1 + n2,\n            \"-\": n1 - n2,\n            \"*\": n1 * n2,\n            \"**\": n1**n2,\n            \"/\": n1 / n2,\n            \"//\": n1 // n2,\n            \"%\": n1 % n2,\n            \"==\": n1 == n2,\n            \"!=\": n1 != n2,\n            \"&lt;\": n1 &lt; n2,\n            \"&lt;=\": n1 &lt;= n2,\n            \"&gt;\": n1 &gt; n2,\n            \"&gt;=\": n1 &gt;= n2,\n        }\n\n        print(f\"{n1} {op} {n2} = {n1_op_n2[op]}\")\nexcept ZeroDivisionError:\n    print(f\"ZeroDivisionError: {n1} {op} {n2} is not valid output\")\nexcept ValueError:\n    print(\"ValueError: Please enter just number for n1 and n2!\")\nexcept Exception as e:\n    print(f\"Error: {str(e)}\")",
     "crumbs": [
       "پروژه",
-      "<span class='chapter-number'>46</span>  <span class='chapter-title'>ماشین حساب</span>"
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
     ]
   },
   {
-    "objectID": "chapter/project/calculator.html#دستورات-شرطی",
-    "href": "chapter/project/calculator.html#دستورات-شرطی",
+    "objectID": "chapter/project/calculator.html#حلقه",
+    "href": "chapter/project/calculator.html#حلقه",
     "title": "ماشین حساب",
-    "section": "دستورات شرطی",
-    "text": "دستورات شرطی\n\nعملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.\n\n\nn1 = float(input(\"n1: \"))\nn2 = float(input(\"n2: \"))\nop = input(\"+,-,*,/: \")\n\nif op == \"+\":\n    print(n1 + n2)\nelif op == \"-\":\n    print(n1 - n2)\nelif op == \"*\":\n    print(n1 * n2)\nelif op == \"/\":\n    print(n1 / n2)\nelse:\n    print(\"operator is not valid!\")",
+    "section": "حلقه",
+    "text": "حلقه\nیک برنامه بنویسید که:\n\nاز کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند.\nبرای عملگرهایی که وجود ندارن یک پیام برای کاربر چاپ کند.\nخطای تقسیم بر صفر را به طور خاص مدیریت کند.\nبرای باقی خطاها یک پیام متناسب با نوع خطا چاپ کند.\nبعد از چاپ خروجی دوباره بتواند حداکثر ۳ بار ورودی جدید از کاربر دریافت کند. دقت کنید که فقط در صورت انجام عملیات بدون خطا، تعداد دفعات محاسبه شود.\nبا نوشتن exit در ورودی اول از برنامه خارج شود.\nبرای اصلاح ورودی‌ها اگر به جای عملگر عبارت edit وارد شود تا ورودی دوباره دریافت شود.\n\n\n\nکد\nvalid_op = \"+,-,*,**,/,//,%,==,!=,&lt;,&lt;=,&gt;,&gt;=\"\ncounter = 1\nwhile counter &lt;= 3:\n    try:\n        n1 = input(\"n1: \")\n        if n1 == \"exit\":\n            break\n\n        n1 = float(n1)\n        n2 = input(\"n2: \")\n        n2 = float(n2)\n        op = input(f\"op: \")\n\n        if op == \"edit\":\n            continue\n\n        if op not in valid_op.split(\",\"):\n            print(f\"{op} is not valid operator!\")\n            print(f\"({valid_op})\")\n            continue\n\n        n1_op_n2 = {\n            \"+\": n1 + n2,\n            \"-\": n1 - n2,\n            \"*\": n1 * n2,\n            \"**\": n1**n2,\n            \"/\": n1 / n2,\n            \"//\": n1 // n2,\n            \"%\": n1 % n2,\n            \"==\": n1 == n2,\n            \"!=\": n1 != n2,\n            \"&lt;\": n1 &lt; n2,\n            \"&lt;=\": n1 &lt;= n2,\n            \"&gt;\": n1 &gt; n2,\n            \"&gt;=\": n1 &gt;= n2,\n        }\n\n        print(f\"{n1} {op} {n2} = {n1_op_n2[op]}\")\n        counter += 1\n\n    except ZeroDivisionError:\n        print(f\"ZeroDivisionError: {n1} {op} {n2} is not valid output\")\n    except ValueError:\n        print(\"ValueError: Please enter just number for n1 and n2!\")\n    except Exception as e:\n        print(f\"Error: {str(e)}\")",
     "crumbs": [
       "پروژه",
-      "<span class='chapter-number'>46</span>  <span class='chapter-title'>ماشین حساب</span>"
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
     ]
   },
   {
-    "objectID": "chapter/project/calculator.html#مدیریت-خطا",
-    "href": "chapter/project/calculator.html#مدیریت-خطا",
+    "objectID": "chapter/project/calculator.html#تابع",
+    "href": "chapter/project/calculator.html#تابع",
     "title": "ماشین حساب",
-    "section": "مدیریت خطا",
-    "text": "مدیریت خطا\n\nعملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.\n\n\ntry:\n    n1 = float(input(\"n1: \"))\n    n2 = float(input(\"n2: \"))\n    op = input(\"+ - * /: \")\n\n    if op == \"+\":\n        print(n1 + n2)\n    elif op == \"-\":\n        print(n1 - n2)\n    elif op == \"*\":\n        print(n1 * n2)\n    elif op == \"/\":\n        print(n1 / n2)\n    else:\n        print(\"operator is not valid!\")\nexcept Exception as e:\n    print(\"Error:\", str(e))",
+    "section": "تابع",
+    "text": "تابع\nیک برنامه بنویسید که:\n\nاز کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند.\nبرای عملگرهایی که وجود ندارن یک پیام برای کاربر چاپ کند.\nخطای تقسیم بر صفر را به طور خاص مدیریت کند.\nبرای باقی خطاها یک پیام متناسب با نوع خطا چاپ کند.\nبعد از چاپ خروجی دوباره بتواند حداکثر ۳ بار ورودی جدید از کاربر دریافت کند. دقت کنید که در صورت انجام عملیات بدون تعداد دفعات محاسبه شود.\nبا نوشتن exit در ورودی اول از برنامه خارج شود.\nبرای اصلاح ورودی‌ها اگر در ورودی عملگر عبارت edit وارد شود تا ورودی دوباره دریافت شود.\nیک تابع برای ثبت تاریخچه هر رویداد بنویسید\nدر هنگام بسته شدن برنامه، تاریخچه را از آخر به اول چاپ کنید.\nبرنامه را به گونه‌ای بنویسید که اگر فایل برنامه به صورت مستقیم اجرا شود برنامه اجرا شود.\n\n\n\nکد\nhistory = []\n\n\ndef save_event(event):\n    history.append(event)\n    print(event)\n\n\ndef print_events():\n    for event in history[::-1]:\n        print(event)\n\n\ndef pretty_text(text, symbol=\"=\"):\n    return f\"&lt;&lt; {text} &gt;&gt;\".center(20, symbol)\n\n\ndef opration(n1, n2, op):\n    n1_op_n2 = {\n        \"+\": n1 + n2,\n        \"-\": n1 - n2,\n        \"*\": n1 * n2,\n        \"**\": n1**n2,\n        \"/\": n1 / n2,\n        \"//\": n1 // n2,\n        \"%\": n1 % n2,\n        \"==\": n1 == n2,\n        \"!=\": n1 != n2,\n        \"&lt;\": n1 &lt; n2,\n        \"&lt;=\": n1 &lt;= n2,\n        \"&gt;\": n1 &gt; n2,\n        \"&gt;=\": n1 &gt;= n2,\n    }\n\n    return f\"{n1} {op} {n2} = {n1_op_n2[op]}\"\n\n\ndef main():\n    save_event(pretty_text(\"Start\"))\n    counter = 1\n    while counter &lt;= 3:\n        print(pretty_text(\"Input\", \"-\"))\n        try:\n            n1 = input(\"n1: \")\n            if n1 == \"exit\":\n                save_event(pretty_text(\"Exit\"))\n                break\n\n            n1 = float(n1)\n            n2 = input(\"n2: \")\n            n2 = float(n2)\n            op = input(f\"op: \")\n\n            if op == \"edit\":\n                save_event(pretty_text(\"Edit\"))\n                continue\n\n            valid_op = \"+,-,*,**,/,//,%,==,!=,&lt;,&lt;=,&gt;,&gt;=\"\n            if op not in valid_op.split(\",\"):\n                save_event(f\"{op} is not valid operator! ({valid_op})\")\n                continue\n\n            save_event(f\"{counter}: {opration(n1, n2, op)}\")\n            counter += 1\n\n        except ZeroDivisionError:\n            save_event(f\"ZeroDivisionError: {n1} {op} {n2} is not valid output\")\n        except ValueError:\n            save_event(\"ValueError: Please enter number for n1 and n2!\")\n        except Exception as e:\n            save_event(f\"Error: {str(e)}\")\n\n    save_event(pretty_text(\"End\"))\n\n\nif __name__ == \"__main__\":\n    main()\n    print_events()",
     "crumbs": [
       "پروژه",
-      "<span class='chapter-number'>46</span>  <span class='chapter-title'>ماشین حساب</span>"
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
     ]
   },
   {
@@ -2676,10 +2676,21 @@
     "href": "chapter/project/calculator.html#رابط-گرافیکی",
     "title": "ماشین حساب",
     "section": "رابط گرافیکی",
-    "text": "رابط گرافیکی\n\nعملگرهای توان، مقسوم علیه و باقیمانده را اضافه کنید.\n\n\nimport tkinter as tk\n\n\ndef calculate():\n    try:\n        n1 = float(entry1.get())\n        n2 = float(entry2.get())\n        op = operator.get()\n\n        if op == \"+\":\n            result = n1 + n2\n        elif op == \"-\":\n            result = n1 - n2\n        elif op == \"*\":\n            result = n1 * n2\n        elif op == \"/\":\n            if n2 == 0:\n                result_label.config(text=\"خطا: تقسیم بر صفر!\")\n                return\n            result = n1 / n2\n        else:\n            result_label.config(text=\"عملگر نامعتبر است\")\n            return\n\n        result_label.config(text=f\"نتیجه: {result}\")\n\n    except ValueError:\n        result_label.config(text=\"لطفاً فقط عدد وارد کنید\")\n\n\nwindow = tk.Tk()\nwindow.title(\"ماشین حساب ساده\")\nwindow.geometry(\"300x250\")\n\nlabel1 = tk.Label(window, text=\"عدد اول:\")\nentry1 = tk.Entry(window)\n\nlabel2 = tk.Label(window, text=\"عدد دوم:\")\nentry2 = tk.Entry(window)\n\nlabel_op = tk.Label(window, text=\"عملگر (+ - * /):\")\noperator = tk.Entry(window)\n\ncalc_button = tk.Button(window, text=\"محاسبه\", command=calculate)\nresult_label = tk.Label(window, text=\"نتیجه: \", fg=\"blue\")\n\nlabel1.pack()\nentry1.pack()\n\nlabel2.pack()\nentry2.pack()\n\nlabel_op.pack()\noperator.pack()\n\ncalc_button.pack(pady=10)\nresult_label.pack()\n\nwindow.mainloop()",
+    "text": "رابط گرافیکی\nیک برنامه گرافیکی بنویسید که:\n\nاز کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند. برچسب و ورودی هر بخش در یک ردیف باشد و حاصل با یک دکمه در پنجره نمایش داده شود.\nتمام خطاهای ممکن با پیام مناسب در یک جعبه پیام نمایش داده شود.\nیک دکمه برای خروج درنظر گرفته شود.\nتاریخچه را در یک لیست باکس از آخر به اول نمایش دهد.\nیک دکمه برای پاک کردن تاریخچه انتخاب شده در لیست باکس در نظر گرفته شود..\n\n\n\nکد\nimport tkinter as tk\nfrom tkinter import messagebox\n\n# =========== Variables ================\nvars = {\n    \"counter\": 1,\n    \"valid_op\": \"+,-,*,**,/,//,%,==,!=,&lt;,&lt;=,&gt;,&gt;=\",\n}\n\n\n# =========== Functions ================\ndef save_event(event):\n    lbl_rsl.config(text=event)\n    lst_hst.insert(0, event)\n\n\ndef showerror(title, msg):\n    save_event(f\"{title}:\\n{msg}\")\n    messagebox.showerror(title=title, message=msg)\n\n\ndef clear_entries():\n    ntr_n1.delete(0, tk.END)\n    ntr_n2.delete(0, tk.END)\n    ntr_op.delete(0, tk.END)\n\n\ndef clear_events():\n    lst_hst.delete(0, tk.END)\n\n\ndef selection(event):\n    selection = lst_hst.curselection()\n    index = selection[0]\n    lbl_rsl.config(text=lst_hst.get(index))\n\n\ndef remove():\n    selection = lst_hst.curselection()\n    if not selection:\n        return\n\n    index = selection[0]\n    lst_hst.delete(index)\n\n\ndef close():\n    root.destroy()\n\n\ndef opration(n1, n2, op):\n    n1_op_n2 = {\n        \"+\": n1 + n2,\n        \"-\": n1 - n2,\n        \"*\": n1 * n2,\n        \"**\": n1**n2,\n        \"/\": n1 / n2,\n        \"//\": n1 // n2,\n        \"%\": n1 % n2,\n        \"==\": n1 == n2,\n        \"!=\": n1 != n2,\n        \"&lt;\": n1 &lt; n2,\n        \"&lt;=\": n1 &lt;= n2,\n        \"&gt;\": n1 &gt; n2,\n        \"&gt;=\": n1 &gt;= n2,\n    }\n\n    return f\"{n1} {op} {n2} = {n1_op_n2[op]}\"\n\n\ndef calculate():\n    try:\n        n1 = ntr_n1.get()\n        n1 = float(n1)\n        n2 = ntr_n2.get()\n        n2 = float(n2)\n        op = ntr_op.get()\n\n        if op not in vars[\"valid_op\"].split(\",\"):\n            title = f\"{op} عملگر معتبر نیست!\"\n            msg = f\"عملگرهای معتبر: \" + vars[\"valid_op\"]\n            showerror(title, msg)\n            return\n\n        title = vars[\"counter\"]\n        msg = opration(n1, n2, op)\n        save_event(f\"{title}:\\n{msg}\")\n        vars[\"counter\"] += 1\n\n    except ZeroDivisionError:\n        title = f\"خطا تقسیم بر صفر\"\n        msg = f\"حاصل {n1} {op} {n2} تعریف نشده است!\"\n        showerror(title, msg)\n    except ValueError:\n        title = f\"خطا مقدار\"\n        msg = f\"لطفا مقدار معتبر وارد کنید!\"\n        showerror(title, msg)\n    except Exception as e:\n        title = f\"خطا\"\n        msg = str(e)\n        showerror(title, msg)\n\n\n# ===========    GUI    ================\nroot = tk.Tk()\nroot.title(\"ماشین حساب\")\nroot.geometry(\"400x400\")\n\nfrm_n1 = tk.Frame(root)\nfrm_n1.pack(pady=2)\nlbl_n1 = tk.Label(frm_n1, text=\"عدد اول:\")\nlbl_n1.pack(side=\"right\", padx=2)\nntr_n1 = tk.Entry(frm_n1)\nntr_n1.pack(side=\"right\", padx=2)\n\nfrm_n2 = tk.Frame(root)\nfrm_n2.pack(pady=2)\nlbl_n2 = tk.Label(frm_n2, text=\"عدد دوم:\")\nlbl_n2.pack(side=\"right\", padx=2)\nntr_n2 = tk.Entry(frm_n2)\nntr_n2.pack(side=\"right\", padx=2)\n\nfrm_op = tk.Frame(root)\nfrm_op.pack(pady=2)\nlbl_op = tk.Label(frm_op, text=\"عملگر:\")\nlbl_op.pack(side=\"right\", padx=2)\nntr_op = tk.Entry(frm_op)\nntr_op.pack(side=\"right\", padx=2)\n\ntk.Button(\n    root,\n    text=\"محاسبه\",\n    command=calculate,\n).pack(pady=5)\n\nlbl_rsl = tk.Label(root, text=\"---\")\nlbl_rsl.pack(pady=5)\n\n\nfrm_lst = tk.Frame(root)\nfrm_lst.pack(padx=5)\nscb = tk.Scrollbar(\n    frm_lst,\n    cursor=\"hand1\",\n)\nscb.pack(side=\"right\", fill=\"y\", pady=5)\nlst_hst = tk.Listbox(\n    frm_lst,\n    height=10,\n    width=50,\n    yscrollcommand=scb.set,\n)\nlst_hst.bind(\"&lt;Double-1&gt;\", selection)\nlst_hst.pack(side=\"right\", pady=5, padx=5)\nscb.config(command=lst_hst.yview)\n\nfrm_btn = tk.Frame(root)\nfrm_btn.pack(pady=5)\n\ntk.Button(\n    frm_btn,\n    text=\"حذف رویداد\",\n    command=remove,\n).pack(side=\"right\", padx=5)\ntk.Button(\n    frm_btn,\n    text=\"حذف کل رویدادها\",\n    command=clear_events,\n).pack(side=\"right\", padx=5)\ntk.Button(\n    frm_btn,\n    text=\"بستن\",\n    command=close,\n).pack(side=\"right\", padx=5)\n\nroot.mainloop()",
     "crumbs": [
       "پروژه",
-      "<span class='chapter-number'>46</span>  <span class='chapter-title'>ماشین حساب</span>"
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
+    ]
+  },
+  {
+    "objectID": "chapter/project/calculator.html#فایل",
+    "href": "chapter/project/calculator.html#فایل",
+    "title": "ماشین حساب",
+    "section": "فایل",
+    "text": "فایل\nیک برنامه گرافیکی بنویسید که:\n\nاز کاربر دو عدد و یک عملگر دریافت کند و آن عملگر را برای آن دو عدد اعمال کند و در نهایت حاصل را به همراه اعداد و عملگر چاپ کند.\nبرای عملگرهایی که وجود ندارن یک پیام برای کاربر چاپ کند.\nخطای تقسیم بر صفر را به طور خاص مدیریت کند.\nبرای باقی خطاها یک پیام متناسب با نوع خطا چاپ کند.\nیک دکمه برای خروج درنظر بگیرید.\nیک تابع برای ثبت تاریخچه هر رویداد بنویسید\nتاریخچه را در یک لیست باکس از آخر به اول چاپ کنید.\nیک دکمه برای پاک کردن تاریخچه وقتی آنرا انتخاب کرده است در نظر بگیرید.\nتغییرات تاریخچه در هنگام اجرای برنامه بارگذاری شود و در هنگام بسته شدن در فایل ثبت شود.",
+    "crumbs": [
+      "پروژه",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>ماشین حساب</span>"
     ]
   },
   {

@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -743,7 +738,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -764,11 +759,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="تعریف-یک-کلاس-ساده" class="level2">
 <h2 class="anchored" data-anchor-id="تعریف-یک-کلاس-ساده">تعریف یک کلاس ساده</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog:</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> Dog()</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(d))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">class</span> Dog:</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="cf">pass</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a>d <span class="op">=</span> Dog()</span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="bu">print</span>(<span class="bu">type</span>(d))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>&lt;class '__main__.Dog'&gt;</code></pre>
 </section>
 <section id="متد-سازنده-__init__" class="level2">
@@ -778,13 +773,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>برای مقداردهی اولیه ویژگی‌های (attributes) شیء استفاده می‌شه</li>
 <li><span dir="ltr"><code>self</code></span> : اشاره به خود شیء — همیشه اولین پارامتر متدهای کلاسه</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog:</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, age):</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.age <span class="op">=</span> age</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>, <span class="dv">3</span>)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d.name, d.age)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">class</span> Dog:</span>
+<span id="cb3-2"><a href="#cb3-2"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, age):</span>
+<span id="cb3-3"><a href="#cb3-3"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
+<span id="cb3-4"><a href="#cb3-4"></a>        <span class="va">self</span>.age <span class="op">=</span> age</span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>, <span class="dv">3</span>)</span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="bu">print</span>(d.name, d.age)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Rex 3</code></pre>
 </section>
 <section id="متدها-رفتار-اشیاء" class="level2">
@@ -792,16 +787,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>توابعی که داخل کلاس تعریف می‌شن و روی داده‌های شیء کار می‌کنن</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog:</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, age):</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.age <span class="op">=</span> age</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> bark(<span class="va">self</span>):</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> says: Woof!"</span>)</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>, <span class="dv">3</span>)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>d.bark()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">class</span> Dog:</span>
+<span id="cb5-2"><a href="#cb5-2"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, age):</span>
+<span id="cb5-3"><a href="#cb5-3"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
+<span id="cb5-4"><a href="#cb5-4"></a>        <span class="va">self</span>.age <span class="op">=</span> age</span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a>    <span class="kw">def</span> bark(<span class="va">self</span>):</span>
+<span id="cb5-7"><a href="#cb5-7"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> says: Woof!"</span>)</span>
+<span id="cb5-8"><a href="#cb5-8"></a></span>
+<span id="cb5-9"><a href="#cb5-9"></a>d <span class="op">=</span> Dog(<span class="st">"Rex"</span>, <span class="dv">3</span>)</span>
+<span id="cb5-10"><a href="#cb5-10"></a>d.bark()</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Rex says: Woof!</code></pre>
 </section>
 <section id="ویژگیهای-نمونه-instance-attributes-در-مقابل-ویژگیهای-کلاس-class-attributes" class="level2">
@@ -832,31 +827,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog:</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    species <span class="op">=</span> <span class="st">"Canis familiaris"</span>   <span class="co"># class attribute</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name):</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name           <span class="co"># instance attribute</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>d1 <span class="op">=</span> Dog(<span class="st">"Rex"</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>d2 <span class="op">=</span> Dog(<span class="st">"Buddy"</span>)</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d1.species, d2.species)   <span class="co"># هر دو یکی</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d1.name, d2.name)         <span class="co"># جدا از هم</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">class</span> Dog:</span>
+<span id="cb7-2"><a href="#cb7-2"></a>    <span class="co"># class attribute</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>    species <span class="op">=</span> <span class="st">"Canis familiaris"</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a></span>
+<span id="cb7-5"><a href="#cb7-5"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name):</span>
+<span id="cb7-6"><a href="#cb7-6"></a>        <span class="co"># instance attribute</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
+<span id="cb7-8"><a href="#cb7-8"></a></span>
+<span id="cb7-9"><a href="#cb7-9"></a>d1 <span class="op">=</span> Dog(<span class="st">"Rex"</span>)</span>
+<span id="cb7-10"><a href="#cb7-10"></a>d2 <span class="op">=</span> Dog(<span class="st">"Buddy"</span>)</span>
+<span id="cb7-11"><a href="#cb7-11"></a><span class="bu">print</span>(d1.species, d2.species)</span>
+<span id="cb7-12"><a href="#cb7-12"></a><span class="bu">print</span>(d1.name, d2.name)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="ساخت-چند-شیء-از-یک-کلاس" class="level2">
 <h2 class="anchored" data-anchor-id="ساخت-چند-شیء-از-یک-کلاس">ساخت چند شیء از یک کلاس</h2>
 <ul>
 <li>هر شیء داده‌های مستقل خودش رو داره، حتی اگه از یک کلاس ساخته شده باشن</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="op">=</span> Dog(<span class="st">"Rex"</span>, <span class="dv">3</span>)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>d2 <span class="op">=</span> Dog(<span class="st">"Buddy"</span>, <span class="dv">5</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>d1 <span class="op">=</span> Dog(<span class="st">"Rex"</span>, <span class="dv">3</span>)</span>
+<span id="cb8-2"><a href="#cb8-2"></a>d2 <span class="op">=</span> Dog(<span class="st">"Buddy"</span>, <span class="dv">5</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="نکته-تفاوت-self-با-پارامترهای-دیگه" class="level2">
 <h2 class="anchored" data-anchor-id="نکته-تفاوت-self-با-پارامترهای-دیگه">نکته: تفاوت <span dir="ltr"><code>self</code></span> با پارامترهای دیگه</h2>
 <ul>
 <li><span dir="ltr"><code>self</code></span> به‌طور خودکار توسط پایتون پاس داده می‌شه، لازم نیست هنگام فراخوانی متد صداش کنیم</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>d.bark()   <span class="co"># نه d.bark(d) !</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>d.bark()   <span class="co"># no d.bark(d) !</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>

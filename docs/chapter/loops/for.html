@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -742,7 +737,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -790,10 +785,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="مثال" class="level2">
 <h2 class="anchored" data-anchor-id="مثال">مثال</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>friends <span class="op">=</span> [<span class="st">'Joseph'</span>, <span class="st">'Glenn'</span>, <span class="st">'Sally'</span>]</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> friend <span class="kw">in</span> friends:</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Happy New Year: '</span>, friend)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Done!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>friends <span class="op">=</span> [</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="st">'Joseph'</span>, <span class="st">'Glenn'</span>, <span class="st">'Sally'</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>]</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="cf">for</span> friend <span class="kw">in</span> friends:</span>
+<span id="cb1-5"><a href="#cb1-5"></a>    <span class="bu">print</span>(<span class="st">'Happy New Year: '</span>, friend)</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="bu">print</span>(<span class="st">'Done!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>متغیر <span dir="ltr"><code>friend</code></span> به ترتیب مقدار هر عنصر لیست رو می‌گیره</li>
 <li>بعد از تموم شدن حلقه، خط بعدی (<span dir="ltr"><code>Done!</code></span>) اجرا می‌شه</li>
@@ -803,31 +801,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="پیمایش-روی-لیست" class="level2">
 <h2 class="anchored" data-anchor-id="پیمایش-روی-لیست">پیمایش روی لیست</h2>
 <p>برای اعمال تغییرات روی لیست می‌توانیم از شیوه زیر استفاده کنیم:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>nums <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>nums_power <span class="op">=</span> [n <span class="op">**</span> <span class="dv">2</span> <span class="cf">for</span> n <span class="kw">in</span> nums]</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nums_power)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>nums <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
+<span id="cb2-2"><a href="#cb2-2"></a>nums_power <span class="op">=</span> [n <span class="op">**</span> <span class="dv">2</span> <span class="cf">for</span> n <span class="kw">in</span> nums]</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="bu">print</span>(nums_power)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>[1, 4, 9, 16]</code></pre>
 </section>
 <section id="پیمایش-روی-دیکشنری" class="level2">
 <h2 class="anchored" data-anchor-id="پیمایش-روی-دیکشنری">پیمایش روی دیکشنری</h2>
 <p>برای پیمایش روی دیکشنری چند روش رایج وجود داره:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>person <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Mohsen"</span>, <span class="st">"age"</span>: <span class="dv">32</span>, <span class="st">"city"</span>: <span class="st">"Sari"</span>}</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key <span class="kw">in</span> person:</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(key)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key <span class="kw">in</span> person.keys():</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(key)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> value <span class="kw">in</span> person.values():</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(value)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key, value <span class="kw">in</span> person.items():</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(key, value)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>person <span class="op">=</span> {</span>
+<span id="cb4-2"><a href="#cb4-2"></a>    <span class="st">"name"</span>: <span class="st">"Mohsen"</span>,</span>
+<span id="cb4-3"><a href="#cb4-3"></a>    <span class="st">"age"</span>: <span class="dv">32</span>,</span>
+<span id="cb4-4"><a href="#cb4-4"></a>    <span class="st">"city"</span>: <span class="st">"Sari"</span>,</span>
+<span id="cb4-5"><a href="#cb4-5"></a>}</span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="cf">for</span> key <span class="kw">in</span> person:</span>
+<span id="cb4-8"><a href="#cb4-8"></a>    <span class="bu">print</span>(key)</span>
+<span id="cb4-9"><a href="#cb4-9"></a></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="cf">for</span> key <span class="kw">in</span> person.keys():</span>
+<span id="cb4-11"><a href="#cb4-11"></a>    <span class="bu">print</span>(key)</span>
+<span id="cb4-12"><a href="#cb4-12"></a></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="cf">for</span> value <span class="kw">in</span> person.values():</span>
+<span id="cb4-14"><a href="#cb4-14"></a>    <span class="bu">print</span>(value)</span>
+<span id="cb4-15"><a href="#cb4-15"></a></span>
+<span id="cb4-16"><a href="#cb4-16"></a><span class="cf">for</span> key, value <span class="kw">in</span> person.items():</span>
+<span id="cb4-17"><a href="#cb4-17"></a>    <span class="bu">print</span>(key, value)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>می‌تونید مثل لیست، از <strong>دیکشنری کامپرینشن (Dict Comprehension)</strong> هم برای ساخت دیکشنری جدید حین پیمایش استفاده کنید:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>prices <span class="op">=</span> {<span class="st">"apple"</span>: <span class="dv">10</span>, <span class="st">"banana"</span>: <span class="dv">5</span>, <span class="st">"cherry"</span>: <span class="dv">20</span>}</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>discounted <span class="op">=</span> {item: price <span class="op">*</span> <span class="fl">0.9</span> <span class="cf">for</span> item, price <span class="kw">in</span> prices.items()}</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(discounted)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>prices <span class="op">=</span> {</span>
+<span id="cb5-2"><a href="#cb5-2"></a>    <span class="st">"apple"</span>: <span class="dv">10</span>,</span>
+<span id="cb5-3"><a href="#cb5-3"></a>    <span class="st">"banana"</span>: <span class="dv">5</span>,</span>
+<span id="cb5-4"><a href="#cb5-4"></a>    <span class="st">"cherry"</span>: <span class="dv">20</span>,</span>
+<span id="cb5-5"><a href="#cb5-5"></a>}</span>
+<span id="cb5-6"><a href="#cb5-6"></a>discounted <span class="op">=</span> {</span>
+<span id="cb5-7"><a href="#cb5-7"></a>    item: price <span class="op">*</span> <span class="fl">0.9</span> <span class="cf">for</span> item, price <span class="kw">in</span> prices.items()</span>
+<span id="cb5-8"><a href="#cb5-8"></a>}</span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="bu">print</span>(discounted)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>{'apple': 9.0, 'banana': 4.5, 'cherry': 18.0}</code></pre>
 <blockquote class="blockquote">
 <p><strong>نکته:</strong> پیمایش مستقیم روی دیکشنری (<code>for key in person</code>) همون کلیدها رو برمی‌گردونه؛ پس معمولاً نیازی به نوشتن <code>.keys()</code> نیست، مگه اینکه بخواید کد خواناتر باشه.</p>
@@ -846,25 +854,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><a href="https://quera.org/problemset/9774"><code>9774</code> - عدد چاپ‌کن</a></li>
-<li><a href="https://quera.org/problemset/17244"><code>17244</code> - شارژ موبایل</a></li>
-<li><a href="https://quera.org/problemset/589"><code>589</code> - فاکتوریل</a></li>
-<li><a href="https://quera.org/problemset/2529"><code>2529</code> - اسم‌ها</a></li>
-<li><a href="https://quera.org/problemset/3409"><code>3409</code> - جدول ضرب گنده</a></li>
-<li><a href="https://quera.org/problemset/3539"><code>3539</code> - تک‌رقمی</a></li>
-<li><a href="https://quera.org/problemset/282"><code>282</code> - کامل بودن یا نبودن</a></li>
-<li><a href="https://quera.org/problemset/616"><code>616</code> - توان دو</a></li>
-<li><a href="https://quera.org/problemset/591"><code>591</code> - چاپ مربع</a></li>
-<li><a href="https://quera.org/problemset/618"><code>618</code> - چاپ لوزی</a></li>
-<li><a href="https://quera.org/problemset/3405"><code>3405</code> - چاپ برعکس</a></li>
-<li><a href="https://quera.org/problemset/617"><code>617</code> - عدد خودمغلوب</a></li>
-<li><a href="https://quera.org/problemset/4065"><code>4065</code> - خر در چمن فراوونه!!</a></li>
-<li><a href="https://quera.org/problemset/3537"><code>3537</code> - سوال زرد</a></li>
-<li><a href="https://quera.org/problemset/2885"><code>2885</code> - سوال ساده</a></li>
-<li><a href="https://quera.org/problemset/28947"><code>28947</code> - کمک به کاپی</a></li>
-<li><a href="https://quera.org/problemset/588"><code>588</code> - ماکزیمم</a></li>
-<li><a href="https://quera.org/problemset/10231"><code>10231</code> - خُب باقر سرما خورده</a></li>
-<li><a href="https://quera.org/problemset/10232"><code>10232</code> - باقر خسته‌ست ولی بی‌فرهنگ نه</a></li>
+<li><a href="https://quera.org/problemset/9774"><code>9774</code> - عدد چاپ‌کن</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-9774">راه حل</a></li>
+<li><a href="https://quera.org/problemset/17244"><code>17244</code> - شارژ موبایل</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-17244">راه حل</a></li>
+<li><a href="https://quera.org/problemset/589"><code>589</code> - فاکتوریل</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-589">راه حل</a></li>
+<li><a href="https://quera.org/problemset/2529"><code>2529</code> - اسم‌ها</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-2529">راه حل</a></li>
+<li><a href="https://quera.org/problemset/3409"><code>3409</code> - جدول ضرب گنده</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-3409">راه حل</a></li>
+<li><a href="https://quera.org/problemset/3539"><code>3539</code> - تک‌رقمی</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-3539">راه حل</a></li>
+<li><a href="https://quera.org/problemset/282"><code>282</code> - کامل بودن یا نبودن</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-282">راه حل</a></li>
+<li><a href="https://quera.org/problemset/616"><code>616</code> - توان دو</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-616">راه حل</a></li>
+<li><a href="https://quera.org/problemset/591"><code>591</code> - چاپ مربع</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-591">راه حل</a></li>
+<li><a href="https://quera.org/problemset/618"><code>618</code> - چاپ لوزی</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-618">راه حل</a></li>
+<li><a href="https://quera.org/problemset/3405"><code>3405</code> - چاپ برعکس</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-3405">راه حل</a></li>
+<li><a href="https://quera.org/problemset/617"><code>617</code> - عدد خودمغلوب</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-617">راه حل</a></li>
+<li><a href="https://quera.org/problemset/4065"><code>4065</code> - خر در چمن فراوونه!!</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-4065">راه حل</a></li>
+<li><a href="https://quera.org/problemset/3537"><code>3537</code> - سوال زرد</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-3537">راه حل</a></li>
+<li><a href="https://quera.org/problemset/2885"><code>2885</code> - سوال ساده</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-2885">راه حل</a></li>
+<li><a href="https://quera.org/problemset/28947"><code>28947</code> - کمک به کاپی</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-28947">راه حل</a></li>
+<li><a href="https://quera.org/problemset/588"><code>588</code> - ماکزیمم</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-588">راه حل</a></li>
+<li><a href="https://quera.org/problemset/10231"><code>10231</code> - خُب باقر سرما خورده</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-10231">راه حل</a></li>
+<li><a href="https://quera.org/problemset/10232"><code>10232</code> - باقر خسته‌ست ولی بی‌فرهنگ نه</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-10232">راه حل</a></li>
 </ul>
 </div>
 </div>

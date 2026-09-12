@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -741,7 +736,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -754,12 +749,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="مثال-پایه" class="level2">
 <h2 class="anchored" data-anchor-id="مثال-پایه">مثال پایه</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">5</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(n)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> n <span class="op">-</span> <span class="dv">1</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Blastoff!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>n <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    <span class="bu">print</span>(n)</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    n <span class="op">=</span> n <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="bu">print</span>(<span class="st">'Blastoff!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>تا وقتی <span dir="ltr"><code>n &gt; 0</code></span> برقراره، بدنه اجرا می‌شه</li>
 <li>وقتی شرط <span dir="ltr"><code>False</code></span> بشه، از حلقه خارج می‌شه</li>
@@ -783,26 +778,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>گاهی عمداً یک حلقه بی‌نهایت می‌نویسیم: <span dir="ltr"><code>while True:</code></span></li>
 <li>و با <span dir="ltr"><code>break</code></span> از وسط بدنه ازش خارج می‌شیم (وقتی هنوز به انتهای بدنه نرسیدیم ولی شرط پایان مشخص شده)</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'&gt; '</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> line <span class="op">==</span> <span class="st">'done'</span>:</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(line)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Done!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb2-2"><a href="#cb2-2"></a>    line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'&gt; '</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a>    <span class="cf">if</span> line <span class="op">==</span> <span class="st">'done'</span>:</span>
+<span id="cb2-4"><a href="#cb2-4"></a>        <span class="cf">break</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>    <span class="bu">print</span>(line)</span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="bu">print</span>(<span class="st">'Done!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="continue-رد-کردن-تکرار-فعلی" class="level2">
 <h2 class="anchored" data-anchor-id="continue-رد-کردن-تکرار-فعلی"><span dir="ltr"><code>continue</code></span> — رد کردن تکرار فعلی</h2>
 <ul>
 <li>بقیه بدنه‌ی تکرار فعلی اجرا نمی‌شه، مستقیم می‌ره سراغ تکرار بعدی</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'&gt; '</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> line[<span class="dv">0</span>] <span class="op">==</span> <span class="st">'#'</span>:</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> line <span class="op">==</span> <span class="st">'done'</span>:</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(line)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Done!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb3-2"><a href="#cb3-2"></a>    line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'&gt; '</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a>    <span class="cf">if</span> line[<span class="dv">0</span>] <span class="op">==</span> <span class="st">'#'</span>:</span>
+<span id="cb3-4"><a href="#cb3-4"></a>        <span class="cf">continue</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>    <span class="cf">if</span> line <span class="op">==</span> <span class="st">'done'</span>:</span>
+<span id="cb3-6"><a href="#cb3-6"></a>        <span class="cf">break</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>    <span class="bu">print</span>(line)</span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="bu">print</span>(<span class="st">'Done!'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 <section id="تمرین" class="level2">
@@ -818,25 +813,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><a href="https://quera.org/problemset/9774"><code>9774</code> - عدد چاپ‌کن</a></li>
-<li><a href="https://quera.org/problemset/17244"><code>17244</code> - شارژ موبایل</a></li>
-<li><a href="https://quera.org/problemset/589"><code>589</code> - فاکتوریل</a></li>
-<li><a href="https://quera.org/problemset/2529"><code>2529</code> - اسم‌ها</a></li>
-<li><a href="https://quera.org/problemset/3409"><code>3409</code> - جدول ضرب گنده</a></li>
-<li><a href="https://quera.org/problemset/3539"><code>3539</code> - تک‌رقمی</a></li>
-<li><a href="https://quera.org/problemset/282"><code>282</code> - کامل بودن یا نبودن</a></li>
-<li><a href="https://quera.org/problemset/616"><code>616</code> - توان دو</a></li>
-<li><a href="https://quera.org/problemset/591"><code>591</code> - چاپ مربع</a></li>
-<li><a href="https://quera.org/problemset/618"><code>618</code> - چاپ لوزی</a></li>
-<li><a href="https://quera.org/problemset/3405"><code>3405</code> - چاپ برعکس</a></li>
-<li><a href="https://quera.org/problemset/617"><code>617</code> - عدد خودمغلوب</a></li>
-<li><a href="https://quera.org/problemset/4065"><code>4065</code> - خر در چمن فراوونه!!</a></li>
-<li><a href="https://quera.org/problemset/3537"><code>3537</code> - سوال زرد</a></li>
-<li><a href="https://quera.org/problemset/2885"><code>2885</code> - سوال ساده</a></li>
-<li><a href="https://quera.org/problemset/28947"><code>28947</code> - کمک به کاپی</a></li>
-<li><a href="https://quera.org/problemset/588"><code>588</code> - ماکزیمم</a></li>
-<li><a href="https://quera.org/problemset/10231"><code>10231</code> - خُب باقر سرما خورده</a></li>
-<li><a href="https://quera.org/problemset/10232"><code>10232</code> - باقر خسته‌ست ولی بی‌فرهنگ نه</a></li>
+<li><a href="https://quera.org/problemset/9774"><code>9774</code> - عدد چاپ‌کن</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-9774">راه حل</a></li>
+<li><a href="https://quera.org/problemset/17244"><code>17244</code> - شارژ موبایل</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-17244">راه حل</a></li>
+<li><a href="https://quera.org/problemset/589"><code>589</code> - فاکتوریل</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-589">راه حل</a></li>
+<li><a href="https://quera.org/problemset/2529"><code>2529</code> - اسم‌ها</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-2529">راه حل</a></li>
+<li><a href="https://quera.org/problemset/3409"><code>3409</code> - جدول ضرب گنده</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-3409">راه حل</a></li>
+<li><a href="https://quera.org/problemset/3539"><code>3539</code> - تک‌رقمی</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-3539">راه حل</a></li>
+<li><a href="https://quera.org/problemset/282"><code>282</code> - کامل بودن یا نبودن</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-282">راه حل</a></li>
+<li><a href="https://quera.org/problemset/616"><code>616</code> - توان دو</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-616">راه حل</a></li>
+<li><a href="https://quera.org/problemset/591"><code>591</code> - چاپ مربع</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-591">راه حل</a></li>
+<li><a href="https://quera.org/problemset/618"><code>618</code> - چاپ لوزی</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-618">راه حل</a></li>
+<li><a href="https://quera.org/problemset/3405"><code>3405</code> - چاپ برعکس</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-3405">راه حل</a></li>
+<li><a href="https://quera.org/problemset/617"><code>617</code> - عدد خودمغلوب</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-617">راه حل</a></li>
+<li><a href="https://quera.org/problemset/4065"><code>4065</code> - خر در چمن فراوونه!!</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-4065">راه حل</a></li>
+<li><a href="https://quera.org/problemset/3537"><code>3537</code> - سوال زرد</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-3537">راه حل</a></li>
+<li><a href="https://quera.org/problemset/2885"><code>2885</code> - سوال ساده</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-2885">راه حل</a></li>
+<li><a href="https://quera.org/problemset/28947"><code>28947</code> - کمک به کاپی</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-28947">راه حل</a></li>
+<li><a href="https://quera.org/problemset/588"><code>588</code> - ماکزیمم</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-588">راه حل</a></li>
+<li><a href="https://quera.org/problemset/10231"><code>10231</code> - خُب باقر سرما خورده</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-10231">راه حل</a></li>
+<li><a href="https://quera.org/problemset/10232"><code>10232</code> - باقر خسته‌ست ولی بی‌فرهنگ نه</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-10232">راه حل</a></li>
 </ul>
 </div>
 </div>

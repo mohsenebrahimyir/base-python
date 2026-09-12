@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -741,7 +736,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -763,27 +758,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>برای دریافت <strong>تعداد متغیری آرگومان غیر کلیدی</strong> (positional arguments) به صورت <strong>تاپل</strong> استفاده می‌شه</li>
 <li>اسم <code>args</code> قراردادی‌ست، ستاره (<code>*</code>) مهمه</li>
 </ul>
-<div id="4e3acd64" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> avr(<span class="op">*</span>args):</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">sum</span>(args) <span class="op">/</span> <span class="bu">len</span>(args)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(avr(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>))</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(avr(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">def</span> avr(<span class="op">*</span>args):</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="cf">return</span> <span class="bu">sum</span>(args) <span class="op">/</span> <span class="bu">len</span>(args)</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="bu">print</span>(avr(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>))</span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="bu">print</span>(avr(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>2.0
 25.0</code></pre>
 <ul>
 <li>می‌تونیم کنارش پارامترهای معمولی هم داشته باشیم:</li>
 </ul>
-<div id="178e76a6" class="cell" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet(prefix, <span class="op">*</span>names):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> name <span class="kw">in</span> names:</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>prefix<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>greet(<span class="st">"Hi"</span>, <span class="st">"Mohsen"</span>, <span class="st">"Nasim"</span>, <span class="st">"Reza"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">def</span> greet(prefix, <span class="op">*</span>names):</span>
+<span id="cb3-2"><a href="#cb3-2"></a>    <span class="cf">for</span> name <span class="kw">in</span> names:</span>
+<span id="cb3-3"><a href="#cb3-3"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>prefix<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a>greet(<span class="st">"Hi"</span>, <span class="st">"Mohsen"</span>, <span class="st">"Nasim"</span>, <span class="st">"Reza"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Hi Mohsen
 Hi Nasim
 Hi Reza</code></pre>
@@ -794,28 +785,24 @@ Hi Reza</code></pre>
 <li><p>برای دریافت تعداد متغیری آرگومان کلیدی (named arguments) به صورت دیکشنری استفاده می‌شه</p></li>
 <li><p>دو ستاره (**) مهمه، اسم kwargs قراردادی‌ست</p></li>
 </ul>
-<div id="f5ee25c9" class="cell" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_info(<span class="op">**</span>kwargs):</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> key, value <span class="kw">in</span> kwargs.items():</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>value<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>show_info(name<span class="op">=</span><span class="st">"Mohsen"</span>, age<span class="op">=</span><span class="dv">32</span>, city<span class="op">=</span><span class="st">"Sari"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">def</span> show_info(<span class="op">**</span>kwargs):</span>
+<span id="cb5-2"><a href="#cb5-2"></a>    <span class="cf">for</span> key, value <span class="kw">in</span> kwargs.items():</span>
+<span id="cb5-3"><a href="#cb5-3"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>value<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-4"><a href="#cb5-4"></a></span>
+<span id="cb5-5"><a href="#cb5-5"></a>show_info(name<span class="op">=</span><span class="st">"Mohsen"</span>, age<span class="op">=</span><span class="dv">32</span>, city<span class="op">=</span><span class="st">"Sari"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>name: Mohsen
 age: 32
 city: Sari</code></pre>
 <ul>
 <li>ترکیب با پارامترهای معمولی:</li>
 </ul>
-<div id="5c2dbf8b" class="cell" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> introduce(greeting, <span class="op">**</span>details):</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(greeting)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> key, value <span class="kw">in</span> details.items():</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>value<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>introduce(<span class="st">"Welcome!"</span>, name<span class="op">=</span><span class="st">"Mohsen"</span>, job<span class="op">=</span><span class="st">"Teacher"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">def</span> introduce(greeting, <span class="op">**</span>details):</span>
+<span id="cb7-2"><a href="#cb7-2"></a>    <span class="bu">print</span>(greeting)</span>
+<span id="cb7-3"><a href="#cb7-3"></a>    <span class="cf">for</span> key, value <span class="kw">in</span> details.items():</span>
+<span id="cb7-4"><a href="#cb7-4"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>value<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5"></a></span>
+<span id="cb7-6"><a href="#cb7-6"></a></span>
+<span id="cb7-7"><a href="#cb7-7"></a>introduce(<span class="st">"Welcome!"</span>, name<span class="op">=</span><span class="st">"Mohsen"</span>, job<span class="op">=</span><span class="st">"Teacher"</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Welcome!
 name = Mohsen
 job = Teacher</code></pre>
@@ -823,15 +810,13 @@ job = Teacher</code></pre>
 <section id="استفاده-همزمان-از-args-و-kwargs" class="level3">
 <h3 class="anchored" data-anchor-id="استفاده-همزمان-از-args-و-kwargs">استفاده همزمان از <code>*args</code> و <code>**kwargs</code></h3>
 <p>پارامترهای معمولی → <code>*args</code> → پارامترهای کلیدی پیش‌فرض → <code>**kwargs</code></p>
-<div id="84aa7297" class="cell" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> example(a, b, <span class="op">*</span>args, c<span class="op">=</span><span class="dv">10</span>, <span class="op">**</span>kwargs):</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"a=</span><span class="sc">{</span>a<span class="sc">}</span><span class="ss">, b=</span><span class="sc">{</span>b<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"args=</span><span class="sc">{</span>args<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"c=</span><span class="sc">{</span>c<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"kwargs=</span><span class="sc">{</span>kwargs<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>example(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, c<span class="op">=</span><span class="dv">20</span>, name<span class="op">=</span><span class="st">"Mohsen"</span>, age<span class="op">=</span><span class="dv">32</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">def</span> example(a, b, <span class="op">*</span>args, c<span class="op">=</span><span class="dv">10</span>, <span class="op">**</span>kwargs):</span>
+<span id="cb9-2"><a href="#cb9-2"></a>    <span class="bu">print</span>(<span class="ss">f"a=</span><span class="sc">{</span>a<span class="sc">}</span><span class="ss">, b=</span><span class="sc">{</span>b<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-3"><a href="#cb9-3"></a>    <span class="bu">print</span>(<span class="ss">f"args=</span><span class="sc">{</span>args<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-4"><a href="#cb9-4"></a>    <span class="bu">print</span>(<span class="ss">f"c=</span><span class="sc">{</span>c<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-5"><a href="#cb9-5"></a>    <span class="bu">print</span>(<span class="ss">f"kwargs=</span><span class="sc">{</span>kwargs<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-6"><a href="#cb9-6"></a></span>
+<span id="cb9-7"><a href="#cb9-7"></a>example(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, c<span class="op">=</span><span class="dv">20</span>, name<span class="op">=</span><span class="st">"Mohsen"</span>, age<span class="op">=</span><span class="dv">32</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>a=1, b=2
 args=(3, 4, 5)
 c=20
@@ -842,17 +827,15 @@ kwargs={'name': 'Mohsen', 'age': 32}</code></pre>
 <ul>
 <li>می‌تونیم یک لیست رو با * و یک دیکشنری رو با ** به تابع پاس بدیم:</li>
 </ul>
-<div id="72371b5a" class="cell" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show(a, b, c):</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(a, b, c)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>show(<span class="op">*</span>numbers)</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {<span class="st">"a"</span>: <span class="dv">10</span>, <span class="st">"b"</span>: <span class="dv">20</span>, <span class="st">"c"</span>: <span class="dv">30</span>}</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>show(<span class="op">**</span>data)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">def</span> show(a, b, c):</span>
+<span id="cb11-2"><a href="#cb11-2"></a>    <span class="bu">print</span>(a, b, c)</span>
+<span id="cb11-3"><a href="#cb11-3"></a></span>
+<span id="cb11-4"><a href="#cb11-4"></a></span>
+<span id="cb11-5"><a href="#cb11-5"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
+<span id="cb11-6"><a href="#cb11-6"></a>show(<span class="op">*</span>numbers)</span>
+<span id="cb11-7"><a href="#cb11-7"></a></span>
+<span id="cb11-8"><a href="#cb11-8"></a>data <span class="op">=</span> {<span class="st">"a"</span>: <span class="dv">10</span>, <span class="st">"b"</span>: <span class="dv">20</span>, <span class="st">"c"</span>: <span class="dv">30</span>}</span>
+<span id="cb11-9"><a href="#cb11-9"></a>show(<span class="op">**</span>data)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>1 2 3
 10 20 30</code></pre>
 </section>

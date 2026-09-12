@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -747,7 +742,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -771,8 +766,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>وارد کردن: <span dir="ltr"><code>import math</code></span></li>
 <li>دسترسی به توابع با نقطه (dot notation): <span dir="ltr"><code>math.func_name</code></span></li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>decibels <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> math.log10(ratio)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>height <span class="op">=</span> math.sin(radians)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>decibels <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> math.log10(ratio)</span>
+<span id="cb1-2"><a href="#cb1-2"></a>height <span class="op">=</span> math.sin(radians)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="ماژول-random" class="level2">
 <h2 class="anchored" data-anchor-id="ماژول-random">ماژول random</h2>
@@ -810,17 +805,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> random.random()</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">import</span> random</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb2-3"><a href="#cb2-3"></a>    x <span class="op">=</span> random.random()</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="bu">print</span>(x)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="نصب-پکیج-خارجی-pip" class="level2">
 <h2 class="anchored" data-anchor-id="نصب-پکیج-خارجی-pip">نصب پکیج خارجی (pip)</h2>
 <ul>
 <li>اگه پکیج نصب نباشه:</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install numpy</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">pip</span> install numpy</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="سه-روش-import" class="level2">
 <h2 class="anchored" data-anchor-id="سه-روش-import">سه روش import</h2>
@@ -863,24 +858,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>هر فایل <span dir="ltr"><code>.py</code></span> خودش یک ماژوله — می‌شه از توابع یک فایل، توی فایل دیگه استفاده کرد، دقیقاً مثل <span dir="ltr"><code>math</code></span> یا <span dir="ltr"><code>random</code></span></li>
 </ul>
 <p>فرض کنیم فایلی به اسم <span dir="ltr"><code>calc.py</code></span> داریم:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calc.py</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add(a, b):</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> square(x):</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">**</span> <span class="dv">2</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># calc.py</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">def</span> add(a, b):</span>
+<span id="cb4-3"><a href="#cb4-3"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
+<span id="cb4-4"><a href="#cb4-4"></a></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="kw">def</span> square(x):</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    <span class="cf">return</span> x <span class="op">**</span> <span class="dv">2</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>حالا توی یک فایل دیگه (مثلاً <span dir="ltr"><code>main.py</code></span>) که کنار همون فایل قرار داره:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># main.py</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> calc</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(calc.add(<span class="dv">2</span>, <span class="dv">3</span>))      <span class="co"># 5</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(calc.square(<span class="dv">4</span>))      <span class="co"># 16</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># main.py</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="im">import</span> calc</span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="bu">print</span>(calc.add(<span class="dv">2</span>, <span class="dv">3</span>))</span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="bu">print</span>(calc.square(<span class="dv">4</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>5
+16</code></pre>
 <ul>
 <li>توجه: اسم فایل بدون پسوند <span dir="ltr"><code>.py</code></span> می‌شه اسم ماژول — یعنی <span dir="ltr"><code>import calc</code></span>، نه <span dir="ltr"><code>import calc.py</code></span></li>
 <li>می‌شه از همون روش‌های alias یا <span dir="ltr"><code>from ... import ...</code></span> هم استفاده کرد:</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> calc <span class="im">import</span> add</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> calc <span class="im">as</span> c</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="im">from</span> calc <span class="im">import</span> add</span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="im">import</span> calc <span class="im">as</span> c</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="فایل-پکیج" class="level2">
 <h2 class="anchored" data-anchor-id="فایل-پکیج">فایل پکیج</h2>
@@ -894,18 +891,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     calc.py
     strings.py</code></pre>
 <p>استفاده:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mypackage <span class="im">import</span> calc</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(calc.add(<span class="dv">2</span>, <span class="dv">3</span>))</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># یا:</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> mypackage.calc <span class="im">as</span> calc</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="im">from</span> mypackage <span class="im">import</span> calc</span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="bu">print</span>(calc.add(<span class="dv">2</span>, <span class="dv">3</span>))</span>
+<span id="cb9-3"><a href="#cb9-3"></a></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="co"># یا:</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="im">import</span> mypackage.calc <span class="im">as</span> calc</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li><span dir="ltr"><code>__init__.py</code></span> می‌تونه خالی باشه (فقط برای معرفی پوشه به‌عنوان پکیج)، یا می‌تونه کدی داشته باشه که وقتی پکیج import می‌شه، اجرا بشه — مثلاً import کردن خودکار زیرماژول‌ها:</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># __init__.py</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> .calc <span class="im">import</span> add, square</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># __init__.py</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="im">from</span> .calc <span class="im">import</span> add, square</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>با این کار می‌شه مستقیم نوشت:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mypackage <span class="im">import</span> add</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="im">from</span> mypackage <span class="im">import</span> add</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>بدون اینکه لازم باشه اسم فایل <span dir="ltr"><code>calc</code></span> رو هم بدونیم</p>
 <blockquote class="blockquote">
 <p>نکته: از پایتون ۳.۳ به بعد، پکیج بدون <span dir="ltr"><code>__init__.py</code></span> هم کار می‌کنه (namespace package)، ولی برای وضوح بیشتر و سازگاری، همچنان رایجه که این فایل رو (حتی خالی) بذارین.</p>
@@ -918,15 +915,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>وقتی فایل <strong>مستقیم اجرا</strong> بشه (مثلاً <span dir="ltr"><code>python calc.py</code></span>)، مقدار <span dir="ltr"><code>__name__</code></span> برابر <span dir="ltr"><code>"__main__"</code></span> می‌شه</li>
 <li>وقتی همون فایل به‌عنوان ماژول <strong>import</strong> بشه، مقدار <span dir="ltr"><code>__name__</code></span> برابر اسم خود فایل می‌شه (مثلاً <span dir="ltr"><code>"calc"</code></span>)</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calc.py</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add(a, b):</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"این خط همیشه اجرا می‌شه، چه import بشه چه مستقیم اجرا بشه"</span>)</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"این خط فقط وقتی اجرا می‌شه که calc.py مستقیم اجرا بشه"</span>)</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(add(<span class="dv">2</span>, <span class="dv">3</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># calc.py</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="kw">def</span> add(a, b):</span>
+<span id="cb12-3"><a href="#cb12-3"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
+<span id="cb12-4"><a href="#cb12-4"></a></span>
+<span id="cb12-5"><a href="#cb12-5"></a><span class="bu">print</span>(<span class="st">"این خط همیشه اجرا می‌شه، چه import بشه چه مستقیم اجرا بشه"</span>)</span>
+<span id="cb12-6"><a href="#cb12-6"></a></span>
+<span id="cb12-7"><a href="#cb12-7"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb12-8"><a href="#cb12-8"></a>    <span class="bu">print</span>(<span class="st">"این خط فقط وقتی اجرا می‌شه که calc.py مستقیم اجرا بشه"</span>)</span>
+<span id="cb12-9"><a href="#cb12-9"></a>    <span class="bu">print</span>(add(<span class="dv">2</span>, <span class="dv">3</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>اگه <span dir="ltr"><code>main.py</code></span> این فایل رو import کنه (<span dir="ltr"><code>import calc</code></span>)، خط اول <span dir="ltr"><code>print</code></span> اجرا می‌شه ولی بخش داخل <span dir="ltr"><code>if</code></span> اجرا <strong>نمی‌شه</strong></li>
 <li>اگه خود <span dir="ltr"><code>calc.py</code></span> مستقیم اجرا بشه، هر دو اجرا می‌شن</li>
@@ -937,13 +934,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>به ما اجازه می‌ده یک فایل هم به‌عنوان <strong>ماژول قابل‌استفاده</strong> توسط فایل‌های دیگه باشه، هم به‌عنوان <strong>برنامه‌ی مستقل</strong> قابل اجرا</li>
 <li>معمولاً برای تست سریع توابع یک فایل، بدون اینکه اون تست‌ها وقتی فایل import می‌شه هم اجرا بشن:</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process(data):</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [x <span class="op">*</span> <span class="dv">2</span> <span class="cf">for</span> x <span class="kw">in</span> data]</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># این بخش فقط برای تست دستیه، وقتی فایل import بشه اجرا نمی‌شه</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    sample <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(process(sample))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="kw">def</span> process(data):</span>
+<span id="cb13-2"><a href="#cb13-2"></a>    <span class="cf">return</span> [x <span class="op">*</span> <span class="dv">2</span> <span class="cf">for</span> x <span class="kw">in</span> data]</span>
+<span id="cb13-3"><a href="#cb13-3"></a></span>
+<span id="cb13-4"><a href="#cb13-4"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb13-5"><a href="#cb13-5"></a>    sample <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
+<span id="cb13-6"><a href="#cb13-6"></a>    <span class="bu">print</span>(process(sample))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>

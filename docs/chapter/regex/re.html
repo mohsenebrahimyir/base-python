@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -745,7 +740,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -762,7 +757,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>یک الگوی متنی برای جستجو، تطبیق یا استخراج بخش‌هایی از رشته</li>
 <li>در پایتون با ماژول <span dir="ltr"><code>re</code></span> کار می‌کنیم</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> re</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="توابع-اصلی-ماژول-re" class="level2">
 <h2 class="anchored" data-anchor-id="توابع-اصلی-ماژول-re">توابع اصلی ماژول re</h2>
@@ -799,9 +794,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="مثال-search" class="level2">
 <h2 class="anchored" data-anchor-id="مثال-search">مثال: search</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"My email is ali@example.com"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> re.search(<span class="vs">r'</span><span class="dv">\w</span><span class="op">+</span><span class="vs">@</span><span class="dv">\w</span><span class="op">+</span><span class="ch">\.</span><span class="dv">\w</span><span class="op">+</span><span class="vs">'</span>, text)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result.group())   <span class="co"># ali@example.com</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>text <span class="op">=</span> <span class="st">"My email is ali@example.com"</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>result <span class="op">=</span> re.search(<span class="vs">r'</span><span class="dv">\w</span><span class="op">+</span><span class="vs">@</span><span class="dv">\w</span><span class="op">+</span><span class="ch">\.</span><span class="dv">\w</span><span class="op">+</span><span class="vs">'</span>, text)</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="bu">print</span>(result.group())   <span class="co"># ali@example.com</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li><span dir="ltr"><code>r'...'</code></span> : raw string — همیشه برای regex استفاده بشه تا <span dir="ltr"><code>\</code></span> اشتباه تفسیر نشه</li>
 </ul>
@@ -865,30 +860,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="findall-استخراج-همه-موارد" class="level2">
 <h2 class="anchored" data-anchor-id="findall-استخراج-همه-موارد">findall — استخراج همه موارد</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"Numbers: 12, 45, 78"</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> re.findall(<span class="vs">r'</span><span class="dv">\d</span><span class="op">+</span><span class="vs">'</span>, text)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numbers)   <span class="co"># ['12', '45', '78']</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>text <span class="op">=</span> <span class="st">"Numbers: 12, 45, 78"</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>numbers <span class="op">=</span> re.findall(<span class="vs">r'</span><span class="dv">\d</span><span class="op">+</span><span class="vs">'</span>, text)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="bu">print</span>(numbers)   <span class="co"># ['12', '45', '78']</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="sub-جایگزینی" class="level2">
 <h2 class="anchored" data-anchor-id="sub-جایگزینی">sub — جایگزینی</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"Contact: 0912-1234567"</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>masked <span class="op">=</span> re.sub(<span class="vs">r'</span><span class="dv">\d</span><span class="vs">'</span>, <span class="st">'*'</span>, text)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(masked)   <span class="co"># Contact: ****-*******</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>text <span class="op">=</span> <span class="st">"Contact: 0912-1234567"</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>masked <span class="op">=</span> re.sub(<span class="vs">r'</span><span class="dv">\d</span><span class="vs">'</span>, <span class="st">'*'</span>, text)</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="bu">print</span>(masked)   <span class="co"># Contact: ****-*******</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="استخراج-با-گروه" class="level2">
 <h2 class="anchored" data-anchor-id="استخراج-با-گروه">استخراج با گروه (<span dir="ltr"><code>()</code></span>)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"Name: Ali, Age: 25"</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>match <span class="op">=</span> re.search(<span class="vs">r'Name: </span><span class="kw">(</span><span class="dv">\w</span><span class="op">+</span><span class="kw">)</span><span class="vs">, Age: </span><span class="kw">(</span><span class="dv">\d</span><span class="op">+</span><span class="kw">)</span><span class="vs">'</span>, text)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(match.group(<span class="dv">1</span>))   <span class="co"># Ali</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(match.group(<span class="dv">2</span>))   <span class="co"># 25</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>text <span class="op">=</span> <span class="st">"Name: Ali, Age: 25"</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>match <span class="op">=</span> re.search(<span class="vs">r'Name: </span><span class="kw">(</span><span class="dv">\w</span><span class="op">+</span><span class="kw">)</span><span class="vs">, Age: </span><span class="kw">(</span><span class="dv">\d</span><span class="op">+</span><span class="kw">)</span><span class="vs">'</span>, text)</span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="bu">print</span>(match.group(<span class="dv">1</span>))   <span class="co"># Ali</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="bu">print</span>(match.group(<span class="dv">2</span>))   <span class="co"># 25</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>هر پرانتز یک <strong>گروه</strong> جدا می‌سازه که به‌صورت مستقل قابل دسترسیه</li>
 </ul>
 </section>
 <section id="کامپایل-کردن-الگو-برای-استفاده-مکرر" class="level2">
 <h2 class="anchored" data-anchor-id="کامپایل-کردن-الگو-برای-استفاده-مکرر">کامپایل کردن الگو (برای استفاده مکرر)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>pattern <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r'</span><span class="dv">\d</span><span class="op">+</span><span class="vs">'</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pattern.findall(<span class="st">"a1 b22 c333"</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>pattern <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r'</span><span class="dv">\d</span><span class="op">+</span><span class="vs">'</span>)</span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="bu">print</span>(pattern.findall(<span class="st">"a1 b22 c333"</span>))</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>وقتی یک الگو رو چندبار قراره استفاده کنیم، کامپایل کردنش بهینه‌تره</li>
 </ul>

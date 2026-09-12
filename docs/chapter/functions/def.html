@@ -689,11 +689,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapter/project/counter.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">گوسفند شمار</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../chapter/project/calculator.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ماشین حساب</span></a>
   </div>
 </li>
@@ -741,7 +736,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2026-09-11</p>
+      <p class="date-modified">2026-09-12</p>
     </div>
   </div>
     
@@ -757,7 +752,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>با یک <strong>نام</strong> تعریف می‌شه و با <strong>صدا زدن اون نام</strong> فراخوانی می‌شه</p></li>
 <li><p>مثلاً <span dir="ltr"><code>type()</code></span> خودش یک تابعه:</p></li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(<span class="dv">32</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">type</span>(<span class="dv">32</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>&lt;class 'int'&gt;</code></pre>
 <ul>
 <li>نام تابع در اینجا: <span dir="ltr"><code>type</code></span></li>
@@ -768,9 +763,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>کلیدواژه <span dir="ltr"><code>def</code></span></li>
 <li>با تعریف تابع، یک متغیر هم‌نام با تابع ساخته می‌شه</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_lyrics():</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"I'm a lumberjack, and I'm okay."</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'I sleep all night and I work all day.'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">def</span> print_lyrics():</span>
+<span id="cb3-2"><a href="#cb3-2"></a>    <span class="bu">print</span>(<span class="st">"I'm a lumberjack, and I'm okay."</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a>    <span class="bu">print</span>(<span class="st">'I sleep all night and I work all day.'</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>فراخوانی: <span dir="ltr"><code>print_lyrics()</code></span> — دقیقاً مثل توابع داخلی</li>
 <li>می‌شه یک تابع رو داخل تابع دیگه هم صدا زد</li>
@@ -810,12 +805,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_sum(x, y):</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">+</span> y</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>get_sum(<span class="dv">2</span>, <span class="dv">3</span>)   <span class="co"># 5</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> no_result_func():</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> math.cos(radians)   <span class="co"># خروجی برنمی‌گردونه</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>بازگرداندن حاصل جمع</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">def</span> get_sum(x, y):</span>
+<span id="cb4-2"><a href="#cb4-2"></a>    <span class="cf">return</span> x <span class="op">+</span> y</span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a>get_sum(<span class="dv">2</span>, <span class="dv">3</span>)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>ذخیره حاصل جمع در متغیر محلی که از بیرون در دسترس نیست.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">def</span> no_result_func(x, y):</span>
+<span id="cb5-2"><a href="#cb5-2"></a>    z <span class="op">=</span> x <span class="op">+</span> y</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="متغیرهای-سراسری-global" class="level2">
 <h2 class="anchored" data-anchor-id="متغیرهای-سراسری-global">متغیرهای سراسری (global)</h2>
@@ -823,13 +824,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>به‌طور پیش‌فرض، تابع نمی‌تونه متغیر بیرونی رو <strong>تغییر</strong> بده (فقط می‌تونه بخونه)</li>
 <li>برای تغییر دادن متغیر بیرون تابع از داخل تابع، باید با <span dir="ltr"><code>global</code></span> اعلام بشه</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> counter():</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">global</span> n</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    n <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>counter()</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n)   <span class="co"># 1</span></span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>n <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="kw">def</span> counter():</span>
+<span id="cb6-3"><a href="#cb6-3"></a>    <span class="kw">global</span> n</span>
+<span id="cb6-4"><a href="#cb6-4"></a>    n <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a></span>
+<span id="cb6-6"><a href="#cb6-6"></a>counter()</span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="bu">print</span>(n)</span></code></pre></div><button title="کپی در Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>1</code></pre>
 </section>
 <section id="تمرین" class="level2">
 <h2 class="anchored" data-anchor-id="تمرین">تمرین</h2>
@@ -844,8 +846,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><a href="https://quera.org/problemset/102250"><code>102250</code> - پیدایِش!</a></li>
-<li><a href="https://quera.org/problemset/148640"><code>148640</code> - آزمون تستی</a></li>
+<li><a href="https://quera.org/problemset/102250"><code>102250</code> - پیدایِش!</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-102250">راه حل</a></li>
+<li><a href="https://quera.org/problemset/148640"><code>148640</code> - آزمون تستی</a> - <a href="https://mohsenebrahimy.ir/blog/python-quera/#problemset-148640">راه حل</a></li>
 </ul>
 </div>
 </div>
