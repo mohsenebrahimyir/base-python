@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "مبانی پایتون",
     "section": "",
-    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل info@mohsenebrahimy.ir برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۵-۰۶-۲۳ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: mohsenebrahimy.ir/book/base-python\n\n\n\n\n\n\n\nمهمتوجه\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
+    "text": "پیش گفتار\nبه همراه این کتاب می‌توانید یادگیری پایتون را شروع کنید. سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل info@mohsenebrahimy.ir برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ ۱۴۰۵-۰۷-۰۱ بروزرسانی شده است.\n\nامیدوارم این کتاب برایتان مفید باشد.\n\nکتاب: mohsenebrahimy.ir/book/base-python\n\n\n\n\n\n\n\nمهمتوجه\n\n\n\nاگر این متن را میبینید یعنی این کتاب درحال توسعه است.",
     "crumbs": [
       "پیش گفتار"
     ]
@@ -1741,7 +1741,7 @@
     "href": "chapter/files/data.html#csv-با-ماژول-استاندارد",
     "title": "فایل‌های داده",
     "section": "CSV (با ماژول استاندارد)",
-    "text": "CSV (با ماژول استاندارد)\nimport csv\n\nخواندن فایل CSV\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.reader(f)\n    for row in reader:\n        print(row)\n\nبرای دسترسی با نام ستون‌ها به‌جای اندیس عددی:\n\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        print(row['name'])\n\n\nنوشتن فایل CSV\nrows = [\n    {'name': 'Ali', 'age': 25},\n    {'name': 'Sara', 'age': 30},\n]\n\nwith open('output.csv', 'w', encoding='utf-8', newline='') as f:\n    writer = csv.DictWriter(f, fieldnames=['name', 'age'])\n    writer.writeheader()\n    writer.writerows(rows)\n\nnewline='' : جلوی افتادن یک خط خالی اضافه بین ردیف‌ها رو می‌گیره",
+    "text": "CSV (با ماژول استاندارد)\nimport csv\n\nخواندن فایل CSV\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        print(row['name'])\n\n\nنوشتن فایل CSV\nrows = [\n    {'name': 'Ali', 'age': 25},\n    {'name': 'Sara', 'age': 30},\n]\n\nwith open('output.csv', 'w', encoding='utf-8', newline='') as f:\n    writer = csv.DictWriter(f, fieldnames=['name', 'age'])\n    writer.writeheader()\n    writer.writerows(rows)\n\nnewline='' : جلوی افتادن یک خط خالی اضافه بین ردیف‌ها رو می‌گیره",
     "crumbs": [
       "کار با فایل",
       "<span class='chapter-number'>33</span>  <span class='chapter-title'>فایل‌های داده</span>"
